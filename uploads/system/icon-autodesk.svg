@@ -1,0 +1,89 @@
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="88.66mm" height="13.88mm" viewBox="0 0 251.31 39.36">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 6.8px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-7 {
+        font-family: Rubik-Medium, Rubik;
+        font-weight: 500;
+      }
+
+      .cls-2 {
+        font-size: 19.12px;
+      }
+
+      .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #1f1f1f;
+      }
+
+      .cls-7 {
+        font-size: 4.43px;
+        fill: #131313;
+      }
+    </style>
+  </defs>
+  <g>
+    <text class="cls-1" transform="translate(36.98 30.13)">AUTHORIZED TRAINING CENTER</text>
+    <text class="cls-2" transform="translate(38.29 19.28)">AUTODESK</text>
+    <path class="cls-3" d="M-68.6,497.84l20.2-12.51h10.48a.61.61,0,0,1,.61.61.53.53,0,0,1-.29.51l-9.92,5.93a2,2,0,0,0-.87,1.73v3.73h12.61V476.15a.77.77,0,0,0-.81-.77h-12l-20.16,12.46v10Z" transform="translate(68.78 -467.46)"/>
+    <rect class="cls-3" x="0.19" y="34.71" width="142.25" height="1.26" rx="0.55"/>
+  </g>
+  <g>
+    <path class="cls-4" d="M105.26,467.94h77.17v25.14H99.12v-19A6.15,6.15,0,0,1,105.26,467.94Z" transform="translate(68.78 -467.46)"/>
+    <path class="cls-5" d="M105.35,467.46h77.18V492.6H99.21v-19A6.16,6.16,0,0,1,105.35,467.46Z" transform="translate(68.78 -467.46)"/>
+    <path class="cls-4" d="M99.28,495.08h82.81V501a5.86,5.86,0,0,1-5.83,5.87h-77Z" transform="translate(68.78 -467.46)"/>
+    <path class="cls-5" d="M99.22,495.08h83.32V501a5.89,5.89,0,0,1-5.87,5.87H99.22Z" transform="translate(68.78 -467.46)"/>
+    <path class="cls-6" d="M138.75,483.22l-.25-6.16c0-.17.14-.1.14-.1a1.67,1.67,0,0,0,.87,0s.14-.06.13.12l-.27,6.15Z" transform="translate(68.78 -467.46)"/>
+    <path class="cls-6" d="M139.68,474a.63.63,0,1,1-.65-.63h.06a.62.62,0,0,1,.59.63" transform="translate(68.78 -467.46)"/>
+    <path class="cls-6" d="M139.29,475.3l3.1-1.54c.36-.21.53-.24.61-.14s0,.3-.3.49l-3.35,2.16a.69.69,0,0,1-.35.1.81.81,0,0,1-.33-.1l-2.83-1.95c-.28-.22-.52-.34-.36-.52s.28-.05.67.17l2.67,1.32a.49.49,0,0,0,.47,0" transform="translate(68.78 -467.46)"/>
+    <path class="cls-6" d="M128,481.77a3.11,3.11,0,0,0,1.25.73c.05,0,.1.05.1.11a.11.11,0,0,1-.1.1,3.06,3.06,0,0,1-2.44-.76,14.05,14.05,0,0,1-1.54-1.7.4.4,0,0,1-.08-.21.26.26,0,0,1,.2-.27h.06c.52-.12,1.2-.49,1.2-.92s-.49-.77-1.3-.77h-.64v4.48h-1.11v-5.19h1.89c1.47,0,2.33.47,2.33,1.4,0,.59-.64,1.13-1.31,1.39a8.8,8.8,0,0,0,1.49,1.62" transform="translate(68.78 -467.46)"/>
+    <path class="cls-6" d="M111.51,482.62c-2,0-3.1-1-3.1-2.56s1-2.78,3.37-2.78a6.69,6.69,0,0,1,1.41.15l-.11.82a5.33,5.33,0,0,0-1.41-.2A1.85,1.85,0,0,0,109.6,480c0,1.2.76,1.85,2.14,1.85a4.18,4.18,0,0,0,1.42-.25l.1.8a6,6,0,0,1-1.75.25" transform="translate(68.78 -467.46)"/>
+    <polygon class="cls-6" points="185.32 15.09 185.32 9.89 188.91 9.89 188.91 10.61 186.43 10.54 186.43 12.14 188.78 12.07 188.78 12.76 186.43 12.7 186.43 14.42 188.91 14.36 188.91 15.09 185.32 15.09"/>
+    <polygon class="cls-6" points="202.32 10.65 202.39 15.09 201.28 15.09 201.34 10.65 199.45 10.65 199.45 9.89 204.23 9.89 204.23 10.65 202.32 10.65"/>
+    <path class="cls-6" d="M153.31,482.63c-2.06,0-3-1.09-3-2.63,0-1.72,1.48-2.73,3.21-2.73s3.06.91,3.06,2.63-1.46,2.73-3.25,2.73m.11-4.65a1.88,1.88,0,0,0-1.95,1.94,1.81,1.81,0,0,0,1.91,2,1.87,1.87,0,0,0,2-1.95A1.83,1.83,0,0,0,153.42,478Z" transform="translate(68.78 -467.46)"/>
+    <path class="cls-6" d="M145.68,480.29a.25.25,0,0,1-.22-.25.25.25,0,0,1,.19-.27h.06c.52-.12,1.2-.49,1.2-.92s-.49-.77-1.3-.77H145v4.48h-1.11v-5.19h1.89c1.48,0,2.33.47,2.33,1.4a1.34,1.34,0,0,1-.56,1l-.09.07a2.57,2.57,0,0,1-.65.36,2.42,2.42,0,0,1-1.08.14Z" transform="translate(68.78 -467.46)"/>
+    <path class="cls-6" d="M163.61,481.77a3.11,3.11,0,0,0,1.25.73c.06,0,.11.05.11.11s-.05.09-.11.1a3.06,3.06,0,0,1-2.44-.76,14.05,14.05,0,0,1-1.54-1.7.4.4,0,0,1-.07-.21.26.26,0,0,1,.19-.27h.06c.52-.12,1.2-.49,1.2-.92s-.49-.77-1.29-.77h-.65v4.48h-1.11v-5.19h1.89c1.48,0,2.33.47,2.33,1.4,0,.59-.64,1.13-1.31,1.39a8.42,8.42,0,0,0,1.49,1.62" transform="translate(68.78 -467.46)"/>
+    <polygon class="cls-6" points="238.01 10.65 238.08 15.09 236.97 15.09 237.03 10.65 235.14 10.65 235.14 9.89 239.92 9.89 239.92 10.65 238.01 10.65"/>
+    <rect class="cls-6" x="177.22" y="17.65" width="61.88" height="0.09"/>
+    <path class="cls-6" d="M173.5,478v-.05a.54.54,0,0,0-.17-.39.53.53,0,0,0-.41-.17.58.58,0,0,0-.59.59.53.53,0,0,0,.17.41.54.54,0,0,0,.42.18.6.6,0,0,0,.58-.57" transform="translate(68.78 -467.46)"/>
+    <path class="cls-6" d="M172.91,477.45a.48.48,0,0,0-.47.47.46.46,0,0,0,.14.34.45.45,0,0,0,.33.14.48.48,0,0,0,.48-.48.45.45,0,0,0-.14-.33.46.46,0,0,0-.34-.14" transform="translate(68.78 -467.46)"/>
+    <path class="cls-6" d="M172.78,477.88h.13c.07,0,.11,0,.11-.08s0-.09-.13-.09h-.11Zm.41.36H173l0-.1-.09-.13a.13.13,0,0,0-.1,0h0v.26h-.13v-.63H173a.25.25,0,0,1,.15.05.19.19,0,0,1,0,.13.17.17,0,0,1-.17.17h0s0,0,.06,0,0,.05.07.1Z" transform="translate(68.78 -467.46)"/>
+    <text class="cls-7" transform="translate(174.52 35.49)">A</text>
+    <text class="cls-7" transform="translate(177.75 35.49)">U</text>
+    <text class="cls-7" transform="translate(180.86 35.49)">T</text>
+    <text class="cls-7" transform="translate(183.66 35.49)">H</text>
+    <text class="cls-7" transform="translate(186.88 35.49)">O</text>
+    <text class="cls-7" transform="translate(190.09 35.49)">R</text>
+    <text class="cls-7" transform="translate(193.32 35.49)">I</text>
+    <text class="cls-7" transform="translate(194.87 35.49)">Z</text>
+    <text class="cls-7" transform="translate(197.66 35.49)">E</text>
+    <text class="cls-7" transform="translate(200.46 35.49)">D </text>
+    <text class="cls-7" transform="translate(205.13 35.49)">T</text>
+    <text class="cls-7" transform="translate(207.92 35.49)">E</text>
+    <text class="cls-7" transform="translate(210.72 35.49)">S</text>
+    <text class="cls-7" transform="translate(213.73 35.49)">T</text>
+    <text class="cls-7" transform="translate(216.53 35.49)">I</text>
+    <text class="cls-7" transform="translate(218.08 35.49)">N</text>
+    <text class="cls-7" transform="translate(221.39 35.49)">G </text>
+    <text class="cls-7" transform="translate(225.96 35.49)">C</text>
+    <text class="cls-7" transform="translate(229.08 35.49)">E</text>
+    <text class="cls-7" transform="translate(231.87 35.49)">N</text>
+    <text class="cls-7" transform="translate(235.19 35.49)">T</text>
+    <text class="cls-7" transform="translate(237.99 35.49)">E</text>
+    <text class="cls-7" transform="translate(240.78 35.49)">R</text>
+  </g>
+</svg>

@@ -50,7 +50,7 @@
                 <?php include 'cart_items.php'; ?>
             </div>
             <?php
-            if ($this->session->userdata('admin_login') == "false") {
+            if ($this->session->userdata('admin_login') == "") {
             ?>
             <span class="signin-box-move-desktop-helper"></span>
             <div class="sign-in-box btn-group">

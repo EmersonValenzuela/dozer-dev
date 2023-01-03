@@ -759,5 +759,11 @@
     "your_email": "Your email",
     "send_request": "Send request",
     "want_to_go_back": "Want to go back",
-    "check_your_inbox_for_the_request": "Check your inbox for the request"
+    "check_your_inbox_for_the_request": "Check your inbox for the request",
+    "categories": "Categories",
+    "sub_categories": "Sub categories",
+    "data_deleted": "Data deleted",
+    "edit_category": "Edit category",
+    "update_category": "Update category",
+    "update_category_form": "Update category form"
 }

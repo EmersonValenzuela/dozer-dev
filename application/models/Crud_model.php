@@ -1931,6 +1931,15 @@ class Crud_model extends CI_Model
         return $this->db->get('course')->result_array();
     }
 
+    public function get_4_course_category($limit,$where)
+    {
+        $this->db->select("*");
+        $this->db->limit($limit);
+        $this->db->where($where);
+        $this->db->order_by("id", "asc");
+        return $this->db->get('course')->result_array();
+    }
+
     public function enrol_student($user_id)
     {
         $purchased_courses = $this->session->userdata('cart_items');

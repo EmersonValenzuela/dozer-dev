@@ -36,8 +36,8 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
                         <a href="<?php echo site_url('user'); ?>" style="border: 1px solid transparent; margin: 0px; padding: 0px 10px; font-size: 14px; width: max-content; border-radius: 5px; height: 40px; line-height: 40px;"><?php echo site_phrase('instructor'); ?></a>
                     </div>
                 </div>
-            <?php endif; ?>
-
+            <?php endif;
+            ?>
             <div class="instructor-box menu-icon-box">
                 <div class="icon">
                     <a href="<?php echo site_url('home/my_courses'); ?>" style="border: 1px solid transparent; margin: 0px; padding: 0px 10px; font-size: 14px; width: max-content; border-radius: 5px; height: 40px; line-height: 40px;"><?php echo site_phrase('my_courses'); ?></a>
@@ -88,7 +88,7 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
                         <li class="user-dropdown-menu-item"><a href="<?php echo site_url('home/my_messages'); ?>"><i class="far fa-envelope"></i><?php echo site_phrase('my_messages'); ?></a></li>
                         <li class="user-dropdown-menu-item"><a href="<?php echo site_url('home/purchase_history'); ?>"><i class="fas fa-shopping-cart"></i><?php echo site_phrase('purchase_history'); ?></a></li>
                         <li class="user-dropdown-menu-item"><a href="<?php echo site_url('home/profile/user_profile'); ?>"><i class="fas fa-user"></i><?php echo site_phrase('user_profile'); ?></a></li>
-                        <?php if (addon_status('affiliate_course') ) :
+                        <?php if (addon_status('affiliate_course')) :
                             $CI    = &get_instance();
                             $CI->load->model('addons/affiliate_course_model');
                             $x = $CI->affiliate_course_model->is_affilator($this->session->userdata('user_id'));
@@ -115,17 +115,19 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
                 </div>
             </div>
 
+            <?php
+            if (site_url('user') != "") {
+            ?>
 
+                <span class="signin-box-move-desktop-helper"></span>
+                <div class="sign-in-box btn-group d-none">
 
-            <span class="signin-box-move-desktop-helper"></span>
-            <div class="sign-in-box btn-group d-none">
+                    <button type="button" class="btn btn-sign-in" data-toggle="modal" data-target="#signInModal">Log In</button>
 
-                <button type="button" class="btn btn-sign-in" data-toggle="modal" data-target="#signInModal">Log In</button>
+                    <button type="button" class="btn btn-sign-up" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
 
-                <button type="button" class="btn btn-sign-up" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
-
-            </div> <!--  sign-in-box end -->
-
+                </div> <!--  sign-in-box end -->
+            <?php } ?>
 
         </nav>
     </div>

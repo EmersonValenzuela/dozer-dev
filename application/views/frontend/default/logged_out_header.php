@@ -49,7 +49,9 @@
             <div class="cart-box menu-icon-box" id="cart_items">
                 <?php include 'cart_items.php'; ?>
             </div>
-
+            <?php
+            if ($this->session->userdata('admin_login') == "false") {
+            ?>
             <span class="signin-box-move-desktop-helper"></span>
             <div class="sign-in-box btn-group">
 
@@ -60,6 +62,7 @@
                     class="btn btn-sign-up text-uppercase"><?php echo site_phrase('CREAR CUENTA'); ?></a>
 
             </div> <!--  sign-in-box end -->
+            <?php }?>
         </nav>
     </div>
 </section>

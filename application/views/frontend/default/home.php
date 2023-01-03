@@ -340,7 +340,7 @@
 
                 <div class="course-carousel shown-after-loading" style="display: none;">
                     <?php
-                    $latest_courses = $this->crud_model->get_latest_10_course();
+                    $latest_courses = $this->crud_model->get_4_course_category("4",array("sub_category_id" => "6"));
                     foreach ($latest_courses as $latest_course) : ?>
                     <?php
                             $lessons = $this->crud_model->get_lessons('course', $latest_course['id']);

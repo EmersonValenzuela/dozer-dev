@@ -16,6 +16,20 @@ class Crud_model extends CI_Model
         $this->output->set_header('Pragma: no-cache');
     }
 
+    public function auth_category($where)
+    {
+      $this->db->select('*');
+      $this->db->from('category');
+      $this->db->where($where);
+      $this->db->limit(1);
+      $query = $this->db->get();
+      if ($query->num_rows() == 1) {
+        return $query->row();
+      } else {
+        return false;
+      }
+    }
+
     public function get_categoria($param1 = "")
     {
         if ($param1 != "") {

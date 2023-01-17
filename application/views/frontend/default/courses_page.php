@@ -27,23 +27,13 @@ if (isset($sub_category_id)) {
                         data-parent="#accordion">
                         <div class="card-body p-0">
                             <div class="filter_type px-4 pt-4">
-                                <h5 class="fw-700 mb-4"><?php echo site_phrase('categoria'); ?></h5>
+                                <h5 class="fw-700 mb-4"><?php echo site_phrase('Categoria'); ?></h5>
                                 <ul>
-                                    <li class="">
-                                        <div class="text-15px fw-700 d-flex">
-                                            <input type="radio" id="category_all" name="sub_category"
-                                                class="categoria custom-radio" value="all" onclick="filter(this)"
-                                                <?php if ($selected_category_id == 'all') echo 'checked'; ?>>
-                                            <label for="category_all"><?php echo site_phrase('all_category'); ?></label>
-                                            <div class="ms-auto">
-                                                (<?php echo $this->crud_model->get_active_course()->num_rows(); ?>)
-                                            </div>
-                                        </div>
-                                    </li>
+
                                     <?php
                                     $counter = 1;
                                     $total_number_of_categoria = $this->db->get('category')->num_rows();
-                                    $categoria = $this->crud_model->get_categoria()->result_array();
+                                    $categoria = $this->crud_model->get_categoria($id_category)->result_array();
                                     foreach ($categoria as $category) : ?>
                                     <li class="mt-3">
                                         <div
@@ -211,15 +201,14 @@ if (isset($sub_category_id)) {
             </div>
             <div class="col-lg-9">
                 <div class="row category-filter-box mx-0 box-shadow-4" style="
-                    background-image: url(../uploads/system/portada-cursos.png);
+                    background-image: url(<?= $variable?>);
                     background-position: right;
                     background-repeat: no-repeat;
                     background-size: 59rem;
                     border-radius: 30px;
                 ">
                     <div class="col-md-6 position-relative">
-                        <p class="fw-bold text-white px-5">Con un solo pago, accederás a todos
-                            los cursos (38) y muchos beneficios más</p>
+                        <p class="fw-bold text-white px-5"><?= $text_banner?></p>
                         <p class="px-5 text-white">Migra a premium hoy mismo!</p>
                         <div class="px-5">
                             <a class="btn-premiun p-1 border-09" href="#">Quiero ser <img class="px-1" src="..\uploads\system\icon-corona.png" alt=""> Premium</a>
@@ -299,7 +288,7 @@ function toggleLayout(layout) {
         type: 'POST',
         url: '<?php echo site_url('home/set_layout_to_session'); ?>',
         data: {
-            layout: layout
+            layout: 'grid'
         },
         success: function(response) {
             location.reload();

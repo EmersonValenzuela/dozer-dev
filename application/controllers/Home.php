@@ -20,10 +20,9 @@ class Home extends CI_Controller
 
 
         //CHECKING COURSE ACCESSIBILITY STATUS
-        if(get_settings('course_accessibility') != 'publicly' && !$this->session->userdata('user_id')){
+        if (get_settings('course_accessibility') != 'publicly' && !$this->session->userdata('user_id')) {
             redirect(site_url('login'), 'refresh');
         }
-
     }
     public function index()
     {
@@ -126,6 +125,21 @@ class Home extends CI_Controller
             $page_data['total_result'] = count($courses);
         }
 
+        $row_category = $this->crud_model->auth_category(array('slug' => $_GET['category']));
+
+        if ($row_category->parent == 5 || $row_category->id == 5) {
+            $page_data['text_banner'] = "curso";
+            $page_data['id_category'] = $row_category->id;
+            
+        } elseif ($row_category->parent == 4 || $row_category->id == 4) {
+            $page_data['text_banner'] = "Diplomados";
+            $page_data['id_category'] = $row_category->id;
+        } elseif ($row_category->parent == 3 || $row_category->id == 3) {
+            $page_data['text_banner'] = "especializaciones";
+            $page_data['id_category'] = $row_category->id;
+        }
+
+
         $page_data['page_name']  = "courses_page";
         $page_data['page_title'] = site_phrase('courses');
         $page_data['layout']     = $layout;
@@ -154,8 +168,8 @@ class Home extends CI_Controller
                 $CI->load->model('addons/affiliate_course_model');
                 $affiliator_details_for_checking_active_status = $_GET['ref'];
                 $check_validity = $CI->affiliate_course_model->get_user_by_unique_identifier($affiliator_details_for_checking_active_status);
-           
-                if ($check_validity['status'] == 1 && $check_validity['user_id']!=$this->session->userdata('user_id')) {
+
+                if ($check_validity['status'] == 1 && $check_validity['user_id'] != $this->session->userdata('user_id')) {
 
                     if (isset($_GET['ref'])) {
                         $this->session->set_userdata('course_referee', $_GET['ref']);
@@ -164,16 +178,13 @@ class Home extends CI_Controller
                         $this->session->unset_userdata('course_referee');
                         $this->session->unset_userdata('course_reffer_id');
                     }
-                }
-                else
-                {
+                } else {
                     $this->session->set_flashdata('error_message', get_phrase('you can not reffer yourself'));
                     redirect(site_url('home/courses'), 'refresh');
-            
                 }
             }
         }
-        
+
 
 
 
@@ -185,7 +196,7 @@ class Home extends CI_Controller
         $page_data['page_name'] = "course_page";
         $page_data['page_title'] = site_phrase('course');
 
-    
+
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
@@ -664,8 +675,8 @@ class Home extends CI_Controller
             $search_string = $_GET['query'];
 
             //check double quote and script text in the search string
-            if(preg_match('/"/', $search_string) >= 1 && strpos($search_string,"script") >= 1){
-                $this->session->set_flashdata('error_message', site_phrase('such_script_searches_are_not_allowed').'!');
+            if (preg_match('/"/', $search_string) >= 1 && strpos($search_string, "script") >= 1) {
+                $this->session->set_flashdata('error_message', site_phrase('such_script_searches_are_not_allowed') . '!');
                 redirect(site_url(), 'refresh');
             }
 
@@ -931,7 +942,7 @@ class Home extends CI_Controller
 
         if ($this->session->userdata('user_login') == 1) {
             $this->crud_model->enrol_to_free_course($course_id, $this->session->userdata('user_id'));
-            redirect(site_url('home/course/'.slugify($course_details['title']).'/'.$course_id), 'refresh');
+            redirect(site_url('home/course/' . slugify($course_details['title']) . '/' . $course_id), 'refresh');
         } else {
             redirect(site_url('login'), 'refresh');
         }
@@ -1087,7 +1098,7 @@ class Home extends CI_Controller
 
         $page_data['page_name'] = 'compare';
         $page_data['page_title'] = site_phrase('course_compare');
-        
+
         $this->db->where('status', 'active');
         $page_data['courses'] = $this->db->get('course')->result_array();
         $page_data['course_1_details'] = $course_id_1 ? $this->crud_model->get_course_by_id($course_id_1)->row_array() : array();
@@ -1260,11 +1271,11 @@ class Home extends CI_Controller
         $course_details = $this->crud_model->get_course_by_id($data['lesson_details']['course_id'])->row_array();
         $is_purchased = $this->crud_model->check_course_enrolled($course_details['id'], $logged_in_user_details['id']);
 
-        if($is_purchased > 0){
+        if ($is_purchased > 0) {
             $data['course_details'] = $course_details;
             $data['page_name'] = 'quiz_view';
             $this->load->view('mobile/index', $data);
-        }else{
+        } else {
             echo api_phrase('buy_the_course');
         }
     }
@@ -1277,30 +1288,17 @@ class Home extends CI_Controller
         $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
         $is_purchased = $this->crud_model->check_course_enrolled($course_details['id'], $logged_in_user_details['id']);
 
-        if($is_purchased > 0 && $now_leave == ""){
+        if ($is_purchased > 0 && $now_leave == "") {
             $page_data['instructor_details']  = $this->user_model->get_all_user($course_details['creator'])->row_array();
             $page_data['live_class_details']  = $this->liveclass_model->get_live_class_details($course_id);
             $page_data['logged_user_details'] = $this->user_model->get_all_user($this->session->userdata('user_id'))->row_array();
             $page_data['course_details'] = $course_details;
             $page_data['page_name'] = 'live_class';
             $this->load->view('mobile/index', $page_data);
-        }elseif($now_leave != ""){
-            echo '<h6>'.api_phrase('you_have_already_left_the_meeting').'</h6>';
-        }else{
-             echo '<h6>'.api_phrase('buy_the_course').'</h6>';
+        } elseif ($now_leave != "") {
+            echo '<h6>' . api_phrase('you_have_already_left_the_meeting') . '</h6>';
+        } else {
+            echo '<h6>' . api_phrase('buy_the_course') . '</h6>';
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

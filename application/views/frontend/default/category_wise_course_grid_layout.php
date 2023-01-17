@@ -8,15 +8,7 @@
                 <a onclick="$(location).attr('href', '<?php echo site_url('home/course/' . rawurlencode(slugify($course['title'])) . '/' . $course['id']); ?>');" href="javascript:;" class="has-popover">
                     <div class="course-box">
                         <div class="course-image">
-                            <?php if ($course['is_free_course'] == 1) : ?>
-                                <p class="price text-right d-inline-block float-end"><?php echo site_phrase('free'); ?></p>
-                            <?php else : ?>
-                                <?php if ($course['discount_flag'] == 1) : ?>
-                                    <p class="price text-right d-inline-block float-end"><small><del><?php echo currency($course['price']); ?></small></del><?php echo currency($course['discounted_price']); ?></p>
-                                <?php else : ?>
-                                    <p class="price text-right d-inline-block float-end"><?php echo currency($course['price']); ?></p>
-                                <?php endif; ?>
-                            <?php endif; ?>
+                            
 
                             <img src="<?php echo $this->crud_model->get_course_thumbnail_url($course['id']); ?>" alt="" class="img-fluid">
                         </div>
@@ -27,30 +19,9 @@
                                 </div>
                             </div>
                             <h5 class="title"><?php echo $course['title']; ?></h5>
-                            <div class="rating">
-                                <?php
-                                $total_rating =  $this->crud_model->get_ratings('course', $course['id'], true)->row()->rating;
-                                $number_of_ratings = $this->crud_model->get_ratings('course', $course['id'])->num_rows();
-                                if ($number_of_ratings > 0) {
-                                    $average_ceil_rating = ceil($total_rating / $number_of_ratings);
-                                } else {
-                                    $average_ceil_rating = 0;
-                                }
+                           
 
-                                for ($i = 1; $i < 6; $i++) : ?>
-                                    <?php if ($i <= $average_ceil_rating) : ?>
-                                        <i class="fas fa-star filled"></i>
-                                    <?php else : ?>
-                                        <i class="fas fa-star"></i>
-                                    <?php endif; ?>
-                                <?php endfor; ?>
-                                <div class="d-inline-block">
-                                    <span class="text-dark ms-1 text-12px">(<?php echo $average_ceil_rating; ?>)</span>
-                                    <span class="text-dark text-12px text-muted ms-2">(<?php echo $number_of_ratings.' '.site_phrase('reviews'); ?>)</span>
-                                </div>
-                            </div>
-
-                            <div class="row">
+                           <!-- <div class="row">
                                 <div class="col">
                                     <div class="floating-user d-inline-block">
                                         <?php if ($course['multi_instructor']):
@@ -69,9 +40,6 @@
                                 <div class="col">
                                     <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', '<?php echo site_url('home/compare?course-1=' . rawurlencode(slugify($course['title'])) . '&&course-id-1=' . $course['id']); ?>');"><i class="fas fa-retweet"></i> <?php echo site_phrase('compare'); ?></button>
                                 </div>
-                            </div>
-
-                            <div class="w-100 d-flex text-dark border-top py-1">
                                 <div class="">
                                     <i class="text-danger far fa-clock text-14px"></i>
                                     <span class="text-muted text-12px"><?php echo $course_duration; ?></span>
@@ -79,6 +47,25 @@
                                 <div class="ms-auto">
                                     <i class="text-primary far fa-list-alt text-14px"></i>
                                     <span class="text-muted text-12px"><?php echo $lessons->num_rows().' '.site_phrase('lectures'); ?></span>
+                                </div>
+                            </div> -->
+
+                            <div class="w-100 d-flex text-dark border-top py-1">
+                            <div class="">
+                            <?php if ($course['is_free_course'] == 1) : ?>
+                                <p class="price text-white text-right d-inline-block float-end"><?php echo site_phrase('free'); ?></p>
+                            <?php else : ?>
+                                <?php if ($course['discount_flag'] == 1) : ?>
+                                    <p class="price text-white  text-right d-inline-block float-end"><small>  <del><?php echo currency($course['price']); ?></small></del> <br> <?php echo currency($course['discounted_price']); ?></p> <br>
+                                <?php else : ?> 
+                                   <br> <p class="price text-white fw-bold text-15px text-right d-inline-block float-end"><?php echo currency($course['price']); ?></p>
+                                <?php endif; ?>
+                            <?php endif; ?>
+                                </div>
+                                <div class="ms-auto">
+                                   
+                                    <span class="text-white fw-bold text-15px text-center">70% Desc</span> <br>
+                                    <span class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
                                 </div>
                             </div>
                         </div>

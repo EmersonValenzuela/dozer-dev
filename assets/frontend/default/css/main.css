@@ -1191,10 +1191,10 @@ homepage styles
     text-decoration: none;
 }
 .course-box{
-    /*box-shadow: 0px 8px 15px 0px #0000000f;*/
-    box-shadow: 0px 10px 25px #00000010;
+    /*box-shadow: 0px 8px 15px 0px #0000000f;
+    box-shadow: 0px 10px 25px #00000010;*/
     position: relative;
-    background: #fff;
+    background: #373738;
     border-radius: 5px 5px 5px 5px;
 }
 .course-box:before,
@@ -1217,10 +1217,10 @@ homepage styles
 .course-box:hover:after{
     opacity: 1;
 }
-.course-box:hover{
+/*.course-box:hover{
     box-shadow: 0px 12px 46px -20px #c9c9c9;
     transition: all .3s ease;
-}
+}*/
 .course-box .play-btn {
     left: 0;
     top: 0;
@@ -1284,7 +1284,7 @@ homepage styles
     white-space: normal;
     font-size: 16px;
     font-weight: 700;
-    color: #000;
+    color: white;
 }
 .course-box .course-details .instructors{
     display: block!important;
@@ -1426,7 +1426,7 @@ homepage styles
 
 .course-box .course-image{
     position: relative;
-    padding: 8px;
+    /*padding: 8px;*/
 }
 .course-box .course-image img{
     border-radius: 5px 5px 0px 0px;
@@ -2670,8 +2670,8 @@ section.category-course-list-area {
 .category-filter-box {
     margin-bottom: 35px;
     border-radius: 8px;
-    background: #fff;
-    padding: 12px 10px;
+    padding: 30px 10px;
+    
 }
 .category-course-list ul {
     padding: 0;
@@ -5232,3 +5232,44 @@ color: #2a303b;
     .r-7 {
         right: 7rem !important;
     }
+
+    .colorfondoprincipal{
+
+        color: #131313;
+
+    }
+    .fondologin{
+        background: #1C1C1C;
+        border-top-right-radius: 1rem!important;
+    border-bottom-right-radius: 1rem!important
+    
+      }
+      .left-13{
+        left: 13px;
+      }
+      .left-72{
+        left: 72px;
+      }
+      .left-80{
+        left: 80px;
+      }
+      .border-transparente{
+        border: transparent !important;
+      }
+      
+      .fs-22{
+        font-size: 2.2rem;
+      }
+      .colorfondoboton{
+
+        color: #131313;
+
+    }
+.btn-premiun{
+    background: #FFC873;
+    color: #131313;
+    font-weight: 700;
+}
+.border-09{
+    border-radius: 0.5rem;
+}

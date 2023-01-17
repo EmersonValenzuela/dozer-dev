@@ -456,3 +456,24 @@ body.show {
   text-overflow: ellipsis;
   white-space: normal;
 }
+
+@media (min-width: 576px) { 
+  .programa{
+    padding: 23px 6px;
+  }
+ }
+/*------------------------------------*/
+ .price {
+ 
+  position: absolute;
+
+}
+.btnbadge-prox {
+    background-color: white !important; 
+    color: #131313 !important; 
+     padding: 6px 10px;
+     font-weight: 700;
+  }
+
+ 
+

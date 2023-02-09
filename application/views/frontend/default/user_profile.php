@@ -26,62 +26,182 @@ if (addon_status('affiliate_course')) {
         <div class="row">
             <div class="col-md-4 col-lg-3">
                 <div class="user-dashboard-sidebar box-shadow-5">
-                    <div class="user-box">
-                        <img src="<?php echo $this->user_model->get_user_image_url($this->session->userdata('user_id')); ?>" alt="" class="img-fluid">
-                        <div class="name">
-                            <div class="name"><?php echo $user_details['first_name'] . ' ' . $user_details['last_name']; ?></div>
-                        </div>
-                    </div>
+
                     <div class="user-dashboard-menu">
                         <ul>
-                            <li class="active mb-3"><a href="<?php echo site_url('home/profile/user_profile'); ?>"> <i class="fas fa-user-circle"></i> <?php echo site_phrase('profile'); ?></a></li>
-                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_credentials'); ?>"> <i class="fas fa-lock"></i> <?php echo site_phrase('account'); ?></a></li>
-                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_photo'); ?>"> <i class="fas fa-camera-retro"></i> <?php echo site_phrase('photo'); ?></a></li>
+                            <li class="active mb-3"><a href="<?php echo site_url('home/profile/user_profile'); ?>"> <i
+                                        class="fas fa-user-circle"></i> <?php echo site_phrase('profile'); ?></a></li>
+                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_credentials'); ?>"> <i
+                                        class="fas fa-lock"></i> <?php echo site_phrase('account'); ?></a></li>
+                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_photo'); ?>"> <i
+                                        class="fas fa-camera-retro"></i> <?php echo site_phrase('photo'); ?></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-8 col-lg-9 mt-4 mt-md-0">
-                <form class="w-100 bg-white radius-10 p-4 box-shadow-5" action="<?php echo site_url('home/update_profile/update_basics'); ?>" method="post">
+                <div class="user-dashboard-sidebar box-shadow-5">
+                    <div class="d-flex flex-row">
+                        <div class="user-box">
+                            <img src="<?php echo $this->user_model->get_user_image_url($this->session->userdata('user_id')); ?>"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="name p-2 fw-bolder">
+                                <div class="name">
+                                    Hola! <?php echo $user_details['first_name'] . ' ' . $user_details['last_name']; ?>
+                                </div>
+                            </div>
+                            <div class=" p-2 fw-lighter">
+                                <p>Te damos la bienvenida!</p>
+                                <p>Seremos tu impulso para que puedas lograr <br>
+                                    todas tus metas profesionales! </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <form class="w-100  radius-10 p-4 box-shadow-5"
+                    action="<?php echo site_url('home/update_profile/update_basics'); ?>" method="post">
                     <div class="row">
-                        <div class="col-12 border-bottom mb-3 pb-3">
-                            <h4><?php echo site_phrase('edit_profile'); ?></h4>
-                            <p><?php echo site_phrase('add_information_about_yourself_to_share_on_your_profile'); ?></p>
+                        <div class="col-12 border-bottom mb-3 pb-3 text-white">
+                            <h4><?php echo site_phrase('mis_datos_personales'); ?></h4>
+
                         </div>
 
-                        <div class="col-md-6">
-                            <label class="text-dark fw-600" for="FristName"><?php echo site_phrase('first_name'); ?></label>
+                        <div class="col-md-6 text-white p-2">
+                            <label class="text-white fw-600"
+                                for="FristName"><?php echo site_phrase('first_name'); ?></label>
                             <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                <input type="text" class="form-control" name="first_name" id="FristName" placeholder="<?php echo site_phrase('first_name'); ?>" value="<?php echo $user_details['first_name']; ?>">
+                                
+                                <input type="text" class="form-control" name="first_name" id="FristName"
+                                    placeholder="<?php echo site_phrase('first_name'); ?>"
+                                    value="<?php echo $user_details['first_name']; ?>">
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <label class="text-dark fw-600" for="FristName"><?php echo site_phrase('last_name'); ?></label>
+                        <div class="col-md-6 p-2">
+                            <label class="text-white fw-600"
+                                for="FristName"><?php echo site_phrase('last_name'); ?></label>
                             <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                <input type="text" class="form-control" name="last_name" placeholder="<?php echo site_phrase('last_name'); ?>" value="<?php echo $user_details['last_name']; ?>">
+                               
+                                <input type="text" class="form-control" name="last_name"
+                                    placeholder="<?php echo site_phrase('last_name'); ?>"
+                                    value="<?php echo $user_details['last_name']; ?>">
                             </div>
+                        </div>
+                        <div class="col-md-6 p-2">
+                            <label class="text-white fw-600" for="FristName"><?php echo site_phrase('dni'); ?></label>
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control" name="dni" id="FristName"
+                                    placeholder="<?php echo site_phrase('dni'); ?>"
+                                    value="<?php echo $user_details['dni']; ?>">
+                            </div>
+                        </div>
+                        <div class="col-md-6  p-2">
+                            <label class="text-white fw-600"
+                                for="FristName"><?php echo site_phrase('fecha_de_nacimiento'); ?></label>
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control" name="fecha_de_nacimiento" id="FristName"
+                                    placeholder="<?php echo site_phrase('fecha_de_nacimiento'); ?>"
+                                    value="<?php echo $user_details['fecha_de_nacimiento']; ?>">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 p-2">
+                            <label class="text-white fw-600" for="FristName"><?php echo site_phrase('pais_procedencia'); ?></label>
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control" name="pais_procedencia" id="FristName"
+                                    placeholder="<?php echo site_phrase('pais_procedencia'); ?>"
+                                    value="<?php echo $user_details['pais_procedencia']; ?>">
+                            </div>
+                        </div>
+                        <div class="col-md-6  p-2">
+                            <label class="text-white fw-600"
+                                for="FristName"><?php echo site_phrase('departamento'); ?></label>
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control" name="departamento" id="FristName"
+                                    placeholder="<?php echo site_phrase('departamento'); ?>"
+                                    value="<?php echo $user_details['departamento']; ?>">
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6 p-2">
+                            <label class="text-white fw-600" for="FristName"><?php echo site_phrase('provincia'); ?></label>
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control" name="provincia" id="FristName"
+                                    placeholder="<?php echo site_phrase('provincia'); ?>"
+                                    value="<?php echo $user_details['provincia']; ?>">
+                            </div>
+                        </div>
+                        <div class="col-md-6  p-2">
+                            <label class="text-white fw-600"
+                                for="FristName"><?php echo site_phrase('distrito'); ?></label>
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control" name="distrito" id="FristName"
+                                    placeholder="<?php echo site_phrase('distrito'); ?>"
+                                    value="<?php echo $user_details['distrito']; ?>">
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6 p-2">
+                            <label class="text-white fw-600" for="FristName"><?php echo site_phrase('celular'); ?></label>
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control" name="celular" id="FristName"
+                                    placeholder="<?php echo site_phrase('celular'); ?>"
+                                    value="<?php echo $user_details['celular']; ?>">
+                            </div>
+                        </div>
+                        <div class="col-md-6  p-2">
+                            <label class="text-white fw-600"
+                                for="FristName"><?php echo site_phrase('correo'); ?></label>
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control" name="correo" id="FristName"
+                                    placeholder="<?php echo site_phrase('correo'); ?>"
+                                    value="<?php echo $user_details['correo']; ?>">
+                            </div>
+                        </div>
+                           
+                        <div class="col-12 border-bottom mb-3 pb-3 text-white">
+                            <h4><?php echo site_phrase('mis_datos_academicos'); ?></h4>
+
                         </div>
 
                         <div class="col-12 mt-3">
                             <?php if ($user_details['is_instructor'] > 0) : ?>
-                                <div class="form-group mb-3">
-                                    <label class="text-dark fw-600" for="Biography"><?php echo site_phrase('title'); ?></label>
-                                    <textarea class="form-control" name="title" placeholder="<?php echo site_phrase('short_title_about_yourself'); ?>"><?php echo $user_details['title']; ?></textarea>
-                                </div>
+                            <div class="form-group mb-3">
+                                <label class="text-dark fw-600"
+                                    for="Biography"><?php echo site_phrase('title'); ?></label>
+                                <textarea class="form-control" name="title"
+                                    placeholder="<?php echo site_phrase('short_title_about_yourself'); ?>"><?php echo $user_details['title']; ?></textarea>
+                            </div>
 
-                                <div class="form-group mb-3">
-                                    <label class="text-dark fw-600" for="skills"><?php echo get_phrase('your_skills'); ?></label>
-                                    <input type="text" class=" tagify" id="skills" name="skills" data-role="tagsinput" style="width: 100%;" value="<?php echo $user_details['skills'];  ?>" />
-                                    <small class="text-muted"><?php echo get_phrase('write_your_skill_and_click_the_enter_button'); ?></small>
-                                </div>
+                            <div class="form-group mb-3">
+                                <label class="text-dark fw-600"
+                                    for="skills"><?php echo get_phrase('your_skills'); ?></label>
+                                <input type="text" class=" tagify" id="skills" name="skills" data-role="tagsinput"
+                                    style="width: 100%;" value="<?php echo $user_details['skills'];  ?>" />
+                                <small
+                                    class="text-muted"><?php echo get_phrase('write_your_skill_and_click_the_enter_button'); ?></small>
+                            </div>
 
                             <?php endif; ?>
 
                             <div class="form-group">
-                                <label class="text-dark fw-600" for="Biography"><?php echo site_phrase('biography'); ?></label>
-                                <textarea class="form-control author-biography-editor" name="biography" id="Biography"><?php echo $user_details['biography']; ?></textarea>
+                                <label class="text-dark fw-600"
+                                    for="Biography"><?php echo site_phrase('biography'); ?></label>
+                                <textarea class="form-control author-biography-editor" name="biography"
+                                    id="Biography"><?php echo $user_details['biography']; ?></textarea>
                             </div>
 
                             <?php if (addon_status('affiliate_course')) :
@@ -94,64 +214,81 @@ if (addon_status('affiliate_course')) {
                                 ?>
 
 
-                                <div class="tab-pane" id="payment_info">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h4><?php echo get_phrase('paypal'); ?></h4>
-                                            <div class="form-group row mb-3">
-                                                <label class="col-md-3 col-form-label" for="facebook_link"> <?php echo get_phrase('paypal_client_id'); ?></label>
-                                                <div class="col-md-9">
-                                                    <input type="text" id="paypal_client_id" name="paypal_client_id" class="form-control" value="<?php echo $paypal_keys['production_client_id']; ?>">
-                                                    <small><?php echo get_phrase("required_for_getting_payment"); ?></small>
-                                                </div>
+                            <div class="tab-pane" id="payment_info">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4><?php echo get_phrase('paypal'); ?></h4>
+                                        <div class="form-group row mb-3">
+                                            <label class="col-md-3 col-form-label" for="facebook_link">
+                                                <?php echo get_phrase('paypal_client_id'); ?></label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="paypal_client_id" name="paypal_client_id"
+                                                    class="form-control"
+                                                    value="<?php echo $paypal_keys['production_client_id']; ?>">
+                                                <small><?php echo get_phrase("required_for_getting_payment"); ?></small>
                                             </div>
-                                            <div class="form-group row mb-3">
-                                                <label class="col-md-3 col-form-label" for="facebook_link"> <?php echo get_phrase('paypal_secret_key'); ?></label>
-                                                <div class="col-md-9">
-                                                    <input type="text" id="paypal_secret_key" name="paypal_secret_key" class="form-control" value="<?php echo $paypal_keys['production_secret_key']; ?>">
-                                                    <small><?php echo get_phrase("required_for_getting_payment"); ?></small>
-                                                </div>
+                                        </div>
+                                        <div class="form-group row mb-3">
+                                            <label class="col-md-3 col-form-label" for="facebook_link">
+                                                <?php echo get_phrase('paypal_secret_key'); ?></label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="paypal_secret_key" name="paypal_secret_key"
+                                                    class="form-control"
+                                                    value="<?php echo $paypal_keys['production_secret_key']; ?>">
+                                                <small><?php echo get_phrase("required_for_getting_payment"); ?></small>
                                             </div>
-                                            <hr>
-                                            <h4><?php echo get_phrase('stripe'); ?></h4>
-                                            <div class="form-group row mb-3">
-                                                <label class="col-md-3 col-form-label" for="stripe_public_key"><?php echo get_phrase('stripe_public_key'); ?></label>
-                                                <div class="col-md-9">
-                                                    <input type="text" id="stripe_public_key" name="stripe_public_key" class="form-control" value="<?php echo $stripe_keys['public_live_key']; ?>">
-                                                    <small><?php echo get_phrase("required_for_getting_payment"); ?></small>
-                                                </div>
+                                        </div>
+                                        <hr>
+                                        <h4><?php echo get_phrase('stripe'); ?></h4>
+                                        <div class="form-group row mb-3">
+                                            <label class="col-md-3 col-form-label"
+                                                for="stripe_public_key"><?php echo get_phrase('stripe_public_key'); ?></label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="stripe_public_key" name="stripe_public_key"
+                                                    class="form-control"
+                                                    value="<?php echo $stripe_keys['public_live_key']; ?>">
+                                                <small><?php echo get_phrase("required_for_getting_payment"); ?></small>
                                             </div>
-                                            <div class="form-group row mb-3">
-                                                <label class="col-md-3 col-form-label" for="stripe_secret_key"><?php echo get_phrase('stripe_secret_key'); ?></label>
-                                                <div class="col-md-9">
-                                                    <input type="text" id="stripe_secret_key" name="stripe_secret_key" class="form-control" value="<?php echo $stripe_keys['secret_live_key']; ?>">
-                                                    <small><?php echo get_phrase("required_for_getting_payment"); ?></small>
-                                                </div>
+                                        </div>
+                                        <div class="form-group row mb-3">
+                                            <label class="col-md-3 col-form-label"
+                                                for="stripe_secret_key"><?php echo get_phrase('stripe_secret_key'); ?></label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="stripe_secret_key" name="stripe_secret_key"
+                                                    class="form-control"
+                                                    value="<?php echo $stripe_keys['secret_live_key']; ?>">
+                                                <small><?php echo get_phrase("required_for_getting_payment"); ?></small>
                                             </div>
+                                        </div>
 
-                                            <hr>
-                                            <h4><?php echo get_phrase('razorpay'); ?></h4>
-                                            <div class="form-group row mb-3">
-                                                <label class="col-md-3 col-form-label" for="key_id"><?php echo get_phrase('key_id'); ?></label>
-                                                <div class="col-md-9">
-                                                    <input type="text" id="key_id" name="key_id" class="form-control" value="<?php echo $razorpay_keys['key_id']; ?>">
-                                                    <small><?php echo get_phrase("required_for_getting_payment"); ?></small>
-                                                </div>
+                                        <hr>
+                                        <h4><?php echo get_phrase('razorpay'); ?></h4>
+                                        <div class="form-group row mb-3">
+                                            <label class="col-md-3 col-form-label"
+                                                for="key_id"><?php echo get_phrase('key_id'); ?></label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="key_id" name="key_id" class="form-control"
+                                                    value="<?php echo $razorpay_keys['key_id']; ?>">
+                                                <small><?php echo get_phrase("required_for_getting_payment"); ?></small>
                                             </div>
-                                            <div class="form-group row mb-3">
-                                                <label class="col-md-3 col-form-label" for="secret_key"><?php echo get_phrase('secret_key'); ?></label>
-                                                <div class="col-md-9">
-                                                    <input type="text" id="secret_key" name="secret_key" class="form-control" value="<?php echo $razorpay_keys['secret_key']; ?>">
-                                                    <small><?php echo get_phrase("required_for_getting_payment"); ?></small>
-                                                </div>
+                                        </div>
+                                        <div class="form-group row mb-3">
+                                            <label class="col-md-3 col-form-label"
+                                                for="secret_key"><?php echo get_phrase('secret_key'); ?></label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="secret_key" name="secret_key"
+                                                    class="form-control"
+                                                    value="<?php echo $razorpay_keys['secret_key']; ?>">
+                                                <small><?php echo get_phrase("required_for_getting_payment"); ?></small>
                                             </div>
+                                        </div>
 
 
-                                        </div> <!-- end col -->
-                                    </div> <!-- end row -->
-                                </div>
+                                    </div> <!-- end col -->
+                                </div> <!-- end row -->
+                            </div>
 
-                                <?php endif; ?>
+                            <?php endif; ?>
 
                             <?php endif; ?>
 
@@ -160,21 +297,27 @@ if (addon_status('affiliate_course')) {
                             <label class="text-dark fw-600"><?php echo site_phrase('add_your_twitter_link'); ?></label>
                             <div class="input-group mb-3">
                                 <span class="input-group-text"><i class="fab fa-twitter"></i></span>
-                                <input type="text" class="form-control" maxlength="60" name="twitter_link" placeholder="<?php echo site_phrase('twitter_link'); ?>" value="<?php echo $social_links['twitter']; ?>">
+                                <input type="text" class="form-control" maxlength="60" name="twitter_link"
+                                    placeholder="<?php echo site_phrase('twitter_link'); ?>"
+                                    value="<?php echo $social_links['twitter']; ?>">
                             </div>
 
 
                             <label class="text-dark fw-600"><?php echo site_phrase('add_your_facebook_link'); ?></label>
                             <div class="input-group mb-3">
                                 <span class="input-group-text"><i class="fab fa-facebook"></i></span>
-                                <input type="text" class="form-control" maxlength="60" name="facebook_link" placeholder="<?php echo site_phrase('facebook_link'); ?>" value="<?php echo $social_links['facebook']; ?>">
+                                <input type="text" class="form-control" maxlength="60" name="facebook_link"
+                                    placeholder="<?php echo site_phrase('facebook_link'); ?>"
+                                    value="<?php echo $social_links['facebook']; ?>">
                             </div>
 
 
                             <label class="text-dark fw-600"><?php echo site_phrase('add_your_linkedin_link'); ?></label>
                             <div class="input-group mb-3">
                                 <span class="input-group-text"><i class="fab fa-linkedin"></i></span>
-                                <input type="text" class="form-control" maxlength="60" name="linkedin_link" placeholder="<?php echo site_phrase('linkedin_link'); ?>" value="<?php echo $social_links['linkedin']; ?>">
+                                <input type="text" class="form-control" maxlength="60" name="linkedin_link"
+                                    placeholder="<?php echo site_phrase('linkedin_link'); ?>"
+                                    value="<?php echo $social_links['linkedin']; ?>">
                             </div>
                         </div>
 
@@ -191,7 +334,7 @@ if (addon_status('affiliate_course')) {
 
 
 <script type="text/javascript">
-    $(function() {
-        $(".bootstrap-tag-input").tagsinput('items');
-    });
+$(function() {
+    $(".bootstrap-tag-input").tagsinput('items');
+});
 </script>

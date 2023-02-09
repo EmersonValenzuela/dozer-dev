@@ -204,8 +204,23 @@
     "basic_info": "Basic info",
     "login_credentials": "Login credentials",
     "social_information": "Social information",
-    "first_name": "First name",
-    "last_name": "Last name",
+    "first_name": "Nombres",
+    "last_name": "Apellidos",
+
+    "dni":"Número de DNI - Cédula de Identidad",
+    "fecha_de_nacimiento":"Fecha de nacimiento",
+    "pais_procedencia":"Pais de procedencia",
+    "departamento":"Departamento",
+    "distrito":"Distrito o Municipio",
+    "provincia":"Provincia",
+    "celular":"Cel/WhatsApp",
+    "correo":"Correo Gmail",
+    "mis_datos_academicos":"Mis Datos Academicos",
+
+
+
+
+
     "biography": "Biography",
     "user_image": "User image",
     "choose_user_image": "Choose user image",
@@ -801,11 +816,11 @@
     "nombre": "Nombre",
     "nombres": "Nombres",
     "apellidos": "Apellidos",
-    "correo": "Correo",
+   
     "contraseña": "Contraseña",
     "nombres:": "Nombres:",
     "apellidos:": "Apellidos:",
-    "correo:": "Correo:",
+    
     "contraseña:": "Contraseña:",
     "celular:": "Celular:",
     "regístrarse": "Regístrarse",
@@ -819,5 +834,6 @@
     "regístrate": "Regístrate",
     "quiero_ser_premium": "Quiero ser premium",
     "espaol": "Espaol",
-    "updated_successfully": "Updated successfully"
+    "updated_successfully": "Updated successfully",
+    "mis_datos_personales": "Mis datos personales"
 }

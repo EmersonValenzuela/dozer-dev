@@ -8,15 +8,16 @@
             <div class="col-lg-6 d-none d-lg-block text-center position-relative left-80 ">
                 <img class="" width="50%" src="<?php echo base_url('uploads/system/sign_up.png'); ?>">
             </div>
-            <div class="col-lg-6 fondologin position-relative left-72">
+            <div class="col-lg-6 fondologin position-relative right-72">
                 <div class="p-3">
                     <?php if(get_settings('fb_social_login')) include "facebook_login.php"; ?>
 
-                    <form action="<?php echo site_url('login/validate_login/user'); ?>" method="post" id="sign_up">
+                    <form action="<?php echo site_url('login/validate_login/user'); ?>" method="post" id="sign_up"
+                        style="margin: 0 3rem;">
                         <div class="form-group">
                             <label for="login-email"><?php echo site_phrase('Correo'); ?></label>
                             <div class="input-group">
-                                
+
                                 <input type="email" name="email" class="form-control"
                                     placeholder="<?php echo site_phrase('email'); ?>"
                                     aria-label="<?php echo site_phrase('email'); ?>"
@@ -27,7 +28,7 @@
                         <div class="form-group">
                             <label for="login-password"><?php echo site_phrase('Contraseña'); ?></label>
                             <div class="input-group">
-                                 <input type="password" name="password" class="form-control"
+                                <input type="password" name="password" class="form-control"
                                     placeholder="<?php echo site_phrase('password'); ?>"
                                     aria-label="<?php echo site_phrase('password'); ?>"
                                     aria-describedby="<?php echo site_phrase('password'); ?>" id="login-password"

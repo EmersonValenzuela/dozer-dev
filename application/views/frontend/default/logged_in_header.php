@@ -1,7 +1,7 @@
 <?php
 $user_details = $this->user_model->get_user($this->session->userdata('user_id'))->row_array();
 ?>
-<section class="menu-area bg-white">
+<section class="menu-area">
     <div class="container-xl">
         <nav class="navbar navbar-expand-lg navbar-light">
 
@@ -17,12 +17,7 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
             <?php include 'menu.php'; ?>
 
             <form class="inline-form me-2" action="<?php echo site_url('home/search'); ?>" method="get" style="width: 100%;">
-                <div class="input-group search-box mobile-search">
-                    <input type="text" name='query' value="<?php echo isset($_GET['query']) ? $_GET['query'] : ""; ?>" class="form-control" placeholder="<?php echo site_phrase('search_for_courses'); ?>">
-                    <div class="input-group-append">
-                        <button class="btn" type="submit"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
+               
             </form>
 
             <?php $custom_page_menus = $this->crud_model->get_custom_pages('', 'header'); ?>
@@ -33,14 +28,14 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
             <?php if (get_settings('allow_instructor') == 1) : ?>
                 <div class="instructor-box menu-icon-box ms-md-3">
                     <div class="icon">
-                        <a href="<?php echo site_url('user'); ?>" style="border: 1px solid transparent; margin: 0px; padding: 0px 10px; font-size: 14px; width: max-content; border-radius: 5px; height: 40px; line-height: 40px;"><?php echo site_phrase('instructor'); ?></a>
+                        <a class="text-white" href="<?php echo site_url('user'); ?>" style="border: 1px solid transparent; margin: 0px; padding: 0px 10px; font-size: 14px; width: max-content; border-radius: 5px; height: 40px; line-height: 40px;"><?php echo site_phrase('instructor'); ?></a>
                     </div>
                 </div>
             <?php endif;
             ?>
             <div class="instructor-box menu-icon-box">
                 <div class="icon">
-                    <a href="<?php echo site_url('home/my_courses'); ?>" style="border: 1px solid transparent; margin: 0px; padding: 0px 10px; font-size: 14px; width: max-content; border-radius: 5px; height: 40px; line-height: 40px;"><?php echo site_phrase('my_courses'); ?></a>
+                    <a class="text-white" href="<?php echo site_url('home/my_courses'); ?>" style="border: 1px solid transparent; margin: 0px; padding: 0px 10px; font-size: 14px; width: max-content; border-radius: 5px; height: 40px; line-height: 40px;"><?php echo site_phrase('my_courses'); ?></a>
                 </div>
             </div>
 

@@ -31,10 +31,8 @@ if (addon_status('affiliate_course')) {
                         <ul>
                             <li class="active mb-3"><a href="<?php echo site_url('home/profile/user_profile'); ?>"> <i
                                         class="fas fa-user-circle"></i> <?php echo site_phrase('profile'); ?></a></li>
-
                             <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_credentials'); ?>"> <i
                                         class="fas fa-lock"></i> <?php echo site_phrase('account'); ?></a></li>
-                                        
                             <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_photo'); ?>"> <i
                                         class="fas fa-camera-retro"></i> <?php echo site_phrase('photo'); ?></a></li>
 
@@ -111,7 +109,16 @@ if (addon_status('affiliate_course')) {
                                     value="<?php echo $user_details['dni']; ?>">
                             </div>
                         </div>
-                        
+                        <div class="col-md-6  p-2">
+                            <label class="text-white fw-600"
+                                for="FristName"><?php echo site_phrase('fecha_de_nacimiento'); ?></label>
+                            <div class="input-group">
+
+                                <input type="text" class="form-control" name="fecha_de_nacimiento" id="FristName"
+                                    placeholder="<?php echo site_phrase('fecha_de_nacimiento'); ?>"
+                                    value="<?php echo $user_details['fecha_de_nacimiento']; ?>">
+                            </div>
+                        </div>
 
                         <div class="col-md-6 p-2">
                             <label class="text-white fw-600"
@@ -183,37 +190,9 @@ if (addon_status('affiliate_course')) {
 
                         </div>
 
-                        <div class="col-md-6 p-2">
-                            <label class="text-white fw-600"
-                                for="FristName"><?php echo site_phrase('campo_de_estudio'); ?></label>
-                            <div class="input-group">
-
-                                <input type="text" class="form-control" name="campo_de_estudio" id="FristName"
-                                    placeholder="<?php echo site_phrase('campo_de_estudio'); ?>"
-                                    value="<?php echo $user_details['campo_de_estudio']; ?>">
-                            </div>
-                        </div>
-                        <div class="col-md-6  p-2">
-                            <label class="text-white fw-600"
-                                for="FristName"><?php echo site_phrase('nivel_de_formacion'); ?></label>
-                            <div class="input-group">
-
-                                <input type="text" class="form-control" name="nivel_de_formacion" id="FristName"
-                                    placeholder="<?php echo site_phrase('nivel_de_formacion'); ?>"
-                                    value="<?php echo $user_details['nivel_de_formacion']; ?>">
-                            </div>
-                        </div>
-                        <div class="col-12  p-2">
-                            <label class="text-white fw-600"
-                                for="FristName"><?php echo site_phrase('universidad_o_Centro_de_estudios'); ?></label>
-                            <div class="input-group">
-
-                                <input type="text" class="form-control" name="universidad_o_Centro_de_estudios"
-                                    id="FristName"
-                                    placeholder="<?php echo site_phrase('universidad_o_Centro_de_estudios'); ?>"
-                                    value="<?php echo $user_details['universidad_o_Centro_de_estudios']; ?>">
-                            </div>
-                        </div>
+                       
+                       
+                       
 
 
 

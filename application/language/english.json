@@ -206,21 +206,18 @@
     "social_information": "Social information",
     "first_name": "Nombres",
     "last_name": "Apellidos",
-
-    "dni":"Número de DNI - Cédula de Identidad",
-    "fecha_de_nacimiento":"Fecha de nacimiento",
-    "pais_procedencia":"Pais de procedencia",
-    "departamento":"Departamento",
-    "distrito":"Distrito o Municipio",
-    "provincia":"Provincia",
-    "celular":"Cel/WhatsApp",
-    "correo":"Correo Gmail",
-    "mis_datos_academicos":"Mis Datos Academicos",
-
-
-
-
-
+    "dni": "Número de DNI - Cédula de Identidad",
+    "fecha_de_nacimiento": "Fecha de nacimiento",
+    "pais_procedencia": "Pais de procedencia",
+    "departamento": "Departamento",
+    "distrito": "Distrito o Municipio",
+    "provincia": "Provincia",
+    "celular": "Cel/WhatsApp",
+    "correo": "Correo Gmail",
+    "mis_datos_academicos": "Mis Datos Academicos",
+    "campo_de_estudio": "Campo de estudio",
+    "nivel_de_formacion": "Nivel de formacion",
+    "universidad_o_Centro_de_estudios": "Universidad o Centro de estudios",
     "biography": "Biography",
     "user_image": "User image",
     "choose_user_image": "Choose user image",
@@ -541,7 +538,7 @@
     "log_out": "Log out",
     "wishlists": "Wishlists",
     "messages": "Messages",
-    "profile": "Profile",
+    "profile": "Perfil",
     "compose": "Compose",
     "send": "Send",
     "reset": "Reset",
@@ -816,11 +813,9 @@
     "nombre": "Nombre",
     "nombres": "Nombres",
     "apellidos": "Apellidos",
-   
     "contraseña": "Contraseña",
     "nombres:": "Nombres:",
     "apellidos:": "Apellidos:",
-    
     "contraseña:": "Contraseña:",
     "celular:": "Celular:",
     "regístrarse": "Regístrarse",
@@ -835,5 +830,10 @@
     "quiero_ser_premium": "Quiero ser premium",
     "espaol": "Espaol",
     "updated_successfully": "Updated successfully",
-    "mis_datos_personales": "Mis datos personales"
+    "mis_datos_personales": "Mis datos personales",
+    "universidad_o_centro_de_estudios": "Universidad o centro de estudios",
+    "membresia": "Mi membresía",
+    "software": "Software",
+    "soporte": "Soporte",
+    "user_membresia": "User membresia"
 }

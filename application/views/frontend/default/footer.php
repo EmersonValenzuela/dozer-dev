@@ -9,13 +9,13 @@
                     asesoria en implementación BIM en proyectos públicos y privados, con el objetivo de hacerlos más
                     eficientes y productivos en sus actividades laborales, somos escuela oficial de:
                 </p>
-                <img src="uploads\system\autodesk-footer.svg" alt="">
+                <img src="<?=base_url()?>uploads\system\autodesk-footer.svg" alt="">
             </div>
             <div class="col-6 col-sm-6 col-xl-3 px-4">
                 <ul class="list-unstyled text-small">
                     <li class="mb-2 mt-1 fondo-footer"><a class="link-secondary footer-hover-link" href="#">
                             <div class="d-flex flex-row ">
-                                <div class="p-2 "><img src="uploads\system\libro.svg" alt=""></div>
+                                <div class="p-2 "><img src="<?=base_url()?>uploads\system\libro.svg" alt=""></div>
                                 <div class="text-white fw-bold fs-6 p-2 text-center">LIBRO DE
                                     RECLAMACIONES</div>
                             </div>
@@ -23,7 +23,7 @@
                     </li>
                     <li class="mb-2 mt-1 fondo-footer"><a class="link-secondary footer-hover-link" href="#">
                             <div class="d-flex flex-row ">
-                                <div class="p-2 "><img src="uploads\system\certi.svg" alt=""></div>
+                                <div class="p-2 "><img src="<?=base_url()?>uploads\system\certi.svg" alt=""></div>
                                 <div class="text-white fw-bold fs-6 p-2 text-center">VERIFICADOR
                                     DE CERTIFICADOS</div>
                             </div>

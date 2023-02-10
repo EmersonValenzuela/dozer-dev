@@ -298,6 +298,9 @@ class Home extends CI_Controller
         } elseif ($param1 == 'user_photo') {
             $page_data['page_name'] = "update_user_photo";
             $page_data['page_title'] = site_phrase('update_user_photo');
+        }elseif ($param1 == 'user_membresia') {
+            $page_data['page_name'] = "user_membresia";
+            $page_data['page_title'] = site_phrase('user_membresia');
         }
         $page_data['user_details'] = $this->user_model->get_user($this->session->userdata('user_id'));
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);

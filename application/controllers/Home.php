@@ -159,7 +159,7 @@ class Home extends CI_Controller
 
     public function set_layout_to_session()
     {
-        $layout = $this->input->post('layout');
+        $layout = "grid" ;
         $this->session->set_userdata('layout', $layout);
     }
 
@@ -304,6 +304,19 @@ class Home extends CI_Controller
         } elseif ($param1 == 'user_photo') {
             $page_data['page_name'] = "update_user_photo";
             $page_data['page_title'] = site_phrase('update_user_photo');
+        }elseif ($param1 == 'user_mis_cursos') {
+            $page_data['page_name'] = "user_mis_cursos";
+            $page_data['page_title'] = site_phrase('user_mis_cursos');
+        }elseif ($param1 == 'user_mis_especializaciones') {
+            $page_data['page_name'] = "user_mis_especializaciones";
+            $page_data['page_title'] = site_phrase('user_mis_especializaciones');
+
+        }elseif ($param1 == 'user_mis_diplomados') {
+            $page_data['page_name'] = "user_mis_diplomados";
+            $page_data['page_title'] = site_phrase('user_mis_diplomados');
+        }elseif ($param1 == 'user_mis_certificados') {
+            $page_data['page_name'] = "user_mis_certificados";
+            $page_data['page_title'] = site_phrase('user_mis_certificados');
         }elseif ($param1 == 'user_membresia') {
             $page_data['page_name'] = "user_membresia";
             $page_data['page_title'] = site_phrase('user_membresia');

@@ -835,5 +835,13 @@
     "membresia": "Mi membresía",
     "software": "Software",
     "soporte": "Soporte",
-    "user_membresia": "User membresia"
+    "user_membresia": "User membresia",
+    "cursoos": "Mis Cursos",
+    "especializacioones": "Mis Especializaciones",
+    "diploomados": "Mis Diplomados",
+    "certificado": "Mis Certificados",
+    "user_mis_diplomados": "User mis diplomados",
+    "user_mis_cursos": "User mis cursos",
+    "user_mis_especializaciones": "User mis especializaciones",
+    "user_mis_certificados": "User mis certificados"
 }

@@ -5273,3 +5273,18 @@ color: #2a303b;
 .border-09{
     border-radius: 0.5rem;
 }
+
+.conf{
+    margin: 3rem 0 0 25rem;
+    color: white;
+}
+
+.ti-m{
+    font-size: 1.5rem;
+}
+
+.btn-m{
+    border-radius: 1rem;
+    font-weight: 500;
+    color: #131313;
+}

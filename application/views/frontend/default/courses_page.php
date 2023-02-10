@@ -254,7 +254,7 @@ if (isset($sub_category_id)) {
             type: 'POST',
             url: '<?php echo site_url('home/set_layout_to_session'); ?>',
             data: {
-                layout: grid
+                layout: "grid"
             },
             success: function(response) {
                 location.reload();

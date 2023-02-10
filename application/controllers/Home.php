@@ -130,13 +130,19 @@ class Home extends CI_Controller
         if ($row_category->parent == 5 || $row_category->id == 5) {
             $page_data['text_banner'] = "curso";
             $page_data['id_category'] = $row_category->id;
+            $page_data['parent'] = $row_category->parent;
+
             
         } elseif ($row_category->parent == 4 || $row_category->id == 4) {
             $page_data['text_banner'] = "Diplomados";
             $page_data['id_category'] = $row_category->id;
+            $page_data['parent'] = $row_category->parent;
+
         } elseif ($row_category->parent == 3 || $row_category->id == 3) {
             $page_data['text_banner'] = "especializaciones";
             $page_data['id_category'] = $row_category->id;
+            $page_data['parent'] = $row_category->parent;
+
         }
 
 

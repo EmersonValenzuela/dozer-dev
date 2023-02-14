@@ -49,7 +49,7 @@
                         necesites </p>
 
                 </div>
-                <span class="numberobje r-44">2</span>
+                <span class="numberobje ">2</span>
             </div>
 
             <div class="col-md-3 d-flex text-center justify-content-center ">
@@ -60,7 +60,7 @@
                         el depósito </p>
 
                 </div>
-                <span class="numberobje r-26">3</span>
+                <span class="numberobje ">3</span>
             </div>
             <div class="col-md-3 d-flex text-center justify-content-end ">
                 <div class=" cont-cuadro mr-md-auto mr-auto">
@@ -71,7 +71,7 @@
                     </p>
 
                 </div>
-                <span class="numberobje r-7">4</span>
+                <span class="numberobje">4</span>
             </div>
         </div>
     </div>
@@ -3255,7 +3255,7 @@ section .conten p {
                 </div>
             </div>
             <div class="col-6 col-md-6   mt-md-0">
-                <div class=" programa ">
+                <div class=" programa h-100">
                     <h3 class="fw-700 w-50 text-white">DevBIM RT2023.1</h3>
                     <span class="text-white fw-lighter fs-6">Caracteristicas claves:
                     </span>
@@ -3464,274 +3464,7 @@ section .conten p {
 <!-- Verificador de Certificado Dozer -->
 
 <!-- Conoce mas de Dozer-->
-<section>
-    <div class="container-xl">
-        <h3 class="course-carousel-title text-center mb-4 mt-5 text-cursos">
-            <p class="text-white fs-4 fw-bolder">¿Por qué elegir a Instituto Dozer? </p>
-            <p class="text-white fs-6 fw-light lh-sm">Cada día nos eforzamos en ser tu mejor tu mejor opción para
-                formarte <br>
-                en el desarrollo y uso de la metodología BIM y en el sector construcción
-            </p>
-        </h3>
 
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                    aria-label="Slide 6"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-flex flex-row justify-content-between">
-                        <div class="pb-5 align-self-end">
-                            <div class=" content  ">
-                                <p class="text-white fs-5 fw-bolder">Metodología Virtual, en <br>
-                                    directo junto al docente
-                                </p>
-                                <div class="text-white fs-6 fw-light lh-sm py-2">Resolverás todas tus dudas y preguntas
-                                    con
-                                    nuestras <br> clases en vivo asi como las clases de reforzamiento, <br>
-                                    interactuando
-                                    directamente con <br>
-                                    nuestros docentes expertos.</div>
-
-                                <div class="d-flex flex-column justify-content-start py-2">
-                                    <div class="d-flex flex-row">
-                                        <div class="pe-2 d-flex align-items-center"> <img
-                                                src="uploads\system\icon-flecha.png" alt=""> </div>
-                                        <div class="namecont text-white">Clases en vivo, 100% online</div>
-                                    </div>
-                                    <div class="d-flex flex-row">
-
-                                        <div class="pe-2 d-flex align-items-center"> <img
-                                                src="uploads\system\icon-flecha.png" alt=""> </div>
-                                        <div class="namecont text-white">Desde la comodidad de tu hogar</div>
-                                    </div>
-                                    <div class="d-flex flex-row">
-                                        <div class="pe-2 d-flex align-items-center"> <img
-                                                src="uploads\system\icon-flecha.png" alt=""> </div>
-                                        <div class="namecont text-white">Acceso en multiples plataformas por Zoom </div>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <div class="pb-5">
-                            <img class="position-absolute mb-5 bottom-0 fondoo" src="uploads\system\fondo.png" alt="">
-                            <img src="uploads\system\dozer-uno.png" class="d-block w-100 menu-area " alt="...">
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex flex-row justify-content-between">
-                        <div class="pb-5 align-self-end">
-                            <div class=" content  ">
-                                <p class="text-white fs-5 fw-bolder">Proyectos reales que te <br>
-                                    darán un aprendizaje real
-                                </p>
-                                <div class="text-white fs-6 fw-light lh-sm py-2">Enseñamos en base a proyectos reales
-                                    donde nuestros <br> docentes comparten todas sus <br>
-                                    experiencias a nuestros estudiantes.</div>
-
-                                <div class="d-flex flex-column justify-content-start py-2">
-                                    <div class="d-flex flex-row">
-                                        <div class="pe-2 d-flex align-items-center"> <img
-                                                src="uploads\system\icon-flecha.png" alt=""> </div>
-                                        <div class="namecont text-white">Casos reales en base a nuestros proyectos
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-row">
-
-                                        <div class="pe-2 d-flex align-items-center"> <img
-                                                src="uploads\system\icon-flecha.png" alt=""> </div>
-                                        <div class="namecont text-white">Clases desde cero hasta sus etapas finales
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-row">
-                                        <div class="pe-2 d-flex align-items-center"> <img
-                                                src="uploads\system\icon-flecha.png" alt=""> </div>
-                                        <div class="namecont text-white">De la orientación a la acción</div>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <div class="pb-5">
-                            <img class="position-absolute mb-5 bottom-0 fondoo r-1em" src="uploads\system\fondo.png"
-                                alt="">
-                            <img src="uploads\system\dozer-dos.png" class="d-block w-100 menu-area r-1em " alt="...">
-                        </div>
-
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex flex-row justify-content-between">
-                        <div class="pb-5 align-self-end">
-                            <div class=" content  ">
-                                <p class="text-white fs-5 fw-bolder">Certifica tus conocimientos con <br>
-                                    la garantia de Instituto Dozer
-                                </p>
-                                <div class="text-white fs-6 fw-light lh-sm py-2">Instituto Dozer reconocida tanto por
-                                    las instituciones <br> líderes del sector construcción.
-                                </div>
-
-                                <div class="d-flex flex-column justify-content-start py-2">
-                                    <div class="d-flex flex-row">
-                                        <div class="pe-2 d-flex align-items-center"> <img
-                                                src="uploads\system\icon-flecha.png" alt=""> </div>
-                                        <div class="namecont text-white">válido para postulaciones en el sector público
-                                            y privado</div>
-                                    </div>
-                                    <div class=" namecont text-white pt-5 pb-2">Tenemos convenios nacionales: </div>
-                                    <img src="uploads\system\icon-certi-tres.svg" alt="">
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <div class="pb-5 d-flex justify-content-end">
-                            <img class="position-absolute mb-5 bottom-0 fondoo" src="uploads\system\fondo.png" alt="">
-                            <img src="uploads\system\dozer-tres.svg" class="d-block  menu-area "
-                                style="width: 70%!important;" alt="...">
-                        </div>
-
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex flex-row justify-content-between">
-                        <div class="pb-5 align-self-end">
-                            <div class=" content  ">
-                                <p class="text-white fs-5 fw-bolder">Obtén el certificado con <br>
-                                    respaldo internacional
-                                </p>
-                                <div class="text-white fs-6 fw-light lh-sm py-2">Accede al certificado y acredita tus
-                                    <br>
-                                    conocimientos con el certificado <br>
-                                    internacional en cualquier momento.
-                                </div>
-
-                                <div class="d-flex flex-column justify-content-start py-2">
-                                    <div class="d-flex flex-row py-3">
-                                        <div class="pe-2 d-flex align-items-center"> <img
-                                                src="uploads\system\icon-flecha.png" alt=""> </div>
-                                        <div class="namecont text-white">Certificado oficial de Autodesk USA</div>
-                                    </div>
-
-                                    <img src="uploads\system\icon-autodesk.svg" alt="">
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <div class="pb-5 d-flex justify-content-end">
-                            <img class="position-absolute mb-5 bottom-0 fondoo" src="uploads\system\fondo.png" alt="">
-                            <img src="uploads\system\dozer-cuatro.svg" class="d-block  menu-area "
-                                style="width: 70%!important;" alt="...">
-                        </div>
-
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex flex-row justify-content-between">
-                        <div class="pb-5 align-self-end">
-                            <div class=" content  ">
-                                <p class="text-white fs-5 fw-bolder">Docentes expertos en el <br>
-                                    rubro de construcción
-                                </p>
-                                <div class="text-white fs-6 fw-light lh-sm py-2">Contamos con el conocimiento y la
-                                    experiencia en el <br> sector construcción, permitiéndonos tener un gran <br> equipo
-                                    de
-                                    expertos a disposición de nuestros alumnos y <br> empresas clientes.</div>
-
-                                <div class="d-flex flex-column justify-content-start py-2">
-                                    <div class="d-flex flex-row">
-                                        <div class="pe-2 d-flex align-items-center"> <img
-                                                src="uploads\system\icon-flecha.png" alt=""> </div>
-                                        <div class="namecont text-white">Docentes certificados por Autodesk - ACP
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-row">
-
-                                        <div class="pe-2 d-flex align-items-center"> <img
-                                                src="uploads\system\icon-flecha.png" alt=""> </div>
-                                        <div class="namecont text-white">Especialistas en el rubro de la Ingeniería y
-                                            Arquitectura
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-row">
-                                        <div class="pe-2 d-flex align-items-center"> <img
-                                                src="uploads\system\icon-flecha.png" alt=""> </div>
-                                        <div class="namecont text-white">Con vocación de enseñanza</div>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <div class="pb-5">
-                            <img class="position-absolute mb-5 bottom-0 fondoo r-1em" src="uploads\system\fondo.png"
-                                alt="">
-                            <img src="uploads\system\dozer-cinco.png" class="d-block w-100 menu-area r-1em " alt="...">
-                        </div>
-
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex flex-row justify-content-between">
-                        <div class="pb-5 align-self-end">
-                            <div class=" content  ">
-                                <p class="text-white fs-5 fw-bolder">Somos la Institución de mayor <br>
-                                    crecimiento en el Perú
-                                </p>
-                                <div class="text-white fs-6 fw-light lh-sm py-2">Somos la Institución preferidad por
-                                    estudiantes y <br> profesionales del sector construcción por nuestra <br>
-                                    metodología de
-                                    enseñanza en base a proyectos reales. </div>
-
-                                <div class="d-flex flex-column justify-content-start py-2">
-                                    <div class="d-flex flex-row">
-                                        <div class="pe-2 d-flex align-items-center"> <img
-                                                src="uploads\system\icon-flecha.png" alt=""> </div>
-                                        <div class="namecont text-white">Más de 15 mil estudiantes formados en Instituto
-                                            Dozer
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <div class="pb-5">
-                            <img class="position-absolute mb-5 bottom-0 fondoo r-1em" src="uploads\system\fondo.png"
-                                alt="">
-                            <img src="uploads\system\dozer-seis.png" class="d-block w-100 menu-area r-1em " alt="...">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-</section>
 <!-- Conoce mas de Dozer-->
 
 <!-- Testimonios -->

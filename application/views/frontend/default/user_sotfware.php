@@ -41,7 +41,7 @@ if (addon_status('affiliate_course')) {
                             <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_mis_cursos'); ?>"> <i
                                         class="	fas fa-graduation-cap"></i> <?php echo site_phrase('cursoos'); ?></a></li>
 
-                            <li class="active mb-3"><a
+                            <li class=" mb-3"><a
                                     href="<?php echo site_url('home/profile/user_mis_especializaciones'); ?>"> <i
                                         class="	fas fa-graduation-cap"></i>
                                     <?php echo site_phrase('especializacioones'); ?></a></li>
@@ -57,7 +57,7 @@ if (addon_status('affiliate_course')) {
                             <li class="  mb-3"><a href="<?php echo site_url('home/profile/user_membresia'); ?>">
                                     <i class="fas fa-chess-queen"></i> <?php echo site_phrase('membresia'); ?></a></li>
 
-                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_sotfware'); ?>"> <i
+                            <li class="active mb-3"><a href="<?php echo site_url('home/profile/user_sotfware'); ?>"> <i
                                         class="fas fa-laptop-code"></i> <?php echo site_phrase('software'); ?></a></li>
 
                             <li class="  mb-3"><a href="<?php echo site_url('home/profile/user_soporte'); ?>"><i
@@ -67,25 +67,36 @@ if (addon_status('affiliate_course')) {
                 </div>
             </div>
             <div class="col-md-8 col-lg-9 mt-4 mt-md-0">
-
-                <form class="w-100  radius-10 p-4 box-shadow-5"
-                    action="<?php echo site_url('home/update_profile/update_basics'); ?>" method="post">
-                    <div class="row">
-                        <div class="col-12 border-bottom mb-3 pb-3 text-white">
-                            <h4><?php echo site_phrase('sin_resultados'); ?></h4>
-
+                <div class=" box-shadow-5">
+                    <div class="d-flex flex-row">
+                        <div class="user-box">
+                            <img src="<?=base_url()?>uploads/system/software.png" alt="">
                         </div>
+                        <div class="d-flex flex-column position-absolute ">
+                            <div class="name p-2 fw-bolder">
+                                <div class="name fw-bolder ti-m text-sof-per">
+                                DevBIM RT2023
 
-
-
-
-
-
-
-
-
+                                </div>
+                            </div>
+                            <div class=" p-2  text-left m-cont-sof">
+                                <p class="fw-semibold">Contenido del software:<br></p>
+                                <ul>
+                               <p class="fw-normal"> <img src="<?=base_url()?>uploads/system/icon-flecha.png" alt="" > Plan BIM Perú documentado</p>
+                               <p class="fw-normal"> <img src="<?=base_url()?>uploads/system/icon-flecha.png" alt="" > Normativa BIM Perú e Internacional</p>
+                               <p class="fw-normal"> <img src="<?=base_url()?>uploads/system/icon-flecha.png" alt="" > Familias, Proyetos y Plantillas en Revit</p>
+                               <p class="fw-normal"> <img src="<?=base_url()?>uploads/system/icon-flecha.png" alt="" > Reglamento Nacional de Edificacions (RNE ) Perú</p>
+                               <p class="fw-normal"> <img src="<?=base_url()?>uploads/system/icon-flecha.png" alt="" > Normas de Transportes y Saneamiento Perú</p>
+                               <p class="fw-normal"> <img src="<?=base_url()?>uploads/system/icon-flecha.png" alt="" > Normas Varias</p>
+                                </ul>
+                                    <a class="bg-white py-1 px-5 btn-sof" href="#"> Descargar BIMdev 2023</a>
+                            </div>
+                        </div>
                     </div>
-                </form>
+
+
+                </div>
+
             </div>
         </div>
     </div>

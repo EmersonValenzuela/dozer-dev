@@ -28,40 +28,40 @@ if (addon_status('affiliate_course')) {
                 <div class="user-dashboard-sidebar box-shadow-5">
 
                     <div class="user-dashboard-menu">
-                        <ul>
+                    <ul>
                             <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_profile'); ?>"> <i
-                                        class="fas fa-user-circle"></i> <?php echo site_phrase('profile'); ?></a></li>
+                                        class="fas fa-user-alt"></i> <?php echo site_phrase('profile'); ?></a></li>
 
                             <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_credentials'); ?>"> <i
-                                        class="fas fa-lock"></i> <?php echo site_phrase('account'); ?></a></li>
+                                        class="fas fa-user-edit"></i> <?php echo site_phrase('editar_perfil'); ?></a></li>
 
                             <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_photo'); ?>"> <i
                                         class="fas fa-camera-retro"></i> <?php echo site_phrase('photo'); ?></a></li>
 
                             <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_mis_cursos'); ?>"> <i
-                                        class="fas fa-camera-retro"></i> <?php echo site_phrase('cursoos'); ?></a></li>
+                                        class="	fas fa-graduation-cap"></i> <?php echo site_phrase('cursoos'); ?></a></li>
 
                             <li class=" mb-3"><a
                                     href="<?php echo site_url('home/profile/user_mis_especializaciones'); ?>"> <i
-                                        class="fas fa-camera-retro"></i>
+                                        class="	fas fa-graduation-cap"></i>
                                     <?php echo site_phrase('especializacioones'); ?></a></li>
 
                             <li class="  mb-3"><a href="<?php echo site_url('home/profile/user_mis_diplomados'); ?>"> <i
-                                        class="fas fa-camera-retro"></i> <?php echo site_phrase('diploomados'); ?></a>
+                                        class="	fas fa-graduation-cap"></i> <?php echo site_phrase('diploomados'); ?></a>
                             </li>
 
                             <li class="  mb-3"><a href="<?php echo site_url('home/profile/user_mis_certificados'); ?>">
-                                    <i class="fas fa-camera-retro"></i> <?php echo site_phrase('certificado'); ?></a>
+                                    <i class="fas fa-award"></i> <?php echo site_phrase('certificado'); ?></a>
                             </li>
 
-                            <li class=" active mb-3"><a href="<?php echo site_url('home/profile/user_membresia'); ?>">
-                                    <i class="fas fa-camera-retro"></i> <?php echo site_phrase('membresia'); ?></a></li>
+                            <li class="active  mb-3"><a href="<?php echo site_url('home/profile/user_membresia'); ?>">
+                                    <i class="fas fa-chess-queen"></i> <?php echo site_phrase('membresia'); ?></a></li>
 
-                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_photo'); ?>"> <i
-                                        class="fas fa-camera-retro"></i> <?php echo site_phrase('software'); ?></a></li>
+                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_sotfware'); ?>"> <i
+                                        class="fas fa-laptop-code"></i> <?php echo site_phrase('software'); ?></a></li>
 
-                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_photo'); ?>"> <i
-                                        class="fas fa-camera-retro"></i> <?php echo site_phrase('soporte'); ?></a></li>
+                            <li class="  mb-3"><a href="<?php echo site_url('home/profile/user_soporte'); ?>"><i
+                                        class="fas fa-cogs"></i> <?php echo site_phrase('soporte'); ?></a></li>
                         </ul>
                     </div>
                 </div>
@@ -74,13 +74,13 @@ if (addon_status('affiliate_course')) {
                         </div>
                         <div class="d-flex flex-column position-absolute conf">
                             <div class="name p-2 fw-bolder">
-                                <div class="name fw-bolder ti-m">
-                                    Migra a Premium
+                                <div class="name fw-bolder ti-m text-center">
+                                    Migra a Premium <br>
                                     Hoy mismo!
 
                                 </div>
                             </div>
-                            <div class=" p-2 fw-lighter">
+                            <div class=" p-2 fw-lighter text-center">
                                 <p>Con un solo pago podrás acceder <br>
                                     a los 38 cursos con certificaciones <br>
                                     oficiales de Autodesk y de Instituto <br>

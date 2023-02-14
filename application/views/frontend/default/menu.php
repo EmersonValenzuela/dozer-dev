@@ -11,7 +11,7 @@
   }
 </style>
 
-  <ul class="mobile-main-nav">
+  <ul class="mobile-main-nav 	d-block  d-md-block d-lg-none">
     <div class="mobile-menu-helper-top"></div>
     <li class="has-children text-nowrap fw-bold">
       <a href="">
@@ -77,6 +77,17 @@
       <?php endif; ?>
       </ul>
     </li>
+    <a href="">
+                    <span class="fw-500 text-white main-nav-wrap ">Nosotros</span>
+                </a>
+
+
+
+                <a href="">
+                    <span class="fw-500 text-white main-nav-wrap ">Premiun</span>
+                </a>
     <div class="mobile-menu-helper-bottom"></div>
   </ul>
+
+
 </div>

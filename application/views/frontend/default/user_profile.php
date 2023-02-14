@@ -28,49 +28,55 @@ if (addon_status('affiliate_course')) {
                 <div class="user-dashboard-sidebar box-shadow-5">
 
                     <div class="user-dashboard-menu">
-                        <ul>
+                    <ul>
                             <li class="active mb-3"><a href="<?php echo site_url('home/profile/user_profile'); ?>"> <i
-                                        class="fas fa-user-circle"></i> <?php echo site_phrase('profile'); ?></a></li>
+                                        class="fas fa-user-alt"></i> <?php echo site_phrase('profile'); ?></a></li>
 
                             <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_credentials'); ?>"> <i
-                                        class="fas fa-lock"></i> <?php echo site_phrase('account'); ?></a></li>
+                                        class="fas fa-user-edit"></i> <?php echo site_phrase('editar_perfil'); ?></a>
+                            </li>
 
                             <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_photo'); ?>"> <i
                                         class="fas fa-camera-retro"></i> <?php echo site_phrase('photo'); ?></a></li>
-                            
+
                             <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_mis_cursos'); ?>"> <i
-                                        class="fas fa-camera-retro"></i> <?php echo site_phrase('cursoos'); ?></a></li>
-                            
-                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_mis_especializaciones'); ?>"> <i
-                                        class="fas fa-camera-retro"></i> <?php echo site_phrase('especializacioones'); ?></a></li>
+                                        class="	fas fa-graduation-cap"></i> <?php echo site_phrase('cursoos'); ?></a>
+                            </li>
 
-                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_mis_diplomados'); ?>"> <i
-                                        class="fas fa-camera-retro"></i> <?php echo site_phrase('diploomados'); ?></a></li>
+                            <li class=" mb-3"><a
+                                    href="<?php echo site_url('home/profile/user_mis_especializaciones'); ?>"> <i
+                                        class="	fas fa-graduation-cap"></i>
+                                    <?php echo site_phrase('especializacioones'); ?></a></li>
 
-                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_mis_certificados'); ?>"> <i
-                                        class="fas fa-camera-retro"></i> <?php echo site_phrase('certificado'); ?></a></li>
+                            <li class="  mb-3"><a href="<?php echo site_url('home/profile/user_mis_diplomados'); ?>"> <i
+                                        class="	fas fa-graduation-cap"></i>
+                                    <?php echo site_phrase('diploomados'); ?></a>
+                            </li>
 
-                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_membresia'); ?>"> <i
-                                        class="fas fa-camera-retro"></i> <?php echo site_phrase('membresia'); ?></a></li>
+                            <li class="  mb-3"><a href="<?php echo site_url('home/profile/user_mis_certificados'); ?>">
+                                    <i class="fas fa-award"></i> <?php echo site_phrase('certificado'); ?></a>
+                            </li>
 
-                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_photo'); ?>"> <i
-                                        class="fas fa-camera-retro"></i> <?php echo site_phrase('software'); ?></a></li>
+                            <li class="  mb-3"><a href="<?php echo site_url('home/profile/user_membresia'); ?>">
+                                    <i class="fas fa-chess-queen"></i> <?php echo site_phrase('membresia'); ?></a></li>
 
-                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_photo'); ?>"> <i
-                                        class="fas fa-camera-retro"></i> <?php echo site_phrase('soporte'); ?></a></li>
-                                        
+                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_sotfware'); ?>"> <i
+                                        class="fas fa-laptop-code"></i> <?php echo site_phrase('software'); ?></a></li>
+
+                            <li class="  mb-3"><a href="<?php echo site_url('home/profile/user_soporte'); ?>"><i
+                                        class="fas fa-cogs"></i> <?php echo site_phrase('soporte'); ?></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-8 col-lg-9 mt-4 mt-md-0">
-                <div class="user-dashboard-sidebar box-shadow-5">
+                <div class="user-dashboard-sidebar box-shadow-5" style="background-color: #373737;">
                     <div class="d-flex flex-row">
                         <div class="user-box">
                             <img src="<?php echo $this->user_model->get_user_image_url($this->session->userdata('user_id')); ?>"
                                 alt="" class="img-fluid">
                         </div>
-                        <div class="d-flex flex-column">
+                        <div class="d-flex flex-column text-white">
                             <div class="name p-2 fw-bolder">
                                 <div class="name">
                                     Hola! <?php echo $user_details['first_name'] . ' ' . $user_details['last_name']; ?>
@@ -101,7 +107,7 @@ if (addon_status('affiliate_course')) {
 
                                 <input type="text" class="form-control" name="first_name" id="FristName"
                                     placeholder="<?php echo site_phrase('first_name'); ?>"
-                                    value="<?php echo $user_details['first_name']; ?>">
+                                    value="<?php echo $user_details['first_name']; ?>" readonly>
                             </div>
                         </div>
                         <div class="col-md-6 p-2">
@@ -111,7 +117,7 @@ if (addon_status('affiliate_course')) {
 
                                 <input type="text" class="form-control" name="last_name"
                                     placeholder="<?php echo site_phrase('last_name'); ?>"
-                                    value="<?php echo $user_details['last_name']; ?>">
+                                    value="<?php echo $user_details['last_name']; ?>" readonly>
                             </div>
                         </div>
                         <div class="col-md-6 p-2">
@@ -120,10 +126,18 @@ if (addon_status('affiliate_course')) {
 
                                 <input type="text" class="form-control" name="dni" id="FristName"
                                     placeholder="<?php echo site_phrase('dni'); ?>"
-                                    value="<?php echo $user_details['dni']; ?>">
+                                    value="<?php echo $user_details['dni']; ?>" readonly>
                             </div>
                         </div>
-                        
+                        <div class="col-md-6 p-2">
+                            <label class="text-white fw-600" for="FristName"><?php echo site_phrase('fecha_de_nacimiento'); ?></label>
+                            <div class="input-group">
+
+                                <input type="text" class="form-control" name="fecha_de_nacimiento" id="FristName"
+                                    placeholder="<?php echo site_phrase('fecha_de_nacimiento'); ?>"
+                                    value="<?php echo $user_details['fecha_de_nacimiento']; ?>" readonly>
+                            </div>
+                        </div>
 
                         <div class="col-md-6 p-2">
                             <label class="text-white fw-600"

@@ -14,18 +14,26 @@
                     height="35"></a>
 
             <?php include 'menu.php'; ?>
-            <div class="me-auto">
+            <div class="me-auto d-none d-md-none d-lg-block text-white">
+                <?php
+                $categoria = $this->crud_model->get_categoria()->result_array();
+                foreach ($categoria as $key => $category):?>
+                <a class="text-white fw-500 px-2" href="javascript:;" onclick="redirect_to('<?php echo site_url('home/courses?category='.$category['slug']); ?>')">
+                    <span><?php echo $category['name']; ?></span>
+                    <span class="has-sub-category ms-auto"></span></a>
 
+                <?php endforeach; ?>
+                
                 <a href="">
                     <span class="fw-500 text-white main-nav-wrap ">Nosotros</span>
                 </a>
 
-        
+
 
                 <a href="">
                     <span class="fw-500 text-white main-nav-wrap ">Premiun</span>
                 </a>
-
+                
             </div>
 
 

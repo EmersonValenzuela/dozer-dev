@@ -46,10 +46,10 @@ class Home extends CI_Controller
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
-    public function nosotros()
+    public function about()
     {
         $page_data['page_name'] = "nosotros";
-        $page_data['page_title'] = site_phrase('nosotros');
+        $page_data['page_title'] = site_phrase('Nosotros');
         
        
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
@@ -156,7 +156,7 @@ class Home extends CI_Controller
             $page_data['variable']  = site_url('uploads/system/portada-diplomados.png');
             $page_data['text_banner'] = "El mejor momento para invertir en tus 
             metas profesionales es Ahora!";
-            $page_data['variable_logo']  = base_url('../uploads/system/logo-portadas.png');
+            $page_data['variable_logo']  = site_url('uploads/system/logo-portadas.png');
             $page_data['id_category'] = $row_category->id;
             $page_data['parent'] = $row_category->parent;
 
@@ -164,7 +164,7 @@ class Home extends CI_Controller
             $page_data['variable']  = site_url('uploads/system/portada-diplomados.png');
             $page_data['text_banner'] = "El mejor momento para invertir en tus 
             metas profesionales es Ahora! ";
-            $page_data['variable_logo']  = base_url('../uploads/system/logo-portadas.png');
+            $page_data['variable_logo']  = site_url('uploads/system/logo-portadas.png');
             $page_data['id_category'] = $row_category->id;
             $page_data['parent'] = $row_category->parent;
 

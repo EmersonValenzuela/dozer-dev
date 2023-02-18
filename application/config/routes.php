@@ -92,6 +92,9 @@ $route['tutors/(:any)'] = "addons/tutor_booking/list_of_tuitions/$1";
 $route['tutor/filter'] = "addons/tutor_booking/list_of_tuitions_after_filter";
 $route['schedules_bookings/(:any)'] = "addons/tutor_booking/tutor_details/$1";
 $route['my_bookings'] = "addons/tutor_booking/booked_schedules_student";
+
+$route['Nosotros'] = "home/about";
+
 //End tutor booking
 
 $route['translate_uri_dashes'] = FALSE;

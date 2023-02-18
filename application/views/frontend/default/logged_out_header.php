@@ -24,7 +24,7 @@
 
                 <?php endforeach; ?>
                 
-                <a href="<?php echo base_url('nosotros.php') ?>">
+                <a href="<?php echo base_url('Nosotros') ?>">
                     <span class="fw-500 text-white main-nav-wrap ">Nosotros</span>
                 </a>
 

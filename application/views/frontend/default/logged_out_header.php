@@ -20,11 +20,11 @@
                 foreach ($categoria as $key => $category):?>
                 <a class="text-white fw-500 px-2" href="javascript:;" onclick="redirect_to('<?php echo site_url('home/courses?category='.$category['slug']); ?>')">
                     <span><?php echo $category['name']; ?></span>
-                    <span class="has-sub-category ms-auto"></span></a>
+                    <span class="has-sub-category ms-auto"></span> </a>
 
                 <?php endforeach; ?>
                 
-                <a href="">
+                <a href="<?php echo base_url('nosotros.php') ?>">
                     <span class="fw-500 text-white main-nav-wrap ">Nosotros</span>
                 </a>
 

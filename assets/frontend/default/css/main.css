@@ -4226,21 +4226,21 @@ div.tagsinput span.tag a {
     top: 0;
     width: 18px;
     height: 18px;
-    border: 1px solid #ddd;
-    border-radius: 100%;
-    background: #fff;
-    outline: 1px solid #eb5252;
+    /* border: 1px solid #ddd; */
+    border-radius: 4px;
+    background: #373737;
+    /* outline: 1px solid #eb5252;*/
 }
 .custom-radio:checked + label:after,
 .custom-radio:not(:checked) + label:after {
     content: '';
     width: 12px;
     height: 12px;
-    background: #eb5252;
+    background: white;
     position: absolute;
     top: 3px;
     left: 3px;
-    border-radius: 100%;
+    border-radius: 2px;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
@@ -5327,4 +5327,15 @@ color: #2a303b;
     border: none;
     color: #e3dfdf52;
     padding: 5px;
+}
+
+.dondenomb_category{
+    background: #373737;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.subcategory_nomb{
+    background: #272727;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

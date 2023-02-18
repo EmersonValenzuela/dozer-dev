@@ -22,12 +22,14 @@ if (isset($sub_category_id)) {
     <div class="container">
         <div class="row">
             <div class="col-lg-3 filter-area">
-                <div class="card border-0 radius-10 box-shadow-5">
-                    <div id="collapseFilter" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="d-flex position-relative flex-column border-0 radius-10 box-shadow-5">
+                    <div id="collapseFilter" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordion">
                         <div class="card-body p-0">
-                            <div class="filter_type px-4 pt-4">
-                                <h5 class="fw-700 mb-4"><?php echo site_phrase('Categoria'); ?></h5>
-                                <ul>
+                            <div class="   filter_type px-4 pt-4">
+                                <h5 class="text-white px-3 py-2 fw-700 m-0 dondenomb_category"
+                                    style="background: #373737;"><?php echo site_phrase('Categoría'); ?></h5>
+                                <ul class="text-white p-3 subcategory_nomb" style="background: #272727;">
 
                                     <?php
                                     $counter = 1;
@@ -39,124 +41,130 @@ if (isset($sub_category_id)) {
                                     }
 
                                     foreach ($categoria as $category) : ?>
-                                        <li class="mt-3">
-                                            <div class="text-15px fw-700 <?php if ($counter > $number_of_visible_categoria) : ?> hidden-categoria hidden <?php else : ?> d-flex<?php endif; ?>">
-                                                <input type="radio" id="category-<?php echo $category['id']; ?>" name="sub_category" class="categoria custom-radio" value="<?php echo $category['slug']; ?>" onclick="filter(this)" <?php if ($selected_category_id == $category['id']) echo 'checked'; ?>>
-                                                <label for="category-<?php echo $category['id']; ?>"><?php echo $category['name']; ?></label>
-                                                <div class="ms-auto">
-                                                    (<?php echo $this->crud_model->get_active_course_by_category_id($category['id'], 'category_id')->num_rows(); ?>)
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <?php foreach ($this->crud_model->get_sub_categoria($category['id']) as $sub_category) : ?>
-                                            <li class="ms-3">
-                                                <div class="<?php if ($counter > $number_of_visible_categoria) : ?> hidden-categoria hidden <?php else : ?> d-flex<?php endif; ?>">
-                                                    <input type="radio" id="sub_category-<?php echo $sub_category['id']; ?>" name="sub_category" class="categoria custom-radio" value="<?php echo $sub_category['slug']; ?>" onclick="filter(this)" <?php if ($selected_category_id == $sub_category['id']) echo 'checked'; ?>>
-                                                    <label for="sub_category-<?php echo $sub_category['id']; ?>"><?php echo $sub_category['name']; ?></label>
-                                                    <div class="ms-auto">
-                                                        (<?php echo $this->crud_model->get_active_course_by_category_id($sub_category['id'], 'sub_category_id')->num_rows(); ?>)
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <?php $counter++;  ?>
-                                        <?php endforeach; ?>
-                                        <?php $counter++;  ?>
+                                    <li class="">
+                                        <div
+                                            class="text-15px fw-700 <?php if ($counter > $number_of_visible_categoria) : ?> hidden-categoria hidden <?php else : ?> d-flex<?php endif; ?>">
+                                            <input type="radio" id="category-<?php echo $category['id']; ?>"
+                                                name="sub_category" class="categoria custom-radio"
+                                                value="<?php echo $category['slug']; ?>" onclick="filter(this)"
+                                                <?php if ($selected_category_id == $category['id']) echo 'checked'; ?>>
+                                            <label class="text-white"
+                                                for="category-<?php echo $category['id']; ?>"><?php echo $category['name']; ?></label>
+
+                                        </div>
+                                    </li>
+                                    <?php foreach ($this->crud_model->get_sub_categoria($category['id']) as $sub_category) : ?>
+                                    <li class="ms-3 ">
+                                        <div
+                                            class="<?php if ($counter > $number_of_visible_categoria) : ?> hidden-categoria hidden <?php else : ?> d-flex<?php endif; ?>">
+                                            <input type="radio" id="sub_category-<?php echo $sub_category['id']; ?>"
+                                                name="sub_category" class="categoria custom-radio"
+                                                value="<?php echo $sub_category['slug']; ?>" onclick="filter(this)"
+                                                <?php if ($selected_category_id == $sub_category['id']) echo 'checked'; ?>>
+                                            <label class=" text-white"
+                                                for="sub_category-<?php echo $sub_category['id']; ?>"><?php echo $sub_category['name']; ?></label>
+
+                                        </div>
+                                    </li>
+                                    <?php $counter++;  ?>
+                                    <?php endforeach; ?>
+                                    <?php $counter++;  ?>
                                     <?php endforeach; ?>
                                 </ul>
-                                <a href="javascript:;" class="text-13px fw-500" id="city-toggle-btn" onclick="showToggle(this, 'hidden-categoria')"><?php echo $total_number_of_categoria > $number_of_visible_categoria ? site_phrase('show_more') : ""; ?></a>
                             </div>
-                            <hr>
+                            <div class="filter_type px-4">
+                                <h5 class="text-white px-3 py-2 fw-700 m-0 dondenomb_category"><?php echo site_phrase('level'); ?></h5>
+                                <ul class="text-white p-3 subcategory_nomb">
+                                    <li>
+                                        <div class="">
+                                            <input type="radio" id="all" name="level" class="level custom-radio "
+                                                value="all" onclick="filter(this)"
+                                                <?php if ($selected_level == 'all') echo 'checked'; ?>>
+                                            <label class="text-white" for="all"><?php echo site_phrase('all'); ?></label>
+                                        </div>
+                                        <div class="">
+                                            <input type="radio" id="beginner" name="level" class="level custom-radio"
+                                                value="beginner" onclick="filter(this)"
+                                                <?php if ($selected_level == 'beginner') echo 'checked'; ?>>
+                                            <label class="text-white" for="beginner"><?php echo site_phrase('beginner'); ?></label>
+                                        </div>
+                                        <div class="">
+                                            <input type="radio" id="advanced" name="level" class="level custom-radio"
+                                                value="advanced" onclick="filter(this)"
+                                                <?php if ($selected_level == 'advanced') echo 'checked'; ?>>
+                                            <label class="text-white" for="advanced"><?php echo site_phrase('advanced'); ?></label>
+                                        </div>
+                                        <div class="">
+                                            <input type="radio" id="intermediate" name="level"
+                                                class="level custom-radio" value="intermediate" onclick="filter(this)"
+                                                <?php if ($selected_level == 'intermediate') echo 'checked'; ?>>
+                                            <label class="text-white" for="intermediate"><?php echo site_phrase('intermediate'); ?></label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                           <br>
                             <div class="filter_type px-4">
                                 <div class="form-group">
                                     <h5 class="fw-700 mb-3"><?php echo site_phrase('price'); ?></h5>
                                     <ul>
                                         <li>
                                             <div class="">
-                                                <input type="radio" id="price_all" name="price" class="prices custom-radio" value="all" onclick="filter(this)" <?php if ($selected_price == 'all') echo 'checked'; ?>>
+                                                <input type="radio" id="price_all" name="price"
+                                                    class="prices custom-radio" value="all" onclick="filter(this)"
+                                                    <?php if ($selected_price == 'all') echo 'checked'; ?>>
                                                 <label for="price_all"><?php echo site_phrase('all'); ?></label>
                                             </div>
                                             <div class="">
-                                                <input type="radio" id="price_free" name="price" class="prices custom-radio" value="free" onclick="filter(this)" <?php if ($selected_price == 'free') echo 'checked'; ?>>
+                                                <input type="radio" id="price_free" name="price"
+                                                    class="prices custom-radio" value="free" onclick="filter(this)"
+                                                    <?php if ($selected_price == 'free') echo 'checked'; ?>>
                                                 <label for="price_free"><?php echo site_phrase('free'); ?></label>
                                             </div>
                                             <div class="">
-                                                <input type="radio" id="price_paid" name="price" class="prices custom-radio" value="paid" onclick="filter(this)" <?php if ($selected_price == 'paid') echo 'checked'; ?>>
+                                                <input type="radio" id="price_paid" name="price"
+                                                    class="prices custom-radio" value="paid" onclick="filter(this)"
+                                                    <?php if ($selected_price == 'paid') echo 'checked'; ?>>
                                                 <label for="price_paid"><?php echo site_phrase('paid'); ?></label>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <hr>
-                            <div class="filter_type px-4">
-                                <h5 class="fw-700 mb-3"><?php echo site_phrase('level'); ?></h5>
-                                <ul>
-                                    <li>
-                                        <div class="">
-                                            <input type="radio" id="all" name="level" class="level custom-radio" value="all" onclick="filter(this)" <?php if ($selected_level == 'all') echo 'checked'; ?>>
-                                            <label for="all"><?php echo site_phrase('all'); ?></label>
-                                        </div>
-                                        <div class="">
-                                            <input type="radio" id="beginner" name="level" class="level custom-radio" value="beginner" onclick="filter(this)" <?php if ($selected_level == 'beginner') echo 'checked'; ?>>
-                                            <label for="beginner"><?php echo site_phrase('beginner'); ?></label>
-                                        </div>
-                                        <div class="">
-                                            <input type="radio" id="advanced" name="level" class="level custom-radio" value="advanced" onclick="filter(this)" <?php if ($selected_level == 'advanced') echo 'checked'; ?>>
-                                            <label for="advanced"><?php echo site_phrase('advanced'); ?></label>
-                                        </div>
-                                        <div class="">
-                                            <input type="radio" id="intermediate" name="level" class="level custom-radio" value="intermediate" onclick="filter(this)" <?php if ($selected_level == 'intermediate') echo 'checked'; ?>>
-                                            <label for="intermediate"><?php echo site_phrase('intermediate'); ?></label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <hr>
-                            <div class="filter_type px-4">
-                                <h5 class="fw-700 mb-3"><?php echo site_phrase('language'); ?></h5>
-                                <ul>
-                                    <li>
-                                        <div class="">
-                                            <input type="radio" id="all_language" name="language" class="languages custom-radio" value="<?php echo 'all'; ?>" onclick="filter(this)" <?php if ($selected_language == "all") echo 'checked'; ?>>
-                                            <label for="<?php echo 'all_language'; ?>"><?php echo site_phrase('all'); ?></label>
-                                        </div>
-                                    </li>
-                                    <?php
-                                    $languages = $this->crud_model->get_all_languages();
-                                    foreach ($languages as $language) : ?>
-                                        <li>
-                                            <div class="">
-                                                <input type="radio" id="language_<?php echo $language; ?>" name="language" class="languages custom-radio" value="<?php echo $language; ?>" onclick="filter(this)" <?php if ($selected_language == $language) echo 'checked'; ?>>
-                                                <label for="language_<?php echo $language; ?>"><?php echo ucfirst($language); ?></label>
-                                            </div>
-                                        </li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </div>
+                            <br>
+                            
+                            
+                            
                             <hr>
                             <div class="filter_type px-4">
                                 <h5 class="fw-700 mb-3"><?php echo site_phrase('ratings'); ?></h5>
                                 <ul>
                                     <li>
                                         <div class="">
-                                            <input type="radio" id="all_rating" name="rating" class="ratings custom-radio" value="<?php echo 'all'; ?>" onclick="filter(this)" <?php if ($selected_rating == "all") echo 'checked'; ?>>
+                                            <input type="radio" id="all_rating" name="rating"
+                                                class="ratings custom-radio" value="<?php echo 'all'; ?>"
+                                                onclick="filter(this)"
+                                                <?php if ($selected_rating == "all") echo 'checked'; ?>>
                                             <label for="all_rating"><?php echo site_phrase('all'); ?></label>
                                         </div>
                                     </li>
                                     <?php for ($i = 1; $i <= 5; $i++) : ?>
-                                        <li>
-                                            <div class="">
-                                                <input type="radio" id="rating_<?php echo $i; ?>" name="rating" class="ratings custom-radio" value="<?php echo $i; ?>" onclick="filter(this)" <?php if ($selected_rating == $i) echo 'checked'; ?>>
-                                                <label for="rating_<?php echo $i; ?>">
-                                                    <?php for ($j = 1; $j <= $i; $j++) : ?>
-                                                        <i class="fas fa-star" style="color: #f4c150;"></i>
-                                                    <?php endfor; ?>
-                                                    <?php for ($j = $i; $j < 5; $j++) : ?>
-                                                        <i class="far fa-star" style="color: #dedfe0;"></i>
-                                                    <?php endfor; ?>
-                                                </label>
-                                            </div>
-                                        </li>
+                                    <li>
+                                        <div class="">
+                                            <input type="radio" id="rating_<?php echo $i; ?>" name="rating"
+                                                class="ratings custom-radio" value="<?php echo $i; ?>"
+                                                onclick="filter(this)"
+                                                <?php if ($selected_rating == $i) echo 'checked'; ?>>
+                                            <label for="rating_<?php echo $i; ?>">
+                                                <?php for ($j = 1; $j <= $i; $j++) : ?>
+                                                <i class="fas fa-star" style="color: #f4c150;"></i>
+                                                <?php endfor; ?>
+                                                <?php for ($j = $i; $j < 5; $j++) : ?>
+                                                <i class="far fa-star" style="color: #dedfe0;"></i>
+                                                <?php endfor; ?>
+                                            </label>
+                                        </div>
+                                    </li>
                                     <?php endfor; ?>
                                 </ul>
                             </div>
@@ -170,15 +178,22 @@ if (isset($sub_category_id)) {
                     background-position: right;
                     background-repeat: no-repeat;
                     background-size: 59rem;
-                    border-radius: 30px;
+                    border-radius: 10px;
                 ">
                     <div class="col-md-6 position-relative">
                         <p class="fw-bold text-white px-5"><?= $text_banner ?></p>
-                        <p class="px-5 text-white">Migra a premium hoy mismo!</p>
+                        <p class="px-5 text-white"><?= $sub_text_banner ?></p>
                         <div class="px-5">
-                            <a class="btn-premiun p-1 border-09" href="#">Quiero ser <img class="px-1" src="..\uploads\system\icon-corona.png" alt=""> Premium</a>
+                            <a class="btn-premiun p-1 border-09" href="#"><?= $btn_banner ?>
+                                <img style="background-image: url(<?= $variable_dos?>);
+                            background-position: right;
+                            background-repeat: no-repeat;
+                            background-size: 9rem;">
+                                <?= $btn_dos_banner ?>
+                            </a>
 
                         </div>
+                        <div style="background-image: url(<?= $variable_logo?>)"></div>
                     </div>
                     <div class="col-md-6 text-end filter-sort-by">
 
@@ -187,7 +202,7 @@ if (isset($sub_category_id)) {
                 <div class="category-course-list">
                     <?php include 'category_wise_course_' . $layout . '_layout.php'; ?>
                     <?php if (count($courses) == 0) : ?>
-                        <?php echo site_phrase('no_result_found'); ?>
+                    <?php echo site_phrase('no_result_found'); ?>
                     <?php endif; ?>
                 </div>
                 <nav>
@@ -203,78 +218,78 @@ if (isset($sub_category_id)) {
 </section>
 
 <script type="text/javascript">
-    function get_url() {
-        var urlPrefix = '<?php echo site_url('home/courses?'); ?>'
-        var urlSuffix = "";
-        var slectedCategory = "";
-        var selectedPrice = "";
-        var selectedLevel = "";
-        var selectedLanguage = "";
-        var selectedRating = "";
+function get_url() {
+    var urlPrefix = '<?php echo site_url('home/courses?'); ?>'
+    var urlSuffix = "";
+    var slectedCategory = "";
+    var selectedPrice = "";
+    var selectedLevel = "";
+    var selectedLanguage = "";
+    var selectedRating = "";
 
-        // Get selected category
-        $('.categoria:checked').each(function() {
-            slectedCategory = $(this).attr('value');
-        });
-
-        // Get selected price
-        $('.prices:checked').each(function() {
-            selectedPrice = $(this).attr('value');
-        });
-
-        // Get selected difficulty Level
-        $('.level:checked').each(function() {
-            selectedLevel = $(this).attr('value');
-        });
-
-        // Get selected difficulty Level
-        $('.languages:checked').each(function() {
-            selectedLanguage = $(this).attr('value');
-        });
-
-        // Get selected rating
-        $('.ratings:checked').each(function() {
-            selectedRating = $(this).attr('value');
-        });
-
-        urlSuffix = "category=" + slectedCategory + "&&price=" + selectedPrice + "&&level=" + selectedLevel +
-            "&&language=" + selectedLanguage + "&&rating=" + selectedRating;
-        var url = urlPrefix + urlSuffix;
-        return url;
-    }
-
-    function filter() {
-        var url = get_url();
-        window.location.replace(url);
-        //console.log(url);
-    }
-
-    function toggleLayout(layout) {
-        $.ajax({
-            type: 'POST',
-            url: '<?php echo site_url('home/set_layout_to_session'); ?>',
-            data: {
-                layout: "grid"
-            },
-            success: function(response) {
-                location.reload();
-            }
-        });
-    }
-
-    function showToggle(elem, selector) {
-        $('.' + selector).slideToggle(50);
-        $('.' + selector).toggleClass("d-flex");
-        if ($(elem).text() === "<?php echo site_phrase('show_more'); ?>") {
-            $(elem).text('<?php echo site_phrase('show_less'); ?>');
-        } else {
-            $(elem).text('<?php echo site_phrase('show_more'); ?>');
-        }
-    }
-
-    $('.course-compare').click(function(e) {
-        e.preventDefault()
-        var redirect_to = $(this).attr('redirect_to');
-        window.location.replace(redirect_to);
+    // Get selected category
+    $('.categoria:checked').each(function() {
+        slectedCategory = $(this).attr('value');
     });
+
+    // Get selected price
+    $('.prices:checked').each(function() {
+        selectedPrice = $(this).attr('value');
+    });
+
+    // Get selected difficulty Level
+    $('.level:checked').each(function() {
+        selectedLevel = $(this).attr('value');
+    });
+
+    // Get selected difficulty Level
+    $('.languages:checked').each(function() {
+        selectedLanguage = $(this).attr('value');
+    });
+
+    // Get selected rating
+    $('.ratings:checked').each(function() {
+        selectedRating = $(this).attr('value');
+    });
+
+    urlSuffix = "category=" + slectedCategory + "&&price=" + selectedPrice + "&&level=" + selectedLevel +
+        "&&language=" + selectedLanguage + "&&rating=" + selectedRating;
+    var url = urlPrefix + urlSuffix;
+    return url;
+}
+
+function filter() {
+    var url = get_url();
+    window.location.replace(url);
+    //console.log(url);
+}
+
+function toggleLayout(layout) {
+    $.ajax({
+        type: 'POST',
+        url: '<?php echo site_url('home/set_layout_to_session'); ?>',
+        data: {
+            layout: "grid"
+        },
+        success: function(response) {
+            location.reload();
+        }
+    });
+}
+
+function showToggle(elem, selector) {
+    $('.' + selector).slideToggle(50);
+    $('.' + selector).toggleClass("d-flex");
+    if ($(elem).text() === "<?php echo site_phrase('show_more'); ?>") {
+        $(elem).text('<?php echo site_phrase('show_less'); ?>');
+    } else {
+        $(elem).text('<?php echo site_phrase('show_more'); ?>');
+    }
+}
+
+$('.course-compare').click(function(e) {
+    e.preventDefault()
+    var redirect_to = $(this).attr('redirect_to');
+    window.location.replace(redirect_to);
+});
 </script>

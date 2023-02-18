@@ -846,10 +846,12 @@
     "user_mis_certificados": "User mis certificados",
     "user_sotfware": "User sotfware",
     "user_soporte": "User soporte",
-    "genero":"Genero",
-    "cambiar_foto_perfil":"Cambiar foto de Perfil (Peso máximo 5 MB)",
-    "sin_resultados":"Sin Resultados",
-    "cambiar_contraseña":"Cambiar Contraseña",
-    "editar_perfil":"Editar Perfil"
-    
+    "genero": "Genero",
+    "cambiar_foto_perfil": "Cambiar foto de Perfil (Peso máximo 5 MB)",
+    "sin_resultados": "Sin Resultados",
+    "cambiar_contraseña": "Cambiar Contraseña",
+    "editar_perfil": "Editar Perfil",
+    "correo:": "Correo:",
+    "categoría": "Categoría",
+    "nosotros": "Nosotros"
 }

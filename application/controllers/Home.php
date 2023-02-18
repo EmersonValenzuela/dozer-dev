@@ -46,6 +46,17 @@ class Home extends CI_Controller
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
+    public function nosotros()
+    {
+        $page_data['page_name'] = "nosotros";
+        $page_data['page_title'] = site_phrase('nosotros');
+        
+       
+        $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
+    }
+
+   
+
     public function shopping_cart()
     {
         if (!$this->session->userdata('cart_items')) {
@@ -128,18 +139,32 @@ class Home extends CI_Controller
         $row_category = $this->crud_model->auth_category(array('slug' => $_GET['category']));
 
         if ($row_category->parent == 5 || $row_category->id == 5) {
-            $page_data['text_banner'] = "curso";
+
+
+            $page_data['variable']  = site_url('uploads/system/portada-cursos.png');
+            $page_data['text_banner'] = "Con un solo pago, accederás a todos 
+            los cursos (38) y muchos beneficios más";
+            $page_data['sub_text_banner'] = "Migra a premium hoy mismo! ";
+            $page_data['btn_banner'] = "Quiero ser ";
+            $page_data['variable_dos']  = site_url('uploads/system/icon-corona.png');
+            $page_data['btn_dos_banner'] = "Premiun ";
             $page_data['id_category'] = $row_category->id;
             $page_data['parent'] = $row_category->parent;
 
             
         } elseif ($row_category->parent == 4 || $row_category->id == 4) {
-            $page_data['text_banner'] = "Diplomados";
+            $page_data['variable']  = site_url('uploads/system/portada-diplomados.png');
+            $page_data['text_banner'] = "El mejor momento para invertir en tus 
+            metas profesionales es Ahora!";
+            $page_data['variable_logo']  = base_url('../uploads/system/logo-portadas.png');
             $page_data['id_category'] = $row_category->id;
             $page_data['parent'] = $row_category->parent;
 
         } elseif ($row_category->parent == 3 || $row_category->id == 3) {
-            $page_data['text_banner'] = "especializaciones";
+            $page_data['variable']  = site_url('uploads/system/portada-diplomados.png');
+            $page_data['text_banner'] = "El mejor momento para invertir en tus 
+            metas profesionales es Ahora! ";
+            $page_data['variable_logo']  = base_url('../uploads/system/logo-portadas.png');
             $page_data['id_category'] = $row_category->id;
             $page_data['parent'] = $row_category->parent;
 

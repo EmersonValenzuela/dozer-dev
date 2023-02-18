@@ -100,6 +100,12 @@ if (isset($sub_category_id)) {
                                                 <?php if ($selected_level == 'intermediate') echo 'checked'; ?>>
                                             <label class="text-white" for="intermediate"><?php echo site_phrase('intermediate'); ?></label>
                                         </div>
+                                        <div class="">
+                                            <input type="radio" id="empresa" name="level"
+                                                class="level custom-radio" value="empresa" onclick="filter(this)"
+                                                <?php if ($selected_level == 'empresa') echo 'checked'; ?>>
+                                            <label class="text-white" for="empresa"><?php echo site_phrase('empresa'); ?></label>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -188,7 +194,8 @@ if (isset($sub_category_id)) {
                                 <img style="background-image: url(<?= $variable_dos?>);
                             background-position: right;
                             background-repeat: no-repeat;
-                            background-size: 9rem;">
+                            background-size: 9rem;
+                            z-index:-999">
                                 <?= $btn_dos_banner ?>
                             </a>
 

@@ -5706,19 +5706,25 @@ color: #2a303b;
    
     width: 100%;
     overflow: hidden;
-    padding: 80px 0;
+    padding: 20px 0;
   }
   .containerrrrr .principal-tarjetaaaa{
     display: flex;
-    justify-content: space-evenly;
-    width: 200%;
+    justify-content: space-between;
+    width: 400%;
     transition: 1s;
   }
   #universidad-two:checked ~ .principal-tarjetaaaa{
     margin-left: -100%;
   }
+  #universidad-three:checked ~ .principal-tarjetaaaa{
+    margin-left: -200%;
+  }
+  #universidad-four:checked ~ .principal-tarjetaaaa{
+    margin-left: -300%;
+  }
   .containerrrrr .principal-tarjetaaaa .tarjetaaas{
-    width: calc(100% / 4 - 10px);
+   width: calc(100% / 2 - 10px);
     display: flex;
     flex-wrap: wrap;
     margin: 0 20px;
@@ -5728,16 +5734,14 @@ color: #2a303b;
     width: calc(100% / 4 - 10px);
     background: #1C1C1C;
     border-radius: 12px;
-    padding: 30px;
+    padding: 12px 0px;;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
     transition: all 0.4s ease;
     box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
     -webkit-box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   }
-  .principal-tarjetaaaa .tarjetaaas .tarjetaaa:hover{
-    transform: translateY(-15px);
-  }
+  
   .tarjetaaas .tarjetaaa .content{
     width: 100%;
     display: flex;
@@ -5762,36 +5766,21 @@ color: #2a303b;
     object-fit: cover;
   }
   .tarjetaaa .content .name{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 200;
   }
   .tarjetaaa .content .job{
-    font-size: 20px;
+    font-size: 25px;
     color: #FF676D;
+    font-weight: 700;
   }
   .tarjetaaa .content .media-icons{
     margin-top: 10px;
     display: flex;
   
   }
-  .media-icons a{
-    text-align: center;
-    line-height: 33px;
-    height: 35px;
-    width: 35px;
-    margin: 0 4px;
-    font-size: 14px;
-    color: #FFF;
-    border-radius: 50%;
-    border: 2px solid transparent;
-    background: #FF676D;
-    transition: all 0.3s ease;
-  }
-  .media-icons a:hover{
-    color: #FF676D;
-    background-color: #fff;
-    border-color: #FF676D;
-  }
+  
+  
    .containerrrrr .button{
     width: 100%;
     display: flex;
@@ -5816,12 +5805,51 @@ color: #2a303b;
   #universidad-one:checked ~ .button .universidad-two{
     width: 15px;
   }
+  #universidad-one:checked ~ .button .universidad-three{
+    width: 15px;
+  }
+  #universidad-one:checked ~ .button .universidad-four{
+    width: 15px;
+  }
   #universidad-two:checked ~ .button .universidad-one{
     width: 15px;
   }
   #universidad-two:checked ~ .button .universidad-two{
     width: 35px;
   }
+  #universidad-two:checked ~ .button .universidad-three{
+    width: 15px;
+  }
+  #universidad-two:checked ~ .button .universidad-four{
+    width: 15px;
+  }
+  #universidad-three:checked ~ .button .universidad-one{
+    width: 15px;
+  }
+  #universidad-three:checked ~ .button .universidad-two{
+    width: 15px;
+  }
+  #universidad-three:checked ~ .button .universidad-three{
+    width: 35px;
+  }
+  #universidad-three:checked ~ .button .universidad-four{
+    width: 15px;
+  }
+
+  #universidad-four:checked ~ .button .universidad-one{
+    width: 15px;
+  }
+  #universidad-four:checked ~ .button .universidad-two{
+    width: 15px;
+  }
+  #universidad-four:checked ~ .button .universidad-three{
+    width: 15px;
+  }
+  #universidad-four:checked ~ .button .universidad-four{
+    width: 35px;
+  }
+
+
   input[type="radio"]{
     display: nuniversidad-one;
   }
@@ -5837,4 +5865,49 @@ color: #2a303b;
       width: 100%;
     }
   }
-  
+  .uni-fondo-four{
+    background: transparent !important;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
+    transition: all 0.4s ease;
+    box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 0%) !important;
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  }
+
+  /*DIRECTORIO ACADEMICO*/
+  .fondo-img-academico{
+    background: #1D1D1D;
+    border-radius: 20px;
+  }
+  .fondo-nombre-academico{
+    background: #141414;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color:white;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
+  }
+  .text-nom-aca{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .text-cargo-aca{
+    font-weight: 200;
+  }
+
+  .cg-aca{
+    column-gap: 5rem;
+  }
+
+  .correo-academico{
+    margin: 0 0rem 0 7.8rem;
+    top: auto;
+    transform: translate(-50%,-120%)!important;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: #262626;
+  }
+
+  .w-18{
+    width: 18rem !important;
+
+  }

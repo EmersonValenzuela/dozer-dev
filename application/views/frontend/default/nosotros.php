@@ -56,7 +56,7 @@
     </div>
 
 </div>
-<div class="py-5">
+<div class="py-5 overflow-hidden">
 
     <div class="row align-items-center">
         <div class="col vision  text-white">
@@ -213,6 +213,38 @@
                 ofrecer <br>
                 la mejor experiencia educativa.</p>
 
+
+
+                <div class="d-flex justify-content-between cg-aca my-5">
+                    <div class="d-flex row fondo-img-academico">
+                        <img src="<?=base_url()?>uploads\system\docente\prof-uno-nosotros.png" alt="">
+                        <div class="fondo-nombre-academico p-3">
+                        <p class="position-absolute   text-white  correo-academico"> <span>  <img src="<?=base_url()?>uploads\system\mail.svg" alt=""> </span> walter.gomez@dozer.edu.pe</p> 
+                            <p class="text-nom-aca">Ing. Walter Gomez C.</p>
+                            <p class="text-cargo-aca ">Director General</p>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="d-flex row fondo-img-academico">
+                        <img src="<?=base_url()?>uploads\system\docente\prof-dos-nosotros.png" alt="">
+                        <div class="fondo-nombre-academico p-3">
+                        <p class="position-absolute   text-white  correo-academico"> <span>  <img src="<?=base_url()?>uploads\system\mail.svg" alt=""> </span> giuliana.nicho@dozer.edu.pe</p> 
+                            <p class="text-nom-aca">Arq. Giuliana Nicho G.</p>
+                            <p class="text-cargo-aca ">Directora Académica</p>
+                        </div>
+                    
+                    </div>
+                    <div class="d-flex row fondo-img-academico">
+                        <img class="w-18" src="<?=base_url()?>uploads\system\docente\prof-tres-nosotros.png" alt="">
+                        <div class="fondo-nombre-academico p-3">
+                            <p class="position-absolute   text-white  correo-academico"> <span>  <img src="<?=base_url()?>uploads\system\mail.svg" alt=""> </span> samuel.ruiz@dozer.edu.pe</p> 
+                            <p class="text-nom-aca">Arq. Samuel Ruiz M.</p>
+                            <p class="text-cargo-aca ">Director Académico</p>
+                        </div>
+                    
+                    </div>
+                </div>
 
 
 
@@ -699,101 +731,942 @@
             <p class="text-white text-center fw-bold text-institucion py-3">
                 Hemos formado a más de 15 mil estudiantes en más de <br>
                 70 universidades de todo el Perú </p>
-            
-  <div class="containerrrrr">
-    <input type="radio" name="dot" id="universidad-one">
-    <input type="radio" name="dot" id="universidad-two">
-    <div class="principal-tarjetaaaa">
-      <div class="tarjetaaas">
-        <div class="tarjetaaa">
-         <div class="content">
-           
-           <div class="detallesss">
-             <div class="job text-white">PUCP</div>
-             <div class="name text-white">Pontificia Universidad Católica del Perú</div>
-           </div>
-           
-         </div>
-        </div>
-        <div class="tarjetaaa">
-         <div class="content">
-           
-           <div class="detallesss">
-             <div class="job text-white">PUCP</div>
-             <div class="name text-white">Pontificia Universidad Católica del Perú</div>
-           </div>
-           
-         </div>
-        </div>
-        <div class="tarjetaaa">
-         <div class="content">
-           
-           <div class="detallesss">
-             <div class="job text-white">PUCP</div>
-             <div class="name text-white">Pontificia Universidad Católica del Perú</div>
-           </div>
-           
-         </div>
-        </div>
-        <div class="tarjetaaa">
-         <div class="content">
-           
-           <div class="detallesss">
-             <div class="job text-white">PUCP</div>
-             <div class="name text-white">Pontificia Universidad Católica del Perú</div>
-           </div>
-           
-         </div>
-        </div>
-      </div>
-      <div class="tarjetaaas">
-        <div class="tarjetaaa">
-         <div class="content">
-           
-           <div class="detallesss">
-             <div class="job text-white">PUCP</div>
-             <div class="name text-white">Pontificia Universidad Católica del Perú</div>
-           </div>
-           
-         </div>
-        </div>
-        <div class="tarjetaaa">
-         <div class="content">
-           
-           <div class="detallesss">
-             <div class="job text-white">PUCP</div>
-             <div class="name text-white">Pontificia Universidad Católica del Perú</div>
-           </div>
-           
-         </div>
-        </div>
-        <div class="tarjetaaa">
-         <div class="content">
-           
-           <div class="detallesss">
-             <div class="job text-white">PUCP</div>
-             <div class="name text-white">Pontificia Universidad Católica del Perú</div>
-           </div>
-           
-         </div>
-        </div>
-        <div class="tarjetaaa">
-         <div class="content">
-           
-           <div class="detallesss">
-             <div class="job text-white">PUCP</div>
-             <div class="name text-white">Pontificia Universidad Católica del Perú</div>
-           </div>
-           
-         </div>
-        </div>
-      </div>
-    </div>
-    <div class="button">
-      <label for="universidad-one" class=" active universidad-one"></label>
-      <label for="universidad-two" class="universidad-two"></label>
-    </div>
-  </div>
+
+            <div class="containerrrrr">
+                <input type="radio" name="dot" id="universidad-one">
+                <input type="radio" name="dot" id="universidad-two">
+                <input type="radio" name="dot" id="universidad-three">
+                <input type="radio" name="dot" id="universidad-four">
+                <div class="principal-tarjetaaaa">
+                    <div class="tarjetaaas">
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">PUCP</div>
+                                    <div class="name text-white">Pontificia Universidad <br> Católica del Perú</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UDEP</div>
+                                    <div class="name text-white">Universidad de Piura</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNMSM</div>
+                                    <div class="name text-white">Universidad Nacional Mayor <br> de San Marcos</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">USIL</div>
+                                    <div class="name text-white">Universidad San Ignacio <br> de Loyola</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UPN</div>
+                                    <div class="name text-white">Universidad Privada del Norte</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNC</div>
+                                    <div class="name text-white">Universidad Nacional <br> de Cajamarca</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNI</div>
+                                    <div class="name text-white">Universidad Nacional <br> de Ingeniería</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UPECEN</div>
+                                    <div class="name text-white">Universidad Peruana <br> del Centro</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UCV</div>
+                                    <div class="name text-white">Universidad Privada del Norte</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">URP</div>
+                                    <div class="name text-white">Universidad Ricardo Palma <br> de Cajamarca</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UCSS</div>
+                                    <div class="name text-white">Universidad Católica <br> Sedes Sapientiae</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UTP</div>
+                                    <div class="name text-white">Universidad Tecnológica <br> del Perú</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UPSJB</div>
+                                    <div class="name text-white">Universidad Privada <br> San Juan Bautista</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UARM</div>
+                                    <div class="name text-white">Universidad Antonio <br> Ruiz Montoya </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNFV</div>
+                                    <div class="name text-white">Universidad Nacional <br> Federico Villarreal</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNJFSC</div>
+                                    <div class="name text-white">Universidad Nacional José <br> Faustino Sánchez Carrión
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNMSM</div>
+                                    <div class="name text-white">Universidad Nacional Mayor <br> de San Marcos</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UCSUR</div>
+                                    <div class="name text-white">Universidad Científica del Sur </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNITRU</div>
+                                    <div class="name text-white">Universidad Nacional <br> de Trujillo</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UCSM</div>
+                                    <div class="name text-white">Universidad Católica de <br> Santa María</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tarjetaaas">
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UPSB</div>
+                                    <div class="name text-white">Universidad Privada Sergio <br> Bernales</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNDC</div>
+                                    <div class="name text-white">Universidad Nacional <br> del Cañete</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UGlobal</div>
+                                    <div class="name text-white">Universidad Global del Cusco</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UTELESUP</div>
+                                    <div class="name text-white">Universidad Privada TELESUP</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">USAT</div>
+                                    <div class="name text-white">Universidad Católica Toribio <br> de Mogrovejo</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNPRG</div>
+                                    <div class="name text-white">Universidad Nacional Pedro <br> Ruiz Gallo</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UPC</div>
+                                    <div class="name text-white">Universidad Peruana <br> de Ciencias Aplicadas</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">(UNJ)</div>
+                                    <div class="name text-white">Universidad Nacional de Jaén</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UAC</div>
+                                    <div class="name text-white">Universidad Andina del Cusco</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNAC</div>
+                                    <div class="name text-white">Universidad Nacional <br> del Callao</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UTEC</div>
+                                    <div class="name text-white">Universidad de Ingeniería <br> y Tecnología</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UPLA</div>
+                                    <div class="name text-white">Universidad Peruana de <br> los Andes</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNTUMBES</div>
+                                    <div class="name text-white">Universidad Nacional <br> de Tumbes</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UCSP</div>
+                                    <div class="name text-white">Universidad Católica <br> San Pablo</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">USMP</div>
+                                    <div class="name text-white">Universidad de San Martín <br> de Porres</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNAP</div>
+                                    <div class="name text-white">Universidad Nacional del <br> Altiplano de Puno</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNSA</div>
+                                    <div class="name text-white">Universidad Nacional de San <br> Agustín de Arequipa
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNAB</div>
+                                    <div class="name text-white">Universidad Nacional <br> de Barranca</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UDH</div>
+                                    <div class="name text-white">Universidad de Huánuco </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">ULASALLE</div>
+                                    <div class="name text-white">Universidad La Salle</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tarjetaaas">
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UCCI</div>
+                                    <div class="name text-white">Universidad Continental <br> de Ciencia e Ingeniería
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNSAAC</div>
+                                    <div class="name text-white">Universidad Nacional San <br> Antonio Abad del Cusco
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UPEU</div>
+                                    <div class="name text-white">Universidad Peruana Unión</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNP</div>
+                                    <div class="name text-white">Universidad Nacional de Piura</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">USS</div>
+                                    <div class="name text-white">Universidad Señor de Sipán </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UPAO</div>
+                                    <div class="name text-white">Universidad Privada Antenor <br> Orrego</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">ULIMA</div>
+                                    <div class="name text-white">Universidad de Lima</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UPT</div>
+                                    <div class="name text-white">Universidad Privada de Tacna</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNAP</div>
+                                    <div class="name text-white">Universidad Nacional de la <br> Amazonía Peruana</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UANCV</div>
+                                    <div class="name text-white">Universidad Andina <br> Nestor Cáceres Velásquez</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNCP</div>
+                                    <div class="name text-white">Universidad Nacional del <br> Centro de Perú</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNDAC</div>
+                                    <div class="name text-white">Universidad Nacional Daniel <br> Alcides Carrión</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UJCM</div>
+                                    <div class="name text-white">Universidad José <br> Carlos Mariátegui</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNACH</div>
+                                    <div class="name text-white">Universidad Nacional <br> Autónoma de Chota</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNAMBA</div>
+                                    <div class="name text-white">Universidad Nacional Micaela <br> Bastidas de Apurímac
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNU</div>
+                                    <div class="name text-white">Universidad Nacional <br> de Ucayali</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNH</div>
+                                    <div class="name text-white">Universidad Nacional de <br> Huancavelica</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNS</div>
+                                    <div class="name text-white">Universidad Nacional del <br> Santa</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNICA</div>
+                                    <div class="name text-white">Universidad Nacional San <br> Luis Gonzaga de Ica</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UCP</div>
+                                    <div class="name text-white">Universidad Científica del <br> Perú </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tarjetaaas">
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNASAM</div>
+                                    <div class="name text-white">Universidad Nacional Santiago <br> Antúnez de Mayolo
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UIGV</div>
+                                    <div class="name text-white">Universidad Inca Garcilaso <br> de la Vega</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNAM</div>
+                                    <div class="name text-white">Universidad Nacional de <br> Moquegua</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNHEVAL</div>
+                                    <div class="name text-white">Universidad Nacional <br> Hermilio Valdizán</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UPAGU</div>
+                                    <div class="name text-white">Universidad Privada Antonio <br> Urrelo </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNTELS</div>
+                                    <div class="name text-white">Universidad Nacional <br> Tecnológica de Lima Sur</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNTRM</div>
+                                    <div class="name text-white">Universidad Nacional Toribio <br> Rodríguez de Mendoza
+                                        de Amazonas</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white">UNJBG</div>
+                                    <div class="name text-white">Universidad Nacional Jorge <br> Basadre Grohmann</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjetaaa uni-fondo-four my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"> </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3 uni-fondo-four">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3 uni-fondo-four">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3 uni-fondo-four">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="tarjetaaa uni-fondo-four my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"> </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3 uni-fondo-four">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3 uni-fondo-four">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3 uni-fondo-four">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="tarjetaaa uni-fondo-four my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"> </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3 uni-fondo-four">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3 uni-fondo-four">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3 uni-fondo-four">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjetaaa uni-fondo-four my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"> </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3 uni-fondo-four">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3 uni-fondo-four">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3 uni-fondo-four">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjetaaa uni-fondo-four my-3">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"> </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3 uni-fondo-four">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3 uni-fondo-four">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tarjetaaa my-3 uni-fondo-four">
+                            <div class="content">
+
+                                <div class="detallesss">
+                                    <div class="job text-white"></div>
+                                    <div class="name text-white"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="button">
+                    <label for="universidad-one" class=" active universidad-one"></label>
+                    <label for="universidad-two" class="universidad-two"></label>
+                    <label for="universidad-three" class="universidad-three"></label>
+                    <label for="universidad-four" class="universidad-four"></label>
+                </div>
+            </div>
 
 
 
@@ -806,7 +1679,7 @@
 
 
 
-            
+
         </div>
     </div>
 </div>

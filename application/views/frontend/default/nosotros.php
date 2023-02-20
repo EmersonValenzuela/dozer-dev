@@ -18,7 +18,7 @@
                 de diferentes partes del mundo y son producidos con esmero por nuestro equipo para lograr
                 contenidos de alto valor educativo y excelente calidad audiovisual.
             </p>
-            <div class="d-flex justify-content-between cg-n py-5">
+            <div class="d-flex flex-column justify-content-center flex-lg-row rg cg-n py-5">
                 <div class="img-n d-flex align-items-center"><img src="<?=base_url()?>uploads/system/logodozer-sn.png"
                         alt=""></div>
                 <div class="img-n"><img src="<?=base_url()?>uploads/system/logolautec-sn.png" alt=""></div>
@@ -30,7 +30,7 @@
                 Acredita tus conocimientos a cargo de nuestros <br>
                 convenios de mayor renombre en el sector construcción
             </p>
-            <div class="d-flex justify-content-between cg-n py-3">
+            <div class="d-flex  flex-column flex-lg-row rg cg-n justify-content-between cg-n py-3">
                 <div class="d-flex flex-row mb-3 align-items-center img-n">
                     <div><img class="img-acredita" src="<?=base_url()?>uploads/system/colegio_ingenieros.png" alt="">
                     </div>
@@ -215,36 +215,42 @@
 
 
 
-                <div class="d-flex justify-content-between cg-aca my-5">
-                    <div class="d-flex row fondo-img-academico">
-                        <img src="<?=base_url()?>uploads\system\docente\prof-uno-nosotros.png" alt="">
-                        <div class="fondo-nombre-academico p-3">
-                        <p class="position-absolute   text-white  correo-academico"> <span>  <img src="<?=base_url()?>uploads\system\mail.svg" alt=""> </span> walter.gomez@dozer.edu.pe</p> 
-                            <p class="text-nom-aca">Ing. Walter Gomez C.</p>
-                            <p class="text-cargo-aca ">Director General</p>
-                        </div>
-                    
+            <div class="d-flex justify-content-between cg-aca my-5">
+                <div class="d-flex row fondo-img-academico">
+                    <img src="<?=base_url()?>uploads\system\docente\prof-uno-nosotros.png" alt="">
+                    <div class="fondo-nombre-academico p-3">
+                        <p class="position-absolute   text-white  correo-academico"> <span> <img
+                                    src="<?=base_url()?>uploads\system\mail.svg" alt=""> </span>
+                            walter.gomez@dozer.edu.pe</p>
+                        <p class="text-nom-aca">Ing. Walter Gomez C.</p>
+                        <p class="text-cargo-aca ">Director General</p>
                     </div>
-                    
-                    <div class="d-flex row fondo-img-academico">
-                        <img src="<?=base_url()?>uploads\system\docente\prof-dos-nosotros.png" alt="">
-                        <div class="fondo-nombre-academico p-3">
-                        <p class="position-absolute   text-white  correo-academico"> <span>  <img src="<?=base_url()?>uploads\system\mail.svg" alt=""> </span> giuliana.nicho@dozer.edu.pe</p> 
-                            <p class="text-nom-aca">Arq. Giuliana Nicho G.</p>
-                            <p class="text-cargo-aca ">Directora Académica</p>
-                        </div>
-                    
-                    </div>
-                    <div class="d-flex row fondo-img-academico">
-                        <img class="w-80" src="<?=base_url()?>uploads\system\docente\prof-tres-nosotros.png" alt="">
-                        <div class="fondo-nombre-academico p-3">
-                            <p class="position-absolute   text-white  correo-academico"> <span>  <img src="<?=base_url()?>uploads\system\mail.svg" alt=""> </span> samuel.ruiz@dozer.edu.pe</p> 
-                            <p class="text-nom-aca">Arq. Samuel Ruiz M.</p>
-                            <p class="text-cargo-aca ">Director Académico</p>
-                        </div>
-                    
-                    </div>
+
                 </div>
+
+                <div class="d-flex row fondo-img-academico">
+                    <img src="<?=base_url()?>uploads\system\docente\prof-dos-nosotros.png" alt="">
+                    <div class="fondo-nombre-academico p-3">
+                        <p class="position-absolute   text-white  correo-academico"> <span> <img
+                                    src="<?=base_url()?>uploads\system\mail.svg" alt=""> </span>
+                            giuliana.nicho@dozer.edu.pe</p>
+                        <p class="text-nom-aca">Arq. Giuliana Nicho G.</p>
+                        <p class="text-cargo-aca ">Directora Académica</p>
+                    </div>
+
+                </div>
+                <div class="d-flex row fondo-img-academico">
+                    <img class="w-80" src="<?=base_url()?>uploads\system\docente\prof-tres-nosotros.png" alt="">
+                    <div class="fondo-nombre-academico p-3">
+                        <p class="position-absolute   text-white  correo-academico"> <span> <img
+                                    src="<?=base_url()?>uploads\system\mail.svg" alt=""> </span>
+                            samuel.ruiz@dozer.edu.pe</p>
+                        <p class="text-nom-aca">Arq. Samuel Ruiz M.</p>
+                        <p class="text-cargo-aca ">Director Académico</p>
+                    </div>
+
+                </div>
+            </div>
 
 
 

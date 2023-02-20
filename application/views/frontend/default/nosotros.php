@@ -236,7 +236,7 @@
                     
                     </div>
                     <div class="d-flex row fondo-img-academico">
-                        <img class="w-18" src="<?=base_url()?>uploads\system\docente\prof-tres-nosotros.png" alt="">
+                        <img class="w-80" src="<?=base_url()?>uploads\system\docente\prof-tres-nosotros.png" alt="">
                         <div class="fondo-nombre-academico p-3">
                             <p class="position-absolute   text-white  correo-academico"> <span>  <img src="<?=base_url()?>uploads\system\mail.svg" alt=""> </span> samuel.ruiz@dozer.edu.pe</p> 
                             <p class="text-nom-aca">Arq. Samuel Ruiz M.</p>

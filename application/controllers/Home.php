@@ -64,7 +64,7 @@ class Home extends CI_Controller
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
-    public function premium()
+    public function reclamacion()
     {
         $page_data['page_name'] = "reclamaciones";
         $page_data['page_title'] = site_phrase('Libro_de_reclamaciones');

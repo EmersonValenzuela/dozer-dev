@@ -83,14 +83,14 @@
                 <?php endif; ?>
             </ul>
         </li>
-        <a href="<?php echo site_url('somosnotros'); ?>">
+        <a href="<?php echo base_url('Nosotros') ?>">
             <span class="fw-500 text-white main-nav-wrap ">Nosotros</span>
         </a>
 
 
 
-        <a href="">
-            <span class="fw-500 text-white main-nav-wrap ">Premiun</span>
+        <a href=" <?php echo base_url('Premium') ?>">
+            <span class="fw-500 text-white main-nav-wrap ">Premium</span>
         </a>
         <div class="mobile-menu-helper-bottom"></div>
     </ul>

@@ -55,6 +55,25 @@ class Home extends CI_Controller
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
+    public function premium()
+    {
+        $page_data['page_name'] = "premium";
+        $page_data['page_title'] = site_phrase('Premium');
+        
+       
+        $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
+    }
+
+    public function premium()
+    {
+        $page_data['page_name'] = "reclamaciones";
+        $page_data['page_title'] = site_phrase('Libro_de_reclamaciones');
+        
+       
+        $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
+    }
+
+
    
 
     public function shopping_cart()

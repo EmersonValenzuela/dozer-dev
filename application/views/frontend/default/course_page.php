@@ -3,7 +3,7 @@ $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
 $instructor_details = $this->user_model->get_all_user($course_details['user_id'])->row_array();
 ?>
 <section class="course-header-area">
-    <div class="container">
+    <div class="container-xl">
         <div class="row align-items-end">
             <div class="col-lg-8">
                 <div class="course-header-wrap">
@@ -23,7 +23,7 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
 </section>
 
 <section class="course-content-area">
-    <div class="container">
+    <div class="container-xl">
         <div class="row">
 
             <div class="col-lg-8 order-last order-lg-first radius-10  ">
@@ -52,7 +52,7 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                             </p>
                         </div>
                     </div>
-                    <div class="description-title"><?php echo site_phrase('course_overview'); ?></div>
+                   
                     <div class="description-content-wrap">
                         <div class="description-content">
                             <?php echo $course_details['description']; ?>
@@ -60,7 +60,7 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                     </div>
                 </div>
 
-                <h4 class="py-3"><?php echo site_phrase('what_will_i_learn'); ?>?</h4>
+                <h4 class="py-3 text-white"><?php echo site_phrase('what_will_i_learn'); ?></h4>
                 <div class="what-you-get-box">
                     <ul class="what-you-get__items">
                         <?php foreach (json_decode($course_details['outcomes']) as $outcome) : ?>
@@ -71,50 +71,30 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                     </ul>
                 </div>
 
-                <div class="requirements-box">
-                    <div class="requirements-title"><?php echo site_phrase('requirements'); ?></div>
-                    <div class="requirements-content">
-                        <ul class="requirements__list">
-                            <?php foreach (json_decode($course_details['requirements']) as $requirement) : ?>
-                            <?php if ($requirement != "") : ?>
-                            <li><?php echo $requirement; ?></li>
-                            <?php endif; ?>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
-                </div>
+
 
                 <?php if ($course_details['course_type'] == 'general') : ?>
                 <div class="course-curriculum-box">
                     <div class="course-curriculum-title clearfix mt-5 mb-3">
-                        <div class="title float-start"><?php echo site_phrase('curriculum_for_this_course'); ?></div>
-                        <div class="float-end mt-2">
-                            <span class="total-lectures">
-                                <?php echo $this->crud_model->get_lessons('course', $course_details['id'])->num_rows() . ' ' . site_phrase('lessons'); ?>
-                            </span>
-                            <span class="total-time">
-                                <?php
-                  echo $this->crud_model->get_total_duration_of_lesson_by_course_id($course_details['id']);
-                  ?>
-                            </span>
-                        </div>
+
+
                     </div>
-                    <div class="course-curriculum-accordion">
+                    <div class="">
                         <?php
-              $sections = $this->crud_model->get_section('course', $course_id)->result_array();
-              $counter = 0;
-              foreach ($sections as $key => $section) : ?>
+                        $sections = $this->crud_model->get_section('course', $course_id)->result_array();
+                        $counter = 0;
+                        foreach ($sections as $key => $section) : ?>
                         <div class="lecture-group-wrapper">
 
                             <?php
-                  if ($key == 0) {
-                    $style = 'border-radius: 10px 10px 0px 0px;';
-                  } elseif ($key + 1 == count($sections)) {
-                    $style = 'border-radius: 0px 0px 10px 10px;';
-                  } else {
-                    $style = '';
-                  }
-                  ?>
+                            if ($key == 0) {
+                                $style = 'border-radius: 10px 10px 0px 0px;';
+                            } elseif ($key + 1 == count($sections)) {
+                                $style = 'border-radius: 0px 0px 10px 10px;';
+                            } else {
+                                $style = '';
+                            }
+                            ?>
 
                             <div class="lecture-group-title clearfix" style="<?= $style; ?>" data-bs-toggle="collapse"
                                 data-bs-target="#collapse<?php echo $section['id']; ?>"
@@ -168,12 +148,49 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                 </div>
                 <?php endif; ?>
 
+                <div>
+                    <div class="about-directora-title">Directora Academica </div>
+                    <div class="d-flex flex-row  py-5">
+                        <div class="p-2"><img src="<?=base_url()?>uploads/system/docente/directora-academica.png" alt=""
+                                alt=""></div>
 
-               
+                        <div class="d-flex flex-column mb-3 py-2 px-4">
+                            <div>
+                                <div class="d-flex flex-row ">
+                                    <div class="d-flex flex-column ">
+                                        <div class="about-directora-nombre">Giuliana Nicho </div>
+                                        <div class="about-directora-subtitle">Directora Académica - Área BIM</div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center"> <img class="w-10rem px-4 "
+                                            src="<?=base_url()?>uploads/system/docente/stanfor.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="text-white p-2 text-justify fw-200">
+                                Arquitecta, BIM manager certificada por la UPC Perú, con más de 5 años en implementación
+                                y gestión de proyectos con metodología BIM en proyectos públicos y privados, graduada
+                                por la Universidad de Estanford en Virtual Desing & Construction VDC - USA, gerente
+                                general en colaboractivo, miembro del subcomité técnico de normalización de obras de
+                                edificación - INACAL Perú.
+
+
+                            </div>
+                            <div class="grop-btn">
+                                <button class="btn-style">
+                                    Mas informacion
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
 
                 <div class="about-instructor-box">
                     <div class="about-instructor-title">
-                        <?php echo site_phrase('about_instructor'); ?>
+                        <?php echo site_phrase('DOCENTE ACEDÉMICO'); ?>
                     </div>
                     <?php if ($course_details['multi_instructor']) : ?>
                     <?php $instructors = $this->user_model->get_multi_instructor_details_with_csv($course_details['user_id']); ?>
@@ -259,69 +276,432 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                     <?php endif; ?>
                 </div>
 
-                <div class="student-feedback-box mt-5 pb-3">
-                    <div class="student-feedback-title">
-                        <?php echo site_phrase('student_feedback'); ?>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="average-rating ms-auto me-auto float-md-start mb-sm-4">
-                                <div class="num">
-                                    <?php
-                  $total_rating =  $this->crud_model->get_ratings('course', $course_details['id'], true)->row()->rating;
-                  $number_of_ratings = $this->crud_model->get_ratings('course', $course_details['id'])->num_rows();
-                  if ($number_of_ratings > 0) {
-                    $average_ceil_rating = ceil($total_rating / $number_of_ratings);
-                  } else {
-                    $average_ceil_rating = 0;
-                  }
-                  echo $average_ceil_rating;
-                  ?>
-                                </div>
-                                <div class="rating">
-                                    <?php for ($i = 1; $i < 6; $i++) : ?>
-                                    <?php if ($i <= $average_ceil_rating) : ?>
-                                    <i class="fas fa-star filled" style="color: #f5c85b;"></i>
-                                    <?php else : ?>
-                                    <i class="fas fa-star" style="color: #abb0bb;"></i>
-                                    <?php endif; ?>
-                                    <?php endfor; ?>
-                                </div>
-                                <div class="title text-15px fw-700"><?php echo $number_of_ratings; ?>
-                                    <?php echo site_phrase('reviews'); ?></div>
+                <div class=" mt-5 pb-3">
+                    <div class="about-directora-title">CERTIFICACIONES </div>
+                    <div class="row fondo-certificado-cursos">
+                        <div class="col-6 p-2000">
+                            <span> <img class="w-19px position-absolute"
+                                    src="<?=base_url()?>uploads/system/icon-sheck.png" alt=""></span>
+                            <p class="text-titulo-contenido">
+                                Certificado por el Colegio <br>
+                                de Ingenieros del Perú:
+                            </p>
+                            <div class="nombre-curso-cont">
+                                <?php echo $course_details['title']; ?>
                             </div>
-                            <div class="individual-rating">
-                                <ul>
-                                    <?php for ($i = 1; $i <= 5; $i++) : ?>
-                                    <li>
-                                        <div>
-                                            <span class="rating">
-                                                <?php for ($j = 1; $j <= (5 - $i); $j++) : ?>
-                                                <i class="fas fa-star"></i>
-                                                <?php endfor; ?>
-                                                <?php for ($j = 1; $j <= $i; $j++) : ?>
-                                                <i class="fas fa-star filled"></i>
-                                                <?php endfor; ?>
+                            <div class="text-white text-center">por 220 horas acreditadas
+                            </div>
+                            <div class="certi-contenido">
+                                <button class="btn-style-certi fw-700">
+                                    Certificado gratuito
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
 
-                                            </span>
-                                        </div>
-                                        <div class="progress ms-2 mt-1">
-                                            <div class="progress-bar"
-                                                style="width: <?php echo $this->crud_model->get_percentage_of_specific_rating($i, 'course', $course_id); ?>%">
-                                            </div>
-                                        </div>
-                                        <span class="d-inline-block ps-2 text-15px fw-500">
-                                            (<?php echo $this->db->get_where('rating', array('ratable_type' => 'course', 'ratable_id' => $course_id, 'rating' => $i))->num_rows(); ?>)
-                                        </span>
-                                    </li>
-                                    <?php endfor; ?>
-                                </ul>
+                            <img class="img-certficado-curso"
+                                src="<?=base_url()?>uploads/system/certificados/certificado-one.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="row fondo-certificado-cursos mt-5">
+                        <div class="col-6 p-2000">
+                            <span> <img class="w-19px position-absolute"
+                                    src="<?=base_url()?>uploads/system/icon-sheck.png" alt=""></span>
+                            <p class="text-titulo-contenido">
+                                Certificado por <br>
+                                Instituto Dozer:
+                            </p>
+                            <div class="nombre-curso-cont">
+                                <?php echo $course_details['title']; ?>
+                            </div>
+                            <div class="text-white text-center">por 120 horas acreditadas
+                            </div>
+                            <div class="certi-contenido">
+                                <button class="btn-style-certi fw-700">
+                                    Certificado gratuito
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+
+                            <img class="img-certficado-curso"
+                                src="<?=base_url()?>uploads/system/certificados/certificado-dos.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="row fondo-certificado-cursos mt-5">
+                        <div class="col-6 p-2000">
+                            <span> <img class="w-19px position-absolute"
+                                    src="<?=base_url()?>uploads/system/icon-sheck.png" alt=""></span>
+                            <p class="text-titulo-contenido">
+                                Certificado Internacional <br>
+                                por Autodesk USA:
+                            </p>
+                            <div class="nombre-curso-cont">
+                                <?php echo $course_details['title']; ?>
+                            </div>
+                            <div class="text-white text-center">por 90 horas acreditadas
+                            </div>
+                            <div class="certi-contenido">
+                                <button class="btn-style-certi fw-700">
+                                    Certificado gratuito
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+
+                            <img class="img-certficado-curso"
+                                src="<?=base_url()?>uploads/system/certificados/certificado-tres.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="row fondo-certificado-cursos mt-5">
+                        <div class="col-6 p-2000">
+                            <span> <img class="w-19px position-absolute"
+                                    src="<?=base_url()?>uploads/system/icon-sheck.png" alt=""></span>
+                            <p class="text-titulo-contenido">
+                                Certificado Internacional <br>
+                                por Autodesk USA:
+                            </p>
+                            <div class="nombre-curso-cont">
+                                <?php echo $course_details['title']; ?>
+                            </div>
+                            <div class="text-white text-center">por 90 horas acreditadas
+                            </div>
+                            <div class="certi-contenido">
+                                <button class="btn-style-certi fw-700">
+                                    Certificado gratuito
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+
+                            <img class="img-certficado-curso"
+                                src="<?=base_url()?>uploads/system/certificados/certificado-tres.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="row fondo-certificado-cursos mt-5">
+                        <div class="col-6 p-2000">
+                            <span> <img class="w-19px position-absolute"
+                                    src="<?=base_url()?>uploads/system/icon-sheck.png" alt=""></span>
+                            <p class="text-titulo-contenido">
+                                Certificado Internacional <br>
+                                por Autodesk USA:
+                            </p>
+                            <div class="nombre-curso-cont">
+                                <?php echo $course_details['title']; ?>
+                            </div>
+                            <div class="text-white text-center">por 90 horas acreditadas
+                            </div>
+                            <div class="certi-contenido">
+                                <button class="btn-style-certi fw-700">
+                                    Certificado gratuito
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+
+                            <img class="img-certficado-curso"
+                                src="<?=base_url()?>uploads/system/certificados/certificado-tres.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="row fondo-certificado-cursos mt-5">
+                        <div class="col-6 p-2000">
+                            <span> <img class="w-19px position-absolute"
+                                    src="<?=base_url()?>uploads/system/icon-sheck.png" alt=""></span>
+                            <p class="text-titulo-contenido">
+                                Certificado Internacional <br>
+                                por Autodesk USA:
+                            </p>
+                            <div class="nombre-curso-cont">
+                                <?php echo $course_details['title']; ?>
+                            </div>
+                            <div class="text-white text-center">por 90 horas acreditadas
+                            </div>
+                            <div class="certi-contenido">
+                                <button class="btn-style-certi fw-700">
+                                    Certificado gratuito
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+
+                            <img class="img-certficado-curso"
+                                src="<?=base_url()?>uploads/system/certificados/certificado-tres.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="d-flex fondo-certificado-cursos mt-3">
+                        <div class="p-2 flex-shrink-1 px-3 py-2 "><img
+                                src="<?=base_url()?>uploads/system/certificados/soporte.svg " alt=""></div>
+                        <div class="p-2 w-100 text-white px-3 py-2 ">Al finalizar la capacitación nuestro equipo de
+                            soporte le
+                            ayudará a gestionar desde cero hasta que usted pueda
+                            <strong> descargar los certificados desde la plataforma de autodesk.</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="  mt-5 ">
+                        <div class="about-directora-title">INSIGNIA DE ACREDITACIÓN ELECTRÓNICA</div>
+                        <div class="d-flex cg-1rem ">
+
+                            <div class="p-2 flex-shrink-1 px-5 py-3  fondo-certificado-cursos"><img
+                                    src="<?=base_url()?>uploads/system/certificados/insignia.png " alt=""></div>
+                            <div class="p-2 w-100 text-white p-5 color-text fondo-certificado-cursos text-center">
+                                <p class="fw-bold">¡Nuevo beneficio para nuestros alumnos!</p>
+                                <p class="fw-200">Comparte tus logros en redes sociales con
+                                    una insignia electrónica con la información
+                                    de tu certificación Autodesk.</p>
+                                <button class="btn-style-certi fw-700">
+                                    Insignia Gratuita
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex fondo-certificado-cursos mt-3">
+                        <div class="p-2 w-100 text-white px-3 py-2 text-justify">Para acceder a la insignia de
+                            Acreditación
+                            Electrónica, tendrá que haber aprobado las siguientes especializaciones: Expedientes
+                            técnicos con BIM aplicado a Proyectos de Infraestructrura educativa, Infraestructrura
+                            Hospitalaria, infraestructura Vial, Pavimentación Urbano y Rural, Agua y saneamiento Rural y
+                            electrificación rural. </div>
+
+                    </div>
+                    <div class=" mt-5">
+                        <div class="about-instructor-title text-white fw-bold py-2">SOMOS UN CENTRO DE FORMACIÓN
+                            AUTORIZADO (ATC) DE AUTODESK </div>
+                        <div class="d-flex fondo-autodesk-cont flex-column">
+                            <span><img class="my-3" src="<?=base_url()?>uploads/system/autodesk.png " alt=""></span>
+                            <div class=" my-2 p-2 w-100 text-white px-3 py-2 text-justify">
+                                En Instituto Dozer obtendrás el Autodesk Certificate of Completion y <br> podrás acceder
+                                a
+                                ella mediante la plataforma educativa Autodesk <br> Training Evaluation System. Esta
+                                certificación validará tus habilidades <br> y te ayudará a sobresalir en la industria de
+                                la
+                                construcción
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class=" mt-5">
+                        <div class="about-instructor-title text-white fw-bold py-2">Beneficios que Instituto Dozer en
+                            convenio con Autodesk tiene para ti:
+                        </div>
+                        <div class="d-flex flex-row justify-content-between color-text gap-beneficios">
+                            <div class="p-3   fondo-beneficios d-flex flex-column">
+                                <div class="fondo-icon-benedicios"><img class="mx-auto d-block icon-beneficios-uno"
+                                        src="<?=base_url()?>uploads/system/bene-one.svg" alt=""></div>
+                                <div class="color-text m-3 text-center">Instructores con <br>
+                                    certificaciones ACP <br>
+                                    por Autodesk</div>
+                            </div>
+                            <div class="p-3  fondo-beneficios  d-flex flex-column">
+                                <div class="fondo-icon-benedicios"><img class="mx-auto d-block icon-beneficios"
+                                        src="<?=base_url()?>uploads/system/bene-dos.svg " alt=""></div>
+                                <div class="color-text m-3 text-center">Certificado Internacional <br>
+                                    emitido por Autodesk <br>
+                                    “Certificate of completion”</div>
+                            </div>
+                            <div class="p-3  fondo-beneficios d-flex flex-column">
+                                <div class="fondo-icon-benedicios"><img class="mx-auto d-block icon-beneficios"
+                                        src="<?=base_url()?>uploads/system/bene-tres.svg " alt=""></div>
+                                <div class="color-text m-3 text-center">Licencia temporal y <br>
+                                    educacional de los <br>
+                                    software de Autodesk</div>
                             </div>
                         </div>
                     </div>
 
+
+
+
+                    <div class=" mt-5">
+                        <div class="about-instructor-title text-white fw-bold py-2">SOFTWARE GRATUITO “BIMDEV 2023”
+                        </div>
+                        <div class="d-flex fondo-software-cont flex-column">
+                            <span><img class="my-3" src="<?=base_url()?>uploads/system/logo-sof.png " alt=""></span>
+                            <div class="w-100 text-white  text-justify">
+                                En Instituto Dozer no solo formamos a nuestros alumnos con el <br> mejor contenido
+                                académico,
+                                sino tambien te brindamos software <br> 100% hecho por nosostros para que puedan mejorar
+                                su
+                                aprendizaje <br> de la metodología BIM.
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class=" mt-5">
+                        <div class="about-directora-title">PREGUNTAS FRECUENTES </div>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-itemm my-3">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button bg-cuestion collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        ¿Por cuanto tiempo tendré acceso al programa de especialización?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body bg-cuestion-contenido">Tendrás acceso a todas las clases
+                                        grabados para siempre,
+                                        sin fecha de caducidad. Podrás acceder a nuestra plataforma de aula virtual y
+                                        revisar tus clases cuando quieras y en donde quieras.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" my-3 my-3">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button bg-cuestion collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        ¿Las clases con el docente quedarán grabadas?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body bg-cuestion-contenido">Si, todas las clases quedarán
+                                        grabas y serán subidas al
+                                        aula virtual de Instituto Dozer junto a los materiales usados por el docente.
+                                        Podrá revisar y seguir las clases a su ritmo desde la comodida de su hogar.
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-itemm my-3">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button bg-cuestion collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false" aria-controls="flush-collapseThree">
+                                        ¿Podré descargar los archivos usados por el docente?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body bg-cuestion-contenido">Si, todos los archivos serán
+                                        totalmente descargables.
+                                        Además se le brindará gratuitamente material exclusivo para que le pueda ayudar
+                                        en su etapa profesional</div>
+                                </div>
+                            </div>
+                            <div class="accordion-itemm my-3">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button bg-cuestion collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                        aria-expanded="false" aria-controls="flush-collapseFour">
+                                        ¿Necesito saber Revit o hay algún pre-requisito para matricularme?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body bg-cuestion-contenido">Ninguno, los progarmas de
+                                        especialización están
+                                        diseñados para que nuestros estudiantes puedan verlos de manera entendible,
+                                        desde personas especializadas en el tema, hasta personas que buscan aprender
+                                        algo nuevo.
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-itemm my-3">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button bg-cuestion collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                        aria-expanded="false" aria-controls="flush-collapseFive">
+                                        ¿Si no tengo los softwares de Autodesk me ayudarán a instalarlo?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body bg-cuestion-contenido">Si, se le brindará asesoría desde
+                                        cero para que pueda
+                                        obtener la licencia educacional de autodesk y tener todos los softwares por 1
+                                        año. Nuestro equipo de soporte dozer estará pendiente en todo momento contigo.
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-itemm">
+                                <h2 class="accordion-header" id="flush-headingSix">
+                                    <button class="accordion-button bg-cuestion collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                                        aria-expanded="false" aria-controls="flush-collapseSix">
+                                        ¿Si por motivos de salud o trabajo no asisto afectará en mi notas?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body bg-cuestion-contenido">No, somo totalmente comprensibles
+                                        que las capacitaciones
+                                        estan enfocadas a estudiantes y profesionales que laboran. Por ello no le
+                                        afectará a sus notas.
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-itemm my-3">
+                                <h2 class="accordion-header" id="flush-headingSeven">
+                                    <button class="accordion-button bg-cuestion collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                                        aria-expanded="false" aria-controls="flush-collapseSeven">
+                                        ¿El certificado de Instituto Dozer, CIP y Autodesk USA es gratuito?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body bg-cuestion-contenido">Si, es totalmente gratis. Una vez
+                                        aprobado el programa
+                                        de especialización obtendrá sin costos adicionales las certificaciones, se le
+                                        emitirá 1 semana despues de culminar la capacitación.
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-itemm my-3">
+                                <h2 class="accordion-header" id="flush-headingeight">
+                                    <button class="accordion-button bg-cuestion collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseeight"
+                                        aria-expanded="false" aria-controls="flush-collapseeight">
+                                        ¿Es la primera vez que me certifico con Autodesk, me ayudarán?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseeight" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingeight" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body bg-cuestion-contenido">Si, se le brindará asesoría desde
+                                        cero para que pueda
+                                        obtener la licencia educacional de autodesk y tener todos los softwares por 1
+                                        año. Nuestro equipo de soporte dozer estará pendiente en todo momento contigo.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
                     <div class="reviews mt-5">
-                        <h3><?php echo site_phrase('reviews'); ?></h3>
+
                         <ul>
                             <?php
               $ratings = $this->crud_model->get_ratings('course', $course_id)->result_array();
@@ -374,7 +754,7 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
             </div>
 
             <div class="col-lg-4 order-first order-lg-last">
-                <div class="course-sidebar box-shadow-5 natural">
+                <div class="course-sidebar box-shadow-5 natural cuadro-contenido">
                     <?php if ($course_details['video_url'] != "") : ?>
                     <div class="preview-video-box">
                         <a data-bs-toggle="modal" data-bs-target="#CoursePreviewModal">
@@ -386,15 +766,27 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                     </div>
                     <?php endif; ?>
                     <div class="course-sidebar-text-box">
-                        <div class="price text-center">
+
+                        <div class="price text-start">
                             <?php if ($course_details['is_free_course'] == 1) : ?>
                             <span class="current-price"><span
                                     class="current-price"><?php echo site_phrase('free'); ?></span></span>
                             <?php else : ?>
                             <?php if ($course_details['discount_flag'] == 1) : ?>
-                            <span class="original-price"><?php echo currency($course_details['price']) ?></span>
-                            <span class="current-price"><span
-                                    class="current-price"><?php echo currency($course_details['discounted_price']); ?></span></span>
+
+                            <div class="d-flex flex-row mb-3">
+                                <div>
+                                    <p class="text-white fw-bold">Inversion unica</p>
+                                    <span class="current-price"><span
+                                            class="current-price text-white"><?php echo currency($course_details['discounted_price']); ?></span></span>
+                                </div>
+                                <div class="d-flex flex-column mb-3">
+                                    <div class="p-2"><span class="original-price ">Antes:
+                                            <?php echo currency($course_details['price']) ?></span> </div>
+                                    <div class="p-2"><span class="dto"> 70% dto.</span> </div>
+
+                                </div>
+                            </div>
                             <input type="hidden" id="total_price_of_checking_out"
                                 value="<?php echo currency($course_details['discounted_price']); ?>">
                             <?php else : ?>
@@ -415,18 +807,7 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
 
                         <!-- WISHLIST BUTTON -->
                         <div class="buy-btns">
-                            <button
-                                class="btn btn-add-wishlist <?php echo $this->crud_model->is_added_to_wishlist($course_details['id']) ? 'active' : ''; ?>"
-                                type="button" id="<?php echo $course_details['id']; ?>"
-                                onclick="handleAddToWishlist(this)">
-                                <?php
-                  if ($this->crud_model->is_added_to_wishlist($course_details['id'])) {
-                    echo site_phrase('added_to_wishlist');
-                  } else {
-                    echo site_phrase('add_to_wishlist');
-                  }
-                  ?>
-                            </button>
+
                         </div>
 
                         <?php if ($course_details['is_free_course'] == 1) : ?>
@@ -446,47 +827,70 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                                 id="<?php echo $course_details['id']; ?>"
                                 onclick="handleCartItems(this)"><?php echo site_phrase('added_to_cart'); ?></button>
                             <?php else : ?>
-                            <button class="btn btn-buy-now" type="button" id="<?php echo $course_details['id']; ?>"
-                                onclick="handleCartItems(this)"><?php echo site_phrase('add_to_cart'); ?></button>
+                            <button class="btn btn-buy" type="button" id="course_<?php echo $course_details['id']; ?>"
+                                onclick="handleBuyNow(this)"><?php echo site_phrase('Cómpralo ahora'); ?></button>
+
+
                             <?php endif; ?>
 
-                            <button class="btn btn-buy" type="button" id="course_<?php echo $course_details['id']; ?>"
-                                onclick="handleBuyNow(this)"><?php echo site_phrase('buy_now'); ?></button>
+                            <button class="btn btn-buy-now" type="button" id="<?php echo $course_details['id']; ?>"
+                                onclick="handleCartItems(this)"><?php echo site_phrase('Agregar a mi carrito'); ?></button>
                         </div>
                         <?php endif; ?>
                         <?php endif; ?>
+                        <hr style="height: 3px;" class="">
 
+                        <a href="" class="brochure text-center">Descargar el Brochure</a>
 
                         <div class="includes">
-                            <div class="title"><b><?php echo site_phrase('includes'); ?>:</b></div>
+                            <div class="title text-white">
+                                <b><?php echo site_phrase('Beneficios al Matricularte'); ?>:</b>
+                            </div>
                             <ul>
                                 <?php if ($course_details['course_type'] == 'general') : ?>
-                                <li><i class="far fa-file-video"></i>
-                                    <?php
-                    echo $this->crud_model->get_total_duration_of_lesson_by_course_id($course_details['id']) . ' ' . site_phrase('on_demand_videos');
-                    ?>
+                                <li class="text-white"><i class="far fa-file-video"></i>
+                                    Clase virtual en vivo, junto al docente
                                 </li>
-                                <li><i
-                                        class="far fa-file"></i><?php echo $this->crud_model->get_lessons('course', $course_details['id'])->num_rows() . ' ' . site_phrase('lessons'); ?>
+                                <li class="text-white"><i class="far fa-file"></i>Archivos descargables
                                 </li>
-                                <li><i
-                                        class="fas fa-mobile-alt"></i><?php echo site_phrase('access_on_mobile_and_tv'); ?>
+                                <li class="text-white"><i class="fas fa-mobile-alt"></i>Asesoría durante su aprendizaje
                                 </li>
                                 <?php elseif ($course_details['course_type'] == 'scorm') : ?>
-                                <li><i class="far fa-file-video"></i><?php echo site_phrase('scorm_course'); ?></li>
-                                <li><i
-                                        class="fas fa-mobile-alt"></i><?php echo site_phrase('access_on_laptop_and_tv'); ?>
+                                <li class="text-white"><i class="far fa-file-video"></i>Instalación de los softwares a
+                                    usar </li>
+                                <li class="text-white"><i class="fas fa-mobile-alt"></i>Software BIMDev 2023 gratuito
                                 </li>
                                 <?php endif; ?>
-                                <li><i class="far fa-compass"></i><?php echo site_phrase('full_lifetime_access'); ?>
+                                <li class="text-white"><i class="far fa-compass"></i>Material Exclusivo
                                 </li>
-                                <li class="text-center pt-3">
-                                    <a class="badge-sub-warning text-decoration-none fw-600 hover-shadow-1 d-inline-block"
-                                        href="<?php echo site_url('home/compare?course-1=' . rawurlencode(slugify($course_details['title'])) . '&&course-id-1=' . $course_details['id']); ?>"><i
-                                            class="fas fa-balance-scale"></i>
-                                        <?php echo site_phrase('compare_this_course_with_other'); ?></a>
+                                <li class="text-white"><i class="far fa-compass"></i>Proyectos reales desde cero
                                 </li>
+                                <b class="title text-white"><?php echo site_phrase('Beneficios adicionales'); ?>:</b>
+                                <li class="text-white"><i class="far fa-compass"></i>Constancia de matrícula
+                                </li>
+                                <li class="text-white"><i class="far fa-compass"></i>Insignia de acreditación, gratuito
+                                </li>
+                                <li class="text-white"><i class="far fa-compass"></i>Certificado por Instituto Dozer
+                                </li>
+                                <li class="text-white"><i class="far fa-compass"></i>Certificado por Autodesk USA,
+                                    gratuito
+                                </li>
+
+                                <li class="text-white"><i class="far fa-compass"></i>Certificado por el Colegio de
+                                    Ingenieros <br>
+                                    del Perú CD San Martín, gratuito
+                                </li>
+                                <p class="text-center text-white">¿Tienes dudas?</p>
+                                <p class="text-center text-white">Te ayudamos, selecciona el icono de WhatsApp <br> y
+                                    conversemos </p>
+                                <div class="d-flex flex-row mb-3 align-items-center justify-content-center">
+                                    <div class="p-2"> <a href="#"> <img src="<?=base_url()?>uploads/system/whatsap.svg " alt=""></a></div>
+                                    <div class="p-2 text-white">WhatsApp <br> <strong>Instituto Dozer</strong></div>
+                                    
+                                </div>
                                 <?php
+                            
+
                 if (addon_status('affiliate_course')) : // course_addon start  adding
                   $CI    = &get_instance();
                   $CI->load->model('addons/affiliate_course_model');
@@ -533,7 +937,7 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
 }
 
 .btn-custom_coursepage:hover {
-    background-color: #c33333;
+    background-color: #FFC873;
     color: white;
 }
 </style>

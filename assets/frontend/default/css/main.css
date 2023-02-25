@@ -80,8 +80,8 @@ label {
 }
 .btn.red:hover,
 .btn.red:focus {
-    background-color: #c33333 !important;
-    border-color: #c3333300 !important;
+    background-color: #FFC873 !important;
+    border-color: #FFC87300 !important;
     color: #fff;
 }
 .btn.green{
@@ -705,8 +705,8 @@ menu code was here
 }
 .sign-in-box .btn-sign-up:hover,
 .sign-in-box .btn-sign-up:focus{
-    background-color: #c33333;;
-    border-color: #c33333;;
+    background-color: #FFC873;;
+    border-color: #FFC873;;
 }
 
 
@@ -1728,8 +1728,11 @@ section.course-header-area {
     top: 0;
     left: 0;
     z-index: 9;
-    background-color: rgba(41,48,59,.8);
+    background-color: #373737;
     padding: 10px 0;
+    box-shadow: 10px 10px 5px 0px rgb(255 255 255 / 29%);
+    -webkit-box-shadow: -1px 1px 14px 3px rgb(255 255 255 / 18%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(255,200,115,0.75);
 }
 .course-header-area.duplicated .title{
     font-size: 20px;
@@ -1799,14 +1802,14 @@ section.course-header-area {
 course sidebar
 */
 .course-sidebar {
-    background-color: #fff;
+    background-color: #373737;
     border-radius: 8px;
     color: #505763;
     padding: 10px;
     position: relative;
     margin-top: -220px;
     z-index: 10;
-    position: fixed;
+   
 }
 @media only screen and (max-width: 991px) {
     .course-sidebar {
@@ -1924,29 +1927,32 @@ course sidebar
 }
 
 .course-sidebar-text-box .buy-btns .btn-buy-now {
-    color: #7eb200;
-    background-color: #ffffff;
-    border-color: #7eb200;
+    color: white;
+    background-color: #222222;
+    border-color: white;
     border-radius: 10px;
 }
 .btn-buy-now.active,.btn-buy-now.addedToCart, .course-sidebar-text-box .buy-btns .btn-buy-now:hover,.course-sidebar-text-box .buy-btns .btn-buy-now:focus {
-    color: #fff !important;
-    background-color: #7eb200 !important;
-    border-color: #7eb200 !important;
+    color: white!important;
+    background-color: #222222 !important;
+    border-color: #222222 !important;
     border-radius: 10px;
 }
 
 .course-sidebar-text-box .buy-btns .btn-buy{
-    color: #ca9500;
-    background-color: #ffffff;
-    border-color: #ca9500;
+    color: #FFC873;
+    background-color: #222222;
+    border-color: #FFC873;
     border-radius: 10px;
 }
 .btn-buy.active,.btn-buy.addedToCart, .course-sidebar-text-box .buy-btns .btn-buy:hover,.course-sidebar-text-box .buy-btns .btn-buy:focus {
-    color: #fff !important;
-    background-color: #ca9500 !important;
-    border-color: #ca9500 !important;
+    color: #222222 !important;
+    background-color: #FFC873 !important;
+    border-color: #FFC873 !important;
     border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgb(255 200 115 / 75%);
+    -webkit-box-shadow: 0px 1px 10px 0px rgb(255 200 115 / 75%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(255,200,115,0.75);
 }
 
 .course-sidebar-text-box .buy-btns .btn-add-cart {
@@ -1977,12 +1983,12 @@ course sidebar
     list-style: none;
 }
 .course-sidebar-text-box .includes ul li {
-    font-size: 13px;
+    font-size: 15px;
     padding: 3px;
 }
 .course-sidebar-text-box .includes ul li i {
     width: 19px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 
@@ -2277,6 +2283,8 @@ course content
     font-size: 22px;
     font-weight: 600;
     margin: 0 0 20px;
+    text-transform: uppercase;
+    color: white;
 }
 
 .about-instructor-box .about-instructor-image img {
@@ -3230,8 +3238,8 @@ section.my-courses-area {
     font-weight: 600;
 }
 .edit-rating-modal .modal-footer button:hover,.edit-rating-modal .modal-footer button:focus {
-    background-color: #c33333 !important;
-    border-color: #c33333 !important;
+    background-color: #FFC873 !important;
+    border-color: #FFC873 !important;
 }
 .edit-rating-modal .modal-footer button.previous {
     color: #007791;
@@ -3462,8 +3470,8 @@ section.cart-list-area {
     padding: 16px 12px;
 }
 .cart-sidebar .checkout-btn:hover,.cart-sidebar .checkout-btn:focus {
-    background-color: #c33333 !important;
-    border-color: #c33333 !important;
+    background-color: #FFC873 !important;
+    border-color: #FFC873 !important;
 }
 .cart-sidebar .coupon-field input {
     padding: 14px 12px;
@@ -4327,7 +4335,7 @@ border: none;
 }
 .back_to_home_btn:hover, .back_to_home_btn:focus {
 background-color: #ffffff;
-border-color: #c33333;
+border-color: #FFC873;
 color: #2a303b;
 }
 
@@ -5923,3 +5931,216 @@ color: #2a303b;
 
 @media (min-width: 1200px) { .img-n {
     padding: 0 90px;} }
+
+
+.about-directora-title{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px;
+}
+.about-directora-nombre{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+.about-directora-subtitle{
+    color: white;
+    font-size: 1rem;
+    font-weight: lighter;
+    
+}
+.w-10rem{
+    width: 10rem;
+}
+.text-justify{
+    text-align: justify;
+}
+.grop-btn{
+    text-align: end;
+    margin: 10rem 0 0 0;
+    
+}
+
+.btn-style{
+    background: #373737;
+    border: solid transparent;
+    color: white;
+    border-radius: 7px;
+}
+.fondo-certificado-cursos{
+    background: #373737;
+    border-radius: 15px;
+    padding: 0 19px;
+    margin: 0.1rem 0;
+
+}
+ .p-2000{padding: 2rem 0 0 0;}
+ 
+.w-19px{
+    width: 19px;
+}
+.text-titulo-contenido{
+    color: #C9C9C9;
+    margin: 0 25px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.nombre-curso-cont{
+    text-align: center;
+    margin: 15px 0;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-style-certi{
+    border: solid transparent;
+    padding: 0 12px;
+    color: white;
+    border-radius: 10px;
+    background: #222222;
+}
+
+.certi-contenido{
+    text-align: center;
+    margin: 1rem;
+
+}
+.img-certficado-curso{
+    padding: 1rem 0;
+    width: 23rem;
+}
+
+.fondo-soporte{
+    background: #373737;
+}
+
+.cg-1rem{
+    column-gap: 1rem;
+
+}
+
+.color-text{
+    color:#C9C9C9 !important;
+}
+.fondo-autodesk-cont{
+    background-image: url(../../../../uploads/system/fondo-contenido-cursos.png);
+    border-radius: 15px;
+    padding: 0 19px;
+    margin: 0.1rem 0;
+    background-repeat: no-repeat;   
+    height: 12rem;
+}
+
+.fondo-software-cont{
+    background-image: url(../../../../uploads/system/fondo-contenido-software.png);
+    border-radius: 15px;
+    padding: 0 19px;
+    margin: 0.1rem 0;
+    background-repeat: no-repeat;
+    height: 12rem;   
+}
+
+.fondo-beneficios{
+    background: #373737;
+    border-radius: 10px;
+}
+
+.fondo-icon-benedicios{
+    background: #222222;
+    border-radius: 100% 100%;
+    padding: 0.5rem;
+    width: 7rem;
+    height: 7rem;
+    margin: auto;
+}
+
+.icon-beneficios{
+    margin: 1rem;
+    width: 5rem;
+}
+
+.icon-beneficios-uno{
+ 
+    width: 4rem;
+}
+
+.bg-cuestion{
+    background: #373737 !important;
+    color: white !important;
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
+.bg-cuestion-contenido{
+    background: #373737 !important;
+    color:#C9C9C9 !important;
+    border-bottom-right-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+}
+
+.accordion-itemm {
+    background-color: transparent !important;
+ border:  solid transparent !important;
+}
+
+.dto{
+    background: #222222;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: white;
+}
+.brochure{
+    display: block;
+    width: 100%;
+    margin: 0;
+    border-radius: 2px;
+    margin-top: 13px;
+    padding: 12px 10px;
+    font-size: 14.5px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #222222;
+    border-color: white;
+    border-radius: 10px;
+}
+
+/*Responsive contenido Curso*/
+@media (min-width: 768px) { .cuadro-contenido{
+    top: 50px !important;
+}  }
+
+@media (min-width: 992px) {
+    .cuadro-contenido{
+    top: 30px !important;
+} 
+    .img-certficado-curso{
+        width: 19rem;
+    }
+    .gap-beneficios{
+        column-gap: 1rem;
+    }
+    .grop-btn{
+        margin: 0;
+    }
+    .course-sidebar-text-box{
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1200px) {.cuadro-contenido{
+    top: 5rem !important;
+    
+}
+.course-sidebar.fixed{
+    top: 1rem !important;
+}
+}
+@media (min-width: 1400px) { .cuadro-contenido{
+    top: 7rem !important;
+} }
+/*Responsive contenido Curso*/

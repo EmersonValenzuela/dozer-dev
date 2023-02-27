@@ -70,27 +70,9 @@
                             <?php endif; ?>
                         <?php endif; ?>
                     </div>
-                    <div class="rating">
-                        <?php
-                        $total_rating =  $this->crud_model->get_ratings('course', $course['id'], true)->row()->rating;
-                        $number_of_ratings = $this->crud_model->get_ratings('course', $course['id'])->num_rows();
-                        if ($number_of_ratings > 0) {
-                            $average_ceil_rating = ceil($total_rating / $number_of_ratings);
-                        } else {
-                            $average_ceil_rating = 0;
-                        }
 
-                        for ($i = 1; $i < 6; $i++) : ?>
-                            <?php if ($i <= $average_ceil_rating) : ?>
-                                <i class="fas fa-star filled"></i>
-                            <?php else : ?>
-                                <i class="fas fa-star"></i>
-                            <?php endif; ?>
-                        <?php endfor; ?>
-                        <span class="d-inline-block average-rating"><?php echo $average_ceil_rating; ?></span>
-                    </div>
                     <div class="rating-number">
-                        <?php echo $this->crud_model->get_ratings('course', $course['id'])->num_rows() . ' ' . site_phrase('ratings'); ?>
+                        <?php echo $course['is_soon'] ?>
                     </div>
                 </div>
             </div>

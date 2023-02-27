@@ -119,6 +119,9 @@ if (isset($sub_category_id)) {
                                 </ul>
                             </div>
 
+                            
+                            <br>
+                            <?php } ?>
                             <div class="filter_type ">
                                 <h5 class="text-white px-3 py-2 fw-700 m-0 dondenomb_category">
                                     <?php echo site_phrase('Disponibilidad'); ?></h5>
@@ -143,10 +146,7 @@ if (isset($sub_category_id)) {
                                         
                                     </li>
                                 </ul>
-                            </div>
-                            <br>
-                            <?php } ?>
-
+                            </div>        
 
 
 

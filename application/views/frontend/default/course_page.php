@@ -2,12 +2,14 @@
 $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
 $instructor_details = $this->user_model->get_all_user($course_details['user_id'])->row_array();
 ?>
-<section class="course-header-area">
+
+
+<section class="course-content-area">
     <div class="container-xl">
         <div class="row align-items-end">
             <div class="col-lg-8">
-                <div class="course-header-wrap">
-                    <h1 class="title"><?php echo $course_details['title']; ?></h1>
+                <div class="course-header-wrap mt-5">
+                    <h1 class="title text-white"><?php echo $course_details['title']; ?></h1>
                     <p class="text-white">Dirigido a Estudiantes, Técnicos, bachilleres y profesionales de las carreras
                         de Ingeniería Civil
                         y Arquitectura que deseen especializarse en la metodología BIM. </p>
@@ -15,14 +17,9 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
 
                 </div>
             </div>
-            <div class="col-lg-4">
-
-            </div>
+          
         </div>
     </div>
-</section>
-
-<section class="course-content-area">
     <div class="container-xl">
         <div class="row">
 

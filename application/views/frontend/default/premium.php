@@ -128,7 +128,10 @@
             <div class="d-flex flex-row mb-3 justify-content-between text-white fw-700">
                 <div class="p-2">BENEFICIOS DE <br>
                     CONVERTIRTE EN <br>
-                    <img src="<?=base_url()?>uploads/system/corona-premium.svg" alt=""> PREMIUM</div>
+                    <p class="d-flex align-items-center">
+                        <img class="icon-corona" src="<?=base_url()?>uploads/system/corona-premium.svg" alt=""> PREMIUM
+                    </p>
+                </div>
                 <div class="d-flex align-items-center p-02-lrem">Usuario <br>
                     normal</div>
                 <div class=" d-flex flex-column mb-3 text-center">
@@ -149,9 +152,10 @@
             </div>
 
             <div class="d-flex flex-row mb-3 justify-content-between bg-item">
-                <div class="p-2 d-flex flex-row text-white"> 
+                <div class="p-2 d-flex flex-row text-white">
                     <div><img class="p-2" src="<?=base_url()?>uploads/system/icon-vineta.png" alt=""></div>
-                    <div class="text-item">Acceso los 38 cursos y para <br> siempre, sin pagos extras ni <br> por suscripción</div>
+                    <div class="text-item">Acceso los 38 cursos y para <br> siempre, sin pagos extras ni <br> por
+                        suscripción</div>
                 </div>
                 <div class=" bg-subitem d-flex align-items-center">-</div>
                 <div class=" bg-subitem d-flex align-items-center">Si</div>

@@ -5,6 +5,8 @@ isset($selected_level) ? "" : $selected_level = "all";
 isset($selected_language) ? "" : $selected_language = "all";
 isset($selected_rating) ? "" : $selected_rating = "all";
 isset($selected_price) ? "" : $selected_price = "all";
+isset($selected_dis) ? "" : $selected_dis = "dis";
+
 // echo $selected_category_id.'-'.$selected_level.'-'.$selected_language.'-'.$selected_rating.'-'.$selected_price;
 $number_of_visible_categoria = 10;
 if (isset($sub_category_id)) {
@@ -113,6 +115,32 @@ if (isset($sub_category_id)) {
                                             <label class="text-white"
                                                 for="empresa"><?php echo site_phrase('empresa'); ?></label>
                                         </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="filter_type ">
+                                <h5 class="text-white px-3 py-2 fw-700 m-0 dondenomb_category">
+                                    <?php echo site_phrase('Disponibilidad'); ?></h5>
+                                <ul class="text-white p-3 subcategory_nomb">
+                                    <li>
+                                        <div class="">
+                                            <input type="radio" id="dis" name="disponibilidad" class="disponibilidad custom-radio "
+                                                value="dis" onclick="filter(this)"
+                                                <?php if ($selected_dis == 'dis') echo 'checked'; ?>>
+                                            <label class="text-white"
+                                                for="dis"><?php echo site_phrase('Disponible'); ?></label>
+                                        </div>
+                                        <div class="">
+                                            <input type="radio" id="prox" name="disponibilidad" class="disponibilidad custom-radio"
+                                                value="prox" onclick="filter(this)"
+                                                <?php if ($selected_dis == 'prox') echo 'checked'; ?>>
+                                            <label class="text-white"
+                                                for="prox"><?php echo site_phrase('Proximamente'); ?></label>
+                                        </div>
+                                        
+                                        
+                                        
                                     </li>
                                 </ul>
                             </div>

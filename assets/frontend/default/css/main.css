@@ -6253,3 +6253,7 @@ background: linear-gradient(90deg, rgba(29,29,27,1) 54%, rgba(101,85,63,1) 100%)
     font-size: 13px;
     font-weight: 700;
 }
+.icon-corona{
+    padding: 0 5px 0 0;
+    width: 22px;
+}

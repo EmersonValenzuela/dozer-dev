@@ -1183,7 +1183,7 @@ class Admin extends CI_Controller
 
     public function razorpay_checkout_for_instructor_revenue($user_id = "", $payout_id = "", $param1 = "", $razorpay_order_id = "", $payment_id = "", $amount = "", $signature = "")
     {
-        if($param1 == 'paid'){
+        if ($param1 == 'paid') {
             $status = $this->payment_model->razorpay_payment($razorpay_order_id, $payment_id, $amount, $signature);
             if ($status == true) {
                 $this->crud_model->update_payout_status($payout_id, 'razorpay');
@@ -1707,33 +1707,36 @@ class Admin extends CI_Controller
 
 
     //Start blog
-    function add_blog_category(){
+    function add_blog_category()
+    {
         $this->load->view('backend/admin/blog_category_add');
     }
 
-    function edit_blog_category($blog_category_id = ""){
+    function edit_blog_category($blog_category_id = "")
+    {
         $data['blog_category'] = $this->crud_model->get_blog_categoria($blog_category_id)->row_array();
         $this->load->view('backend/admin/blog_category_edit', $data);
     }
 
-    function blog_category($param1 = "", $param2 = ""){
-        if($param1 == 'add'){
+    function blog_category($param1 = "", $param2 = "")
+    {
+        if ($param1 == 'add') {
             $response = $this->crud_model->add_blog_category();
-            if($response == true){
+            if ($response == true) {
                 $this->session->set_flashdata('flash_message', get_phrase('blog_category_added_successfully'));
-            }else{
+            } else {
                 $this->session->set_flashdata('error_message', get_phrase('there_is_already_a_blog_with_this_name'));
             }
             redirect(site_url('admin/blog_category'), 'refresh');
-        }elseif($param1 == 'update'){
+        } elseif ($param1 == 'update') {
             $response = $this->crud_model->update_blog_category($param2);
-            if($response == true){
+            if ($response == true) {
                 $this->session->set_flashdata('flash_message', get_phrase('blog_category_updated_successfully'));
-            }else{
+            } else {
                 $this->session->set_flashdata('error_message', get_phrase('there_is_already_a_blog_with_this_name'));
             }
             redirect(site_url('admin/blog_category'), 'refresh');
-        }elseif($param1 == 'delete'){
+        } elseif ($param1 == 'delete') {
             $this->crud_model->delete_blog_category($param2);
             $this->session->set_flashdata('flash_message', get_phrase('blog_category_deleted_successfully'));
             redirect(site_url('admin/blog_category'), 'refresh');
@@ -1744,33 +1747,36 @@ class Admin extends CI_Controller
         $this->load->view('backend/index', $page_data);
     }
 
-    function add_blog(){
+    function add_blog()
+    {
         $page_data['page_title'] = get_phrase('add_blog');
         $page_data['page_name'] = 'blog_add';
         $this->load->view('backend/index', $page_data);
     }
 
-    function edit_blog($blog_id = ""){
+    function edit_blog($blog_id = "")
+    {
         $page_data['blog'] = $this->crud_model->get_blogs($blog_id)->row_array();
         $page_data['page_title'] = get_phrase('edit_blog');
         $page_data['page_name'] = 'blog_edit';
         $this->load->view('backend/index', $page_data);
     }
 
-    function blog($param1 = "", $param2 = ""){
-        if($param1 == 'add'){
+    function blog($param1 = "", $param2 = "")
+    {
+        if ($param1 == 'add') {
             $this->crud_model->add_blog();
             $this->session->set_flashdata('flash_message', get_phrase('blog_added_successfully'));
             redirect(site_url('admin/blog'), 'refresh');
-        }elseif($param1 == 'update'){
+        } elseif ($param1 == 'update') {
             $this->crud_model->update_blog($param2);
             $this->session->set_flashdata('flash_message', get_phrase('blog_updated_successfully'));
             redirect(site_url('admin/blog'), 'refresh');
-        }elseif($param1 == 'status'){
+        } elseif ($param1 == 'status') {
             $this->crud_model->update_blog_status($param2);
             $this->session->set_flashdata('flash_message', get_phrase('blog_status_has_been_updated'));
             redirect(site_url('admin/blog'), 'refresh');
-        }elseif($param1 == 'delete'){
+        } elseif ($param1 == 'delete') {
             $this->crud_model->blog_delete($param2);
             $this->session->set_flashdata('flash_message', get_phrase('blog_deleted_successfully'));
             redirect(site_url('admin/blog'), 'refresh');
@@ -1781,12 +1787,13 @@ class Admin extends CI_Controller
         $this->load->view('backend/index', $page_data);
     }
 
-    function instructors_pending_blog($param1 = "", $param2 = ""){
-        if($param1 == 'approval_request'){
+    function instructors_pending_blog($param1 = "", $param2 = "")
+    {
+        if ($param1 == 'approval_request') {
             $this->crud_model->approve_blog($param2);
             $this->session->set_flashdata('flash_message', get_phrase('the_blog_has_been_approved'));
             redirect(site_url('admin/instructors_pending_blog'), 'refresh');
-        }elseif($param1 == 'delete'){
+        } elseif ($param1 == 'delete') {
             $this->crud_model->blog_delete($param2);
             $this->session->set_flashdata('flash_message', get_phrase('blog_deleted_successfully'));
             redirect(site_url('admin/instructors_pending_blog'), 'refresh');
@@ -1797,8 +1804,9 @@ class Admin extends CI_Controller
         $this->load->view('backend/index', $page_data);
     }
 
-    function blog_settings($param1 = ""){
-        if($param1 == 'update'){
+    function blog_settings($param1 = "")
+    {
+        if ($param1 == 'update') {
             $this->crud_model->update_blog_settings();
             $this->session->set_flashdata('flash_message', get_phrase('blog_settings_updated_successfully'));
             redirect(site_url('admin/blog_settings'), 'refresh');
@@ -1811,26 +1819,27 @@ class Admin extends CI_Controller
 
 
     //Don't remove this code for security reasons
-    function save_valid_purchase_code($param1 = ""){
-        if($param1 == 'update'){
+    function save_valid_purchase_code($param1 = "")
+    {
+        if ($param1 == 'update') {
             $data['value'] = htmlspecialchars($this->input->post('purchase_code'));
             $status = $this->crud_model->curl_request($data['value']);
-            if($status){
+            if ($status) {
                 $this->db->where('key', 'purchase_code');
                 $this->db->update('settings', $data);
                 $this->session->set_flashdata('flash_message', get_phrase('purchase_code_has_been_updated'));
                 echo 1;
-            }else{
+            } else {
                 echo 0;
             }
-        }else{
+        } else {
             $this->load->view('backend/admin/save_purchase_code_form');
         }
-        
     }
 
-    function drip_content_settings($param1 = ""){
-        if($param1 == 'update'){
+    function drip_content_settings($param1 = "")
+    {
+        if ($param1 == 'update') {
             $this->crud_model->save_drip_content_settings();
             $this->session->set_flashdata('flash_message', get_phrase('drip_content_settings_updated_successfully'));
             redirect(site_url('admin/drip_content_settings'), 'refresh');
@@ -1841,20 +1850,21 @@ class Admin extends CI_Controller
         $this->load->view('backend/index', $page_data);
     }
 
-    function custom_page($param1 = "", $param2 = ""){
-        if($param1 == 'add'){
+    function custom_page($param1 = "", $param2 = "")
+    {
+        if ($param1 == 'add') {
             $this->crud_model->add_custom_page();
             $this->session->set_flashdata('flash_message', get_phrase('new_page_added_successfully'));
             redirect(site_url('admin/custom_page'), 'refresh');
         }
 
-        if($param1 == 'update'){
+        if ($param1 == 'update') {
             $this->crud_model->update_custom_page($param2);
             $this->session->set_flashdata('flash_message', get_phrase('page_updated_successfully'));
             redirect(site_url('admin/custom_page'), 'refresh');
         }
 
-        if($param1 == 'delete'){
+        if ($param1 == 'delete') {
             $this->crud_model->delete_custom_page($param2);
             $this->session->set_flashdata('flash_message', get_phrase('page_deleted_successfully'));
             redirect(site_url('admin/custom_page'), 'refresh');
@@ -1866,13 +1876,15 @@ class Admin extends CI_Controller
         $this->load->view('backend/index', $page_data);
     }
 
-    function add_custom_page($custom_page_id = ""){
+    function add_custom_page($custom_page_id = "")
+    {
         $page_data['page_title'] = get_phrase('add_custom_page');
         $page_data['page_name'] = 'add_custom_page';
         $this->load->view('backend/index', $page_data);
     }
 
-    function edit_custom_page($custom_page_id = ""){
+    function edit_custom_page($custom_page_id = "")
+    {
         $page_data['custom_page'] = $this->crud_model->get_custom_pages($custom_page_id)->row_array();
         $page_data['page_title'] = get_phrase('edit_custom_page');
         $page_data['page_name'] = 'edit_custom_page';
@@ -1884,8 +1896,9 @@ class Admin extends CI_Controller
 
 
     //Start Academy Cloud coding
-    function academy_cloud($param1 = ""){
-        if($param1 == 'update'){
+    function academy_cloud($param1 = "")
+    {
+        if ($param1 == 'update') {
             $this->academy_cloud_model->save_access_token();
             $this->session->set_flashdata('flash_message', get_phrase('access_token_saved_successfully'));
             redirect(site_url('admin/academy_cloud'), 'refresh');

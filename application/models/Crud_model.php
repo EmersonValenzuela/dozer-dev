@@ -573,6 +573,7 @@ class Crud_model extends CI_Model
         $data['date_added'] = strtotime(date('D, d-M-Y'));
         $data['section'] = json_encode(array());
         $data['is_top_course'] = $this->input->post('is_top_course');
+        $data['is_soon'] = $this->input->post('is_soon');
         $data['user_id'] = $this->session->userdata('user_id');
         $data['creator'] = $this->session->userdata('user_id');
         $data['meta_description'] = $this->input->post('meta_description');

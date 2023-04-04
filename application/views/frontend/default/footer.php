@@ -1,22 +1,22 @@
 <footer class="footer-area d-print-none mt-1 pt-1">
-    <div class="container-xl py-4">
+    <div class="container-xl pt-4">
         <div class="row mb-3">
-            <div class="col-6 col-sm-6 col-xl-9 px-4">
-                <span class=" text-white fs-4 fw-bolder">Instituto Dozer</span>
+            <div class="col-12 col-sm-6 col-lg-8 col-xl-9 col-xl-9 px-4">
+                <span class="titulo-footer">Instituto Dozer</span>
 
-                <p class="text-white fw-lighter fs-6 lh-sm">Es una organización privada con ruc: 20606389184, dedicada a
-                    brindar servicios de capacitación y
-                    asesoria en implementación BIM en proyectos públicos y privados, con el objetivo de hacerlos más
+                <p class="text-footer lh-sm">Es una organización privada con ruc: 20606389184, dedicada a
+                    brindar servicios de capacitación y <br>
+                    asesoria en implementación BIM en proyectos públicos y privados, con el objetivo de hacerlos más <br>
                     eficientes y productivos en sus actividades laborales, somos escuela oficial de:
                 </p>
-                <img src="<?=base_url()?>uploads\system\autodesk-footer.svg" alt="">
+                <img class="d-none d-sm-block tamano" src="<?=base_url()?>uploads\system\autodesk-footer.svg" alt="">
             </div>
-            <div class="col-6 col-sm-6 col-xl-3 px-4">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xl-3 px-2">
                 <ul class="list-unstyled text-small">
                     <li class="mb-2 mt-1 fondo-footer"><a class="link-secondary footer-hover-link" href="#">
                             <div class="d-flex flex-row ">
                                 <div class="p-2 "><img src="<?=base_url()?>uploads\system\libro.svg" alt=""></div>
-                                <div class="text-white fw-bold fs-6 p-2 text-center">LIBRO DE
+                                <div class="btn-footer p-2">LIBRO DE <br>
                                     RECLAMACIONES</div>
                             </div>
                         </a>
@@ -24,7 +24,7 @@
                     <li class="mb-2 mt-1 fondo-footer"><a class="link-secondary footer-hover-link" href="#">
                             <div class="d-flex flex-row ">
                                 <div class="p-2 "><img src="<?=base_url()?>uploads\system\certi.svg" alt=""></div>
-                                <div class="text-white fw-bold fs-6 p-2 text-center">VERIFICADOR
+                                <div class="btn-footer p-2 ">VERIFICADOR <br>
                                     DE CERTIFICADOS</div>
                             </div>
                         </a></a>
@@ -45,19 +45,32 @@
     </div>
     <hr>
     <section class="container-xl ">
-        <div class="d-flex flex-row mb-3 justify-content-between">
-            <div class="p-2"><a class="text-white" href="#">Sobre Instituto Dozer</a></div>
-            <div class="p-2"><a class="text-white" href="#">Políticas de Privacidad</a></div>
-            <div class="p-2"><a class="text-white" href="#">Términos y Condiciones</a></div>
-            <div class="p-2"><a class="text-white" href="#">Reglamento Institucional</a></div>
-            <div class="p-2"><a class="text-white" href="#">Trabaja con nosotros</a></div>
+        <div class="d-flex flex-column  flex-sm-row mb-3 justify-content-between">
+            <div class=""><a class="botom-footer" href="#">Sobre Instituto Dozer</a></div>
+            <div class=""><a class="botom-footer" href="#">Políticas de Privacidad</a></div>
+            <div class=""><a class="botom-footer" href="#">Términos y Condiciones</a></div>
+            <div class=""><a class="botom-footer" href="#">Reglamento Institucional</a></div>
+            
+            <?php if (get_settings('allow_instructor') == 1) : ?>
+            <div class="">
+                
+                <?php if($this->session->userdata('user_id')): ?>
+                <a class="botom-footer"
+                    href="<?php echo site_url('user/become_an_instructor'); ?>">Trabaja con nosotros</a>
+                <?php else: ?>
+                <a class="botom-footer"
+                    href="<?php echo site_url('sign_up'); ?>">Trabaja con nosotros</a>
+                <?php endif; ?>
+               
+            </div>
+            <?php endif; ?>
         </div>
     </section>
     <section class="" style="background:#131313;">
         <div class="container-xl">
-            <div class="row d-flex justify-content-between">
+            <div class="row d-flex justify-content-between align-items-center">
 
-                <div class="col-md-6 ps-6 text-15px pt-2  ">Copyright &copy;
+                <div class="col-md-6 ps-6 text-copy fs-15pt pt-2  ">Copyright &copy;
                     <?php echo get_settings('system_name'); ?> 2023,
                     <?php echo site_phrase('- Todos los derechos reservados.'); ?>
                     <br>
@@ -66,10 +79,10 @@
                         href="<?php echo get_settings('footer_link'); ?>"><?php echo site_phrase(get_settings('footer_text')); ?></a>
                     <?php endif; ?>
                 </div>
-                <div class="col-md-6 ps-6 ps-md-1">
+                <div class="col-md-6 ps-6 ps-md-1 fs-19pt text-white">
                     <div>
-                        <div class="d-flex flex-row justify-content-end">
-                            <div class="p-2">Nuestras redes sociales:</div>
+                        <div class="d-flex flex-row justify-content-end align-items-center">
+                            <div class="p-2 text-rs-footer ">Nuestras redes sociales:</div>
                             <div class="p-2 "><img src="uploads\system\social\fb-white.svg" alt=""></div>
                             <div class="p-2 "><img src="uploads\system\social\ig-white.svg" alt=""></div>
                             <div class="p-2 "><img src="uploads\system\social\tk-white.svg" alt=""></div>

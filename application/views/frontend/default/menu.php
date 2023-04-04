@@ -84,7 +84,7 @@
             </ul>
         </li>
         <a href="<?php echo base_url('Nosotros') ?>">
-            <span class="fw-500 text-white main-nav-wrap ">Nosotros</span>
+            <span class="fw-500 text-white main-nav-wrap ">Nosots</span>
         </a>
 
 

@@ -450,7 +450,7 @@
     "sign_up": "Sign up",
     "accept": "Accept",
     "start_learning_from_best_platform": "BIM un futuro muy presente en el sector de la construcción",
-    "study_any_topic,_anytime._explore_thousands_of_courses_for_the_lowest_price_ever!": "Dozer la institución más importante en estudios e implementación de la metodología BIM. Más de 15 mil capacitados por nosotros en todo el Perú, nos respaldan. Somos centro autorizado de capacitación y certificación de Autodesk: ",
+    "study_any_topic,_anytime._explore_thousands_of_courses_for_the_lowest_price_ever!": "Dozer es la institución más importante en estudios e implementación de la metodología BIM en todo el Perú. Somos centro autorizado de capacitación y certificación de Autodesk:",
     "what_do_you_want_to_learn": "What do you want to learn",
     "search": "Search",
     "online_courses": "Online courses",
@@ -795,5 +795,6 @@
     "total_duration": "Total duration",
     "number_of_reviews": "Number of reviews",
     "avg_rating": "Avg rating",
-    "añadir_curso": "Añadir curso"
+    "añadir_curso": "Añadir curso",
+    "trabaja_con_nosotros": "Trabaja con nosotros"
 }

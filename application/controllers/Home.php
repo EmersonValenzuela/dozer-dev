@@ -89,7 +89,7 @@ class Home extends CI_Controller
     public function courses()
     {
         if (!$this->session->userdata('layout')) {
-            $this->session->set_userdata('layout', 'list');
+            $this->session->set_userdata('layout', 'grid');
         }
         $layout = $this->session->userdata('layout');
         $selected_category_id = "all";
@@ -157,7 +157,7 @@ class Home extends CI_Controller
 
         $row_category = $this->crud_model->auth_category(array('slug' => $_GET['category']));
 
-        if ($row_category->parent == 5 || $row_category->id == 5) {
+        if ($row_category->parent == 20 || $row_category->id == 20) {
 
 
             $page_data['variable']  = site_url('uploads/system/portada-cursos.png');
@@ -169,17 +169,19 @@ class Home extends CI_Controller
             $page_data['btn_dos_banner'] = "Premiun ";
             $page_data['id_category'] = $row_category->id;
             $page_data['parent'] = $row_category->parent;
+            $page_data['text_certificado'] = "Certifican: Autodesk y Dozer";
 
             
-        } elseif ($row_category->parent == 4 || $row_category->id == 4) {
+        } elseif ($row_category->parent == 21 || $row_category->id == 21) {
             $page_data['variable']  = site_url('uploads/system/portada-diplomados.png');
             $page_data['text_banner'] = "El mejor momento para invertir en tus 
             metas profesionales es Ahora!";
             $page_data['variable_logo']  = site_url('uploads/system/logo-portadas.png');
             $page_data['id_category'] = $row_category->id;
             $page_data['parent'] = $row_category->parent;
+            
 
-        } elseif ($row_category->parent == 3 || $row_category->id == 3) {
+        } elseif ($row_category->parent == 22 || $row_category->id == 22) {
             $page_data['variable']  = site_url('uploads/system/portada-diplomados.png');
             $page_data['text_banner'] = "El mejor momento para invertir en tus 
             metas profesionales es Ahora! ";

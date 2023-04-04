@@ -56,22 +56,24 @@
     </div>
 
 </div>
-<div class="py-5 overflow-hidden">
+<div class="my-5 overflow-hidden fondo-vm">
+    <div class="container-xl">
+        <div class="row p-4 align-items-center">
+            <div class="col  text-white">
+                <p class="fw-bold">Vision</p>
+                <p class="fw-200">Ser la organización líder en Latinoamérica brindando servicios de capacitación
+                    mediante
+                    metodologías de vanguardia que cumplan con las altas expectativas de nuestros clientes.</p>
+            </div>
+            <div class="col  text-white">
+                <p class="fw-bold">Mision</p>
+                <p class="fw-200">Desarrollar programas de capacitación con altos estándares de calidad, innovación y
+                    responsabilidad social enfocados en formar profesionales competitivos y de alto desempeño.
+                </p>
+            </div>
 
-    <div class="row align-items-center">
-        <div class="col vision  text-white">
-            <p class="fw-bold">Vision</p>
-            <p class="fw-200">Ser la organización líder en Latinoamérica brindando servicios de capacitación mediante
-                metodologías de vanguardia que cumplan con las altas expectativas de nuestros clientes.</p>
+
         </div>
-        <div class="col mision text-white">
-            <p class="fw-bold">Mision</p>
-            <p class="fw-200">Desarrollar programas de capacitación con altos estándares de calidad, innovación y
-                responsabilidad social enfocados en formar profesionales competitivos y de alto desempeño.
-            </p>
-        </div>
-
-
     </div>
 </div>
 

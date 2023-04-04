@@ -1016,9 +1016,10 @@ homepage styles
 */
 
 .home-banner-area{
-    background-image: url('../../../../uploads/system/home-banner.png');
+  /*  background-image: url('../../../../uploads/system/home-banner.png');
    
-    background-position:45rem; background-repeat: no-repeat;  padding: 50px 0px; color: #fff;
+    background-position:45rem; background-repeat: no-repeat;  */
+    padding: 50px 0px; color: #fff;
 }
 .home-banner-wrap{
     max-width: 490px;
@@ -4840,23 +4841,39 @@ color: #2a303b;
 }
 .cont-cuadro{
     background: #373737;
-    border-radius: 15%;
-    box-shadow: rgb(0 0 0) 0px 3px 8px;
-    width: 12rem;
-    padding: 0.9rem;
+    border-radius: 5%;
+    /* box-shadow: rgb(0 0 0) 0px 3px 8px; */
+    width: 10rem;
+    height: 10rem;
+
+    margin: 0 0 2rem 0;
     
 }
 .cont-cuadro-text{
     color: white;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 10pt;
     margin: 0 10px;
 }
-.icon-style{
+.icon-style-user{
     margin: 0.5rem;
+    width: 2rem;
+}
+.icon-style-click{
+    margin: 0.5rem;
+    width: 1.5rem;
+}
+.icon-style-tarjeta{
+    margin: 0.5rem;
+    width: 3rem;
+}
+.icon-style-academy{
+    margin: 0.5rem;
+    width: 2.5rem;
 }
 
 .btnpa{
+    margin: 9px;
     display: inline-block;
     font-weight: 700;
     line-height: 1.5;
@@ -4871,14 +4888,14 @@ color: #2a303b;
     background-color: #999999;
     border: 1px solid transparent;
     padding: 0.3rem 1.7rem;
-    font-size: 0.9rem;
+    font-size: 10pt;
     border-radius: 0.5rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.numberobje{
+/* .numberobje{
     position: absolute;
-    top: 50rem;
+    top: 47rem;
     margin: 0 0 0 10.5rem;
     background-color: #898989;
     border-radius: 25px;
@@ -4886,10 +4903,10 @@ color: #2a303b;
     font-size: 35px;
     line-height: 1.43;
     min-width: 49px;
-    padding: 2px 6px;
+   padding: 2px 6px;
     text-align: center;
     pointer-events: none;
-}
+} */
 
 .r-46{
     right: 46rem !important;
@@ -4904,15 +4921,15 @@ color: #2a303b;
 
 .text-cursos{
      padding: 2rem 0;
-    background: rgb(19,19,19);
-    background: linear-gradient(90deg, rgba(19,19,19,1) 7%, rgb(104 99 99 / 38%) 33%, rgba(19,19,19,1) 93%);
+     background: rgb(34,34,34);
+background: linear-gradient(90deg, rgba(34,34,34,1) 21%, rgba(56,55,55,1) 50%, rgba(34,34,34,1) 75%);
 }
 
 .programa{
     background-color: #373737;
     border-radius: 0rem 2rem 2rem 0rem !important;
     box-shadow: rgb(0 0 0) 0px 3px 8px;
-    padding: 66px 25px;
+    padding: 10px;
 }
 
 
@@ -5071,7 +5088,7 @@ color: #2a303b;
     margin-left: -100%;
   }
   .container .main-cardd .cardss{
-    width: calc(100% / 2 - 10px);
+    width: calc(100% / 2 - 50px);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -5099,12 +5116,12 @@ color: #2a303b;
     width: 35px;
   }
 
-  .card .content .nametest{
+  .card .nametest{
     font-size: 15px;
-    font-weight: 700;
+    font-weight: bold;
     color: white;
   }
-  .card .content .jobtest{
+  .card  .jobtest{
     font-size: 13px;
     color: #c9c9c9;
     font-weight: lighter;
@@ -5118,13 +5135,14 @@ color: #2a303b;
   @media (max-width: 600px) {
     .main-cardd .cardss .card{
       /* margin: 20px 0 10px 0; */
-      width: 100%;
+      width: 50%;
     }
   }
   /*TESTIMONIO*/
   .img-cip{
-    right: 1.5rem;
+    right: 4.5rem;
     position: relative;
+    width: 28rem;
   }
 
   .border-social{
@@ -5389,13 +5407,17 @@ color: #2a303b;
     padding: 0rem 5rem 0 0;
 }
 .mision{    
-    background: #141414;
+   
     padding: 1rem 9rem;
 }
 
 .vision{    
-    background: #1C1C1C;
+  
     padding: 1rem 9rem;
+}
+.fondo-vm{
+    background: rgb(28,28,28);
+background: linear-gradient(90deg, rgba(28,28,28,1) 50%, rgba(20,20,20,1) 50%);
 }
 .fondo-institucion{
     background: #1C1C1C;
@@ -5932,6 +5954,15 @@ color: #2a303b;
 @media (min-width: 1200px) { .img-n {
     padding: 0 90px;} }
 
+    @media (min-width: 1300px) { .img-n {
+        padding: 0 125px;} }
+
+        @media (min-width: 1500px) { .img-n {
+            padding: 0 150px;} }
+
+    @media (min-width: 1600px) { .img-n {
+        padding: 0 152px;} }
+
 
 .about-directora-title{
     color: white;
@@ -6150,6 +6181,7 @@ color: #2a303b;
     border-top-right-radius: 15px;
     padding: 15px;
     font-weight: bold;
+    font-size: 1.5rem;
 }
 .fondo-plan-bottom{
     background: #373737;
@@ -6181,12 +6213,30 @@ color: #2a303b;
 }
 
 .qsp-plan{
-    background: #FFCC73;
-    border-radius: 5px;
-    color:#131313;
+   color:#131313;
     padding: 5px;
     font-weight: 700;
+    background: #FFCC73;
+    border-radius: 5px;
+    text-align: center;
+    margin: 8px;
+    font-size: 18px;
 }
+
+.qsp-planDuo{
+    color:#131313;
+     padding: 5px;
+     font-weight: 700;
+     background: #FFCC73;
+     border-radius: 5px;
+     text-align: center;
+     margin: 28px;
+     font-size: 25px;
+ }
+
+
+
+
 .bg-habilitacion{
     background: #373737;
     border-radius: 10px;
@@ -6227,6 +6277,11 @@ background: linear-gradient(90deg, rgba(29,29,27,1) 54%, rgba(101,85,63,1) 100%)
 
 .bg-item{
     background: #282828;
+    
+}
+
+.bg-border{
+    
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -6240,14 +6295,25 @@ background: linear-gradient(90deg, rgba(29,29,27,1) 54%, rgba(101,85,63,1) 100%)
     font-size: 1rem;
     color: white;
 }
-.p-02-lrem{
-    padding: 0 0 0 2rem;
+.p-03-lrem{
+    padding: 0 0 0 3rem;
 }
 .p-02rem{
     padding: 0 2rem 0 0;
 }
+.p-02-5rem{
+    padding: 0 2.5rem 0 0;
+}
 .p-01rem{
     padding: 0 1rem 0 0;
+}
+
+.p-01-5rem{
+    padding: 0 1.5rem 0 0;
+}
+
+.p-07lrem{
+    padding: 0 0 0 0.7rem;
 }
 .text-item{
     font-size: 13px;
@@ -6257,3 +6323,795 @@ background: linear-gradient(90deg, rgba(29,29,27,1) 54%, rgba(101,85,63,1) 100%)
     padding: 0 5px 0 0;
     width: 22px;
 }
+.text-2rem{
+    font-size: 2rem !important;
+}
+.color-si{
+    color: #FFCC73 !important ;
+}
+
+.bg-border-botom{
+    
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.bg-radius-subitem-botom{
+    border-bottom-right-radius: 15px;
+}
+.cert-inter{
+    background-color: #373737;
+    border-radius: 1rem 0rem 0rem 1rem !important;
+    box-shadow: rgb(0 0 0) 0px 3px 8px;
+    padding: 15px 25px;
+}
+
+.font-13px{
+    font-size: 13px;
+}
+.w-70{
+    width: 70%;
+}
+.w-60{
+    width: 60%;
+}
+.m-4-0-5px-0{
+    margin: 4rem 0 5px 0;
+}
+
+.width-35rem{
+    width: 35rem;
+}
+.width-28rem{
+    width: 28rem;
+}
+.width-27rem{width: 27rem;}
+
+.img-intituto{ position: relative;
+    right: 1rem;
+width: 20rem;}
+   
+
+.fs-3rem{
+    font-size: 3rem;
+}
+.img-autodesk{
+    position: relative;
+    right: 1.5rem;
+    width: 21rem;
+}
+
+.btn-cm{
+    background: white;
+    padding: 10px;
+    border-radius: 7px;
+    color: #373737;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.w-27rem{
+    width: 27rem;
+}
+
+.bg-fondoplanes{
+    box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: 3px -2px 14px 0px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 15px;
+}
+
+.bg-general{
+    background: #222222;
+}
+
+.c-gap-18{
+    column-gap: 18rem;
+}
+.fs-21pt{
+    font-size: 21pt;
+}
+.fs-40pt{
+    font-size: 40pt;
+}
+.fs-39pt{
+    font-size: 39pt;
+}
+.fs-20pt{
+    font-size: 20pt;
+}
+
+.bg-img-cursos{
+     background-position: right;
+    background-repeat: no-repeat;
+    background-size: 59rem;
+    border-radius: 10px;
+
+}
+
+.text-titulo-cat{
+    color: white;
+    font-size: 30pt;
+   
+}
+
+
+
+@media (min-width: 1400px) { .bg-img-cursos{
+    background-size: 62rem;
+    height: 30%;
+    width: 100%;
+    background-position: center;
+} }
+.course-curso{
+    padding: 8px 14px 0px 15px;
+    position: relative;
+}
+
+
+.hc-30rem{
+    height: 30rem;
+}
+
+.tituto-testimonio{
+    line-height: 4rem;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+.img-testimonio{
+    width: 18rem;
+    border-radius: 5%;
+}
+
+.text-testimonio{
+    font-size: 22px;
+}
+.nombre-testimonio{
+    font-size: 18px;
+    color: white;
+}
+
+.tituto-np{
+    color: white;
+    font-size: 29pt;
+    font-weight: bolder;
+
+}
+
+.text-np{
+    color:white;
+    font-weight: lighter;
+    font-size: 19pt;
+     
+}
+.text-rs{
+    color:white;
+    font-weight: lighter;
+    font-size: 12pt;
+    
+}
+
+.titulo-footer{
+    color:white;
+    font-weight: bolder; 
+font-size: 35pt;
+}
+.text-footer{
+    color: white;
+    font-weight: lighter;
+    font-size: 19pt;
+    
+}
+
+.btn-footer{
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 17pt;
+    
+}
+
+.botom-footer{
+    color: #373737;
+    font-size: 17pt;
+}
+
+.fs-15pt{
+    font-size: 15pt;
+}
+.fs-19pt{
+    font-size: 19pt;
+}
+
+.text-principal{
+    font-weight: bold;
+    color: white;
+    font-size: 20pt;
+   
+}
+.sub-text-principal{
+    color: white;
+    font-size: 15pt;
+    
+}
+.text-sub-cat{
+    color: white;
+    font-size: 15pt;
+    font-weight: lighter;
+    
+}
+
+.text-section{
+    color: white;
+    font-size: 20pt;
+    font-weight: bolder;
+}
+.text-titulo-programa{
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+}
+.text-cont-programa{
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+
+} 
+.text-rs-footer{
+    font-size: 20px;
+}
+.text-certificados{
+    font-size: 1.5rem;
+}
+.text-copy{
+    font-size: 15pt;
+}
+
+
+@media (min-width: 576px) { 
+    
+    .text-titulo-cat{
+            
+        font-size: 25pt;
+       
+    }
+    
+    .text-sub-cat{
+        
+        font-size: 10pt;  
+    }
+    .text-cont-programa {
+      
+        font-size: 10px;
+    }
+    
+    .imgpro{
+        height: 200px; 
+         width: 16.5rem;
+    }
+    .text-titulo-programa {
+        
+        font-size: 15px;
+    }
+    .titulo-sub-programa{
+        font-size: 10px;
+    }
+    .programa {
+        border-radius: 0rem 1rem 1rem 0rem !important;
+       
+    }
+    .home-fact-box {
+        
+        height: 310px;
+      
+    }
+    .text-certificados{
+        font-size: 12px;
+    }
+    .img-intituto {
+       
+        right: 1rem;
+        width: 15rem;
+    }
+    .img-autodesk {
+        position: relative;
+        right: 1.9rem;
+        width: 17rem;
+    }
+    .img-cip {
+        right: 3.3rem;
+    position: relative;
+    width: 21rem;
+    }
+    .hc-30rem {
+        height: 20rem;
+    }
+    .devbIM{
+        color: #131313;
+        border-radius: 10px;
+        font-size: 13pt;
+       
+    }
+    .text-section {
+       
+        font-size: 15pt;
+        
+    }
+    .text-testimonio {
+        font-size: 12px;
+    }
+    .img-testimonio {
+        width: 12rem;
+        
+    }
+    .nombre-testimonio {
+        font-size: 10px;
+        
+    }
+    .tituto-np {
+      
+        font-size: 18pt;
+       
+    }
+    .text-np {
+        
+        font-size: 13pt;
+    }
+    .text-rs {
+        
+        font-size: 9pt;
+    }
+    .titulo-footer {
+        
+        font-size: 20pt;
+    }
+    .text-footer {
+       
+        font-size: 10pt;
+    }
+    .btn-footer {
+        font-size: 10pt;
+    }
+    .tamano{
+        width: 30rem;
+    }
+    .botom-footer {
+        
+        font-size: 9pt;
+    }
+    .text-copy{
+        font-size: 9pt;
+    }
+    .text-rs-footer{
+        font-size: 13px;
+    }
+ }
+
+ @media (min-width: 768px) { 
+    .img-home-banner{
+        width: 20rem;
+    }
+    .text-cont-programa {
+        font-size: 13px;
+    }
+    .titulo-sub-programa {
+        font-size: 13px;
+    }
+    .imgpro {
+        width: 358px;
+        height: 210px;
+    }
+    .home-fact-box {
+        height: 310px;
+    }
+    .titulo-certificados{
+        font-size: 21px;
+    }
+    .img-autodesk {
+       
+        width: 16rem;
+        bottom: 0.5rem;
+    }
+    .img-cip {
+        right: 3.5rem;
+       
+        width: 20rem;
+        top: 0.5rem;
+    }
+    .estilos-md{
+        margin: auto;
+        padding: 20px 0;
+    }
+    .btn-footer {
+        font-size: 10pt;
+    }
+    .fondo-footer{
+        margin: 3rem;
+    }
+    .tamano {
+        width: 25rem;
+    }
+    .text-copy {
+        font-size: 8pt;
+    }
+    .text-rs-footer {
+        font-size: 10px;
+    }
+
+  }
+
+  @media (min-width: 992px) { 
+    .text-header{
+        font-size: 14px;
+    }
+    .main-nav-wrap {
+        padding: 0 0.25rem !important;
+        margin: 0px !important;
+    }
+    .img-home-banner {
+        width: 28rem;
+    }
+    .sub-text-principal {
+        color: white;
+        font-size: 13pt;
+    }
+    .cont-cuadro {
+        border-radius: 8%;
+        width: 13rem;
+        height: 13rem;
+    }
+    .icon-style-user {
+        
+        width: 3rem;
+    }
+    .icon-style-click{
+        
+        width: 2.2rem;
+    }
+    .icon-style-tarjeta{
+        
+        width: 4.2rem;
+    }
+    .icon-style-academy{
+       
+        width: 3.8rem;
+    }
+    .cont-cuadro-text {
+        
+        font-size: 12pt;
+       
+    }
+    .btnpa {
+        font-size: 15pt;
+        }
+        .imgpro {
+            width: 470px;
+            height: 210px;
+        }
+        .text-titulo-programa {
+            font-size: 18px;
+        }
+    
+        .img-autodesk {
+            /* width: 16rem; */
+            bottom: 0.5rem;
+            right: 1rem;
+        }
+        .img-intituto {
+            right: 1rem;
+            width: 16rem;
+        }
+        .img-cip {
+            right: 2rem;
+            width: 20rem;
+            top: 0.5rem;
+        }
+        .estilos-md {
+            margin: 0;
+            padding: 0;
+        }
+        .fondo-footer {
+            margin: 1rem;
+        }
+        .tamano {
+            width: 37rem;
+        }
+   }
+
+
+@media (min-width: 1200px) { 
+    .img-home-banner {
+        width: 30rem;
+    }
+    .text-principal{
+        font-size: 30pt;
+        line-height: 2.8rem;
+       
+    }
+    .sub-text-principal{
+       
+        font-size: 18pt;
+        line-height: 2rem;
+        
+    }
+    .btn-cm{
+      
+        font-size: 21px;
+    }
+    .cont-cuadro {
+        
+        border-radius: 8%;
+       
+        width: 15rem;
+        height: 15rem;
+        
+    }
+    .icon-style-user {
+        
+        width: 4rem;
+    }
+    .icon-style-click{
+        
+        width: 2.9rem;
+    }
+    .icon-style-tarjeta{
+        
+        width: 5.7rem;
+    }
+    .icon-style-academy{
+       
+        width: 5.1rem;
+    }
+    .cont-cuadro-text {
+        
+        font-size: 15pt;
+       
+    }
+    .btnpa {
+        font-size: 18.84pt;
+        }
+
+        .text-titulo-cat{
+            
+            font-size: 25pt;
+           
+        }
+        
+        .text-sub-cat{
+            
+            font-size: 13pt;
+           
+            
+        }
+        .text-section{
+           
+            font-size: 25pt;
+           
+        }
+        .programa{
+           
+            padding: 50px 25px;
+        }
+        .text-titulo-programa{
+           
+            font-size: 1.5rem;
+        }
+        .text-cont-programa{
+            
+            font-weight: 200;
+            font-size: 0.9rem;
+        
+        } 
+        .img-intituto{ 
+            width: 20rem;
+            bottom: 1.5rem;
+        }
+        .img-autodesk{
+            width: 20rem;
+            bottom: 2rem;
+        }
+        .img-cip{
+            width: 25rem;
+            top: -1.4rem;
+        }
+        .container .main-cardd .cardss{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .text-rs{
+    
+    font-size: 10pt;
+    
+}
+.imgpro {
+    width: 551px;
+    height: 310px;
+}
+.fondo-footer {
+    margin: 0 0.5rem;
+}
+.botom-footer {
+    font-size: 11pt;
+}
+.tamano {
+    width: 47rem;
+}
+.text-footer {
+    font-size: 17px;
+}
+.text-copy {
+    font-size: 10pt;
+}
+.text-rs-footer {
+    font-size: 12px;
+}
+.tituto-np {
+    font-size: 25pt;
+}
+.text-header {
+    font-size: 18px;
+}
+
+ }
+
+ @media (min-width: 1400px) { 
+    .img-home-banner {
+        width: 35rem;
+    }
+    .text-principal{
+        font-size: 40pt;
+        line-height: 3.5rem;
+       
+    }
+    .titulo-sub-programa {
+        font-size: 22px;
+    }
+    .sub-text-principal{
+       
+        font-size: 21pt;
+        line-height: 2.1rem;
+        
+    }
+    .btn-cm{
+      
+        font-size: 21px;
+    }
+    .cont-cuadro {
+        
+        border-radius: 8%;
+       
+        width: 18rem;
+        height: 18rem;
+        
+    }
+    .icon-style-user {
+        
+        width: 4rem;
+    }
+    .icon-style-click{
+        
+        width: 2.9rem;
+    }
+    .icon-style-tarjeta{
+        
+        width: 5.7rem;
+    }
+    .icon-style-academy{
+       
+        width: 5.1rem;
+    }
+    .cont-cuadro-text {
+        
+        font-size: 15pt;
+       
+    }
+    .btnpa {
+        font-size: 18.84pt;
+        }
+
+        .text-titulo-cat{
+            
+            font-size: 39pt;
+           
+        }
+        
+        .text-sub-cat{
+            
+            font-size: 20pt;
+           
+            
+        }
+        .text-section{
+           
+            font-size: 39pt;
+           
+        }
+        .programa{
+           
+            padding: 50px 25px;
+        }
+        .text-titulo-programa{
+           
+            font-size: 2rem;
+        }
+        .text-cont-programa{
+            
+            font-weight: 200;
+            font-size: 1.5rem;
+        
+        } 
+        .img-intituto{ 
+            width: 27rem;
+            padding: 1.5rem 0;
+        }
+        .img-autodesk{
+            
+            width: 27rem;
+            margin: 2.4rem 0;
+        }
+        .img-cip{
+            width: 33rem;
+            top: 0;
+            margin: 0.7rem 0;
+            right: 3.5rem;
+        }
+        .container .main-cardd .cardss{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .text-rs{
+    
+    font-size: 17pt;
+    
+}
+.imgpro {
+    width: 682px;
+    height: 420px;
+}
+.hc-30rem {
+    height: 35rem;
+}
+.home-fact-box {
+     height: 480px; 
+}
+.titulo-certificados {
+    font-size: 30px;
+}
+.text-certificados {
+    font-size: 20px;
+}
+.img-testimonio {
+    width: 18rem;
+}
+.text-testimonio {
+    font-size: 19px;
+}
+.nombre-testimonio {
+    font-size: 15px;
+}
+.fondo-footer {
+    margin: 0 2rem;
+}
+.btn-footer {
+    font-size: 12pt;
+}
+.text-footer {
+    font-size: 20px;
+}
+.tamano {
+    width: 55rem;
+}
+.tituto-np {
+    font-size: 29pt;
+}
+.text-np {
+    font-size: 17pt;
+}
+
+ }
+

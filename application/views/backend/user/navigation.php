@@ -1,7 +1,7 @@
 <?php
 $status_wise_courses = $this->crud_model->get_status_wise_courses();
 ?>
-<!-- ========== Left Sidebar Start ========== -->
+<!-- ========== Left Sidebar Start ========== 
 <div class="left-side-menu left-side-menu-detached">
 	<div class="leftbar-user">
 		<a href="javascript: void(0);">
@@ -12,8 +12,8 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 			<span class="leftbar-user-name"><?php echo $user_details['first_name'] . ' ' . $user_details['last_name']; ?></span>
 		</a>
 	</div>
-
-	<!--- Sidemenu -->
+-->
+	<!--- Sidemenu 
 	<ul class="metismenu side-nav side-nav-light">
 
 		<li class="side-nav-title side-nav-item"><?php echo get_phrase('navigation'); ?></li>
@@ -219,4 +219,4 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 
 
 	</ul>
-</div>
+</div> -->

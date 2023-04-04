@@ -3,25 +3,33 @@
         $instructor_details = $this->user_model->get_all_user($course['user_id'])->row_array();
         $course_duration = $this->crud_model->get_total_duration_of_lesson_by_course_id($course['id']);
         $lessons = $this->crud_model->get_lessons('course', $course['id']); ?>
-        <div class="col-md-6 col-xl-4 px-0">
-            <div class="course-box-wrap">
-                <a onclick="$(location).attr('href', '<?php echo site_url('home/course/' . rawurlencode(slugify($course['title'])) . '/' . $course['id']); ?>');" href="javascript:;" class="has-popover">
-                    <div class="course-box">
-                        <div class="course-image">
-                            
+    <div class="col-md-6 col-xl-4 px-0">
+        <div class="course-box-wrap">
+            <a onclick="$(location).attr('href', '<?php echo site_url('home/course/' . rawurlencode(slugify($course['title'])) . '/' . $course['id']); ?>');"
+                href="javascript:;" class="has-popover">
+                <div class="course-box">
+                    <div class="course-image">
 
-                            <img src="<?php echo $this->crud_model->get_course_thumbnail_url($course['id']); ?>" alt="" class="img-fluid">
-                        </div>
-                        <div class="course-details">
-                            <div class="row mb-3">
+
+                        <img src="<?php echo $this->crud_model->get_course_thumbnail_url($course['id']); ?>" alt=""
+                            class="img-fluid">
+                    </div>
+                    <div>
+                        <div class="course-curso">
+                            <h5 class="title"><?php echo $course['title']; ?></h5>
+                            <div class="row ">
                                 <div class="col-12">
-                                    <span class="badge badge-primary text-11px"><?php echo site_phrase($course['level']); ?></span>
+                                    <span class="title"><?php echo site_phrase($course['level']); ?></span>
                                 </div>
                             </div>
-                            <h5 class="title"><?php echo $course['title']; ?></h5>
-                           
+                            <div class="row mt-5">
+                                <div class="col-12">
+                                <span class="fw-200 text-white "><?= $text_certificado ?></span>
+                                </div>
+                            </div>
+                        </div>
 
-                           <!-- <div class="row">
+                        <!-- <div class="row">
                                 <div class="col">
                                     <div class="floating-user d-inline-block">
                                         <?php if ($course['multi_instructor']):
@@ -49,29 +57,34 @@
                                     <span class="text-muted text-12px"><?php echo $lessons->num_rows().' '.site_phrase('lectures'); ?></span>
                                 </div>
                             </div> -->
-
-                            <div class="w-100 d-flex text-dark border-top py-1">
+                        <hr class="w-100 ">
+                        <div class="w-100 d-flex text-dark  py-1 course-details">
                             <div class="">
-                            <?php if ($course['is_free_course'] == 1) : ?>
-                                <p class="price text-white text-right d-inline-block float-end"><?php echo site_phrase('free'); ?></p>
-                            <?php else : ?>
+                                <?php if ($course['is_free_course'] == 1) : ?>
+                                <p class="price text-white text-right d-inline-block float-end">
+                                    <?php echo site_phrase('free'); ?></p>
+                                <?php else : ?>
                                 <?php if ($course['discount_flag'] == 1) : ?>
-                                    <p class="price text-white  text-right d-inline-block float-end"><small>  <del><?php echo currency($course['price']); ?></small></del> <br> <?php echo currency($course['discounted_price']); ?></p> <br>
-                                <?php else : ?> 
-                                   <br> <p class="price text-white fw-bold text-15px text-right d-inline-block float-end"><?php echo currency($course['price']); ?></p>
+                                <p class="price text-white  text-right d-inline-block float-end"><small>
+                                        <del><?php echo currency($course['price']); ?></small></del> <br>
+                                    <?php echo currency($course['discounted_price']); ?></p> <br>
+                                <?php else : ?>
+                                <br>
+                                <p class="price text-white fw-bold text-15px text-right d-inline-block float-end">
+                                    <?php echo currency($course['price']); ?></p>
                                 <?php endif; ?>
-                            <?php endif; ?>
-                                </div>
-                                <div class="ms-auto">
-                                   
-                                    <span class="text-white fw-bold text-15px text-center">70% Desc</span> <br>
-                                    <span class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                </div>
+                                <?php endif; ?>
+                            </div>
+                            <div class="ms-auto">
+
+                                <span class="text-white fw-bold text-15px text-center">70% Desc</span> <br>
+                                <span class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
                             </div>
                         </div>
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
+    </div>
     <?php endforeach; ?>
 </div>

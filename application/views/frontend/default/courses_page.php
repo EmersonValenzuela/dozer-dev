@@ -1,5 +1,5 @@
 <?php
-isset($layout) ? "" : $layout = "list";
+isset($layout) ? "" : $layout = "grid";
 isset($selected_category_id) ? "" : $selected_category_id = "all";
 isset($selected_level) ? "" : $selected_level = "all";
 isset($selected_language) ? "" : $selected_language = "all";
@@ -36,7 +36,7 @@ if (isset($sub_category_id)) {
                                     <?php
                                     $counter = 1;
                                     $total_number_of_categoria = $this->db->get('category')->num_rows();
-                                    if ($id_category == '3' || $id_category == '4' || $id_category == '5') {
+                                    if ($id_category == '20' || $id_category == '21' || $id_category == '22') {
                                         $categoria = $this->crud_model->get_categoria($id_category)->result_array();
                                     } else {
                                         $categoria = $this->crud_model->get_categoria($parent)->result_array();
@@ -74,7 +74,7 @@ if (isset($sub_category_id)) {
                                     <?php endforeach; ?>
                                 </ul>
                             </div>
-                            <?php if($id_category == '5'|| $parent == '5') {?>
+                            <?php if($id_category == '20'|| $parent == '20') {?>
                             <div class="filter_type ">
                                 <h5 class="text-white px-3 py-2 fw-700 m-0 dondenomb_category">
                                     <?php echo site_phrase('level'); ?></h5>
@@ -155,12 +155,9 @@ if (isset($sub_category_id)) {
                 </div>
             </div>
             <div class="col-lg-9">
-                <div class="row category-filter-box mx-0 box-shadow-4" style="
+                <div class="row category-filter-box mx-0 box-shadow-4 bg-img-cursos" style="
                     background-image: url(<?= $variable ?>);
-                    background-position: right;
-                    background-repeat: no-repeat;
-                    background-size: 59rem;
-                    border-radius: 10px;
+                    
                 ">
                     <div class="col-md-6 position-relative">
                         <p class="fw-bold text-white px-5"><?= $text_banner ?></p>
@@ -187,7 +184,7 @@ if (isset($sub_category_id)) {
                     </div>
                 </div>
                 <div class="category-course-list">
-                    <?php include 'category_wise_course_' . $layout . '_layout.php'; ?>
+                    <?php include 'category_wise_course_grid_layout.php'; ?>
                     <?php if (count($courses) == 0) : ?>
                     <?php echo site_phrase('no_result_found'); ?>
                     <?php endif; ?>

@@ -703,7 +703,7 @@ CREATE TABLE `settings` (
 
 INSERT INTO `settings` (`id`, `key`, `value`) VALUES
 (1, 'language', 'english'),
-(2, 'system_name', 'Academy LMS'),
+(2, 'system_name', 'Instituto Dozer'),
 (3, 'system_title', 'Academy Learning Club'),
 (4, 'system_email', 'academy@example.com'),
 (5, 'address', 'Sydney, Australia'),

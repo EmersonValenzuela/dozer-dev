@@ -475,5 +475,74 @@ body.show {
      font-weight: 700;
   }
 
- 
+  /*TRABAJA CON NOSOTROS*/
 
+  .text-tn{
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+    
+  }
+
+ .fondo-tn{
+  background: #222222;
+ }
+ .subtitle-tn{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+ }
+ .descrip-tn{color: white;
+  font-size: 20px;}
+ .datos-tn{color: white;
+  font-size: 20px;}
+.fecha-tn{color: white;
+  font-size: 18px;}
+.pd-tn{color: white;
+  font-size: 18px;}
+.style-cb{
+  background: #373737;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 6px;
+  font-weight: 200;
+  border: 1px transparent;
+}
+
+.form-tc{
+  background: #373737 !important;
+  border: 1px solid transparent !important;
+}
+@media (min-width: 1500px){
+.container-xl {
+    max-width: 1400px;
+}
+}
+
+.container-xl, .container-lg {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.btn-tn{
+  color: #222222;
+    font-weight: bold;
+    background: white;
+    /* border-color: #727cf5; */
+    padding: 5px 80px;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+.btn-tn:hover{
+  background-color: #FFC873;
+  color: #222222;
+  font-weight: bold;
+}
+.sub-desti{
+  font-size: 15px;
+}

@@ -122,7 +122,7 @@
 
 .wrapper nav label {
     display: block;
-    height: 100%;
+    height: 70%;
     width: 100%;
     text-align: center;
     line-height: 50px;
@@ -158,10 +158,10 @@ nav label i {
 
 nav .slider {
     position: absolute;
-    height: 100%;
-    width: 13%;
+    height: 70%;
+    width: 183px;
     left: 5px;
-    bottom: 0;
+    /*bottom: 0;*/
     z-index: 0;
     border-radius: 10px;
     background: white;
@@ -174,31 +174,27 @@ input[type="radio"] {
 }
 
 #blog:checked~nav .slider {
-    left: 15%;
+    left: 200px;
 }
 
 #code:checked~nav .slider {
-    left: 30%;
-    width: 12%;
+    left: 393px;
 }
 
 #help:checked~nav .slider {
-    left: 45%;
-    width: 11%;
+    left: 589px;
 }
 
 #about:checked~nav .slider {
-    left: 58%;
-    width: 12%;
+    left: 783px;
 }
 
 #about-uno:checked~nav .slider {
-    left: 72%;
+    left: 977px;
 }
 
 #about-dos:checked~nav .slider {
-    left: 87%;
-    width: 12%;
+    left: 1170px;
 }
 
 section .content {
@@ -235,7 +231,1744 @@ section .content p {
         </p>
     </h3>
 </section>
+<section class="container-xl">
+    <div class="wrapper">
+        <input type="radio" name="slider" checked id="home">
+        <input type="radio" name="slider" id="blog">
+        <input type="radio" name="slider" id="code">
+        <input type="radio" name="slider" id="help">
+        <input type="radio" name="slider" id="about">
+        <input type="radio" name="slider" id="about-uno">
+        <input type="radio" name="slider" id="about-dos">
+        <nav>
+            <label for="home" class="home">Arquitectura</label>
+            <label for="blog" class="blog">Estructura</label>
+            <label for="code" class="code">Instalaciones</label>
+            <label for="help" class="help">Dibujo 2D</label>
+            <label for="about" class="about">Infraestructura</label>
+            <label for="about-uno" class="about-uno">Automatización</label>
+            <label for="about-dos" class="about-dos">Gestión</label>
+            <div class="slider"></div>
+        </nav>
+        <section>
+            <div class="content content-1 ">
+                <div class="container ">
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-arquitectura/17');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
 
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_171680650491.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Revit Arquitectura</h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-arquitectura/19');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_191680651299.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Revit Arquitectura </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/3ds-max/64');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_64.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">3Ds Max</h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/3ds-max/66');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_66.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">3Ds Max</h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="content content-2">
+                <div class="container ">
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-estructura/21');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_211680647957.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Revit Estructura </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=revit-estructura&&course-id-1=21');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.295</del></small> <br>
+                                                        S/.59
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-estructura/23');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_231680647912.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Revit Estructura </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=revit-estructura&&course-id-1=23');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.295</del></small> <br>
+                                                        S/.59
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/robot-structural-analysis/25');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_251680649577.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Robot Structural Analysis </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=robot-structural-analysis&&course-id-1=25');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/robot-structural-analysis/27');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_271680649660.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Robot Structural Analysis </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=robot-structural-analysis&&course-id-1=27');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/advance-steel/28');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_281681412408.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Advance Steel </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=advance-steel&&course-id-1=28');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/advance-steel/30');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_301680649892.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Advance Steel </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=advance-steel&&course-id-1=30');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/inventor-professional/67');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_67.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Inventor Professional </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/0883e3d12536091196fce53336f8102a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="Alessandra Huaynatteeeeeeeeee" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/4');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=inventor-professional&&course-id-1=67');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/inventor-professional/69');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_69.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Inventor Professional </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/0883e3d12536091196fce53336f8102a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="Alessandra Huaynatteeeeeeeeee" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/4');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=inventor-professional&&course-id-1=69');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad-plant-3d/70');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_701680650382.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">AutoCAD Plant 3D</h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/0883e3d12536091196fce53336f8102a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="Alessandra Huaynatteeeeeeeeee" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/4');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=autocad-plant-3d&&course-id-1=70');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad-plant-3d/72');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_72.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">AutoCAD Plant 3D</h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/0883e3d12536091196fce53336f8102a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="Alessandra Huaynatteeeeeeeeee" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/4');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=autocad-plant-3d&&course-id-1=72');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content content-3">
+                <div class="container ">
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-mep/31');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_311680651411.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Revit MEP </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=revit-mep&&course-id-1=31');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-mep/33');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_331680651684.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Revit MEP </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=revit-mep&&course-id-1=33');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="content content-4">
+                <div class="container ">
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad/35');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_351680651807.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">AutoCAD </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=autocad&&course-id-1=35');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad/37');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_371680651958.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">AutoCAD</h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=autocad&&course-id-1=37');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content content-5">
+                <div class="container ">
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/civil-3d/39');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_391680652176.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Civil 3D </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=civil-3d&&course-id-1=39');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/civil-3d/41');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_411680652329.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Civil 3D </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=civil-3d&&course-id-1=41');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/infraworks/43');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_431680653711.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Infraworks</h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=infraworks&&course-id-1=43');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/infraworks/45');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_451681230031.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Infraworks </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=infraworks&&course-id-1=45');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content content-6">
+                <div class="container ">
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/dynamo-para-revit/46');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_461680646371.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Dynamo para Revit </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=dynamo-para-revit&&course-id-1=46');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/dynamo-para-revit/48');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_481680646450.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Dynamo para Revit </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=dynamo-para-revit&&course-id-1=48');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.295</del></small> <br>
+                                                        S/.59
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content content-7">
+                <div class="container ">
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/navisworks-manage/49');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_491680645983.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Navisworks Manage </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=navisworks-manage&&course-id-1=49');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79</p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/navisworks-manage/51');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_511680646102.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Navisworks Manage </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=navisworks-manage&&course-id-1=51');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79</p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+</section>
 
 
 <!-- style especializaciones -->
@@ -257,12 +1990,13 @@ section .content p {
     height: 50px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .wrapperr nav label {
     display: block;
-    height: 100%;
-    width: 100%;
+    height: 70%;
+    width: 250px;
     text-align: center;
     line-height: 50px;
     cursor: pointer;
@@ -296,10 +2030,9 @@ nav label i {
 
 nav .sliderr {
     position: absolute;
-    height: 100%;
-    width: 23%;
-    left: 5px;
-    bottom: 0;
+    height: 70%;
+    width: 245px;
+    left: 167px;
     z-index: 0;
     border-radius: 10px;
     background: white;
@@ -309,12 +2042,14 @@ nav .sliderr {
 
 
 #blogg:checked~nav .sliderr {
-    left: 26%;
+    left: 425px;
+    width: 250px;
 
 }
 
 #codee:checked~nav .sliderr {
-    left: 51%;
+    left: 685px;
+    width: 250px;
 
 }
 
@@ -358,7 +2093,1189 @@ section .contentt p {
         </p>
     </h3>
 </section>
+<section class="container-xl">
+    <div class="wrapperr">
+        <input type="radio" name="sliderr" checked id="homee">
+        <input type="radio" name="sliderr" id="blogg">
+        <input type="radio" name="sliderr" id="codee">
+        <input type="radio" name="sliderr" id="helpp">
+    
+        <nav>
+            <label for="homee" class="homee">Especialista BIM</label>
+            <label for="blogg" class="blogg">Gestión BIM</label>
+            <label for="codee" class="codee">Expedientes BIM</label>
+            <label for="helpp" class="helpp">Ingeniería BIM</label>
+            
+            <div class="sliderr"></div>
+        </nav>
+        <section>
+            <div class="contentt content-uno ">
+                <div class="container ">
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-arquitectura/17');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
 
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_171680650491.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Revit Arquitectura</h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-arquitectura/19');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_191680651299.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Revit Arquitectura </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/3ds-max/64');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_64.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">3Ds Max</h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/3ds-max/66');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_66.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">3Ds Max</h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="contentt content-dos">
+                <div class="container ">
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-estructura/21');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_211680647957.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Revit Estructura </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=revit-estructura&&course-id-1=21');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.295</del></small> <br>
+                                                        S/.59
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-estructura/23');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_231680647912.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Revit Estructura </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=revit-estructura&&course-id-1=23');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.295</del></small> <br>
+                                                        S/.59
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/robot-structural-analysis/25');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_251680649577.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Robot Structural Analysis </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=robot-structural-analysis&&course-id-1=25');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/robot-structural-analysis/27');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_271680649660.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Robot Structural Analysis </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=robot-structural-analysis&&course-id-1=27');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/advance-steel/28');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_281681412408.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Advance Steel </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=advance-steel&&course-id-1=28');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/advance-steel/30');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_301680649892.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Advance Steel </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=advance-steel&&course-id-1=30');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/inventor-professional/67');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_67.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Inventor Professional </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/0883e3d12536091196fce53336f8102a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="Alessandra Huaynatteeeeeeeeee" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/4');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=inventor-professional&&course-id-1=67');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/inventor-professional/69');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_69.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Inventor Professional </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/0883e3d12536091196fce53336f8102a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="Alessandra Huaynatteeeeeeeeee" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/4');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=inventor-professional&&course-id-1=69');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad-plant-3d/70');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_701680650382.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">AutoCAD Plant 3D</h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/0883e3d12536091196fce53336f8102a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="Alessandra Huaynatteeeeeeeeee" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/4');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=autocad-plant-3d&&course-id-1=70');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad-plant-3d/72');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_72.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">AutoCAD Plant 3D</h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/0883e3d12536091196fce53336f8102a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="Alessandra Huaynatteeeeeeeeee" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/4');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=autocad-plant-3d&&course-id-1=72');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contentt content-tres">
+                <div class="container ">
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-mep/31');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_311680651411.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Revit MEP </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=revit-mep&&course-id-1=31');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-mep/33');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_331680651684.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">Revit MEP </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=revit-mep&&course-id-1=33');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="contentt content-cuatro">
+                <div class="container ">
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad/35');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_351680651807.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">AutoCAD </h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Basico</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=autocad&&course-id-1=35');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad/37');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_371680651958.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="title">AutoCAD</h5>
+                                                <div class="row ">
+                                                    <div class="col-12">
+                                                        <span class="title">Nivel Avanzado</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                            Dozer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="row">
+                                <div class="col">
+                                    <div class="floating-user d-inline-block">
+                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
+                                                                            </div>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=autocad&&course-id-1=37');"><i class="fas fa-retweet"></i> Compare</button>
+                                </div>
+                                <div class="">
+                                    <i class="text-danger far fa-clock text-14px"></i>
+                                    <span class="text-muted text-12px">00:00:00 Hours</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="text-primary far fa-list-alt text-14px"></i>
+                                    <span class="text-muted text-12px">0 Lectures</span>
+                                </div>
+                            </div> -->
+                                            <hr class="w-100 ">
+                                            <div class="w-100 d-flex text-dark  py-1 course-details">
+                                                <div class="">
+                                                    <p class="price text-white  text-right d-inline-block float-end">
+                                                        <small>
+                                                            <del>S/.395</del></small> <br>
+                                                        S/.79
+                                                    </p> <br>
+                                                </div>
+                                                <div class="ms-auto">
+
+                                                    <span class="text-white fw-bold text-15px text-center">70%
+                                                        Desc</span> <br>
+                                                    <span
+                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+    </div>
+
+</section>
 
 <style>
 .wrapperrr {
@@ -772,7 +3689,8 @@ section .conten p {
                         <div class="text-white text-testimonio fw-light lh-sm py-2">“Teoría y constante practica, los
                             <br>
                             cursos
-                            estan bien organizados y <br> desarrollados”</div>
+                            estan bien organizados y <br> desarrollados”
+                        </div>
 
                         <div class="d-flex justify-content-start">
                             <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\pe.png"

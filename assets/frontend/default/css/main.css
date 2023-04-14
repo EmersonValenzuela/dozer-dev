@@ -6438,7 +6438,7 @@ width: 20rem;}
 
 @media (min-width: 1400px) { .bg-img-cursos{
     background-size: 62rem;
-    height: 30%;
+    height:210px;
     width: 100%;
     background-position: center;
 } }

@@ -5,11 +5,11 @@
 
 
 <section class="category-course-list-area">
-    <div class="container px-3">
+    <div class="container-xl">
 
         <div class="row">
             <div class="col-lg-6 d-none d-lg-block text-center position-relative left-13 ">
-                <img class="" width="100%" style="height: 100%;" src="<?php echo base_url('uploads/system/sign_up.png'); ?>">
+                <img class="" style="     height: 100%; width: 90%;" src="<?php echo base_url('uploads/system/sign_up.png'); ?>">
             </div>
             <div class="col-lg-6 fondologin ">
                 <div class="sign-up-form-padding">
@@ -109,4 +109,9 @@
             </div>
         </div>
     </div>
+    <div class="container-xl " >
+    <p class="text-white m-5">
+    <strong> Nota:</strong> Los datos como el nombre y apellido, serán utilizados para la emisión de las certificaciones, por ello se le pide que digite correctamente en el recuadro del formulario. Una vez completado el formulario, ya no es posible modificar su nombre y correo, los demás datos complementarios si es posible su modificación. 
+
+    </p></div>
 </section>

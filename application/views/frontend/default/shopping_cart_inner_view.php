@@ -1,4 +1,4 @@
-<div class="col-lg-9">
+<div class="col-lg-6">
     <div class="in-cart-box">
         <div class="title"><?php echo sizeof($this->session->userdata('cart_items')) . ' ' . site_phrase('courses_in_cart'); ?></div>
         <div class="">
@@ -74,8 +74,6 @@
             </ul>
         </div>
     </div>
-</div>
-<div class="col-lg-3 pt-1">
     <h5 class="fw-700"><?php echo site_phrase('total'); ?>:</h5>
     <div class="cart-sidebar bg-white radius-10 py-4 px-3 box-shadow-5">
         <?php if (isset($coupon_code) && !empty($coupon_code) && $this->crud_model->check_coupon_validity($coupon_code)) : ?>

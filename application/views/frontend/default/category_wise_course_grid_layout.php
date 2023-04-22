@@ -24,66 +24,41 @@
                             </div>
                             <div class="row mt-5">
                                 <div class="col-12">
-                                <span class="fw-200 text-white "><?= $text_certificado ?></span>
+                                    <span class="fw-200 text-white "><?= $text_certificado ?></span>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                        <?php if ($course['multi_instructor']):
-                                            $instructor_details = $this->user_model->get_multi_instructor_details_with_csv($course['user_id']);
-                                            $margin = 0;
-                                            foreach ($instructor_details as $key => $instructor_detail) { ?>
-                                                <img style="margin-left: <?php echo $margin; ?>px;" class="position-absolute" src="<?php echo $this->user_model->get_user_image_url($instructor_detail['id']); ?>" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="<?php echo $instructor_detail['first_name'].' '.$instructor_detail['last_name']; ?>" onclick="event.stopPropagation(); $(location).attr('href', '<?php echo site_url('home/instructor_page/'.$instructor_detail['id']); ?>');">
-                                                <?php $margin = $margin+17; ?>
-                                            <?php } ?>
-                                        <?php else: ?>
-                                            <?php $user_details = $this->user_model->get_all_user($course['user_id'])->row_array(); ?>
-                                            <img src="<?php echo $this->user_model->get_user_image_url($user_details['id']); ?>" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="<?php echo $user_details['first_name'].' '.$user_details['last_name']; ?>" onclick="event.stopPropagation(); $(location).attr('href', '<?php echo site_url('home/instructor_page/'.$user_details['id']); ?>');">
-                                        <?php endif; ?>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', '<?php echo site_url('home/compare?course-1=' . rawurlencode(slugify($course['title'])) . '&&course-id-1=' . $course['id']); ?>');"><i class="fas fa-retweet"></i> <?php echo site_phrase('compare'); ?></button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px"><?php echo $course_duration; ?></span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px"><?php echo $lessons->num_rows().' '.site_phrase('lectures'); ?></span>
-                                </div>
-                            </div> -->
-                        <hr class="w-100 ">
-                        <div class="w-100 d-flex text-dark  py-1 course-details">
-                            <div class="">
-                                <?php if ($course['is_free_course'] == 1) : ?>
-                                <p class="price text-white text-right d-inline-block float-end">
-                                    <?php echo site_phrase('free'); ?></p>
-                                <?php else : ?>
-                                <?php if ($course['discount_flag'] == 1) : ?>
-                                <p class="price text-white  text-right d-inline-block float-end"><small>
-                                        <del><?php echo currency($course['price']); ?></small></del> <br>
-                                    <?php echo currency($course['discounted_price']); ?></p> <br>
-                                <?php else : ?>
-                                <br>
-                                <p class="price text-white fw-bold text-15px text-right d-inline-block float-end">
-                                    <?php echo currency($course['price']); ?></p>
-                                <?php endif; ?>
-                                <?php endif; ?>
-                            </div>
-                            <div class="ms-auto">
 
-                                <span class="text-white fw-bold text-15px text-center">70% Desc</span> <br>
-                                <span class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </a>
+                <div  class="mt-1 course-box-tres">
+                <div class="w-100 d-flex text-dark  py-1 course-details ">
+                    <div class="">
+                        <?php if ($course['is_free_course'] == 1) : ?>
+                        <p class="price text-white text-right d-inline-block float-end">
+                            <?php echo site_phrase('free'); ?></p>
+                        <?php else : ?>
+                        <?php if ($course['discount_flag'] == 1) : ?>
+                        <p class="price text-white  text-right d-inline-block float-end"><small>
+                                
+                          <span class="precio-desc"> <?php echo currency($course['discounted_price']); ?>  Soles</span> <br>
+                          <del><?php echo currency($course['price']);?> Soles </small></del> 
+                        </p> <br>
+                        <?php else : ?>
+                        <br>
+                        <p class="price text-white fw-bold text-15px text-right d-inline-block float-end">
+                            <?php echo currency($course['price']); ?></p>
+                        <?php endif; ?>
+                        <?php endif; ?>
+                    </div>
+                    <div class="ms-auto">
+
+                        <span class="text-white fw-bold text-15px text-center">80% Dto</span> <br>
+                        <span class="btnbadge-prox  ">PROXIMAMENTE</span>
+                    </div>
+                </div>
+            </a></div>
         </div>
     </div>
     <?php endforeach; ?>

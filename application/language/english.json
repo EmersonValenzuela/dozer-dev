@@ -877,5 +877,9 @@
     "grado_de_instrucción,_ejemp._técnico,_bach,_titulado,_mag.": "Grado de instrucción, ejemp. técnico, bach, titulado, mag.",
     "especialista_en:_ejmp._estructuras,_carreteras,_hidráulica,_presupuestos,_gestión_de_proyectos,_bim,_arquitectura": "Especialista en: ejmp. estructuras, carreteras, hidráulica, presupuestos, gestión de proyectos, bim, arquitectura",
     "mi_remuneración_mínima_para_el_dictado_por_hora_natural_(60_min.)_es:_...": "Mi remuneración mínima para el dictado por hora natural (60 min.) es: ...",
-    "enviar": "Enviar"
+    "enviar": "Enviar",
+    "conectarse": "Conectarse",
+    "¿se_te_olvidó_tu_contraseña": "¿se te olvidó tu contraseña",
+    "¿aún_no_eres_miembro": "¿aún no eres miembro",
+    "student_name": "Student name"
 }

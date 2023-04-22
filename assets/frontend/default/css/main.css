@@ -60,10 +60,10 @@ select:focus{
 }
 fieldset,
 label {
-    margin: 0;
+    margin: 15px 0;
     padding: 0;
     margin-bottom: 5px;
-    color: #b2b4b9;
+    color: white;
 }
 .tooltip{
     pointer-events: none;
@@ -1196,7 +1196,7 @@ homepage styles
     box-shadow: 0px 10px 25px #00000010;*/
     position: relative;
     background: #373738;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 10px 10px 0px 0px;
 }
 .course-box:before,
 .course-box:after{
@@ -3647,6 +3647,7 @@ section.user-dashboard-area {
 .user-dashboard-content .content-box .form-group {
     padding: 10px 142px;
     margin-bottom: 0;
+    
 }
 .user-dashboard-content .content-box .form-group .input-group-text{
     border: 1px solid #cacbcc;
@@ -4941,6 +4942,7 @@ background: linear-gradient(90deg, rgba(34,34,34,1) 21%, rgba(56,55,55,1) 50%, r
 .devbIM{
     color: #131313;
     border-radius: 10px;
+    background-color: #E9D09C;
    
 }
 .fondopro{
@@ -4960,7 +4962,7 @@ background: linear-gradient(90deg, rgba(34,34,34,1) 21%, rgba(56,55,55,1) 50%, r
 }
 
 .spacio{
-    --bs-gutter-x: 0.25rem !important;
+    --bs-gutter-x: 0.0rem !important;
 }
 /* DOCENTES */
 .container{
@@ -5269,9 +5271,15 @@ background: linear-gradient(90deg, rgba(34,34,34,1) 21%, rgba(56,55,55,1) 50%, r
     .fondologin{
         background: #1C1C1C;
         border-top-right-radius: 1rem!important;
-    border-bottom-right-radius: 1rem!important
+    border-bottom-right-radius: 1rem!important;
+    position: relative;
+    right: 2rem;
+   
     
-      }
+      } 
+      .pddlgin{
+        padding: 7rem 2rem;
+    }
       .left-13{
         left: 13px;
       }
@@ -5289,8 +5297,8 @@ background: linear-gradient(90deg, rgba(34,34,34,1) 21%, rgba(56,55,55,1) 50%, r
         font-size: 2.2rem;
       }
       .colorfondoboton{
-
-        color: #131313;
+        background: #7a7a7a !important;
+        font-weight: 600 !important;
 
     }
 .btn-premiun{
@@ -5910,10 +5918,11 @@ background: linear-gradient(90deg, rgba(28,28,28,1) 50%, rgba(20,20,20,1) 50%);
   }
   .fondo-nombre-academico{
     background: #141414;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     color:white;
     box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
+    padding: 15px;
   }
   .text-nom-aca{
     font-weight: bold;
@@ -6102,14 +6111,12 @@ background: linear-gradient(90deg, rgba(28,28,28,1) 50%, rgba(20,20,20,1) 50%);
 .bg-cuestion{
     background: #373737 !important;
     color: white !important;
-    border-top-left-radius: 15px !important;
-    border-top-right-radius: 15px !important;
+    
 }
 .bg-cuestion-contenido{
     background: #373737 !important;
     color:#C9C9C9 !important;
-    border-bottom-right-radius: 15px !important;
-    border-bottom-left-radius: 15px !important;
+    
 }
 
 .accordion-itemm {
@@ -6176,7 +6183,7 @@ background: linear-gradient(90deg, rgba(28,28,28,1) 50%, rgba(20,20,20,1) 50%);
 } }
 /*Responsive contenido Curso*/
 .fondo-plan-top{
-    background: #161616;
+    background: #373737;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     padding: 15px;
@@ -6187,7 +6194,7 @@ background: linear-gradient(90deg, rgba(28,28,28,1) 50%, rgba(20,20,20,1) 50%);
     background: #373737;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    padding: 15px;
+    padding: 15px 35px;
     
 }
 .inversion{
@@ -6199,8 +6206,8 @@ background: linear-gradient(90deg, rgba(28,28,28,1) 50%, rgba(20,20,20,1) 50%);
     background: #222222;
     border-radius: 5px;
     padding: 5px;
-    font-weight: 500;
-    font-size: 13px;
+    font-weight: 600;
+    font-size: 15px;
 }
 .precio-finalplan{
     font-size: 2rem;
@@ -6243,7 +6250,7 @@ background: linear-gradient(90deg, rgba(28,28,28,1) 50%, rgba(20,20,20,1) 50%);
     padding: 10px;
 }
 .text-habilitacion{
-    font-size: 15px;
+    font-size: 17px;
 }
 .fondo-dp{
     background: rgb(29,29,27);
@@ -6256,8 +6263,9 @@ background: linear-gradient(90deg, rgba(29,29,27,1) 54%, rgba(101,85,63,1) 100%)
 .bg-mi{
     color: #000000;
     background: #FDCC75;
-    border-radius: 10px;
+    border-radius: 8px;
     font-weight: 700;
+    padding: 2px 7px;
 }
 .text-cp{
     color:#FDCC75 ;
@@ -6269,10 +6277,10 @@ background: linear-gradient(90deg, rgba(29,29,27,1) 54%, rgba(101,85,63,1) 100%)
 .bg-plan-p{
     background: #FFCC73;
     border-radius: 7px;
-    padding: 3px 6px;
+    padding: 3px 15px;
     color:#5E3A01;
     margin: 2px 0;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .bg-item{
@@ -6296,7 +6304,7 @@ background: linear-gradient(90deg, rgba(29,29,27,1) 54%, rgba(101,85,63,1) 100%)
     color: white;
 }
 .p-03-lrem{
-    padding: 0 0 0 3rem;
+    padding: 0 0 0 9rem;
 }
 .p-02rem{
     padding: 0 2rem 0 0;
@@ -6313,7 +6321,7 @@ background: linear-gradient(90deg, rgba(29,29,27,1) 54%, rgba(101,85,63,1) 100%)
 }
 
 .p-07lrem{
-    padding: 0 0 0 0.7rem;
+    padding: 0 0 0 3rem;
 }
 .text-item{
     font-size: 13px;
@@ -6342,7 +6350,7 @@ background: linear-gradient(90deg, rgba(29,29,27,1) 54%, rgba(101,85,63,1) 100%)
     background-color: #373737;
     border-radius: 1rem 0rem 0rem 1rem !important;
     box-shadow: rgb(0 0 0) 0px 3px 8px;
-    padding: 15px 25px;
+    padding: 45px;
 }
 
 .font-13px{
@@ -6389,15 +6397,16 @@ width: 20rem;}
     font-size: 15px;
 }
 
-.w-27rem{
-    width: 27rem;
+.w-25rem{
+    width: 25rem;
 }
-
+.w-23rem{
+    width: 23rem;
+}
 .bg-fondoplanes{
-    box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
-    -webkit-box-shadow: 3px -2px 14px 0px rgb(0 0 0 / 75%);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   
     border-radius: 15px;
+    border: solid 1px;
 }
 
 .bg-general{
@@ -6443,7 +6452,7 @@ width: 20rem;}
     background-position: center;
 } }
 .course-curso{
-    padding: 8px 14px 0px 15px;
+    padding: 8px 14px 5px 15px;
     position: relative;
 }
 
@@ -6967,7 +6976,7 @@ font-size: 35pt;
        
     }
     .titulo-sub-programa {
-        font-size: 22px;
+        font-size: 20px;
     }
     .sub-text-principal{
        
@@ -6984,7 +6993,7 @@ font-size: 35pt;
         border-radius: 8%;
        
         width: 18rem;
-        height: 18rem;
+        height: 16rem;
         
     }
     .icon-style-user {
@@ -7031,7 +7040,7 @@ font-size: 35pt;
         }
         .programa{
            
-            padding: 50px 25px;
+            padding: 47px 25px;
         }
         .text-titulo-programa{
            
@@ -7040,12 +7049,12 @@ font-size: 35pt;
         .text-cont-programa{
             
             font-weight: 200;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         
         } 
         .img-intituto{ 
-            width: 27rem;
-            padding: 1.5rem 0;
+            width: 25rem;
+            padding: 2.2rem 1rem;
         }
         .img-autodesk{
             
@@ -7053,10 +7062,10 @@ font-size: 35pt;
             margin: 2.4rem 0;
         }
         .img-cip{
-            width: 33rem;
+            width: 23rem;
             top: 0;
-            margin: 0.7rem 0;
-            right: 3.5rem;
+            margin: 2.2rem 1rem;
+            right: 10px;
         }
         .container .main-cardd .cardss{
     width: calc(100% / 2 - 10px);
@@ -7115,3 +7124,287 @@ font-size: 35pt;
 
  }
 
+.precio-desc{
+    font-size: 23px;
+    font-weight: 500;
+}
+.btnbadge-prox{
+    background: white;
+    border-radius: 5px;
+    color: #131313;
+    font-weight: 700;
+    padding: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+   
+}
+
+.course-box-dos{
+    /*box-shadow: 0px 8px 15px 0px #0000000f;
+    box-shadow: 0px 10px 25px #00000010;*/
+    position: relative;
+    background: #373738;
+    border-radius: 0px 0px 10px 10px ;
+}
+.course-box-dos .course-details{
+    padding: 8px 14px 6px 15px;
+    position: relative;
+}
+
+.btn-programa{
+    background: #E9D09C;
+    border-radius: 15px;
+    color: #131313;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+.course-box-tres{
+    /*box-shadow: 0px 8px 15px 0px #0000000f;
+    box-shadow: 0px 10px 25px #00000010;*/
+    position: relative;
+    background: #373738;
+    border-radius: 0px 0px 10px 10px ;
+}
+.course-box-tres .course-details{
+    padding: 8px 14px 6px 15px;
+    position: relative;
+}
+.text-oc{
+   
+    font-size: 15px;
+    float: left!important;
+    font-weight: 500;
+    color: #FFC873;
+    margin: 8px 0;
+    
+}
+.text-login{
+    color: #FFC873;
+    font-size: 15px;
+    font-weight:700;
+}
+.text-alignlogin{
+    text-align: end;
+}
+
+.text-principal-nosotros{
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+   
+}
+.sub-text-principal-nosotros{
+    color: white;
+    font-size: 13px;
+    font-weight: 200;
+    
+
+}
+
+.img-convenios-nosotros {
+    width: 100%;
+    padding: 0 0 1.5rem 0;
+}
+.home-banner-area-nosotros {
+    padding: 50px 0px 0px 0px;
+    color: #fff;
+}
+
+@media (min-width: 1400px) { .text-principal-nosotros{
+    font-weight: bold;
+    color: white;
+    font-size: 38px;
+   
+}
+.sub-text-principal-nosotros{
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    
+
+}
+
+.img-convenios-nosotros {
+    width: 80%;
+    padding: 0 0 1.5rem 0;
+} }
+
+@media (min-width: 1200px) { .text-principal-nosotros{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+   
+}
+.sub-text-principal-nosotros{
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    
+
+}
+
+.img-convenios-nosotros {
+    width: 85%;
+    padding: 0 0 1.5rem 0;
+} 
+.home-banner-area-nosotros {
+    padding: 50px 0px 0px 0px;
+    color: #fff;
+}
+}
+
+.m-m-v{
+    margin: 0rem 3rem;
+}
+.text-m-v{
+    margin:0px 3rem 1rem  3rem;
+font-weight: bold;
+color: white;
+}
+
+.img-logo-inter{
+    height: 50px;
+    width: 75px;
+    margin: 21px 0;
+}
+.img-logo-naci{
+    
+    width: 75px;
+    margin: 21px 0;
+}
+.img-logo-arqui{
+    width: 71px;
+    margin: 21px 0;
+
+}
+.img-logo-bv{
+    width: 75px
+}
+.img-logo-aci{
+    width: 120px;
+}
+
+.fondo-texto-inter{
+    background: #141414;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   color: white;
+   background: #272727;
+   box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
+   padding: 12px;
+  }
+  .fondo-texto-inter-a{
+    padding: 9px 15px 16px 15px !important;
+  }
+  .texto-inter-a{
+    padding: 9px 15px 16px 15px !important;
+  }
+  .fondo-credencial{
+    color: #131313;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px 10px;
+    /* margin: 5px 0; */
+    font-weight: 700;
+    font-size: 15px;
+}
+.pb-15rem{
+    padding: 12px 12px 1.6rem 12px !important;
+}
+.mr-48px{
+    margin-right: 48px;
+}
+.txt-bv{
+    font-size: 16px;
+    font-weight: 200;
+    margin-right: 48px;
+}
+
+.section-premium{
+    align-items: center;
+    color:white;
+    margin: 50px 0px;
+    
+}
+
+.cp-premium{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 12px 0;
+}
+.pdd-marco{
+    border: solid 2px #FFCC73;
+    padding: 10px 1.5rem 10px;
+    border-radius: 15px;
+}
+.p-5rem{
+    padding: 0 1rem 0 0;}
+
+.un-premium{
+    position: relative;
+    left: 2rem;
+}
+
+.pi-premium{
+    position: relative;
+    left: 3rem;
+}
+.pd-premium{
+    position: relative;
+    left: 2.5rem;
+}
+.fondo-cur-premium{
+    background: #1C1C1C;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: white;
+    font-weight: 600;
+}
+.mc-premium{
+    position: relative;
+    left: 2rem;
+}
+.cat-premium{
+    position: relative;
+    left: 85%;
+}
+.cuno-premium{
+    position: relative;
+    left: 128%;
+}
+.cdos-premium{
+    position: relative;
+    left: 165%;
+}
+.fondo-cursos-pre{
+    background: #373737;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;  
+    
+
+}
+.text-desc-cp{
+    color: white;
+    font-weight: 200;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.text-acceso{
+    font-size: 22px;
+    color: white;
+    
+    font-weight: bold;
+    
+}
+
+.sub-text-acceso{
+    font-size: 19px;
+    color: white;
+    
+    font-weight: lighter;
+    
+}

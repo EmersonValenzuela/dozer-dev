@@ -1,74 +1,73 @@
 <?php if(get_frontend_settings('recaptcha_status')): ?>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <?php endif; ?>
-<div class="container-xl">
-    <div class="row">
-        <div class="d-flex flex-column">
-            <p class="text-white text-center py-3">
-                NUESTRA HISTORIA
-            </p>
-            <p class="text-white text-center fw-bold sub-tem-n py-3">
-                Educación basada en proyectos reales, <br>
-                para un aprendizaje real
-            </p>
-            <p class="text-white text-center fw-300">
-                Desde 2020, hemos venido revolucionando la formación online para el sector
-                de la construcción. Hemos logrado crear una innovadora oferta de educación continua para
-                arquitectos, ingenieros y diseñadores. Nuestros cursos son elaborados con profesionales lideres
-                de diferentes partes del mundo y son producidos con esmero por nuestro equipo para lograr
-                contenidos de alto valor educativo y excelente calidad audiovisual.
-            </p>
-            <div class="d-flex flex-column justify-content-center flex-lg-row rg cg-n py-5">
-                <div class="img-n d-flex align-items-center"><img src="<?=base_url()?>uploads/system/logodozer-sn.png"
-                        alt=""></div>
-                <div class="img-n"><img src="<?=base_url()?>uploads/system/logolautec-sn.png" alt=""></div>
-            </div>
-            <div class="img-r-fondo d-flex align-items-between my-1">
-                <img class="img-r-n" src="<?=base_url()?>uploads/system/reconocimientos_sn.png" alt="">
-            </div>
-            <p class="text-white text-center fw-bold acredita-n py-3">
-                Acredita tus conocimientos a cargo de nuestros <br>
-                convenios de mayor renombre en el sector construcción
-            </p>
-            <div class="d-flex  flex-column flex-lg-row rg cg-n justify-content-between cg-n py-3">
-                <div class="d-flex flex-row mb-3 align-items-center img-n">
-                    <div><img class="img-acredita" src="<?=base_url()?>uploads/system/colegio_ingenieros.png" alt="">
-                    </div>
-                    <div>
-                        <p class="text-center text-white fw-600 text-acredita">Colegio de Ingenieros
-                            del Perú</p>
-                    </div>
-                </div>
-                <div class="d-flex flex-row mb-3 align-items-center img-n">
-                    <div><img class="img-acredita" src="<?=base_url()?>uploads/system/colegio_arquitecto.png" alt="">
-                    </div>
-                    <div>
-                        <p class="text-center text-white fw-600  text-acredita">Colegio de Arquitectos
-                            del Perú</p>
-                    </div>
-                </div>
-            </div>
-            <div class="img-r-fondo d-flex align-items-between my-1">
-                <img class="img-r-n" src="<?=base_url()?>uploads/system/autodesk-footer.svg" alt="">
-            </div>
 
+<section class="container-xl home-banner-area-nosotros" id="home-banner-area">
+    <div class="container-xl">
+        <div class="row">
+            <div class=" position-relative">
+                <div class="">
+                    <div class="d-flex flex-row ">
+                        <div class="d-flex flex-column mb-3 ">
+                            <div class="p-2">
+                                <h2 class="text-principal-nosotros">
+                                    Somos la institución de quienes <br>
+                                    diseñan y construyen las ciudades <br>
+                                    del mañana.
+                                </h2>
+                            </div>
+                            <div class="p-2">
+                                <p class="sub-text-principal-nosotros">
+                                    Desde sus inicios, instituto dozer ha ofrecido una formación <br> que enlaza el
+                                    conocimiento académico con requerimientos <br> profesionales. A lo largo de nuestra
+                                    de trayectoria como <br> institución educativa, cada peldaño que hemos escalado ha
+                                    <br>
+                                    sido para evolucionar la forma de capacitar a nuestros <br> estudiantes. Nuestro
+                                    compromiso está presente en todos <br> los procesos que se aplican en cada uno de
+                                    nuestros cursos, <br> especializaciones y diplomados con la finalidad de construir
+                                    <br>
+                                    entre todos un país mejor.
+                                </p>
+                            </div>
+                            <div class="p-2"><img class="img-convenios-nosotros" src="uploads\system\convenios.png"
+                                    alt="">
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="p-2 d-none d-md-block "><img class="width-35rem img-home-banner "
+                                src="<?=base_url()?>uploads/system/img-nosotros.png" alt=""></div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
         </div>
     </div>
+</section>
 
-</div>
+
 <div class="my-5 overflow-hidden fondo-vm">
     <div class="container-xl">
         <div class="row p-4 align-items-center">
             <div class="col  text-white">
-                <p class="fw-bold">Vision</p>
-                <p class="fw-200">Ser la organización líder en Latinoamérica brindando servicios de capacitación
-                    mediante
-                    metodologías de vanguardia que cumplan con las altas expectativas de nuestros clientes.</p>
+                <p class="text-m-v">Nuestra Visión</p>
+                <p class="fw-200 m-m-v">Ser la organización líder en Latinoamérica brindando <br> servicios de
+                    capacitación
+                    mediante metodologías de <br> vanguardia que cumplan con las altas expectativas de <br> nuestros
+                    clientes.</p>
             </div>
             <div class="col  text-white">
-                <p class="fw-bold">Mision</p>
-                <p class="fw-200">Desarrollar programas de capacitación con altos estándares de calidad, innovación y
-                    responsabilidad social enfocados en formar profesionales competitivos y de alto desempeño.
+                <p class="text-m-v">Nuestra Misión</p>
+                <p class="fw-200 m-m-v">Desarrollar programas de capacitación con altos <br> estándares de calidad,
+                    innovación y responsabilidad <br> social enfocados en formar profesionales competitivos <br> y de
+                    alto
+                    desempeño.
                 </p>
             </div>
 
@@ -80,7 +79,7 @@
 <div class="container-xl">
     <div class="row">
         <div class="d-flex flex-column">
-            <p class="text-white text-center fw-bold sub-tem-n py-3">
+            <p class="text-white text-center fw-bold sub-tem-n ">
                 Nuestros Valores
             </p>
             <p class="fw-200 text-center text-white"> Estamos en constante crecimiento y todos los días trabajamos para
@@ -184,107 +183,139 @@
             </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </div>
+        <div>
             <p class="text-white text-center fw-bold sub-tem-n py-3">
-                Directorio Académico y Administrativo
+                Convenio Académico
+                Internacional
             </p>
-            <p class="fw-200 text-center text-white"> Estamos en constante crecimiento y todos los días trabajamos para
-                ofrecer <br>
-                la mejor experiencia educativa.</p>
 
-
-
-            <div class="d-flex justify-content-between cg-aca my-5">
-                <div class="d-flex row fondo-img-academico">
-                    <img src="<?=base_url()?>uploads\system\docente\prof-uno-nosotros.png" alt="">
-                    <div class="fondo-nombre-academico p-3">
-                        <p class="position-absolute   text-white  correo-academico"> <span> <img
-                                    src="<?=base_url()?>uploads\system\mail.svg" alt=""> </span>
-                            walter.gomez@dozer.edu.pe</p>
-                        <p class="text-nom-aca">Ing. Walter Gomez C.</p>
-                        <p class="text-cargo-aca ">Director General</p>
+            <div class="d-flex flex-row mb-3  justify-content-between">
+                <div class="d-flex flex-column  p-2">
+                    <div class="fondo-nombre-academico">
+                        <span class="text-white d-flex align-items-center fw-700">AUTODESK</span>
                     </div>
+                    <div class="d-flex flex-row mb-3 fondo-texto-inter ">
+                        <div class="p-2 text-white ">Somos la primera institución en obtener las <br>
+                            credencias para ser un centro de capacitación <br>
+                            y certificación autorizado por autodesk en la <br>
+                            región lima.</div>
+                        <div class="d-flex flex-column mb-3 d-flex align-items-center">
+                            <div class="p-2 "><img class="img-logo-inter  "
+                                    src="<?=base_url()?>uploads/system/logo-internacional-autoesk.png" alt="">
+                            </div>
+                            <div class="fondo-credencial"><a href="#">Ver credencial</a></div>
+                        </div>
 
+
+                    </div>
+                </div>
+                <div class="d-flex flex-column  p-2">
+                    <div class="fondo-nombre-academico">
+                        <span class="text-white d-flex align-items-center fw-700">ACI - AMERICAN CONCRETE
+                            INSTITUTE</span>
+                    </div>
+                    <div class="d-flex flex-row mb-3 fondo-texto-inter pb-15rem">
+                        <div class="p-2 text-white">Formamos parte del Capítulo Peruano del <br>
+                            Instituto Americano del Concreto – ACI <br>
+                            organización técnica cuya misión básica es <br>
+                            compartir y difundir el conocimiento para un <br>
+                            mejor y más eficiente uso del concreto.</div>
+                        <div class="p-2 d-flex align-items-center"><img class="img-logo-aci "
+                                src="<?=base_url()?>uploads/system/logo-internacional-aci.png" alt="">
+                        </div>
+
+                    </div>
                 </div>
 
-                <div class="d-flex row fondo-img-academico">
-                    <img src="<?=base_url()?>uploads\system\docente\prof-dos-nosotros.png" alt="">
-                    <div class="fondo-nombre-academico p-3">
-                        <p class="position-absolute   text-white  correo-academico"> <span> <img
-                                    src="<?=base_url()?>uploads\system\mail.svg" alt=""> </span>
-                            giuliana.nicho@dozer.edu.pe</p>
-                        <p class="text-nom-aca">Arq. Giuliana Nicho G.</p>
-                        <p class="text-cargo-aca ">Directora Académica</p>
-                    </div>
-
-                </div>
-                <div class="d-flex row fondo-img-academico">
-                    <img class="w-80" src="<?=base_url()?>uploads\system\docente\prof-tres-nosotros.png" alt="">
-                    <div class="fondo-nombre-academico p-3">
-                        <p class="position-absolute   text-white  correo-academico"> <span> <img
-                                    src="<?=base_url()?>uploads\system\mail.svg" alt=""> </span>
-                            samuel.ruiz@dozer.edu.pe</p>
-                        <p class="text-nom-aca">Arq. Samuel Ruiz M.</p>
-                        <p class="text-cargo-aca ">Director Académico</p>
-                    </div>
-
-                </div>
             </div>
+        </div>
+        <div>
+            <p class="text-white text-center fw-bold sub-tem-n py-3">
+                Convenio Nacional
+            </p>
+
+            <div class="d-flex flex-row mb-3  justify-content-between">
+                <div class="d-flex flex-column  p-2">
+                    <div class="fondo-nombre-academico">
+                        <span class="text-white d-flex align-items-center fw-700">COLEGIO DE INGENIEROS DEL PERÚ</span>
+                    </div>
+                    <div class="d-flex flex-row mb-3 fondo-texto-inter ">
+                        <div class="p-2 text-white  mr-48px">Contamos con el respaldo del colegios de <br>
+                            ingenieros del perú, para brindar a nuestros <br>
+                            estudiantes las certificaciones de mayor <br>
+                            renombre a nivel nacional para estudiantes <br>
+                            y profesionales del sector construcción.
+                        </div>
+
+                        <div class="p-2 "><img class="img-logo-naci "
+                                src="<?=base_url()?>uploads/system/colegio_ingenieros.png" alt="">
+                        </div>
 
 
 
+                    </div>
+                </div>
+                <div class="d-flex flex-column  p-2">
+                    <div class="fondo-nombre-academico">
+                        <span class="text-white d-flex align-items-center fw-700">COLEGIO DE ARQUITECTOS DEL PERÚ</span>
+                    </div>
+                    <div class="d-flex flex-row mb-3 fondo-texto-inter ">
+                        <div class="p-2 text-white  mr-48px">Contamos con el respaldo del colegios de <br>
+                            ingenieros del perú, para brindar a nuestros <br>
+                            estudiantes las certificaciones de mayor <br>
+                            renombre a nivel nacional para estudiantes <br>
+                            y profesionales del sector construcción.
+                        </div>
+
+                        <div class="p-2 "><img class="img-logo-arqui "
+                                src="<?=base_url()?>uploads/system/colegio_arquitecto.png" alt="">
+                        </div>
 
 
 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <p class="text-white text-center fw-bold sub-tem-n py-3">
+                Acreditación Internacional
+                en Gestión de Calidad ISO 9001
+            </p>
+
+            <div class=" mb-3  justify-content-between">
+                <div class="d-flex flex-column  p-2">
+                    <div class="fondo-nombre-academico">
+                        <span class="text-white d-flex align-items-center fw-700">BUREAU VERITAS</span>
+                    </div>
+                    <div class="d-flex flex-row mb-3 fondo-texto-inter ">
+                        <div class="p-2 text-white  txt-bv">La norma ISO 9001 es la norma internacional de gestión de
+                            la calidad más reconocida del mundo, estamos en proceso de <br>
+                            certificación para brindarte la mejor capacitación de calidad de acuerdo a los estándares
+                            internacionales. <strong>Instituto Dozer</strong>  <br>
+                            cuenta con el Sistema de Gestión de la Calidad Integral (SGCI-DOZ) que nos permite brindar
+                            un servicio educativo <br>
+                            con altos estándares de calidad”.
+                        </div>
+
+                        <div class="p-2 "><img class="img-logo-bv "
+                                src="<?=base_url()?>uploads/system/logo-bv.png" alt="">
+                        </div>
 
 
 
+                    </div>
+                </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div>
         </div>
     </div>
 </div>
 
-<div class="my-4 py-1 fondo-institucion">
+<div class="my-4 py-1 ">
 
     <div class="container-xl">
         <div class="row">

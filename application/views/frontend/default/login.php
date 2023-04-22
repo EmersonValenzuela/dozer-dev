@@ -6,14 +6,15 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 d-none d-lg-block text-center position-relative left-80 ">
-                <img class="" width="50%" src="<?php echo base_url('uploads/system/sign_up.png'); ?>">
+                <img class="" width="70%" src="<?php echo base_url('uploads/system/login.png'); ?>">
             </div>
-            <div class="col-lg-6 fondologin position-relative right-72">
-                <div class="p-3">
+            <div class="col-lg-6 fondologin position-relative right-72 pddlgin ">
+                <div class="">
                     <?php if(get_settings('fb_social_login')) include "facebook_login.php"; ?>
 
                     <form action="<?php echo site_url('login/validate_login/user'); ?>" method="post" id="sign_up"
                         style="margin: 0 3rem;">
+                        <p class="text-white fw-600">Inicio Sesión</p>
                         <div class="form-group">
                             <label for="login-email"><?php echo site_phrase('Correo'); ?></label>
                             <div class="input-group">
@@ -34,8 +35,8 @@
                                     aria-describedby="<?php echo site_phrase('password'); ?>" id="login-password"
                                     required>
                             </div>
-                            <a class="text-muted text-12px fw-500 float-end"
-                                href="<?php echo site_url('home/forgot_password'); ?>"><?php echo site_phrase('¿Se te olvidó tu contraseña?'); ?>?</a>
+                            <a class=" text-oc  "
+                                href="<?php echo site_url('home/forgot_password'); ?>"><?php echo site_phrase('¿Se te olvidó tu contraseña'); ?>?</a>
                         </div>
 
                         <?php if(get_frontend_settings('recaptcha_status')): ?>
@@ -45,14 +46,14 @@
                         </div>
                         <?php endif; ?>
 
-                        <div class="form-group">
+                        <div class="form-group text-alignlogin">
                             <button type="submit"
-                                class="btn colorfondoboton radius-5 mt-4 w-100"><?php echo site_phrase('Iniciar Sesión'); ?></button>
+                                class="btn colorfondoboton radius-5 mt-4 w-25  text-white"><?php echo site_phrase('Conectarse'); ?></button>
                         </div>
 
                         <div class="form-group mt-4 mb-0 text-center text-white">
-                            <?php echo site_phrase('¿No tiene una cuenta'); ?>?
-                            <a class="text-15px fw-700 text-white px-3"
+                            <?php echo site_phrase('¿Aún no eres miembro'); ?>?
+                            <a class="text-login  px-3"
                                 href="<?php echo site_url('sign_up') ?>"><?php echo site_phrase('Regístrate'); ?></a>
                         </div>
                     </form>

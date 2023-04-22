@@ -262,15 +262,15 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_171680650491.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/revit-arquitectura/ra-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Revit Arquitectura</h5>
+                                                <h5 class="">Revit Arquitectura</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
+                                                        <span class="">Nivel Basico</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -280,22 +280,27 @@ section .content p {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -315,10 +320,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Revit Arquitectura </h5>
+                                                <h5 class="">Revit Arquitectura </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
+                                                        <span class="">Nivel Avanzado</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -329,22 +334,24 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -364,10 +371,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">3Ds Max</h5>
+                                                <h5 class="">3Ds Max</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
+                                                        <span class="">Nivel Basico</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -378,22 +385,24 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -413,10 +422,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">3Ds Max</h5>
+                                                <h5 class="">3Ds Max</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
+                                                        <span class="">Nivel Avanzado</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -428,22 +437,24 @@ section .content p {
                                             </div>
 
 
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -471,10 +482,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Revit Estructura </h5>
+                                                <h5 class="">Revit Estructura </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
+                                                        <span class="">Nivel Basico</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -485,40 +496,25 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=revit-estructura&&course-id-1=21');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.295</del></small> <br>
-                                                        S/.59
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -538,10 +534,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Revit Estructura </h5>
+                                                <h5 class="">Revit Estructura </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
+                                                        <span class="">Nivel Avanzado</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -552,40 +548,24 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=revit-estructura&&course-id-1=23');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.295</del></small> <br>
-                                                        S/.59
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -605,10 +585,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Robot Structural Analysis </h5>
+                                                <h5 class="">Robot Structural Analysis </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
+                                                        <span class="">Nivel Basico</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -619,40 +599,25 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=robot-structural-analysis&&course-id-1=25');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                          
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -672,10 +637,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Robot Structural Analysis </h5>
+                                                <h5 class="">Robot Structural Analysis </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
+                                                        <span class="">Nivel Avanzado</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -686,40 +651,25 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=robot-structural-analysis&&course-id-1=27');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                          
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -739,10 +689,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Advance Steel </h5>
+                                                <h5 class="">Advance Steel </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
+                                                        <span class="">Nivel Basico</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -753,40 +703,24 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=advance-steel&&course-id-1=28');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -806,10 +740,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Advance Steel </h5>
+                                                <h5 class="">Advance Steel </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
+                                                        <span class="">Nivel Avanzado</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -820,40 +754,23 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=advance-steel&&course-id-1=30');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -874,10 +791,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Inventor Professional </h5>
+                                                <h5 class="">Inventor Professional </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
+                                                        <span class="">Nivel Basico</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -888,40 +805,25 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/0883e3d12536091196fce53336f8102a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="Alessandra Huaynatteeeeeeeeee" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/4');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=inventor-professional&&course-id-1=67');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                        
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -941,10 +843,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Inventor Professional </h5>
+                                                <h5 class="">Inventor Professional </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
+                                                        <span class="">Nivel Avanzado</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -955,40 +857,24 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/0883e3d12536091196fce53336f8102a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="Alessandra Huaynatteeeeeeeeee" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/4');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=inventor-professional&&course-id-1=69');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1008,10 +894,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">AutoCAD Plant 3D</h5>
+                                                <h5 class="">AutoCAD Plant 3D</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
+                                                        <span class="">Nivel Basico</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -1022,40 +908,25 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/0883e3d12536091196fce53336f8102a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="Alessandra Huaynatteeeeeeeeee" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/4');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=autocad-plant-3d&&course-id-1=70');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                     
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1075,10 +946,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">AutoCAD Plant 3D</h5>
+                                                <h5 class="">AutoCAD Plant 3D</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
+                                                        <span class="">Nivel Avanzado</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -1089,40 +960,24 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/0883e3d12536091196fce53336f8102a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="Alessandra Huaynatteeeeeeeeee" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/4');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=autocad-plant-3d&&course-id-1=72');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1148,10 +1003,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Revit MEP </h5>
+                                                <h5 class="">Revit MEP </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
+                                                        <span class="">Nivel Basico</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -1162,40 +1017,25 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=revit-mep&&course-id-1=31');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                   
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1215,10 +1055,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Revit MEP </h5>
+                                                <h5 class="">Revit MEP </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
+                                                        <span class="">Nivel Avanzado</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -1229,40 +1069,24 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=revit-mep&&course-id-1=33');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1290,10 +1114,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">AutoCAD </h5>
+                                                <h5 class="">AutoCAD </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
+                                                        <span class="">Nivel Basico</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -1304,40 +1128,24 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=autocad&&course-id-1=35');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1357,10 +1165,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">AutoCAD</h5>
+                                                <h5 class="">AutoCAD</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
+                                                        <span class="">Nivel Avanzado</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -1371,40 +1179,25 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=autocad&&course-id-1=37');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                    
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1430,10 +1223,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Civil 3D </h5>
+                                                <h5 class="">Civil 3D </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
+                                                        <span class="">Nivel Basico</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -1444,40 +1237,25 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=civil-3d&&course-id-1=39');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                          
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1497,10 +1275,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Civil 3D </h5>
+                                                <h5 class="">Civil 3D </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
+                                                        <span class="">Nivel Avanzado</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -1511,40 +1289,25 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=civil-3d&&course-id-1=41');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                           
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1564,10 +1327,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Infraworks</h5>
+                                                <h5 class="">Infraworks</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
+                                                        <span class="">Nivel Basico</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -1578,40 +1341,25 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=infraworks&&course-id-1=43');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                          
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1631,10 +1379,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Infraworks </h5>
+                                                <h5 class="">Infraworks </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
+                                                        <span class="">Nivel Avanzado</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -1645,40 +1393,25 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=infraworks&&course-id-1=45');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                           
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1704,10 +1437,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Dynamo para Revit </h5>
+                                                <h5 class="">Dynamo para Revit </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
+                                                        <span class="">Nivel Basico</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -1718,40 +1451,24 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=dynamo-para-revit&&course-id-1=46');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1771,10 +1488,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Dynamo para Revit </h5>
+                                                <h5 class="">Dynamo para Revit </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
+                                                        <span class="">Nivel Avanzado</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -1785,40 +1502,25 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=dynamo-para-revit&&course-id-1=48');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.295</del></small> <br>
-                                                        S/.59
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                           
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1844,10 +1546,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Navisworks Manage </h5>
+                                                <h5 class="">Navisworks Manage </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
+                                                        <span class="">Nivel Basico</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -1858,39 +1560,25 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=navisworks-manage&&course-id-1=49');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79</p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1910,10 +1598,10 @@ section .content p {
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Navisworks Manage </h5>
+                                                <h5 class="">Navisworks Manage </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
+                                                        <span class="">Nivel Avanzado</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -1924,39 +1612,25 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=navisworks-manage&&course-id-1=51');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79</p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                        
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.79 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.395 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2054,7 +1728,8 @@ nav .sliderr {
 }
 
 #helpp:checked~nav .sliderr {
-    left: 76%;
+    left: 945px;
+    width: 250px;
 
 }
 
@@ -2099,13 +1774,13 @@ section .contentt p {
         <input type="radio" name="sliderr" id="blogg">
         <input type="radio" name="sliderr" id="codee">
         <input type="radio" name="sliderr" id="helpp">
-    
+
         <nav>
             <label for="homee" class="homee">Especialista BIM</label>
             <label for="blogg" class="blogg">Gestión BIM</label>
             <label for="codee" class="codee">Expedientes BIM</label>
             <label for="helpp" class="helpp">Ingeniería BIM</label>
-            
+
             <div class="sliderr"></div>
         </nav>
         <section>
@@ -2114,46 +1789,47 @@ section .contentt p {
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
                         <div class="col-md-3 col-xl-3 px-0">
                             <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-arquitectura/17');"
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelador-bim-aplicado-a-edificaciones/1');"
                                     href="javascript:;" class="has-popover">
                                     <div class="course-box">
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_171680650491.jpg"
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_11681233276.jpg"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Revit Arquitectura</h5>
+                                                <h5 class="">Modelador BIM aplicado a Edificaciones</h5>
                                                 <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
-                                                    </div>
+                                                    
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
+                                                        <span class="fw-200 text-white "></span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                          
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2162,47 +1838,49 @@ section .contentt p {
                         </div>
                         <div class="col-md-3 col-xl-3 px-0">
                             <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-arquitectura/19');"
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelador-bim-aplicado-a-obras-viales/2');"
                                     href="javascript:;" class="has-popover">
                                     <div class="course-box">
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_191680651299.jpg"
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_21681237452.jpg"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Revit Arquitectura </h5>
+                                                <h5 class="">Modelador BIM aplicado a Obras Viales</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
+                                                       
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
+                                                        <span class="fw-200 text-white "></span>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                      
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2211,47 +1889,47 @@ section .contentt p {
                         </div>
                         <div class="col-md-3 col-xl-3 px-0">
                             <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/3ds-max/64');"
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelador-bim-aplicado-a-obras-hidr%C3%A1ulicas/3');"
                                     href="javascript:;" class="has-popover">
                                     <div class="course-box">
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_64.jpg"
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_31681237500.jpg"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">3Ds Max</h5>
+                                                <h5 class="">Modelador BIM aplicado a Obras Hidráulicas</h5>
                                                 <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
-                                                    </div>
+                                                    
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
+                                                        <span class="fw-200 text-white "></span>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                             
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2260,48 +1938,190 @@ section .contentt p {
                         </div>
                         <div class="col-md-3 col-xl-3 px-0">
                             <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/3ds-max/66');"
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelador-bim-aplicado-a-estructuras-met%C3%A1licas/4');"
                                     href="javascript:;" class="has-popover">
                                     <div class="course-box">
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_66.jpg"
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_41681237543.jpg"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">3Ds Max</h5>
+                                                <h5 class="">Modelador BIM aplicado a Estructuras Metálicas</h5>
                                                 <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
-                                                    </div>
+                                                  
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
+                                                        <span class="fw-200 text-white "></span>
                                                     </div>
                                                 </div>
                                             </div>
 
+                                         
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelador-bim-aplicado-a-proyectos-green/74');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_74.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="">Modelador BIM aplicado a Proyectos Green</h5>
+                                                
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white "></span>
+                                                    </div>
                                                 </div>
+                                            </div>
+
+                                     
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/especialista-bim-en-habilitaciones-urbanas/88');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_88.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="">Especialista BIM en Habilitaciones Urbanas</h5>
+                                                <div class="row ">
+                                                  
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                       
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/especialista-bim-en-automatizaci%C3%B3n-de-procesos/89');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_89.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="">Especialista BIM en Automatización de Procesos</h5>
+                                                <div class="row ">
+                                                   
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                       
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2318,65 +2138,47 @@ section .contentt p {
 
                         <div class="col-md-3 col-xl-3 px-0">
                             <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-estructura/21');"
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/coordinador-de-proyectos-bim/7');"
                                     href="javascript:;" class="has-popover">
                                     <div class="course-box">
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_211680647957.jpg"
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_71681237754.jpg"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Revit Estructura </h5>
+                                                <h5 class="">Coordinador de Proyectos BIM</h5>
                                                 <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
-                                                    </div>
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
+                                                        <span class="fw-200 text-white "></span>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=revit-estructura&&course-id-1=21');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.295</del></small> <br>
-                                                        S/.59
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                       
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2385,65 +2187,47 @@ section .contentt p {
                         </div>
                         <div class="col-md-3 col-xl-3 px-0">
                             <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-estructura/23');"
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/supervisor-de-proyectos-bim/8');"
                                     href="javascript:;" class="has-popover">
                                     <div class="course-box">
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_231680647912.jpg"
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_81681237833.jpg"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Revit Estructura </h5>
+                                                <h5 class="">Supervisor de Proyectos BIM</h5>
                                                 <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
-                                                    </div>
+                                                  
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
+                                                        <span class="fw-200 text-white "></span>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=revit-estructura&&course-id-1=23');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.295</del></small> <br>
-                                                        S/.59
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                       
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2452,65 +2236,46 @@ section .contentt p {
                         </div>
                         <div class="col-md-3 col-xl-3 px-0">
                             <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/robot-structural-analysis/25');"
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/gestor-de-proyectos-bim/9');"
                                     href="javascript:;" class="has-popover">
                                     <div class="course-box">
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_251680649577.jpg"
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_91681237880.jpg"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Robot Structural Analysis </h5>
+                                                <h5 class="">Gestor de Proyectos BIM</h5>
                                                 <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
-                                                    </div>
+                                                  
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
+                                                        <span class="fw-200 text-white "></span>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=robot-structural-analysis&&course-id-1=25');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2519,65 +2284,47 @@ section .contentt p {
                         </div>
                         <div class="col-md-3 col-xl-3 px-0">
                             <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/robot-structural-analysis/27');"
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/planificaci%C3%B3n-y-control-de-proyectos-bim/75');"
                                     href="javascript:;" class="has-popover">
                                     <div class="course-box">
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_271680649660.jpg"
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_75.jpg"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Robot Structural Analysis </h5>
+                                                <h5 class="">Planificación y Control de Proyectos BIM</h5>
                                                 <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
-                                                    </div>
+                                                 
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
+                                                        <span class="fw-200 text-white "></span>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=robot-structural-analysis&&course-id-1=27');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                     
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2586,401 +2333,47 @@ section .contentt p {
                         </div>
                         <div class="col-md-3 col-xl-3 px-0">
                             <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/advance-steel/28');"
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/gesti%C3%B3n-bim-para-el-sector-p%C3%BAblico/76');"
                                     href="javascript:;" class="has-popover">
                                     <div class="course-box">
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_281681412408.jpg"
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_76.jpg"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Advance Steel </h5>
+                                                <h5 class="">Gestión BIM para el Sector Público</h5>
                                                 <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
-                                                    </div>
+                                                  
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
+                                                        <span class="fw-200 text-white "></span>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=advance-steel&&course-id-1=28');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
-
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
-                                            </div>
+                                   
+                                          
                                         </div>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xl-3 px-0">
-                            <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/advance-steel/30');"
-                                    href="javascript:;" class="has-popover">
-                                    <div class="course-box">
-                                        <div class="course-image">
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_301680649892.jpg"
-                                                alt="" class="img-fluid">
-                                        </div>
-                                        <div>
-                                            <div class="course-curso">
-                                                <h5 class="title">Advance Steel </h5>
-                                                <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-5">
-                                                    <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
-                                                    </div>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
                                             </div>
+                                            <div class="ms-auto">
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=advance-steel&&course-id-1=30');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
-
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-xl-3 px-0">
-                            <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/inventor-professional/67');"
-                                    href="javascript:;" class="has-popover">
-                                    <div class="course-box">
-                                        <div class="course-image">
-
-
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_67.jpg"
-                                                alt="" class="img-fluid">
-                                        </div>
-                                        <div>
-                                            <div class="course-curso">
-                                                <h5 class="title">Inventor Professional </h5>
-                                                <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-5">
-                                                    <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/0883e3d12536091196fce53336f8102a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="Alessandra Huaynatteeeeeeeeee" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/4');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=inventor-professional&&course-id-1=67');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
-
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xl-3 px-0">
-                            <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/inventor-professional/69');"
-                                    href="javascript:;" class="has-popover">
-                                    <div class="course-box">
-                                        <div class="course-image">
-
-
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_69.jpg"
-                                                alt="" class="img-fluid">
-                                        </div>
-                                        <div>
-                                            <div class="course-curso">
-                                                <h5 class="title">Inventor Professional </h5>
-                                                <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-5">
-                                                    <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/0883e3d12536091196fce53336f8102a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="Alessandra Huaynatteeeeeeeeee" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/4');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=inventor-professional&&course-id-1=69');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
-
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xl-3 px-0">
-                            <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad-plant-3d/70');"
-                                    href="javascript:;" class="has-popover">
-                                    <div class="course-box">
-                                        <div class="course-image">
-
-
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_701680650382.jpg"
-                                                alt="" class="img-fluid">
-                                        </div>
-                                        <div>
-                                            <div class="course-curso">
-                                                <h5 class="title">AutoCAD Plant 3D</h5>
-                                                <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-5">
-                                                    <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/0883e3d12536091196fce53336f8102a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="Alessandra Huaynatteeeeeeeeee" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/4');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=autocad-plant-3d&&course-id-1=70');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
-
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xl-3 px-0">
-                            <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad-plant-3d/72');"
-                                    href="javascript:;" class="has-popover">
-                                    <div class="course-box">
-                                        <div class="course-image">
-
-
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_72.jpg"
-                                                alt="" class="img-fluid">
-                                        </div>
-                                        <div>
-                                            <div class="course-curso">
-                                                <h5 class="title">AutoCAD Plant 3D</h5>
-                                                <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-5">
-                                                    <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/0883e3d12536091196fce53336f8102a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="Alessandra Huaynatteeeeeeeeee" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/4');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=autocad-plant-3d&&course-id-1=72');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
-
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2995,65 +2388,48 @@ section .contentt p {
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
                         <div class="col-md-3 col-xl-3 px-0">
                             <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-mep/31');"
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/expedientes-t%C3%A9cnicos-bim-aplicado-a-proyectos-de-infraestructrura-educativa/11');"
                                     href="javascript:;" class="has-popover">
                                     <div class="course-box">
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_311680651411.jpg"
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_111681238136.jpg"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Revit MEP </h5>
+                                                <h5 class="">Expedientes técnicos BIM aplicado a Proyectos de
+                                                    Infraestructrura educativa</h5>
                                                 <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
-                                                    </div>
+                                                   
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
+                                                        <span class="fw-200 text-white "></span>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=revit-mep&&course-id-1=31');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                          
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3062,65 +2438,198 @@ section .contentt p {
                         </div>
                         <div class="col-md-3 col-xl-3 px-0">
                             <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-mep/33');"
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/expedientes-t%C3%A9cnicos-bim-aplicado-a-proyectos-de-infraestructrura-hospitalaria/12');"
                                     href="javascript:;" class="has-popover">
                                     <div class="course-box">
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_331680651684.jpg"
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_121681238193.jpg"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">Revit MEP </h5>
+                                                <h5 class="">Expedientes técnicos BIM aplicado a Proyectos de
+                                                    Infraestructrura Hospitalaria</h5>
                                                 <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
-                                                    </div>
+                                                  
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
+                                                        <span class="fw-200 text-white "></span>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=revit-mep&&course-id-1=33');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                          
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/expedientes-t%C3%A9cnicos-bim-aplicado-a-proyectos-de-infraestructura-vial/13');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_131681238270.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="">Expedientes técnicos BIM aplicado a Proyectos de
+                                                    infraestructura Vial</h5>
+                                                <div class="row ">
+                                                   
                                                 </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                         
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/expedientes-t%C3%A9cnicos-bim-aplicado-a-proyectos-de-pavimentaci%C3%B3n-urbano-y-rural/14');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_141681238333.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="">Expedientes Técnicos BIM aplicado a Proyectos de
+                                                    Pavimentación Urbano y Rural</h5>
+                                                <div class="row ">
+                                                   
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/expedientes-t%C3%A9cnicos-bim-aplicado-a-proyectos-de-agua-y-saneamiento-rural/15');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_151681238392.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="">Expedientes técnicos BIM aplicado a proyectos de Agua
+                                                    y saneamiento Rural</h5>
+                                                <div class="row ">
+                                                    
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                       
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3137,65 +2646,48 @@ section .contentt p {
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
                         <div class="col-md-3 col-xl-3 px-0">
                             <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad/35');"
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/structuraci%C3%B3n-an%C3%A1lisis-y-dise%C3%B1o-en-estructuras-de-concreto-armado-con-robot-structural-analysis/78');"
                                     href="javascript:;" class="has-popover">
                                     <div class="course-box">
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_351680651807.jpg"
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_78.jpg"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">AutoCAD </h5>
+                                                <h5 class="">structuración, Análisis y Diseño en Estructuras de
+                                                    Concreto Armado con Robot Structural Analysis </h5>
                                                 <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Basico</span>
-                                                    </div>
+                                                   
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
+                                                        <span class="fw-200 text-white "></span>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=autocad&&course-id-1=35');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                         
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
-                                                </div>
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3204,65 +2696,147 @@ section .contentt p {
                         </div>
                         <div class="col-md-3 col-xl-3 px-0">
                             <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad/37');"
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelado-y-detallado-de-estructuras-met%C3%A1licas-utilizando-advance-steel/80');"
                                     href="javascript:;" class="has-popover">
                                     <div class="course-box">
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_371680651958.jpg"
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_80.jpg"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="title">AutoCAD</h5>
+                                                <h5 class="">Modelado y Detallado de Estructuras Metálicas
+                                                    utilizando Advance Steel</h5>
                                                 <div class="row ">
-                                                    <div class="col-12">
-                                                        <span class="title">Nivel Avanzado</span>
-                                                    </div>
+                                                    
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
-                                                            Dozer</span>
+                                                        <span class="fw-200 text-white "></span>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                <div class="col">
-                                    <div class="floating-user d-inline-block">
-                                                                                                                                <img src="http://localhost/dozer-dev/uploads/user_image/a55c6eab18923e9062564c209a5b603a.jpg" width="30px" data-bs-toggle="tooltip" data-bs-placement="top" title="emerson valenzuela" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/instructor_page/1');">
-                                                                            </div>
-                                </div>
-                                <div class="col">
-                                    <button class="btn-compare-sm float-end" onclick="event.stopPropagation(); $(location).attr('href', 'http://localhost/dozer-dev/home/compare?course-1=autocad&&course-id-1=37');"><i class="fas fa-retweet"></i> Compare</button>
-                                </div>
-                                <div class="">
-                                    <i class="text-danger far fa-clock text-14px"></i>
-                                    <span class="text-muted text-12px">00:00:00 Hours</span>
-                                </div>
-                                <div class="ms-auto">
-                                    <i class="text-primary far fa-list-alt text-14px"></i>
-                                    <span class="text-muted text-12px">0 Lectures</span>
-                                </div>
-                            </div> -->
-                                            <hr class="w-100 ">
-                                            <div class="w-100 d-flex text-dark  py-1 course-details">
-                                                <div class="">
-                                                    <p class="price text-white  text-right d-inline-block float-end">
-                                                        <small>
-                                                            <del>S/.395</del></small> <br>
-                                                        S/.79
-                                                    </p> <br>
-                                                </div>
-                                                <div class="ms-auto">
+                                           
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="text-white fw-bold text-15px text-center">70%
-                                                        Desc</span> <br>
-                                                    <span
-                                                        class="btnbadge-prox text-11px text-white ">PROXIMAMENTE</span>
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/dise%C3%B1o-modelado-y-detallado-de-proyectos-mec%C3%A1nicos-utilizando-inventor-professional/81');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_81.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="">Diseño, Modelado y Detallado de Proyectos Mecánicos
+                                                    utilizando Inventor Professional</h5>
+                                                <div class="row ">
+                                                    
                                                 </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelado-y-detallado-en-proyectos-de-plantas-industriales-utilizando-autocad-plant-3d/82');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_82.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="">Modelado y Detallado en Proyectos de Plantas
+                                                    Industriales utilizando AutoCAD Plant 3D </h5>
+                                                <div class="row ">
+                                                    
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                           
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3272,7 +2846,7 @@ section .contentt p {
                     </div>
                 </div>
             </div>
-            </section>
+        </section>
     </div>
 
 </section>
@@ -3295,12 +2869,13 @@ section .contentt p {
     height: 50px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .wrapperrr nav label {
     display: block;
-    height: 100%;
-    width: 100%;
+    height: 70%;
+    width: 250px;
     text-align: center;
     line-height: 50px;
     cursor: pointer;
@@ -3321,8 +2896,7 @@ section .contentt p {
 
 
 #hom:checked~nav label.hom,
-#blo:checked~nav label.blo,
-#cod:checked~nav label.cod {
+#blo:checked~nav label.blo {
     color: #131313;
     font-weight: 700;
 }
@@ -3333,10 +2907,10 @@ nav label i {
 
 nav .slide {
     position: absolute;
-    height: 100%;
-    width: 31%;
-    left: 5px;
-    bottom: 0;
+    height: 70%;
+    width: 249px;
+    left: 425px;
+    /* bottom: 0; */
     z-index: 0;
     border-radius: 10px;
     background: white;
@@ -3346,14 +2920,11 @@ nav .slide {
 
 
 #blo:checked~nav .slide {
-    left: 34%;
+    left: 685px;
 
 }
 
-#cod:checked~nav .slide {
-    left: 68%;
 
-}
 
 
 
@@ -3363,8 +2934,7 @@ section .conten {
 }
 
 #hom:checked~section .content-uno,
-#blo:checked~section .content-dos,
-#cod:checked~section .content-tres {
+#blo:checked~section .content-dos {
     display: block;
 }
 
@@ -3389,6 +2959,336 @@ section .conten p {
         <span class="header-underline-2"><?php echo site_phrase('') . '  ' . site_phrase(''); ?>
         </span>
     </h3>
+</section>
+<section class="container-xl">
+    <div class="wrapperrr">
+        <input type="radio" name="slide" checked id="hom">
+        <input type="radio" name="slide" id="blo">
+
+        <nav>
+            <label for="hom" class="hom">Especialista BIM</label>
+            <label for="blo" class="blo">Gestión BIM</label>
+
+
+            <div class="slide"></div>
+        </nav>
+        <section>
+            <div class="contentt content-uno ">
+                <div class="container ">
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/bim-management-en-proyectos-de-arquitectura/58');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_581681241666.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="">BIM Management en Proyectos de Arquitectura</h5>
+                                                <div class="row ">
+                                                  
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/bim-management-en-proyectos-de-urbanismo-y-paisajismo/86');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_86.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="">BIM Management en Proyectos de Urbanismo y Paisajismo
+                                                </h5>
+                                                <div class="row ">
+                                                   
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                      
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/bim-management-en-proyectos-de-ingenier%C3%ADa-civil-e-infraestructura/87');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_87.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="">BIM Management en Proyectos de Ingeniería Civil e
+                                                    Infraestructura</h5>
+                                                <div class="row ">
+                                                   
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                      
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="contentt content-dos">
+                <div class="container ">
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/ingenier%C3%ADa-en-edificaciones-aplicado-al-dise%C3%B1o-supervisi%C3%B3n-construcci%C3%B3n-de-colegios-y-hospitales/83');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_831681241767.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="">Ingeniería en Edificaciones Aplicado al Diseño,
+                                                    Supervisión, Construcción de Colegios y Hospitales</h5>
+                                                <div class="row ">
+                                                   
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/ingenier%C3%ADa-vial-aplicado-al-dise%C3%B1o-construcci%C3%B3n-supervisi%C3%B3n-de-carreteras-pavimentos-y-puentes/84');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_841681241791.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="">Ingeniería Vial Aplicado al Diseño, Construcción,
+                                                    Supervisión de Carreteras, Pavimentos y Puentes</h5>
+                                                <div class="row ">
+                                                   
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                          
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-3 px-0">
+                            <div class="course-box-wrap">
+                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/ingenier%C3%ADa-hidr%C3%A1ulica-aplicado-al-dise%C3%B1o-de-redes-de-abastecimiento-de-agua-potable-y-alcantarillado/85');"
+                                    href="javascript:;" class="has-popover">
+                                    <div class="course-box">
+                                        <div class="course-image">
+
+
+                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_851681241821.jpg"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <div class="course-curso">
+                                                <h5 class="">Ingeniería Hidráulica aplicado al Diseño de Redes de
+                                                    Abastecimiento de Agua Potable y Alcantarillado</h5>
+                                                <div class="row ">
+                                                    
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-12">
+                                                        <span class="fw-200 text-white "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                    
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="course-box-dos mt-1">
+                                        <div class="w-100 d-flex text-dark  py-1 course-details">
+                                            <div class="">
+                                                <p class="price  text-white  text-right d-inline-block float-end">
+
+                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <br>
+                                                    <del class="text-white">S/.800 soles</del>
+                                                </p> <br>
+                                            </div>
+                                            <div class="ms-auto">
+
+                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                    Dto.</span> <br>
+                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
 </section>
 
 
@@ -3542,17 +3442,20 @@ section .conten p {
                     <span class="text-white fw-lighter titulo-sub-programa">Caracteristicas claves:
                     </span>
                     <ul class=" text-cont-programa text-white fw-200 vineta  ">
-                        <li>Plan BIM Documentado</li>
                         <li>Normativa BIM Perú</li>
                         <li>Reglamento Nacional de Edificaciones (RNE)</li>
                         <li>Normas de Transportes y Saneamiento </li>
+                        <li>Normas de Transportes y Saneamiento </li>
+                        <li>Libros y Manuales de Metodología BIM</li>
                         <li>Familias, Proyectos y Plantillas en Revit </li>
                     </ul>
-                    <div class="d-flex justify-content-end">
-                        <div class="fw-200 w-80 text-white titulo-sub-programa">Desarrollado por: Ing. CIP Walter Gomez
+                    <div class="d-flex justify-content-between">
+                        <div class="fw-200 w-80 text-white titulo-sub-programa">Desarrollado <br> por: Ing. CIP Walter Gomez
                         </div>
-
+                        <div class="fw-200 w-80 text-white titulo-sub-programa d-flex align-items-center"><a class=" btn-programa " href="#">Descargar DevBIM</a>
+                        </div>
                     </div>
+                   
                 </div>
 
             </div>
@@ -3616,7 +3519,7 @@ section .conten p {
                         <p class="fw-light text-certificados">Instituto Peruano de Estudios <br>
                             e Implementación BIM y <br>
                             Nuevas Tecnologías</p>
-                        <img class=" img-intituto" src="uploads\system\certificaciones\instituto-dozer.svg" alt="">
+                        <img class=" img-intituto" src="uploads\system\certificaciones\instituto-dozer.png" alt="">
                     </div>
                 </div>
             </div>
@@ -3639,7 +3542,7 @@ section .conten p {
                         <h4 class="text-decoration-underline titulo-certificados">CIP</h4>
                         <p class="fw-light text-certificados">Colegio de Ingenieros del Perú <br>
                             Consejo Departamental </p>
-                        <img class="img-cip " src="uploads\system\certificaciones\cip.svg" alt="">
+                        <img class="img-cip " src="uploads\system\certificaciones\cip.png" alt="">
                     </div>
                 </div>
             </div>
@@ -3656,8 +3559,8 @@ section .conten p {
             <p class="text-sub-cat"> Ingresa a nuestra plataforma de
                 verificador de certificados gratuitamente, <br>
                 podrás revisar o descargar todos tus certificados</p>
-            <a style=" font-weight: 700 !important;" class="btn bg-white devbIM fw-semibold text-center  m-5"
-                href="">Deseo verificar mi certificado</a>
+            <a style=" font-weight: 700 !important;" class="btn  devbIM fw-semibold text-center  m-5"
+                href="#">Deseo verificar mi certificado</a>
 
         </h3>
     </div>

@@ -3334,20 +3334,23 @@ section.cart-list-area {
     margin: 0;
     list-style: none;
     margin-bottom: 40px;
+    background-color: #373737;
+    border-radius: 10px;
 }
 .cart-course-list li{
     margin-bottom: 25px;
 }
 .in-cart-box .cart-course-list li:not( :first-child ),
 .wishlisted-box .cart-course-list li:not( :first-child ) {
-    border-top: 1px solid #f1f1f1;
+    /*border-top: 1px solid #f1f1f1;*/
 }
 .cart-course-wrapper {
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
+  /*  background-color: #373737;
     border-radius: 10px;
+    height: 150px; */
 }
 .cart-course-wrapper .image {
     -webkit-box-flex: 0;
@@ -3378,7 +3381,7 @@ section.cart-list-area {
     -ms-box-orient: vertical;
     -o-box-orient: vertical;
     box-orient: vertical;
-    overflow: hidden;
+    /*overflow: hidden; */
     text-overflow: ellipsis;
     white-space: normal;
     margin-bottom: 0;
@@ -3420,7 +3423,7 @@ section.cart-list-area {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 15%;
     flex: 0 0 15%;
-    max-width: 15%;
+    /*max-width: 15%;*/
     text-align: right;
     padding-right: 25px;
     position: relative;
@@ -7383,8 +7386,15 @@ color: white;
     background: #373737;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;  
+    width: 100%;
+    height: 400px;
+    overflow: auto;
     
 
+}
+
+.fondo-cursos-pre-contenido{
+    vertical-align: top;
 }
 .text-desc-cp{
     color: white;
@@ -7407,4 +7417,63 @@ color: white;
     
     font-weight: lighter;
     
+}
+.scrollspy-example::-webkit-scrollbar{
+    width: 7px;
+
+}
+.scrollspy-example::-webkit-scrollbar-thumb{
+    background-color: #000000;
+    border-radius: 150px;
+}
+
+.fondo-metodo{
+    background: #373737;
+    border-radius: 10px;
+}
+.text-cqp{
+    padding-right:  7rem ;
+}
+.text-cqp-cursos{
+    padding-left: 7rem;
+    margin-top: 13px;
+}
+.style-icon-qp{
+    width: 25px;
+}
+.fondo-comprar-ced{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background: #222222;
+    border-radius: 10px;
+    padding: 0.8rem;
+}
+.fondo-gqp{
+    background: #373737;
+    border-radius: 10px;
+}
+.m-cqp{
+    margin-top: 3rem;
+}
+.text-carrito{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: large !important;
+}
+.fondo-cursos-cv{
+    background: #373737;
+    border-radius: 10px;
+}
+.text-title-cqp{
+    font-size: 20px !important;
+    
+}
+.stylehr{
+    
+    margin: 1rem 1rem 0.25rem 1rem !important;
+    color: white !important;
+    border: solid 1px white !important;
+
 }

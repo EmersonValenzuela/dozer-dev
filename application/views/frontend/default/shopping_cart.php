@@ -1,22 +1,31 @@
-<section class="container-xl">
-    <div class="row">
-        <div class="col-lg-6 text-white">
+<section class="container-xl m-cqp">
+    <div class="row ">
+        <div class="col-lg-6 text-white text-cqp">
             <div>
                 <h1>¿Como quieres pagar?</h1>
                 <p>Elige tu forma de pagar, te mostramos las 2 métodos que se adecuarán a tu comodidad. </p>
             </div>
             <div>
                 <a href="">
-                    <div class="d-flex">
-                        <div class="p-2 d-flex flex-column mb-3">
-                            <div class="px-2 fw-semibold">Método Simple </div>
-                            <div class="px-2">Pago en cuentas nacionales (Perú)</div>
+                    <div class="d-flex fondo-metodo justify-content-between">
+                        <div class="p-3 d-flex flex-column ">
+                            <div class="px-2 fw-bold text-white ">Método Simple </div>
+                            <div class="px-2 text-white fw-200">Pago en cuentas nacionales (Perú)</div>
                         </div>
-                        <div class="p-2">Flex item</div>
+                        <div class="p-3  d-flex align-items-center py-3 px-5"><img class="style-icon-qp d-flex justify-content-end" src="<?=base_url()?>uploads/system/icon-flecha.png" alt="" ></div>
+
+                    </div>
+                </a> <br>
+                <a href="">
+                <div class="d-flex fondo-metodo justify-content-between">
+                        <div class="p-3 d-flex flex-column ">
+                            <div class="px-2 fw-bold text-white ">Método Automatizado</div>
+                            <div class="px-2 text-white fw-200">Pago mediante tarjeta de Crédito/Débito</div>
+                        </div>
+                        <div class="p-3  d-flex align-items-center py-3 px-5"><img class="style-icon-qp d-flex justify-content-end" src="<?=base_url()?>uploads/system/icon-flecha.png" alt="" ></div>
 
                     </div>
                 </a>
-                <a href=""></a>
             </div>
         </div>
         

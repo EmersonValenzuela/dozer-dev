@@ -255,8 +255,10 @@
                 <div class="p-2 ">Certificado 2</div>
             </div>
         </div>
-        <div data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="5" class="scrollspy-example fondo-cursos-pre"
+
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="10" class="activate.bs.scrollspy scrollspy-example fondo-cursos-pre "
             tabindex="0">
+            <div class="fondo-cursos-pre-contenido">
             <div class="d-flex flex-row  text-white">
                 <div class="p-2 w-5">1</div>
                 <div class="p-2 flex-grow-1 w-25">Revit Arquitectura Nivel Básico</div>
@@ -454,7 +456,7 @@
                 <div class="p-2 flex-grow-1 d-flex justify-content-center">Autodesk</div>
                 <div class="p-2">Instituto Dozer</div>
             </div>
-
+            </div>
         </div>
 
         <div>

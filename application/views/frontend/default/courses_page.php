@@ -162,7 +162,7 @@ if (isset($sub_category_id)) {
                     <div class="col-md-6 position-relative">
                         <p class="fw-bold text-white px-5"><?= $text_banner ?></p>
                         <p class="px-5 text-white"><?= $sub_text_banner ?></p>
-                        <?php if ($variable_dos) { ?>
+                        <?php if ($variable_dos  !="") { ?>
                         <div class="px-5">
                             <a class="btn-premiun p-1 border-09" href="#">
 

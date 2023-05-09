@@ -7477,3 +7477,37 @@ color: white;
     border: solid 1px white !important;
 
 }
+.text-navbar-c{
+    font-size: 14px;
+    color:white;
+    font-weight: 600 !important;
+}
+.text-navbar-f{
+    font-size: 14px;
+    color:white;
+    font-weight: 600 !important;
+}
+.text-navbar-f:hover{
+    font-size: 14px;
+    color:white;
+    font-weight: 600 !important;
+}
+.text-navbar-r-bim{
+    font-size: 14px;
+    color:white;
+    font-weight: 600 !important;
+}
+.text-navbar-p{
+    font-size: 14px;
+    color:#FFC873;
+    font-weight: 600 !important;
+}
+.text-navbar-p:hover{
+    font-size: 14px !important;
+    color:#FFC873 !important;
+    font-weight: 600 !important;
+}
+
+.m-navbar{
+    margin: 0 10rem 0 0;
+}

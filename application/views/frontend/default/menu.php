@@ -12,13 +12,13 @@
     }
     </style>
 
-    <ul class="mobile-main-nav 	d-block  d-md-block d-lg-none">
+    <ul class="mobile-main-nav 	d-block  ">
         <div class="mobile-menu-helper-top"></div>
         <li class="has-children text-nowrap fw-bold">
             <a href="">
-                <i class="fas fa-bars text-16px text-white"></i>
-                <span class="fw-500 text-white"><?php echo site_phrase('Categorías'); ?></span>
-                <span class="has-sub-category"><i class="fas fa-angle-right"></i></span>
+
+                <span class="text-navbar-c"><?php echo site_phrase('Institución'); ?></span>
+                <img style="width: 10px;" src="<?=base_url()?>uploads/system/flecha-abajo.png" alt="">
             </a>
 
             <ul class="category corner-triangle top-left is-hidden pb-0">
@@ -26,12 +26,12 @@
                 </li>
 
                 <?php
-          $categoria = $this->crud_model->get_categoria()->result_array();
-          foreach ($categoria as $key => $category):?>
+                    $categoria = $this->crud_model->get_categoria()->result_array();
+                    foreach ($categoria as $key => $category):?>
                 <li class="has-children">
                     <a href="javascript:;" class="py-2 text-wrap d-flex"
                         onclick="redirect_to('<?php echo site_url('home/courses?category='.$category['slug']); ?>')">
-                        <span class="icon"><i class="<?php echo $category['font_awesome_class']; ?>"></i></span>
+                        
                         <span><?php echo $category['name']; ?></span>
                         <span class="has-sub-category ms-auto"><i class="fas fa-angle-right"></i></span>
                     </a>
@@ -83,16 +83,12 @@
                 <?php endif; ?>
             </ul>
         </li>
-        <a href="<?php echo base_url('Nosotros') ?>">
-            <span class="fw-500 text-white main-nav-wrap ">Nosots</span>
-        </a>
+
+                
 
 
-
-        <a href=" <?php echo base_url('Premium') ?>">
-            <span class="fw-500 text-white main-nav-wrap ">Premium</span>
-        </a>
         <div class="mobile-menu-helper-bottom"></div>
+
     </ul>
 
 

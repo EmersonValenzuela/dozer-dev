@@ -19,22 +19,9 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
 
 
 
-            <div class="me-auto d-none d-md-none d-lg-block text-white">
+            <div class="me-auto d-none d-md-none d-lg-none text-white  ">
 
-                <li class="nav-item dropdown" style="list-style-type: none !important">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
+
                 <?php
                 $categoria = $this->crud_model->get_categoria()->result_array();
                 foreach ($categoria as $key => $category):?>
@@ -50,17 +37,37 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
 
 
 
-                    
-                <a href="<?php echo base_url('Nosotros') ?>">
-                    <span class="fw-500 text-white main-nav-wrap ">Nosotros</span>
+            </div>
+
+            <ul class="dropdown mb-0 p-0">
+                <div class="mobile-menu-helper-top"></div>
+              
+                    <a class="btn text-navbar-f " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span>Formacion</span> <img style="width: 10px;"
+                            src="<?=base_url()?>uploads/system/flecha-abajo.png" alt="">
+                    </a>
+                    <ul class="dropdown-menu category corner-triangle top-left is-hidden pb-0">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                
+            </ul>
+
+            <div class="m-navbar">
+
+
+                <a class="mx-2" href="<?php echo base_url('Nosotros') ?>">
+                    <span class="text-navbar-r-bim main-nav-wrap ">Ruta BIM</span>
+                </a>
+                <a class="mx-2" href="<?php echo base_url('Nosotros') ?>">
+                    <span class="text-navbar-r-bim main-nav-wrap ">Recursos BIM</span>
                 </a>
 
 
-
-                <a href=" <?php echo base_url('Premium') ?>">
-                    <span class="fw-500 text-white main-nav-wrap ">Premium</span>
+                <a class="mx-2 text-navbar-p main-nav-wrap" href=" <?php echo base_url('Premium') ?>">
+                    <img class="icon-corona " src="<?=base_url()?>uploads/system/corona-premium.svg" alt=""> Premium
                 </a>
-
             </div>
 
             <?php $custom_page_menus = $this->crud_model->get_custom_pages('', 'header'); ?>

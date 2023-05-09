@@ -156,6 +156,8 @@ class Home extends CI_Controller
         }
 
         $row_category = $this->crud_model->auth_category(array('slug' => $_GET['category']));
+        $page_data['variable_dos']  = "";
+        $page_data['text_certificado'] = "";
 
         if ($row_category->parent == 20 || $row_category->id == 20) {
 
@@ -170,6 +172,7 @@ class Home extends CI_Controller
             $page_data['id_category'] = $row_category->id;
             $page_data['parent'] = $row_category->parent;
             $page_data['text_certificado'] = "Certifican: Autodesk y Dozer";
+            $page_data['variable_logo']  = "";
 
             
         } elseif ($row_category->parent == 21 || $row_category->id == 21) {
@@ -179,7 +182,7 @@ class Home extends CI_Controller
             $page_data['variable_logo']  = site_url('uploads/system/logo-portadas.png');
             $page_data['id_category'] = $row_category->id;
             $page_data['parent'] = $row_category->parent;
-            
+            $page_data['sub_text_banner'] = "";
 
         } elseif ($row_category->parent == 22 || $row_category->id == 22) {
             $page_data['variable']  = site_url('uploads/system/portada-diplomados.png');
@@ -188,7 +191,7 @@ class Home extends CI_Controller
             $page_data['variable_logo']  = site_url('uploads/system/logo-portadas.png');
             $page_data['id_category'] = $row_category->id;
             $page_data['parent'] = $row_category->parent;
-
+            $page_data['sub_text_banner'] = "";
         }
 
 

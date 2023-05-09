@@ -1,3 +1,12 @@
+<?php
+require 'vendor/autoload.php';
+MercadoPago\SDK::setAccessToken('TEST-4981021336739503-050900-5a2ab318a77e987791288afbdcc8c656-323048680');
+$preference = new MercadoPago\Preference();
+
+$products_map = array();
+
+?>
+
 <div class="col-lg-6 text-cqp-cursos">
     <div class="in-cart-box">
         <div class="fondo-gqp">
@@ -22,6 +31,16 @@
                 foreach ($this->session->userdata('cart_items') as $cart_item) :
                     $course_details = $this->crud_model->get_course_by_id($cart_item)->row_array();
                     $instructor_details = $this->user_model->get_all_user($course_details['user_id'])->row_array();
+                    $item = new MercadoPago\Item();
+
+                    $item->id = $course_details['id'];
+                    $item->title = $course_details['short_description'];
+                    $item->quantity = 1;
+                    $item->unit_price = $course_details['discounted_price'];
+                    $item->currency_id = 'PEN';
+
+                    array_push($products_map, $item);
+                    unset($item);
                 ?>
                     <li>
                         <div class="cart-course-wrapper box-shadow-5 d-flex justify-content-between">
@@ -156,11 +175,38 @@
                     <?php echo site_phrase('apply'); ?>
                 </button>
             </div>
+
         </div>
         <button type="button" class="btn red w-100 radius-10 mb-3" onclick="handleCheckOut()"><?php echo site_phrase('checkout'); ?></button>
+        <div class="checkout-btn"></div>
+
     </div>
 </div>
+<?php
+$preference->items = $products_map;
+
+$preference->back_urls = array(
+    "success" => "http://localhost/pay/captura.php",
+    "failure" => "http://localhost/pay/error.php"
+);
+
+$preference->auto_return = "approved";
+$preference->binary_mode = true;
+
+
+$preference->save();
+?>
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 
 <script>
-    console.log(<?php var_dump($this->session->userdata('cart_items')) ?>);
+    const mp = new MercadoPago('TEST-afbb3c96-f8ed-4846-9deb-ca492ac37428');
+    mp.checkout({
+        preference: {
+            id: '<?= $preference->id ?>'
+        },
+        render: {
+            container: '.checkout-btn',
+            label: 'Pagar con MP'
+        }
+    });
 </script>

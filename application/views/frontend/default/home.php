@@ -2197,7 +2197,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="course-curso p-cp">
                                                 <h5 class="">Supervisor de Proyectos BIM</h5>
                                                 <div class="row ">
                                                   
@@ -2246,7 +2246,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="course-curso p-cp">
                                                 <h5 class="">Gestor de Proyectos BIM</h5>
                                                 <div class="row ">
                                                   
@@ -2398,7 +2398,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="course-curso p-cp">
                                                 <h5 class="">Expedientes técnicos BIM aplicado a Proyectos de
                                                     Infraestructrura educativa</h5>
                                                 <div class="row ">
@@ -2448,7 +2448,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="course-curso p-cp">
                                                 <h5 class="">Expedientes técnicos BIM aplicado a Proyectos de
                                                     Infraestructrura Hospitalaria</h5>
                                                 <div class="row ">
@@ -2498,7 +2498,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="course-curso p-cp">
                                                 <h5 class="">Expedientes técnicos BIM aplicado a Proyectos de
                                                     infraestructura Vial</h5>
                                                 <div class="row ">
@@ -2706,7 +2706,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="course-curso p-cp">
                                                 <h5 class="">Modelado y Detallado de Estructuras Metálicas
                                                     utilizando Advance Steel</h5>
                                                 <div class="row ">
@@ -2988,7 +2988,8 @@ section .conten p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+
+                                            <div class="course-curso  p-cp">
                                                 <h5 class="">BIM Management en Proyectos de Arquitectura</h5>
                                                 <div class="row ">
                                                   

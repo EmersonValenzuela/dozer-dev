@@ -6837,19 +6837,24 @@ font-size: 35pt;
         width: 30rem;
     }
     .text-principal{
-        font-size: 30pt;
-        line-height: 2.8rem;
+        font-size: 33px;
+        line-height: 1.2;
+    }
        
     }
     .sub-text-principal{
-       
-        font-size: 18pt;
-        line-height: 2rem;
+        font-size: 19px;
+        line-height: 1.5;
+        font-weight: 200;
         
+    }
+    .img-convenios {
+        width: 85%;
+        padding: 0 0 1.5rem 0;
     }
     .btn-cm{
       
-        font-size: 21px;
+        font-size: 16px;
     }
     .cont-cuadro {
         
@@ -6967,15 +6972,15 @@ font-size: 35pt;
     font-size: 18px;
 }
 
- }
+ 
 
  @media (min-width: 1400px) { 
     .img-home-banner {
         width: 35rem;
     }
     .text-principal{
-        font-size: 40pt;
-        line-height: 3.5rem;
+        font-size: 40px;
+    line-height: 1.2;
        
     }
     .titulo-sub-programa {
@@ -6983,13 +6988,13 @@ font-size: 35pt;
     }
     .sub-text-principal{
        
-        font-size: 21pt;
+        font-size: 25px;
         line-height: 2.1rem;
         
     }
     .btn-cm{
       
-        font-size: 21px;
+        font-size: 18px;
     }
     .cont-cuadro {
         
@@ -7032,13 +7037,14 @@ font-size: 35pt;
         
         .text-sub-cat{
             
-            font-size: 20pt;
+            font-size: 20px;
            
             
         }
         .text-section{
            
-            font-size: 39pt;
+            font-size: 31px;
+            line-height: 1.4;
            
         }
         .programa{
@@ -7508,6 +7514,53 @@ color: white;
     font-weight: 600 !important;
 }
 
-.m-navbar{
+@media (min-width: 1200px) { 
+    .m-navbar{
+    margin: 0 ;
+
+} 
+.text-navbar-c {
+    font-size: 12.6px;
+    
+}
+.text-navbar-r-bim {
+    font-size: 12.6px;
+    
+}
+.text-navbar-p:hover {
+    font-size: 12.6px !important;
+    
+}
+.text-navbar-p {
+    font-size: 12.6px !important;
+    
+}
+
+.sign-in-box > .btn {
+    
+    font-size: 12.6px;
+    
+}
+}
+@media (min-width: 1400px) { .m-navbar{
     margin: 0 10rem 0 0;
+} 
+.text-navbar-c{
+    font-size: 14px;
+}
+.text-navbar-r-bim {
+    font-size: 14px;
+}
+.text-navbar-p {
+    font-size: 14px !important;
+}
+.sign-in-box > .btn {
+    font-size: 14px;
+}
+
+}
+
+
+.p-cp{
+    padding: 8px 14px 27px 15px !important;
 }

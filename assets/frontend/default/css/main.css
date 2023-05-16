@@ -7482,6 +7482,7 @@ color: white;
     color: white !important;
     border: solid 1px white !important;
 
+<<<<<<< HEAD
 }
 .text-navbar-c{
     font-size: 14px;
@@ -7563,4 +7564,6 @@ color: white;
 
 .p-cp{
     padding: 8px 14px 27px 15px !important;
+=======
+>>>>>>> 9c36ec8fbfd44cd4f4affa01436dee477e149958
 }

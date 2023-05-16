@@ -882,7 +882,11 @@
     "¿se_te_olvidó_tu_contraseña": "¿se te olvidó tu contraseña",
     "¿aún_no_eres_miembro": "¿aún no eres miembro",
     "student_name": "Student name",
+<<<<<<< HEAD
     "tu_carrito_de_compra_esta_vacío": "Tu carrito de compra esta vacío",
     "institución": "Institución",
     "formación": "Formación"
+=======
+    "tu_carrito_de_compra_esta_vacío": "Tu carrito de compra esta vacío"
+>>>>>>> 9c36ec8fbfd44cd4f4affa01436dee477e149958
 }

@@ -12,13 +12,13 @@
     }
     </style>
 
-    <ul class="mobile-main-nav 	d-block  ">
+    <ul class="mobile-main-nav 	d-block  d-md-block d-lg-none">
         <div class="mobile-menu-helper-top"></div>
         <li class="has-children text-nowrap fw-bold">
             <a href="">
-
-                <span class="text-navbar-c"><?php echo site_phrase('Institución'); ?></span>
-                <img style="width: 10px;" src="<?=base_url()?>uploads/system/flecha-abajo.png" alt="">
+                <i class="fas fa-bars text-16px text-white"></i>
+                <span class="fw-500 text-white"><?php echo site_phrase('Categorías'); ?></span>
+                <span class="has-sub-category"><i class="fas fa-angle-right"></i></span>
             </a>
 
             <ul class="category corner-triangle top-left is-hidden pb-0">
@@ -99,12 +99,16 @@
                 </li>
 
                 <?php
-                    $categoria = $this->crud_model->get_categoria()->result_array();
-                    foreach ($categoria as $key => $category):?>
+          $categoria = $this->crud_model->get_categoria()->result_array();
+          foreach ($categoria as $key => $category):?>
                 <li class="has-children">
                     <a href="javascript:;" class="py-2 text-wrap d-flex"
                         onclick="redirect_to('<?php echo site_url('home/courses?category='.$category['slug']); ?>')">
+<<<<<<< HEAD
 
+=======
+                        <span class="icon"><i class="<?php echo $category['font_awesome_class']; ?>"></i></span>
+>>>>>>> 9c36ec8fbfd44cd4f4affa01436dee477e149958
                         <span><?php echo $category['name']; ?></span>
                         <span class="has-sub-category ms-auto"><i class="fas fa-angle-right"></i></span>
                     </a>
@@ -156,12 +160,21 @@
                 <?php endif; ?>
             </ul>
         </li>
+<<<<<<< HEAD
+
+
+=======
+        <a href="<?php echo base_url('Nosotros') ?>">
+            <span class="fw-500 text-white main-nav-wrap ">Nosots</span>
+        </a>
+>>>>>>> 9c36ec8fbfd44cd4f4affa01436dee477e149958
 
 
 
-
+        <a href=" <?php echo base_url('Premium') ?>">
+            <span class="fw-500 text-white main-nav-wrap ">Premium</span>
+        </a>
         <div class="mobile-menu-helper-bottom"></div>
-
     </ul>
 
 

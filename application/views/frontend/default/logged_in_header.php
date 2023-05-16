@@ -50,7 +50,7 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
 
 
 
-<<<<<<< HEAD
+
             </div>
 
            
@@ -67,8 +67,7 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
 
 
                
-=======
-                    
+         
                 <a href="<?php echo base_url('Nosotros') ?>">
                     <span class="fw-500 text-white main-nav-wrap ">Nosotros</span>
                 </a>
@@ -79,7 +78,7 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
                     <span class="fw-500 text-white main-nav-wrap ">Premium</span>
                 </a>
 
->>>>>>> 9c36ec8fbfd44cd4f4affa01436dee477e149958
+
             </div>
 
             <?php $custom_page_menus = $this->crud_model->get_custom_pages('', 'header'); ?>

@@ -1,75 +1,3 @@
-<div class="main-nav-wrap">
-    <div class="mobile-overlay"></div>
-    <style type="text/css">
-    @media only screen and (max-width: 767px) {
-        .category.corner-triangle.top-left.pb-0.is-hidden {
-            display: none !important;
-        }
-
-        .sub-category.is-hidden {
-            display: none !important;
-        }
-    }
-    </style>
-
-    <ul class="mobile-main-nav 	d-block  d-md-block d-lg-none">
-        <div class="mobile-menu-helper-top"></div>
-        <li class="has-children text-nowrap fw-bold">
-            <a href="">
-                <i class="fas fa-bars text-16px text-white"></i>
-                <span class="fw-500 text-white"><?php echo site_phrase('Categorías'); ?></span>
-                <span class="has-sub-category"><i class="fas fa-angle-right"></i></span>
-            </a>
-
-            <ul class="category corner-triangle top-left is-hidden pb-0">
-                <li class="go-back"><a href=""><i
-                            class="fas fa-angle-left"></i><?php echo site_phrase('Institución'); ?></a>
-                </li>
-
-                <?php ?>
-                <li class="has-children">
-                    <a href="" class="py-2 text-wrap d-flex">
-
-                        <span> Nosotros </span>
-
-                    </a>
-                    <a href="" class="py-2 text-wrap d-flex">
-
-                        <span> Autoridades </span>
-
-                    </a>
-                    <a href="" class="py-2 text-wrap d-flex">
-
-<span> Docentes </span>
-
-</a>
-<a href="" class="py-2 text-wrap d-flex">
-
-<span> Repositorio </span>
-
-</a>
-                </li>
-
-
-
-
-
-
-
-
-            </ul>
-        </li>
-
-
-
-
-        <div class="mobile-menu-helper-bottom"></div>
-
-    </ul>
-
-
-</div>
-
 
 <div class="main-nav-wrap">
     <div class="mobile-overlay"></div>
@@ -88,9 +16,10 @@
     <ul class="mobile-main-nav 	d-block  ">
         <div class="mobile-menu-helper-top"></div>
         <li class="has-children text-nowrap fw-bold">
-            <a href="">
-
-                <span class="text-navbar-c"><?php echo site_phrase('Formación'); ?></span>
+            <a href="javascript:;" class="py-2 text-wrap d-flex" onclick="redirect_to('<?php echo site_url('home/courses?category='.$category['slug']); ?>')">
+            <span>
+                
+                <span class="text-navbar-c text-white"><?php echo site_phrase('Formación'); ?></span>
                 <img style="width: 10px;" src="<?=base_url()?>uploads/system/flecha-abajo.png" alt="">
             </a>
 
@@ -99,16 +28,13 @@
                 </li>
 
                 <?php
-          $categoria = $this->crud_model->get_categoria()->result_array();
-          foreach ($categoria as $key => $category):?>
+          $categories = $this->crud_model->get_categoria()->result_array();
+          foreach ($categories as $key => $category):?>
                 <li class="has-children">
                     <a href="javascript:;" class="py-2 text-wrap d-flex"
                         onclick="redirect_to('<?php echo site_url('home/courses?category='.$category['slug']); ?>')">
-<<<<<<< HEAD
-
-=======
                         <span class="icon"><i class="<?php echo $category['font_awesome_class']; ?>"></i></span>
->>>>>>> 9c36ec8fbfd44cd4f4affa01436dee477e149958
+
                         <span><?php echo $category['name']; ?></span>
                         <span class="has-sub-category ms-auto"><i class="fas fa-angle-right"></i></span>
                     </a>
@@ -121,8 +47,8 @@
                                 <?php echo $category['name']; ?>
                             </a></li>
                         <?php
-              $sub_categoria = $this->crud_model->get_sub_categoria($category['id']);
-              foreach ($sub_categoria as $sub_category): ?>
+              $sub_categories = $this->crud_model->get_sub_categoria($category['id']);
+              foreach ($sub_categories as $sub_category): ?>
                         <li><a class="text-wrap"
                                 href="<?php echo site_url('home/courses?category='.$sub_category['slug']); ?>"><?php echo $sub_category['name']; ?></a>
                         </li>
@@ -160,20 +86,7 @@
                 <?php endif; ?>
             </ul>
         </li>
-<<<<<<< HEAD
-
-
-=======
-        <a href="<?php echo base_url('Nosotros') ?>">
-            <span class="fw-500 text-white main-nav-wrap ">Nosots</span>
-        </a>
->>>>>>> 9c36ec8fbfd44cd4f4affa01436dee477e149958
-
-
-
-        <a href=" <?php echo base_url('Premium') ?>">
-            <span class="fw-500 text-white main-nav-wrap ">Premium</span>
-        </a>
+       
         <div class="mobile-menu-helper-bottom"></div>
     </ul>
 

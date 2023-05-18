@@ -702,13 +702,20 @@ class User_model extends CI_Model
             $this->session->set_flashdata('flash_message', get_phrase('welcome') . ' ' . $row->first_name . ' ' . $row->last_name);
             if ($row->role_id == 1) {
                 $this->session->set_userdata('admin_login', '1');
-                redirect(site_url('admin/dashboard'), 'refresh');
+                if ($this->session->userdata('url_return') != '') {
+                    $xt = explode('/', $this->session->userdata('url_return'));
+                    redirect('/' . $xt[2] . '/' . $xt[3] . '/' . $xt[4] . '/' . $xt[5]);
+                } else {
+                    redirect(site_url('admin/dashboard'), 'refresh');
+                }
             } else if ($row->role_id == 2) {
                 $this->session->set_userdata('user_login', '1');
-                if($this->session->userdata('url_history')){
-                    redirect($this->session->userdata('url_history'), 'refresh');
+                if ($this->session->userdata('url_return') != '') {
+                    $xt = explode('/', $this->session->userdata('url_return'));
+                    redirect('/' . $xt[2] . '/' . $xt[3] . '/' . $xt[4] . '/' . $xt[5]);
+                } else {
+                    redirect(site_url('home'), 'refresh');
                 }
-                redirect(site_url('home'), 'refresh');
             }
         } else {
             $this->session->set_flashdata('error_message', get_phrase('invalid_login_credentials'));

@@ -2,6 +2,8 @@
 $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
 $instructor_details = $this->user_model->get_all_user($course_details['user_id'])->row_array();
 ?>
+<input type="hidden" value="<?= $_SERVER['REQUEST_URI'] ?>" id="url_return">
+<input type="hidden" value="<?= $this->session->userdata('user_id') ?>" id="id_user">
 
 
 <section class="course-content-area">
@@ -1068,11 +1070,36 @@ function handleCartItems(elem) {
 
 function handleBuyNow(elem) {
 
-    url1 = '<?php echo site_url('home/handleCartItemForBuyNowButton'); ?>';
-    url2 = '<?php echo site_url('home/refreshWishList'); ?>';
-    urlToRedirect = '<?php echo site_url('home/shopping_cart'); ?>';
-    var explodedArray = elem.id.split("_");
-    var course_id = explodedArray[1];
+url1 = '<?php echo site_url('home/handleCartItemForBuyNowButton'); ?>';
+url2 = '<?php echo site_url('home/refreshWishList'); ?>';
+url3 = '<?php echo site_url('home/url_return'); ?>';
+urlToRedirect = '<?php echo site_url('home/shopping_cart'); ?>';
+urlLogin = '<?php echo site_url('login'); ?>';
+var explodedArray = elem.id.split("_");
+var course_id = explodedArray[1];
+let id_user = $("#id_user").val();
+let url_return = $("#url_return").val();
+console.log(url_return);
+
+if (id_user == "") {
+    
+    $.ajax({
+        url: url3,
+        type: 'POST',
+        data: {
+            url_return: url_return
+        },
+        success: function(response) {
+            toastr.error('<?php echo site_phrase('Tiene que Iniciar Sesión') . '....'; ?>');
+            setTimeout(
+                function() {
+                    window.location.replace(urlLogin);
+                }, 1000);
+        }
+    })
+
+
+} else {
 
     $.ajax({
         url: url1,
@@ -1096,6 +1123,8 @@ function handleBuyNow(elem) {
             });
         }
     });
+}
+
 }
 
 function handleEnrolledButton() {

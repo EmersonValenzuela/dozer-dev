@@ -1424,4 +1424,13 @@ class Home extends CI_Controller
             echo '<h6>' . api_phrase('buy_the_course') . '</h6>';
         }
     }
+
+    public function url_return()
+    {
+
+        $url_return = $this->input->post('url_return');
+        $this->session->set_userdata('url_return', $url_return);
+
+        
+    }
 }

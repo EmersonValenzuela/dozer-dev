@@ -55,6 +55,52 @@ class Home extends CI_Controller
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
+    public function autoridades()
+    {
+        $page_data['page_name'] = "autoridades";
+        $page_data['page_title'] = site_phrase('Autoridades');
+        
+       
+        $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
+    }
+
+    public function docente()
+    {
+        $page_data['page_name'] = "docente";
+        $page_data['page_title'] = site_phrase('Docente');
+        
+       
+        $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
+    }
+    public function repositorio()
+    {
+        $page_data['page_name'] = "repositorio";
+        $page_data['page_title'] = site_phrase('Repositorio');
+        
+       
+        $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
+    }
+    public function ruta()
+    {
+        $page_data['page_name'] = "ruta_aprendizaje";
+        $page_data['page_title'] = site_phrase('Ruta-de-Aprendizaje');
+        
+       
+        $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
+    }
+
+    public function mentoria()
+    {
+        $page_data['page_name'] = "mentoria_bim";
+        $page_data['page_title'] = site_phrase('Mentoria-bim');
+        
+       
+        $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
+    }
+
+
+
+
     public function premium()
     {
         $page_data['page_name'] = "premium";

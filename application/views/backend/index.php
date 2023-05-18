@@ -7,6 +7,7 @@
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <title><?php echo get_phrase($page_title); ?> | <?php echo $system_title; ?></title>
     <!-- all the meta tags -->
@@ -14,9 +15,15 @@
     <!-- all the css files -->
     <?php include 'includes_top.php'; ?>
 </head>
+
 <body data-layout="detached">
     <!-- HEADER -->
+ 
+
+
+
     <?php include 'header.php'; ?>
+    
     <div class="container-fluid">
         <div class="wrapper">
             <!-- BEGIN CONTENT -->
@@ -38,4 +45,5 @@
     <?php include 'modal.php'; ?>
     <?php include 'common_scripts.php'; ?>
 </body>
+
 </html>

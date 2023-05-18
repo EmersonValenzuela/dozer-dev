@@ -96,6 +96,12 @@ $route['my_bookings'] = "addons/tutor_booking/booked_schedules_student";
 $route['Nosotros'] = "home/about";
 $route['Premium'] = "home/premium";
 $route['Libro-de-reclamaciones'] = "home/reclamacion";
+$route['Autoridades'] = "home/autoridades";
+$route['Docente'] = "home/docente";
+$route['Repositorio'] = "home/repositorio";
+$route['Ruta-de-Aprendizaje'] = "home/ruta";
+$route['Mentoria-bim'] = "home/mentoria";
+
 
 //End tutor booking
 

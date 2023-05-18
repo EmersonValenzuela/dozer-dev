@@ -58,25 +58,16 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
             <div class="m-navbar">
 
 
-                <a class="mx-2" href="<?php echo base_url('Nosotros') ?>">
+                <a class="mx-2" href="<?php echo base_url('Ruta-de-Aprendizaje') ?>">
                     <span class="text-navbar-r-bim main-nav-wrap ">Ruta de Aprendizaje</span>
                 </a>
-                <a class="mx-2" href="<?php echo base_url('Nosotros') ?>">
+                <a class="mx-2" href="<?php echo base_url('Mentoria-bim') ?>">
                     <span class="text-navbar-r-bim main-nav-wrap ">Mentoria BIM</span>
                 </a>
 
 
                
          
-                <a href="<?php echo base_url('Nosotros') ?>">
-                    <span class="fw-500 text-white main-nav-wrap ">Nosotros</span>
-                </a>
-
-
-
-                <a href=" <?php echo base_url('Premium') ?>">
-                    <span class="fw-500 text-white main-nav-wrap ">Premium</span>
-                </a>
 
 
             </div>

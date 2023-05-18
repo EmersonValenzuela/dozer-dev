@@ -5771,7 +5771,7 @@ background: linear-gradient(90deg, rgba(28,28,28,1) 50%, rgba(20,20,20,1) 50%);
     justify-content: space-between;
   }
   .principal-tarjetaaaa .tarjetaaas .tarjetaaa{
-    width: calc(100% / 4 - 10px);
+    width: calc(90% / 4 - 25px);
     background: #1C1C1C;
     border-radius: 12px;
     padding: 12px 0px;;
@@ -5925,7 +5925,7 @@ background: linear-gradient(90deg, rgba(28,28,28,1) 50%, rgba(20,20,20,1) 50%);
     border-top-right-radius: 20px;
     color:white;
     box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
-    padding: 15px;
+    padding: 15px 30px;
   }
   .text-nom-aca{
     font-weight: bold;
@@ -7201,12 +7201,35 @@ font-size: 35pt;
     font-weight: bold;
     color: white;
     font-size: 20px;
+    text-align: center;
+    padding: 0 0 0 0;
    
+}
+.text-cd{
+    color: #C9C9C9;
+    padding: 10px;
+    font-size: 25px;
+    background-color: #272727;
 }
 .sub-text-principal-nosotros{
     color: white;
     font-size: 13px;
     font-weight: 200;
+    text-align: justify;
+
+    
+    
+
+}
+
+.sub-text-principal-nosotros-a{
+    color: white;
+    font-size: 17px;
+    font-weight: 200;
+    text-align: justify;
+    padding: 17px 0;
+    
+    
     
 
 }
@@ -7223,19 +7246,21 @@ font-size: 35pt;
 @media (min-width: 1400px) { .text-principal-nosotros{
     font-weight: bold;
     color: white;
-    font-size: 38px;
+    font-size: 25px;
+    padding: 0 0 55px 0;
+
    
 }
 .sub-text-principal-nosotros{
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 200;
     
 
 }
 
 .img-convenios-nosotros {
-    width: 80%;
+    width: 100%;
     padding: 0 0 1.5rem 0;
 } }
 
@@ -7247,14 +7272,14 @@ font-size: 35pt;
 }
 .sub-text-principal-nosotros{
     color: white;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 200;
     
 
 }
 
 .img-convenios-nosotros {
-    width: 85%;
+    width: 100%;
     padding: 0 0 1.5rem 0;
 } 
 .home-banner-area-nosotros {
@@ -7279,16 +7304,16 @@ color: white;
 }
 .img-logo-naci{
     
-    width: 75px;
+    width: 90px;
     margin: 21px 0;
 }
 .img-logo-arqui{
-    width: 71px;
+    width: 90px;
     margin: 21px 0;
 
 }
 .img-logo-bv{
-    width: 75px
+    width: 60%
 }
 .img-logo-aci{
     width: 120px;
@@ -7301,7 +7326,7 @@ color: white;
    color: white;
    background: #272727;
    box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
-   padding: 12px;
+   padding: 30px;
   }
   .fondo-texto-inter-a{
     padding: 9px 15px 16px 15px !important;
@@ -7318,14 +7343,14 @@ color: white;
     font-weight: 700;
     font-size: 15px;
 }
-.pb-15rem{
-    padding: 12px 12px 1.6rem 12px !important;
+.pb-16rem{
+    padding: 30px 30px 23px 30px !important;
 }
 .mr-48px{
     margin-right: 48px;
 }
 .txt-bv{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 200;
     margin-right: 48px;
 }
@@ -7562,4 +7587,318 @@ color: white;
 }
 .p-cp{
     padding: 8px 14px 27px 15px !important;
+}
+
+.w-46{
+    width: 46%
+}
+.text-cont-ci{
+    font-size: 19px;
+    font-weight: 200;
+}
+.text-principal-autoridades{
+    font-weight: bold;
+    color: #C8C8C8;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 0 0 0;
+}
+.sub-text-principal-autoridades{
+    font-weight:200;
+    color:#C8C8C8;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 55px 0 33px 0;
+}
+.fondo-da{
+    background: rgb(34,34,34);
+    background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(39,39,39,1) 32%, rgba(39,39,39,1) 43%, rgba(39,39,39,1) 54%, rgba(39,39,39,1) 65%, rgba(34,34,34,1) 100%);
+    padding: 15px 0;
+}
+.titulo-da{
+    color: #C8C8C8;
+font-weight: 600;
+text-align: center;}
+
+.subtitutlo-da{
+    color: #C8C8C8;
+    font-weight: 200;
+    text-align: center;
+}
+.m-da{
+    margin: 50px 0;
+}
+.style-da{
+   width: 22%;
+}
+.style-dad{
+    width:90%
+}
+.titulo-daca{
+    margin:25px ;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+.fondo-doc{
+    background: #1D1D1D;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.fondo-doc-bottom{
+    background: #141414;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.linderkin{
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    background-color: #262626;
+    border-radius: 8px;
+    top: 33rem;
+    padding: 0px 50px;
+    margin: 0px 10px;
+    font-size: 15px;
+    
+}
+.style-in{
+    width: 19px;
+}
+
+.linderkin-dos{
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    background-color: #262626;
+    border-radius: 8px;
+    top: 62.3rem;
+    padding: 0px 50px;
+    margin: 0px 10px;
+    font-size: 15px;
+    
+}
+.linderkin-mentoria{
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    background-color: #262626;
+    border-radius: 8px;
+    top: 80rem;
+    padding: 0px 50px;
+    margin: 0px 15px;
+    font-size: 15px;
+    
+}
+.p-d4{
+    padding: 19px 0.5rem 5px;
+}
+
+.linderkin-tres{
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    background-color: #262626;
+    border-radius: 8px;
+    top: 1463px;
+    padding: 0px 50px;
+    margin: 0px 10px;
+    font-size: 15px;
+    
+}
+.linderkin-cuatro{
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    background-color: #262626;
+    border-radius: 8px;
+    top: 1920px;
+    padding: 0px 50px;
+    margin: 0px 10px;
+    font-size: 15px;
+    
+}
+.text-principal-ruta{
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    
+   
+}
+.subtext-principal-ruta{
+    font-weight: bold;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    padding: 0 0 15px 0;
+   
+}
+.text-incio-ruta{
+    font-weight: bold;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    background-color: #FFCC73;
+    border-radius: 5px;
+    margin: 0px 300px;
+    padding: 5px;
+}
+.lineaHorizontal {
+    border-top: 1px solid #FFCC73;
+    height: 2px;
+    max-width: 950px;
+    padding: 0;
+    margin: 0px auto 0 auto;
+  }
+  .lineaVertical{
+    height: 50px;
+    width: 0.1vw;
+    border-width: 0;
+    color: #000;
+    background-color: #FFCC73;
+    margin: auto;
+    display: block;
+   
+  }
+
+.lineaVerticalc{
+  height: 50px;
+  width: 0.1vw;
+  border-width: 0;
+  color: #000;
+  background-color: #FFCC73;
+  margin: auto;
+  display: block;
+ 
+}
+  .lineaVerticald{
+    height: 50px;
+    width: 0.1vw;
+    border-width: 0;
+    color: #000;
+    background-color: #FFCC73;
+    margin: 0 1174px;
+    bottom: 3.2rem;
+    position: relative;
+    
+   
+  }
+  .lineaVerticali{
+    height: 50px;
+    width: 0.1vw;
+    border-width: 0;
+    color: #000;
+    background-color: #FFCC73;
+    margin: 0 224px;
+    position: relative;
+    bottom: 6.3rem;
+    
+   
+  }
+  .h-140{
+    height: 140px;
+  }
+.fondo-ruta{
+    background: #1C1C1C;
+    border-radius: 10px;
+    padding: 15px 40px;
+    text-align: center;
+    border: 1px solid black;
+}
+.text-ruta{
+    font-weight: bold;
+}
+.style-primer-btn{
+    background-color:#FFCC73 ;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin-top: 2px;
+}
+.style-cursos-ruta{
+    background-color:#303030;
+    color: white;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 12px 0;
+    margin-top: 15px ;
+}
+.style-espe-btn{
+    background-color:#FFCC73 ;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin-top: 15px ;
+}
+
+.pf-ruta{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+}
+
+.color-border{
+    border: 2px solid black !important;
+    background-color: transparent !important;
+}
+.text-incio-mentoria{
+    font-weight: bold;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    background-color: #FFCC73;
+    border-radius: 5px;
+    margin: 0px 300px;
+    padding: 5px;
+}
+.text-acceso{
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 19px;
+}
+.sub-text-acceso{
+    color:white;
+    font-weight: 200;
+    text-align: center;
+    font-size: 17px;
+}
+.paso-text{
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+.paso-subtext{font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    padding: 17px 0;
+}
+.style-sa{
+        background-color:#FFCC73 ;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px 0;
+        margin: 8px 0px;
+        font-size: 15px;
+        text-align: center;
+    }
+.fondo-mentoria{
+    background: #1C1C1C;
+    border: 1px solid black;
+    border-radius: 17px;
+    padding: 40px;
+}
+.fondo-re-men{
+    background-color: #1C1C1C;
+    border-radius: 17px;
+    border: 1px solid black;
+    padding: 20px 0;
+    margin-bottom: 18px;
 }

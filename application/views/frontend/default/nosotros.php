@@ -7,40 +7,76 @@
         <div class="row">
             <div class=" position-relative">
                 <div class="">
-                    <div class="d-flex flex-row ">
-                        <div class="d-flex flex-column mb-3 ">
-                            <div class="p-2">
-                                <h2 class="text-principal-nosotros">
-                                    Somos la institución de quienes <br>
-                                    diseñan y construyen las ciudades <br>
-                                    del mañana.
-                                </h2>
-                            </div>
-                            <div class="p-2">
-                                <p class="sub-text-principal-nosotros">
-                                    Desde sus inicios, instituto dozer ha ofrecido una formación <br> que enlaza el
-                                    conocimiento académico con requerimientos <br> profesionales. A lo largo de nuestra
-                                    de trayectoria como <br> institución educativa, cada peldaño que hemos escalado ha
-                                    <br>
-                                    sido para evolucionar la forma de capacitar a nuestros <br> estudiantes. Nuestro
-                                    compromiso está presente en todos <br> los procesos que se aplican en cada uno de
-                                    nuestros cursos, <br> especializaciones y diplomados con la finalidad de construir
-                                    <br>
-                                    entre todos un país mejor.
-                                </p>
-                            </div>
-                            <div class="p-2"><img class="img-convenios-nosotros" src="uploads\system\convenios.png"
-                                    alt="">
+                    <div class="">
+                        <h2 class="text-principal-nosotros ">
+                            Somos la institución de quienes
+                            diseñan y construyen <br> las ciudades
+                            del mañana.
+                        </h2>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="p-2 d-none d-md-block "><img class="width-35rem img-home-banner "
+                                        src="<?=base_url()?>uploads/system/img-nosotros.png" alt=""></div>
                             </div>
 
+                            <div class="col-6">
+                                <div class="p-2">
+                                    <h2 class="text-cd">
+                                        Carta del Director General
+                                    </h2>
+                                </div>
+                                <div class="p-2">
+                                    <p class="sub-text-principal-nosotros">
+                                        En Instituto Dozer hemos apostado por el desarrollo profesional de ingenieros y
+                                        arquitectos, a través de una oferta educativa y soluciones especializadas
+                                        desarrolladas por profesionales para profesionales. La historia de la
+                                        ingeniería, la
+                                        arquitectura y la transformación tecnológica van ligadas directamente a los
+                                        avances
+                                        de la sociedad, donde los profesionales deben guiar y resolver los problemas
+                                        sensibles, aportando valor económico, intelectual, humano y social. </p>
+                                    <p class="sub-text-principal-nosotros"> Bajo esa premisa nació, coincidiendo con el
+                                        cambio de siglo, Instituto Dozer con una
+                                        vocación clara de ofrecer salida a todas esas nuevas inquietudes de los expertos
+                                        de
+                                        la ingeniería, la arquitectura y los procesos de transformación digital en el
+                                        mundo
+                                        de la industria y las empresas. En los últimos años, gracias al rápido
+                                        crecimiento y
+                                        la ampliación de nuestra presencia en Latinoamérica, hemos conseguido ser un
+                                        referente del sector y alcanzar segmentos relacionados con la consultoría
+                                        especializada en ámbitos como BIM y el desarrollo de nuevas técnologías. </p>
+                                    <p class="sub-text-principal-nosotros">Nuestra experiencia desde nuestros inicios
+                                        nos ha
+                                        llevado a enteder las necesidades
+                                        del estudiantes actual, sus necesidades han evolucionado, requieren usar
+                                        softwares
+                                        de ultima técnologias, quedando ya en el pasado el metodos tradicionales. Hemos
+                                        obtenido diversos logros, como tambien convenios institucionales, con la
+                                        finalidad
+                                        de afianzar cada vez más el prestigio en educaión que tenemos, implementando
+                                        nuevas
+                                        técnologías que estan a la vanguardia de muchas escuelas a nivel internacional.
+                                    </p>
 
+                                    <p class="sub-text-principal-nosotros">Contamos con el conocimiento y la experiencia
+                                        en
+                                        una amplia gama de disciplinas,
+                                        permitiéndonos tener un gran equipo de expertos a disposición de nuestros
+                                        alumnos y
+                                        empresas clientes.</p>
+                                    <p class="sub-text-principal-nosotros-a">
+                                        Somos orgullosamente Centro Autorizado de Autodesk:</p>
+
+
+                                </div>
+                                <div class="p-2"><img class="img-convenios-nosotros" src="uploads\system\convenios.png"
+                                        alt="">
+                                </div>
+                            </div>
                         </div>
-
-
-
-                        <div class="p-2 d-none d-md-block "><img class="width-35rem img-home-banner "
-                                src="<?=base_url()?>uploads/system/img-nosotros.png" alt=""></div>
-
                     </div>
 
 
@@ -186,17 +222,17 @@
         </div>
         <div>
             <p class="text-white text-center fw-bold sub-tem-n py-3">
-                Convenio Académico
+                Convenio Académico <br>
                 Internacional
             </p>
 
             <div class="d-flex flex-row mb-3  justify-content-between">
-                <div class="d-flex flex-column  p-2">
+                <div class="d-flex flex-column  p-2 w-46">
                     <div class="fondo-nombre-academico">
                         <span class="text-white d-flex align-items-center fw-700">AUTODESK</span>
                     </div>
-                    <div class="d-flex flex-row mb-3 fondo-texto-inter ">
-                        <div class="p-2 text-white ">Somos la primera institución en obtener las <br>
+                    <div class="d-flex flex-row mb-3 fondo-texto-inter justify-content-between">
+                        <div class="p-2 text-white text-cont-ci">Somos la primera institución en obtener las <br>
                             credencias para ser un centro de capacitación <br>
                             y certificación autorizado por autodesk en la <br>
                             región lima.</div>
@@ -210,20 +246,24 @@
 
                     </div>
                 </div>
-                <div class="d-flex flex-column  p-2">
+                <div class="d-flex flex-column  p-2 w-46">
                     <div class="fondo-nombre-academico">
                         <span class="text-white d-flex align-items-center fw-700">ACI - AMERICAN CONCRETE
                             INSTITUTE</span>
                     </div>
-                    <div class="d-flex flex-row mb-3 fondo-texto-inter pb-15rem">
-                        <div class="p-2 text-white">Formamos parte del Capítulo Peruano del <br>
+                    <div class="d-flex flex-row mb-3 fondo-texto-inter pb-16rem justify-content-between">
+                        <div class="p-2 text-white text-cont-ci">Formamos parte del Capítulo Peruano del <br>
                             Instituto Americano del Concreto – ACI <br>
                             organización técnica cuya misión básica es <br>
                             compartir y difundir el conocimiento para un <br>
-                            mejor y más eficiente uso del concreto.</div>
+                            mejor y más eficiente uso del concreto. <br></div>
+                        
                         <div class="p-2 d-flex align-items-center"><img class="img-logo-aci "
                                 src="<?=base_url()?>uploads/system/logo-internacional-aci.png" alt="">
                         </div>
+                            
+                        </div>
+
 
                     </div>
                 </div>
@@ -236,12 +276,12 @@
             </p>
 
             <div class="d-flex flex-row mb-3  justify-content-between">
-                <div class="d-flex flex-column  p-2">
+                <div class="d-flex flex-column  p-2  w-46">
                     <div class="fondo-nombre-academico">
                         <span class="text-white d-flex align-items-center fw-700">COLEGIO DE INGENIEROS DEL PERÚ</span>
                     </div>
                     <div class="d-flex flex-row mb-3 fondo-texto-inter ">
-                        <div class="p-2 text-white  mr-48px">Contamos con el respaldo del colegios de <br>
+                        <div class="p-2 text-white  text-cont-ci  mr-48px">Contamos con el respaldo del colegios de <br>
                             ingenieros del perú, para brindar a nuestros <br>
                             estudiantes las certificaciones de mayor <br>
                             renombre a nivel nacional para estudiantes <br>
@@ -256,12 +296,12 @@
 
                     </div>
                 </div>
-                <div class="d-flex flex-column  p-2">
+                <div class="d-flex flex-column  p-2  w-46">
                     <div class="fondo-nombre-academico">
                         <span class="text-white d-flex align-items-center fw-700">COLEGIO DE ARQUITECTOS DEL PERÚ</span>
                     </div>
                     <div class="d-flex flex-row mb-3 fondo-texto-inter ">
-                        <div class="p-2 text-white  mr-48px">Contamos con el respaldo del colegios de <br>
+                        <div class="p-2 text-white  text-cont-ci  mr-48px">Contamos con el respaldo del colegios de <br>
                             ingenieros del perú, para brindar a nuestros <br>
                             estudiantes las certificaciones de mayor <br>
                             renombre a nivel nacional para estudiantes <br>
@@ -290,18 +330,18 @@
                     <div class="fondo-nombre-academico">
                         <span class="text-white d-flex align-items-center fw-700">BUREAU VERITAS</span>
                     </div>
-                    <div class="d-flex flex-row mb-3 fondo-texto-inter ">
+                    <div class="d-flex flex-row mb-3 fondo-texto-inter d-flex justify-content-center">
                         <div class="p-2 text-white  txt-bv">La norma ISO 9001 es la norma internacional de gestión de
                             la calidad más reconocida del mundo, estamos en proceso de <br>
                             certificación para brindarte la mejor capacitación de calidad de acuerdo a los estándares
-                            internacionales. <strong>Instituto Dozer</strong>  <br>
+                            internacionales. <strong>Instituto Dozer</strong> <br>
                             cuenta con el Sistema de Gestión de la Calidad Integral (SGCI-DOZ) que nos permite brindar
                             un servicio educativo <br>
                             con altos estándares de calidad”.
                         </div>
 
-                        <div class="p-2 "><img class="img-logo-bv "
-                                src="<?=base_url()?>uploads/system/logo-bv.png" alt="">
+                        <div class="p-2 d-flex justify-content-center"><img class="img-logo-bv " src="<?=base_url()?>uploads/system/logo-bv.png"
+                                alt="">
                         </div>
 
 
@@ -315,458 +355,12 @@
     </div>
 </div>
 
-<div class="my-4 py-1 ">
 
-    <div class="container-xl">
-        <div class="row">
-            <p class="text-white text-center fw-bold text-institucion py-4">
-                Somos la Institución de quienes diseñan <br>
-                y construyen las ciudades del mañana.
-            </p>
-        </div>
-    </div>
-</div>
 
 <div class="container-xl">
     <div class="row">
         <div class="d-flex flex-column">
-            <p class="text-white text-center fw-bold sub-tem-n py-3">
-                Nuestros Docentes
-            </p>
-            <p class="fw-200 text-center text-white"> Estamos en constante crecimiento y todos los días trabajamos para
-                ofrecer <br>
-                la mejor experiencia de aprendizaje.</p>
-
-
-            <div class="containerrrr">
-                <input type="radio" name="dot" id="docente-one">
-                <input type="radio" name="dot" id="docente-two">
-                <div class="principal-tarjetaa">
-                    <div class="tarjetaas">
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tarjetaas">
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tarjetaa m-1">
-                            <div class="content">
-                                <div class="d-flex flex-column">
-
-                                    <img class="img-docente-nosotros" src="uploads\system\docente\docente-prueba.png"
-                                        alt="">
-                                    <div class="d-flex flex-row"> <img class="bandera"
-                                            src="uploads\system\docente\pe.png" alt="">
-                                        <span class="bandera text-white">Perú</span>
-                                    </div>
-
-                                </div>
-                                <div class="detalless">
-                                    <div class="name text-white fw-bold text-start">Walter Stwen <br>
-                                        Gomez Cacha</div>
-                                    <br>
-                                    <div class="job text-white fw-200 text-start">Ingeniero Civil <br>
-                                        Especialista en <br>
-                                        implementación BIM</div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="button">
-                    <label for="docente-one" class=" active docente-one"></label>
-                    <label for="docente-two" class="docente-two"></label>
-                </div>
-            </div>
-
+          
             <p class="text-white text-center fw-bold text-institucion py-3">
                 Hemos formado a más de 15 mil estudiantes en más de <br>
                 70 universidades de todo el Perú </p>

@@ -22,10 +22,10 @@
             <div class="m-navbar">
 
 
-                <a class="mx-2" href="<?php echo base_url('Nosotros') ?>">
+                <a class="mx-2" href="<?php echo base_url('Ruta-de-Aprendizaje') ?>">
                     <span class="text-navbar-r-bim main-nav-wrap ">Ruta de Aprendizaje</span>
                 </a>
-                <a class="mx-2" href="<?php echo base_url('Nosotros') ?>">
+                <a class="mx-2" href="<?php echo base_url('Mentoria-bim') ?>">
                     <span class="text-navbar-r-bim main-nav-wrap ">Mentoria BIM</span>
                 </a>
 

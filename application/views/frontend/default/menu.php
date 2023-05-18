@@ -1,3 +1,92 @@
+<div class="main-nav-wrap">
+    <div class="mobile-overlay"></div>
+    <style type="text/css">
+    @media only screen and (max-width: 767px) {
+        .category.corner-triangle.top-left.pb-0.is-hidden {
+            display: none !important;
+        }
+
+        .sub-category.is-hidden {
+            display: none !important;
+        }
+    }
+    </style>
+
+    <ul class="mobile-main-nav 	d-block  ">
+        <div class="mobile-menu-helper-top"></div>
+        <li class="has-children text-nowrap fw-bold">
+            <a href="javascript:;" class="py-2 text-wrap d-flex" onclick="redirect_to('')">
+                <span>
+
+                    <span class="text-navbar-c text-white"><?php echo site_phrase('Institución'); ?></span>
+                    <img style="width: 10px;" src="<?=base_url()?>uploads/system/flecha-abajo.png" alt="">
+            </a>
+
+            <ul class="category corner-triangle top-left is-hidden pb-0">
+                <li class="go-back"><a href=""><i class="fas fa-angle-left"></i><?php echo site_phrase('menu'); ?></a>
+                </li>
+                
+             
+                <li class="has-children">
+                    <a href="javascript:;" class="py-2 text-wrap d-flex"
+                    onclick="redirect_to('<?php echo base_url('Nosotros') ?>')">
+
+
+                        <span>Nosotros</span>
+                       
+                    </a>
+                    <a href="" class="py-2 text-wrap d-flex" 
+                    onclick="redirect_to('<?php echo base_url('Autoridades') ?>')">
+
+
+                        <span>Autoridades</span>
+                       
+                    </a>
+                    <a href="javascript:;" class="py-2 text-wrap d-flex"
+                    onclick="redirect_to('<?php echo base_url('Docente') ?>')">
+
+
+                        <span>Docente</span>
+                       
+                    </a>
+                    <a href="javascript:;" class="py-2 text-wrap d-flex"
+                    onclick="redirect_to('<?php echo base_url('Repositorio') ?>')">
+
+
+                        <span>Repositorio</span>
+                       
+                    </a>
+
+                    <ul class="sub-category is-hidden">
+                        <li class="go-back-menu"><a href=""><i
+                                    class="fas fa-angle-left"></i><?php echo site_phrase('menu'); ?></a></li>
+                        <li class="go-back"><a href="">
+                                <i class="fas fa-angle-left"></i>
+                                <span class="icon"><i class="<?php echo $category['font_awesome_class']; ?>"></i></span>
+                                <?php echo $category['name']; ?>
+                            </a></li>
+                        
+              
+                        
+                       
+                    </ul>
+                </li>
+               
+
+
+                
+                
+                
+
+                
+            </ul>
+        </li>
+
+        <div class="mobile-menu-helper-bottom"></div>
+    </ul>
+
+
+</div>
 
 <div class="main-nav-wrap">
     <div class="mobile-overlay"></div>
@@ -16,11 +105,11 @@
     <ul class="mobile-main-nav 	d-block  ">
         <div class="mobile-menu-helper-top"></div>
         <li class="has-children text-nowrap fw-bold">
-            <a href="javascript:;" class="py-2 text-wrap d-flex" onclick="redirect_to('<?php echo site_url('home/courses?category='.$category['slug']); ?>')">
-            <span>
-                
-                <span class="text-navbar-c text-white"><?php echo site_phrase('Formación'); ?></span>
-                <img style="width: 10px;" src="<?=base_url()?>uploads/system/flecha-abajo.png" alt="">
+            <a href="javascript:;" class="py-2 text-wrap d-flex" onclick="redirect_to('')">
+                <span>
+
+                    <span class="text-navbar-c text-white"><?php echo site_phrase('Formación'); ?></span>
+                    <img style="width: 10px;" src="<?=base_url()?>uploads/system/flecha-abajo.png" alt="">
             </a>
 
             <ul class="category corner-triangle top-left is-hidden pb-0">
@@ -33,7 +122,7 @@
                 <li class="has-children">
                     <a href="javascript:;" class="py-2 text-wrap d-flex"
                         onclick="redirect_to('<?php echo site_url('home/courses?category='.$category['slug']); ?>')">
-                        <span class="icon"><i class="<?php echo $category['font_awesome_class']; ?>"></i></span>
+
 
                         <span><?php echo $category['name']; ?></span>
                         <span class="has-sub-category ms-auto"><i class="fas fa-angle-right"></i></span>
@@ -86,7 +175,7 @@
                 <?php endif; ?>
             </ul>
         </li>
-       
+
         <div class="mobile-menu-helper-bottom"></div>
     </ul>
 

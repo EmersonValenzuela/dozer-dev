@@ -50,7 +50,7 @@ if (isset($sub_category_id)) {
                                                 name="sub_category" class="categoria custom-radio"
                                                 value="<?php echo $category['slug']; ?>" onclick="filter(this)"
                                                 <?php if ($selected_category_id == $category['id']) echo 'checked'; ?>>
-                                            <label class="text-white"
+                                            <label class="text-white "
                                                 for="category-<?php echo $category['id']; ?>"><?php echo $category['name']; ?></label>
 
                                         </div>
@@ -63,7 +63,7 @@ if (isset($sub_category_id)) {
                                                 name="sub_category" class="categoria custom-radio"
                                                 value="<?php echo $sub_category['slug']; ?>" onclick="filter(this)"
                                                 <?php if ($selected_category_id == $sub_category['id']) echo 'checked'; ?>>
-                                            <label class=" text-white"
+                                            <label class=" text-white m-0 fs-15px"
                                                 for="sub_category-<?php echo $sub_category['id']; ?>"><?php echo $sub_category['name']; ?></label>
 
                                         </div>
@@ -84,37 +84,25 @@ if (isset($sub_category_id)) {
                                             <input type="radio" id="all" name="level" class="level custom-radio "
                                                 value="all" onclick="filter(this)"
                                                 <?php if ($selected_level == 'all') echo 'checked'; ?>>
-                                            <label class="text-white"
+                                            <label class="text-white  my-1 mx-3 fs-15px"
                                                 for="all"><?php echo site_phrase('all'); ?></label>
                                         </div>
                                         <div class="">
                                             <input type="radio" id="beginner" name="level" class="level custom-radio"
                                                 value="beginner" onclick="filter(this)"
                                                 <?php if ($selected_level == 'beginner') echo 'checked'; ?>>
-                                            <label class="text-white"
+                                            <label class="text-white my-1 mx-3 fs-15px"
                                                 for="beginner"><?php echo site_phrase('beginner'); ?></label>
                                         </div>
                                         <div class="">
                                             <input type="radio" id="advanced" name="level" class="level custom-radio"
                                                 value="advanced" onclick="filter(this)"
                                                 <?php if ($selected_level == 'advanced') echo 'checked'; ?>>
-                                            <label class="text-white"
+                                            <label class="text-white  my-1 mx-3 fs-15px"
                                                 for="advanced"><?php echo site_phrase('advanced'); ?></label>
                                         </div>
-                                        <div class="">
-                                            <input type="radio" id="intermediate" name="level"
-                                                class="level custom-radio" value="intermediate" onclick="filter(this)"
-                                                <?php if ($selected_level == 'intermediate') echo 'checked'; ?>>
-                                            <label class="text-white"
-                                                for="intermediate"><?php echo site_phrase('intermediate'); ?></label>
-                                        </div>
-                                        <div class="">
-                                            <input type="radio" id="empresa" name="level" class="level custom-radio"
-                                                value="empresa" onclick="filter(this)"
-                                                <?php if ($selected_level == 'empresa') echo 'checked'; ?>>
-                                            <label class="text-white"
-                                                for="empresa"><?php echo site_phrase('empresa'); ?></label>
-                                        </div>
+                                       
+                                        
                                     </li>
                                 </ul>
                             </div>
@@ -131,14 +119,14 @@ if (isset($sub_category_id)) {
                                             <input type="radio" id="dis" name="disponibilidad" class="disponibilidad custom-radio "
                                                 value="dis" onclick="filter(this)"
                                                 <?php if ($selected_dis == 'dis') echo 'checked'; ?>>
-                                            <label class="text-white"
+                                            <label class="text-white my-1 mx-3 fs-15px"
                                                 for="dis"><?php echo site_phrase('Disponible'); ?></label>
                                         </div>
                                         <div class="">
                                             <input type="radio" id="prox" name="disponibilidad" class="disponibilidad custom-radio"
                                                 value="prox" onclick="filter(this)"
                                                 <?php if ($selected_dis == 'prox') echo 'checked'; ?>>
-                                            <label class="text-white"
+                                            <label class="text-white my-1 mx-3 fs-15px"
                                                 for="prox"><?php echo site_phrase('Proximamente'); ?></label>
                                         </div>
                                         

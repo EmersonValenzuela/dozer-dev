@@ -181,7 +181,7 @@ $products_map = array();
             </div>
 
         </div>
-<<<<<<< HEAD
+
         <button type="button" class="btn red w-100 radius-10 mb-3" onclick="handleCheckOut()"><?php echo site_phrase('checkout'); ?></button>
         <div class="checkout-btn"></div>
 
@@ -215,9 +215,8 @@ $preference->save();
         }
     });
 </script>
-=======
+
         <button type="button" class="btn red w-100 radius-10 mb-3"
             onclick="handleCheckOut()"><?php echo site_phrase('checkout'); ?></button>
     </div>
 </div>
->>>>>>> parent of 2df4ca2 (Merge branch 'main' of https://github.com/EmersonValenzuela/dozer-dev)

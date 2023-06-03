@@ -43,15 +43,15 @@
     </section>
 
     <section class="">
-        <div class="container-lg course-carousel-title titulo text-white">
+        <div class="container-xl course-carousel-title titulo text-white">
             <p class="fw-light titulo-uno m-0">NUESTRO OBJETIVO</p>
             <p class="fw-bold mb-5">ES HACERLO SIMPLE</p>
 
         </div>
-        <div class="container-lg">
-            <div class="row">
+        <div class="container-xl ">
+            <div class="row ">
 
-                <div class="col-6 col-md-3 d-flex text-center justify-content-sm-center ">
+                <div class="col-6 col-md-3 d-flex text-center d-flex justify-content-start">
                     <div class="p-lg-2 cont-cuadro mr-md-auto mr-auto">
                         <img class="icon-style-user" src="uploads\system\icon-user.png" alt="">
                         <p class="cont-cuadro-text">Crea tu cuenta de <br> Perfil en Dozer</p>
@@ -83,7 +83,7 @@
                     </div>
 
                 </div>
-                <div class=" col-6 col-md-3 d-flex text-center justify-content-end justify-content-sm-center">
+                <div class=" col-6 col-md-3 d-flex text-center justify-content-end justify-content-end">
                     <div class=" p-lg-2 cont-cuadro mr-md-auto mr-auto">
                         <img class="icon-style-academy" src="uploads\system\icon-certi.png" alt="">
                         <p class="cont-cuadro-text">Estudia y <br>
@@ -599,8 +599,8 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                          
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -651,8 +651,8 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                          
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -703,7 +703,7 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -805,8 +805,8 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                        
-                                          
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -857,7 +857,7 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -908,8 +908,8 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                     
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -960,7 +960,7 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                           
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1017,8 +1017,8 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                   
-                                           
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1069,7 +1069,7 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                           
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1128,7 +1128,7 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1179,8 +1179,8 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                    
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1237,8 +1237,8 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                          
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1289,8 +1289,8 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                           
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1341,8 +1341,8 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                          
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1393,8 +1393,8 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                           
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1451,7 +1451,7 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1502,8 +1502,8 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                           
-                                           
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1560,8 +1560,8 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                            
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1612,8 +1612,8 @@ section .content p {
                                                 </div>
                                             </div>
 
-                                        
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1802,7 +1802,7 @@ section .contentt p {
                                             <div class="course-curso">
                                                 <h5 class="">Modelador BIM aplicado a Edificaciones</h5>
                                                 <div class="row ">
-                                                    
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -1811,8 +1811,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                          
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1852,7 +1852,7 @@ section .contentt p {
                                                 <h5 class="">Modelador BIM aplicado a Obras Viales</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                       
+
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -1862,8 +1862,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                      
-                                           
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1902,7 +1902,7 @@ section .contentt p {
                                             <div class="course-curso">
                                                 <h5 class="">Modelador BIM aplicado a Obras Hidráulicas</h5>
                                                 <div class="row ">
-                                                    
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -1911,8 +1911,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                             
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1951,7 +1951,7 @@ section .contentt p {
                                             <div class="course-curso">
                                                 <h5 class="">Modelador BIM aplicado a Estructuras Metálicas</h5>
                                                 <div class="row ">
-                                                  
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -1960,8 +1960,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                         
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -1999,7 +1999,7 @@ section .contentt p {
                                         <div>
                                             <div class="course-curso">
                                                 <h5 class="">Modelador BIM aplicado a Proyectos Green</h5>
-                                                
+
                                                 <div class="row mt-5">
                                                     <div class="col-12">
                                                         <span class="fw-200 text-white "></span>
@@ -2007,7 +2007,7 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                     
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2046,7 +2046,7 @@ section .contentt p {
                                             <div class="course-curso">
                                                 <h5 class="">Especialista BIM en Habilitaciones Urbanas</h5>
                                                 <div class="row ">
-                                                  
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -2055,8 +2055,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                       
-                                           
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2095,7 +2095,7 @@ section .contentt p {
                                             <div class="course-curso">
                                                 <h5 class="">Especialista BIM en Automatización de Procesos</h5>
                                                 <div class="row ">
-                                                   
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -2104,7 +2104,7 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                       
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2160,8 +2160,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                       
-                                           
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2200,7 +2200,7 @@ section .contentt p {
                                             <div class="course-curso p-cp">
                                                 <h5 class="">Supervisor de Proyectos BIM</h5>
                                                 <div class="row ">
-                                                  
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -2209,8 +2209,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                       
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2249,7 +2249,7 @@ section .contentt p {
                                             <div class="course-curso p-cp">
                                                 <h5 class="">Gestor de Proyectos BIM</h5>
                                                 <div class="row ">
-                                                  
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -2258,7 +2258,7 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                           
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2297,7 +2297,7 @@ section .contentt p {
                                             <div class="course-curso">
                                                 <h5 class="">Planificación y Control de Proyectos BIM</h5>
                                                 <div class="row ">
-                                                 
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -2306,8 +2306,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                     
-                                          
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2346,7 +2346,7 @@ section .contentt p {
                                             <div class="course-curso">
                                                 <h5 class="">Gestión BIM para el Sector Público</h5>
                                                 <div class="row ">
-                                                  
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -2355,8 +2355,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                   
-                                          
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2402,7 +2402,7 @@ section .contentt p {
                                                 <h5 class="">Expedientes técnicos BIM aplicado a Proyectos de
                                                     Infraestructrura educativa</h5>
                                                 <div class="row ">
-                                                   
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -2411,8 +2411,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                          
-                                           
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2452,7 +2452,7 @@ section .contentt p {
                                                 <h5 class="">Expedientes técnicos BIM aplicado a Proyectos de
                                                     Infraestructrura Hospitalaria</h5>
                                                 <div class="row ">
-                                                  
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -2461,8 +2461,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                          
-                                           
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2502,7 +2502,7 @@ section .contentt p {
                                                 <h5 class="">Expedientes técnicos BIM aplicado a Proyectos de
                                                     infraestructura Vial</h5>
                                                 <div class="row ">
-                                                   
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -2511,8 +2511,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                         
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2552,7 +2552,7 @@ section .contentt p {
                                                 <h5 class="">Expedientes Técnicos BIM aplicado a Proyectos de
                                                     Pavimentación Urbano y Rural</h5>
                                                 <div class="row ">
-                                                   
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -2561,8 +2561,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                            
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2602,7 +2602,7 @@ section .contentt p {
                                                 <h5 class="">Expedientes técnicos BIM aplicado a proyectos de Agua
                                                     y saneamiento Rural</h5>
                                                 <div class="row ">
-                                                    
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -2611,8 +2611,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                       
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2660,7 +2660,7 @@ section .contentt p {
                                                 <h5 class="">structuración, Análisis y Diseño en Estructuras de
                                                     Concreto Armado con Robot Structural Analysis </h5>
                                                 <div class="row ">
-                                                   
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -2669,8 +2669,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                         
-                                          
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2710,7 +2710,7 @@ section .contentt p {
                                                 <h5 class="">Modelado y Detallado de Estructuras Metálicas
                                                     utilizando Advance Steel</h5>
                                                 <div class="row ">
-                                                    
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -2719,8 +2719,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                           
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2760,7 +2760,7 @@ section .contentt p {
                                                 <h5 class="">Diseño, Modelado y Detallado de Proyectos Mecánicos
                                                     utilizando Inventor Professional</h5>
                                                 <div class="row ">
-                                                    
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -2769,7 +2769,7 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                            
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2809,7 +2809,7 @@ section .contentt p {
                                                 <h5 class="">Modelado y Detallado en Proyectos de Plantas
                                                     Industriales utilizando AutoCAD Plant 3D </h5>
                                                 <div class="row ">
-                                                    
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -2818,8 +2818,8 @@ section .contentt p {
                                                 </div>
                                             </div>
 
-                                           
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -2992,7 +2992,7 @@ section .conten p {
                                             <div class="course-curso  p-cp">
                                                 <h5 class="">BIM Management en Proyectos de Arquitectura</h5>
                                                 <div class="row ">
-                                                  
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -3001,8 +3001,8 @@ section .conten p {
                                                 </div>
                                             </div>
 
-                                        
-                                           
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -3042,7 +3042,7 @@ section .conten p {
                                                 <h5 class="">BIM Management en Proyectos de Urbanismo y Paisajismo
                                                 </h5>
                                                 <div class="row ">
-                                                   
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -3051,8 +3051,8 @@ section .conten p {
                                                 </div>
                                             </div>
 
-                                      
-                                           
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -3092,7 +3092,7 @@ section .conten p {
                                                 <h5 class="">BIM Management en Proyectos de Ingeniería Civil e
                                                     Infraestructura</h5>
                                                 <div class="row ">
-                                                   
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -3101,8 +3101,8 @@ section .conten p {
                                                 </div>
                                             </div>
 
-                                      
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -3150,7 +3150,7 @@ section .conten p {
                                                 <h5 class="">Ingeniería en Edificaciones Aplicado al Diseño,
                                                     Supervisión, Construcción de Colegios y Hospitales</h5>
                                                 <div class="row ">
-                                                   
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -3159,7 +3159,7 @@ section .conten p {
                                                 </div>
                                             </div>
 
-                                           
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -3199,7 +3199,7 @@ section .conten p {
                                                 <h5 class="">Ingeniería Vial Aplicado al Diseño, Construcción,
                                                     Supervisión de Carreteras, Pavimentos y Puentes</h5>
                                                 <div class="row ">
-                                                   
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -3208,8 +3208,8 @@ section .conten p {
                                                 </div>
                                             </div>
 
-                                          
-                                           
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -3249,7 +3249,7 @@ section .conten p {
                                                 <h5 class="">Ingeniería Hidráulica aplicado al Diseño de Redes de
                                                     Abastecimiento de Agua Potable y Alcantarillado</h5>
                                                 <div class="row ">
-                                                    
+
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -3258,8 +3258,8 @@ section .conten p {
                                                 </div>
                                             </div>
 
-                                    
-                                            
+
+
                                         </div>
                                     </div>
                                     <div class="course-box-dos mt-1">
@@ -3296,129 +3296,13 @@ section .conten p {
 
 <?php $top_instructor_ids = $this->crud_model->get_top_instructor(10); ?>
 <?php if(count($top_instructor_ids) > 0): ?>
-<section class="featured-instructor">
-    <div class="container-lg">
-        <div class="row">
-            <div class="col">
-                <h3 class="text-center mb-5">
-                    <span class="header-underline-2"><?php echo site_phrase('featured_instructor'); ?></span>
-                </h3>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-9 col-lg-7 ">
-                <div class="animated-loader">
-                    <div class="spinner-border text-secondary" role="status"></div>
-                </div>
-                <div class="top-istructor-slick shown-after-loading" style="display: none;">
-                    <?php foreach($top_instructor_ids as $top_instructor_id): ?>
-                    <?php $top_instructor = $this->user_model->get_all_user($top_instructor_id['creator'])->row_array(); ?>
-                    <div
-                        class="d-xl-flex text-center text-md-start radius-10 p-0 bg-sub-primary pt-4 pt-xl-0 position-relative mx-2">
-                        <div class="top-instructor-img me-auto ms-auto ms-xl-0">
-                            <a href="<?php echo site_url('home/instructor_page/'.$top_instructor['id']); ?>">
-                                <img src="<?php echo $this->user_model->get_user_image_url($top_instructor['id']); ?>"
-                                    width="100%">
-                            </a>
-                        </div>
-                        <div class="top-instructor-details ps-3 pe-3 pe-xl-5 py-3 py-xl-0 text-center text-xl-start">
-                            <a class="text-decoration-none"
-                                href="<?php echo site_url('home/instructor_page/'.$top_instructor['id']); ?>">
-                                <h4 class="mb-1 fw-700">
-                                    <?php echo $top_instructor['first_name'].' '.$top_instructor['last_name']; ?></h4>
-                                <span
-                                    class="fw-500 text-muted text-14px ellipsis-line-5 mb-3"><?php echo $top_instructor['title']; ?></span>
 
-                                <div class="rating">
-                                    <div class="d-inline-block mb-2">
-                                        <span
-                                            class="text-dark fw-800 text-muted ms-1 text-13px"><?php echo $this->crud_model->get_instructor_wise_course_ratings($top_instructor['id'], 'course')->num_rows() . ' ' . site_phrase('reviews'); ?></span>
-                                        |
-                                        <span class="text-dark fw-800 text-13px text-muted mx-1">
-                                            <?php $course_ids = $this->crud_model->get_instructor_wise_courses($top_instructor['id'], 'simple_array');
-                                              $this->db->select('user_id');
-                                              $this->db->distinct();
-                                              $this->db->where_in('course_id', $course_ids);
-                                              echo $this->db->get('enrol')->num_rows() . ' ' . site_phrase('students'); ?>
-                                        </span>
-                                        |
-                                        <span class="text-dark fw-800 text-14px text-muted">
-                                            <?php echo $this->crud_model->get_instructor_wise_courses($top_instructor['id'])->num_rows() . ' ' . site_phrase('courses'); ?>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <?php $skills = explode(',', $top_instructor['skills']); ?>
-                                <?php foreach($skills as $skill): ?>
-                                <span class="badge bg-primary text-12px my-1 py-2"><?php echo $skill; ?></span>
-                                <?php endforeach; ?>
-                            </a>
-                        </div>
-                    </div>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <?php endif; ?>
 
 
 <?php $latest_blogs = $this->crud_model->get_latest_blogs(3); ?>
 <?php if(get_frontend_settings('blog_visibility_on_the_home_page') && $latest_blogs->num_rows() > 0): ?>
-<section class="section-blog pt-5">
-    <div class="container-lg">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <h4 class="fw-700 w-100 text-center">
-                    <span class="header-underline-2"><?php echo site_phrase('latest_blogs'); ?></span>
-                </h4>
-            </div>
-            <?php foreach($latest_blogs->result_array() as $latest_blog): ?>
-            <?php $user_details = $this->user_model->get_all_user($latest_blog['user_id'])->row_array(); ?>
 
-            <div class="col-md-6 col-lg-4">
-                <a
-                    href="<?php echo site_url('blog/details/'.slugify($latest_blog['title']).'/'.$latest_blog['blog_id']); ?>">
-                    <div class="card-blog">
-                        <?php
-                                    $blog_thumbnail = 'uploads/blog/thumbnail/'.$latest_blog['thumbnail'];
-                                    if(!file_exists($blog_thumbnail) || !is_file($blog_thumbnail)):
-                                        $blog_thumbnail = base_url('uploads/blog/thumbnail/placeholder.png');
-                                    endif;
-                                ?>
-                        <div class="card-blog-body">
-                            <div class="blog-thumbnail"
-                                style="background-image: url('<?php echo $blog_thumbnail; ?>');"></div>
-                            <div class="blog-placeholder">
-                                <h5 class="cart-blog-title"><?php echo $latest_blog['title']; ?></h5>
-
-                                <div class="d-flex">
-                                    <div class="blog-info border-end">
-                                        <?php echo get_past_time($latest_blog['added_date']); ?>
-                                    </div>
-                                    <div class="blog-info">
-                                        <?php echo site_phrase('by'); ?>
-                                        <!-- <?php echo site_url('home/instructor_page/'.$latest_blog['user_id']); ?> --><?php echo $user_details['first_name'].' '.$user_details['last_name']; ?>
-                                    </div>
-                                    <div class="blog-info border-start">
-                                        <?php echo $this->crud_model->get_blog_categoria($latest_blog['blog_category_id'])->row('title'); ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <?php endforeach; ?>
-
-            <div class="col-12">
-                <a class="float-end btn btn-outline-secondary px-3 fw-600"
-                    href="<?php echo site_url('blogs'); ?>"><?php echo site_phrase('view_all'); ?></a>
-            </div>
-        </div>
-    </div>
-</section>
 <?php endif; ?>
 
 <!-- Programa Dozer -->
@@ -3451,12 +3335,14 @@ section .conten p {
                         <li>Familias, Proyectos y Plantillas en Revit </li>
                     </ul>
                     <div class="d-flex justify-content-between">
-                        <div class="fw-200 w-80 text-white titulo-sub-programa">Desarrollado <br> por: Ing. CIP Walter Gomez
+                        <div class="fw-200 w-80 text-white titulo-sub-programa">Desarrollado <br> por: Ing. CIP Walter
+                            Gomez
                         </div>
-                        <div class="fw-200 w-80 text-white titulo-sub-programa d-flex align-items-center"><a class=" btn-programa " href="#">Descargar DevBIM</a>
+                        <div class="fw-200 w-80 text-white titulo-sub-programa d-flex align-items-center"><a
+                                class=" btn-programa " href="#">Descargar DevBIM</a>
                         </div>
                     </div>
-                   
+
                 </div>
 
             </div>
@@ -3510,7 +3396,7 @@ section .conten p {
 
         </h3>
     </div>
-    <div class="container-lg">
+    <div class="container-xl">
         <div class="row gx-2 gx-lg-5">
 
             <div class=" col-sm-6  col-md-4 d-flex hc-30rem">
@@ -3560,8 +3446,8 @@ section .conten p {
             <p class="text-sub-cat"> Ingresa a nuestra plataforma de
                 verificador de certificados gratuitamente, <br>
                 podrás revisar o descargar todos tus certificados</p>
-            <a style=" font-weight: 700 !important;" class="btn  devbIM fw-semibold text-center  m-5"
-                href="#">Deseo verificar mi certificado</a>
+            <a style=" font-weight: 700 !important;" class="btn  devbIM fw-semibold text-center  m-5" href="#">Deseo
+                verificar mi certificado</a>
 
         </h3>
     </div>
@@ -3581,179 +3467,187 @@ section .conten p {
 
         </h3>
     </div>
-    <div class="container">
-        <input type="radio" name="dot" id="onee">
-        <input type="radio" name="dot" id="twoo">
-        <div class="main-cardd">
-            <div class="cardss">
-                <div class="card">
-                    <div class="fondo"></div>
-                    <img class="img-testimonio" src="uploads\system\testimonios\testimonio-uno.png" alt="">
-                    <div class="">
-                        <div class="text-white text-testimonio fw-light lh-sm py-2">“Teoría y constante practica, los
-                            <br>
-                            cursos
-                            estan bien organizados y <br> desarrollados”
-                        </div>
-
-                        <div class="d-flex justify-content-start">
-                            <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\pe.png"
-                                    alt=""> </div>
-
-                            <div class="d-flex flex-column nombre-testimonio  align-items-start">
-                                <div class="nametest">Miriam Corrales</div>
-                                <div class="jobtest">Perú</div>
+    <div class="container-xl">
+        <div class="container">
+            <input type="radio" name="dot" id="onee">
+            <input type="radio" name="dot" id="twoo">
+            <div class="main-cardd">
+                <div class="cardss">
+                    <div class="card">
+                        <div class="fondo"></div>
+                        <img class="img-testimonio" src="uploads\system\testimonios\testimonio-uno.png" alt="">
+                        <div class="">
+                            <div class="text-white text-testimonio fw-light lh-sm py-2">“Teoría y constante practica,
+                                los
+                                <br>
+                                cursos
+                                estan bien organizados y <br> desarrollados”
                             </div>
-                        </div>
 
+                            <div class="d-flex justify-content-start">
+                                <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\pe.png"
+                                        alt=""> </div>
+
+                                <div class="d-flex flex-column nombre-testimonio  align-items-start">
+                                    <div class="nametest">Miriam Corrales</div>
+                                    <div class="jobtest">Perú</div>
+                                </div>
+                            </div>
+
+
+                        </div>
 
                     </div>
+                    <div class="card ">
+                        <div class="fondo"></div>
+                        <img class="img-testimonio" src="uploads\system\testimonios\testimonio-dos.png" alt="">
+                        <div class="">
+                            <div class="text-white text-testimonio fw-light lh-sm py-2">“Las clases son desde cero, <br>
+                                hasta el
+                                nivel
+                                avanzado, aprendi <br> mucho con Dozer”</div>
 
+                            <div class="d-flex justify-content-start">
+                                <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\co.png"
+                                        alt=""> </div>
+
+                                <div class="d-flex flex-column nombre-testimonio">
+                                    <div class="nametest">María Angeles</div>
+                                    <div class="jobtest">Colombia</div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="card ">
+                        <img class="img-testimonio" src="uploads\system\testimonios\testimonio-tres.png" alt="">
+                        <div class="">
+                            <div class="text-white text-testimonio fw-light lh-sm py-2">“Los docentes son muy <br>
+                                preparados, las
+                                clases
+                                fueron <br> muy sencillos de entender”</div>
+
+                            <div class="d-flex justify-content-start">
+                                <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\pe.png"
+                                        alt=""> </div>
+
+                                <div class="d-flex flex-column nombre-testimonio">
+                                    <div class="nametest">Carla Díaz</div>
+                                    <div class="jobtest">Perú</div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="card estilos-md">
+                        <img class="img-testimonio" src="uploads\system\testimonios\testimonio-cuatro.png" alt="">
+                        <div class="">
+                            <div class="text-white  fw-light text-testimonio lh-sm py-2">“La metodología de enseñanza
+                                <br>
+                                es muy
+                                buena,
+                                siempre estan <br> asesorandote”</div>
+
+                            <div class="d-flex justify-content-start">
+                                <div class="pe-2 d-flex align-items-center" style="width: 4rem;"> <img
+                                        style="width: 90%;border-radius: 5px;" src="uploads\system\docente\ec.jpg"
+                                        alt="">
+                                </div>
+
+                                <div class="d-flex flex-column nombre-testimonio">
+                                    <div class="nametest">Juvitza Salas</div>
+                                    <div class="jobtest">Ecuador</div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
                 </div>
-                <div class="card ">
-                    <div class="fondo"></div>
-                    <img class="img-testimonio" src="uploads\system\testimonios\testimonio-dos.png" alt="">
-                    <div class="">
-                        <div class="text-white text-testimonio fw-light lh-sm py-2">“Las clases son desde cero, <br>
-                            hasta el
-                            nivel
-                            avanzado, aprendi <br> mucho con Dozer”</div>
+                <div class="cardss">
+                    <div class="card">
+                        <div class="fondo"></div>
+                        <img class="img-testimonio" src="uploads\system\testimonios\testimonio-cinco.png" alt="">
+                        <div class="">
+                            <div class="text-white text-testimonio fw-light lh-sm py-2">“Las certificaciones me <br>
+                                aperturaron
+                                muchas
+                                puertas en <br> mi entorno laboral”</div>
 
-                        <div class="d-flex justify-content-start">
-                            <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\co.png"
-                                    alt=""> </div>
+                            <div class="d-flex justify-content-start">
+                                <div class="pe-2 d-flex align-items-center" style="width: 4rem;"> <img
+                                        style="width: 90%;border-radius: 5px;" src="uploads\system\docente\ar.jpg"
+                                        alt="">
+                                </div>
 
-                            <div class="d-flex flex-column nombre-testimonio">
-                                <div class="nametest">María Angeles</div>
-                                <div class="jobtest">Colombia</div>
+                                <div class="d-flex flex-column nombre-testimonio  align-items-start">
+                                    <div class="nametest">Grecia Pacoti</div>
+                                    <div class="jobtest">Argentina</div>
+                                </div>
                             </div>
+
+
                         </div>
 
+                    </div>
+                    <div class="card ">
+                        <div class="fondo"></div>
+                        <img class="img-testimonio" src="uploads\system\testimonios\testimonio-seis.png" alt="">
+                        <div class="">
+                            <div class="text-white text-testimonio fw-light lh-sm py-2">“Todos los cursos que eh <br>
+                                seguido son
+                                de calidad y desde <br> cero, gracias por ello”</div>
+
+                            <div class="d-flex justify-content-start">
+                                <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\bo.png"
+                                        alt=""> </div>
+
+                                <div class="d-flex flex-column nombre-testimonio">
+                                    <div class="nametest">Johana Flores</div>
+                                    <div class="jobtest">Bolivia</div>
+                                </div>
+                            </div>
+
+
+                        </div>
 
                     </div>
 
-                </div>
-                <div class="card ">
-                    <img class="img-testimonio" src="uploads\system\testimonios\testimonio-tres.png" alt="">
-                    <div class="">
-                        <div class="text-white text-testimonio fw-light lh-sm py-2">“Los docentes son muy <br>
-                            preparados, las
-                            clases
-                            fueron <br> muy sencillos de entender”</div>
+                    <div class="card ">
+                        <img class="img-testimonio" src="uploads\system\testimonios\testimonio-siete.png" alt="">
+                        <div class="">
+                            <div class="text-white text-testimonio fw-light lh-sm py-2">“Desde sus docentes hasta sus
+                                <br>
+                                personales de trabajo todos muy <br> amables”</div>
 
-                        <div class="d-flex justify-content-start">
-                            <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\pe.png"
-                                    alt=""> </div>
+                            <div class="d-flex justify-content-start">
+                                <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\mx.png"
+                                        alt=""> </div>
 
-                            <div class="d-flex flex-column nombre-testimonio">
-                                <div class="nametest">Carla Díaz</div>
-                                <div class="jobtest">Perú</div>
+                                <div class="d-flex flex-column nombre-testimonio">
+                                    <div class="nametest">Marco Bazan</div>
+                                    <div class="jobtest">Mexico</div>
+                                </div>
                             </div>
+
+
                         </div>
 
-
                     </div>
-
-                </div>
-                <div class="card estilos-md">
-                    <img class="img-testimonio" src="uploads\system\testimonios\testimonio-cuatro.png" alt="">
-                    <div class="">
-                        <div class="text-white  fw-light text-testimonio lh-sm py-2">“La metodología de enseñanza <br>
-                            es muy
-                            buena,
-                            siempre estan <br> asesorandote”</div>
-
-                        <div class="d-flex justify-content-start">
-                            <div class="pe-2 d-flex align-items-center" style="width: 4rem;"> <img
-                                    style="width: 90%;border-radius: 5px;" src="uploads\system\docente\ec.jpg" alt="">
-                            </div>
-
-                            <div class="d-flex flex-column nombre-testimonio">
-                                <div class="nametest">Juvitza Salas</div>
-                                <div class="jobtest">Ecuador</div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
                 </div>
             </div>
-            <div class="cardss">
-                <div class="card">
-                    <div class="fondo"></div>
-                    <img class="img-testimonio" src="uploads\system\testimonios\testimonio-cinco.png" alt="">
-                    <div class="">
-                        <div class="text-white text-testimonio fw-light lh-sm py-2">“Las certificaciones me <br>
-                            aperturaron
-                            muchas
-                            puertas en <br> mi entorno laboral”</div>
-
-                        <div class="d-flex justify-content-start">
-                            <div class="pe-2 d-flex align-items-center" style="width: 4rem;"> <img
-                                    style="width: 90%;border-radius: 5px;" src="uploads\system\docente\ar.jpg" alt="">
-                            </div>
-
-                            <div class="d-flex flex-column nombre-testimonio  align-items-start">
-                                <div class="nametest">Grecia Pacoti</div>
-                                <div class="jobtest">Argentina</div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                </div>
-                <div class="card ">
-                    <div class="fondo"></div>
-                    <img class="img-testimonio" src="uploads\system\testimonios\testimonio-seis.png" alt="">
-                    <div class="">
-                        <div class="text-white text-testimonio fw-light lh-sm py-2">“Todos los cursos que eh <br>
-                            seguido son
-                            de calidad y desde <br> cero, gracias por ello”</div>
-
-                        <div class="d-flex justify-content-start">
-                            <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\bo.png"
-                                    alt=""> </div>
-
-                            <div class="d-flex flex-column nombre-testimonio">
-                                <div class="nametest">Johana Flores</div>
-                                <div class="jobtest">Bolivia</div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-                <div class="card ">
-                    <img class="img-testimonio" src="uploads\system\testimonios\testimonio-siete.png" alt="">
-                    <div class="">
-                        <div class="text-white text-testimonio fw-light lh-sm py-2">“Desde sus docentes hasta sus <br>
-                            personales de trabajo todos muy <br> amables”</div>
-
-                        <div class="d-flex justify-content-start">
-                            <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\mx.png"
-                                    alt=""> </div>
-
-                            <div class="d-flex flex-column nombre-testimonio">
-                                <div class="nametest">Marco Bazan</div>
-                                <div class="jobtest">Mexico</div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                </div>
+            <div class="button">
+                <label for="onee" class=" active onee"></label>
+                <label for="twoo" class="twoo"></label>
             </div>
-        </div>
-        <div class="button">
-            <label for="onee" class=" active onee"></label>
-            <label for="twoo" class="twoo"></label>
         </div>
     </div>
+
 
 </section>
 <!-- Testimonios -->

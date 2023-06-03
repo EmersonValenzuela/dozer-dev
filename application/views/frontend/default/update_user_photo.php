@@ -55,7 +55,7 @@
                     method="post">
                     <div class="row">
                         <div class="col-12 border-bottom mb-3 pb-3 text-white">
-                            <h4><?php echo site_phrase('cambiar_foto_perfil'); ?></h4>
+                            <h4><?php echo site_phrase('cambiar_foto_perfil:'); ?></h4>
                         </div>
 
                         <div class="col-12 mb-3">

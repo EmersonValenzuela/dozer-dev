@@ -24,10 +24,10 @@ if (isset($sub_category_id)) {
     <div class="container">
         <div class="row">
             <div class="col-lg-3 filter-area">
-                <div class="d-flex position-relative flex-column border-0 radius-10 box-shadow-5">
+                <div class="d-flex me-5 position-relative flex-column border-0 radius-10 ">
                     <div id="collapseFilter" class="collapse show" aria-labelledby="headingOne"
                         data-parent="#accordion">
-                        <div class="card-body p-0">
+                        <div class="card-body p-0 ">
                             <div class="   filter_type  ">
                                 <h5 class="text-white px-3 py-2 fw-700 m-0 dondenomb_category"
                                     style="background: #373737;"><?php echo site_phrase('Categoría'); ?></h5>
@@ -147,12 +147,12 @@ if (isset($sub_category_id)) {
                     background-image: url(<?= $variable ?>);
                     
                 ">
-                    <div class="col-md-6 position-relative">
-                        <p class="fw-bold text-white px-5"><?= $text_banner ?></p>
-                        <p class="px-5 text-white"><?= $sub_text_banner ?></p>
+                    <div class="col-md-7 position-relative">
+                        <p class="fw-bold text-white px-3"><?= $text_banner ?></p>
+                        <p class="px-3 pb-3 text-white"><?= $sub_text_banner ?></p>
                         <?php if ($variable_dos  !="") { ?>
-                        <div class="px-5">
-                            <a class="btn-premiun p-1 border-09" href="#">
+                        <div class="px-3 my-4">
+                            <a class="btn-premiun p-2 border-09" href="#">
 
 
                                 <?= $btn_banner; ?>
@@ -164,10 +164,13 @@ if (isset($sub_category_id)) {
                         </div>
                         <?php }
                         if ($variable_logo) { ?>
+                        <p></p>
+                          <p class="fw-bold text-white px-3"><?= $text_bannerr ?></p>
+                          <p class="px-3 pb-3 text-white"><?= $sub_text_banner_especializacion ?></p>
                         <img style="width: 17rem;padding: 0 3rem;" src="<?= $variable_logo ?>" alt="">
                         <?php } ?>
                     </div>
-                    <div class="col-md-6 text-end filter-sort-by">
+                    <div class="col-md-5 text-end filter-sort-by">
 
                     </div>
                 </div>

@@ -209,8 +209,8 @@ class Home extends CI_Controller
 
 
             $page_data['variable']  = site_url('uploads/system/portada-cursos.png');
-            $page_data['text_banner'] = "Con un solo pago, accederás a todos 
-            los cursos (38) y muchos beneficios más";
+            $page_data['text_banner'] = "Con un solo pago, accederás a los 30 cursos con certificación 
+            internacional de Autodesk y muchos beneficios más";
             $page_data['sub_text_banner'] = "Migra a premium hoy mismo! ";
             $page_data['btn_banner'] = "Quiero ser ";
             $page_data['variable_dos']  = site_url('uploads/system/icon-corona.png');
@@ -222,16 +222,18 @@ class Home extends CI_Controller
 
             
         } elseif ($row_category->parent == 21 || $row_category->id == 21) {
-            $page_data['variable']  = site_url('uploads/system/portada-diplomados.png');
+            $page_data['variable']  = site_url('uploads/system/portada-cursos.png');
             $page_data['text_banner'] = "El mejor momento para invertir en tus 
-            metas profesionales es Ahora!";
+            metas  ";
+            $page_data['text_bannerr'] = "  profesionales es Ahora!";
+            $page_data['sub_text_banner_especializacion'] = "Inicia hoy tu camino hacia el BIM ";
             $page_data['variable_logo']  = site_url('uploads/system/logo-portadas.png');
             $page_data['id_category'] = $row_category->id;
             $page_data['parent'] = $row_category->parent;
             $page_data['sub_text_banner'] = "";
 
         } elseif ($row_category->parent == 22 || $row_category->id == 22) {
-            $page_data['variable']  = site_url('uploads/system/portada-diplomados.png');
+            $page_data['variable']  = site_url('uploads/system/portada-cursos.png');
             $page_data['text_banner'] = "El mejor momento para invertir en tus 
             metas profesionales es Ahora! ";
             $page_data['variable_logo']  = site_url('uploads/system/logo-portadas.png');

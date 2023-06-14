@@ -11,7 +11,19 @@ class User_model extends CI_Model
         $this->output->set_header('Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0');
         $this->output->set_header('Pragma: no-cache');
     }
-
+    public function get_data($table, $where)
+    {
+        if ($where) {
+            $this->db->select('*');
+            $this->db->from($table);
+            $this->db->where($where);
+            $query = $this->db->get();
+            return $query->result();
+        }
+        $this->db->select('*');
+        $this->db->from($table);
+        return $this->db->get()->result();
+    }
     public function get_admin_details()
     {
         return $this->db->get_where('users', array('role_id' => 1));
@@ -40,7 +52,7 @@ class User_model extends CI_Model
         if ($validity == false) {
             $this->session->set_flashdata('error_message', get_phrase('email_duplication'));
         } else {
-          //  $data['unique_identifier'] = 0;
+            //  $data['unique_identifier'] = 0;
             $data['first_name'] = html_escape($this->input->post('first_name'));
             $data['last_name'] = html_escape($this->input->post('last_name'));
             $data['email'] = html_escape($this->input->post('email'));
@@ -89,7 +101,7 @@ class User_model extends CI_Model
 
             $this->db->insert('users', $data);
             $user_id = $this->db->insert_id();
-         //   $this->user_model->update_unique_identifier($user_id);
+            //   $this->user_model->update_unique_identifier($user_id);
 
             // IF THIS IS A USER THEN INSERT BLANK VALUE IN PERMISSION TABLE AS WELL
             if ($is_admin) {
@@ -111,7 +123,7 @@ class User_model extends CI_Model
             $response['message'] = get_phrase('this_email_already_exits') . '. ' . get_phrase('please_use_another_email');
             return json_encode($response);
         } else {
-          //  $data['unique_identifier'] = 0;
+            //  $data['unique_identifier'] = 0;
             $data['first_name'] = html_escape($this->input->post('first_name'));
             $data['last_name'] = html_escape($this->input->post('last_name'));
             $data['email'] = html_escape($this->input->post('email'));
@@ -152,7 +164,7 @@ class User_model extends CI_Model
             $this->db->insert('users', $data);
 
             $user_id = $this->db->insert_id();
-           // $this->user_model->update_unique_identifier($user_id);
+            // $this->user_model->update_unique_identifier($user_id);
 
             $this->session->set_flashdata('flash_message', get_phrase('user_added_successfully'));
             $response['status'] = 1;
@@ -205,6 +217,13 @@ class User_model extends CI_Model
             $data['title'] = html_escape($this->input->post('title'));
             $data['skills'] = html_escape($this->input->post('skills'));
             $data['last_modified'] = strtotime(date("Y-m-d H:i:s"));
+            $data['dni'] = html_escape($this->input->post('dni'));
+            $data['birthday'] = html_escape($this->input->post('birthday'));
+            $data['country'] = html_escape($this->input->post('country'));
+            $data['city'] = html_escape($this->input->post('city'));
+            $data['field_study'] = html_escape($this->input->post('field_study'));
+            $data['level_education'] = html_escape($this->input->post('level_education'));
+            $data['study_center'] = html_escape($this->input->post('study_center'));
 
             if (isset($_FILES['user_image']) && $_FILES['user_image']['name'] != "") {
                 unlink('uploads/user_image/' . $this->db->get_where('users', array('id' => $user_id))->row('image') . '.jpg');
@@ -256,7 +275,7 @@ class User_model extends CI_Model
     {
         $this->db->insert('users', $data);
         $user_id = $this->db->insert_id();
-       // $this->user_model->update_unique_identifier($user_id);
+        // $this->user_model->update_unique_identifier($user_id);
         return $user_id;
     }
 
@@ -369,13 +388,13 @@ class User_model extends CI_Model
     public function get_user_image_url($user_id)
     {
         $user_profile_image = $this->db->get_where('users', array('id' => $user_id))->row('image');
-        if (file_exists('uploads/user_image/optimized/' . $user_profile_image . '.jpg')){
+        if (file_exists('uploads/user_image/optimized/' . $user_profile_image . '.jpg')) {
             return base_url() . 'uploads/user_image/optimized/' . $user_profile_image . '.jpg';
-        }elseif(file_exists('uploads/user_image/' . $user_profile_image . '.jpg')){
+        } elseif (file_exists('uploads/user_image/' . $user_profile_image . '.jpg')) {
             //resizeImage
             resizeImage('uploads/user_image/' . $user_profile_image . '.jpg', 'uploads/user_image/optimized/', 220);
             return base_url() . 'uploads/user_image/' . $user_profile_image . '.jpg';
-        }else{
+        } else {
             return base_url() . 'uploads/user_image/placeholder.png';
         }
     }
@@ -431,7 +450,8 @@ class User_model extends CI_Model
         $this->db->update('users', $data);
     }
 
-    public function update_instructor_razorpay_settings($user_id = ''){
+    public function update_instructor_razorpay_settings($user_id = '')
+    {
         $user_details = $this->get_all_user($user_id)->row_array();
         $payment_keys = json_decode($user_details['payment_keys'], true);
         // Update razorpay keys
@@ -603,35 +623,36 @@ class User_model extends CI_Model
         return $this->db->get('users')->result_array();
     }
 
-    function quiz_submission_checker($quiz_id = ""){
+    function quiz_submission_checker($quiz_id = "")
+    {
         $quiz_details = $this->crud_model->get_lessons('lesson', $quiz_id)->row_array();
         $total_quiz_seconds = time_to_seconds($quiz_details['duration']);
 
         $this->db->where('quiz_id', $quiz_id);
         $this->db->where('user_id', $this->session->userdata('user_id'));
         $query = $this->db->get('quiz_results');
-        if($query->num_rows() > 0){
+        if ($query->num_rows() > 0) {
             $row = $query->row_array();
-            if(($total_quiz_seconds + $row['date_added']) < time() && $total_quiz_seconds > 0 || $row['is_submitted'] == 1){
+            if (($total_quiz_seconds + $row['date_added']) < time() && $total_quiz_seconds > 0 || $row['is_submitted'] == 1) {
 
-                if($row['is_submitted'] != 1){
+                if ($row['is_submitted'] != 1) {
                     $this->db->where('quiz_id', $quiz_id);
                     $this->db->where('user_id', $this->session->userdata('user_id'));
                     $this->db->update('quiz_results', array('is_submitted' => 1));
                 }
 
                 return 'submitted';
-            }else{
+            } else {
                 return 'on_progress';
             }
-        }else{
+        } else {
             return 'no_data';
         }
     }
 
 
 
-/*START LOGIN LOGOUT AND DEVICE ALLOW SECTION*/
+    /*START LOGIN LOGOUT AND DEVICE ALLOW SECTION*/
     // For device login tracker
     public function new_device_login_tracker($user_id = "", $is_verified = '')
     {
@@ -641,59 +662,60 @@ class User_model extends CI_Model
         $this->db->where('id', $user_id);
         $sessions = $this->db->get('users');
 
-        if($sessions->row('role_id') == 1){
+        if ($sessions->row('role_id') == 1) {
             return;
         }
 
         $pre_sessions = json_decode($sessions->row('sessions'), true);
 
-        if(is_array($pre_sessions) && count($pre_sessions) > 0){
-            if($is_verified == true && !in_array($current_session_id, $pre_sessions)){
+        if (is_array($pre_sessions) && count($pre_sessions) > 0) {
+            if ($is_verified == true && !in_array($current_session_id, $pre_sessions)) {
                 $allowed_device = get_settings('allowed_device_number_of_loging');
                 $previous_tatal_device = count($pre_sessions) + 1; //current device
 
                 $removeable_device = $previous_tatal_device - $allowed_device;
 
-                foreach($pre_sessions as $key => $pre_session){
-                    if($removeable_device >= 1){
+                foreach ($pre_sessions as $key => $pre_session) {
+                    if ($removeable_device >= 1) {
                         $this->db->where('id', $pre_session);
                         $this->db->delete('ci_sessions');
-                    }else{
+                    } else {
                         array_push($updated_session_arr, $pre_session);
                     }
                     $removeable_device = $removeable_device - 1;
                 }
                 array_push($updated_session_arr, $current_session_id);
-            }else{
-                if(!in_array($current_session_id, $pre_sessions)){
-                    if(count($pre_sessions) >= get_settings('allowed_device_number_of_loging')){
+            } else {
+                if (!in_array($current_session_id, $pre_sessions)) {
+                    if (count($pre_sessions) >= get_settings('allowed_device_number_of_loging')) {
                         $this->email_model->new_device_login_alert($user_id);
                         redirect(site_url('login/new_login_confirmation'), 'refresh');
-                    }else{
+                    } else {
                         $updated_session_arr = $pre_sessions;
                         array_push($updated_session_arr, $current_session_id);
                     }
                 }
             }
-        }else{
+        } else {
             $updated_session_arr = [$current_session_id];
         }
 
-        if(count($updated_session_arr) > 0){
+        if (count($updated_session_arr) > 0) {
             $data['sessions'] = json_encode($updated_session_arr);
             $this->db->where('id', $user_id);
             $this->db->update('users', $data);
         }
     }
 
-    function set_login_userdata($user_id = ""){
+    function set_login_userdata($user_id = "")
+    {
         // Checking login credential for admin
         $query = $this->db->get_where('users', array('id' => $user_id));
 
         if ($query->num_rows() > 0) {
             $row = $query->row();
             //604800s == 7 days
-            $this->session->set_userdata('custom_session_limit', (time()+604800));
+            $this->session->set_userdata('custom_session_limit', (time() + 604800));
             $this->session->set_userdata('user_id', $row->id);
             $this->session->set_userdata('role_id', $row->role_id);
             $this->session->set_userdata('role', get_user_role('user_role', $row->id));
@@ -723,7 +745,8 @@ class User_model extends CI_Model
         }
     }
 
-    function check_session_data($user_type = ""){
+    function check_session_data($user_type = "")
+    {
         if (!$this->session->userdata('cart_items')) {
             $this->session->set_userdata('cart_items', array());
         }
@@ -732,10 +755,10 @@ class User_model extends CI_Model
             $this->session->set_userdata('language', get_settings('language'));
         }
 
-        if($user_type == 'admin'){
-            if($this->session->userdata('custom_session_limit') >= time()){
-                $this->session->set_userdata('custom_session_limit', (time()+864000));
-            }else{
+        if ($user_type == 'admin') {
+            if ($this->session->userdata('custom_session_limit') >= time()) {
+                $this->session->set_userdata('custom_session_limit', (time() + 864000));
+            } else {
                 $this->session_destroy();
                 redirect(site_url('login'), 'refresh');
             }
@@ -743,10 +766,10 @@ class User_model extends CI_Model
             if ($this->session->userdata('admin_login') != true) {
                 redirect(site_url('login'), 'refresh');
             }
-        }elseif($user_type == 'user'){
-            if($this->session->userdata('custom_session_limit') >= time()){
-                $this->session->set_userdata('custom_session_limit', (time()+864000));
-            }else{
+        } elseif ($user_type == 'user') {
+            if ($this->session->userdata('custom_session_limit') >= time()) {
+                $this->session->set_userdata('custom_session_limit', (time() + 864000));
+            } else {
                 $this->session_destroy();
                 redirect(site_url('login'), 'refresh');
             }
@@ -754,7 +777,7 @@ class User_model extends CI_Model
             if ($this->session->userdata('user_login') != true) {
                 redirect(site_url('login'), 'refresh');
             }
-        }elseif($user_type == 'login'){
+        } elseif ($user_type == 'login') {
             if ($this->session->userdata('admin_login')) {
                 redirect(site_url('admin'), 'refresh');
             } elseif ($this->session->userdata('user_login')) {
@@ -766,7 +789,7 @@ class User_model extends CI_Model
     public function session_destroy()
     {
         $logged_in_user_id = $this->session->userdata('user_id');
-        if($logged_in_user_id > 0 && $this->session->userdata('user_login') == 1){
+        if ($logged_in_user_id > 0 && $this->session->userdata('user_login') == 1) {
             $pre_sessions = array();
             $updated_session_arr = array();
             $current_session_id = session_id();
@@ -774,11 +797,11 @@ class User_model extends CI_Model
             $this->db->where('id', $logged_in_user_id);
             $sessions = $this->db->get('users')->row('sessions');
             $pre_sessions = json_decode($sessions, true);
-            if(is_array($pre_sessions)){
-                foreach($pre_sessions as $key => $pre_session){
-                    if($pre_session != $current_session_id){
-                        array_push($updated_session_arr, $pre_session);                        
-                    }else{
+            if (is_array($pre_sessions)) {
+                foreach ($pre_sessions as $key => $pre_session) {
+                    if ($pre_session != $current_session_id) {
+                        array_push($updated_session_arr, $pre_session);
+                    } else {
                         $this->db->where('id', $pre_session);
                         $this->db->delete('ci_sessions');
                     }
@@ -806,12 +829,11 @@ class User_model extends CI_Model
         $this->session->unset_userdata('new_device_user_email');
         $this->session->unset_userdata('new_device_user_id');
         $this->session->unset_userdata('new_device_verification_code');
-
     }
     /*END LOGIN LOGOUT AND DEVICE ALLOW SECTION*/
 
 
-   /* function update_unique_identifier($user_id = ""){
+    /* function update_unique_identifier($user_id = ""){
         $data['unique_identifier'] = $user_id.strtolower(random(10));
         $this->db->where('unique_identifier', 0);
         $this->db->where('id', $user_id);

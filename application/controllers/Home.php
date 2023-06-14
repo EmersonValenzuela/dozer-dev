@@ -50,8 +50,8 @@ class Home extends CI_Controller
     {
         $page_data['page_name'] = "nosotros";
         $page_data['page_title'] = site_phrase('Nosotros');
-        
-       
+
+
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
@@ -59,8 +59,8 @@ class Home extends CI_Controller
     {
         $page_data['page_name'] = "autoridades";
         $page_data['page_title'] = site_phrase('Autoridades');
-        
-       
+
+
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
@@ -68,24 +68,24 @@ class Home extends CI_Controller
     {
         $page_data['page_name'] = "docente";
         $page_data['page_title'] = site_phrase('Docente');
-        
-       
+
+
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
     public function repositorio()
     {
         $page_data['page_name'] = "repositorio";
         $page_data['page_title'] = site_phrase('Repositorio');
-        
-       
+
+
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
     public function ruta()
     {
         $page_data['page_name'] = "ruta_aprendizaje";
         $page_data['page_title'] = site_phrase('Ruta-de-Aprendizaje');
-        
-       
+
+
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
@@ -93,8 +93,8 @@ class Home extends CI_Controller
     {
         $page_data['page_name'] = "mentoria_bim";
         $page_data['page_title'] = site_phrase('Mentoria-bim');
-        
-       
+
+
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
@@ -105,8 +105,8 @@ class Home extends CI_Controller
     {
         $page_data['page_name'] = "premium";
         $page_data['page_title'] = site_phrase('Premium');
-        
-       
+
+
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
@@ -114,13 +114,13 @@ class Home extends CI_Controller
     {
         $page_data['page_name'] = "reclamaciones";
         $page_data['page_title'] = site_phrase('Libro_de_reclamaciones');
-        
-       
+
+
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
 
-   
+
 
     public function shopping_cart()
     {
@@ -219,8 +219,6 @@ class Home extends CI_Controller
             $page_data['parent'] = $row_category->parent;
             $page_data['text_certificado'] = "Certifican: Autodesk y Dozer";
             $page_data['variable_logo']  = "";
-
-            
         } elseif ($row_category->parent == 21 || $row_category->id == 21) {
             $page_data['variable']  = site_url('uploads/system/portada-cursos.png');
             $page_data['text_banner'] = "El mejor momento para invertir en tus 
@@ -231,7 +229,6 @@ class Home extends CI_Controller
             $page_data['id_category'] = $row_category->id;
             $page_data['parent'] = $row_category->parent;
             $page_data['sub_text_banner'] = "";
-
         } elseif ($row_category->parent == 22 || $row_category->id == 22) {
             $page_data['variable']  = site_url('uploads/system/portada-cursos.png');
             $page_data['text_banner'] = "El mejor momento para invertir en tus 
@@ -256,7 +253,7 @@ class Home extends CI_Controller
 
     public function set_layout_to_session()
     {
-        $layout = "grid" ;
+        $layout = "grid";
         $this->session->set_userdata('layout', $layout);
     }
 
@@ -401,26 +398,25 @@ class Home extends CI_Controller
         } elseif ($param1 == 'user_photo') {
             $page_data['page_name'] = "update_user_photo";
             $page_data['page_title'] = site_phrase('update_user_photo');
-        }elseif ($param1 == 'user_mis_cursos') {
+        } elseif ($param1 == 'user_mis_cursos') {
             $page_data['page_name'] = "user_mis_cursos";
             $page_data['page_title'] = site_phrase('user_mis_cursos');
-        }elseif ($param1 == 'user_mis_especializaciones') {
+        } elseif ($param1 == 'user_mis_especializaciones') {
             $page_data['page_name'] = "user_mis_especializaciones";
             $page_data['page_title'] = site_phrase('user_mis_especializaciones');
-
-        }elseif ($param1 == 'user_mis_diplomados') {
+        } elseif ($param1 == 'user_mis_diplomados') {
             $page_data['page_name'] = "user_mis_diplomados";
             $page_data['page_title'] = site_phrase('user_mis_diplomados');
-        }elseif ($param1 == 'user_mis_certificados') {
+        } elseif ($param1 == 'user_mis_certificados') {
             $page_data['page_name'] = "user_mis_certificados";
             $page_data['page_title'] = site_phrase('user_mis_certificados');
-        }elseif ($param1 == 'user_membresia') {
+        } elseif ($param1 == 'user_membresia') {
             $page_data['page_name'] = "user_membresia";
             $page_data['page_title'] = site_phrase('user_membresia');
-        }elseif ($param1 == 'user_sotfware') {
+        } elseif ($param1 == 'user_sotfware') {
             $page_data['page_name'] = "user_sotfware";
             $page_data['page_title'] = site_phrase('user_sotfware');
-        }elseif ($param1 == 'user_soporte') {
+        } elseif ($param1 == 'user_soporte') {
             $page_data['page_name'] = "user_soporte";
             $page_data['page_title'] = site_phrase('user_soporte');
         }
@@ -431,12 +427,17 @@ class Home extends CI_Controller
     public function update_profile($param1 = "")
     {
         if ($param1 == 'update_basics') {
+
             $this->user_model->edit_user($this->session->userdata('user_id'));
+
             redirect(site_url('home/profile/user_profile'), 'refresh');
         } elseif ($param1 == "update_credentials") {
+
             $this->user_model->update_account_settings($this->session->userdata('user_id'));
+
             redirect(site_url('home/profile/user_credentials'), 'refresh');
         } elseif ($param1 == "update_photo") {
+
             if (isset($_FILES['user_image']) && $_FILES['user_image']['name'] != "") {
                 unlink('uploads/user_image/' . $this->db->get_where('users', array('id' => $this->session->userdata('user_id')))->row('image') . '.jpg');
                 $data['image'] = md5(rand(10000, 10000000));
@@ -448,7 +449,14 @@ class Home extends CI_Controller
             redirect(site_url('home/profile/user_photo'), 'refresh');
         }
     }
-
+    public function get_data()
+    {
+        $table = $this->input->post('table');
+        $row = $this->user_model->get_data('users', array('id' => $this->session->userdata('user_id')));
+        $jsonData['row'] = $row;
+        header('Content-type: application/json; charset=utf-8');
+        echo json_encode($jsonData);
+    }
     public function handleWishList($return_number = "")
     {
         if ($this->session->userdata('user_login') != 1) {
@@ -487,7 +495,6 @@ class Home extends CI_Controller
             $this->load->view('frontend/' . get_frontend_settings('theme') . '/cart_items');
         }
     }
-
     public function handleCartItemForBuyNowButton()
     {
         if (!$this->session->userdata('cart_items')) {
@@ -1432,7 +1439,5 @@ class Home extends CI_Controller
 
         $url_return = $this->input->post('url_return');
         $this->session->set_userdata('url_return', $url_return);
-
-        
     }
 }

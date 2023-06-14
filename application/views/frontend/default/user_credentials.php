@@ -242,11 +242,6 @@
                 <form class="w-100  radius-10 p-4 box-shadow-5"
                     action="<?php echo site_url('home/update_profile/update_credentials'); ?>" method="post">
                     <div class="row">
-                        
-
-
-
-
                         <div class="col-12 mb-3">
                             <label class="text-dark fw-600" for="email"><?php echo site_phrase('email'); ?></label>
                             <div class="input-group">

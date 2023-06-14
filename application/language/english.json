@@ -931,5 +931,8 @@
     "start_quiz": "Start quiz",
     "quiz_submission_successfully": "Quiz submission successfully",
     "obtained_marks": "Obtained marks",
-    "invalid_lesson_url_and_duration": "Invalid lesson url and duration"
+    "invalid_lesson_url_and_duration": "Invalid lesson url and duration",
+    "regresar": "Regresar",
+    "clases": "Clases",
+    "materiales": "Materiales"
 }

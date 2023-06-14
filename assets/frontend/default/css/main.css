@@ -8113,3 +8113,94 @@ font-weight: bold;}
 .fs-15px{
     font-size: 15px;
 }
+.btn-regresa{
+    color:white;
+
+}
+.bg-video{
+    background-color: #1A1919 !important;
+}
+.bg-item{
+    background-color: #272727 !important;
+}
+
+.bg-progress{
+    background-color: #FFCB73 !important;
+}
+.style-itemp{
+    color: #FFCB73 !important;
+    padding: 10px 42.7px !important;
+    font-weight: 600;
+}
+.style-itemp:hover {
+    color: #495057;
+    background: #222222 !important;
+    border: none !important;
+}
+
+.style-itemp.active {
+    border: none !important;
+    background: #222222 !important;
+    
+}
+.nav-tabss{
+    border: none !important;
+}
+.form-group-dos label:not(label.radio):before {
+    content: '' !important;
+    -webkit-appearance: none !important;
+    background-color: #4C4D4C !important;
+    border: 2px solid #4C4D4C !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05) !important;
+    padding: 8px !important;
+    display: inline-block !important;
+    position: relative !important;
+    vertical-align: middle !important;
+    cursor: pointer !important;
+    margin-right: 5px !important;
+    border-radius: 50% !important;
+}
+.form-group-dos input:checked + label:not(label.radio):after {
+    content: '' !important;
+    display: block !important;
+    position: absolute !important;
+    top: 6px !important;
+    left: 6px !important;
+    width: 5px !important;
+    height: 11px !important;
+    border: solid white !important;
+    border-width: 0 2px 2px 0 !important;
+    transform: rotate(45deg) !important;
+}
+
+.course_card-dos {
+    padding: 0px !important;
+    background-color: #4C4D4C !important;
+    border-radius: 9px !important;
+    margin: 7px 8px !important;
+}
+.card-dos {
+    border-radius: 0px !important;
+    background-color: #222222 !important;
+    border: none !important;
+}
+.bg-window{
+    background: #272727 !important;
+    top: 150% !important;
+    width: 170px !important;
+    box-shadow: 3px 3px 2px 0px #ffc873 !important ;
+}
+.bg-colorc{
+    width: 170px !important;
+}
+.bg-colorc:hover{
+    background: #191919 !important;
+    width: 170px !important;
+}
+.bg-triangle{
+    background: #272727 !important;
+}
+
+.bg-triangle:after {
+    border-color:transparent transparent #272727 !important;
+}

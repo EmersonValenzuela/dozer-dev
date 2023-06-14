@@ -22,34 +22,34 @@
                     <img style="width: 10px;" src="<?=base_url()?>uploads/system/flecha-abajo.png" alt="">
             </a>
 
-            <ul class="category corner-triangle top-left is-hidden pb-0">
+            <ul class="category corner-triangle bg-triangle top-left is-hidden pb-0 bg-window">
                 <li class="go-back"><a href=""><i class="fas fa-angle-left"></i><?php echo site_phrase('menu'); ?></a>
                 </li>
                 
              
                 <li class="has-children">
-                    <a href="javascript:;" class="py-2 text-wrap d-flex"
+                    <a href="javascript:;" class="py-2 text-wrap d-flex text-white bg-colorc"
                     onclick="redirect_to('<?php echo base_url('Nosotros') ?>')">
 
 
                         <span>Nosotros</span>
                        
                     </a>
-                    <a href="" class="py-2 text-wrap d-flex" 
+                    <a href="" class="py-2 text-wrap d-flex text-white bg-colorc" 
                     onclick="redirect_to('<?php echo base_url('Autoridades') ?>')">
 
 
                         <span>Autoridades</span>
                        
                     </a>
-                    <a href="javascript:;" class="py-2 text-wrap d-flex"
+                    <a href="javascript:;" class="py-2 text-wrap d-flex text-white bg-colorc"
                     onclick="redirect_to('<?php echo base_url('Docente') ?>')">
 
 
                         <span>Docente</span>
                        
                     </a>
-                    <a href="javascript:;" class="py-2 text-wrap d-flex"
+                    <a href="javascript:;" class="py-2 text-wrap d-flex text-white bg-colorc"
                     onclick="redirect_to('<?php echo base_url('Repositorio') ?>')">
 
 
@@ -112,7 +112,8 @@
                     <img style="width: 10px;" src="<?=base_url()?>uploads/system/flecha-abajo.png" alt="">
             </a>
 
-            <ul class="category corner-triangle top-left is-hidden pb-0">
+            <ul class="category corner-triangle top-left is-hidden pb-0 bg-triangle
+bg-window">
                 <li class="go-back"><a href=""><i class="fas fa-angle-left"></i><?php echo site_phrase('menu'); ?></a>
                 </li>
 
@@ -120,12 +121,12 @@
           $categories = $this->crud_model->get_categoria()->result_array();
           foreach ($categories as $key => $category):?>
                 <li class="has-children">
-                    <a href="javascript:;" class="py-2 text-wrap d-flex"
+                    <a href="javascript:;" class="py-2 text-wrap d-flex bg-colorc text-white"
                         onclick="redirect_to('<?php echo site_url('home/courses?category='.$category['slug']); ?>')">
 
 
                         <span><?php echo $category['name']; ?></span>
-                        <span class="has-sub-category ms-auto"><i class="fas fa-angle-right"></i></span>
+                        
                     </a>
                     <ul class="sub-category is-hidden">
                         <li class="go-back-menu"><a href=""><i
@@ -138,9 +139,7 @@
                         <?php
               $sub_categories = $this->crud_model->get_sub_categoria($category['id']);
               foreach ($sub_categories as $sub_category): ?>
-                        <li><a class="text-wrap"
-                                href="<?php echo site_url('home/courses?category='.$sub_category['slug']); ?>"><?php echo $sub_category['name']; ?></a>
-                        </li>
+                        
                         <?php endforeach; ?>
                     </ul>
                 </li>

@@ -29,12 +29,12 @@ body {
 }
 .card {
     border-radius: 0px !important;
-    background-color: #f7f8fa !important;
-    border:0px !important;
+    background-color: #222222 !important;
+    border: none !important;
 }
 .course_card {
     padding: 0px;
-    background-color: #F7F8FA;
+    background-color: #222222;
 }
 .course_container {
     background-color: #fff !important;

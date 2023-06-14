@@ -9,8 +9,6 @@
                 href="javascript:;" class="has-popover">
                 <div class="course-box">
                     <div class="course-image">
-
-
                         <img src="<?php echo $this->crud_model->get_course_thumbnail_url($course['id']); ?>" alt=""
                             class="img-fluid">
                     </div>

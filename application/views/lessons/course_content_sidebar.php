@@ -22,8 +22,8 @@
 
     </div>
     <div>
-        <h5 class="title text-white px-3"><?php echo $course_details['title']; ?></h5>
-        <p class="title text-white fw-bold px-3"><?php echo $course_details['level']; ?></p>
+        <p class="title text-white px-3 mb-0 fw-700"><?php echo $course_details['title']; ?></p>
+        <p class="title text-white px-3 fw-700"><?php echo site_phrase($course_details['level']); ?></p>
     </div>
 
     <div class="text-center mt-5 mx-3" style="">
@@ -34,7 +34,7 @@
                 aria-valuemax="100"></div>
         </div>
         <span
-            class="d-inline-block ml-auto text-white"><?php echo $watch_history['course_progress'].'% '.site_phrase('completed'); ?>(<?php echo count($completed_lesson_id_rr); ?>/<?php echo $this->crud_model->get_lessons('course', $course_details['id'])->num_rows(); ?>)</span>
+            class="d-inline-block ml-auto text-white"><?php echo $watch_history['course_progress'].'% '; ?></span>
 
     </div>
     <div class="row" style="margin: 12px -1px">
@@ -125,7 +125,7 @@
 
                                         <tr
                                             style="width: 100%; padding: 5px 0px;background-color: <?php if ($lesson_id == $lesson['id'])echo '#222222'; else echo '#222222';?>;">
-                                            <td style="text-align: left; padding:7px 10px;">
+                                            <td style="text-align: left; padding:0px 10px;">
                                                 <?php
                                                         $lesson_progress = lesson_progress($lesson['id']);
                                                         ?>
@@ -155,8 +155,8 @@
                                                 </div>
                                                 <?php endif; ?>
 
-                                                <a href="<?= $lesson_url; ?>" id="<?php echo $lesson['id']; ?>"
-                                                    style="color: #444549;font-size: 14px;font-weight: 400;">
+                                                <a class="fw-700" href="<?= $lesson_url; ?>" id="<?php echo $lesson['id']; ?>"
+                                                    style="color:white;font-size: 14px;font-weight: 400; ">
                                                     <?php echo $key+1; ?>:
                                                     <?php if ($lesson['lesson_type'] != 'other'):?>
                                                     <?php echo $lesson['title']; ?>

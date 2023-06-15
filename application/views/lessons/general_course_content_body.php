@@ -193,12 +193,8 @@
         <div class="" style="margin: 20px 0;" id = "lesson-summary">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title w-100 mb-3"><?php echo $lesson_details['lesson_type'] == 'quiz' ? get_phrase('instruction') : get_phrase("note"); ?>:</h5>
-                    <?php if ($lesson_details['summary'] == ""): ?>
-                        <p class="card-text"><?php echo $lesson_details['lesson_type'] == 'quiz' ? get_phrase('no_instruction_found') : get_phrase("no_summary_found"); ?></p>
-                    <?php else: ?>
-                        <?php echo htmlspecialchars_decode($lesson_details['summary']); ?>
-                    <?php endif; ?>
+                    <h6 class="card-title w-100 mb-3 text-white"><?php echo $lesson_details['lesson_type'] == 'quiz' ? get_phrase('instruction') : get_phrase("Copyright © Instituto Dozer  - Todos los derechos reservados."); ?>:</h6>
+                    
                 </div>
             </div>
         </div>

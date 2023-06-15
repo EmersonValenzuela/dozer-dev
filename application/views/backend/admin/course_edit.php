@@ -286,9 +286,9 @@ $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
                                                     <label class="col-md-2 col-form-label" for="level"><?php echo get_phrase('level'); ?></label>
                                                     <div class="col-md-10">
                                                         <select class="form-control select2" data-toggle="select2" name="level" id="level">
-                                                            <option value="beginner" <?php if ($course_details['level'] == "beginner") echo 'selected'; ?>><?php echo get_phrase('beginner'); ?></option>
-                                                            <option value="advanced" <?php if ($course_details['level'] == "advanced") echo 'selected'; ?>><?php echo get_phrase('advanced'); ?></option>
-                                                            <option value="intermediate" <?php if ($course_details['level'] == "intermediate") echo 'selected'; ?>><?php echo get_phrase('intermediate'); ?>
+                                                            <option value="Basico" <?php if ($course_details['level'] == "basico") echo 'selected'; ?>><?php echo get_phrase('basico'); ?></option>
+                                                            <option value="Avanzado" <?php if ($course_details['level'] == "avanzado") echo 'selected'; ?>><?php echo get_phrase('avanzado'); ?></option>
+                                                            <option value="Intermedio" <?php if ($course_details['level'] == "intermedio") echo 'selected'; ?>><?php echo get_phrase('intermedio'); ?>
                                                             <option value="empresa" <?php if ($course_details['level'] == "empresa") echo 'selected'; ?>><?php echo get_phrase('empresa'); ?>
                                                                    
                                                         </select>

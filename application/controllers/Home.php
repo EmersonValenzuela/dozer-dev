@@ -435,7 +435,7 @@ class Home extends CI_Controller
 
             $this->user_model->update_account_settings($this->session->userdata('user_id'));
 
-            redirect(site_url('home/profile/user_credentials'), 'refresh');
+            redirect(site_url('home/profile/user_profile'), 'refresh');
         } elseif ($param1 == "update_photo") {
 
             if (isset($_FILES['user_image']) && $_FILES['user_image']['name'] != "") {
@@ -448,6 +448,9 @@ class Home extends CI_Controller
             $this->session->set_flashdata('flash_message', site_phrase('updated_successfully'));
             redirect(site_url('home/profile/user_photo'), 'refresh');
         }
+    }
+    public function update_email(){
+
     }
     public function get_data()
     {

@@ -206,9 +206,7 @@ class User_model extends CI_Model
             $data['first_name'] = html_escape($this->input->post('first_name'));
             $data['last_name'] = html_escape($this->input->post('last_name'));
 
-            if (isset($_POST['email'])) {
-                $data['email'] = html_escape($this->input->post('email'));
-            }
+
             $social_link['facebook'] = html_escape($this->input->post('facebook_link'));
             $social_link['twitter'] = html_escape($this->input->post('twitter_link'));
             $social_link['linkedin'] = html_escape($this->input->post('linkedin_link'));

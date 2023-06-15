@@ -934,5 +934,6 @@
     "invalid_lesson_url_and_duration": "Invalid lesson url and duration",
     "regresar": "Regresar",
     "clases": "Clases",
-    "materiales": "Materiales"
+    "materiales": "Materiales",
+    "mismatch_password": "Mismatch password"
 }

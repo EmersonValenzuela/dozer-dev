@@ -435,7 +435,7 @@ class Home extends CI_Controller
 
             $this->user_model->update_account_settings($this->session->userdata('user_id'));
 
-            redirect(site_url('home/profile/user_credentials'), 'refresh');
+            redirect(site_url('home/profile/user_profile'), 'refresh');
         } elseif ($param1 == "update_photo") {
 
             if (isset($_FILES['user_image']) && $_FILES['user_image']['name'] != "") {
@@ -447,7 +447,14 @@ class Home extends CI_Controller
             }
             $this->session->set_flashdata('flash_message', site_phrase('updated_successfully'));
             redirect(site_url('home/profile/user_photo'), 'refresh');
+        } elseif ($param1 == "update_email") {
+            $this->user_model->update_email($this->session->userdata('user_id'));
+
+            redirect(site_url('home/profile/user_profile'), 'refresh');
         }
+    }
+    public function update_email()
+    {
     }
     public function get_data()
     {
@@ -1436,8 +1443,26 @@ class Home extends CI_Controller
 
     public function url_return()
     {
-
         $url_return = $this->input->post('url_return');
         $this->session->set_userdata('url_return', $url_return);
+    }
+    public function pay_success()
+    {
+        $user_id = $this->session->userdata('user_id');
+        $this->crud_model->enrol_student($user_id);
+        $this->crud_model->course_purchase($user_id, 'mercado pago', $this->session->userdata('total_price_of_checking_out'));
+        $this->email_model->course_purchase_notification($user_id, 'mercado pago', $this->session->userdata('total_price_of_checking_out'));
+        $this->session->set_flashdata('flash_message', site_phrase('payment_successfully_done'));
+        $page_data['page_name'] = "pay_success";
+        $page_data['page_title'] = site_phrase('Pago Existoso');
+        $this->session->set_userdata('cart_items', array());
+        $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
+    }
+    public function pay_fail()
+    {
+        $page_data['page_name'] = "pay_fail";
+        $page_data['page_title'] = site_phrase('Error de Pago');
+
+        $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 }

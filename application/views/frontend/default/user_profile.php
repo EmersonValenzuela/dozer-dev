@@ -100,59 +100,6 @@ if (addon_status('affiliate_course')) {
 
                                 <div class=""><a data-bs-toggle="modal" class="style-cc" href="#mcc"> <label class="text-cc" for=" ">Cambiar
                                             correo </label> </a></div>
-
-                                <div class="modal fade" id="mcc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content modal-correo">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title  title-mcorreo" id="staticBackdropLabel">Cambiar
-                                                    correo
-                                                </h1>
-
-                                                <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="d-flex flex-column  p-correoxy">
-                                                <p class="text-mcorreo">Utilice el siguiente formulario para cambiar la
-                                                    dirección de correo
-                                                    <br>
-                                                    electrónico actual registrada en su cuenta de usuario. Utilice el
-                                                    <br>
-                                                    nuevo correo la próxima vez que inicie sesión.
-                                                </p>
-                                                <div class="d-flex flex-row  align-items-center">
-                                                    <p style="width: 70%;" class="text-mcorreo d-flex ">Dirección de
-                                                        correo actual: </p>
-                                                    <input type="email" class="form-control form-correo" name="email" id="email" value="<?php echo $user_details['email']; ?>" disabled>
-                                                </div>
-                                            </div>
-                                            <div class="modal-body modal-boddy">
-
-                                                <div class=""><label class="text-white fw-600" for="FristName"><?php echo site_phrase('Nueva direccion de correo'); ?></label>
-                                                </div>
-                                                <div class="input-group">
-                                                    <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese Nueva Direccion de Correo" value="<?php echo $user_details['nueva-direccion-correo']; ?>">
-                                                </div>
-                                                <div class=""><label class="text-white fw-600" for="FristName"><?php echo site_phrase('Repita la nueva dirección de correo'); ?></label>
-                                                </div>
-                                                <div class="input-group">
-                                                    <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese Nueva Direccion de Correo" value="<?php echo $user_details['nueva-direccion-correo']; ?>">
-                                                </div>
-
-                                                <div><label class="text-white fw-600" for="current_password"><?php echo site_phrase('Confirmar contraseña'); ?></label>
-                                                </div>
-                                                <div class="input-group">
-                                                    <span class="input-group-text"><i class="fas fa-key text-white"></i></span>
-                                                    <input type="password" class="form-control" id="current_password" name="current_password" placeholder="Ingrese contraseña">
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-
-                                                <button type="button" class="btn btn-primary">Understood</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                             <div class="input-group">
                                 <input type="email" class="form-control" name="email" id="email" placeholder="<?php echo site_phrase('email'); ?>" value="<?php echo $user_details['email']; ?>" disabled>
@@ -164,50 +111,6 @@ if (addon_status('affiliate_course')) {
 
                                 <div class=""><a data-bs-toggle="modal" class="style-cc" href="#mcco"> <label class="text-cc" for=" ">Cambiar
                                             Contraseña </label> </a></div>
-
-                                <div class="modal fade" id="mcco" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content modal-correo">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5 " id="staticBackdropLabel">Cambiar
-                                                    contraseña</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-
-                                            <div class="modal-body ">
-                                                <div class=" p-correoxy">
-                                                    <p class="text-mcorreo ">Utilice el siguiente formulario para cambiar la contraseña actual
-                                                        <br>
-                                                        registrada en su cuenta de usuario. Utilice la nueva contraseña <br>
-                                                        la próxima vez que inicie sesión.
-                                                    </p>
-                                                </div>
-                                                <label class=" fw-600" for="current_password "><?php echo site_phrase('Contraseña actual'); ?></label>
-                                                <div class="input-group">
-                                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
-                                                    <input type="password" class="form-control" id="current_password" name="current_password" placeholder="<?php echo site_phrase('Introducir Contraseña actual'); ?>">
-                                                </div>
-
-                                                <label class=" fw-600" for="new_password"><?php echo site_phrase('Nueva contraseña'); ?></label>
-                                                <div class="input-group">
-                                                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                                                    <input type="password" class="form-control" id="new_password" name="new_password" placeholder="<?php echo site_phrase('Ingrese la nueva contraseña'); ?>">
-                                                </div>
-
-                                                <label class=" fw-600" for="confirm_password"><?php echo site_phrase('Confirma contraseña'); ?></label>
-                                                <div class="input-group">
-                                                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                                                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="<?php echo site_phrase('Repita la nueva contraseña'); ?>">
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-
-                                                <button type="button" class="btn btn-primary"><?php echo site_phrase('cambiar_contraseña'); ?></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                             <div class="input-group">
 
@@ -331,9 +234,6 @@ if (addon_status('affiliate_course')) {
                                     <option value="4">Otro</option>
                                 </select>
                             </div>
-
-
-
                         </div>
                         <div class="col-md-6  p-2">
                             <label class="text-white fw-600" for="FristName"><?php echo site_phrase('nivel_de_formacion'); ?></label>
@@ -372,3 +272,99 @@ if (addon_status('affiliate_course')) {
         </div>
     </div>
 </section>
+<div class="modal fade" id="mcco" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-correo">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 " id="staticBackdropLabel">Cambiar
+                    contraseña</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="<?php echo site_url('home/update_profile/update_credentials'); ?>" method="post">
+                <div class="modal-body ">
+                    <div class=" p-correoxy">
+                        <p class="text-mcorreo ">Utilice el siguiente formulario para cambiar la contraseña actual
+                            <br>
+                            registrada en su cuenta de usuario. Utilice la nueva contraseña <br>
+                            la próxima vez que inicie sesión.
+                        </p>
+                    </div>
+                    <label class=" fw-600" for="current_password "><?php echo site_phrase('Contraseña actual'); ?></label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        <input type="password" class="form-control" id="current_password" name="current_password" placeholder="<?php echo site_phrase('Introducir Contraseña actual'); ?>">
+                    </div>
+
+                    <label class=" fw-600" for="new_password"><?php echo site_phrase('Nueva contraseña'); ?></label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                        <input type="password" class="form-control" id="new_password" name="new_password" placeholder="<?php echo site_phrase('Ingrese la nueva contraseña'); ?>">
+                    </div>
+
+                    <label class=" fw-600" for="confirm_password"><?php echo site_phrase('Confirma contraseña'); ?></label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                        <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="<?php echo site_phrase('Repita la nueva contraseña'); ?>">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary"><?php echo site_phrase('cambiar_contraseña'); ?></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="mcc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-correo">
+            <div class="modal-header">
+                <h1 class="modal-title  title-mcorreo" id="staticBackdropLabel">Cambiar
+                    correo
+                </h1>
+
+                <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="d-flex flex-column  p-correoxy">
+                <p class="text-mcorreo">Utilice el siguiente formulario para cambiar la
+                    dirección de correo
+                    <br>
+                    electrónico actual registrada en su cuenta de usuario. Utilice el
+                    <br>
+                    nuevo correo la próxima vez que inicie sesión.
+                </p>
+                <div class="d-flex flex-row  align-items-center">
+                    <p style="width: 70%;" class="text-mcorreo d-flex ">Dirección de
+                        correo actual: </p>
+                    <input type="email" class="form-control form-correo" name="email" id="email" value="<?php echo $user_details['email']; ?>" disabled>
+                </div>
+            </div>
+            <form action="<?php echo site_url('home/update_profile/update_email'); ?>" method="post">
+            <div class="modal-body modal-boddy">
+
+                <div class=""><label class="text-white fw-600" for="FristName"><?php echo site_phrase('Nueva direccion de correo'); ?></label>
+                </div>
+                <div class="input-group">
+                    <input type="email" class="form-control" name="new_email" id="new_email" placeholder="Ingrese Nueva Direccion de Correo" required>
+                </div>
+                <div class=""><label class="text-white fw-600" for="FristName"><?php echo site_phrase('Repita la nueva dirección de correo'); ?></label>
+                </div>
+                <div class="input-group">
+                    <input type="email" class="form-control" name="confirm_email" id="confirm_email" placeholder="Ingrese Nueva Direccion de Correo" required>
+                </div>
+
+                <div><label class="text-white fw-600" for="current_password"><?php echo site_phrase('Confirmar contraseña'); ?></label>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-key text-white"></i></span>
+                    <input type="password" class="form-control" id="get_password" name="get_password" placeholder="Ingrese contraseña" required>
+                </div>
+            </div>
+            <div class="modal-footer">
+
+                <button type="submit" class="btn btn-primary">Understood</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>

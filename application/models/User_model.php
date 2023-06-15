@@ -206,9 +206,7 @@ class User_model extends CI_Model
             $data['first_name'] = html_escape($this->input->post('first_name'));
             $data['last_name'] = html_escape($this->input->post('last_name'));
 
-            if (isset($_POST['email'])) {
-                $data['email'] = html_escape($this->input->post('email'));
-            }
+
             $social_link['facebook'] = html_escape($this->input->post('facebook_link'));
             $social_link['twitter'] = html_escape($this->input->post('twitter_link'));
             $social_link['linkedin'] = html_escape($this->input->post('linkedin_link'));
@@ -322,6 +320,31 @@ class User_model extends CI_Model
             $this->db->where('id', $user_id);
             $this->db->update('users', $data);
             $this->session->set_flashdata('flash_message', get_phrase('updated_successfully'));
+        } else {
+            $this->session->set_flashdata('error_message', get_phrase('email_duplication'));
+        }
+    }
+
+    public function update_email($user_id)
+    {
+        $validity = $this->check_duplication('on_update', $this->input->post('new_email'), $user_id);
+        $user_details = $this->get_user($user_id)->row_array();
+        $current_password = $this->input->post('get_password');
+        if ($validity) {
+            if ($this->input->post('new_email') != $this->input->post('confirm_email')) {
+                $this->session->set_flashdata('error_message', 'Correos invalidos');
+                return;
+            } else {
+                if ($user_details['password'] == sha1($current_password)) {
+                    $data['email'] = $this->input->post('new_email');
+                    $this->db->where('id', $user_id);
+                    $this->db->update('users', $data);
+                    $this->session->set_flashdata('flash_message', get_phrase('updated_successfully'));
+                } else {
+                    $this->session->set_flashdata('error_message', get_phrase('mismatch_password'));
+                    return;
+                }
+            }
         } else {
             $this->session->set_flashdata('error_message', get_phrase('email_duplication'));
         }

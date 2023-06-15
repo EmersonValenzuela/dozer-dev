@@ -1,11 +1,13 @@
-
-
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 
-
+<style>
+    .mercadopago-button {
+        
+    }
+</style>
 
 <section class="container-xl m-cqp">
     <div class="row ">
@@ -20,16 +22,14 @@
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item a-item mb-3 b-trans">
                     <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed fondo-metodo" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <button class="accordion-button collapsed fondo-metodo" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                             <div class=" d-flex flex-column ">
                                 <div class="px-2 fw-bold text-white ">Método Simple </div>
                                 <div class="px-2 text-white fw-200">Pago en cuentas nacionales (Perú)</div>
                             </div>
                         </button>
                     </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse fondo-contenido-metodo"
-                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div id="flush-collapseOne" class="accordion-collapse collapse fondo-contenido-metodo" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             <p class="titulo-ms">Realiza tu matrícula en 2 simples pasos.</p>
                             <p class="paso-ms"> <span class="fw-700">Paso 01.</span> Selecciona a qué banco o billetera
@@ -183,7 +183,7 @@
                                             <div class="px-2 sub-textbanco"></div>
 
                                         </div>
-                                       
+
                                     </div>
                                 </div>
                             </div>
@@ -213,20 +213,25 @@
                 </div>
                 <div class="accordion-item a-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed fondo-metodo" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <button class="accordion-button collapsed fondo-metodo" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                             <div class=" d-flex flex-column ">
                                 <div class="px-2 fw-bold text-white ">Método Automatizado</div>
                                 <div class="px-2 text-white fw-200">Pago mediante tarjeta de Crédito/Débito</div>
                             </div>
                         </button>
                     </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse fondo-contenido-metodo"
-                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
-                            body. Let's imagine this being filled with some actual content.</div>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse fondo-contenido-metodo" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="checkout-btn"></div>
+                        </div>
                     </div>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse fondo-contenido-metodo" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <button type="button" class="btn red w-100 radius-10 mb-3" onclick="handleCheckOut()"><?php echo site_phrase('checkout'); ?></button>
+                        </div>
+                    </div>
+
+
                 </div>
 
             </div>
@@ -256,162 +261,162 @@
 
 
 <script>
-var dgFlow = new PAYPAL.apps.DGFlow({
-    trigger: 'submitBtn'
-});
-dgFlow = top.dgFlow || top.opener.top.dgFlow;
-dgFlow.closeFlow();
-// top.close();
+    var dgFlow = new PAYPAL.apps.DGFlow({
+        trigger: 'submitBtn'
+    });
+    dgFlow = top.dgFlow || top.opener.top.dgFlow;
+    dgFlow.closeFlow();
+    // top.close();
 </script>
 
 <script type="text/javascript">
-function removeFromCartList(elem) {
-    url1 = '<?php echo site_url('home/handleCartItems'); ?>';
-    url2 = '<?php echo site_url('home/refreshWishList'); ?>';
-    url3 = '<?php echo site_url('home/refreshShoppingCart'); ?>';
-    $.ajax({
-        url: url1,
-        type: 'POST',
-        data: {
-            course_id: elem.id
-        },
-        success: function(response) {
+    function removeFromCartList(elem) {
+        url1 = '<?php echo site_url('home/handleCartItems'); ?>';
+        url2 = '<?php echo site_url('home/refreshWishList'); ?>';
+        url3 = '<?php echo site_url('home/refreshShoppingCart'); ?>';
+        $.ajax({
+            url: url1,
+            type: 'POST',
+            data: {
+                course_id: elem.id
+            },
+            success: function(response) {
 
-            $('#cart_items').html(response);
-            if ($(elem).hasClass('addedToCart')) {
-                $('.big-cart-button-' + elem.id).removeClass('addedToCart')
-                $('.big-cart-button-' + elem.id).text("<?php echo site_phrase('add_to_cart'); ?>");
-            } else {
-                $('.big-cart-button-' + elem.id).addClass('addedToCart')
-                $('.big-cart-button-' + elem.id).text("<?php echo site_phrase('added_to_cart'); ?>");
+                $('#cart_items').html(response);
+                if ($(elem).hasClass('addedToCart')) {
+                    $('.big-cart-button-' + elem.id).removeClass('addedToCart')
+                    $('.big-cart-button-' + elem.id).text("<?php echo site_phrase('add_to_cart'); ?>");
+                } else {
+                    $('.big-cart-button-' + elem.id).addClass('addedToCart')
+                    $('.big-cart-button-' + elem.id).text("<?php echo site_phrase('added_to_cart'); ?>");
+                }
+
+                $.ajax({
+                    url: url2,
+                    type: 'POST',
+                    success: function(response) {
+                        $('#wishlist_items').html(response);
+                    }
+                });
+
+                $.ajax({
+                    url: url3,
+                    type: 'POST',
+                    success: function(response) {
+                        $('#cart_items_details').html(response);
+                    }
+                });
             }
+        });
+    }
 
-            $.ajax({
-                url: url2,
-                type: 'POST',
-                success: function(response) {
-                    $('#wishlist_items').html(response);
+    function handleCheckOut() {
+        $.ajax({
+            url: '<?php echo site_url('home/isLoggedIn?url_history=' . base64_encode(current_url())); ?>',
+            success: function(response) {
+                if (!response) {
+                    window.location.replace("<?php echo site_url('login'); ?>");
+                } else if ("<?php echo $total_price; ?>" > 0) {
+                    // $('#paymentModal').modal('show');
+                    //$('.total_price_of_checking_out').val($('#total_price_of_checking_out').text());
+                    window.location.replace("<?php echo site_url('home/payment'); ?>");
+                } else {
+                    toastr.error('<?php echo site_phrase('there_are_no_courses_on_your_cart'); ?>');
                 }
-            });
-
-            $.ajax({
-                url: url3,
-                type: 'POST',
-                success: function(response) {
-                    $('#cart_items_details').html(response);
-                }
-            });
-        }
-    });
-}
-
-function handleCheckOut() {
-    $.ajax({
-        url: '<?php echo site_url('home/isLoggedIn?url_history='.base64_encode(current_url())); ?>',
-        success: function(response) {
-            if (!response) {
-                window.location.replace("<?php echo site_url('login'); ?>");
-            } else if ("<?php echo $total_price; ?>" > 0) {
-                // $('#paymentModal').modal('show');
-                //$('.total_price_of_checking_out').val($('#total_price_of_checking_out').text());
-                window.location.replace("<?php echo site_url('home/payment'); ?>");
-            } else {
-                toastr.error('<?php echo site_phrase('there_are_no_courses_on_your_cart'); ?>');
             }
-        }
-    });
-}
+        });
+    }
 
-function handleCartItems(elem) {
-    var couponCode = $("#coupon-code").val();
+    function handleCartItems(elem) {
+        var couponCode = $("#coupon-code").val();
 
-    url1 = '<?php echo site_url('home/handleCartItems'); ?>';
-    url2 = '<?php echo site_url('home/refreshWishList'); ?>';
-    url3 = '<?php echo site_url('home/refreshShoppingCart'); ?>';
-    $.ajax({
-        url: url1,
-        type: 'POST',
-        data: {
-            course_id: elem.id
-        },
-        success: function(response) {
-            $('#cart_items').html(response);
-            if ($(elem).hasClass('addedToCart')) {
-                $('.big-cart-button-' + elem.id).removeClass('addedToCart')
-                $('.big-cart-button-' + elem.id).text("<?php echo site_phrase('add_to_cart'); ?>");
-            } else {
-                $('.big-cart-button-' + elem.id).addClass('addedToCart')
-                $('.big-cart-button-' + elem.id).text("<?php echo site_phrase('added_to_cart'); ?>");
+        url1 = '<?php echo site_url('home/handleCartItems'); ?>';
+        url2 = '<?php echo site_url('home/refreshWishList'); ?>';
+        url3 = '<?php echo site_url('home/refreshShoppingCart'); ?>';
+        $.ajax({
+            url: url1,
+            type: 'POST',
+            data: {
+                course_id: elem.id
+            },
+            success: function(response) {
+                $('#cart_items').html(response);
+                if ($(elem).hasClass('addedToCart')) {
+                    $('.big-cart-button-' + elem.id).removeClass('addedToCart')
+                    $('.big-cart-button-' + elem.id).text("<?php echo site_phrase('add_to_cart'); ?>");
+                } else {
+                    $('.big-cart-button-' + elem.id).addClass('addedToCart')
+                    $('.big-cart-button-' + elem.id).text("<?php echo site_phrase('added_to_cart'); ?>");
+                }
+                $.ajax({
+                    url: url2,
+                    type: 'POST',
+                    success: function(response) {
+                        $('#wishlist_items').html(response);
+                    }
+                });
+
+                $.ajax({
+                    url: url3,
+                    type: 'POST',
+                    data: {
+                        couponCode: couponCode
+                    },
+                    success: function(response) {
+                        $('#cart_items_details').html(response);
+                    }
+                });
             }
-            $.ajax({
-                url: url2,
-                type: 'POST',
-                success: function(response) {
-                    $('#wishlist_items').html(response);
-                }
-            });
-
-            $.ajax({
-                url: url3,
-                type: 'POST',
-                data: {
-                    couponCode: couponCode
-                },
-                success: function(response) {
-                    $('#cart_items_details').html(response);
-                }
-            });
-        }
-    });
-}
+        });
+    }
 
 
-function applyCoupon() {
-    $("#spinner").removeClass('hidden');
-    var couponCode = $("#coupon-code").val();
-    url3 = '<?php echo site_url('home/refreshShoppingCart'); ?>';
-    $.ajax({
-        url: url3,
-        type: 'POST',
-        data: {
-            couponCode: couponCode
-        },
-        success: function(response) {
-            $("#spinner").addClass('hidden');
-            $('#cart_items_details').html(response);
-        }
-    });
-}
+    function applyCoupon() {
+        $("#spinner").removeClass('hidden');
+        var couponCode = $("#coupon-code").val();
+        url3 = '<?php echo site_url('home/refreshShoppingCart'); ?>';
+        $.ajax({
+            url: url3,
+            type: 'POST',
+            data: {
+                couponCode: couponCode
+            },
+            success: function(response) {
+                $("#spinner").addClass('hidden');
+                $('#cart_items_details').html(response);
+            }
+        });
+    }
 
-const accordionnContent = document.querySelectorAll(".accordionn-content");
+    const accordionnContent = document.querySelectorAll(".accordionn-content");
 
-accordionnContent.forEach((item, index) => {
-    let header = item.querySelector("header");
-    header.addEventListener("click", () => {
-        item.classList.toggle("open");
+    accordionnContent.forEach((item, index) => {
+        let header = item.querySelector("header");
+        header.addEventListener("click", () => {
+            item.classList.toggle("open");
 
-        let description = item.querySelector(".description");
-        if (item.classList.contains("open")) {
-            description.style.height =
-                `${description.scrollHeight}px`; //scrollHeight property returns the height of an element including padding , but excluding borders, scrollbar or margin
-            item.querySelector("i").classList.replace("fa-plus", "fa-minus");
-        } else {
-            description.style.height = "0px";
-            item.querySelector("i").classList.replace("fa-minus", "fa-plus");
-        }
-        removeOpen(index); //calling the funtion and also passing the index number of the clicked header
+            let description = item.querySelector(".description");
+            if (item.classList.contains("open")) {
+                description.style.height =
+                    `${description.scrollHeight}px`; //scrollHeight property returns the height of an element including padding , but excluding borders, scrollbar or margin
+                item.querySelector("i").classList.replace("fa-plus", "fa-minus");
+            } else {
+                description.style.height = "0px";
+                item.querySelector("i").classList.replace("fa-minus", "fa-plus");
+            }
+            removeOpen(index); //calling the funtion and also passing the index number of the clicked header
+        })
     })
-})
 
-function removeOpen(index1) {
-    accordionnContent.forEach((item2, index2) => {
-        if (index1 != index2) {
-            item2.classList.remove("open");
+    function removeOpen(index1) {
+        accordionnContent.forEach((item2, index2) => {
+            if (index1 != index2) {
+                item2.classList.remove("open");
 
-            let des = item2.querySelector(".description");
-            des.style.height = "0px";
-            item2.querySelector("i").classList.replace("fa-minus", "fa-plus");
-        }
-    })
-}
+                let des = item2.querySelector(".description");
+                des.style.height = "0px";
+                item2.querySelector("i").classList.replace("fa-minus", "fa-plus");
+            }
+        })
+    }
 </script>

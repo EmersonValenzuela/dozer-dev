@@ -339,30 +339,32 @@ if (addon_status('affiliate_course')) {
                     <input type="email" class="form-control form-correo" name="email" id="email" value="<?php echo $user_details['email']; ?>" disabled>
                 </div>
             </div>
+            <form action="<?php echo site_url('home/update_profile/update_email'); ?>" method="post">
             <div class="modal-body modal-boddy">
 
                 <div class=""><label class="text-white fw-600" for="FristName"><?php echo site_phrase('Nueva direccion de correo'); ?></label>
                 </div>
                 <div class="input-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese Nueva Direccion de Correo" value="<?php echo $user_details['nueva-direccion-correo']; ?>">
+                    <input type="email" class="form-control" name="new_email" id="new_email" placeholder="Ingrese Nueva Direccion de Correo" required>
                 </div>
                 <div class=""><label class="text-white fw-600" for="FristName"><?php echo site_phrase('Repita la nueva dirección de correo'); ?></label>
                 </div>
                 <div class="input-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese Nueva Direccion de Correo" value="<?php echo $user_details['nueva-direccion-correo']; ?>">
+                    <input type="email" class="form-control" name="confirm_email" id="confirm_email" placeholder="Ingrese Nueva Direccion de Correo" required>
                 </div>
 
                 <div><label class="text-white fw-600" for="current_password"><?php echo site_phrase('Confirmar contraseña'); ?></label>
                 </div>
                 <div class="input-group">
                     <span class="input-group-text"><i class="fas fa-key text-white"></i></span>
-                    <input type="password" class="form-control" id="current_password" name="current_password" placeholder="Ingrese contraseña">
+                    <input type="password" class="form-control" id="get_password" name="get_password" placeholder="Ingrese contraseña" required>
                 </div>
             </div>
             <div class="modal-footer">
 
-                <button type="button" class="btn btn-primary">Understood</button>
+                <button type="submit" class="btn btn-primary">Understood</button>
             </div>
+            </form>
         </div>
     </div>
 </div>

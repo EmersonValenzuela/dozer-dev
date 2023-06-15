@@ -935,5 +935,9 @@
     "regresar": "Regresar",
     "clases": "Clases",
     "materiales": "Materiales",
-    "mismatch_password": "Mismatch password"
+    "mismatch_password": "Mismatch password",
+    "email_duplication": "Email duplication",
+    "pago_existoso": "Pago existoso",
+    "student_edit": "Student edit",
+    "student_edit_form": "Student edit form"
 }

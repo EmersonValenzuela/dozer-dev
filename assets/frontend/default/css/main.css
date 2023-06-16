@@ -8204,3 +8204,10 @@ font-weight: bold;}
 .bg-triangle:after {
     border-color:transparent transparent #272727 !important;
 }
+.text-principal-repositorio{
+    font-size: 30px ;
+    font-weight: 700;
+    color: white;
+   margin-bottom: 20px;
+}
+

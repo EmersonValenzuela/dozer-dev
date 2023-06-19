@@ -877,5 +877,9 @@
     "confirmar_contraseña": "Confirmar contraseña",
     "mismatch_password": "La contraseña no coincide",
     "updated_successfully": "Actualizado con éxito",
-    "historial_de_compras": "Historial de compras"
+    "historial_de_compras": "Historial de compras",
+    "categoría": "Categoría",
+    "disponibilidad": "Disponibilidad",
+    "disponible": "Disponible",
+    "proximamente": "Proximamente"
 }

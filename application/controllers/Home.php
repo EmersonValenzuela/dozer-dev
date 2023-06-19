@@ -1453,10 +1453,9 @@ class Home extends CI_Controller
         $this->crud_model->course_purchase($user_id, 'mercado pago', $this->session->userdata('total_price_of_checking_out'));
         $this->email_model->course_purchase_notification($user_id, 'mercado pago', $this->session->userdata('total_price_of_checking_out'));
         $this->session->set_flashdata('flash_message', site_phrase('payment_successfully_done'));
-        $page_data['page_name'] = "pay_success";
-        $page_data['page_title'] = site_phrase('Pago Existoso');
+
         $this->session->set_userdata('cart_items', array());
-        $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
+        redirect('home/my_courses', 'refresh');
     }
     public function pay_fail()
     {

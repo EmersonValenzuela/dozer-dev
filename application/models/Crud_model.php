@@ -18,16 +18,16 @@ class Crud_model extends CI_Model
 
     public function auth_category($where)
     {
-      $this->db->select('*');
-      $this->db->from('category');
-      $this->db->where($where);
-      $this->db->limit(1);
-      $query = $this->db->get();
-      if ($query->num_rows() == 1) {
-        return $query->row();
-      } else {
-        return false;
-      }
+        $this->db->select('*');
+        $this->db->from('category');
+        $this->db->where($where);
+        $this->db->limit(1);
+        $query = $this->db->get();
+        if ($query->num_rows() == 1) {
+            return $query->row();
+        } else {
+            return false;
+        }
     }
 
     public function get_categoria($param1 = "")
@@ -227,7 +227,7 @@ class Crud_model extends CI_Model
         //     $this->db->where('creator', $user_id);
         // }
 
-        
+
 
         //revenue only showing on course creator panel
         if ($user_id > 0) {
@@ -761,18 +761,18 @@ class Crud_model extends CI_Model
         foreach ($course_media_files as $course_media => $size) {
             if ($_FILES[$course_media]['name'] != "") {
 
-                move_uploaded_file($_FILES[$course_media]['tmp_name'], 'uploads/thumbnails/course_thumbnails/' . $course_media . '_' . get_frontend_settings('theme') . '_' . $course_id .$data['last_modified']. '.jpg');
+                move_uploaded_file($_FILES[$course_media]['tmp_name'], 'uploads/thumbnails/course_thumbnails/' . $course_media . '_' . get_frontend_settings('theme') . '_' . $course_id . $data['last_modified'] . '.jpg');
 
-                if (file_exists('uploads/thumbnails/course_thumbnails/' . $course_media . '_' . get_frontend_settings('theme') . '_' . $course_id .$previous_last_modified. '.jpg')) {
-                    unlink('uploads/thumbnails/course_thumbnails/' . $course_media . '_' . get_frontend_settings('theme') . '_' . $course_id .$previous_last_modified. '.jpg');
+                if (file_exists('uploads/thumbnails/course_thumbnails/' . $course_media . '_' . get_frontend_settings('theme') . '_' . $course_id . $previous_last_modified . '.jpg')) {
+                    unlink('uploads/thumbnails/course_thumbnails/' . $course_media . '_' . get_frontend_settings('theme') . '_' . $course_id . $previous_last_modified . '.jpg');
                 }
 
-                if (file_exists('uploads/thumbnails/course_thumbnails/optimized/' . $course_media . '_' . get_frontend_settings('theme') . '_' . $course_id .$previous_last_modified. '.jpg')) {
-                    unlink('uploads/thumbnails/course_thumbnails/optimized/' . $course_media . '_' . get_frontend_settings('theme') . '_' . $course_id .$previous_last_modified. '.jpg');
+                if (file_exists('uploads/thumbnails/course_thumbnails/optimized/' . $course_media . '_' . get_frontend_settings('theme') . '_' . $course_id . $previous_last_modified . '.jpg')) {
+                    unlink('uploads/thumbnails/course_thumbnails/optimized/' . $course_media . '_' . get_frontend_settings('theme') . '_' . $course_id . $previous_last_modified . '.jpg');
                 }
-            }else{
-                if (file_exists('uploads/thumbnails/course_thumbnails/' . $course_media . '_' . get_frontend_settings('theme') . '_' . $course_id .$previous_last_modified. '.jpg')) {
-                    rename('uploads/thumbnails/course_thumbnails/' . $course_media . '_' . get_frontend_settings('theme') . '_' . $course_id .$previous_last_modified. '.jpg', 'uploads/thumbnails/course_thumbnails/' . $course_media . '_' . get_frontend_settings('theme') . '_' . $course_id .$data['last_modified']. '.jpg');
+            } else {
+                if (file_exists('uploads/thumbnails/course_thumbnails/' . $course_media . '_' . get_frontend_settings('theme') . '_' . $course_id . $previous_last_modified . '.jpg')) {
+                    rename('uploads/thumbnails/course_thumbnails/' . $course_media . '_' . get_frontend_settings('theme') . '_' . $course_id . $previous_last_modified . '.jpg', 'uploads/thumbnails/course_thumbnails/' . $course_media . '_' . get_frontend_settings('theme') . '_' . $course_id . $data['last_modified'] . '.jpg');
                 }
             }
         }
@@ -780,7 +780,7 @@ class Crud_model extends CI_Model
         $this->db->where('id', $course_id);
         $this->db->update('course', $data);
 
-        
+
 
         if ($data['status'] == 'active') {
             $this->session->set_flashdata('flash_message', get_phrase('course_updated_successfully'));
@@ -812,15 +812,15 @@ class Crud_model extends CI_Model
 
         $last_modified = $this->get_course_by_id($course_id)->row('last_modified');
 
-        if (file_exists('uploads/thumbnails/course_thumbnails/optimized/' . $type . '_' . get_frontend_settings('theme') . '_' . $course_id.$last_modified . '.jpg')) {
-            return base_url() . 'uploads/thumbnails/course_thumbnails/optimized/' . $type . '_' . get_frontend_settings('theme') . '_' . $course_id.$last_modified . '.jpg';
-        } elseif(file_exists('uploads/thumbnails/course_thumbnails/' . $type . '_' . get_frontend_settings('theme') . '_' . $course_id.$last_modified . '.jpg')) {
+        if (file_exists('uploads/thumbnails/course_thumbnails/optimized/' . $type . '_' . get_frontend_settings('theme') . '_' . $course_id . $last_modified . '.jpg')) {
+            return base_url() . 'uploads/thumbnails/course_thumbnails/optimized/' . $type . '_' . get_frontend_settings('theme') . '_' . $course_id . $last_modified . '.jpg';
+        } elseif (file_exists('uploads/thumbnails/course_thumbnails/' . $type . '_' . get_frontend_settings('theme') . '_' . $course_id . $last_modified . '.jpg')) {
 
             //resizeImage
-            resizeImage('uploads/thumbnails/course_thumbnails/' . $type . '_' . get_frontend_settings('theme') . '_' . $course_id.$last_modified . '.jpg', 'uploads/thumbnails/course_thumbnails/optimized/', 400);
+            resizeImage('uploads/thumbnails/course_thumbnails/' . $type . '_' . get_frontend_settings('theme') . '_' . $course_id . $last_modified . '.jpg', 'uploads/thumbnails/course_thumbnails/optimized/', 400);
 
-            return base_url() . 'uploads/thumbnails/course_thumbnails/' . $type . '_' . get_frontend_settings('theme') . '_' . $course_id.$last_modified . '.jpg';
-        }else{
+            return base_url() . 'uploads/thumbnails/course_thumbnails/' . $type . '_' . get_frontend_settings('theme') . '_' . $course_id . $last_modified . '.jpg';
+        } else {
             return base_url() . $course_media_placeholders[$type . '_placeholder'];
         }
     }
@@ -1210,7 +1210,7 @@ class Crud_model extends CI_Model
 
 
                 $video_upload = $this->academy_cloud_model->upload_video();
-                if($video_upload['success'] == false){
+                if ($video_upload['success'] == false) {
                     return json_encode(['error' => $video_upload['message']]);
                 }
 
@@ -1408,8 +1408,8 @@ class Crud_model extends CI_Model
 
 
         //video caption
-        if(isset($_FILES['caption']) && !empty($_FILES['caption']['name'])){
-            $data['caption'] = random(15).'.vtt';
+        if (isset($_FILES['caption']) && !empty($_FILES['caption']['name'])) {
+            $data['caption'] = random(15) . '.vtt';
             move_uploaded_file($_FILES['caption']['tmp_name'], 'uploads/lesson_files/captions/' . $data['caption']);
         }
 
@@ -1472,7 +1472,7 @@ class Crud_model extends CI_Model
 
 
                 $video_upload = $this->academy_cloud_model->update_video($previous_data['cloud_video_id']);
-                if($video_upload['success'] == false){
+                if ($video_upload['success'] == false) {
                     return json_encode(['error' => $video_upload['message']]);
                 }
 
@@ -1695,8 +1695,8 @@ class Crud_model extends CI_Model
 
 
         //video caption
-        if(isset($_FILES['caption']) && !empty($_FILES['caption']['name'])){
-            $data['caption'] = random(15).'.vtt';
+        if (isset($_FILES['caption']) && !empty($_FILES['caption']['name'])) {
+            $data['caption'] = random(15) . '.vtt';
             move_uploaded_file($_FILES['caption']['tmp_name'], 'uploads/lesson_files/captions/' . $data['caption']);
         }
 
@@ -1721,20 +1721,20 @@ class Crud_model extends CI_Model
         $user_id = $this->session->userdata('user_id');
         $previous_data = $this->db->get_where('lesson', array('id' => $lesson_id))->row_array();
 
-        if($previous_data['video_type'] == 'academy_cloud'){
+        if ($previous_data['video_type'] == 'academy_cloud') {
             $this->academy_cloud_model->delete_cloud_video($previous_data['cloud_video_id']);
         }
 
-        if($previous_data['lesson_type'] == 'video' && $previous_data['attachment_type'] == 'file' && $previous_data['video_type'] == 'system'){
+        if ($previous_data['lesson_type'] == 'video' && $previous_data['attachment_type'] == 'file' && $previous_data['video_type'] == 'system') {
             unlink(str_replace(base_url(), '', $previous_data['video_url']));
         }
 
 
         //update watch histories data
         $watch_history = $this->db->get_where('watch_histories', array('student_id' => $user_id, 'course_id' => $previous_data['course_id']));
-        if($watch_history->num_rows() > 0){
+        if ($watch_history->num_rows() > 0) {
             $data = array();
-            if($watch_history->row('watching_lesson_id') == $lesson_id){
+            if ($watch_history->row('watching_lesson_id') == $lesson_id) {
                 $data['watching_lesson_id'] = null;
             }
 
@@ -1745,12 +1745,11 @@ class Crud_model extends CI_Model
                 $data['completed_lesson'] = json_encode($completed_lesson_arr);
             }
 
-            if(count($data) > 0){
+            if (count($data) > 0) {
                 $this->db->where('student_id', $user_id);
                 $this->db->where('course_id', $previous_data['course_id']);
                 $this->db->update('watch_histories', $data);
             }
-
         }
 
         $this->db->where('id', $lesson_id);
@@ -1946,7 +1945,7 @@ class Crud_model extends CI_Model
         return $this->db->get('course')->result_array();
     }
 
-    public function get_4_course_category($limit,$where)
+    public function get_4_course_category($limit, $where)
     {
         $this->db->select("*");
         $this->db->limit($limit);
@@ -1970,10 +1969,10 @@ class Crud_model extends CI_Model
         $courses_id = $this->input->post('course_id');
         $users_id   = $this->input->post('user_id');
 
-        foreach($users_id as $user_id){
+        foreach ($users_id as $user_id) {
             $data['user_id'] = $user_id;
 
-            foreach($courses_id as $course_id){
+            foreach ($courses_id as $course_id) {
                 $data['course_id'] = $course_id;
 
                 if ($this->db->get_where('enrol', $data)->num_rows() == 0) {
@@ -1984,7 +1983,6 @@ class Crud_model extends CI_Model
         }
 
         $this->session->set_flashdata('flash_message', get_phrase('student_has_been_enrolled'));
-
     }
 
     public function shortcut_enrol_a_student_manually()
@@ -2040,6 +2038,9 @@ class Crud_model extends CI_Model
                 //param1 payment keys
                 $data['transaction_id'] = $param1;
             }
+            if ($method == 'mercado pago') {
+                $data['transaction_id'] = $_GET['payment_id'];
+            }
 
             $data['user_id'] = $user_id;
             $data['payment_type'] = $method;
@@ -2048,15 +2049,13 @@ class Crud_model extends CI_Model
 
             if ($course_details['discount_flag'] == 1) {
                 $data['amount'] = $course_details['discounted_price'];
-                if(addon_status('affiliate_course')  && $this->session->userdata('course_referee') != "" && $this->session->userdata('course_reffer_id')  )
-                {
+                if (addon_status('affiliate_course')  && $this->session->userdata('course_referee') != "" && $this->session->userdata('course_reffer_id')) {
                     $aff['buying_amount'] = $course_details['discounted_price']; // after discount ,he paid this price 
                     $aff['note'] = "discounted";
                 }
             } else {
                 $data['amount'] = $course_details['price'];
-                if(addon_status('affiliate_course')  && $this->session->userdata('course_referee') != "" && $this->session->userdata('course_reffer_id'))
-                {
+                if (addon_status('affiliate_course')  && $this->session->userdata('course_referee') != "" && $this->session->userdata('course_reffer_id')) {
                     $aff['buying_amount'] = $course_details['price'];
                     $aff['note'] = "actual price";
                 }
@@ -2069,26 +2068,23 @@ class Crud_model extends CI_Model
                 $data['amount'] = $data['amount'] - $discount;
                 $data['coupon'] = $applied_coupon;
 
-                if(addon_status('affiliate_course')  && $this->session->userdata('course_referee') != "" && $this->session->userdata('course_reffer_id'))
-                {
-                    $aff['buying_amount'] =$data['amount'];
+                if (addon_status('affiliate_course')  && $this->session->userdata('course_referee') != "" && $this->session->userdata('course_reffer_id')) {
+                    $aff['buying_amount'] = $data['amount'];
                     $aff['note'] = "coupon";
                 }
-
             }
 
-            if(addon_status('affiliate_course')  && $this->session->userdata('course_referee') != "" && $this->session->userdata('course_reffer_id'))
-            {
-                
-                $aff['affiliate_amount']=ceil(($aff['buying_amount'] *  get_settings('affiliate_addon_percentage')) / 100);
-                $data['amount']=$data['amount']-$aff['affiliate_amount'];
+            if (addon_status('affiliate_course')  && $this->session->userdata('course_referee') != "" && $this->session->userdata('course_reffer_id')) {
+
+                $aff['affiliate_amount'] = ceil(($aff['buying_amount'] *  get_settings('affiliate_addon_percentage')) / 100);
+                $data['amount'] = $data['amount'] - $aff['affiliate_amount'];
             }
 
 
             //TAX handling
-            if(get_settings('course_selling_tax') > 0){
-                $total_tax_on_courses_price = round(($data['amount']/100) * get_settings('course_selling_tax'), 2);
-            }else{
+            if (get_settings('course_selling_tax') > 0) {
+                $total_tax_on_courses_price = round(($data['amount'] / 100) * get_settings('course_selling_tax'), 2);
+            } else {
                 $total_tax_on_courses_price = 0;
             }
             $data['tax'] = $total_tax_on_courses_price;
@@ -2123,7 +2119,7 @@ class Crud_model extends CI_Model
                     $reffre_details = $this->affiliate_course_model->get_userby_id($reffre_details_for_aff_table['user_id']);
                     $course_affiliation['payment_id'] = $data['transaction_id'];
                     $course_affiliation['type'] = "course";
-                    $course_affiliation['actual_amount'] =$aff['buying_amount'];
+                    $course_affiliation['actual_amount'] = $aff['buying_amount'];
                     $course_affiliation['amount'] = $aff['affiliate_amount'];
                     $course_affiliation['note'] = $aff['note'];
                     $course_affiliation['course_id'] = $this->session->userdata('course_reffer_id');
@@ -2135,7 +2131,6 @@ class Crud_model extends CI_Model
                     $this->db->insert('course_affiliation', $course_affiliation);
                     $this->session->unset_userdata('course_referee');
                     $this->session->unset_userdata('course_reffer_id');
-
                 }
             endif;
             // course_addon end 
@@ -2972,7 +2967,7 @@ class Crud_model extends CI_Model
                 $this->load->model('addons/Certificate_model', 'certificate_model');
                 $this->certificate_model->check_certificate_eligibility($course_id, $user_id);
             }
-        }else{
+        } else {
             $total_lesson = $this->db->get_where('lesson', array('course_id' => $course_id))->num_rows();
             $course_progress = (100 / $total_lesson);
 
@@ -3118,7 +3113,7 @@ class Crud_model extends CI_Model
             $total_pending_amount = $total_pending_amount + $ebook_total_pending_amount;
         }
 
-        if(addon_status('tutor_booking')){
+        if (addon_status('tutor_booking')) {
             $this->db->select_sum('instructor_revenue');
             $this->db->where('tutor_id', $this->session->userdata('user_id'));
             $this->db->from('tutor_payment');
@@ -3441,7 +3436,7 @@ class Crud_model extends CI_Model
         }
 
         $course_details = $this->db->get_where('course', ['id' => $data['watched_course_id']])->row_array();
-        if($course_details['enable_drip_content'] != true){
+        if ($course_details['enable_drip_content'] != true) {
             return json_encode(array('lesson_id' => $data['watched_lesson_id'], 'course_progress' => null, 'is_completed' => null));
         }
 

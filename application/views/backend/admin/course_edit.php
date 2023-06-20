@@ -319,6 +319,14 @@ $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="form-group row mb-3">
+                                                    <div class="offset-md-2 col-md-10">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" name="is_soon" id="is_soon" value="1" <?php if ($course_details['is_soon'] == 'soon') echo 'checked'; ?>>
+                                                            <label class="custom-control-label" for="is_soon"><?php echo get_phrase('curso proximamente'); ?></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div> <!-- end col -->
                                         </div> <!-- end row -->
                                     </div> <!-- end tab pane -->

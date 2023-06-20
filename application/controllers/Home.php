@@ -167,6 +167,10 @@ class Home extends CI_Controller
         if (isset($_GET['rating']) && !empty($_GET['rating'])) {
             $selected_rating = $_GET['rating'];
         }
+        if(isset($_GET['availability']) && !empty($_GET['availability'])){
+            $availability = $_GET['availability'];
+
+        }
 
 
         if ($selected_category_id == "all" && $selected_price == "all" && $selected_level == 'all' && $selected_language == 'all' && $selected_rating == 'all') {
@@ -183,20 +187,20 @@ class Home extends CI_Controller
                 $this->db->where('course_type', 'general');
             }
             $this->db->where('status', 'active');
-            $page_data['courses'] = $this->db->get('course', $config['per_page'], $this->uri->segment(3))->result_array();
+            $page_data['courses'] = $this->db->get('course', $config['per_page'], $this->uri->segment(3),$availability)->result_array();
             $page_data['total_result'] = $total_rows;
         } else {
             $category_slug = isset($_GET['category']) ? $_GET['category'] : 'all';
 
-            $all_filtered_courses = $this->crud_model->filter_course($selected_category_id, $selected_price, $selected_level, $selected_language, $selected_rating)->num_rows();
+            $all_filtered_courses = $this->crud_model->filter_course($selected_category_id, $selected_price, $selected_level, $selected_language, $selected_rating,$availability)->num_rows();
             $config = array();
             $config = pagintaion($all_filtered_courses, 6);
             $config['base_url']  = site_url('home/courses/');
 
-            $config['suffix']  = '?category=' . $category_slug . '&price=' . $selected_price . '&level=' . $selected_level . '&language=' . $selected_language . '&rating=' . $selected_rating;
+            $config['suffix']  = '?category=' . $category_slug . '&price=' . $selected_price . '&level=' . $selected_level . '&language=' . $selected_language . '&rating=' . $selected_rating . '&availabilty='. $availability;
 
             $this->pagination->initialize($config);
-            $courses = $this->crud_model->filter_course($selected_category_id, $selected_price, $selected_level, $selected_language, $selected_rating, $config['per_page'], $this->uri->segment(3))->result_array();
+            $courses = $this->crud_model->filter_course($selected_category_id, $selected_price, $selected_level, $selected_language, $selected_rating, $config['per_page'], $this->uri->segment(3),$availability)->result_array();
             $page_data['courses'] = $courses;
             $page_data['total_result'] = count($courses);
         }
@@ -248,6 +252,7 @@ class Home extends CI_Controller
         $page_data['selected_level']     = $selected_level;
         $page_data['selected_language']     = $selected_language;
         $page_data['selected_rating']     = $selected_rating;
+        $page_data['selected_availability']    = $availability;
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 

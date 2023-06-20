@@ -573,7 +573,11 @@ class Crud_model extends CI_Model
         $data['date_added'] = strtotime(date('D, d-M-Y'));
         $data['section'] = json_encode(array());
         $data['is_top_course'] = $this->input->post('is_top_course');
-        $data['is_soon'] = $this->input->post('is_soon');
+        if (isset($_REQUEST['is_soon'])) {
+            $data['is_soon'] = 'soon';
+        } else {
+            $data['is_soon'] = 'available';
+        }
         $data['user_id'] = $this->session->userdata('user_id');
         $data['creator'] = $this->session->userdata('user_id');
         $data['meta_description'] = $this->input->post('meta_description');
@@ -706,7 +710,11 @@ class Crud_model extends CI_Model
         $data['discounted_price'] = $this->input->post('discounted_price');
         $data['level'] = $this->input->post('level');
         $data['video_url'] = $this->input->post('course_overview_url');
-
+        if (isset($_REQUEST['is_soon'])) {
+            $data['is_soon'] = 'soon';
+        } else {
+            $data['is_soon'] = 'available';
+        }
         $enable_drip_content = $this->input->post('enable_drip_content');
         if (isset($enable_drip_content) && $enable_drip_content) {
             $data['enable_drip_content'] = 1;
@@ -2412,7 +2420,7 @@ class Crud_model extends CI_Model
     }
 
     // version 1.4
-    function filter_course($selected_category_id = "", $selected_price = "", $selected_level = "", $selected_language = "", $selected_rating = "", $per_page = "", $uri_segment = "")
+    function filter_course($selected_category_id = "", $selected_price = "", $selected_level = "", $selected_language = "", $selected_rating = "", $per_page = "", $uri_segment = "", $availability = "")
     {
         //echo $selected_category_id.' '.$selected_price.' '.$selected_level.' '.$selected_language.' '.$selected_rating;
 
@@ -2437,6 +2445,9 @@ class Crud_model extends CI_Model
 
         if ($selected_level != "all") {
             $this->db->where('level', $selected_level);
+        }
+        if ($availability != null) {
+            $this->db->where('is_soon', $availability);
         }
 
         if ($selected_language != "all") {

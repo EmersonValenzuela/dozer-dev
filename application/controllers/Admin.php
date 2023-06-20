@@ -16,9 +16,6 @@ class Admin extends CI_Controller
         $this->user_model->check_session_data('admin');
     }
 
-
-
-
     public function index()
     {
         if ($this->session->userdata('admin_login') == true) {

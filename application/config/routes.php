@@ -101,6 +101,7 @@ $route['Docente'] = "home/docente";
 $route['Repositorio'] = "home/repositorio";
 $route['Ruta-de-Aprendizaje'] = "home/ruta";
 $route['Mentoria-bim'] = "home/mentoria";
+$route['Revit-arquitectura'] = "home/contentre";
 
 
 //End tutor booking

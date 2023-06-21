@@ -213,7 +213,6 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                                 <div class="d-inline-block mb-2">
                                     <span
                                         class="text-dark fw-800 text-muted ms-1 text-13px"><?php echo $this->crud_model->get_instructor_wise_course_ratings($instructor['id'], 'course')->num_rows() . ' ' . site_phrase('reviews'); ?></span>
-                                    |
                                     <span class="text-dark fw-800 text-13px text-muted mx-1">
                                         <?php $course_ids = $this->crud_model->get_instructor_wise_courses($instructor['id'], 'simple_array');
                         $this->db->select('user_id');

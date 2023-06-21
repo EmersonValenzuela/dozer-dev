@@ -110,6 +110,17 @@ class Home extends CI_Controller
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
+    public function contentre()
+    {
+        $page_data['page_name'] = "conted_repositorio";
+        $page_data['page_title'] = site_phrase('Revit-arquitectura');
+
+
+        $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
+    }
+
+
+
     public function reclamacion()
     {
         $page_data['page_name'] = "reclamaciones";

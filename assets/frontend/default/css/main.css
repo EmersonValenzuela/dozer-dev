@@ -8211,3 +8211,24 @@ font-weight: bold;}
    margin-bottom: 20px;
 }
 
+.titulo-r{
+ color: #C9C9C9;
+ font-weight: 600;
+}
+.curso-r{ 
+    color: #C9C9C9;
+font-weight: lighter;}
+.autor-r{ 
+    color: #C9C9C9;
+    font-weight: 600;}
+.nombre-autor-r{ 
+    color: #C9C9C9;
+    font-weight: lighter;}
+.btn-verdoc{
+    background: white ;
+    color: #222222;
+    border-radius: 7px;
+    padding: 5px 10px;
+    font-weight: 700;
+    
+}

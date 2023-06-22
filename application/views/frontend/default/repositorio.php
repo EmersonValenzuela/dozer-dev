@@ -1,6 +1,10 @@
-<?php if(get_frontend_settings('recaptcha_status')): ?>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<?php endif; ?>
+<?php
+isset($type_doc) ? "" : $type_doc = "all";
+isset($area_inv) ? "" : $area_inv = "all";
+isset($datedoc) ? "" : $datedoc = "all";
+
+?>
+
 <section class="container-xl">
     <div class="my-5">
         <h2 class="text-principal-repositorio">
@@ -25,25 +29,16 @@
                         <ul class="text-white p-3 subcategory_nomb">
                             <li>
                                 <div class="">
-                                    <input type="radio" id="alldoc" name="type-doc" class="type-doc custom-radio "
-                                        value="alldoc" onclick="filter(this)"
-                                        <?php if ($selected_availability == 'alldoc') echo 'checked'; ?>>
-                                    <label class="text-white my-1 mx-3 fs-15px"
-                                        for="alldoc"><?php echo site_phrase('Todos los Documentos'); ?></label>
+                                    <input type="radio" id="all" name="type_doc" class="type_doc custom-radio " value="all" onclick="filter(this)" <?php if ($type_doc == 'all') echo 'checked'; ?>>
+                                    <label class="text-white my-1 mx-3 fs-15px" for="all"><?php echo site_phrase('Todos los Documentos'); ?></label>
                                 </div>
                                 <div class="">
-                                    <input type="radio" id="docacademy" name="type-doc" class="type-doc custom-radio"
-                                        value="docacademy" onclick="filter(this)"
-                                        <?php if ($selected_availability == 'docacademy') echo 'checked'; ?>>
-                                    <label class="text-white my-1 mx-3 fs-15px"
-                                        for="docacademy"><?php echo site_phrase('Trabajo Académico'); ?></label>
+                                    <input type="radio" id="docacademy" name="type_doc" class="type_doc custom-radio" value="docacademy" onclick="filter(this)" <?php if ($type_doc == 'docacademy') echo 'checked'; ?>>
+                                    <label class="text-white my-1 mx-3 fs-15px" for="docacademy"><?php echo site_phrase('Trabajo Académico'); ?></label>
                                 </div>
                                 <div class="">
-                                    <input type="radio" id="docinvestigation" name="type-doc"
-                                        class="type-doc custom-radio" value="docinvestigation" onclick="filter(this)"
-                                        <?php if ($selected_availability == 'docinvestigation') echo 'checked'; ?>>
-                                    <label class="text-white my-1 mx-3 fs-15px"
-                                        for="docinvestigation"><?php echo site_phrase('Trabajo de Investigación'); ?></label>
+                                    <input type="radio" id="docinvestigation" name="type_doc" class="type_doc custom-radio" value="docinvestigation" onclick="filter(this)" <?php if ($type_doc == 'docinvestigation') echo 'checked'; ?>>
+                                    <label class="text-white my-1 mx-3 fs-15px" for="docinvestigation"><?php echo site_phrase('Trabajo de Investigación'); ?></label>
                                 </div>
                             </li>
                         </ul>
@@ -54,33 +49,20 @@
                         <ul class="text-white p-3 subcategory_nomb">
                             <li>
                                 <div class="">
-                                    <input type="radio" id="allareas" name="investigationarea"
-                                        class="investigationarea custom-radio " value="allareas" onclick="filter(this)"
-                                        <?php if ($selected_availability == 'allareas') echo 'checked'; ?>>
-                                    <label class="text-white my-1 mx-3 fs-15px"
-                                        for="allareas"><?php echo site_phrase('Todas las areas'); ?></label>
+                                    <input type="radio" id="all" name="area" class="area custom-radio " value="all" onclick="filter(this)" <?php if ($area_inv == 'all') echo 'checked'; ?>>
+                                    <label class="text-white my-1 mx-3 fs-15px" for="all"><?php echo site_phrase('Todas las areas'); ?></label>
                                 </div>
                                 <div class="">
-                                    <input type="radio" id="bim" name="investigationarea"
-                                        class="investigationarea custom-radio" value="bim" onclick="filter(this)"
-                                        <?php if ($selected_availability == 'bim') echo 'checked'; ?>>
-                                    <label class="text-white my-1 mx-3 fs-15px"
-                                        for="bim"><?php echo site_phrase('BIM'); ?></label>
+                                    <input type="radio" id="BIM" name="area" class="area custom-radio" value="BIM" onclick="filter(this)" <?php if ($area_inv == 'BIM') echo 'checked'; ?>>
+                                    <label class="text-white my-1 mx-3 fs-15px" for="BIM"><?php echo site_phrase('BIM'); ?></label>
                                 </div>
                                 <div class="">
-                                    <input type="radio" id="arqui" name="investigationarea"
-                                        class="investigationarea custom-radio" value="arqui" onclick="filter(this)"
-                                        <?php if ($selected_availability == 'arqui') echo 'checked'; ?>>
-                                    <label class="text-white my-1 mx-3 fs-15px"
-                                        for="arqui"><?php echo site_phrase('Arquitectura'); ?></label>
+                                    <input type="radio" id="Arquitectura" name="area" class="area custom-radio" value="Arquitectura" onclick="filter(this)" <?php if ($area_inv == 'Arquitectura') echo 'checked'; ?>>
+                                    <label class="text-white my-1 mx-3 fs-15px" for="Arquitectura"><?php echo site_phrase('Arquitectura'); ?></label>
                                 </div>
                                 <div class="">
-                                    <input type="radio" id="civilengineering" name="investigationarea"
-                                        class="investigationarea custom-radio" value="civilengineering"
-                                        onclick="filter(this)"
-                                        <?php if ($selected_availability == 'civilengineering') echo 'checked'; ?>>
-                                    <label class="text-white my-1 mx-3 fs-15px"
-                                        for="civilengineering"><?php echo site_phrase('Ingeniería Civil'); ?></label>
+                                    <input type="radio" id="Ingeniería Civil" name="area" class="area custom-radio" value="Ingeniería Civil" onclick="filter(this)" <?php if ($area_inv == 'Ingeniería Civil') echo 'checked'; ?>>
+                                    <label class="text-white my-1 mx-3 fs-15px" for="Ingeniería Civil"><?php echo site_phrase('Ingeniería Civil'); ?></label>
                                 </div>
                             </li>
                         </ul>
@@ -92,60 +74,77 @@
                         <ul class="text-white p-3 subcategory_nomb">
                             <li>
                                 <div class="">
-                                    <input type="radio" id="alldate" name="datedoc" class="datedoc custom-radio "
-                                        value="alldate" onclick="filter(this)"
-                                        <?php if ($selected_availability == 'alldate') echo 'checked'; ?>>
-                                    <label class="text-white my-1 mx-3 fs-15px"
-                                        for="alldate"><?php echo site_phrase('Todas las fechas'); ?></label>
+                                    <input type="radio" id="all" name="datedoc" class="datedoc custom-radio " value="all" onclick="filter(this)" <?php if ($datedoc == 'all') echo 'checked'; ?>>
+                                    <label class="text-white my-1 mx-3 fs-15px" for="all"><?php echo site_phrase('Todas las fechas'); ?></label>
                                 </div>
                                 <div class="">
-                                    <input type="radio" id="one" name="datedoc" class="datedoc custom-radio" value="one"
-                                        onclick="filter(this)"
-                                        <?php if ($selected_availability == 'one') echo 'checked'; ?>>
-                                    <label class="text-white my-1 mx-3 fs-15px"
-                                        for="one"><?php echo site_phrase('2023-2024'); ?></label>
+                                    <input type="radio" id="one" name="datedoc" class="datedoc custom-radio" value="one" onclick="filter(this)" <?php if ($datedoc == 'one') echo 'checked'; ?>>
+                                    <label class="text-white my-1 mx-3 fs-15px" for="one"><?php echo site_phrase('2023-2024'); ?></label>
                                 </div>
 
 
                             </li>
                         </ul>
                     </div>
-
-
-
-
-
-
                 </div>
             </div>
             <div class="col-8">
                 <div class="d-flex flex-column mb-3">
-                    <div class="d-flex flex-row mb-3 ms-5">
-                        <div><img src="<?= base_url() ?>uploads/system/img-repositorio.png" alt=""></div>
-                        <div class="d-flex flex-column mb-3 ms-5">
-                            <p  class="titulo-r"> Título</p>
-                            <p class="curso-r">Revit Arquitectura Primeros Pasos</p>
-                            <p class="autor-r">Autor(es)</p>
-                            <p class="nombre-autor-r">Walter Stwen Gomez Cacha</p>
-                            <p class="autor-r">tipo de documento </p>
-                            <p class="nombre-autor-r">Trabajo Academico</p>
-                          <div class="my-3 "><a class="btn-verdoc" href="<?php echo base_url('Revit-arquitectura') ?>">Ver documento</a> </div>  
+                    <?php
+                    foreach ($repositories->result_array() as $key => $repository) : ?>
+
+                        <div class="d-flex flex-row mb-3 ms-5">
+                            <div><img src="<?= base_url() ?>uploads/repositories/<?= $repository['cover_image'] ?>" alt=""></div>
+                            <div class="d-flex flex-column mb-3 ms-5">
+                                <p class="titulo-r">Titulo</p>
+                                <p class="curso-r"><?= $repository['title'] ?></p>
+                                <p class="autor-r">Autor(es)</p>
+                                <p class="nombre-autor-r"><?= $repository['author'] ?></p>
+                                <p class="autor-r">tipo de documento </p>
+                                <p class="nombre-autor-r"><?= $repository['document_type'] ?></p>
+                                <p class="autor-r">Área de Investigación</p>
+                                <p class="nombre-autor-r"><?= $repository['investigation'] ?></p>
+                                <div class="my-3 "><a target="_blank" class="btn-verdoc" href="<?php echo base_url('uploads/repositories/' . $repository['document']) ?>">Ver documento</a> </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-flex flex-row mt-5 mb-3 ms-5">
-                        <div><img src="<?= base_url() ?>uploads/system/img-repositorio.png" alt=""></div>
-                        <div class="d-flex flex-column mb-3 ms-5">
-                            <p  class="titulo-r"> Título</p>
-                            <p class="curso-r">Modelado de una Vivienda</p>
-                            <p class="autor-r">Autor(es)</p>
-                            <p class="nombre-autor-r">Mario Alberto Casero Perez</p>
-                            <p class="autor-r">tipo de documento </p>
-                            <p class="nombre-autor-r">Proyecto</p>
-                          <div class="my-3 "><a class="btn-verdoc" href="#">Ver documento</a> </div>  
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
+
                     <div class="d-flex flex-row mb-3">Flex item 3</div>
                 </div>
             </div>
         </div>
 </section>
+<script type="text/javascript">
+    function get_url() {
+        var urlPrefix = '<?php echo site_url('Repositorio?'); ?>'
+        var urlSuffix = "";
+        var type_doc = "";
+        var area_investi = "";
+        var datedoc = "";
+
+        // Get selected category
+        $('.type_doc:checked').each(function() {
+            type_doc = $(this).attr('value');
+        });
+
+        // Get selected price
+        $('.area:checked').each(function() {
+            area_investi = $(this).attr('value');
+        });
+
+        // Get selected difficulty Level
+        $('.datedoc:checked').each(function() {
+            datedoc = $(this).attr('value');
+        });
+
+        urlSuffix = "tipo_documento=" + type_doc + "&&area_investigacion=" + area_investi + "&&fecha_investigacion=" + datedoc;
+        var url = urlPrefix + urlSuffix;
+        return url;
+    }
+
+    function filter() {
+        var url = get_url();
+        window.location.replace(url);
+        //
+    }
+</script>

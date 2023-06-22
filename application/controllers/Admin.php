@@ -33,7 +33,24 @@ class Admin extends CI_Controller
         $page_data['page_title'] = get_phrase('dashboard');
         $this->load->view('backend/index.php', $page_data);
     }
-
+    public function repository($param1 = "",  $param2 = "")
+    {
+        if ($param1 == 'add') {
+            $this->crud_model->add_repository();
+            $this->session->set_flashdata('flash_message', get_phrase('repository_added_successfully'));
+            redirect(site_url('admin/repository'), 'refresh');
+        }
+        $page_data['repositories'] = $this->crud_model->get_repositories();
+        $page_data['page_title'] = get_phrase('Repositorios');
+        $page_data['page_name'] = 'repository';
+        $this->load->view('backend/index', $page_data);
+    }
+    public function add_repository()
+    {
+        $page_data['page_title'] = get_phrase('Agregar Repositorio');
+        $page_data['page_name'] = 'repository_add';
+        $this->load->view('backend/index', $page_data);
+    }
     public function categoria($param1 = "", $param2 = "")
     {
         if ($this->session->userdata('admin_login') != true) {

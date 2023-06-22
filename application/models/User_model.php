@@ -45,6 +45,7 @@ class User_model extends CI_Model
         }
         return $this->db->get('users');
     }
+    
 
     public function add_user($is_instructor = false, $is_admin = false)
     {

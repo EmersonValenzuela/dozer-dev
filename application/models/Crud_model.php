@@ -3630,6 +3630,15 @@ class Crud_model extends CI_Model
         $this->db->order_by('blog_id', 'desc');
         return $this->db->get('blogs');
     }
+    function get_repositories($repository_id = "")
+    {
+        if ($repository_id > 0) {
+            $this->db->where('id', $repository_id);
+        }
+        $this->db->order_by('id', 'desc');
+        return $this->db->get('repository');
+    }
+
 
     function get_active_blogs($blog_id = "")
     {
@@ -3770,6 +3779,28 @@ class Crud_model extends CI_Model
         }
 
         $this->db->insert('blogs', $data);
+    }
+
+    function add_repository()
+    {
+        $data['title'] = htmlspecialchars($this->input->post('title'));
+        $data['document_type'] = htmlspecialchars($this->input->post('document_type'));
+        $data['investigation'] = htmlspecialchars($this->input->post('investigation'));
+        $data['date_admission'] = date("d-m-Y");
+        $data['author'] = htmlspecialchars($this->input->post('author'));
+
+        if ($_FILES['banner']['name'] != "") {
+            $data['cover_image'] = md5(rand(10000000, 20000000)) . '.png';
+            move_uploaded_file($_FILES['banner']['tmp_name'], 'uploads/repositories/' . $data['cover_image']);
+        }
+        $name = date('dmYhis') . '_' . rand(0, 99999) . "." . pathinfo($_FILES['user_image']['name'], PATHINFO_EXTENSION);
+
+        $data['document'] =  $name;
+        if (isset($_FILES['user_image']) && $_FILES['user_image']['name'] != "") {
+            move_uploaded_file($_FILES['user_image']['tmp_name'], 'uploads/repositories/' . $name);
+            $this->session->set_flashdata('flash_message', get_phrase('user_update_successfully'));
+        }
+        $this->db->insert('repository', $data);
     }
 
     function update_blog($blog_id = "")

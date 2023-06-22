@@ -28,17 +28,17 @@
                         <label for="document_type">Tipo de Documento</label>
                         <select class="form-control select2" data-toggle="select2" name="document_type" id="document_type" required>
                             <option value="">Seleccione un Tipo de Documento</option>
-                            <option value="Trabajo académico">Trabajo académico</option>
-                            <option value="Trabajo de investigación">Trabajo de investigación</option>
+                            <option value="academic">Trabajo académico</option>
+                            <option value="investigation">Trabajo de investigación</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="investigation">Área de investigación</label>
                         <select class="form-control select2" data-toggle="select2" name="investigation" id="investigation" required>
                             <option value="">Seleccione un Area de Investigación</option>
-                            <option value="BIM">BIM</option>
-                            <option value="Arquitectura">Arquitectura</option>
-                            <option value="Ingeniería Civi">Ingeniería Civi</option>
+                            <option value="bim">BIM</option>
+                            <option value="architecture">Arquitectura</option>
+                            <option value="civil_engineering">Ingeniería Civi</option>
                         </select>
                     </div>
                     <div class="form-group row mb-3">

@@ -1,9 +1,3 @@
-<?php
-isset($type_doc) ? "" : $type_doc = "all";
-isset($area_inv) ? "" : $area_inv = "all";
-isset($datedoc) ? "" : $datedoc = "all";
-
-?>
 
 <section class="container-xl">
     <div class="my-5">
@@ -16,6 +10,7 @@ isset($datedoc) ? "" : $datedoc = "all";
             Dozer, así como los documentos científicos y técnicos de convenios interinstitucionales. En tal sentido, la
             mayor parte del contenido se encuentra en acceso abierto con licencias pertinentes de protección de derechos
             de autor.</p>
+            <p class="text-white"><?php echo $datedoc?></p>
     </div>
     <div class="container-xl">
         <div class="row">
@@ -29,16 +24,16 @@ isset($datedoc) ? "" : $datedoc = "all";
                         <ul class="text-white p-3 subcategory_nomb">
                             <li>
                                 <div class="">
-                                    <input type="radio" id="all" name="type_doc" class="type_doc custom-radio " value="all" onclick="filter(this)" <?php if ($type_doc == 'all') echo 'checked'; ?>>
-                                    <label class="text-white my-1 mx-3 fs-15px" for="all"><?php echo site_phrase('Todos los Documentos'); ?></label>
+                                    <input type="radio" id="allt" name="type_doc" class="type_doc custom-radio " value="allt" onclick="filter(this)" <?php if ($type_doc == 'allt') echo 'checked'; ?>>
+                                    <label class="text-white my-1 mx-3 fs-15px" for="allt"><?php echo site_phrase('Todos los Documentos'); ?></label>
                                 </div>
                                 <div class="">
-                                    <input type="radio" id="docacademy" name="type_doc" class="type_doc custom-radio" value="docacademy" onclick="filter(this)" <?php if ($type_doc == 'docacademy') echo 'checked'; ?>>
-                                    <label class="text-white my-1 mx-3 fs-15px" for="docacademy"><?php echo site_phrase('Trabajo Académico'); ?></label>
+                                    <input type="radio" id="academic" name="type_doc" class="type_doc custom-radio" value="academic" onclick="filter(this)" <?php if ($type_doc == 'academic') echo 'checked'; ?>>
+                                    <label class="text-white my-1 mx-3 fs-15px" for="academic"><?php echo site_phrase('Trabajo Académico'); ?></label>
                                 </div>
                                 <div class="">
-                                    <input type="radio" id="docinvestigation" name="type_doc" class="type_doc custom-radio" value="docinvestigation" onclick="filter(this)" <?php if ($type_doc == 'docinvestigation') echo 'checked'; ?>>
-                                    <label class="text-white my-1 mx-3 fs-15px" for="docinvestigation"><?php echo site_phrase('Trabajo de Investigación'); ?></label>
+                                    <input type="radio" id="investigation" name="type_doc" class="type_doc custom-radio" value="investigation" onclick="filter(this)" <?php if ($type_doc == 'investigation') echo 'checked'; ?>>
+                                    <label class="text-white my-1 mx-3 fs-15px" for="investigation"><?php echo site_phrase('Trabajo de Investigación'); ?></label>
                                 </div>
                             </li>
                         </ul>
@@ -49,20 +44,20 @@ isset($datedoc) ? "" : $datedoc = "all";
                         <ul class="text-white p-3 subcategory_nomb">
                             <li>
                                 <div class="">
-                                    <input type="radio" id="all" name="area" class="area custom-radio " value="all" onclick="filter(this)" <?php if ($area_inv == 'all') echo 'checked'; ?>>
-                                    <label class="text-white my-1 mx-3 fs-15px" for="all"><?php echo site_phrase('Todas las areas'); ?></label>
+                                    <input type="radio" id="alla" name="area" class="area custom-radio " value="alla" onclick="filter(this)" <?php if ($area_inv == 'alla') echo 'checked'; ?>>
+                                    <label class="text-white my-1 mx-3 fs-15px" for="alla"><?php echo site_phrase('Todas las areas'); ?></label>
                                 </div>
                                 <div class="">
-                                    <input type="radio" id="BIM" name="area" class="area custom-radio" value="BIM" onclick="filter(this)" <?php if ($area_inv == 'BIM') echo 'checked'; ?>>
-                                    <label class="text-white my-1 mx-3 fs-15px" for="BIM"><?php echo site_phrase('BIM'); ?></label>
+                                    <input type="radio" id="bim" name="area" class="area custom-radio" value="bim" onclick="filter(this)" <?php if ($area_inv == 'bim') echo 'checked'; ?>>
+                                    <label class="text-white my-1 mx-3 fs-15px" for="bim"><?php echo site_phrase('BIM'); ?></label>
                                 </div>
                                 <div class="">
-                                    <input type="radio" id="Arquitectura" name="area" class="area custom-radio" value="Arquitectura" onclick="filter(this)" <?php if ($area_inv == 'Arquitectura') echo 'checked'; ?>>
-                                    <label class="text-white my-1 mx-3 fs-15px" for="Arquitectura"><?php echo site_phrase('Arquitectura'); ?></label>
+                                    <input type="radio" id="architecture" name="area" class="area custom-radio" value="architecture" onclick="filter(this)" <?php if ($area_inv == 'architecture') echo 'checked'; ?>>
+                                    <label class="text-white my-1 mx-3 fs-15px" for="architecture"><?php echo site_phrase('Arquitectura'); ?></label>
                                 </div>
                                 <div class="">
-                                    <input type="radio" id="Ingeniería Civil" name="area" class="area custom-radio" value="Ingeniería Civil" onclick="filter(this)" <?php if ($area_inv == 'Ingeniería Civil') echo 'checked'; ?>>
-                                    <label class="text-white my-1 mx-3 fs-15px" for="Ingeniería Civil"><?php echo site_phrase('Ingeniería Civil'); ?></label>
+                                    <input type="radio" id="civil_engineering" name="area" class="area custom-radio" value="civil_engineering" onclick="filter(this)" <?php if ($area_inv == 'civil_engineering') echo 'checked'; ?>>
+                                    <label class="text-white my-1 mx-3 fs-15px" for="civil_engineering"><?php echo site_phrase('Ingeniería Civil'); ?></label>
                                 </div>
                             </li>
                         </ul>
@@ -88,10 +83,12 @@ isset($datedoc) ? "" : $datedoc = "all";
                     </div>
                 </div>
             </div>
+
             <div class="col-8">
-                <div class="d-flex flex-column mb-3">
+
+                <div class="d-flex flex-column mb-3"></div>
                     <?php
-                    foreach ($repositories->result_array() as $key => $repository) : ?>
+                    foreach ($repositories as $key => $repository) : ?>
 
                         <div class="d-flex flex-row mb-3 ms-5">
                             <div><img src="<?= base_url() ?>uploads/repositories/<?= $repository['cover_image'] ?>" alt=""></div>
@@ -108,15 +105,21 @@ isset($datedoc) ? "" : $datedoc = "all";
                             </div>
                         </div>
                     <?php endforeach; ?>
-
                     <div class="d-flex flex-row mb-3">Flex item 3</div>
                 </div>
             </div>
+            <nav>
+                <?php
+                // if ($selected_category_id == "all" && $selected_price == 0 && $selected_level == 'all' && $selected_language == 'all' && $selected_rating == 'all') {
+                echo $this->pagination->create_links();
+                //} 
+                ?>
+            </nav>
         </div>
 </section>
 <script type="text/javascript">
     function get_url() {
-        var urlPrefix = '<?php echo site_url('Repositorio?'); ?>'
+        var urlPrefix = '<?php echo site_url('repositorio?'); ?>'
         var urlSuffix = "";
         var type_doc = "";
         var area_investi = "";
@@ -137,7 +140,7 @@ isset($datedoc) ? "" : $datedoc = "all";
             datedoc = $(this).attr('value');
         });
 
-        urlSuffix = "tipo_documento=" + type_doc + "&&area_investigacion=" + area_investi + "&&fecha_investigacion=" + datedoc;
+        urlSuffix = "document=" + type_doc + "&&areain=" + area_investi + "&&datein=" + datedoc;
         var url = urlPrefix + urlSuffix;
         return url;
     }

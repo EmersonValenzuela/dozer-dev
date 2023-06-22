@@ -2483,6 +2483,22 @@ class Crud_model extends CI_Model
             return $this->db->get('course');
         }
     }
+    function filter_repositories($type_doc = "", $area_inv = "", $datedoc = "")
+    {
+        //echo $selected_category_id.' '.$selected_price.' '.$selected_level.' '.$selected_language.' '.$selected_rating;
+
+        if ($type_doc != "allt") {
+            $this->db->where('document_type', $type_doc);
+        }
+        if ($area_inv != "alla") {
+            $this->db->where('investigation', $area_inv);
+        }
+
+        if ($datedoc != "all") {
+            $this->db->where('date_admission', $datedoc);
+        }
+        return $this->db->get('repository')->result_array();
+    }
 
     public function get_courses($category_id = "", $sub_category_id = "", $instructor_id = 0)
     {
@@ -2537,6 +2553,7 @@ class Crud_model extends CI_Model
         }
         return $this->db->get('course')->result_array();
     }
+
 
     public function sort_section($section_json)
     {
@@ -3636,7 +3653,7 @@ class Crud_model extends CI_Model
             $this->db->where('id', $repository_id);
         }
         $this->db->order_by('id', 'desc');
-        return $this->db->get('repository');
+        return $this->db->get('repository')->result_array();
     }
 
 

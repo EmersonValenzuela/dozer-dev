@@ -44,7 +44,7 @@
                         <span>Docente</span>
 
                     </a>
-                    <a href="javascript:;" class="py-2 text-wrap d-flex text-white bg-colorc" onclick="redirect_to('<?php echo base_url('Repositorio?tipo_documento=all&&area_investigacion=all&&fecha_investigacion=all') ?>')">
+                    <a href="javascript:;" class="py-2 text-wrap d-flex text-white bg-colorc" onclick="redirect_to('<?php echo base_url('repositorio?document=allt&&areain=alla&&datein=all') ?>')">
 
 
                         <span>Repositorio</span>

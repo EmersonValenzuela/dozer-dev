@@ -74,7 +74,31 @@ class Home extends CI_Controller
     }
     public function repositorio()
     {
-        $page_data['repositories'] = $this->crud_model->get_repositories();
+        $type_doc = "allt";
+        $area_inv = "alla";
+        $datedoc = "all";
+
+        if (isset($_GET['document']) && !empty($_GET['document'])) {
+            $type_doc = $_GET['document'];
+        }
+        if (isset($_GET['areain']) && !empty($_GET['areain'])) {
+            $area_inv = $_GET['areain'];
+        }
+        if (isset($_GET['datein']) && !empty($_GET['datein'])) {
+            $datedoc = $_GET['datein'];
+        }
+
+        if ($type_doc  == "allt" && $area_inv  == "alla" && $datedoc  == "all") {
+            $page_data['repositories'] = $this->crud_model->get_repositories();
+        } else {
+            $repositories = $this->crud_model->filter_repositories($type_doc, $area_inv, $datedoc);
+            $page_data['repositories'] = $repositories;
+
+        }
+        $page_data['type_doc'] = $type_doc;
+        $page_data['area_inv'] = $area_inv;
+        $page_data['datedoc'] =  $datedoc;
+
         $page_data['page_name'] = "repositorio";
         $page_data['page_title'] = site_phrase('Repositorio');
 

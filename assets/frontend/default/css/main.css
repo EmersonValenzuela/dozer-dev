@@ -1821,7 +1821,7 @@ course sidebar
 .course-sidebar.fixed {
     position: fixed;
     margin-top: 0;
-    width: 350px;
+    width: 25%;
 }
 .course-sidebar.fixed .preview-video-box,
 .course-sidebar.bottom .preview-video-box{
@@ -2034,9 +2034,9 @@ course content
     padding-bottom: 30px;
 }
 .description-box {
-    max-height: 260px;
+   /* max-height: 260px;*/
     margin-top: 10px;
-    margin-bottom: 40px;
+   /* margin-bottom: 40px; */
 }
 .description-box ul{
     list-style: disc;
@@ -5987,11 +5987,12 @@ background: linear-gradient(90deg, rgba(28,28,28,1) 50%, rgba(20,20,20,1) 50%);
     color: white;
     font-size: 1.5rem;
     font-weight: 700;
+    border-bottom: 2px solid;
     
 }
 .about-directora-subtitle{
     color: white;
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: lighter;
     
 }
@@ -6012,6 +6013,10 @@ background: linear-gradient(90deg, rgba(28,28,28,1) 50%, rgba(20,20,20,1) 50%);
     border: solid transparent;
     color: white;
     border-radius: 7px;
+    padding: 0 30px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
 }
 .fondo-certificado-cursos{
     background: #373737;
@@ -8231,4 +8236,37 @@ font-weight: lighter;}
     padding: 5px 10px;
     font-weight: 700;
     
+}
+.text-objetivo{
+    font-weight: 200;
+    font-size: 18px;
+   text-align: justify;
+}
+.text-subtitutlo{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.titulos-contcursos{
+    
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.text-listbeneficios{
+    font-weight: 200;
+    font-size: 18px;
+}
+.w-85{
+    width: 85%;    
+}
+.img-barcelona{
+    width: 15rem;
+    position: relative;
+    left: 48px;
+    
+}
+
+.resumeninfo{
+    top: 10rem;
+    position: relative;
 }

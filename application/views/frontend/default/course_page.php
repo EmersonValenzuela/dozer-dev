@@ -7,59 +7,80 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
 
 
 <section class="course-content-area">
-    <div class="container-xl">
-        <div class="row align-items-end">
-            <div class="col-lg-8">
-                <div class="course-header-wrap mt-5">
-                    <h1 class="title text-white"><?php echo $course_details['title']; ?></h1>
-                    <p class="text-white">Dirigido a Estudiantes, Técnicos, bachilleres y profesionales de las carreras
-                        de Ingeniería Civil
-                        y Arquitectura que deseen especializarse en la metodología BIM. </p>
-                    <p class="subtitle"><?php echo $course_details['short_description']; ?></p>
 
-                </div>
-            </div>
-          
-        </div>
-    </div>
     <div class="container-xl">
         <div class="row">
 
-            <div class="col-lg-8 order-last order-lg-first radius-10  ">
+            <div class="col-lg-8 order-last pe-5 order-lg-first radius-10  ">
 
                 <div class="description-box view-more-parent">
 
                     <div class="rating-row">
+                        <div class="course-header-wrap mt-5">
+                            <h1 class="title text-white"><?php echo $course_details['title']; ?></h1>
+                            <p class="text-white text-subtitutlo">Dirigido a Estudiantes, Técnicos, bachilleres y
+                                profesionales de las carreras
+                                de Ingeniería Civil
+                                y Arquitectura que deseen especializarse en la metodología BIM. </p>
+                            <p class="subtitle"><?php echo $course_details['short_description']; ?></p>
+
+                        </div>
                         <div class="text-white">
-                            <p class="fw-bold text-15px">OBJETIVOS DE APRENDIZAJE</p>
-                            <p class="fw-200 text-15px">El objetivo principal del programa es proporcionarle al
-                                participante las herramientas y
-                                habilidades para implementar la metodología BIM a
-                                <?php echo $course_details['title']; ?>
+                            <p class="titulos-contcursos">OBJETIVOS DE APRENDIZAJE</p>
+                            <p class="text-objetivo">El objetivo principal del programa es proporcionarle al
+                                participante las herramientas de gestion y <?php echo $course_details['title']; ?>,
+                                contemplando la arquitectura, estructura e instalaciones utilizando Autodesk Revit.
+
                             </p>
-                            <p class="fw-bold text-15px">REQUISITOS Y RECURSOS A UTILIZAR</p>
-                            <p class="fw-200 text-15px">No es necesario tener ningún tipo de conocimiento previo, la
-                                capacitación será desde
-                                cero,
-                                únicamente necesitarás un una laptop o computador con conexión a internet para poder
-                                desarrollar todas las habilidades que esta capacitación tiene para ti.
-                                <br>
-                                <br>
-                                El equipo de Instituto Dozer te ayudará en la instalación de todos los softwares que se
-                                usará en la capacitación y tambien se le brindará asesoría para que pueda acceder a la
-                                licencia educacional por 1 año en todos los productos de autodesk.
+                            <p class="titulos-contcursos">REQUISITOS Y RECURSOS A UTILIZAR</p>
+                            <p class="text-objetivo">No es necesario tener ningún tipo de conocimiento previo, la
+                                capacitación será desde cero, únicamente necesitarás un una laptop o computador con
+                                conexión a internet para poder desarrollar todas las habilidades que esta capacitación
+                                tiene para ti.
+
                             </p>
+                            <p class="titulos-contcursos">BENEFICIOS DE CAPACITARTE EN INSTITUTO DOZER</p>
+                            <p class="text-objetivo">Somos orgullosamente un centro de formación autorizado por
+                                Autodesk, conoce los beneficios totalmente gratuitos que tenemos para tí:
+
+                            </p>
+                            <div>
+                                <ul>
+                                    <li class="text-listbeneficios">Certificado Internacional de Autodesk “Certificate
+                                        of Completion”.</li>
+                                    <li class="text-listbeneficios">Certificado de reconocimiento Internacional por
+                                        Instituto Dozer.</li>
+                                    <li class="text-listbeneficios">Instructores profesionales certificados y
+                                        acreditados por Autodesk.</li>
+                                    <li class="text-listbeneficios">Currícula especialmente diseñada para obtener el
+                                        máximo beneficio. </li>
+                                    <li class="text-listbeneficios">Carta de reconocimiento académico y mención en su
+                                        insignia.</li>
+                                    <li class="text-listbeneficios">Se brindará el software de Autodesk para uso
+                                        educativo.</li>
+                                    <li class="text-listbeneficios">Acceso a material electrónico publicado por
+                                        Autodesk.</li>
+                                    <li class="text-listbeneficios">Aula virtual Institutcional muy estable y amigable.
+                                    </li>
+                                    <li class="text-listbeneficios">Insignia de acreditación electrónica (comparte el
+                                        logro de tu certificación.
+                                        Autodesk en redes sociales como: LinkedIn, Facebook, Twitter, etc.).</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                   
-                    <div class="description-content-wrap">
-                        <div class="description-content">
-                            <?php echo $course_details['description']; ?>
+                        <div>
+                            <img class="w-85" src="<?= base_url() ?>uploads\system\convenios.png" alt="">
                         </div>
+
+                        <p class="titulos-contcursos text-white mt-3">PROYECTO QUE APRENDERÁS DESDE CERO</p>
+
                     </div>
+
+
                 </div>
 
-                <h4 class="py-3 text-white"><?php echo site_phrase('what_will_i_learn'); ?></h4>
+                <h4 class="py-3 text-white titulos-contcursos text-uppercase">
+                    <?php echo site_phrase('CONTENIDO ACADÉMICO'); ?></h4>
                 <div class="what-you-get-box">
                     <ul class="what-you-get__items">
                         <?php foreach (json_decode($course_details['outcomes']) as $outcome) : ?>
@@ -148,31 +169,34 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                 <?php endif; ?>
 
                 <div>
-                    <div class="about-directora-title">Directora Academica </div>
-                    <div class="d-flex flex-row  py-5">
-                        <div class="p-2"><img src="<?=base_url()?>uploads/system/docente/directora-academica.png" alt=""
-                                alt=""></div>
+                    <div class="about-directora-title">Director Academico </div>
+                    <div class="d-flex flex-row  py-3">
+                        <div class="p-2"><img class="img-testimonio" src="<?=base_url()?>uploads/system/docente.png" alt="" alt=""></div>
 
-                        <div class="d-flex flex-column mb-3 py-2 px-4">
+                        <div class="d-flex flex-column mb-3 py-2 ps-4">
                             <div>
                                 <div class="d-flex flex-row ">
                                     <div class="d-flex flex-column ">
-                                        <div class="about-directora-nombre">Giuliana Nicho </div>
-                                        <div class="about-directora-subtitle">Directora Académica - Área BIM</div>
+                                        <div class="about-directora-nombre">Walter Gomez C. </div>
+                                        <div class="about-directora-subtitle">Ingeniero Civil CIP N° 304345</div>
                                     </div>
 
-                                    <div class="d-flex align-items-center"> <img class="w-10rem px-4 "
+                                    <div class="d-flex align-items-center"> <img class="img-barcelona ps-4 "
                                             src="<?=base_url()?>uploads/system/docente/stanfor.png" alt="">
                                     </div>
                                 </div>
 
                             </div>
-                            <div class="text-white p-2 text-justify fw-200">
-                                Arquitecta, BIM manager certificada por la UPC Perú, con más de 5 años en implementación
-                                y gestión de proyectos con metodología BIM en proyectos públicos y privados, graduada
-                                por la Universidad de Estanford en Virtual Desing & Construction VDC - USA, gerente
-                                general en colaboractivo, miembro del subcomité técnico de normalización de obras de
-                                edificación - INACAL Perú.
+                            <div class="text-objetivo text-white py-3">
+                                Especialista en Gestión, Control y Planificación de Proyectos de Construcción en el
+                                sector Público y Privado. Certificado por la UPC Perú como Gestor y Coordinador BIM, con
+                                más de 5 años de experiencia Implementando BIM en Proyectos, Certificado como Instructor
+                                Certificado en Autodesk (ACI). Desarrollador del Software DevBIM, DevMetrados, DevCost,
+                                entre otros. Máster por la universidad Católica de Murcia (España) en BIM management en
+                                ingeniería civil y gis, Máster por la universidad de Barcelona (España) en Construction
+                                Project Management. Actualmente cursando maestría en gestión de la construcción en la
+                                UTP.
+
 
 
                             </div>
@@ -276,31 +300,7 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
 
                 <div class=" mt-5 pb-3">
                     <div class="about-directora-title">CERTIFICACIONES </div>
-                    <div class="row fondo-certificado-cursos">
-                        <div class="col-6 p-2000">
-                            <span> <img class="w-19px position-absolute"
-                                    src="<?=base_url()?>uploads/system/icon-sheck.png" alt=""></span>
-                            <p class="text-titulo-contenido">
-                                Certificado por el Colegio <br>
-                                de Ingenieros del Perú:
-                            </p>
-                            <div class="nombre-curso-cont">
-                                <?php echo $course_details['title']; ?>
-                            </div>
-                            <div class="text-white text-center">por 220 horas acreditadas
-                            </div>
-                            <div class="certi-contenido">
-                                <button class="btn-style-certi fw-700">
-                                    Certificado gratuito
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-6 ">
-
-                            <img class="img-certficado-curso"
-                                src="<?=base_url()?>uploads/system/certificados/certificado-one.png" alt="">
-                        </div>
-                    </div>
+                 
 
                     <div class="row fondo-certificado-cursos mt-5">
                         <div class="col-6 p-2000">
@@ -324,7 +324,7 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                         <div class="col-6 ">
 
                             <img class="img-certficado-curso"
-                                src="<?=base_url()?>uploads/system/certificados/certificado-dos.svg" alt="">
+                                src="<?=base_url()?>uploads/system/certificados/certificado-dozer.png" alt="">
                         </div>
                     </div>
 
@@ -751,7 +751,7 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                 </div>
             </div>
 
-            <div class="col-lg-4 order-first order-lg-last">
+            <div class="col-lg-4 order-first order-lg-last resumeninfo">
                 <div class="course-sidebar box-shadow-5 natural cuadro-contenido">
                     <?php if ($course_details['video_url'] != "") : ?>
                     <div class="preview-video-box">
@@ -863,28 +863,15 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                                 </li>
                                 <li class="text-white"><i class="far fa-compass"></i>Proyectos reales desde cero
                                 </li>
-                                <b class="title text-white"><?php echo site_phrase('Beneficios adicionales'); ?>:</b>
-                                <li class="text-white"><i class="far fa-compass"></i>Constancia de matrícula
-                                </li>
-                                <li class="text-white"><i class="far fa-compass"></i>Insignia de acreditación, gratuito
-                                </li>
-                                <li class="text-white"><i class="far fa-compass"></i>Certificado por Instituto Dozer
-                                </li>
-                                <li class="text-white"><i class="far fa-compass"></i>Certificado por Autodesk USA,
-                                    gratuito
-                                </li>
-
-                                <li class="text-white"><i class="far fa-compass"></i>Certificado por el Colegio de
-                                    Ingenieros <br>
-                                    del Perú CD San Martín, gratuito
-                                </li>
+                                
                                 <p class="text-center text-white">¿Tienes dudas?</p>
                                 <p class="text-center text-white">Te ayudamos, selecciona el icono de WhatsApp <br> y
                                     conversemos </p>
                                 <div class="d-flex flex-row mb-3 align-items-center justify-content-center">
-                                    <div class="p-2"> <a href="#"> <img src="<?=base_url()?>uploads/system/whatsap.svg " alt=""></a></div>
+                                    <div class="p-2"> <a href="#"> <img src="<?=base_url()?>uploads/system/whatsap.svg "
+                                                alt=""></a></div>
                                     <div class="p-2 text-white">WhatsApp <br> <strong>Instituto Dozer</strong></div>
-                                    
+
                                 </div>
                                 <?php
                             
@@ -1069,60 +1056,60 @@ function handleCartItems(elem) {
 
 function handleBuyNow(elem) {
 
-url1 = '<?php echo site_url('home/handleCartItemForBuyNowButton'); ?>';
-url2 = '<?php echo site_url('home/refreshWishList'); ?>';
-url3 = '<?php echo site_url('home/url_return'); ?>';
-urlToRedirect = '<?php echo site_url('home/shopping_cart'); ?>';
-urlLogin = '<?php echo site_url('login'); ?>';
-var explodedArray = elem.id.split("_");
-var course_id = explodedArray[1];
-let id_user = $("#id_user").val();
-let url_return = $("#url_return").val();
-console.log(url_return);
+    url1 = '<?php echo site_url('home/handleCartItemForBuyNowButton'); ?>';
+    url2 = '<?php echo site_url('home/refreshWishList'); ?>';
+    url3 = '<?php echo site_url('home/url_return'); ?>';
+    urlToRedirect = '<?php echo site_url('home/shopping_cart'); ?>';
+    urlLogin = '<?php echo site_url('login'); ?>';
+    var explodedArray = elem.id.split("_");
+    var course_id = explodedArray[1];
+    let id_user = $("#id_user").val();
+    let url_return = $("#url_return").val();
+    console.log(url_return);
 
-if (id_user == "") {
-    
-    $.ajax({
-        url: url3,
-        type: 'POST',
-        data: {
-            url_return: url_return
-        },
-        success: function(response) {
-            toastr.error('<?php echo site_phrase('Tiene que Iniciar Sesión') . '....'; ?>');
-            setTimeout(
-                function() {
-                    window.location.replace(urlLogin);
-                }, 1000);
-        }
-    })
+    if (id_user == "") {
+
+        $.ajax({
+            url: url3,
+            type: 'POST',
+            data: {
+                url_return: url_return
+            },
+            success: function(response) {
+                toastr.error('<?php echo site_phrase('Tiene que Iniciar Sesión') . '....'; ?>');
+                setTimeout(
+                    function() {
+                        window.location.replace(urlLogin);
+                    }, 1000);
+            }
+        })
 
 
-} else {
+    } else {
 
-    $.ajax({
-        url: url1,
-        type: 'POST',
-        data: {
-            course_id: course_id
-        },
-        success: function(response) {
-            $('#cart_items').html(response);
-            $.ajax({
-                url: url2,
-                type: 'POST',
-                success: function(response) {
-                    $('#wishlist_items').html(response);
-                    toastr.success('<?php echo site_phrase('please_wait') . '....'; ?>');
-                    setTimeout(
-                        function() {
-                            window.location.replace(urlToRedirect);
-                        }, 1000);
-                }
-            });
-        }
-    });
-}
+        $.ajax({
+            url: url1,
+            type: 'POST',
+            data: {
+                course_id: course_id
+            },
+            success: function(response) {
+                $('#cart_items').html(response);
+                $.ajax({
+                    url: url2,
+                    type: 'POST',
+                    success: function(response) {
+                        $('#wishlist_items').html(response);
+                        toastr.success('<?php echo site_phrase('please_wait') . '....'; ?>');
+                        setTimeout(
+                            function() {
+                                window.location.replace(urlToRedirect);
+                            }, 1000);
+                    }
+                });
+            }
+        });
+    }
 
 }
 

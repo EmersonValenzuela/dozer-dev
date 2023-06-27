@@ -6,7 +6,6 @@
     <div class="container-xl">
         <div class="row">
             <div class=" position-relative">
-                <div class="">
                     <div class="">
                         <h2 class="text-principal-nosotros ">
                             Somos la institución de quienes

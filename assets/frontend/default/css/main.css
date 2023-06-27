@@ -1821,7 +1821,7 @@ course sidebar
 .course-sidebar.fixed {
     position: fixed;
     margin-top: 0;
-    width: 25%;
+    width: 18%;
 }
 .course-sidebar.fixed .preview-video-box,
 .course-sidebar.bottom .preview-video-box{
@@ -1984,7 +1984,7 @@ course sidebar
     list-style: none;
 }
 .course-sidebar-text-box .includes ul li {
-    font-size: 15px;
+    font-size: 14px;
     padding: 3px;
 }
 .course-sidebar-text-box .includes ul li i {
@@ -2505,11 +2505,11 @@ course content
 .course-curriculum-accordion .lecture-group-title {
     position: relative;
     padding: 10px 30px 10px 45px;
-    background: #fff;
-     border-bottom: 1px solid #e1e1e1; 
+    background: #383737;
+    /* border-bottom: 1px solid #e1e1e1; */
     cursor: pointer;
     height: auto;
-    color: #505763;
+    color: white;
 }
 
 
@@ -2517,8 +2517,7 @@ course content
     padding-right: 31px;
 }
 .course-curriculum-accordion{
-    border: 1px solid #dedfe0;
-    border-radius: 10px;
+  
 }
 
 .course-curriculum-accordion .lecture-group-title:before {
@@ -5981,7 +5980,7 @@ background: linear-gradient(90deg, rgba(28,28,28,1) 50%, rgba(20,20,20,1) 50%);
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 12px;
+    padding: 12px 0px;
 }
 .about-directora-nombre{
     color: white;
@@ -6035,6 +6034,9 @@ background: linear-gradient(90deg, rgba(28,28,28,1) 50%, rgba(20,20,20,1) 50%);
     margin: 0 25px;
     font-weight: 700;
     text-align: left;
+    font-size: 18px;
+    bottom: 5px;
+    position: relative;
 }
 
 .nombre-curso-cont{
@@ -6054,7 +6056,7 @@ background: linear-gradient(90deg, rgba(28,28,28,1) 50%, rgba(20,20,20,1) 50%);
 
 .certi-contenido{
     text-align: center;
-    margin: 1rem;
+    margin: 1.9rem 1rem;
 
 }
 .img-certficado-curso{
@@ -8239,11 +8241,11 @@ font-weight: lighter;}
 }
 .text-objetivo{
     font-weight: 200;
-    font-size: 18px;
+    font-size: 17px;
    text-align: justify;
 }
 .text-subtitutlo{
-    font-size: 18px;
+    font-size: 17px;
     text-align: justify;
 }
 
@@ -8254,7 +8256,7 @@ font-weight: lighter;}
 }
 .text-listbeneficios{
     font-weight: 200;
-    font-size: 18px;
+    font-size: 17px;
 }
 .w-85{
     width: 85%;    
@@ -8269,4 +8271,56 @@ font-weight: lighter;}
 .resumeninfo{
     top: 10rem;
     position: relative;
+}
+
+
+@media (min-width: 1400px){
+.img-certficado-curso {
+    width: 25rem;
+}
+}
+
+.text-nombcertid{
+    font-size: 18px;
+}
+
+.w-19rem{
+    width: 19rem;
+}
+
+.text-cm{
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+.fondo-dm{
+    background: #222222;
+    border-radius: 5px;
+}
+
+.fondo-wts{
+    background: #4CAF50;
+    border-radius: 5px;
+}
+.text-wssp{
+    font-weight: 500;
+    font-size: 13px;
+    color: white;
+}
+
+.text-wssp-dm{
+    margin: 0 20rem 0 2rem;
+    background: white;
+    border-radius: 5px;
+    color: #222222;
+}
+.text-wssp-wssp{
+    margin: 0 20rem 0 2rem;
+    background: #4CAF50;
+    border-radius: 5px;
+}
+.fondo-lecciones{
+    background: #383737;
+    padding: 10px 15px;
+    border-radius: 5px;
 }

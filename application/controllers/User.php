@@ -529,6 +529,15 @@ class User extends CI_Controller
         $this->load->view('backend/index', $page_data);
     }
 
+    public function about()
+    {
+        $page_data['page_name'] = "nosotros";
+        $page_data['page_title'] = get_phrase('Nosotros');
+
+
+        $this->load->view('backend/index', $page_data);
+    }
+
 
     // PAYOUT REPORT
     public function payout_report()

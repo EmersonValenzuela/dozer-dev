@@ -1,6 +1,7 @@
 <?php
 $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
 $instructor_details = $this->user_model->get_all_user($course_details['user_id'])->row_array();
+$row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id));
 ?>
 
 
@@ -28,6 +29,22 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                             <p class="subtitle"><?php echo $course_details['short_description']; ?></p>
 
                         </div>
+
+
+                        <p class="text-white"><?php
+                                                    if ($row_schedule) {
+                                                        print_r($row_schedule);
+                                                    }                          ?>
+                        </p>
+
+
+
+
+
+
+
+
+
                         <div class="text-white">
                             <p class="titulos-contcursos">OBJETIVOS DE APRENDIZAJE</p>
                             <p class="text-objetivo">El objetivo principal del programa es proporcionarle al
@@ -119,15 +136,16 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                             }
                             ?>
 
-                            <div class="lecture-group-title clearfix my-3 fondo-lecciones fw-bold" style="<?= $style; ?>" data-bs-toggle="collapse"
+                            <div class="lecture-group-title clearfix my-3 fondo-lecciones fw-bold"
+                                style="<?= $style; ?>" data-bs-toggle="collapse"
                                 data-bs-target="#collapse<?php echo $section['id']; ?>"
                                 aria-expanded="<?php if ($counter == 0) echo 'true'; ?>">
                                 <div class="title float-start text-white">
                                     <?php echo $section['title']; ?>
                                 </div>
                                 <div class="float-end">
-                                    
-                                    
+
+
                                 </div>
                             </div>
 
@@ -472,18 +490,21 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                                     futuro
                                     profesional, más de 15 mil estudiantes en todo el Perú se han formado con nosotros.
                                 </p>
-                                <div class="d-flex flex-row mb-3 align-items-center justify-content-center text-wssp-dm">
-                                    <div class="py-2"> <a href="#"> <img src="<?=base_url()?>uploads/system/descargar-manual-black.png "
-                                                alt=""> </div>
+                                <div
+                                    class="d-flex flex-row mb-3 align-items-center justify-content-center text-wssp-dm">
+                                    <div class="py-2"> <a href="#"> <img
+                                                src="<?=base_url()?>uploads/system/descargar-manual-black.png " alt="">
+                                    </div>
                                     <div class="p-2  fw-bold">Descargar el manual</div></a>
 
                                 </div>
                                 <p class=" w-100 text-white py-2 px-4 text-justify fw-200">O si deseas que nuestra
                                     asesora Valeria te ayude con tu matrícula escríbenos al: +51 929 270 912 o dale
                                     click:</p>
-                                    <div class="d-flex flex-row mb-3 align-items-center justify-content-center text-wssp-wssp">
-                                    <div class="p-2"> <a href="#"> <img class="w-20-px" src="<?=base_url()?>uploads/system/whatsap.svg "
-                                                alt=""></a></div>
+                                <div
+                                    class="d-flex flex-row mb-3 align-items-center justify-content-center text-wssp-wssp">
+                                    <div class="p-2"> <a href="#"> <img class="w-20-px"
+                                                src="<?=base_url()?>uploads/system/whatsap.svg " alt=""></a></div>
                                     <div class="py-2 text-white fw-bold">Dale click Aquí</div>
 
                                 </div>
@@ -651,40 +672,58 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                             </div>
                             <ul>
                                 <?php if ($course_details['course_type'] == 'general') : ?>
-                                <li class="text-white"><img class="me-2" src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Clase virtual en vivo, junto al docente</li>
-                                <li class="text-white"><img class="me-2" src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Acceso al software BIMDev 2023 
+                                <li class="text-white"><img class="me-2"
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Clase virtual en
+                                    vivo, junto al docente</li>
+                                <li class="text-white"><img class="me-2"
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Acceso al software
+                                    BIMDev 2023
                                 </li>
-                                <li class="text-white"><img class="me-2" src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Proyectos reales desde cero
+                                <li class="text-white"><img class="me-2"
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Proyectos reales
+                                    desde cero
                                 </li>
                                 <?php elseif ($course_details['course_type'] == 'scorm') : ?>
-                                <li class="text-white"><i class="far fa-file-video"></i>Entrega de material exclusivo </li>
-                                <li class="text-white"><i class="fas fa-mobile-alt"></i>Acceso 24/7 al aula virtual 
+                                <li class="text-white"><i class="far fa-file-video"></i>Entrega de material exclusivo
+                                </li>
+                                <li class="text-white"><i class="fas fa-mobile-alt"></i>Acceso 24/7 al aula virtual
                                 </li>
                                 <?php endif; ?>
-                                <li class="text-white"><img class="me-2" src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Acceso a comunidad exclusiva
+                                <li class="text-white"><img class="me-2"
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Acceso a comunidad
+                                    exclusiva
                                 </li>
-                                <li class="text-white"><img class="me-2" src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Constancia de matrícula
+                                <li class="text-white"><img class="me-2"
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Constancia de
+                                    matrícula
                                 </li>
-                                <li class="text-white"><img class="me-2" src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Certificado por Instituto Dozer
+                                <li class="text-white"><img class="me-2"
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Certificado por
+                                    Instituto Dozer
                                 </li>
-                                <li class="text-white"><img class="me-2" src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Certificado por Autodesk USA
+                                <li class="text-white"><img class="me-2"
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Certificado por
+                                    Autodesk USA
 
-                                <p class="text-cm mt-2">¿Cómo matricularme?</p>
-                                <div class="d-flex flex-row mb-3 align-items-center justify-content-center fondo-dm">
-                                    <div class="p-2"> <a href="#"> <img src="<?=base_url()?>uploads/system/descargar-manual.png "
-                                                alt=""></a></div>
-                                    <div class="p-2 text-white fw-bold">Descargar el manual</div>
+                                    <p class="text-cm mt-2">¿Cómo matricularme?</p>
+                                    <div
+                                        class="d-flex flex-row mb-3 align-items-center justify-content-center fondo-dm">
+                                        <div class="p-2"> <a href="#"> <img
+                                                    src="<?=base_url()?>uploads/system/descargar-manual.png "
+                                                    alt=""></a></div>
+                                        <div class="p-2 text-white fw-bold">Descargar el manual</div>
 
-                                </div>
-                                <p class="text-cm mt-2">¿Tienes dudas o consultas? </p>
-                                <div class="d-flex flex-row mb-3 align-items-center justify-content-center fondo-wts">
-                                    <div class="p-2"> <a href="#"> <img class="w-20-px" src="<?=base_url()?>uploads/system/whatsap.svg "
-                                                alt=""></a></div>
-                                    <div class="py-2 text-white fw-bold">Dale click Aquí</div>
+                                    </div>
+                                    <p class="text-cm mt-2">¿Tienes dudas o consultas? </p>
+                                    <div
+                                        class="d-flex flex-row mb-3 align-items-center justify-content-center fondo-wts">
+                                        <div class="p-2"> <a href="#"> <img class="w-20-px"
+                                                    src="<?=base_url()?>uploads/system/whatsap.svg " alt=""></a></div>
+                                        <div class="py-2 text-white fw-bold">Dale click Aquí</div>
 
-                                </div>
-                                <p class="text-wssp mt-2">o escríbenos al número: +51 929 270 912</p>
-                                <?php
+                                    </div>
+                                    <p class="text-wssp mt-2">o escríbenos al número: +51 929 270 912</p>
+                                    <?php
                             
 
                 if (addon_status('affiliate_course')) : // course_addon start  adding

@@ -829,8 +829,16 @@ class Crud_model extends CI_Model
         $sched['modality'] = $this->input->post('modality');
         $sched['course_id'] = $course_id;
 
-        $this->db->where('course_id', $course_id);
-        $this->db->update('schedules', $sched);
+        $q = $this->crud_model->auth_schedule(array('course_id' => $course_id));
+
+        if ($q) {
+            $this->db->where('course_id', $course_id);
+            $this->db->update('schedules', $sched);
+        } else {
+            $this->db->insert('schedules', $sched);
+            $schedule_id = $this->db->insert_id();
+        }
+
 
 
         if ($data['status'] == 'active') {

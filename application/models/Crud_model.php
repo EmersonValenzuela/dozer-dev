@@ -29,6 +29,20 @@ class Crud_model extends CI_Model
             return false;
         }
     }
+    public function auth_schedule($where)
+    {
+        $this->db->select('*');
+        $this->db->from('schedules');
+        $this->db->where($where);
+        $this->db->limit(1);
+        $query = $this->db->get();
+        if ($query->num_rows() == 1) {
+            return $query->row();
+        } else {
+            return false;
+        }
+    }
+
 
     public function get_categoria($param1 = "")
     {
@@ -578,6 +592,13 @@ class Crud_model extends CI_Model
         } else {
             $data['is_soon'] = 'available';
         }
+
+        if (isset($_FILES['user_image']) && $_FILES['user_image']['name'] != "") {
+            $name = date('dmYhis') . '_' . rand(0, 99999) . "." . pathinfo($_FILES['user_image']['name'], PATHINFO_EXTENSION);
+            $data['brochure'] =  $name;
+            move_uploaded_file($_FILES['user_image']['tmp_name'], 'uploads/brochure/' . $name);
+            $this->session->set_flashdata('flash_message', get_phrase('user_update_successfully'));
+        }
         $data['user_id'] = $this->session->userdata('user_id');
         $data['creator'] = $this->session->userdata('user_id');
         $data['meta_description'] = $this->input->post('meta_description');
@@ -620,6 +641,15 @@ class Crud_model extends CI_Model
         } elseif ($data['status'] == 'draft') {
             $this->session->set_flashdata('flash_message', get_phrase('your_course_has_been_added_to_draft'));
         }
+
+        $sched['init_c'] = $this->input->post('init_c');
+        $sched['schedule'] = $this->input->post('schedules');
+        $sched['duration'] = $this->input->post('duration');
+        $sched['modality'] = $this->input->post('modality');
+        $sched['course_id'] = $course_id;
+        $this->db->insert('schedules', $sched);
+
+        $schedule_id = $this->db->insert_id();
 
         $this->session->set_flashdata('flash_message', get_phrase('course_has_been_added_successfully'));
         return $course_id;
@@ -737,7 +767,12 @@ class Crud_model extends CI_Model
         } else {
             $data['is_top_course'] = 1;
         }
-
+        if (isset($_FILES['user_image']) && $_FILES['user_image']['name'] != "") {
+            $name = date('dmYhis') . '_' . rand(0, 99999) . "." . pathinfo($_FILES['user_image']['name'], PATHINFO_EXTENSION);
+            $data['brochure'] =  $name;
+            move_uploaded_file($_FILES['user_image']['tmp_name'], 'uploads/brochure/' . $name);
+            $this->session->set_flashdata('flash_message', get_phrase('user_update_successfully'));
+        }
 
         if ($type == "save_to_draft") {
             $data['status'] = 'draft';
@@ -788,6 +823,14 @@ class Crud_model extends CI_Model
         $this->db->where('id', $course_id);
         $this->db->update('course', $data);
 
+        $sched['init_c'] = $this->input->post('init_c');
+        $sched['schedule'] = $this->input->post('schedules');
+        $sched['duration'] = $this->input->post('duration');
+        $sched['modality'] = $this->input->post('modality');
+        $sched['course_id'] = $course_id;
+
+        $this->db->where('course_id', $course_id);
+        $this->db->update('schedules', $sched);
 
 
         if ($data['status'] == 'active') {
@@ -901,6 +944,11 @@ class Crud_model extends CI_Model
     {
         return $this->db->get_where('course', array('id' => $course_id));
     }
+    public function get_schedules($course_id = "")
+    {
+        return $this->db->get_where('schedules', array('course_id' => $course_id));
+    }
+
 
     public function delete_course($course_id = "")
     {

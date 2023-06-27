@@ -124,7 +124,7 @@
                                                 ?>
 
                                         <tr
-                                            style="width: 100%; padding: 5px 0px;background-color: <?php if ($lesson_id == $lesson['id'])echo '#222222'; else echo '#222222';?>;">
+                                            style="width: 100%; padding: 5px 0px;background-color: <?php if ($lesson_id == $lesson['id']) echo '#222222'; else echo '#222222';?>;">
                                             <td style="text-align: left; padding:0px 10px;">
                                                 <?php
                                                         $lesson_progress = lesson_progress($lesson['id']);

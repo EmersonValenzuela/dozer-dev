@@ -29,8 +29,8 @@
                         </thead>
                         <tbody>
                             <?php
-                            foreach ($repositories->result_array() as $key => $repository) : ?>
-                               
+                            foreach ($repositories as $key => $repository) : ?>
+
                                 <tr>
                                     <td><?php echo $key + 1; ?></td>
                                     <td><?php echo $repository['author']; ?></td>

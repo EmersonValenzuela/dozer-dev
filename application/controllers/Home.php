@@ -241,6 +241,7 @@ class Home extends CI_Controller
         }
 
         $row_category = $this->crud_model->auth_category(array('slug' => $_GET['category']));
+
         $page_data['variable_dos']  = "";
         $page_data['text_certificado'] = "";
 

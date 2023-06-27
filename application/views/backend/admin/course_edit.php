@@ -1,5 +1,6 @@
 <?php
 $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
+$schedule = $this->crud_model->get_schedules($course_id)->row_array();
 ?>
 <div class="row ">
     <div class="col-xl-12">
@@ -119,6 +120,12 @@ $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
                                         </a>
                                     </li>
                                     <li class="nav-item">
+                                        <a href="#schedule" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                            <i class="mdi mdi-tag-multiple"></i>
+                                            <span class="d-none d-sm-inline">Horario</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
                                         <a href="#finish" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
                                             <i class="mdi mdi-checkbox-marked-circle-outline"></i>
                                             <span class="d-none d-sm-inline"><?php echo get_phrase('finish'); ?></span>
@@ -157,7 +164,7 @@ $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
                                     <?php if (addon_status('live-class')) : ?>
                                         <?php include 'live_class.php'; ?>
                                     <?php endif; ?>
-                                    
+
                                     <!-- Jitsi live class CODE BASE -->
                                     <?php if (addon_status('jitsi-live-class')) : ?>
                                         <div class="tab-pane" id="jitsi-live-class">
@@ -167,7 +174,7 @@ $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
                                     <!-- LIVE CLASS CODE BASE -->
 
                                     <!-- ASSIGNMENT CODE BASE -->
-                                    <?php if(addon_status('assignment')): ?>
+                                    <?php if (addon_status('assignment')) : ?>
                                         <div class="tab-pane" id="assignment">
                                             <?php include 'assignment.php'; ?>
                                         </div>
@@ -290,7 +297,7 @@ $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
                                                             <option value="Avanzado" <?php if ($course_details['level'] == "avanzado") echo 'selected'; ?>><?php echo get_phrase('avanzado'); ?></option>
                                                             <option value="Intermedio" <?php if ($course_details['level'] == "intermedio") echo 'selected'; ?>><?php echo get_phrase('intermedio'); ?>
                                                             <option value="empresa" <?php if ($course_details['level'] == "empresa") echo 'selected'; ?>><?php echo get_phrase('empresa'); ?>
-                                                                   
+
                                                         </select>
                                                     </div>
                                                 </div>
@@ -307,8 +314,19 @@ $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
                                                 <div class="form-group row mb-3">
                                                     <label class="col-md-2 col-form-label" for="enable_drip_content"><?php echo get_phrase('enable_drip_content'); ?></label>
                                                     <div class="col-md-10 pt-2">
-                                                        <input type="checkbox" name="enable_drip_content" value="1" id="enable_drip_content" data-switch="primary" <?php if($course_details['enable_drip_content'] == 1) echo 'checked'; ?>>
+                                                        <input type="checkbox" name="enable_drip_content" value="1" id="enable_drip_content" data-switch="primary" <?php if ($course_details['enable_drip_content'] == 1) echo 'checked'; ?>>
                                                         <label for="enable_drip_content" data-on-label="On" data-off-label="Off"></label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row mb-3">
+                                                    <label class="col-md-2 col-form-label" for="user_image">Brochure</label>
+                                                    <div class="col-md-9">
+                                                        <div class="input-group">
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input" id="user_image" name="user_image" accept="doc,.docx,.pdf">
+                                                                <label class="custom-file-label" for="user_image">Elegir archivo para el brochure</label>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row mb-3">
@@ -351,7 +369,7 @@ $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
                                                                                 </div>
                                                                             </div>
                                                                             <div class="">
-                                                                                <button type="button" class="btn btn-success btn-sm" style="" name="button" onclick="appendRequirement()"> <i class="fa fa-plus"></i> </button>
+                                                                                <button type="button" class="btn btn-success btn-sm" name="button" onclick="appendRequirement()"> <i class="fa fa-plus"></i> </button>
                                                                             </div>
                                                                         </div>
                                                                     <?php else : ?>
@@ -375,7 +393,7 @@ $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
                                                                         </div>
                                                                     </div>
                                                                     <div class="">
-                                                                        <button type="button" class="btn btn-success btn-sm" style="" name="button" onclick="appendRequirement()"> <i class="fa fa-plus"></i> </button>
+                                                                        <button type="button" class="btn btn-success btn-sm" name="button" onclick="appendRequirement()"> <i class="fa fa-plus"></i> </button>
                                                                     </div>
                                                                 </div>
                                                             <?php endif; ?>
@@ -556,6 +574,37 @@ $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
                                             </div> <!-- end col -->
                                         </div> <!-- end row -->
                                     </div>
+                                    <div class="tab-pane" id="schedule">
+                                        <div class="row justify-content-center">
+                                            <div class="col-xl-8">
+                                                <div class="form-group row mb-3">
+                                                    <label class="col-md-2 col-form-label" for="init_c">Inicio </label>
+                                                    <div class="col-md-10">
+                                                        <input type="text" class="form-control" id="init_c" name="init_c" placeholder="Ingresar Inicio de Clases" value="<?=$schedule['init_c']?>">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row mb-3">
+                                                    <label class="col-md-2 col-form-label" for="schedules">Horario Semanal</label>
+                                                    <div class="col-md-10">
+                                                        <textarea name="schedules" id="schedules" class="form-control"><?=$schedule['schedule']?></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row mb-3">
+                                                    <label class="col-md-2 col-form-label" for="duration">Duración </label>
+                                                    <div class="col-md-10">
+                                                        <input type="text" class="form-control" id="duration" name="duration" placeholder="Ingresar Duración" value="<?=$schedule['duration']?>">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row mb-3">
+                                                    <label class="col-md-2 col-form-label" for="modality">Modalidad </label>
+                                                    <div class="col-md-10">
+                                                        <input type="text" class="form-control" id="modality" name="modality" placeholder="Ingresar Modalidad" value="<?=$schedule['modality']?>">
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end col -->
+
+                                        </div> <!-- end row -->
+                                    </div>
                                     <div class="tab-pane" id="finish">
                                         <div class="row">
                                             <div class="col-12">
@@ -596,6 +645,8 @@ $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
     $(document).ready(function() {
         initSummerNote(['#description']);
         togglePriceFields('is_free_course');
+        initSummerNote(['#schedules']);
+
     });
 </script>
 

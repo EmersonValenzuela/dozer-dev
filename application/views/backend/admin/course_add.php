@@ -65,6 +65,12 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
+                                        <a href="#schedule" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                            <i class="mdi mdi-tag-multiple"></i>
+                                            <span class="d-none d-sm-inline">Horario</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
                                         <a href="#finish" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
                                             <i class="mdi mdi-checkbox-marked-circle-outline"></i>
                                             <span class="d-none d-sm-inline"><?php echo get_phrase('finish'); ?></span>
@@ -160,6 +166,17 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group row mb-3">
+                                                    <label class="col-md-2 col-form-label" for="user_image">Brochure</label>
+                                                    <div class="col-md-9">
+                                                        <div class="input-group">
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input" id="user_image" name="user_image" accept="doc,.docx,.pdf">
+                                                                <label class="custom-file-label" for="user_image">Elegir archivo para el brochure</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row mb-3">
                                                     <div class="offset-md-2 col-md-10">
                                                         <div class="custom-control custom-checkbox">
                                                             <input type="checkbox" class="custom-control-input" name="is_top_course" id="is_top_course" value="1">
@@ -193,7 +210,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="">
-                                                                    <button type="button" class="btn btn-success btn-sm" style="" name="button" onclick="appendRequirement()"> <i class="fa fa-plus"></i> </button>
+                                                                    <button type="button" class="btn btn-success btn-sm" name="button" onclick="appendRequirement()"> <i class="fa fa-plus"></i> </button>
                                                                 </div>
                                                             </div>
                                                             <div id="blank_requirement_field">
@@ -341,6 +358,37 @@
                                             </div> <!-- end col -->
                                         </div> <!-- end row -->
                                     </div>
+                                    <div class="tab-pane" id="schedule">
+                                        <div class="row justify-content-center">
+                                            <div class="col-xl-8">
+                                                <div class="form-group row mb-3">
+                                                    <label class="col-md-2 col-form-label" for="init_c">Inicio </label>
+                                                    <div class="col-md-10">
+                                                        <input type="text" class="form-control" id="init_c" name="init_c" placeholder="Ingresar Inicio de Clases" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row mb-3">
+                                                    <label class="col-md-2 col-form-label" for="schedules">Horario Semanal</label>
+                                                    <div class="col-md-10">
+                                                        <textarea name="schedules" id="schedules" class="form-control"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row mb-3">
+                                                    <label class="col-md-2 col-form-label" for="duration">Duración </label>
+                                                    <div class="col-md-10">
+                                                        <input type="text" class="form-control" id="duration" name="duration" placeholder="Ingresar Duración" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row mb-3">
+                                                    <label class="col-md-2 col-form-label" for="modality">Modalidad </label>
+                                                    <div class="col-md-10">
+                                                        <input type="text" class="form-control" id="modality" name="modality" placeholder="Ingresar Modalidad" required>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end col -->
+
+                                        </div> <!-- end row -->
+                                    </div>
                                     <div class="tab-pane" id="finish">
                                         <div class="row">
                                             <div class="col-12">
@@ -380,6 +428,7 @@
 <script type="text/javascript">
     $(document).ready(function() {
         initSummerNote(['#description']);
+        initSummerNote(['#schedules']);
     });
 </script>
 

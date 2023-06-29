@@ -8126,6 +8126,7 @@ font-weight: bold;}
 }
 .bg-video{
     background-color: #1A1919 !important;
+    overflow: hidden;
 }
 .bg-item{
     background-color: #272727 !important;
@@ -8136,7 +8137,7 @@ font-weight: bold;}
 }
 .style-itemp{
     color: #FFCB73 !important;
-    padding: 10px 42.7px !important;
+    padding: 10px 42px !important;
     font-weight: 600;
 }
 .style-itemp:hover {
@@ -8323,4 +8324,26 @@ font-weight: lighter;}
     background: #383737;
     padding: 10px 15px;
     border-radius: 5px;
+}
+.overflow-temas{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 58rem;
+}
+.overflow-temas::-webkit-scrollbar{
+    width: 7px;
+    background: #222222;
+}
+.overflow-temas::-webkit-scrollbar-thumb{
+    background: #535a66;
+    border-radius: 5px;
+}
+.style-heigth{
+    height: 55rem !important;
+}
+.bg-encabezado{
+   background: #383737;
+}
+.bg-contenido{
+    background: #272727;
 }

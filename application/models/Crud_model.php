@@ -643,7 +643,7 @@ class Crud_model extends CI_Model
         }
 
         $sched['init_c'] = $this->input->post('init_c');
-        $sched['schedule'] = $this->input->post('schedules');
+        $sched['schedule'] = $this->input->post('schedule');
         $sched['duration'] = $this->input->post('duration');
         $sched['modality'] = $this->input->post('modality');
         $sched['course_id'] = $course_id;
@@ -824,7 +824,7 @@ class Crud_model extends CI_Model
         $this->db->update('course', $data);
 
         $sched['init_c'] = $this->input->post('init_c');
-        $sched['schedule'] = $this->input->post('schedules');
+        $sched['schedules'] = $this->input->post('schedules');
         $sched['duration'] = $this->input->post('duration');
         $sched['modality'] = $this->input->post('modality');
         $sched['course_id'] = $course_id;

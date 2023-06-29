@@ -20,7 +20,7 @@
                     <!------------- PLYR.IO ------------>
                     <link rel="stylesheet" href="<?php echo base_url();?>assets/global/plyr/plyr.css">
 
-                    <div class="plyr__video-embed" id="player">
+                    <div class="plyr__video-embed style-heigth" id="player">
                         <iframe height="500" src="<?php echo $video_url;?>?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency allow="autoplay"></iframe>
                     </div>
 
@@ -190,7 +190,7 @@
             <?php endif; ?>
         </div>
 
-        <div class="" style="margin: 20px 0;" id = "lesson-summary">
+        <div class=""  id = "lesson-summary">
             <div class="card">
                 <div class="card-body">
                     <h6 class="card-title w-100 mb-3 text-white"><?php echo $lesson_details['lesson_type'] == 'quiz' ? get_phrase('instruction') : get_phrase("Copyright © Instituto Dozer  - Todos los derechos reservados."); ?>:</h6>

@@ -31,11 +31,73 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                         </div>
 
 
-                        <p class="text-white"><?php
-                                                    if ($row_schedule) {
-                                                        print_r($row_schedule);
-                                                    }                          ?>
-                        </p>
+
+
+                        <div class="text-white">
+                            <?php
+                            if ($row_schedule )  { ?>
+
+                            <div class="container text-center text-white fw-bold">
+                                <div class="row">
+                                    <div class="col-3 ">
+
+                                        <div class="d-flex flex-column mb-3">
+                                            <div class="p-2 bg-encabezado"> Inicio
+                                            </div>
+                                            <div class=" p-2 bg-contenido">
+                                                <?php echo  ['init_c']; ?>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="d-flex flex-column mb-3">
+                                            <div class="p-2 bg-encabezado"> Frecuencia y horarios
+                                            </div>
+                                            <div class=" p-2 bg-contenido">
+                                                <?php  echo ['schedules']  ; ?>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="col-3">
+                                        <div class="d-flex flex-column mb-3">
+                                            <div class="p-2 bg-encabezado"> Duracion
+                                            </div>
+                                            <div class=" p-2 bg-contenido">
+                                                <?php   echo ['duration'] ; ?>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3">
+                                        <div class="d-flex flex-column mb-3">
+                                            <div class="p-2 bg-encabezado"> Modalidad
+
+                                            </div>
+                                            <div class=" p-2 bg-contenido">
+                                            <?php   echo ['modality'] ; ?>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <?php } ?>
+
+
+
+                        </div>
+
+
 
 
 

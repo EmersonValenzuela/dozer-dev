@@ -122,7 +122,7 @@ $schedule = $this->crud_model->get_schedules($course_id)->row_array();
                                     <li class="nav-item">
                                         <a href="#schedule" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
                                             <i class="mdi mdi-tag-multiple"></i>
-                                            <span class="d-none d-sm-inline">Horario</span>
+                                            <span class="d-none d-sm-inline"><?php echo get_phrase('horario'); ?></span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
@@ -645,7 +645,7 @@ $schedule = $this->crud_model->get_schedules($course_id)->row_array();
     $(document).ready(function() {
         initSummerNote(['#description']);
         togglePriceFields('is_free_course');
-        initSummerNote(['#schedules']);
+        initSummerNote(['#schedule']);
 
     });
 </script>

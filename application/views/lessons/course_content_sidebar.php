@@ -15,7 +15,7 @@
 <div class="col-lg-3 order-2 mt-5 course_col hidden" id="lesson_list_loader" style="text-align: center;">
     <img src="<?php echo base_url('assets/backend/images/loader.gif'); ?>" alt="" height="50" width="50">
 </div>
-<div class="col-lg-2  order-2 course_col" id="lesson_list_area">
+<div class="col-lg-2  order-2 course_col overflow-temas" id="lesson_list_area">
     <div class="text-stard m-3">
         <a href="<?php echo $course_details_url; ?>" class="btn-regresa"><img
                 src="<?=base_url()?>uploads/system/back.png" alt=""> <?php echo get_phrase('Regresar'); ?> </a>
@@ -209,7 +209,7 @@
                     </div>
                     <?php else: ?>
                     <div class="alert alert-warning" role="alert" style="padding: 30px 0px;">
-                        <?php echo get_phrase('live_class_is_not_scheduled_to_this_course_yet'); ?>
+                        <?php echo header-title my-1('live_class_is_not_scheduled_to_this_course_yet'); ?>
                     </div>
                     <?php endif; ?>
                     <?php endif; ?>

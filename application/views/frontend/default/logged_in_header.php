@@ -67,9 +67,7 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
                 </div>
             </div>
 
-            <div class="wishlist-box menu-icon-box" id="wishlist_items">
-                <?php include 'wishlist_items.php'; ?>
-            </div>
+            
 
             <div class="cart-box menu-icon-box" id="cart_items">
                 <?php include 'cart_items.php'; ?>
@@ -110,10 +108,8 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
 
                         <li class="user-dropdown-menu-item"><a href="<?php echo site_url('home/my_courses'); ?>"><i
                                     class="far fa-gem"></i><?php echo site_phrase('my_courses'); ?></a></li>
-                        <li class="user-dropdown-menu-item"><a href="<?php echo site_url('home/my_wishlist'); ?>"><i
-                                    class="far fa-heart"></i><?php echo site_phrase('my_wishlist'); ?></a></li>
-                        <li class="user-dropdown-menu-item"><a href="<?php echo site_url('home/my_messages'); ?>"><i
-                                    class="far fa-envelope"></i><?php echo site_phrase('my_messages'); ?></a></li>
+                        
+                        
                         <li class="user-dropdown-menu-item"><a
                                 href="<?php echo site_url('home/purchase_history'); ?>"><i
                                     class="fas fa-shopping-cart"></i><?php echo site_phrase('purchase_history'); ?></a>

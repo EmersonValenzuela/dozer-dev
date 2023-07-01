@@ -24,7 +24,7 @@
          </div>
          <div class="">
              <ul class="cart-course-list">
-                 <p>Resulem de Pedido:</p>
+                 <p class="text-resumen">Resumem de Pedido:</p>
                  <?php
                     $actual_price = 0;
                     $total_price  = 0;
@@ -42,62 +42,64 @@
                         array_push($products_map, $item);
                         unset($item);
                     ?>
-                     <li>
-                         <div class="cart-course-wrapper box-shadow-5 d-flex justify-content-between">
+                 <li>
+                     <div class="cart-course-wrapper box-shadow-5 d-flex justify-content-between">
 
-                             <div class="d-flex flex-column ">
-                                 <div class="d-flex flex-row justify-content-between ">
-                                     <div class="details">
-                                         <a href="<?php echo site_url('home/course/' . rawurlencode(slugify($course_details['title'])) . '/' . $course_details['id']); ?>">
-                                             <div class="name text-title-cqp text-white">
-                                                 <?php echo $course_details['title']; ?>
-                                             </div>
-                                         </a>
-
-                                         <div class="course-subtitle text-13px mt-2">
-                                             <?php echo ellipsis($course_details['short_description'], 80); ?>
+                         <div class="d-flex flex-column ">
+                             <div class="d-flex flex-row justify-content-between ">
+                                 <div class="details">
+                                     <a
+                                         href="<?php echo site_url('home/course/' . rawurlencode(slugify($course_details['title'])) . '/' . $course_details['id']); ?>">
+                                         <div class="name text-title-cqp text-white">
+                                             <?php echo $course_details['title']; ?>
                                          </div>
+                                     </a>
 
-
+                                     <div class="course-subtitle text-13px mt-2">
+                                         <?php echo ellipsis($course_details['short_description'], 80); ?>
                                      </div>
 
 
-                                     <div class="move-remove text-center ">
-                                         <div id="<?php echo $course_details['id']; ?>" onclick="removeFromCartList(this)"><i style="font-size: 30px;" class="fas fa-times-circle text-white"></i></div>
-                                         <!-- <div>Move to Wishlist</div> -->
-                                     </div>
                                  </div>
-                                 <hr class="stylehr">
-                                 <div class="price mt-1 mx-3">
-                                     <?php if ($course_details['discount_flag'] == 1) : ?>
-                                         <div class="current-price text-white d-flex flex-row  justify-content-between">
-                                             <div>Costo:
-                                             </div>
-                                             <div class="">
-                                                 <?php
+
+
+                                 <div class="move-remove text-center ">
+                                     <div id="<?php echo $course_details['id']; ?>" onclick="removeFromCartList(this)">
+                                         <i style="font-size: 30px;" class="fas fa-times-circle text-white"></i></div>
+                                     <!-- <div>Move to Wishlist</div> -->
+                                 </div>
+                             </div>
+                             <hr class="stylehr">
+                             <div class="price mt-1 mx-3">
+                                 <?php if ($course_details['discount_flag'] == 1) : ?>
+                                 <div class="current-price text-white d-flex flex-row  justify-content-between">
+                                     <div>Costo:
+                                     </div>
+                                     <div class="">
+                                         <?php
                                                     $total_price += $course_details['discounted_price'];
                                                     echo currency($course_details['discounted_price']);
                                                     ?>
-                                             </div>
-                                         </div>
+                                     </div>
+                                 </div>
 
 
-                                     <?php else : ?>
+                                 <?php else : ?>
 
 
-                                         <div class="current-price">
-                                             <?php
+                                 <div class="current-price">
+                                     <?php
                                                 $actual_price += $course_details['price'];
                                                 $total_price  += $course_details['price'];
                                                 echo currency($course_details['price']);
                                                 ?>
-                                         </div>
-                                     <?php endif; ?>
                                  </div>
-                                 <hr class="stylehr">
+                                 <?php endif; ?>
                              </div>
+                             <hr class="stylehr">
                          </div>
-                     </li>
+                     </div>
+                 </li>
                  <?php endforeach; ?>
              </ul>
          </div>
@@ -105,8 +107,8 @@
      <h5 class="fw-700"><?php echo site_phrase('total'); ?>:</h5>
      <div class="cart-sidebar bg-white radius-10 py-4 px-3 box-shadow-5">
          <?php if (isset($coupon_code) && !empty($coupon_code) && $this->crud_model->check_coupon_validity($coupon_code)) : ?>
-             <span id="total_price_of_checking_out" hidden>
-                 <?php
+         <span id="total_price_of_checking_out" hidden>
+             <?php
                     $coupon_details = $this->crud_model->get_coupon_details_by_code($coupon_code)->row_array();
                     $actual_price = round($total_price, 2);
 
@@ -125,18 +127,18 @@
                     $this->session->set_userdata('total_price_of_checking_out', $total_price);
                     $this->session->set_userdata('applied_coupon', $coupon_code);
                     ?>
+         </span>
+         <div class="total-price"><?php echo currency($total_price); ?></div>
+         <div class="total-original-price">
+             <span class="original-price">
+                 <span class="original-price"><?php echo currency($actual_price); ?></span>
              </span>
-             <div class="total-price"><?php echo currency($total_price); ?></div>
-             <div class="total-original-price">
-                 <span class="original-price">
-                     <span class="original-price"><?php echo currency($actual_price); ?></span>
-                 </span>
-                 <span class="discount-rate"><?php echo $coupon_details['discount_percentage']; ?>%
-                     <?php echo site_phrase('coupon_code_applied'); ?></span>
-             </div>
+             <span class="discount-rate"><?php echo $coupon_details['discount_percentage']; ?>%
+                 <?php echo site_phrase('coupon_code_applied'); ?></span>
+         </div>
          <?php else : ?>
-             <!-- including Tax or vat -->
-             <?php
+         <!-- including Tax or vat -->
+         <?php
                 if (get_settings('course_selling_tax') > 0) :
                     $total_tax = round(($total_price / 100) * get_settings('course_selling_tax'), 2);
                     $total_price = round($total_price + ($total_price / 100) * get_settings('course_selling_tax'), 2);
@@ -145,20 +147,22 @@
                 endif;
                 ?>
 
-             <span id="total_price_of_checking_out" hidden><?php echo $total_price;
+         <span id="total_price_of_checking_out"
+             hidden><?php echo $total_price;
                                                             $this->session->set_userdata('total_price_of_checking_out', $total_price); ?>
-             </span>
-             <div class="total-price"><?php echo currency($total_price); ?></div>
-             <div class="total-original-price">
+         </span>
+         <div class="total-price"><?php echo currency($total_price); ?></div>
+         <div class="total-original-price">
 
-                 <!-- <span class="discount-rate">95% off</span> -->
-             </div>
+             <!-- <span class="discount-rate">95% off</span> -->
+         </div>
          <?php endif; ?>
 
 
          <!-- including Tax or vat -->
          <?php if (get_settings('course_selling_tax') > 0) : ?>
-             <small class="d-block mb-3 w-100 text-12px text-uppercase"><b><?php echo currency($total_tax) . '</b> (' . get_settings('course_selling_tax') . '%) ' . get_phrase('TAX_INCLUDED'); ?></small>
+         <small
+             class="d-block mb-3 w-100 text-12px text-uppercase"><b><?php echo currency($total_tax) . '</b> (' . get_settings('course_selling_tax') . '%) ' . get_phrase('TAX_INCLUDED'); ?></small>
          <?php endif; ?>
 
 
@@ -167,13 +171,17 @@
                 $total_price = $total_price + ($total_price / 100) * get_settings('course_selling_tax');
             endif; ?>
          <div class="input-group marge-input-box mb-3">
-             <input type="text" class="form-control" placeholder="<?php echo site_phrase('apply_coupon_code'); ?>" id="coupon-code">
+             <input type="text" class="form-control" placeholder="<?php echo site_phrase('apply_coupon_code'); ?>"
+                 id="coupon-code">
              <div class="input-group-append">
                  <button class="btn" type="button" onclick="applyCoupon()">
                      <i class="fas fa-spinner fa-pulse hidden" id="spinner"></i>
                      <?php echo site_phrase('apply'); ?>
                  </button>
              </div>
+
+             <button type="button" class="btn red w-100 radius-10 mb-3" onclick="handleCheckOut()"><?php echo site_phrase('checkout'); ?></button>
+  
 
          </div>
 
@@ -197,19 +205,18 @@
  <script src="https://sdk.mercadopago.com/js/v2"></script>
 
  <script>
-     const mp = new MercadoPago('TEST-afbb3c96-f8ed-4846-9deb-ca492ac37428');
-     mp.checkout({
-         preference: {
-             id: '<?= $preference->id ?>'
-         },
-         render: {
-             container: '.checkout-btn',
-             label: 'Pagar con Mercado Pago'
-         },
+const mp = new MercadoPago('TEST-afbb3c96-f8ed-4846-9deb-ca492ac37428');
+mp.checkout({
+    preference: {
+        id: '<?= $preference->id ?>'
+    },
+    render: {
+        container: '.checkout-btn',
+        label: 'Pagar con Mercado Pago'
+    },
 
-     });
+});
  </script>
 
- <button type="button" class="btn red w-100 radius-10 mb-3" onclick="handleCheckOut()"><?php echo site_phrase('checkout'); ?></button>
  </div>
  </div>

@@ -32,12 +32,7 @@ if (addon_status('affiliate_course')) {
                             <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_profile'); ?>"> <i
                                         class="fas fa-user-alt"></i> <?php echo site_phrase('profile'); ?></a></li>
 
-                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_credentials'); ?>"> <i
-                                        class="fas fa-user-edit"></i> <?php echo site_phrase('editar_perfil'); ?></a></li>
-
-                            <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_photo'); ?>"> <i
-                                        class="fas fa-camera-retro"></i> <?php echo site_phrase('photo'); ?></a></li>
-
+                          
                             <li class=" mb-3"><a href="<?php echo site_url('home/profile/user_mis_cursos'); ?>"> <i
                                         class="	fas fa-graduation-cap"></i> <?php echo site_phrase('cursoos'); ?></a></li>
 

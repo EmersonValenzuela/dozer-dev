@@ -8348,6 +8348,7 @@ font-weight: lighter;}
 }
 .bg-contenido{
     background: #272727;
+    font-weight: 500 !important;
 }
 
 body::-webkit-scrollbar{

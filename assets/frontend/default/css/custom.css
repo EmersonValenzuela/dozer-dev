@@ -435,16 +435,17 @@ section.featured-instructor{
     border-left: none !important;
 }
 .marge-input-box button{
-    background: #ec5252;
-    color: #fff;
-    font-weight: 500;
+    background: #222222;
+    color: white;
+    font-weight: 700;
     margin: 5px;
     font-size: 13px;
     border-radius: 8px;
 }
 .marge-input-box button:hover{
-    background: #cd4f4f;
-    color: #fff;
+    background: #FFC873;
+    color: #222222;
+    font-weight: 700;
 }
 
 
@@ -526,8 +527,8 @@ section.featured-instructor{
     padding: 5px 9px 5px 10px !important;
 }
 .common-search-box button{
-    background-color: #ec5252 !important;
-    border-color: #ec5252;
+    background-color: #222222 !important;
+    border-color: #222222;
     color: #fff;
     padding: 1px 6px;
     border-radius: 6px;

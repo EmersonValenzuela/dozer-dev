@@ -5,8 +5,15 @@
 
 <style>
     .mercadopago-button {
-        
+        background: #222222 ;
+    color: white;
+    font-weight: 700;
     }
+    .mercadopago-button:hover {
+    background: #FFC873;
+    color: #222222;
+    font-weight: 700;
+}
 </style>
 
 <section class="container-xl m-cqp">
@@ -225,12 +232,7 @@
                             <div class="checkout-btn"></div>
                         </div>
                     </div>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse fondo-contenido-metodo" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <button type="button" class="btn red w-100 radius-10 mb-3" onclick="handleCheckOut()"><?php echo site_phrase('checkout'); ?></button>
-                        </div>
-                    </div>
-
+                    
 
                 </div>
 

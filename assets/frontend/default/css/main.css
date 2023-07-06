@@ -70,19 +70,20 @@ label {
 }
 .btn.red{
     color: #fff;
-    background-color: #ec5252;
-    border-color: #ec5252;
+    background-color: #222222;
+    border-color: #222222;
     padding: 11px 12px;
     font-size: 15px;
     border-radius: 2px;
     line-height: 1.35135;
-    font-weight: 600;
+    font-weight: 700;
 }
 .btn.red:hover,
 .btn.red:focus {
     background-color: #FFC873 !important;
     border-color: #FFC87300 !important;
-    color: #fff;
+    color: #222222;
+    font-weight: 700;
 }
 .btn.green{
     color: #fff;
@@ -1877,7 +1878,7 @@ course sidebar
 }
 
 .course-sidebar-text-box .price .current-price {
-    color: #505763;
+    color: white;
     font-size: 36px;
     font-weight: 700;
     line-height: 40px;
@@ -1908,8 +1909,8 @@ course sidebar
     border-radius: 2px;
     margin-top: 13px;
     padding: 12px 10px;
-    font-size: 14.5px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
@@ -1941,8 +1942,8 @@ course sidebar
 }
 
 .course-sidebar-text-box .buy-btns .btn-buy{
-    color: #FFC873;
-    background-color: #222222;
+    color: #222222;
+    background-color: #FFC873;
     border-color: #FFC873;
     border-radius: 10px;
 }
@@ -2063,9 +2064,8 @@ course content
 
 
 .what-you-get-box {
-    background-color: #fff;
-    border: 2px solid #dedfe0;
-    padding: 10px 15px;
+    background-color: transparent;
+    border: transparent;
     border-radius: 10px;
 }
 
@@ -3451,7 +3451,7 @@ section.cart-list-area {
 .cart-sidebar .total-price {
     font-size: 30px;
     line-height: 49px;
-    color: #ec5252;
+    color: #222222;
     font-weight: 600;
 }
 .cart-sidebar .total-original-price {
@@ -4180,20 +4180,22 @@ footer style
 .already_purchased a {
     width: 100%;
     border: 0;
-    color: #fff;
-    background-color: #007791;
+    color: #222222;
+    background-color: #FCC774;
     padding: 11px 12px;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.43;
-    border-radius: 2px;
-    font-weight: 600;
+    border-radius: 8px;
+    font-weight:bold;
     margin-top: 20px;
     display: block;
     text-align: center;
+    box-shadow: 0px 0px 7px 0px #fcc774;
+
 }
 .already_purchased a:hover,
 .already_purchased a:focus {
-    background: #003440;
+    background: #FCC774;
 }
 
 div.tagsinput span.tag {
@@ -8346,4 +8348,21 @@ font-weight: lighter;}
 }
 .bg-contenido{
     background: #272727;
+    font-weight: 500 !important;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+    background: #222222;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #535a66;
+    border-radius: 5px;
+}
+
+.text-resumen{
+    color: white;
+    padding: 8px;
+    font-weight: 600;
 }

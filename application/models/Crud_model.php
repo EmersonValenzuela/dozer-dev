@@ -831,7 +831,7 @@ class Crud_model extends CI_Model
 
         $q = $this->crud_model->auth_schedule(array('course_id' => $course_id));
 
-        if ($q) {
+        if ($q != null) {
             $this->db->where('course_id', $course_id);
             $this->db->update('schedules', $sched);
         } else {

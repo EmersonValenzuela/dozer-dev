@@ -645,7 +645,7 @@ $schedule = $this->crud_model->get_schedules($course_id)->row_array();
     $(document).ready(function() {
         initSummerNote(['#description']);
         togglePriceFields('is_free_course');
-        initSummerNote(['#schedule']);
+        initSummerNote(['#schedules']);
 
     });
 </script>

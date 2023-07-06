@@ -8366,3 +8366,44 @@ body::-webkit-scrollbar-thumb{
     padding: 8px;
     font-weight: 600;
 }
+
+@media (min-width: 1200px) { 
+    .mt-md-0{
+        height: 310px !important;
+    }
+    .img-intituto {
+        width: 15rem;
+        /* padding: 1rem; */
+        margin: auto;
+        display: block;
+        position: relative;
+        left: 2px;
+        top: 5px;
+    }
+    .img-autodesk {
+        width: 19rem;
+        position: relative;
+        left: 1px;
+        margin: auto;
+        display: block;
+        bottom: 18px;
+    }
+    .img-cip {
+     width: 16rem;
+    top: 0;
+    left: 5px;
+    position: relative;
+    top: 14px;
+    }
+    
+}
+
+@media (min-width: 1400px) { 
+     .mt-md-0{
+    height: 421px !important;
+}}
+
+@media (min-width: 992px) { 
+    .btnpa{
+        font-size: 18px;
+} }

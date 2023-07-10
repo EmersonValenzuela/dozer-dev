@@ -221,6 +221,109 @@ section .content .title {
 section .content p {
     text-align: justify;
 }
+
+@media (min-width: 1200px) {
+    .btnpa {
+        font-size: 15pt;
+    }
+
+    .wrapper nav .slider {
+        width: 145px;
+
+    }
+
+    #blog:checked~nav .slider {
+        left: 163px;
+    }
+
+    #code:checked~nav .slider {
+        left: 320px;
+    }
+
+    #help:checked~nav .slider {
+        left: 476px;
+    }
+
+    #about:checked~nav .slider {
+        left: 634px;
+    }
+
+    #about-uno:checked~nav .slider {
+        left: 790px;
+    }
+
+    #about-dos:checked~nav .slider {
+        left: 948px;
+    }
+
+
+
+}
+
+@media (min-width: 1400px) {
+    .wrapper nav .slider {
+        width: 180px;
+
+    }
+
+    #blog:checked~nav .slider {
+        left: 200px;
+    }
+
+    #code:checked~nav .slider {
+        left: 393px;
+    }
+
+    #help:checked~nav .slider {
+        left: 589px;
+    }
+
+    #about:checked~nav .slider {
+        left: 783px;
+    }
+
+    #about-uno:checked~nav .slider {
+        left: 977px;
+    }
+
+    #about-dos:checked~nav .slider {
+        left: 1170px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .wrapper nav .slider {
+        width: 125px;
+
+    }
+
+    #blog:checked~nav .slider {
+        left: 140px;
+    }
+
+    #code:checked~nav .slider {
+        left: 275px;
+    }
+
+    #help:checked~nav .slider {
+        left: 410px;
+    }
+
+    #about:checked~nav .slider {
+        left: 540px;
+        width: 130px;
+    }
+
+    #about-uno:checked~nav .slider {
+        left: 670px;
+        width: 135px;
+    }
+
+    #about-dos:checked~nav .slider {
+        left: 815px;
+    }
+}
 </style>
 <section>
     <h3 class="course-carousel-title text-center mb-4 mt-5 text-cursos">
@@ -1755,6 +1858,79 @@ section .contentt .title {
 section .contentt p {
     text-align: justify;
 }
+
+@media (min-width: 1200px) {
+    nav .sliderr {
+        width: 246px;
+        left: 37px;
+
+    }
+
+    #blogg:checked~nav .sliderr {
+        left: 295px;
+        width: 250px;
+
+    }
+
+    #codee:checked~nav .sliderr {
+        left: 555px;
+        width: 250px;
+
+    }
+
+    #helpp:checked~nav .sliderr {
+        left: 815px;
+        width: 250px;
+
+    }
+
+}
+
+@media (min-width: 1400px) {
+    #blogg:checked~nav .sliderr {
+        left: 425px;
+        width: 250px;
+
+    }
+
+    #codee:checked~nav .sliderr {
+        left: 685px;
+        width: 250px;
+
+    }
+
+    #helpp:checked~nav .sliderr {
+        left: 945px;
+        width: 250px;
+
+    }
+}
+
+@media (min-width: 992px) {
+    nav .sliderr {
+        width: 223px;
+        left: 7px;
+
+    }
+
+    #blogg:checked~nav .sliderr {
+        left: 243px;
+        width: 225px;
+
+    }
+
+    #codee:checked~nav .sliderr {
+        left: 480px;
+        width: 223px;
+
+    }
+
+    #helpp:checked~nav .sliderr {
+        left: 715px;
+        width: 225px;
+
+    }
+}
 </style>
 <!-- Style especializaciones -->
 
@@ -2947,6 +3123,34 @@ section .conten .title {
 section .conten p {
     text-align: justify;
 }
+
+@media (min-width: 1200px) {
+    nav .slide {
+        left: 295px;
+
+    }
+
+    #blo:checked~nav .slide {
+        left: 555px;
+
+    }
+}
+
+@media (min-width: 1400px) {
+    #blo:checked~nav .slide {
+        left: 605px;
+
+    }
+}
+@media (min-width: 992px) {  nav .slide {
+        left: 218px;
+
+    }
+
+    #blo:checked~nav .slide {
+        left: 479px;
+
+    } }
 </style>
 
 <section>
@@ -3550,7 +3754,8 @@ section .conten p {
                                 <br>
                                 es muy
                                 buena,
-                                siempre estan <br> asesorandote”</div>
+                                siempre estan <br> asesorandote”
+                            </div>
 
                             <div class="d-flex justify-content-start">
                                 <div class="pe-2 d-flex align-items-center" style="width: 4rem;"> <img
@@ -3623,7 +3828,8 @@ section .conten p {
                         <div class="">
                             <div class="text-white text-testimonio fw-light lh-sm py-2">“Desde sus docentes hasta sus
                                 <br>
-                                personales de trabajo todos muy <br> amables”</div>
+                                personales de trabajo todos muy <br> amables”
+                            </div>
 
                             <div class="d-flex justify-content-start">
                                 <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\mx.png"

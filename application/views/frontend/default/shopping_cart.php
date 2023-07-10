@@ -5,15 +5,16 @@
 
 <style>
     .mercadopago-button {
-        background: #222222 ;
-    color: white;
-    font-weight: 700;
+        background: #222222;
+        color: white;
+        font-weight: 700;
     }
+
     .mercadopago-button:hover {
-    background: #FFC873;
-    color: #222222;
-    font-weight: 700;
-}
+        background: #FFC873;
+        color: #222222;
+        font-weight: 700;
+    }
 </style>
 
 <section class="container-xl m-cqp">
@@ -232,20 +233,11 @@
                             <div class="checkout-btn"></div>
                         </div>
                     </div>
-                    
-
                 </div>
-
             </div>
-
-
         </div>
         <?php include "shopping_cart_inner_view.php"; ?>
     </div>
-
-
-
-
     </div>
 </section>
 <section class="cart-list-area container-xl">
@@ -256,11 +248,7 @@
     </div>
 </section>
 
-
-
 <script src="https://www.paypalobjects.com/js/external/dg.js"></script>
-
-
 
 <script>
     var dgFlow = new PAYPAL.apps.DGFlow({
@@ -305,7 +293,7 @@
                     url: url3,
                     type: 'POST',
                     success: function(response) {
-                        $('#cart_items_details').html(response);
+                        location.reload();
                     }
                 });
             }

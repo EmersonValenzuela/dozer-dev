@@ -8194,12 +8194,7 @@ font-weight: bold;}
     background-color: #222222 !important;
     border: none !important;
 }
-.bg-window{
-    background: #272727 !important;
-    top: 120% !important;
-    width: 170px !important;
-    box-shadow: 3px 3px 2px 0px #ffc873 !important ;
-}
+
 .bg-colorc{
     width: 170px !important;
 }
@@ -8403,7 +8398,24 @@ body::-webkit-scrollbar-thumb{
     height: 421px !important;
 }}
 
-@media (min-width: 992px) { 
-    .btnpa{
-        font-size: 18px;
+
+@media (min-width: 1200px) { 
+    .sign-in-box > .btn {
+  
+    font-size: 14px;
+}
+
+
+
+.text-navbar-c {
+    font-size: 14px; 
+}
+.text-navbar-c:hover {
+    font-size: 14px;
+}
+
+.text-navbar-r-bim {
+    font-size: 14px;
 } }
+
+

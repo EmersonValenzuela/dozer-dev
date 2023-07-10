@@ -23,7 +23,7 @@
             </a>
 
             <ul class="category corner-triangle bg-triangle top-left is-hidden pb-0 bg-window">
-                <li class="go-back"><a href=""><i class="fas fa-angle-left"></i><?php echo site_phrase('menu'); ?></a>
+                <li class="go-back"><a href=""><i class="fas fa-angle-left"></i><?php echo site_phrase('menu 2'); ?></a>
                 </li>
 
 
@@ -65,23 +65,25 @@
         </li>
         <div class="mobile-menu-helper-bottom"></div>
     </ul>
+
+   
 </div>
 
 <div class="main-nav-wrap">
     <div class="mobile-overlay"></div>
-    <style type="text/css">
-        @media only screen and (max-width: 767px) {
-            .category.corner-triangle.top-left.pb-0.is-hidden {
-                display: none !important;
-            }
+        <style type="text/css">
+            @media only screen and (max-width: 767px) {
+                .category.corner-triangle.top-left.pb-0.is-hidden {
+                    display: none !important;
+                }
 
-            .sub-category.is-hidden {
-                display: none !important;
+                .sub-category.is-hidden {
+                    display: none !important;
+                }
             }
-        }
-    </style>
+        </style>
 
-    <ul class="mobile-main-nav 	d-block  ">
+     <ul class="mobile-main-nav 	d-block  ">
         <div class="mobile-menu-helper-top"></div>
         <li class="has-children text-nowrap fw-bold">
             <a href="javascript:;" class="py-2 text-wrap d-flex" onclick="redirect_to('')">
@@ -91,8 +93,7 @@
                     <img style="width: 10px;" src="<?= base_url() ?>uploads/system/flecha-abajo.png" alt="">
             </a>
 
-            <ul class="category corner-triangle top-left is-hidden pb-0 bg-triangle
-bg-window">
+            <ul class="category corner-triangle top-left is-hidden pb-0 bg-triangle bg-window">
                 <li class="go-back"><a href=""><i class="fas fa-angle-left"></i><?php echo site_phrase('menu'); ?></a>
                 </li>
 

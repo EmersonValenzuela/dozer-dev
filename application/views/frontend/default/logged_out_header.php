@@ -4,9 +4,9 @@
 
             <ul class="mobile-header-buttons">
                 <li><a class="mobile-nav-trigger"
-                        href="#mobile-primary-nav"><?php echo site_url('menu'); ?><span></span></a></li>
-                <li><a class="mobile-search-trigger"
-                        href="#mobile-search"><?php echo site_url('search'); ?><span></span></a></li>
+                        href="#mobile-primary-nav"><?php echo site_url('menu'); ?><span></span></a> </li>
+
+               
             </ul>
 
             <a href="<?php echo site_url(''); ?>" class="navbar-brand pt-2 mt-1"><img

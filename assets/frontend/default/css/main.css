@@ -299,7 +299,7 @@ menu code was here
     position: absolute;
     top: 14px;
     right: 2px;
-    background-color: #ec5252;
+    background-color: #FFC873;
     border-radius: 15px;
     color: #fff;
     font-size: 10px;
@@ -398,7 +398,7 @@ menu code was here
     font-size: 13px;
 }
 .course-list-dropdown .item-list .item .item-details .current-price {
-    color: #ec5252;
+    color: #FFC873;
     font-size: 18px;
     font-weight: 600;
     margin-right: 5px;
@@ -412,7 +412,7 @@ menu code was here
     font-size: 13px;
 }
 .course-list-dropdown .item-list .item .item-details .current-price {
-    color: #ec5252;
+    color: #FFC873;
     font-size: 18px;
     font-weight: 600;
     margin-right: 5px;
@@ -463,7 +463,7 @@ menu code was here
     margin-top: 8px;
 }
 .course-list-dropdown .dropdown-footer .cart-total-price .current-price {
-    color: #ec5252;
+    color: #FFC873;
     font-size: 18px;
     font-weight: 600;
     margin-right: 5px;
@@ -845,8 +845,8 @@ menu code was here
 }
 .sign-in-modal form button[type="submit"]{
     color: #fff;
-    background-color: #ec5252;
-    border-color: #ec5252;
+    background-color: #FFC873;
+    border-color: #FFC873;
     font-size: 16px;
     font-weight: 700;
     height: 50px;
@@ -1087,7 +1087,7 @@ homepage styles
     padding: 10px 0 10px 63px;
 }
 .home-fact-box i{
-    background: #ec5252;
+    background: #FFC873;
     border-radius: 50px;
     height: 45px;
     width: 45px;
@@ -1359,7 +1359,7 @@ homepage styles
     margin-top: 2px;
 }
 .course-box .course-details .your-rating-box:hover .your-rating-text {
-    color: #ec5252;
+    color: #FFC873;
 }
 .course-box .course-details .your-rating-box .your-rating-text .edit {
     display: none;
@@ -1415,7 +1415,7 @@ homepage styles
     background: #f4c150
 }
 .course-badge.hot-new{
-    background: #ec5252;
+    background: #FFC873;
     color: #fff;
 }
 .course-badge.position{
@@ -1456,7 +1456,7 @@ homepage styles
 .course-box .wishlist-add.wishlisted button i,
 .course-box .favorite-add button:hover i,
 .course-box .favorite-add.added button i{
-    color:#ec5252;
+    color:#FFC873;
 }
 .course-box .wishlist-add button i,
 .course-box .favorite-add button i{
@@ -1637,7 +1637,7 @@ homepage styles
     top: -4px;
     font-size: 50px;
     line-height: 0;
-    color: #ec525233;
+    color: #FFC87333;
 }
 
 .course-popover-content .popover-btns {
@@ -1655,14 +1655,14 @@ homepage styles
 }
 
 .addedToCart {
-    color: #ec5252;
+    color: #FFC873;
     background-color: #ffffff;
-    border-color: #ec5252;
+    border-color: #FFC873;
 }
 .addedToCart:hover {
-    color: #ec5252;
+    color: #FFC873;
     background-color: #ffffff;
-    border-color: #ec5252;
+    border-color: #FFC873;
 }
 
 .course-popover-content .popover-btns .wishlist-btn {
@@ -1670,7 +1670,7 @@ homepage styles
     right: 8px;
     background: none;
     font-size: 20px;
-    border: 1px solid #ec5252;
+    border: 1px solid #FFC873;
     border-radius: 50%;
     width: 48px;
     height: 48px;
@@ -1680,13 +1680,13 @@ homepage styles
 }
 .course-popover-content .popover-btns .wishlist-btn i {
     color: transparent;
-    text-stroke: 1px #ec5252;
-    -webkit-text-stroke: 1px #ec5252;
+    text-stroke: 1px #FFC873;
+    -webkit-text-stroke: 1px #FFC873;
 }
 
 .course-popover-content .popover-btns .wishlist-btn.active i,
 .course-popover-content .popover-btns .wishlist-btn:hover i{
-    color: #ec5252;
+    color: #FFC873;
 }
 .webui-popover.left>.webui-arrow,
 .webui-popover.left-top>.webui-arrow,
@@ -1795,7 +1795,10 @@ section.course-header-area {
 }
 
 
-
+.img-logoespeciali{
+    width: 17rem;
+    padding: 0 3rem;
+}
 
 
 
@@ -1915,16 +1918,16 @@ course sidebar
 }
 
 .course-sidebar-text-box .buy-btns .btn-add-wishlist {
-    color: #ec5252;
+    color: #FFC873;
     background-color: #ffffff;
-    border-color: #ec5252;
+    border-color: #FFC873;
     border-radius: 10px;
 }
 
 .course-sidebar-text-box .buy-btns .btn-add-wishlist:hover,.course-sidebar-text-box .buy-btns .btn-add-wishlist:focus,.btn-add-wishlist.active {
     color: #fff !important;
-    background-color: #ec5252 !important;
-    border-color: #ec5252 !important;
+    background-color: #FFC873 !important;
+    border-color: #FFC873 !important;
     border-radius: 10px;
 }
 
@@ -2229,7 +2232,7 @@ course content
     border: 0;
     background: 0;
     font-size: 17px;
-    color: #ec5252;
+    color: #FFC873;
     cursor: pointer;
 }
 
@@ -2388,7 +2391,7 @@ course content
 }
 .student-feedback-box .individual-rating ul li .progress-bar{
     border-radius: 5px;
-    background-color: #ec5252;
+    background-color: #FFC873;
     font-size: 11px;
 }
 .student-feedback-box .individual-rating .rating i {
@@ -2498,7 +2501,7 @@ course content
     text-align: right;
 }
 .course-curriculum-accordion .lecture-group-title .title {
-    max-width: 60%;
+    max-width: 80%;
     font-weight: 600;
 }
 
@@ -2534,7 +2537,9 @@ course content
     left: 22px;
     font-size: 10px;
     top: 16px;
-    color: #007791;
+    color: white;
+    background-image: url(../../../../uploads/system/flecha-abajo-pf.png);
+
 }
 
 .course-curriculum-accordion .lecture-group-title[aria-expanded="false"]:before {
@@ -2593,7 +2598,7 @@ course content
     color: #007791;
 }
 .course-curriculum-accordion .lecture-list .lecture.has-preview:hover{
-    background-color: #f9f9f9;
+    /*background-color: #f9f9f9;*/
 }
 .course-curriculum-accordion .lecture-list .lecture.has-preview .lecture-title,
 .course-curriculum-accordion .lecture-list .lecture.has-preview .lecture-preview{
@@ -2678,8 +2683,8 @@ section.category-course-list-area {
 }
 .category-filter-box {
     margin-bottom: 35px;
-    border-radius: 8px;
-    padding: 30px 10px;
+   /* border-radius: 8px;
+    padding: 30px 10px; */
     
 }
 .category-course-list ul {
@@ -2992,8 +2997,8 @@ ul.pagination .page-item.disabled .page-link {
 }
 ul.pagination .page-item.active a,
 ul.pagination .page-item.active .page-link {
-    background-color: #ec5252;
-    border-color: #ec5252;
+    background-color: #FFC873;
+    border-color: #FFC873;
     color: #fff;
 }
 ul.pagination .page-item a,
@@ -3012,8 +3017,8 @@ ul.pagination .page-item .page-link {
 }
 ul.pagination .page-item a:hover,
 ul.pagination .page-item .page-link:hover {
-    background-color: #ec5252;
-    border-color: #ec5252;
+    background-color: #FFC873;
+    border-color: #FFC873;
     position: relative;
     color: #fff;
     z-index: 1;
@@ -3108,8 +3113,8 @@ section.page-header-area.my-course-area ul li a {
 }
 section.page-header-area.my-course-area ul li.active a,
 section.page-header-area.my-course-area ul li a:hover {
-    border: 1px solid #ec5252;
-    background-color: #ec5252;
+    border: 1px solid #FFC873;
+    background-color: #FFC873;
     color: #fff;
     padding: 8px 15px;
     border-radius: 5px;
@@ -3233,8 +3238,8 @@ section.my-courses-area {
     font-size: 15px;
     line-height: 1.35135;
     border-radius: 2px;
-    background-color: #ec5252;
-    border-color: #ec5252;
+    background-color: #FFC873;
+    border-color: #FFC873;
     font-weight: 600;
 }
 .edit-rating-modal .modal-footer button:hover,.edit-rating-modal .modal-footer button:focus {
@@ -3467,8 +3472,8 @@ section.cart-list-area {
     line-height: 1.35135;
     border-radius: 2px;
     color: #fff;
-    background-color: #ec5252;
-    border-color: #ec5252;
+    background-color: #FFC873;
+    border-color: #FFC873;
     font-weight: 600;
     padding: 16px 12px;
 }
@@ -3508,7 +3513,7 @@ section.cart-list-area {
     color: #686f7a;
 }
 .cart-sidebar .coupon-list ul li:hover {
-    color: #ec5252;
+    color: #FFC873;
 }
 .cart-sidebar .coupon-list ul li i {
     font-size: 11px;
@@ -3638,8 +3643,8 @@ section.user-dashboard-area {
 
 .user-dashboard-content .content-update-box button {
     color: #fff;
-    background-color: #ec5252;
-    border-color: #ec5252;
+    background-color: #FFC873;
+    border-color: #FFC873;
     padding: 11px 12px;
     font-size: 15px;
     border-radius: 2px;
@@ -4563,7 +4568,7 @@ color: #2a303b;
     }
 }
 .course-bundle-box{
-    background-color: #ec52520d;
+    background-color: #FFC8730d;
 }
 .text-ccc{
     color: #ccc !important;
@@ -5097,7 +5102,7 @@ background: linear-gradient(90deg, rgba(34,34,34,1) 21%, rgba(56,55,55,1) 50%, r
     width: calc(100% / 2 - 50px);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    
   }
   .main-cardd .cardss .card{
     transition: all 0.4s ease;
@@ -6189,6 +6194,15 @@ background: linear-gradient(90deg, rgba(28,28,28,1) 50%, rgba(20,20,20,1) 50%);
 .course-sidebar.fixed{
     top: 1rem !important;
 }
+
+
+.img-logoespeciali{
+    width: 15rem;
+    padding: 0 3rem 10px 0;
+    top: 18px;
+    position: relative;
+}
+
 }
 @media (min-width: 1400px) { .cuadro-contenido{
     top: 7rem !important;
@@ -6444,17 +6458,49 @@ width: 20rem;}
 .bg-img-cursos{
      background-position: right;
     background-repeat: no-repeat;
-    background-size: 59rem;
+    background-size: 100%;
     border-radius: 10px;
+    width: 500px;
 
 }
-
+.color-textcerti{
+    color: #C9C9C9;
+}
 .text-titulo-cat{
     color: white;
     font-size: 30pt;
    
 }
+.prox-color {
+    background-color: #FFC873 !important;
+    position: relative;
+    top: 10px;
+}
+@media (min-width: 1200px) { 
+    .category-filter-box {
+        margin-bottom: 35px !important;
+        border-radius: 8px;
+        
+   
+}
+.bg-img-cursos {
+    width: 850px !important;
+    height: 196px !important;
+}
+.text-titutlo-cursos{
+    top: 20px;
+    position: relative;
+}
+.text-subtitutlo-cursos{
+    top: 13px;
+    position: relative;
+}
 
+.precio-desc-curso {
+    font-size: 20px;
+    font-weight: 500;
+}
+}
 
 
 @media (min-width: 1400px) { .bg-img-cursos{
@@ -6591,6 +6637,21 @@ font-size: 35pt;
 
 
 @media (min-width: 576px) { 
+    .img-widt-logo{
+        width: 113px
+    }
+    .text-navbar-p {
+        font-size: 12px;
+       
+    }
+    .text-navbar-r-bim {
+        font-size: 12px;
+    
+    }
+    .navbar-brand {
+        margin-right:1px !important;
+        margin-left: 1px !important;
+    }
     
     .text-titulo-cat{
             
@@ -6608,8 +6669,8 @@ font-size: 35pt;
     }
     
     .imgpro{
-        height: 200px; 
-         width: 16.5rem;
+        height: 210px; 
+         width: 16.7rem;
     }
     .text-titulo-programa {
         
@@ -6637,13 +6698,14 @@ font-size: 35pt;
     }
     .img-autodesk {
         position: relative;
-        right: 1.9rem;
+        right: 1.5rem;
         width: 17rem;
     }
     .img-cip {
-        right: 3.3rem;
-    position: relative;
-    width: 21rem;
+        right: 0.7rem;
+        position: relative;
+        width: 15rem;
+    
     }
     .hc-30rem {
         height: 20rem;
@@ -6661,14 +6723,39 @@ font-size: 35pt;
     }
     .text-testimonio {
         font-size: 12px;
+        margin: 0 10px 0 0;
     }
     .img-testimonio {
-        width: 12rem;
+        width: 7rem;
         
+    }
+    .banderaimg{
+        width: 25px
+    }
+    .banderaecu{
+        width: 28px;
+        height: 20px;
+        top: 13px;
+        position: relative;
+    }
+    .banderaarg{
+        width: 28px;
+        height: 20px;
+        top: 13px;
+        position: relative;
     }
     .nombre-testimonio {
         font-size: 10px;
         
+
+    }
+    .card .nametest {
+        font-size: 11px !important;
+        
+    }
+    .style-top{
+        position: relative;
+        top: 14px;
     }
     .tituto-np {
       
@@ -6707,21 +6794,38 @@ font-size: 35pt;
     .text-rs-footer{
         font-size: 13px;
     }
+   .main-cardd .cardss .card {
+    /* margin: 20px 0 10px 0; */
+    width: 25% !important;
+}
+
+.precio-desce {
+    font-size: 21px;
+}
+.nombr-espe{
+    font-size: 17px !important;
+}
  }
 
  @media (min-width: 768px) { 
+    .precio-desce {
+        font-size: 18px;
+    }
+    .sub-text-principal {
+        font-size: 15px;
+    }
     .img-home-banner{
         width: 20rem;
     }
     .text-cont-programa {
-        font-size: 13px;
+        font-size: 12px;
     }
     .titulo-sub-programa {
         font-size: 13px;
     }
     .imgpro {
-        width: 358px;
-        height: 210px;
+        width: 363px !important;
+        height: 250px  !important;
     }
     .home-fact-box {
         height: 310px;
@@ -6731,18 +6835,22 @@ font-size: 35pt;
     }
     .img-autodesk {
        
-        width: 16rem;
-        bottom: 0.5rem;
+        right: 1.7rem !important;
+        width: 16rem !important;
+        bottom: 0.5rem !important;
+    }
+    .img-intituto{
+        right: 1rem !important;
+        width: 14rem !important; 
     }
     .img-cip {
-        right: 3.5rem;
-       
-        width: 20rem;
-        top: 0.5rem;
+        right: 1rem !important;
+        width: 14rem !important;
+        top: 1rem !important;
     }
     .estilos-md{
         margin: auto;
-        padding: 20px 0;
+       /* padding: 20px 0 ;*/
     }
     .btn-footer {
         font-size: 10pt;
@@ -6758,6 +6866,9 @@ font-size: 35pt;
     }
     .text-rs-footer {
         font-size: 10px;
+    }
+    .text-np {
+        font-size: 14px;
     }
 
   }
@@ -6778,55 +6889,56 @@ font-size: 35pt;
         font-size: 13pt;
     }
     .cont-cuadro {
-        border-radius: 8%;
-        width: 13rem;
-        height: 13rem;
+        border-radius: 8% !important;
+        width: 13rem !important;
+        height: 13rem !important;
     }
     .icon-style-user {
         
-        width: 3rem;
+        width: 3rem !important;
     }
     .icon-style-click{
         
-        width: 2.2rem;
+        width: 2.2rem !important;
     }
     .icon-style-tarjeta{
         
-        width: 4.2rem;
+        width: 4.2rem !important;
     }
     .icon-style-academy{
        
-        width: 3.8rem;
+        width: 3.8rem !important;
     }
     .cont-cuadro-text {
         
-        font-size: 12pt;
+        font-size: 15px !important;
        
     }
     .btnpa {
-        font-size: 15pt;
+        font-size: 15pt !important;
         }
         .imgpro {
-            width: 470px;
-            height: 210px;
+            width: 475px !important;
+            height: 250px !important;
         }
         .text-titulo-programa {
             font-size: 18px;
         }
     
         .img-autodesk {
-            /* width: 16rem; */
-            bottom: 0.5rem;
-            right: 1rem;
+            width: 20.2rem !important;
+            bottom: 1.5rem !important;
+            right: 2.3rem !important;
         }
         .img-intituto {
-            right: 1rem;
-            width: 16rem;
+            left: -0.7rem !important;
+            width: 16rem !important;
+            bottom: 0.7rem !important;
         }
         .img-cip {
-            right: 2rem;
-            width: 20rem;
-            top: 0.5rem;
+            left: -9px !important;
+    width: 16rem!important;
+    top: 0.5rem !important;
         }
         .estilos-md {
             margin: 0;
@@ -6843,81 +6955,79 @@ font-size: 35pt;
 
 @media (min-width: 1200px) { 
     .img-home-banner {
-        width: 30rem;
+        width: 30rem !important;
     }
     .text-principal{
         font-size: 33px;
         line-height: 1.2;
     }
        
-    }
+    
     .sub-text-principal{
-        font-size: 19px;
-        line-height: 1.5;
-        font-weight: 200;
+        font-size: 19px !important;
+        line-height: 1.5 !important;
+        font-weight: 200 !important;
         
     }
     .img-convenios {
         width: 85%;
-        padding: 0 0 1.5rem 0;
+        padding: 0 0 1.5rem 0 !important;
     }
     .btn-cm{
       
-        font-size: 16px;
+        font-size: 16px !important;
     }
     .cont-cuadro {
         
-        border-radius: 8%;
+        border-radius: 8% !important;
        
-        width: 15rem;
-        height: 15rem;
+        width: 15rem !important;
+        height: 15rem !important;
         
     }
     .icon-style-user {
         
-        width: 4rem;
+        width: 4rem !important;
     }
     .icon-style-click{
         
-        width: 2.9rem;
+        width: 2.9rem !important;
     }
     .icon-style-tarjeta{
         
-        width: 5.7rem;
+        width: 5.7rem !important;
     }
     .icon-style-academy{
        
-        width: 5.1rem;
+        width: 5.1rem !important;
     }
-    .cont-cuadro-text {
-        
-        font-size: 15pt;
-       
-    }
+   
     .btnpa {
-        font-size: 18.84pt;
+        font-size: 18.84pt !important;
         }
 
         .text-titulo-cat{
             
-            font-size: 25pt;
+            font-size: 25pt !important;
            
         }
         
         .text-sub-cat{
             
-            font-size: 13pt;
+            font-size: 13pt !important;
            
             
         }
-        .text-section{
+       .text-section{
            
-            font-size: 25pt;
+             font-size: 25pt !important;
            
         }
         .programa{
            
-            padding: 50px 25px;
+           
+            padding: 50px 25px !important;
+    height: 346px !important;
         }
         .text-titulo-programa{
            
@@ -6930,22 +7040,24 @@ font-size: 35pt;
         
         } 
         .img-intituto{ 
-            width: 20rem;
-            bottom: 1.5rem;
+            width: 17rem !important;
+            left: 0.1rem !important;
+            top: -10px !important;
         }
         .img-autodesk{
-            width: 20rem;
-            bottom: 2rem;
+            width: 18rem !important;
+            left: 2px !important;
+            bottom: 30px !important;
         }
         .img-cip{
-            width: 25rem;
-            top: -1.4rem;
+            width: 17rem !important;
+    left: 0.4rem !important;
         }
         .container .main-cardd .cardss{
     width: calc(100% / 2 - 10px);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+   
   }
   .text-rs{
     
@@ -6953,14 +7065,17 @@ font-size: 35pt;
     
 }
 .imgpro {
-    width: 551px;
-    height: 310px;
+    width: 551px !important;
+    height: 346px !important;
 }
 .fondo-footer {
     margin: 0 0.5rem;
 }
 .botom-footer {
     font-size: 13px;
+}
+.text-np {
+    font-size: 18px !important;
 }
 .tamano {
     width: 47rem;
@@ -6981,9 +7096,11 @@ font-size: 35pt;
     font-size: 18px;
 }
 
- 
+
+}
 
  @media (min-width: 1400px) { 
+
     .img-home-banner {
         width: 35rem;
     }
@@ -7058,7 +7175,8 @@ font-size: 35pt;
         }
         .programa{
            
-            padding: 47px 25px;
+            padding: 47px 25px !important;
+    height: 418px !important;
         }
         .text-titulo-programa{
            
@@ -7071,19 +7189,23 @@ font-size: 35pt;
         
         } 
         .img-intituto{ 
-            width: 25rem;
-            padding: 2.2rem 1rem;
+            width: 22rem !important;
+            padding: 2.2rem 1rem !important;
         }
+        
         .img-autodesk{
-            
-            width: 27rem;
-            margin: 2.4rem 0;
+            width: 22rem !important;
+            margin: 2.4rem 1.5rem;
+            /* left: 1px !important; */
+            bottom: 6px !important;
+            height: 232px !important;
         }
         .img-cip{
-            width: 23rem;
-            top: 0;
-            margin: 2.2rem 1rem;
-            right: 10px;
+            width: 21rem !important;
+            top: 55px !important;
+            /* margin: 2.2rem 1rem; */
+            left: 5px !important;
+            height: 232px !important;
         }
         .container .main-cardd .cardss{
     width: calc(100% / 2 - 10px);
@@ -7093,12 +7215,13 @@ font-size: 35pt;
   }
   .text-rs{
     
-    font-size: 17pt;
+    font-size: 15pt;
     
 }
 .imgpro {
-    width: 682px;
-    height: 420px;
+    width: 639px !important;
+    height: 420px !important;
+    bottom: 0.1rem !important;
 }
 .hc-30rem {
     height: 35rem;
@@ -7113,13 +7236,40 @@ font-size: 35pt;
     font-size: 20px;
 }
 .img-testimonio {
-    width: 18rem;
+    width: 18rem !important;
 }
 .text-testimonio {
-    font-size: 19px;
+    font-size: 19px !important;
 }
 .nombre-testimonio {
-    font-size: 15px;
+    font-size: 15px !important;
+}
+.card .nametest {
+    font-size: 15px !important;
+}
+.banderaimg {
+    width: 35px !important;
+}
+.card .jobtest {
+    font-size: 15px !important;
+    
+}
+
+.banderaecu {
+    width: 33px !important;
+    height: 25px !important;
+    top: -1px !important;
+    
+}
+.style-top {
+  
+    top: 1px !important;
+}
+.banderaarg {
+    width: 33px !important;
+    height: 25px !important;
+    top: 1px !important;
+    
 }
 .fondo-footer {
     margin: 0 2rem;
@@ -7140,7 +7290,26 @@ font-size: 35pt;
     font-size: 17pt;
 }
 
- }
+.text-principal-nosotros{
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    padding: 0 0 55px 0;
+
+   
+}
+.sub-text-principal-nosotros{
+    color: white;
+    font-size: 17px;
+    font-weight: 200;
+    
+
+}
+
+.img-convenios-nosotros {
+    width: 100%;
+    padding: 0 0 1.5rem 0;
+} }
 
 .precio-desc{
     font-size: 23px;
@@ -7251,29 +7420,10 @@ font-size: 35pt;
     padding: 50px 0px 0px 0px;
     color: #fff;
 }
+  
 
-@media (min-width: 1400px) { .text-principal-nosotros{
-    font-weight: bold;
-    color: white;
-    font-size: 25px;
-    padding: 0 0 55px 0;
-
-   
-}
-.sub-text-principal-nosotros{
-    color: white;
-    font-size: 17px;
-    font-weight: 200;
-    
-
-}
-
-.img-convenios-nosotros {
-    width: 100%;
-    padding: 0 0 1.5rem 0;
-} }
-
-@media (min-width: 1200px) { .text-principal-nosotros{
+@media (min-width: 1200px) { 
+    .text-principal-nosotros{
     font-weight: bold;
     color: white;
     font-size: 30px;
@@ -7540,17 +7690,17 @@ color: white;
     font-weight: 600 !important;
 }
 .text-navbar-r-bim{
-    font-size: 14px;
+    
     color:white;
     font-weight: 600 !important;
 }
 .text-navbar-p{
-    font-size: 14px;
+   
     color:#FFC873;
     font-weight: 600 !important;
 }
 .text-navbar-p:hover{
-    font-size: 14px !important;
+   
     color:#FFC873 !important;
     font-weight: 600 !important;
 }
@@ -7583,14 +7733,15 @@ color: white;
     
 }
 }
-@media (min-width: 1400px) { .m-navbar{
+@media (min-width: 1400px) { 
+    .m-navbar{
     margin: 0 10rem 0 0;
 } 
 .text-navbar-c{
-    font-size: 14px;
+    font-size: 15px !important;
 }
 .text-navbar-r-bim {
-    font-size: 14px;
+    font-size: 14px !important;
 }
 .text-navbar-p {
     font-size: 14px !important;
@@ -7737,7 +7888,7 @@ text-align: center;}
 .text-principal-ruta{
     font-weight: bold;
     color: white;
-    font-size: 22px;
+    font-size: 15px;
     text-align: center;
     
    
@@ -7745,7 +7896,7 @@ text-align: center;}
 .subtext-principal-ruta{
     font-weight: bold;
     color: white;
-    font-size: 28px;
+    font-size: 17px;
     text-align: center;
     padding: 0 0 15px 0;
    
@@ -7753,17 +7904,17 @@ text-align: center;}
 .text-incio-ruta{
     font-weight: bold;
     color: #000000;
-    font-size: 22px;
+    font-size: 15px;
     text-align: center;
     background-color: #FFCC73;
     border-radius: 5px;
-    margin: 0px 300px;
+    margin: 0px 20px;
     padding: 5px;
 }
 .lineaHorizontal {
     border-top: 1px solid #FFCC73;
     height: 2px;
-    max-width: 950px;
+    max-width: 250px;
     padding: 0;
     margin: 0px auto 0 auto;
   }
@@ -7789,26 +7940,26 @@ text-align: center;}
  
 }
   .lineaVerticald{
-    height: 50px;
+    height: 25px;
     width: 0.1vw;
     border-width: 0;
     color: #000;
     background-color: #FFCC73;
-    margin: 0 1174px;
+    left: 17.8rem;
     bottom: 3.2rem;
     position: relative;
     
    
   }
   .lineaVerticali{
-    height: 50px;
+    height: 25px;
     width: 0.1vw;
     border-width: 0;
     color: #000;
     background-color: #FFCC73;
-    margin: 0 224px;
     position: relative;
-    bottom: 6.3rem;
+    bottom: 4.8rem;
+    left: 2.2rem;
     
    
   }
@@ -7818,12 +7969,13 @@ text-align: center;}
 .fondo-ruta{
     background: #1C1C1C;
     border-radius: 10px;
-    padding: 15px 40px;
+    padding: 15px 5px;
     text-align: center;
     border: 1px solid black;
 }
 .text-ruta{
-    font-weight: bold;
+    font-size: 10px;
+    padding: 0.2rem 0.2rem !important;
 }
 .style-primer-btn{
     background-color:#FFCC73 ;
@@ -7840,6 +7992,7 @@ text-align: center;}
     border-radius: 5px;
     padding: 12px 0;
     margin-top: 15px ;
+    font-size: 10px;
 }
 .style-espe-btn{
     background-color:#FFCC73 ;
@@ -7848,6 +8001,7 @@ text-align: center;}
     border-radius: 5px;
     padding: 5px 0;
     margin-top: 15px ;
+    font-size: 7px;
 }
 
 .pf-ruta{
@@ -7857,6 +8011,540 @@ text-align: center;}
     text-align: center;
     padding: 12px;
 }
+
+@media (min-width: 576px) {
+    .text-principal-ruta{
+        font-weight: bold;
+        color: white;
+        font-size: 22px;
+        text-align: center;
+        
+       
+    }
+    .subtext-principal-ruta{
+        font-weight: bold;
+        color: white;
+        font-size: 28px;
+        text-align: center;
+        padding: 0 0 15px 0;
+       
+    }
+    .text-incio-ruta{
+        font-size: 15px;
+        margin: 0px 90px;
+       
+    }
+    .lineaHorizontal {
+        max-width: 450px;
+      }
+      .lineaVertical{
+        height: 49px;
+       
+      }
+    
+    .lineaVerticalc{
+      height: 50px;
+      width: 0.1vw;
+      border-width: 0;
+      color: #000;
+      background-color: #FFCC73;
+      margin: auto;
+      display: block;
+     
+    }
+      .lineaVerticald{
+        left: 14rem;
+        margin: auto;
+        bottom: 50px;
+        height: 44px;
+
+        
+       
+      }
+      .lineaVerticali{
+        right: 10.1rem;
+        width: 0.1vw;
+        border-width: 0;
+        color: #000;
+        background-color: #FFCC73;
+        margin: 0 224px;
+        position: relative;
+        bottom: 95px;
+        height: 45px;
+    }
+ 
+       
+      
+      .h-140{
+        height: 140px;
+      }
+    .fondo-ruta{
+        padding: 13px 20px;
+    }
+    .text-ruta{
+        font-weight: bold;
+        font-size: 15px;
+        padding: 0 2px !important;
+    }
+    .style-primer-btn{
+        background-color:#FFCC73 ;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px 0;
+        margin-top: 2px;
+    }
+    .style-cursos-ruta{
+        padding: 12px 5px;
+        font-size: 12px;
+    }
+    .style-espe-btn{
+        font-size: 13px;
+    }
+    
+    .pf-ruta{
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .text-principal-ruta{
+        font-weight: bold;
+        color: white;
+        font-size: 22px;
+        text-align: center;
+        
+       
+    }
+    .subtext-principal-ruta{
+        font-weight: bold;
+        color: white;
+        font-size: 28px;
+        text-align: center;
+        padding: 0 0 15px 0;
+       
+    }
+    .text-incio-ruta{
+        font-size: 19px;
+        margin: 0px 130px;
+       
+    }
+    .lineaHorizontal {
+        max-width: 580px;
+      }
+      .lineaVertical{
+        height: 40px;
+       
+      }
+    
+    .lineaVerticalc{
+      height: 50px;
+      width: 0.1vw;
+      border-width: 0;
+      color: #000;
+      background-color: #FFCC73;
+      margin: auto;
+      display: block;
+     
+    }
+      .lineaVerticald{
+        left: 18.1rem;
+    margin: auto;
+   
+    bottom: 42.3px;
+    height: 45px;
+
+        
+       
+      }
+      .lineaVerticali{
+        right: 8.1rem;
+        
+        width: 0.1vw;
+        border-width: 0;
+        color: #000;
+        background-color: #FFCC73;
+        margin: 0 224px;
+        position: relative;
+        bottom: 87px;
+    height: 45px;
+    }
+ 
+       
+      
+      .h-140{
+        height: 140px;
+      }
+    .fondo-ruta{
+        background: #1C1C1C;
+        border-radius: 10px;
+        padding: 15px 40px;
+        text-align: center;
+        border: 1px solid black;
+    }
+    .text-ruta{
+        font-weight: bold;
+    }
+    .style-primer-btn{
+        background-color:#FFCC73 ;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px 0;
+        margin-top: 2px;
+    }
+    .style-cursos-ruta{
+        padding: 12px 5px;
+        font-size: 15px;
+    }
+    .style-espe-btn{
+        background-color:#FFCC73 ;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px 0;
+        margin-top: 15px ;
+    }
+    
+    .pf-ruta{
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 12px;
+    }
+}
+@media (min-width: 992px) {
+    .text-principal-ruta{
+        font-weight: bold;
+        color: white;
+        font-size: 22px;
+        text-align: center;
+        
+       
+    }
+    .subtext-principal-ruta{
+        font-weight: bold;
+        color: white;
+        font-size: 28px;
+        text-align: center;
+        padding: 0 0 15px 0;
+       
+    }
+    .text-incio-ruta{
+        font-size: 20px;
+        margin: 0px 150px;
+       
+    }
+    .lineaHorizontal {
+        max-width: 805px;
+      }
+      .lineaVertical{
+        height: 50px;
+        width: 0.1vw;
+        border-width: 0;
+        color: #000;
+        background-color: #FFCC73;
+        margin: auto;
+        display: block;
+       
+      }
+    
+    .lineaVerticalc{
+      height: 50px;
+      width: 0.1vw;
+      border-width: 0;
+      color: #000;
+      background-color: #FFCC73;
+      margin: auto;
+      display: block;
+     
+    }
+      .lineaVerticald{
+        left: 25.2rem;
+        margin: auto;
+        
+       
+      }
+      .lineaVerticali{
+        right: 8.1rem;
+        
+       
+      }
+      .h-140{
+        height: 140px;
+      }
+    .fondo-ruta{
+        background: #1C1C1C;
+        border-radius: 10px;
+        padding: 15px 40px;
+        text-align: center;
+        border: 1px solid black;
+    }
+    .text-ruta{
+        font-weight: bold;
+    }
+    .style-primer-btn{
+        background-color:#FFCC73 ;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px 0;
+        margin-top: 2px;
+    }
+    .style-cursos-ruta{
+        padding: 12px 5px;
+    }
+    .style-espe-btn{
+        background-color:#FFCC73 ;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px 0;
+        margin-top: 15px ;
+    }
+    
+    .pf-ruta{
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text-principal-ruta{
+        font-weight: bold;
+        color: white;
+        font-size: 22px;
+        text-align: center;
+        
+       
+    }
+    .subtext-principal-ruta{
+        font-weight: bold;
+        color: white;
+        font-size: 28px;
+        text-align: center;
+        padding: 0 0 15px 0;
+       
+    }
+    .text-incio-ruta{
+        font-size: 20px;
+        margin: 0px 220px;
+       
+    }
+    .lineaHorizontal {
+        border-top: 1px solid #FFCC73;
+        height: 2px;
+        max-width: 950px;
+        padding: 0;
+        margin: 0px auto 0 auto;
+      }
+      .lineaVertical{
+        height: 50px;
+        width: 0.1vw;
+        border-width: 0;
+        color: #000;
+        background-color: #FFCC73;
+        margin: auto;
+        display: block;
+       
+      }
+    
+    .lineaVerticalc{
+      height: 50px;
+      width: 0.1vw;
+      border-width: 0;
+      color: #000;
+      background-color: #FFCC73;
+      margin: auto;
+      display: block;
+     
+    }
+      .lineaVerticald{
+        right: 8.1rem;
+        
+       
+      }
+      .lineaVerticali{
+        right: 8.1rem;
+        
+       
+      }
+      .h-140{
+        height: 140px;
+      }
+    .fondo-ruta{
+        background: #1C1C1C;
+        border-radius: 10px;
+        padding: 15px 40px;
+        text-align: center;
+        border: 1px solid black;
+    }
+    .text-ruta{
+        font-weight: bold;
+    }
+    .style-primer-btn{
+        background-color:#FFCC73 ;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px 0;
+        margin-top: 2px;
+    }
+    .style-cursos-ruta{
+        padding: 12px 5px;
+    }
+    .style-espe-btn{
+        background-color:#FFCC73 ;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px 0;
+        margin-top: 15px ;
+    }
+    
+    .pf-ruta{
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 12px;
+    }
+}
+@media (min-width: 1400px) {
+    .text-principal-ruta{
+        font-weight: bold;
+        color: white;
+        font-size: 22px;
+        text-align: center;
+        
+       
+    }
+    .subtext-principal-ruta{
+        font-weight: bold;
+        color: white;
+        font-size: 28px;
+        text-align: center;
+        padding: 0 0 15px 0;
+       
+    }
+    .text-incio-ruta{
+        font-weight: bold;
+        color: #000000;
+        font-size: 22px;
+        text-align: center;
+        background-color: #FFCC73;
+        border-radius: 5px;
+        margin: 0px 300px;
+        padding: 5px;
+    }
+    .lineaHorizontal {
+        border-top: 1px solid #FFCC73;
+        height: 2px;
+        max-width: 950px;
+        padding: 0;
+        margin: 0px auto 0 auto;
+      }
+      .lineaVertical{
+        height: 50px;
+        width: 0.1vw;
+        border-width: 0;
+        color: #000;
+        background-color: #FFCC73;
+        margin: auto;
+        display: block;
+       
+      }
+    
+    .lineaVerticalc{
+      height: 50px;
+      width: 0.1vw;
+      border-width: 0;
+      color: #000;
+      background-color: #FFCC73;
+      margin: auto;
+      display: block;
+     
+    }
+      .lineaVerticald{
+        height: 50px;
+        width: 0.1vw;
+        border-width: 0;
+        color: #000;
+        background-color: #FFCC73;
+        margin: 0 1174px;
+        bottom: 3.2rem;
+        position: relative;
+        
+       
+      }
+      .lineaVerticali{
+        height: 50px;
+        width: 0.1vw;
+        border-width: 0;
+        color: #000;
+        background-color: #FFCC73;
+        margin: 0 224px;
+        position: relative;
+        bottom: 6.3rem;
+        
+       
+      }
+      .h-140{
+        height: 140px;
+      }
+    .fondo-ruta{
+        background: #1C1C1C;
+        border-radius: 10px;
+        padding: 15px 40px;
+        text-align: center;
+        border: 1px solid black;
+    }
+    .text-ruta{
+        font-weight: bold;
+    }
+    .style-primer-btn{
+        background-color:#FFCC73 ;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px 0;
+        margin-top: 2px;
+    }
+    .style-cursos-ruta{
+        background-color:#303030;
+        color: white;
+        font-weight: 400;
+        border-radius: 5px;
+        padding: 12px 0;
+        margin-top: 15px ;
+    }
+    .style-espe-btn{
+        background-color:#FFCC73 ;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px 0;
+        margin-top: 15px ;
+    }
+    
+    .pf-ruta{
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 12px;
+    }
+}
+
+
 
 .color-border{
     border: 2px solid black !important;
@@ -8276,6 +8964,7 @@ font-weight: lighter;}
 .img-certficado-curso {
     width: 25rem;
 }
+
 }
 
 .text-nombcertid{
@@ -8375,14 +9064,7 @@ body::-webkit-scrollbar-thumb{
         left: 2px;
         top: 5px;
     }
-    .img-autodesk {
-        width: 19rem;
-        position: relative;
-        left: 1px;
-        margin: auto;
-        display: block;
-        bottom: 18px;
-    }
+    
     .img-cip {
      width: 16rem;
     top: 0;
@@ -8396,7 +9078,8 @@ body::-webkit-scrollbar-thumb{
 @media (min-width: 1400px) { 
      .mt-md-0{
     height: 421px !important;
-}}
+}
+}
 
 
 @media (min-width: 1200px) { 
@@ -8405,7 +9088,10 @@ body::-webkit-scrollbar-thumb{
     font-size: 14px;
 }
 
-
+.navbar-brand {
+    margin-right: 20px !important;
+    margin-left: 0px !important;
+}
 
 .text-navbar-c {
     font-size: 14px; 
@@ -8418,4 +9104,341 @@ body::-webkit-scrollbar-thumb{
     font-size: 14px;
 } }
 
+@media (min-width: 768px) {
+    .main-nav-wrap {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    .cont-cuadro-text {
+       font-size: 13px;
+    }
+    .text-navbar-r-bim {
+        font-size: 13px;
+       
+    }
+    .text-navbar-c {
+        font-size: 13px;
+    }
 
+    .sign-in-box > .btn {
+      
+        font-size: 13px;
+       
+    }
+    
+ }
+
+ @media (min-width: 576px){
+    .icon-style-click {
+        width: 1.5rem;
+    }
+    .icon-style-user {
+        width: 2rem;
+    }
+    .icon-style-tarjeta {
+        width: 2.9rem;
+    }
+    .icon-style-academy {
+        width: 3.1rem;
+    }
+    .btnpa {
+        font-size: 15px;
+        font-weight: 600;
+        padding: 0.3rem 0.2rem;
+    }
+    .cont-cuadro {
+    border-radius: 5%;
+    width: 15rem;
+    height: 9rem;
+}
+    .cont-cuadro-text {
+        color: white;
+        font-weight: 500;
+        font-size: 11px;
+        margin: 0 10px;
+    }
+ 
+ }
+
+ @media (min-width: 678px){
+    .imgpro{
+        height: 210px;
+        width: 19.9rem;
+    }
+    .img-intituto {
+        right: 0rem;
+        width: 15rem;
+    }
+    .img-autodesk {
+        
+        right: 0rem;
+        width: 17rem;
+    }
+    .img-cip {
+        right: 0rem;
+        width: 17rem;
+    }
+ }
+
+ @media (min-width: 992px) { 
+
+ .main-nav-wrap>ul>li>a {
+    
+    padding-left: 9.9px !important;
+}
+.img-testimonio {
+    width: 12rem;
+}
+}
+
+/*NUEVO CERTIFICADOS*/
+.blog-card{
+    position: relative;
+    height: 370px;
+    width: 95%;
+    max-width: 850px;
+    margin: auto;
+    
+   
+  }
+  .inner-part{
+    position: absolute;
+    display: flex;
+    height: 320px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 19px;
+    border: 1px solid white;
+    border-radius: 18px;
+  }
+  #imgTap:checked ~ .inner-part {
+    padding: 0;
+    transition: .1s ease-in;
+  }
+  .inner-part .img{
+    height: 260px;
+    width: 350px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 10px;
+
+    
+  }
+  #imgTap:checked ~ .inner-part .img{
+    height: 370px;
+    width: 850px;
+    z-index: 99;
+    margin-top: 10px;
+    transition: .3s .2s ease-in;
+  }
+  .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0;
+    transition: .6s;
+  }
+  #tap-1:checked ~ .inner-part .img-1,
+  #tap-2:checked ~ .inner-part .img-2,
+  #tap-3:checked ~ .inner-part .img-3{
+    opacity: 1;
+    transition-delay: .2s;
+  }
+  .contenido{
+    padding: 0  15px;
+    width: 320px;
+    /* margin-left: 50px; */
+    opacity: 0;
+    transition: .6s;
+
+  }
+  #imgTap:checked ~ .inner-part .contenido{
+    display: none;
+  }
+  #tap-1:checked ~ .inner-part .contenido-uno,
+  #tap-2:checked ~ .inner-part .contenido-dos,
+  #tap-3:checked ~ .inner-part .contenido-tres{
+    opacity: 1;
+    margin-left: 0px;
+    z-index: 100;
+    transition-delay: .3s;
+  }
+  .contenido span{
+    display: block;
+    color: #7b7992;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 500
+  }
+  .contenido .title{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .contenido .text{
+    color: white;
+    font-size: 19px;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+    text-align: justify;
+  }
+  .contenido button{
+    display: inline-flex;
+    padding: 15px 20px;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff0e6;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #fd3535;
+    background: linear-gradient(147deg, #fe8a39  0%, #fd3838 74%);
+  }
+  .contenido button:hover{
+    background: linear-gradient(147deg, #fe791b 0%, #fd1c1c 74%);
+  }
+  .sliders{
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 12;
+  }
+  #imgTap:checked ~ .sliders{
+    display: none;
+  }
+  .sliders .tap{
+    position: relative;
+    height: 15px;
+    width: 15px;
+    background: #d9d9d9;
+    border-radius: 20px;
+    display: inline-flex;
+    margin: 0 3px;
+    cursor: pointer;
+  }
+  .sliders .tap:hover{
+    background: white;
+  }
+  .sliders .tap:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: -100%;
+    background: linear-gradient(147deg,#f6b323 0%, #f23b26 74%);
+    border-radius: 10px;
+    transform: scaleX(0);
+    transition: transform .6s;
+    transform-origin: left;
+  }
+  input[type="radio"],
+  input[type="checkbox"]{
+    display: none;
+  }
+  
+
+
+  #tap-1:checked ~ .sliders .tap-1{
+    width: 35px;
+  }
+  #tap-1:checked ~ .sliders .tap-2{
+    width: 15px;
+  }
+  #tap-1:checked ~ .sliders .tap-3{
+    width: 15px;
+  }
+
+  #tap-2:checked ~ .sliders .tap-2{
+    width: 35px;
+  }
+  #tap-2:checked ~ .sliders .tap-1{
+    width: 15px;
+  }
+  #tap-2:checked ~ .sliders .tap-3{
+    width: 15px;
+  }
+
+  #tap-3:checked ~ .sliders .tap-3{
+    width: 35px;
+  }
+  #tap-3:checked ~ .sliders .tap-1{
+    width: 15px;
+  }
+  #tap-3:checked ~ .sliders .tap-2{
+    width: 15px;
+  }
+
+  @media (min-width: 576px) {
+    .inner-part {
+    
+        width: 530px;
+    }
+    .contenido .title {
+        font-size: 20px;
+       
+    }
+    .contenido .text {
+       
+        font-size: 13px;
+        
+        text-align: center;
+    }
+    
+  }
+
+  @media (min-width: 768px) {
+    .inner-part {
+    
+        width: 709px;
+    }
+    .contenido .title {
+        font-size: 30px;
+       
+    }
+    .contenido .text {
+       
+        font-size: 19px;
+        
+        text-align: center;
+    }
+    
+  }
+  @media (min-width: 1200px){
+.main-nav-wrap>ul>li>a {
+    padding-left: 25px !important; 
+}
+.main-nav-wrap {
+    padding: 0px !important;
+    margin: 9px !important;
+}}
+
+@media (min-width: 1200px){
+.main-nav-wrap {
+    padding: 0px !important;
+    margin: 0px 3px!important;
+}
+.pdd-textencabezado {
+    padding: 0px 180px 0 20px !important;}
+}
+
+.btn-verificar {
+    background: white;
+    color: #222222;
+    border-radius: 5px;
+    padding: 2px 20px;
+    font-weight: 600;
+}
+.w-350{
+    width: 350px !important;
+}
+.color-fondo{
+    background: #141414;
+}

@@ -113,13 +113,13 @@ if (isset($sub_category_id)) {
                 </div>
             </div>
             <div class="col-lg-9">
-                <div class="row category-filter-box mx-0 box-shadow-4 bg-img-cursos" style="
+                <div class="row category-filter-box mx-0  bg-img-cursos" style="
                     background-image: url(<?= $variable ?>);
                     
                 ">
-                    <div class="col-md-7 position-relative">
-                        <p class="fw-bold text-white px-3"><?= $text_banner ?></p>
-                        <p class="px-3 pb-3 text-white"><?= $sub_text_banner ?></p>
+                    <div class="col-md-7 col-lg-9 position-relative">
+                        <p class="fw-bold text-white px-3 pdd-textencabezado text-titutlo-cursos"><?= $text_banner ?></p>
+                        <p class="px-3 pb-3 text-white text-subtitutlo-cursos"><?= $sub_text_banner ?></p>
                         <?php if ($variable_dos  != "") { ?>
                             <div class="px-3 my-4">
                                 <a class="btn-premiun p-2 border-09" href="#">
@@ -133,10 +133,9 @@ if (isset($sub_category_id)) {
                             </div>
                         <?php }
                         if ($variable_logo) { ?>
-                            <p></p>
                             <p class="fw-bold text-white px-3"><?= $text_bannerr ?></p>
                             <p class="px-3 pb-3 text-white"><?= $sub_text_banner_especializacion ?></p>
-                            <img style="width: 17rem;padding: 0 3rem;" src="<?= $variable_logo ?>" alt="">
+                            <img class="img-logoespeciali" src="<?= $variable_logo ?>" alt="">
                         <?php } ?>
                     </div>
                     <div class="col-md-5 text-end filter-sort-by">

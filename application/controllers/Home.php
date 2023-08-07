@@ -55,6 +55,15 @@ class Home extends CI_Controller
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
+    public function certi()
+    {
+        $page_data['page_name'] = "certificado";
+        $page_data['page_title'] = site_phrase('Verifica-tu-cetificado');
+
+
+        $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
+    }
+
     public function autoridades()
     {
         $page_data['page_name'] = "autoridades";
@@ -105,6 +114,7 @@ class Home extends CI_Controller
 
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
+
     public function ruta()
     {
         $page_data['page_name'] = "ruta_aprendizaje";
@@ -259,7 +269,8 @@ class Home extends CI_Controller
             $page_data['parent'] = $row_category->parent;
             $page_data['text_certificado'] = "Certifican: Autodesk y Dozer";
             $page_data['variable_logo']  = "";
-        } elseif ($row_category->parent == 21 || $row_category->id == 21) {
+        } 
+        elseif ($row_category->parent == 21 || $row_category->id == 21) {
             $page_data['variable']  = site_url('uploads/system/portada-cursos.png');
             $page_data['text_banner'] = "El mejor momento para invertir en tus 
             metas  ";

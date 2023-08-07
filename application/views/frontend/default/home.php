@@ -51,7 +51,7 @@
         <div class="container-xl ">
             <div class="row ">
 
-                <div class="col-6 col-md-3 d-flex text-center d-flex justify-content-start">
+                <div class="col-6 col-sm-3  col-md-3 d-flex text-center d-flex justify-content-start">
                     <div class="p-lg-2 cont-cuadro mr-md-auto mr-auto">
                         <img class="icon-style-user" src="uploads\system\icon-user.png" alt="">
                         <p class="cont-cuadro-text">Crea tu cuenta de <br> Perfil en Dozer</p>
@@ -61,7 +61,7 @@
 
                 </div>
 
-                <div class=" col-6 col-md-3 d-flex text-center justify-content-center ">
+                <div class=" col-6  col-sm-3 col-md-3 d-flex text-center justify-content-center ">
                     <div class="p-lg-2 cont-cuadro mr-md-auto mr-auto">
                         <img class="icon-style-click" src="uploads\system\icon-elegir.png" alt="">
                         <p class="cont-cuadro-text">Elige el Curso, <br>
@@ -73,7 +73,7 @@
 
                 </div>
 
-                <div class=" col-6 col-md-3 d-flex text-center justify-content-center ">
+                <div class=" col-6 col-sm-3  col-md-3 d-flex text-center justify-content-center ">
                     <div class="p-lg-2 cont-cuadro mr-md-auto mr-auto">
                         <img class="icon-style-tarjeta" src="uploads\system\icon-pago.png" alt="">
                         <p class="cont-cuadro-text">Realiza el <br>
@@ -83,7 +83,7 @@
                     </div>
 
                 </div>
-                <div class=" col-6 col-md-3 d-flex text-center justify-content-end justify-content-end">
+                <div class=" col-6 col-sm-3  col-md-3 d-flex text-center justify-content-end justify-content-end">
                     <div class=" p-lg-2 cont-cuadro mr-md-auto mr-auto">
                         <img class="icon-style-academy" src="uploads\system\icon-certi.png" alt="">
                         <p class="cont-cuadro-text">Estudia y <br>
@@ -222,38 +222,310 @@ section .content p {
     text-align: justify;
 }
 
-@media (min-width: 1200px) {
-    .btnpa {
-        font-size: 15pt;
+@media (min-width: 576px) {
+    .course-curso {
+        padding: 8px 9px 5px 9px;
+
     }
 
+
+
+
+    .nom-cur {
+        font-size: 14px;
+    }
+
+    .nivel {
+        font-size: 13px;
+    }
+
+    .certi {
+        font-size: 13px;
+    }
+
+    .precio-desc {
+        font-size: 23px;
+    }
+
+    .precio-total {}
+
+    .descuento {}
+
+    .btnbadge-prox {
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+
+    .text-sub-cat {
+        font-size: 15px;
+    }
+
+    .wrapper nav label {
+        font-size: 10px;
+        font-weight: 400;
+        padding: 0 2px;
+    }
+
+
     .wrapper nav .slider {
-        width: 145px;
+        width: 70px;
 
     }
 
     #blog:checked~nav .slider {
-        left: 163px;
+        left: 81px;
+        width: 58px;
     }
 
     #code:checked~nav .slider {
-        left: 320px;
+        left: 150px;
+        width: 69px;
     }
 
     #help:checked~nav .slider {
-        left: 476px;
+        left: 227px;
+        width: 58px;
     }
 
     #about:checked~nav .slider {
-        left: 634px;
+        left: 292px;
+        width: 82px;
     }
 
     #about-uno:checked~nav .slider {
-        left: 790px;
+        left: 379px;
+        width: 83px;
     }
 
     #about-dos:checked~nav .slider {
-        left: 948px;
+        left: 472px;
+        width: 58px;
+    }
+
+
+
+}
+
+
+
+
+
+@media (min-width: 992px) {
+    .wrapper nav .slider {
+        width: 125px !important;
+
+    }
+
+    #blog:checked~nav .slider {
+        left: 141px !important;
+    }
+
+    #code:checked~nav .slider {
+        left: 277px !important;
+    }
+
+    #help:checked~nav .slider {
+        left: 413px !important;
+    }
+
+    #about:checked~nav .slider {
+        left: 550px !important;
+        width: 124px !important;
+    }
+
+    #about-uno:checked~nav .slider {
+        left: 686px !important;
+        width: 124px !important;
+    }
+
+    #about-dos:checked~nav .slider {
+        left: 822px !important;
+    }
+}
+
+@media (min-width: 678px) {
+    .course-curso {
+        padding: 8px 9px 5px 9px;
+
+    }
+
+    .course-box-dos .course-details {
+        padding: 8px 14px 6px 15px;
+
+    }
+
+    .nom-cur {
+        font-size: 14px;
+    }
+
+    .nivel {
+        font-size: 13px;
+    }
+
+    .certi {
+        font-size: 13px;
+    }
+
+    .precio-desc {
+        font-size: 23px;
+    }
+
+    .precio-total {}
+
+    .descuento {}
+
+    .btnbadge-prox {
+        font-size: 9px;
+        font-weight: 700;
+    }
+
+
+    .text-sub-cat {
+        font-size: 15px;
+    }
+
+    .wrapper nav label {
+        font-size: 12px;
+        font-weight: 400;
+        padding: 0 2px;
+    }
+
+
+    .wrapper nav .slider {
+        width: 82px;
+
+    }
+
+    #blog:checked~nav .slider {
+        left: 92px;
+        width: 75px;
+    }
+
+    #code:checked~nav .slider {
+        left: 177px;
+        width: 83px;
+    }
+
+    #help:checked~nav .slider {
+        left: 268px;
+        width: 74px;
+    }
+
+    #about:checked~nav .slider {
+        left: 348px;
+        width: 97px;
+    }
+
+    #about-uno:checked~nav .slider {
+        left: 449px;
+        width: 99px;
+    }
+
+    #about-dos:checked~nav .slider {
+        left: 558px;
+        width: 74px;
+    }
+
+
+
+}
+
+@media (min-width: 768px) {
+
+
+    .wrapper nav label {
+        font-size: 13px;
+        font-weight: 400;
+        padding: 0 2px;
+    }
+
+
+    .wrapper nav .slider {
+        width: 91px;
+
+    }
+
+    #blog:checked~nav .slider {
+        left: 109px;
+        width: 89px;
+    }
+
+    #code:checked~nav .slider {
+        left: 211px;
+        width: 89px;
+    }
+
+    #help:checked~nav .slider {
+        left: 312px;
+        width: 90px;
+    }
+
+    #about:checked~nav .slider {
+        left: 408px;
+        width: 103px;
+    }
+
+    #about-uno:checked~nav .slider {
+        left: 516px;
+        width: 106px;
+    }
+
+    #about-dos:checked~nav .slider {
+        left: 632px;
+        width: 90px;
+    }
+
+    .precio-desc {
+        font-size: 20px;
+    }
+
+    .precio-total {
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .btnpa {
+        font-size: 15pt !important;
+    }
+
+    .wrapper nav label {
+        font-size: 15px !important;
+    }
+
+    .wrapper nav .slider {
+
+        width: 146px !important;
+
+    }
+
+    #blog:checked~nav .slider {
+        left: 163px !important;
+    }
+
+    #code:checked~nav .slider {
+        left: 320px !important;
+    }
+
+    #help:checked~nav .slider {
+        left: 476px !important;
+    }
+
+    #about:checked~nav .slider {
+        left: 635px !important;
+        width: 145px !important;
+    }
+
+    #about-uno:checked~nav .slider {
+        left: 792px !important;
+        width: 145px !important;
+    }
+
+    #about-dos:checked~nav .slider {
+        left: 948px !important;
     }
 
 
@@ -262,66 +534,34 @@ section .content p {
 
 @media (min-width: 1400px) {
     .wrapper nav .slider {
-        width: 180px;
+        width: 171px !important;
 
     }
 
     #blog:checked~nav .slider {
-        left: 200px;
+        left: 189px !important;
     }
 
     #code:checked~nav .slider {
-        left: 393px;
+        left: 373px !important;
     }
 
     #help:checked~nav .slider {
-        left: 589px;
+        left: 555px !important;
     }
 
     #about:checked~nav .slider {
-        left: 783px;
+        left: 738px !important;
+        width: 170px !important;
     }
 
     #about-uno:checked~nav .slider {
-        left: 977px;
+        left: 920px !important;
+        width: 170px !important;
     }
 
     #about-dos:checked~nav .slider {
-        left: 1170px;
-    }
-
-}
-
-@media (min-width: 992px) {
-    .wrapper nav .slider {
-        width: 125px;
-
-    }
-
-    #blog:checked~nav .slider {
-        left: 140px;
-    }
-
-    #code:checked~nav .slider {
-        left: 275px;
-    }
-
-    #help:checked~nav .slider {
-        left: 410px;
-    }
-
-    #about:checked~nav .slider {
-        left: 540px;
-        width: 130px;
-    }
-
-    #about-uno:checked~nav .slider {
-        left: 670px;
-        width: 135px;
-    }
-
-    #about-dos:checked~nav .slider {
-        left: 815px;
+        left: 1103px !important;
     }
 }
 </style>
@@ -357,7 +597,7 @@ section .content p {
             <div class="content content-1 ">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class=" col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-arquitectura/17');"
                                     href="javascript:;" class="has-popover">
@@ -368,17 +608,17 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/revit-arquitectura/ra-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
-                                                <h5 class="">Revit Arquitectura</h5>
+                                                <h5 class="nom-cur">Revit Arquitectura</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="">Nivel Basico</span>
+                                                        <span class="nivel">Nivel Basico</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
-                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
+                                                        <span class="fw-200 text-white certi ">Certifican: Autodesk y
                                                             Dozer</span>
                                                     </div>
                                                 </div>
@@ -396,12 +636,12 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
 
-                                                <span class="text-white fw-600 text-17px text-center">80%
+                                                <span class="text-white fw-600 text-17px text-center descuento">80%
                                                     Dto.</span> <br>
                                                 <p class="btnbadge-prox  ">PROXIMAMENTE</p>
                                             </div>
@@ -410,7 +650,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class=" col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-arquitectura/19');"
                                     href="javascript:;" class="has-popover">
@@ -418,10 +658,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_191680651299.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/revit-arquitectura/ra-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Revit Arquitectura </h5>
                                                 <div class="row ">
@@ -447,7 +687,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total ">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -461,7 +701,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class=" col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/3ds-max/64');"
                                     href="javascript:;" class="has-popover">
@@ -469,10 +709,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_64.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/revit-arquitectura/3DSma-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">3Ds Max</h5>
                                                 <div class="row ">
@@ -498,7 +738,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total ">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -512,7 +752,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class=" col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/3ds-max/66');"
                                     href="javascript:;" class="has-popover">
@@ -523,7 +763,7 @@ section .content p {
                                             <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_66.jpg"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">3Ds Max</h5>
                                                 <div class="row ">
@@ -550,7 +790,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total ">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -572,7 +812,7 @@ section .content p {
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
 
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-estructura/21');"
                                     href="javascript:;" class="has-popover">
@@ -580,10 +820,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_211680647957.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/re-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Revit Estructura </h5>
                                                 <div class="row ">
@@ -610,7 +850,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total ">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -624,7 +864,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-estructura/23');"
                                     href="javascript:;" class="has-popover">
@@ -632,10 +872,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_231680647912.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/re-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Revit Estructura </h5>
                                                 <div class="row ">
@@ -661,7 +901,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total ">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -675,7 +915,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/robot-structural-analysis/25');"
                                     href="javascript:;" class="has-popover">
@@ -683,10 +923,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_251680649577.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/rs-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Robot Structural Analysis </h5>
                                                 <div class="row ">
@@ -713,7 +953,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -727,7 +967,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/robot-structural-analysis/27');"
                                     href="javascript:;" class="has-popover">
@@ -735,10 +975,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_271680649660.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/rs-Avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Robot Structural Analysis </h5>
                                                 <div class="row ">
@@ -765,7 +1005,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -779,7 +1019,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/advance-steel/28');"
                                     href="javascript:;" class="has-popover">
@@ -787,10 +1027,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_281681412408.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/as-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Advance Steel </h5>
                                                 <div class="row ">
@@ -816,7 +1056,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -830,7 +1070,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/advance-steel/30');"
                                     href="javascript:;" class="has-popover">
@@ -838,10 +1078,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_301680649892.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/as-Avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Advance Steel </h5>
                                                 <div class="row ">
@@ -866,7 +1106,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -881,7 +1121,7 @@ section .content p {
                             </div>
                         </div>
 
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/inventor-professional/67');"
                                     href="javascript:;" class="has-popover">
@@ -889,10 +1129,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_67.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/ip-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Inventor Professional </h5>
                                                 <div class="row ">
@@ -919,7 +1159,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -933,7 +1173,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/inventor-professional/69');"
                                     href="javascript:;" class="has-popover">
@@ -941,10 +1181,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_69.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/ip-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Inventor Professional </h5>
                                                 <div class="row ">
@@ -970,7 +1210,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -984,7 +1224,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad-plant-3d/70');"
                                     href="javascript:;" class="has-popover">
@@ -992,10 +1232,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_701680650382.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/ap-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">AutoCAD Plant 3D</h5>
                                                 <div class="row ">
@@ -1022,7 +1262,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -1036,7 +1276,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad-plant-3d/72');"
                                     href="javascript:;" class="has-popover">
@@ -1044,10 +1284,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_72.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/ap-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">AutoCAD Plant 3D</h5>
                                                 <div class="row ">
@@ -1073,7 +1313,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -1093,7 +1333,7 @@ section .content p {
             <div class="content content-3">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-mep/31');"
                                     href="javascript:;" class="has-popover">
@@ -1101,10 +1341,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_311680651411.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/instalaciones/rm-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Revit MEP </h5>
                                                 <div class="row ">
@@ -1131,7 +1371,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -1145,7 +1385,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-mep/33');"
                                     href="javascript:;" class="has-popover">
@@ -1153,10 +1393,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_331680651684.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/instalaciones/rm-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Revit MEP </h5>
                                                 <div class="row ">
@@ -1182,7 +1422,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -1204,7 +1444,7 @@ section .content p {
             <div class="content content-4">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad/35');"
                                     href="javascript:;" class="has-popover">
@@ -1212,10 +1452,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_351680651807.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/dibujos2D/a-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">AutoCAD </h5>
                                                 <div class="row ">
@@ -1241,7 +1481,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -1255,7 +1495,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad/37');"
                                     href="javascript:;" class="has-popover">
@@ -1263,10 +1503,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_371680651958.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/dibujos2D/a-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">AutoCAD</h5>
                                                 <div class="row ">
@@ -1293,7 +1533,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -1313,7 +1553,7 @@ section .content p {
             <div class="content content-5">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class=" col-sm-6 col-md-4  col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/civil-3d/39');"
                                     href="javascript:;" class="has-popover">
@@ -1321,10 +1561,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_391680652176.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/infraestructura/c-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Civil 3D </h5>
                                                 <div class="row ">
@@ -1351,7 +1591,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -1365,7 +1605,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class=" col-sm-6 col-md-4  col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/civil-3d/41');"
                                     href="javascript:;" class="has-popover">
@@ -1373,10 +1613,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_411680652329.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/infraestructura/c-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Civil 3D </h5>
                                                 <div class="row ">
@@ -1403,7 +1643,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -1417,7 +1657,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class=" col-sm-6 col-md-4  col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/infraworks/43');"
                                     href="javascript:;" class="has-popover">
@@ -1425,10 +1665,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_431680653711.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/infraestructura/i-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Infraworks</h5>
                                                 <div class="row ">
@@ -1455,7 +1695,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -1469,7 +1709,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class=" col-sm-6 col-md-4  col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/infraworks/45');"
                                     href="javascript:;" class="has-popover">
@@ -1477,10 +1717,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_451681230031.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/infraestructura/i-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Infraworks </h5>
                                                 <div class="row ">
@@ -1507,7 +1747,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -1527,7 +1767,7 @@ section .content p {
             <div class="content content-6">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/dynamo-para-revit/46');"
                                     href="javascript:;" class="has-popover">
@@ -1535,10 +1775,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_461680646371.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/automatizacion/d-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Dynamo para Revit </h5>
                                                 <div class="row ">
@@ -1564,7 +1804,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -1578,7 +1818,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/dynamo-para-revit/48');"
                                     href="javascript:;" class="has-popover">
@@ -1586,10 +1826,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_481680646450.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/automatizacion/d-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Dynamo para Revit </h5>
                                                 <div class="row ">
@@ -1616,7 +1856,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -1636,7 +1876,7 @@ section .content p {
             <div class="content content-7">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/navisworks-manage/49');"
                                     href="javascript:;" class="has-popover">
@@ -1644,10 +1884,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_491680645983.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/gestion/nm-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Navisworks Manage </h5>
                                                 <div class="row ">
@@ -1674,7 +1914,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -1688,7 +1928,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/navisworks-manage/51');"
                                     href="javascript:;" class="has-popover">
@@ -1696,10 +1936,10 @@ section .content p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_511680646102.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Cursos/gestion/nm-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div>
+                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Navisworks Manage </h5>
                                                 <div class="row ">
@@ -1726,7 +1966,7 @@ section .content p {
 
                                                     <span class="precio-desc text-white">S/.79 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.395 soles</del>
+                                                    <del class="text-white precio-total">S/.395 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -1859,54 +2099,24 @@ section .contentt p {
     text-align: justify;
 }
 
-@media (min-width: 1200px) {
-    nav .sliderr {
-        width: 246px;
-        left: 37px;
+
+
+
+
+@media (min-width: 576px) {
+
+    .wrapperr nav label {
+        font-size: 15px;
+        font-weight: 400;
+        padding: 0 2px;
+    }
+
+
+    .wrapperr nav .sliderr {
+        width: 166px;
 
     }
 
-    #blogg:checked~nav .sliderr {
-        left: 295px;
-        width: 250px;
-
-    }
-
-    #codee:checked~nav .sliderr {
-        left: 555px;
-        width: 250px;
-
-    }
-
-    #helpp:checked~nav .sliderr {
-        left: 815px;
-        width: 250px;
-
-    }
-
-}
-
-@media (min-width: 1400px) {
-    #blogg:checked~nav .sliderr {
-        left: 425px;
-        width: 250px;
-
-    }
-
-    #codee:checked~nav .sliderr {
-        left: 685px;
-        width: 250px;
-
-    }
-
-    #helpp:checked~nav .sliderr {
-        left: 945px;
-        width: 250px;
-
-    }
-}
-
-@media (min-width: 992px) {
     nav .sliderr {
         width: 223px;
         left: 7px;
@@ -1914,22 +2124,158 @@ section .contentt p {
     }
 
     #blogg:checked~nav .sliderr {
-        left: 243px;
-        width: 225px;
+        left: 185px;
+        width: 166px;
 
     }
 
     #codee:checked~nav .sliderr {
-        left: 480px;
-        width: 223px;
+        left: 363px;
+        width: 167px;
+
+    }
+
+
+}
+
+@media (min-width: 678px) {
+
+    .wrapperr nav label {
+        font-size: 13px;
+        font-weight: 400;
+        padding: 0 2px;
+    }
+
+
+    .wrapperr nav .sliderr {
+        width: 147px;
+        left: 6px;
+
+    }
+
+    nav .sliderr {
+        left: 15px;
+        width: 156px;
+
+    }
+
+    #blogg:checked~nav .sliderr {
+        left: 166px;
+        width: 147px;
+
+    }
+
+    #codee:checked~nav .sliderr {
+        left: 325px;
+        width: 148px;
 
     }
 
     #helpp:checked~nav .sliderr {
-        left: 715px;
-        width: 225px;
+        left: 485px;
+        width: 147px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .wrapperr nav label {
+        font-size: 15px;
+        font-weight: 400;
+        padding: 0 2px;
+    }
+
+
+    .wrapperr nav .sliderr {
+        width: 231px;
+        left: 6px;
 
     }
+
+    nav .sliderr {
+        left: 15px;
+        width: 156px;
+
+    }
+
+    #blogg:checked~nav .sliderr {
+        left: 250px;
+        width: 229px;
+    }
+
+    #codee:checked~nav .sliderr {
+        left: 492px;
+        width: 229px;
+
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    nav .sliderr {
+        width: 248px !important;
+        left: 92px !important;
+
+    }
+
+    #blogg:checked~nav .sliderr {
+        left: 352px !important;
+        width: 248px !important;
+
+    }
+
+    #codee:checked~nav .sliderr {
+        left: 612px !important;
+        width: 248px !important;
+
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+    nav .sliderr {
+        width: 246px !important;
+        left: 166px !important;
+
+    }
+
+    #blogg:checked~nav .sliderr {
+        left: 426px !important;
+        width: 248px !important;
+
+    }
+
+    #codee:checked~nav .sliderr {
+        left: 685px !important;
+        width: 250px !important;
+
+    }
+
+
+
+}
+
+@media (min-width: 1400px) {
+    nav .sliderr {
+        width: 248px !important;
+    left: 256px !important;
+
+    }
+    #blogg:checked~nav .sliderr {
+        left: 515px !important;
+        width: 250px !important;
+
+    }
+
+    #codee:checked~nav .sliderr {
+        left: 775px !important;
+        width: 250px !important;
+
+    }
+
+   
 }
 </style>
 <!-- Style especializaciones -->
@@ -1949,13 +2295,13 @@ section .contentt p {
         <input type="radio" name="sliderr" checked id="homee">
         <input type="radio" name="sliderr" id="blogg">
         <input type="radio" name="sliderr" id="codee">
-        <input type="radio" name="sliderr" id="helpp">
+
 
         <nav>
             <label for="homee" class="homee">Especialista BIM</label>
             <label for="blogg" class="blogg">Gestión BIM</label>
             <label for="codee" class="codee">Expedientes BIM</label>
-            <label for="helpp" class="helpp">Ingeniería BIM</label>
+
 
             <div class="sliderr"></div>
         </nav>
@@ -1963,7 +2309,7 @@ section .contentt p {
             <div class="contentt content-uno ">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelador-bim-aplicado-a-edificaciones/1');"
                                     href="javascript:;" class="has-popover">
@@ -1971,12 +2317,12 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_11681233276.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/modelador-BIM/uno.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">Modelador BIM aplicado a Edificaciones</h5>
+                                                <h5 class="nombr-espe">Modelador BIM aplicado a Edificaciones</h5>
                                                 <div class="row ">
 
                                                 </div>
@@ -1996,9 +2342,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text-white precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2012,7 +2358,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelador-bim-aplicado-a-obras-viales/2');"
                                     href="javascript:;" class="has-popover">
@@ -2020,12 +2366,12 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_21681237452.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/modelador-BIM/dos.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">Modelador BIM aplicado a Obras Viales</h5>
+                                                <h5 class="nombr-espe">Modelador BIM aplicado a Obras Viales</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
 
@@ -2047,9 +2393,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text-white precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2063,7 +2409,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelador-bim-aplicado-a-obras-hidr%C3%A1ulicas/3');"
                                     href="javascript:;" class="has-popover">
@@ -2071,12 +2417,12 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_31681237500.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/modelador-BIM/tres.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">Modelador BIM aplicado a Obras Hidráulicas</h5>
+                                                <h5 class="nombr-espe">Modelador BIM aplicado a Obras Hidráulicas</h5>
                                                 <div class="row ">
 
                                                 </div>
@@ -2096,9 +2442,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text-white precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2112,7 +2458,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelador-bim-aplicado-a-estructuras-met%C3%A1licas/4');"
                                     href="javascript:;" class="has-popover">
@@ -2120,12 +2466,13 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_41681237543.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/modelador-BIM/cuatro.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">Modelador BIM aplicado a Estructuras Metálicas</h5>
+                                                <h5 class="nombr-espe">Modelador BIM aplicado a Estructuras Metálicas
+                                                </h5>
                                                 <div class="row ">
 
                                                 </div>
@@ -2145,9 +2492,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text-white precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2161,7 +2508,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelador-bim-aplicado-a-proyectos-green/74');"
                                     href="javascript:;" class="has-popover">
@@ -2169,12 +2516,12 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_74.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/modelador-BIM/cinco.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">Modelador BIM aplicado a Proyectos Green</h5>
+                                                <h5 class="nombr-espe">Modelador BIM aplicado a Proyectos Green</h5>
 
                                                 <div class="row mt-5">
                                                     <div class="col-12">
@@ -2191,9 +2538,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text-white precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2207,7 +2554,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/especialista-bim-en-habilitaciones-urbanas/88');"
                                     href="javascript:;" class="has-popover">
@@ -2215,12 +2562,12 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_88.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/modelador-BIM/seis.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">Especialista BIM en Habilitaciones Urbanas</h5>
+                                                <h5 class="nombr-espe">Especialista BIM en Habilitaciones Urbanas</h5>
                                                 <div class="row ">
 
                                                 </div>
@@ -2240,9 +2587,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text-white precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2256,7 +2603,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/especialista-bim-en-automatizaci%C3%B3n-de-procesos/89');"
                                     href="javascript:;" class="has-popover">
@@ -2264,12 +2611,13 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_89.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/modelador-BIM/siete.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">Especialista BIM en Automatización de Procesos</h5>
+                                                <h5 class="nombr-espe">Especialista BIM en Automatización de Procesos
+                                                </h5>
                                                 <div class="row ">
 
                                                 </div>
@@ -2288,9 +2636,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text-white precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2312,7 +2660,7 @@ section .contentt p {
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
 
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/coordinador-de-proyectos-bim/7');"
                                     href="javascript:;" class="has-popover">
@@ -2320,12 +2668,12 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_71681237754.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/GestiondeproyectosBIM/uno.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">Coordinador de Proyectos BIM</h5>
+                                                <h5 class="nombr-espe">Coordinador de Proyectos BIM</h5>
                                                 <div class="row ">
 
                                                 </div>
@@ -2345,9 +2693,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text-white precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2361,7 +2709,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/supervisor-de-proyectos-bim/8');"
                                     href="javascript:;" class="has-popover">
@@ -2369,12 +2717,12 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_81681237833.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/GestiondeproyectosBIM/dos.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso p-cp">
-                                                <h5 class="">Supervisor de Proyectos BIM</h5>
+                                                <h5 class="nombr-espe">Supervisor de Proyectos BIM</h5>
                                                 <div class="row ">
 
                                                 </div>
@@ -2394,9 +2742,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text- precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2410,7 +2758,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/gestor-de-proyectos-bim/9');"
                                     href="javascript:;" class="has-popover">
@@ -2418,12 +2766,12 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_91681237880.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/GestiondeproyectosBIM/tres.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso p-cp">
-                                                <h5 class="">Gestor de Proyectos BIM</h5>
+                                                <h5 class="nombr-espe">Gestor de Proyectos BIM</h5>
                                                 <div class="row ">
 
                                                 </div>
@@ -2442,9 +2790,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text-white precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2458,7 +2806,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/planificaci%C3%B3n-y-control-de-proyectos-bim/75');"
                                     href="javascript:;" class="has-popover">
@@ -2466,12 +2814,12 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_75.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/GestiondeproyectosBIM/cuatro.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">Planificación y Control de Proyectos BIM</h5>
+                                                <h5 class="nombr-espe">Planificación y Control de Proyectos BIM</h5>
                                                 <div class="row ">
 
                                                 </div>
@@ -2491,9 +2839,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text-white precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2507,7 +2855,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/gesti%C3%B3n-bim-para-el-sector-p%C3%BAblico/76');"
                                     href="javascript:;" class="has-popover">
@@ -2515,12 +2863,12 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_76.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/GestiondeproyectosBIM/cinco.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">Gestión BIM para el Sector Público</h5>
+                                                <h5 class="nombr-espe">Gestión BIM para el Sector Público</h5>
                                                 <div class="row ">
 
                                                 </div>
@@ -2540,9 +2888,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text-white precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2562,7 +2910,7 @@ section .contentt p {
             <div class="contentt content-tres">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/expedientes-t%C3%A9cnicos-bim-aplicado-a-proyectos-de-infraestructrura-educativa/11');"
                                     href="javascript:;" class="has-popover">
@@ -2570,12 +2918,12 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_111681238136.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/Expedientes-BIM/uno.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso p-cp">
-                                                <h5 class="">Expedientes técnicos BIM aplicado a Proyectos de
+                                                <h5 class="nombr-espe">Expedientes técnicos BIM aplicado a Proyectos de
                                                     Infraestructrura educativa</h5>
                                                 <div class="row ">
 
@@ -2596,9 +2944,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text-white precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2612,7 +2960,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/expedientes-t%C3%A9cnicos-bim-aplicado-a-proyectos-de-infraestructrura-hospitalaria/12');"
                                     href="javascript:;" class="has-popover">
@@ -2620,12 +2968,12 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_121681238193.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/Expedientes-BIM/dos.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso p-cp">
-                                                <h5 class="">Expedientes técnicos BIM aplicado a Proyectos de
+                                                <h5 class="nombr-espe">Expedientes técnicos BIM aplicado a Proyectos de
                                                     Infraestructrura Hospitalaria</h5>
                                                 <div class="row ">
 
@@ -2646,9 +2994,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text-white precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2662,7 +3010,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/expedientes-t%C3%A9cnicos-bim-aplicado-a-proyectos-de-infraestructura-vial/13');"
                                     href="javascript:;" class="has-popover">
@@ -2670,12 +3018,12 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_131681238270.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/Expedientes-BIM/tres.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso p-cp">
-                                                <h5 class="">Expedientes técnicos BIM aplicado a Proyectos de
+                                                <h5 class="nombr-espe">Expedientes técnicos BIM aplicado a Proyectos de
                                                     infraestructura Vial</h5>
                                                 <div class="row ">
 
@@ -2696,9 +3044,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text-white precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2712,7 +3060,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/expedientes-t%C3%A9cnicos-bim-aplicado-a-proyectos-de-pavimentaci%C3%B3n-urbano-y-rural/14');"
                                     href="javascript:;" class="has-popover">
@@ -2720,12 +3068,12 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_141681238333.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/Expedientes-BIM/cuatro.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">Expedientes Técnicos BIM aplicado a Proyectos de
+                                                <h5 class="nombr-espe">Expedientes Técnicos BIM aplicado a Proyectos de
                                                     Pavimentación Urbano y Rural</h5>
                                                 <div class="row ">
 
@@ -2746,9 +3094,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text-white precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2762,7 +3110,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/expedientes-t%C3%A9cnicos-bim-aplicado-a-proyectos-de-agua-y-saneamiento-rural/15');"
                                     href="javascript:;" class="has-popover">
@@ -2770,12 +3118,13 @@ section .contentt p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_151681238392.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/Especialidad/Expedientes-BIM/cinco.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">Expedientes técnicos BIM aplicado a proyectos de Agua
+                                                <h5 class="nombr-espe">Expedientes técnicos BIM aplicado a proyectos de
+                                                    Agua
                                                     y saneamiento Rural</h5>
                                                 <div class="row ">
 
@@ -2796,9 +3145,9 @@ section .contentt p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
-                                                    <del class="text-white">S/.800 soles</del>
+                                                    <del class="text-white precio-total">S/.800 soles</del>
                                                 </p> <br>
                                             </div>
                                             <div class="ms-auto">
@@ -2817,211 +3166,7 @@ section .contentt p {
                     </div>
                 </div>
             </div>
-            <div class="contentt content-cuatro">
-                <div class="container ">
-                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-md-3 col-xl-3 px-0">
-                            <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/structuraci%C3%B3n-an%C3%A1lisis-y-dise%C3%B1o-en-estructuras-de-concreto-armado-con-robot-structural-analysis/78');"
-                                    href="javascript:;" class="has-popover">
-                                    <div class="course-box">
-                                        <div class="course-image">
 
-
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_78.jpg"
-                                                alt="" class="img-fluid">
-                                        </div>
-                                        <div>
-                                            <div class="course-curso">
-                                                <h5 class="">structuración, Análisis y Diseño en Estructuras de
-                                                    Concreto Armado con Robot Structural Analysis </h5>
-                                                <div class="row ">
-
-                                                </div>
-                                                <div class="row mt-5">
-                                                    <div class="col-12">
-                                                        <span class="fw-200 text-white "></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-                                        </div>
-                                    </div>
-                                    <div class="course-box-dos mt-1">
-                                        <div class="w-100 d-flex text-dark  py-1 course-details">
-                                            <div class="">
-                                                <p class="price  text-white  text-right d-inline-block float-end">
-
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
-                                                    <br>
-                                                    <del class="text-white">S/.800 soles</del>
-                                                </p> <br>
-                                            </div>
-                                            <div class="ms-auto">
-
-                                                <span class="text-white fw-600 text-17px text-center">80%
-                                                    Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xl-3 px-0">
-                            <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelado-y-detallado-de-estructuras-met%C3%A1licas-utilizando-advance-steel/80');"
-                                    href="javascript:;" class="has-popover">
-                                    <div class="course-box">
-                                        <div class="course-image">
-
-
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_80.jpg"
-                                                alt="" class="img-fluid">
-                                        </div>
-                                        <div>
-                                            <div class="course-curso p-cp">
-                                                <h5 class="">Modelado y Detallado de Estructuras Metálicas
-                                                    utilizando Advance Steel</h5>
-                                                <div class="row ">
-
-                                                </div>
-                                                <div class="row mt-5">
-                                                    <div class="col-12">
-                                                        <span class="fw-200 text-white "></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-                                        </div>
-                                    </div>
-                                    <div class="course-box-dos mt-1">
-                                        <div class="w-100 d-flex text-dark  py-1 course-details">
-                                            <div class="">
-                                                <p class="price  text-white  text-right d-inline-block float-end">
-
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
-                                                    <br>
-                                                    <del class="text-white">S/.800 soles</del>
-                                                </p> <br>
-                                            </div>
-                                            <div class="ms-auto">
-
-                                                <span class="text-white fw-600 text-17px text-center">80%
-                                                    Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xl-3 px-0">
-                            <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/dise%C3%B1o-modelado-y-detallado-de-proyectos-mec%C3%A1nicos-utilizando-inventor-professional/81');"
-                                    href="javascript:;" class="has-popover">
-                                    <div class="course-box">
-                                        <div class="course-image">
-
-
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_81.jpg"
-                                                alt="" class="img-fluid">
-                                        </div>
-                                        <div>
-                                            <div class="course-curso">
-                                                <h5 class="">Diseño, Modelado y Detallado de Proyectos Mecánicos
-                                                    utilizando Inventor Professional</h5>
-                                                <div class="row ">
-
-                                                </div>
-                                                <div class="row mt-5">
-                                                    <div class="col-12">
-                                                        <span class="fw-200 text-white "></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                    <div class="course-box-dos mt-1">
-                                        <div class="w-100 d-flex text-dark  py-1 course-details">
-                                            <div class="">
-                                                <p class="price  text-white  text-right d-inline-block float-end">
-
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
-                                                    <br>
-                                                    <del class="text-white">S/.800 soles</del>
-                                                </p> <br>
-                                            </div>
-                                            <div class="ms-auto">
-
-                                                <span class="text-white fw-600 text-17px text-center">80%
-                                                    Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xl-3 px-0">
-                            <div class="course-box-wrap">
-                                <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelado-y-detallado-en-proyectos-de-plantas-industriales-utilizando-autocad-plant-3d/82');"
-                                    href="javascript:;" class="has-popover">
-                                    <div class="course-box">
-                                        <div class="course-image">
-
-
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_82.jpg"
-                                                alt="" class="img-fluid">
-                                        </div>
-                                        <div>
-                                            <div class="course-curso">
-                                                <h5 class="">Modelado y Detallado en Proyectos de Plantas
-                                                    Industriales utilizando AutoCAD Plant 3D </h5>
-                                                <div class="row ">
-
-                                                </div>
-                                                <div class="row mt-5">
-                                                    <div class="col-12">
-                                                        <span class="fw-200 text-white "></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-                                        </div>
-                                    </div>
-                                    <div class="course-box-dos mt-1">
-                                        <div class="w-100 d-flex text-dark  py-1 course-details">
-                                            <div class="">
-                                                <p class="price  text-white  text-right d-inline-block float-end">
-
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
-                                                    <br>
-                                                    <del class="text-white">S/.800 soles</del>
-                                                </p> <br>
-                                            </div>
-                                            <div class="ms-auto">
-
-                                                <span class="text-white fw-600 text-17px text-center">80%
-                                                    Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
     </div>
 
@@ -3124,33 +3269,79 @@ section .conten p {
     text-align: justify;
 }
 
-@media (min-width: 1200px) {
+
+@media (min-width: 992px) {
     nav .slide {
-        left: 295px;
+        left: 222px !important;
 
     }
 
     #blo:checked~nav .slide {
-        left: 555px;
+        left: 482px !important;
+
+    }
+}
+
+@media (min-width: 576px) {
+    nav .slide {
+        width: 247px;
+        left: 15px;
+
+    }
+
+    #blo:checked~nav .slide {
+        left: 275px;
+
+    }
+}
+
+@media (min-width: 678px) {
+    nav .slide {
+        width: 247px;
+        left: 65px;
+
+    }
+
+    #blo:checked~nav .slide {
+        left: 326px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    nav .slide {
+        width: 247px;
+        left: 111px;
+
+    }
+
+    #blo:checked~nav .slide {
+        left: 370px;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    nav .slide {
+        left: 295px !important;
+
+    }
+
+    #blo:checked~nav .slide {
+        left: 555px !important;
 
     }
 }
 
 @media (min-width: 1400px) {
+    nav .slide {
+    left: 385px !important;
+}
     #blo:checked~nav .slide {
-        left: 605px;
+        left: 646px !important;
 
     }
 }
-@media (min-width: 992px) {  nav .slide {
-        left: 218px;
-
-    }
-
-    #blo:checked~nav .slide {
-        left: 479px;
-
-    } }
 </style>
 
 <section>
@@ -3180,7 +3371,7 @@ section .conten p {
             <div class="contentt content-uno ">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/bim-management-en-proyectos-de-arquitectura/58');"
                                     href="javascript:;" class="has-popover">
@@ -3188,13 +3379,13 @@ section .conten p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_581681241666.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/diplomados/bim/uno.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
 
                                             <div class="course-curso  p-cp">
-                                                <h5 class="">BIM Management en Proyectos de Arquitectura</h5>
+                                                <h5 class="nombr-espe">BIM Management en Proyectos de Arquitectura</h5>
                                                 <div class="row ">
 
                                                 </div>
@@ -3214,7 +3405,7 @@ section .conten p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
                                                     <del class="text-white">S/.800 soles</del>
                                                 </p> <br>
@@ -3230,7 +3421,7 @@ section .conten p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/bim-management-en-proyectos-de-urbanismo-y-paisajismo/86');"
                                     href="javascript:;" class="has-popover">
@@ -3238,12 +3429,13 @@ section .conten p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_86.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/diplomados/bim/dos.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">BIM Management en Proyectos de Urbanismo y Paisajismo
+                                                <h5 class="nombr-espe">BIM Management en Proyectos de Urbanismo y
+                                                    Paisajismo
                                                 </h5>
                                                 <div class="row ">
 
@@ -3264,7 +3456,7 @@ section .conten p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
                                                     <del class="text-white">S/.800 soles</del>
                                                 </p> <br>
@@ -3280,7 +3472,7 @@ section .conten p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/bim-management-en-proyectos-de-ingenier%C3%ADa-civil-e-infraestructura/87');"
                                     href="javascript:;" class="has-popover">
@@ -3288,12 +3480,12 @@ section .conten p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_87.jpg"
+                                            <img src="<?=base_url()?>uploads/system/cursos/diplomados/bim/tres.png"
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">BIM Management en Proyectos de Ingeniería Civil e
+                                                <h5 class="nombr-espe">BIM Management en Proyectos de Ingeniería Civil e
                                                     Infraestructura</h5>
                                                 <div class="row ">
 
@@ -3314,7 +3506,7 @@ section .conten p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
                                                     <del class="text-white">S/.800 soles</del>
                                                 </p> <br>
@@ -3338,7 +3530,7 @@ section .conten p {
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
 
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/ingenier%C3%ADa-en-edificaciones-aplicado-al-dise%C3%B1o-supervisi%C3%B3n-construcci%C3%B3n-de-colegios-y-hospitales/83');"
                                     href="javascript:;" class="has-popover">
@@ -3346,12 +3538,12 @@ section .conten p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_831681241767.jpg"
-                                                alt="" class="img-fluid">
+                                            <img src="<?=base_url()?>uploads/system/cursos/diplomados/IC/uno.png" alt=""
+                                                class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">Ingeniería en Edificaciones Aplicado al Diseño,
+                                                <h5 class="nombr-espe">Ingeniería en Edificaciones Aplicado al Diseño,
                                                     Supervisión, Construcción de Colegios y Hospitales</h5>
                                                 <div class="row ">
 
@@ -3371,7 +3563,7 @@ section .conten p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
                                                     <del class="text-white">S/.800 soles</del>
                                                 </p> <br>
@@ -3387,7 +3579,7 @@ section .conten p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/ingenier%C3%ADa-vial-aplicado-al-dise%C3%B1o-construcci%C3%B3n-supervisi%C3%B3n-de-carreteras-pavimentos-y-puentes/84');"
                                     href="javascript:;" class="has-popover">
@@ -3395,12 +3587,12 @@ section .conten p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_841681241791.jpg"
-                                                alt="" class="img-fluid">
+                                            <img src="<?=base_url()?>uploads/system/cursos/diplomados/IC/dos.png" alt=""
+                                                class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">Ingeniería Vial Aplicado al Diseño, Construcción,
+                                                <h5 class="nombr-espe">Ingeniería Vial Aplicado al Diseño, Construcción,
                                                     Supervisión de Carreteras, Pavimentos y Puentes</h5>
                                                 <div class="row ">
 
@@ -3421,7 +3613,7 @@ section .conten p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
                                                     <del class="text-white">S/.800 soles</del>
                                                 </p> <br>
@@ -3437,7 +3629,7 @@ section .conten p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xl-3 px-0">
+                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/ingenier%C3%ADa-hidr%C3%A1ulica-aplicado-al-dise%C3%B1o-de-redes-de-abastecimiento-de-agua-potable-y-alcantarillado/85');"
                                     href="javascript:;" class="has-popover">
@@ -3445,12 +3637,13 @@ section .conten p {
                                         <div class="course-image">
 
 
-                                            <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_851681241821.jpg"
-                                                alt="" class="img-fluid">
+                                            <img src="<?=base_url()?>uploads/system/cursos/diplomados/IC/trs.png" alt=""
+                                                class="img-fluid">
                                         </div>
                                         <div>
                                             <div class="course-curso">
-                                                <h5 class="">Ingeniería Hidráulica aplicado al Diseño de Redes de
+                                                <h5 class="nombr-espe">Ingeniería Hidráulica aplicado al Diseño de Redes
+                                                    de
                                                     Abastecimiento de Agua Potable y Alcantarillado</h5>
                                                 <div class="row ">
 
@@ -3471,7 +3664,7 @@ section .conten p {
                                             <div class="">
                                                 <p class="price  text-white  text-right d-inline-block float-end">
 
-                                                    <span class="precio-desc text-white">S/.240 soles</span>
+                                                    <span class="precio-desce text-white">S/.240 soles</span>
                                                     <br>
                                                     <del class="text-white">S/.800 soles</del>
                                                 </p> <br>
@@ -3600,7 +3793,65 @@ section .conten p {
 
         </h3>
     </div>
-    <div class="container-xl">
+    <div class="container-xl d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none">
+        <div class="blog-card">
+            <input type="radio" name="select" id="tap-1" checked>
+            <input type="radio" name="select" id="tap-2">
+            <input type="radio" name="select" id="tap-3">
+            <input type="checkbox" id="imgTap">
+            <div class="sliders">
+                <label for="tap-1" class="tap tap-1"></label>
+                <label for="tap-2" class="tap tap-2"></label>
+                <label for="tap-3" class="tap tap-3"></label>
+            </div>
+            <div class="inner-part">
+                <label for="imgTap" class="img">
+                    <img class="img-1" src="<?=base_url()?>uploads/system/certificaciones/instituto-dozer.png">
+                </label>
+                <div class="contenido contenido-uno">
+                    <div class="title">
+                        INSTITUTO DOZER
+                    </div>
+                    <div class="text">
+                        Instituto Peruano de Estudios <br>
+                        e Implementación BIM y <br>
+                        Nuevas Tecnologías
+                    </div>
+
+                </div>
+            </div>
+            <div class="inner-part">
+                <label for="imgTap" class="img">
+                    <img class="img-2" src="<?=base_url()?>uploads/system/certificaciones/autodesk.png">
+                </label>
+                <div class="contenido contenido-dos">
+                    <div class="title">
+                        AUTODESK
+                    </div>
+                    <div class="text">
+                        Certificación Oficial de Autodesk <br>
+                        Certificate of Completion <br> </div>
+
+                </div>
+            </div>
+            <div class="inner-part">
+                <label for="imgTap" class="img">
+                    <img class="img-3" src="<?=base_url()?>uploads/system/certificaciones/cip.png">
+                </label>
+                <div class="contenido contenido-tres">
+                    <div class="title">
+                        CIP
+                    </div>
+                    <div class="text">
+                        Colegio de Ingenieros del Perú <br>
+                        Consejo Departamental </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xl d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
         <div class="row gx-2 gx-lg-5">
 
             <div class=" col-sm-6  col-md-4 d-flex hc-30rem">
@@ -3622,7 +3873,7 @@ section .conten p {
                         <h4 class="text-decoration-underline titulo-certificados">AUTODESK </h4>
                         <p class="fw-light text-certificados">Certificación Oficial de Autodesk <br>
                             Certificate of Completion</p> <br>
-                        <img class="img-autodesk " src="uploads\system\certificaciones\autodesk.svg" alt="">
+                        <img class="img-autodesk " src="uploads\system\certificaciones\autodesk.png" alt="">
                     </div>
                 </div>
             </div>
@@ -3650,7 +3901,7 @@ section .conten p {
             <p class="text-sub-cat"> Ingresa a nuestra plataforma de
                 verificador de certificados gratuitamente, <br>
                 podrás revisar o descargar todos tus certificados</p>
-            <a style=" font-weight: 700 !important;" class="btn  devbIM fw-semibold text-center  m-5" href="#">Deseo
+            <a style=" font-weight: 700 !important;" class="btn  devbIM fw-semibold text-center  m-5" href="<?php echo base_url('Verifica-tu-cetificado') ?>">Deseo
                 verificar mi certificado</a>
 
         </h3>
@@ -3683,14 +3934,15 @@ section .conten p {
                         <div class="">
                             <div class="text-white text-testimonio fw-light lh-sm py-2">“Teoría y constante practica,
                                 los
-                                <br>
+                                <br class="d-none d-sm-none d-md-none d-xl-block">
                                 cursos
-                                estan bien organizados y <br> desarrollados”
+                                estan bien organizados y <br class="d-none d-sm-none d-md-none d-xl-block">
+                                desarrollados”
                             </div>
 
                             <div class="d-flex justify-content-start">
-                                <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\pe.png"
-                                        alt=""> </div>
+                                <div class="pe-1 d-flex align-items-center"> <img class="banderaimg"
+                                        src="uploads\system\docente\pe.png" alt=""> </div>
 
                                 <div class="d-flex flex-column nombre-testimonio  align-items-start">
                                     <div class="nametest">Miriam Corrales</div>
@@ -3706,14 +3958,16 @@ section .conten p {
                         <div class="fondo"></div>
                         <img class="img-testimonio" src="uploads\system\testimonios\testimonio-dos.png" alt="">
                         <div class="">
-                            <div class="text-white text-testimonio fw-light lh-sm py-2">“Las clases son desde cero, <br>
+                            <div class="text-white text-testimonio fw-light lh-sm py-2">“Las clases son desde cero, <br
+                                    class="d-none d-sm-none d-md-none d-xl-block">
                                 hasta el
                                 nivel
-                                avanzado, aprendi <br> mucho con Dozer”</div>
+                                avanzado, aprendi <br class="d-none d-sm-none d-md-none d-xl-block"> mucho con Dozer”
+                            </div>
 
                             <div class="d-flex justify-content-start">
-                                <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\co.png"
-                                        alt=""> </div>
+                                <div class="pe-1 d-flex align-items-center"> <img class="banderaimg"
+                                        src="uploads\system\docente\co.png" alt=""> </div>
 
                                 <div class="d-flex flex-column nombre-testimonio">
                                     <div class="nametest">María Angeles</div>
@@ -3728,14 +3982,16 @@ section .conten p {
                     <div class="card ">
                         <img class="img-testimonio" src="uploads\system\testimonios\testimonio-tres.png" alt="">
                         <div class="">
-                            <div class="text-white text-testimonio fw-light lh-sm py-2">“Los docentes son muy <br>
+                            <div class="text-white text-testimonio fw-light lh-sm py-2">“Los docentes son muy <br
+                                    class="d-none d-sm-none d-md-none d-xl-block">
                                 preparados, las
                                 clases
-                                fueron <br> muy sencillos de entender”</div>
+                                fueron <br class="d-none d-sm-none d-md-none d-lg-block"> muy sencillos de entender”
+                            </div>
 
                             <div class="d-flex justify-content-start">
-                                <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\pe.png"
-                                        alt=""> </div>
+                                <div class="pe-1 d-flex align-items-center"> <img class="banderaimg"
+                                        src="uploads\system\docente\pe.png" alt=""> </div>
 
                                 <div class="d-flex flex-column nombre-testimonio">
                                     <div class="nametest">Carla Díaz</div>
@@ -3751,19 +4007,18 @@ section .conten p {
                         <img class="img-testimonio" src="uploads\system\testimonios\testimonio-cuatro.png" alt="">
                         <div class="">
                             <div class="text-white  fw-light text-testimonio lh-sm py-2">“La metodología de enseñanza
-                                <br>
+                                <br class="d-none d-sm-none d-md-none d-lg-block">
                                 es muy
                                 buena,
-                                siempre estan <br> asesorandote”
+                                siempre estan <br class="d-none d-sm-none d-md-none d-lg-block"> asesorandote”
                             </div>
 
                             <div class="d-flex justify-content-start">
-                                <div class="pe-2 d-flex align-items-center" style="width: 4rem;"> <img
-                                        style="width: 90%;border-radius: 5px;" src="uploads\system\docente\ec.jpg"
-                                        alt="">
+                                <div class="pe-1 d-flex align-items-center"> <img class="banderaecu"
+                                        style="border-radius: 5px;" src="uploads\system\docente\ec.jpg" alt="">
                                 </div>
 
-                                <div class="d-flex flex-column nombre-testimonio">
+                                <div class="d-flex flex-column nombre-testimonio style-top">
                                     <div class="nametest">Juvitza Salas</div>
                                     <div class="jobtest">Ecuador</div>
                                 </div>
@@ -3779,18 +4034,18 @@ section .conten p {
                         <div class="fondo"></div>
                         <img class="img-testimonio" src="uploads\system\testimonios\testimonio-cinco.png" alt="">
                         <div class="">
-                            <div class="text-white text-testimonio fw-light lh-sm py-2">“Las certificaciones me <br>
+                            <div class="text-white text-testimonio fw-light lh-sm py-2">“Las certificaciones me <br
+                                    class="d-none d-sm-none d-md-none d-lg-block">
                                 aperturaron
                                 muchas
-                                puertas en <br> mi entorno laboral”</div>
+                                puertas en <br class="d-none d-sm-none d-md-none d-lg-block"> mi entorno laboral”</div>
 
                             <div class="d-flex justify-content-start">
-                                <div class="pe-2 d-flex align-items-center" style="width: 4rem;"> <img
-                                        style="width: 90%;border-radius: 5px;" src="uploads\system\docente\ar.jpg"
-                                        alt="">
+                                <div class="pe-1 d-flex align-items-center"> <img class="banderaarg"
+                                        style="border-radius: 5px;" src="uploads\system\docente\ar.jpg" alt="">
                                 </div>
 
-                                <div class="d-flex flex-column nombre-testimonio  align-items-start">
+                                <div class="d-flex flex-column nombre-testimonio style-top  align-items-start">
                                     <div class="nametest">Grecia Pacoti</div>
                                     <div class="jobtest">Argentina</div>
                                 </div>
@@ -3804,13 +4059,15 @@ section .conten p {
                         <div class="fondo"></div>
                         <img class="img-testimonio" src="uploads\system\testimonios\testimonio-seis.png" alt="">
                         <div class="">
-                            <div class="text-white text-testimonio fw-light lh-sm py-2">“Todos los cursos que eh <br>
+                            <div class="text-white text-testimonio fw-light lh-sm py-2">“Todos los cursos que eh <br
+                                    class="d-none d-sm-none d-md-none d-lg-block">
                                 seguido son
-                                de calidad y desde <br> cero, gracias por ello”</div>
+                                de calidad y desde <br class="d-none d-sm-none d-md-none d-lg-block"> cero, gracias por
+                                ello”</div>
 
                             <div class="d-flex justify-content-start">
-                                <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\bo.png"
-                                        alt=""> </div>
+                                <div class="pe-1 d-flex align-items-center"> <img class="banderaimg"
+                                        src="uploads\system\docente\bo.png" alt=""> </div>
 
                                 <div class="d-flex flex-column nombre-testimonio">
                                     <div class="nametest">Johana Flores</div>
@@ -3827,13 +4084,14 @@ section .conten p {
                         <img class="img-testimonio" src="uploads\system\testimonios\testimonio-siete.png" alt="">
                         <div class="">
                             <div class="text-white text-testimonio fw-light lh-sm py-2">“Desde sus docentes hasta sus
-                                <br>
-                                personales de trabajo todos muy <br> amables”
+                                <br class="d-none d-sm-none d-md-none d-lg-block">
+                                personales de trabajo todos muy <br class="d-none d-sm-none d-md-none d-lg-block">
+                                amables”
                             </div>
 
                             <div class="d-flex justify-content-start">
-                                <div class="pe-2 d-flex align-items-center"> <img src="uploads\system\docente\mx.png"
-                                        alt=""> </div>
+                                <div class="pe-1 d-flex align-items-center"> <img class="banderaimg"
+                                        src="uploads\system\docente\mx.png" alt=""> </div>
 
                                 <div class="d-flex flex-column nombre-testimonio">
                                     <div class="nametest">Marco Bazan</div>

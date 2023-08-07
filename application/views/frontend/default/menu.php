@@ -1,7 +1,7 @@
 <div class="main-nav-wrap">
     <div class="mobile-overlay"></div>
     <style type="text/css">
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 992px) {
             .category.corner-triangle.top-left.pb-0.is-hidden {
                 display: none !important;
             }
@@ -72,7 +72,7 @@
 <div class="main-nav-wrap">
     <div class="mobile-overlay"></div>
         <style type="text/css">
-            @media only screen and (max-width: 767px) {
+            @media only screen and (max-width: 992px) {
                 .category.corner-triangle.top-left.pb-0.is-hidden {
                     display: none !important;
                 }

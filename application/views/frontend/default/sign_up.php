@@ -42,7 +42,7 @@
                                         <option value="+52">+52</option>
                                         <option value="+54">+54</option>
                                     </select></span>
-                                <input type="text" id="number" name="number" class="form-control" maxlength="12">
+                                <input type="text" id="number" name="number" class="form-control" maxlength="12" aria-label="<?php echo site_phrase('email'); ?>">
                             </div>
                         </div>
 

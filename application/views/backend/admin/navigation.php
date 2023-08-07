@@ -179,6 +179,37 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 			</li>
 		<?php endif; ?>
 
+		<?php if (has_permission('enrolment')) : ?>
+			<li class="side-nav-item <?php if ($page_name == 'certificado' || $page_name == 'certificado') : ?> active <?php endif; ?>">
+				<a href="javascript: void(0);" class="side-nav-link <?php if ($page_name == 'certificado_list' || $page_name == 'certificado') : ?> active <?php endif; ?>">
+					<i class="dripicons-network-3"></i>
+					<span> <?php echo get_phrase('Certificados'); ?> </span>
+					<span class="menu-arrow"></span>
+				</a>
+				<ul class="side-nav-second-level" aria-expanded="false">
+					<li class="<?php if ($page_name == 'certificado') echo 'active'; ?>">
+						<a href="<?php echo site_url('admin/certificado'); ?>"><?php echo get_phrase('Lista de Certificados'); ?></a>
+					</li>
+
+				</ul>
+			</li>
+		<?php endif; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<?php if (has_permission('revenue')) : ?>
 			<li class="side-nav-item">
 				<a href="javascript: void(0);" class="side-nav-link <?php if ($page_name == 'admin_revenue' || $page_name == 'instructor_revenue' || $page_name == 'purchase_history' || $page_name == 'invoice') : ?> active <?php endif; ?>">

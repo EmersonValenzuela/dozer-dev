@@ -33,6 +33,43 @@ class Admin extends CI_Controller
         $page_data['page_title'] = get_phrase('dashboard');
         $this->load->view('backend/index.php', $page_data);
     }
+
+
+    
+    public function certificado($param1 = "",  $param2 = "")
+    {
+        if ($param1 == 'add') {
+            $this->crud_model->add_certificado();
+            $this->session->set_flashdata('flash_message', get_phrase('certificado_added_successfully'));
+            redirect(site_url('admin/certificado'), 'refresh');
+        }
+        $page_data['certificado'] = $this->crud_model->get_certificado();
+        $page_data['page_title'] = get_phrase('Certificados');
+        $page_data['page_name'] = 'certificado';
+        $this->load->view('backend/index', $page_data);
+    }
+
+
+
+
+
+    public function add_certificado()
+    {
+        $page_data['page_title'] = get_phrase('Agregar Certificado');
+        $page_data['page_name'] = 'certificado_add';
+        $this->load->view('backend/index', $page_data);
+    }
+
+
+
+
+
+
+
+
+
+
+
     public function repository($param1 = "",  $param2 = "")
     {
         if ($param1 == 'add') {

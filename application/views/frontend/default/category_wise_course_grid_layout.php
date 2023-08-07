@@ -6,7 +6,7 @@
         $instructor_details = $this->user_model->get_all_user($course['user_id'])->row_array();
         $course_duration = $this->crud_model->get_total_duration_of_lesson_by_course_id($course['id']);
         $lessons = $this->crud_model->get_lessons('course', $course['id']); ?>
-        <div class="col-md-6 col-xl-4 px-0">
+        <div class="col-12 col-sm-6 col-md-6 col-xl-4 px-10 px-sm-0 ">
             <div class="course-box-wrap">
                 <a onclick="$(location).attr('href', '<?php echo site_url('home/course/' . rawurlencode(slugify($course['title'])) . '/' . $course['id']); ?>');" href="javascript:;" class="has-popover">
                     <div class="course-box">
@@ -23,7 +23,7 @@
                                 </div>
                                 <div class="row mt-5">
                                     <div class="col-12">
-                                        <span class="fw-200 text-white "><?= $text_certificado ?></span>
+                                        <span class="fw-200 color-textcerti "><?= $text_certificado ?></span>
                                         
                                     </div>
                                 </div>
@@ -42,7 +42,7 @@
                                     <?php if ($course['discount_flag'] == 1) : ?>
                                         <p class="price text-white  text-right d-inline-block float-end"><small>
 
-                                                <span class="precio-desc"> <?php echo currency($course['discounted_price']); ?> Soles</span> <br>
+                                                <span class="precio-desc-curso"> <?php echo currency($course['discounted_price']); ?> Soles</span> <br>
                                                 <del><?php echo currency($course['price']); ?> Soles </small></del>
                                         </p> <br>
                                     <?php else : ?>
@@ -54,8 +54,8 @@
                             </div>
                             <div class="ms-auto">
 
-                                <span class="text-white fw-bold text-15px text-center">80% Dto</span> <br>
-                                <span class="btnbadge-prox  ">PROXIMAMENTE</span>
+                                <span class="text-white fw-bold text-15px d-flex justify-content-end">80% Dto</span> 
+                                <span class="btnbadge-prox prox-color  ">PROXIMAMENTE</span>
 
                             </div>
                         </div>

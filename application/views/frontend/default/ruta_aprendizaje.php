@@ -340,7 +340,7 @@
             </div>
         </div>
     </div>
-
+<div class="container-xl">
     <div class=" my-5">
         <div class="pf-ruta  ">Preguntas Frecuentes </div>
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -423,7 +423,7 @@
         </div>
 
     </div>
-
+</div>
 
 
 </section>

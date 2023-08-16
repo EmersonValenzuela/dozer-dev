@@ -45,7 +45,19 @@ class User_model extends CI_Model
         }
         return $this->db->get('users');
     }
-    
+
+    public function get_users()
+    {
+        $this->db->order_by('last_name', 'asc');
+        $this->db->where('role_id', 2);
+        return $this->db->get('users')->result();
+    }
+
+    public function get_courses()
+    {
+        $this->db->order_by('title', 'asc');
+        return $this->db->get('course')->result();
+    }
 
     public function add_user($is_instructor = false, $is_admin = false)
     {

@@ -10,19 +10,29 @@
             <div class="px-5">
                 <div class="input-group w-350">
 
-                    <input type="text" id="number" name="number" class="form-control" maxlength="12"
-                        placeholder=" Puedes usar tu DNI - CI">
+                    <input type="text" id="number" name="number" class="form-control" maxlength="12" placeholder=" Puedes usar tu DNI - CI">
                 </div>
             </div>
             <div class="p-1 "><a class="btn-verificar" href="#">Verificar</a></div>
         </div>
-      
+
         <div class="row text-white color-fondo  mb-3 ">
             <div class="col-1 p-1 text-center">Formato</div>
             <div class="col-2 p-1 text-center">Institución</div>
             <div class="col-3 p-1 text-center">Nombre del Estudiante</div>
             <div class="col-5 p-1 text-center">Nombre de la Capacitación</div>
             <div class="col-1 p-1 text-center">Enlace</div>
+        </div>
+        <div class="row text-white mb-3">
+            <?php
+            foreach ($certificates as $key => $certificate) : ?>
+                <div class="col-1 p-1 text-center"><?= $certificate->name ?></div>
+                <div class="col-3 p-1 text-center"><?= $certificate->institute ?></div>
+                <div class="col-2 p-1 text-center"><?= $certificate->last_name . " " . $certificate->first_name ?></div>
+                <div class="col-5 p-1 text-center"><?= $certificate->title ?></div>
+                <div class="col-1 p-1 text-center"><?= $certificate->link ?></div>
+            <?php endforeach; ?>
+
         </div>
     </div>
 </section>

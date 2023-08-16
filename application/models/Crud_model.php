@@ -3711,6 +3711,17 @@ class Crud_model extends CI_Model
         $this->db->order_by('id', 'desc');
         return $this->db->get('repository')->result_array();
     }
+    function get_certificates($id = "")
+    {
+        $this->db->select('*');
+        $this->db->from('certificate');
+        $this->db->join('users', 'users.id = certificate.student_id', 'LEFT');
+        $this->db->join('course', 'course.id = certificate.course_id', 'LEFT');
+        $this->db->join('category', 'category.id = course.category_id', 'LEFT');
+        $this->db->order_by('users.last_name', 'asc');
+        $query = $this->db->get();
+        return $query->result();
+    }
 
 
     function get_active_blogs($blog_id = "")
@@ -3875,6 +3886,60 @@ class Crud_model extends CI_Model
         }
         $this->db->insert('repository', $data);
     }
+
+    function get_certificate($id = "")
+    {
+        if ($id > 0) {
+            $this->db->where('id_certificate', $id);
+        }
+        $this->db->order_by('id_certificate', 'desc');
+        return $this->db->get('certificate');
+    }
+
+    public function add_certificate()
+    {
+        $data['student_id'] = $this->input->post('student');
+        $data['course_id'] = $this->input->post('course');
+        $data['institute'] = $this->input->post('institute');
+        $data['link'] = $this->input->post('student') . '_' . $this->input->post('course');
+
+        $users = $this->db->where('student_id', $this->input->post('student'))->get('certificate')->result();
+
+        foreach ($users as $key => $user) :
+            if ($user->course_id == $this->input->post('course')) :
+                return 'error_message';
+            endif;
+        endforeach;
+
+        $this->db->insert('certificate', $data);
+        return 'flash_message';
+    }
+
+    function update_certificate($id = "")
+    {
+        $data['student_id'] = $this->input->post('student');
+        $data['course_id'] = $this->input->post('course');
+        $data['institute'] = $this->input->post('institute');
+        $data['link'] = $this->input->post('student') . '_' . $this->input->post('course');
+
+        $users = $this->db->where('student_id', $this->input->post('student'))->get('certificate')->result();
+
+        foreach ($users as $key => $user) :
+            if ($user->course_id == $this->input->post('course')) :
+                return 'error_message';
+            endif;
+        endforeach;
+
+        $this->db->where('id_certificate', $id);
+        $this->db->update('certificate', $data);
+        return 'flash_message';
+    }
+    function delete_certificate($id = "")
+    {
+        $this->db->where('id_certificate', $id);
+        $this->db->delete('certificate');
+    }
+
 
     function update_blog($blog_id = "")
     {

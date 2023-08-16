@@ -60,7 +60,7 @@ class Home extends CI_Controller
         $page_data['page_name'] = "certificado";
         $page_data['page_title'] = site_phrase('Verifica-tu-cetificado');
 
-
+        $page_data['certificates'] = $this->crud_model->get_certificates();
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
@@ -102,7 +102,6 @@ class Home extends CI_Controller
         } else {
             $repositories = $this->crud_model->filter_repositories($type_doc, $area_inv, $datedoc);
             $page_data['repositories'] = $repositories;
-
         }
         $page_data['type_doc'] = $type_doc;
         $page_data['area_inv'] = $area_inv;
@@ -269,8 +268,7 @@ class Home extends CI_Controller
             $page_data['parent'] = $row_category->parent;
             $page_data['text_certificado'] = "Certifican: Autodesk y Dozer";
             $page_data['variable_logo']  = "";
-        } 
-        elseif ($row_category->parent == 21 || $row_category->id == 21) {
+        } elseif ($row_category->parent == 21 || $row_category->id == 21) {
             $page_data['variable']  = site_url('uploads/system/portada-cursos.png');
             $page_data['text_banner'] = "El mejor momento para invertir en tus 
             metas  ";

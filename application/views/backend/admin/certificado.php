@@ -2,8 +2,10 @@
     <div class="col-xl-12">
         <div class="card">
             <div class="card-body py-2">
-                <h4 class="page-title"> <i class="mdi mdi-apple-keyboard-command title_icon"></i> <?php echo get_phrase('blogs'); ?>
-                    <a href="<?php echo site_url('admin/add_repository'); ?>" class="btn btn-outline-primary btn-rounded alignToTitle"><i class="mdi mdi-plus"></i>Agregar Nuevo Repositorio</a>
+                <h4 class="page-title"> <i class="mdi mdi-apple-keyboard-command title_icon"></i>
+                    <?php echo get_phrase('blogs'); ?>
+                    <a href="<?php echo site_url('admin/add_certificate'); ?>" class="btn btn-outline-primary btn-rounded alignToTitle"><i class="mdi mdi-plus"></i>Agregar
+                        Nuevo Certificado</a>
                 </h4>
             </div> <!-- end card body-->
         </div> <!-- end card -->
@@ -20,31 +22,32 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th><?php echo get_phrase('Autor'); ?></th>
-                                <th><?php echo get_phrase('title'); ?></th>
-                                <th><?php echo get_phrase('Tipo de Documento'); ?></th>
-                                <th><?php echo get_phrase('Fecha de Creación'); ?></th>
-                                <th><?php echo get_phrase('actions'); ?></th>
+                                <th>Formato</th>
+                                <th>Estudiante</th>
+                                <th>Institución</th>
+                                <th>Curso</th>
+                                <th>Link</th>
+                                <th>acciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php
-                            foreach ($repositories as $key => $repository) : ?>
-
+                            foreach ($certificates as $key => $certificate) : ?>
                                 <tr>
                                     <td><?php echo $key + 1; ?></td>
-                                    <td><?php echo $repository['author']; ?></td>
-                                    <td><?php echo $repository['title']; ?></td>
-                                    <td><?php echo $repository['document_type']; ?></td>
-                                    <td><?php echo $repository['date_admission']; ?></td>
+                                    <td><?php echo $certificate->name ?></td>
+                                    <td><?php echo $certificate->last_name . " " . $certificate->first_name ?></td>
+                                    <td><?php echo $certificate->institute ?></td>
+                                    <td><?php echo $certificate->title ?></td>
+                                    <td><?php echo $certificate->link ?></td>
                                     <td>
                                         <div class="dropright dropright">
                                             <button type="button" class="btn btn-sm btn-outline-primary btn-rounded btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <i class="mdi mdi-dots-vertical"></i>
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="<?php echo site_url('admin/edit_blog/' . $blog['blog_id']) ?>"><?php echo get_phrase('edit'); ?></a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="confirm_modal('<?php echo site_url('admin/blog/delete/' . $blog['blog_id']); ?>');"><?php echo get_phrase('delete'); ?></a></li>
+                                                <li><a class="dropdown-item" href="<?php echo site_url('admin/edit_certificate/' . $certificate->id_certificate) ?>"><?php echo get_phrase('edit'); ?></a></li>
+                                                <li><a class="dropdown-item" href="#" onclick="confirm_modal('<?php echo site_url('admin/certificado/delete/' . $certificate->id_certificate); ?>');"><?php echo get_phrase('delete'); ?></a></li>
                                             </ul>
                                         </div>
                                     </td>

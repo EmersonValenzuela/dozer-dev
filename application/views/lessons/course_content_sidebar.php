@@ -26,7 +26,7 @@
         <p class="title text-white px-3 fw-700"><?php echo site_phrase($course_details['level']); ?></p>
     </div>
 
-    <div class="text-center mt-5 mx-3" style="">
+    <div class="text-center mt-5 mx-3">
         <div class="progress" style="height: 5px;">
             <div class="progress-bar progress-bar-striped bg-progress" role="progressbar"
                 style="width: <?php echo course_progress($course_details['id']); ?>%"
@@ -209,7 +209,7 @@
                     </div>
                     <?php else: ?>
                     <div class="alert alert-warning" role="alert" style="padding: 30px 0px;">
-                        <?php echo header-title my-1('live_class_is_not_scheduled_to_this_course_yet'); ?>
+                        <?php echo get_phrase('live_class_is_not_scheduled_to_this_course_yet'); ?>
                     </div>
                     <?php endif; ?>
                     <?php endif; ?>

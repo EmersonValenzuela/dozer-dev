@@ -34,41 +34,57 @@ class Admin extends CI_Controller
         $this->load->view('backend/index.php', $page_data);
     }
 
-
-    
     public function certificado($param1 = "",  $param2 = "")
     {
         if ($param1 == 'add') {
-            $this->crud_model->add_certificado();
-            $this->session->set_flashdata('flash_message', get_phrase('certificado_added_successfully'));
+            $q = $this->crud_model->add_certificate();
+            if ($q == 'error_message') {
+
+                $this->session->set_flashdata($q, get_phrase('certificate_error_duplicate'));
+            } else {
+                $this->session->set_flashdata($q, get_phrase('certificate_added_successfully'));
+            }
+            redirect(site_url('admin/certificado'), 'refresh');
+        } elseif ($param1 == 'update') {
+
+            $a = $this->crud_model->update_certificate($param2);
+            if ($a == 'error_message') {
+
+                $this->session->set_flashdata($a, get_phrase('certificate_error_duplicate'));
+            } else {
+                $this->session->set_flashdata($a, get_phrase('certificate_edit_successfully'));
+            }
+
+            redirect(site_url('admin/certificado'), 'refresh');
+        } elseif ($param1 == 'delete') {
+            $this->crud_model->delete_certificate($param2);
+            $this->session->set_flashdata('flash_message', get_phrase('certificate_deleted_successfully'));
             redirect(site_url('admin/certificado'), 'refresh');
         }
-        $page_data['certificado'] = $this->crud_model->get_certificado();
-        $page_data['page_title'] = get_phrase('Certificados');
+
+        $page_data['certificates'] = $this->crud_model->get_certificates();
+        $page_data['page_title'] = get_phrase('list_certificates');
         $page_data['page_name'] = 'certificado';
         $this->load->view('backend/index', $page_data);
     }
 
-
-
-
-
-    public function add_certificado()
+    public function add_certificate()
     {
         $page_data['page_title'] = get_phrase('Agregar Certificado');
         $page_data['page_name'] = 'certificado_add';
+        $page_data['students'] = $this->user_model->get_users();
+        $page_data['courses'] = $this->user_model->get_courses();
         $this->load->view('backend/index', $page_data);
     }
-
-
-
-
-
-
-
-
-
-
+    public function edit_certificate($id = "")
+    {
+        $page_data['students'] = $this->user_model->get_users();
+        $page_data['courses'] = $this->user_model->get_courses();
+        $page_data['certificate'] = $this->crud_model->get_certificate($id)->row();
+        $page_data['page_title'] = get_phrase('edit_certificate');
+        $page_data['page_name'] = 'certificate_edit';
+        $this->load->view('backend/index', $page_data);
+    }
 
     public function repository($param1 = "",  $param2 = "")
     {
@@ -1240,7 +1256,7 @@ class Admin extends CI_Controller
                 $this->crud_model->update_payout_status($payout_id, 'razorpay');
                 $this->session->set_flashdata('flash_message', get_phrase('payout_updated_successfully'));
             } else {
-                $this->session->set_flashdata('error_message', $response['status_msg']);
+                $this->session->set_flashdata('error_message', $status['status_msg']);
             }
 
             redirect(site_url('admin/instructor_payout'), 'refresh');

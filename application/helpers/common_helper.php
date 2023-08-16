@@ -13,14 +13,16 @@
  * @filesource
  */
 
-if (! function_exists('remove_js')) {
-    function remove_js($description = '') {
+if (!function_exists('remove_js')) {
+    function remove_js($description = '')
+    {
         return preg_replace('/<script\b[^>]*>(.*?)<\/script>/is', "", $description);
     }
 }
 
 if (!function_exists('isJson')) {
-    function isJson($string) {
+    function isJson($string)
+    {
         json_decode($string);
         return (json_last_error() == JSON_ERROR_NONE);
     }
@@ -98,48 +100,53 @@ if (!function_exists('custom_date')) {
     }
 }
 
-if (! function_exists('get_past_time')) {
-    function get_past_time( $time = "" ) {
+if (!function_exists('get_past_time')) {
+    function get_past_time($time = "")
+    {
         $time_difference = time() - $time;
 
-        if( $time_difference < 1 ) { return 'less than 1 second ago'; }
+        if ($time_difference < 1) {
+            return 'less than 1 second ago';
+        }
 
         //864000 = 10 days
-        if($time_difference > 864000){ return custom_date($time, 1); }
+        if ($time_difference > 864000) {
+            return custom_date($time, 1);
+        }
 
-        $condition = array( 12 * 30 * 24 * 60 * 60 =>  site_phrase('year'),
-                    30 * 24 * 60 * 60       =>  site_phrase('month'),
-                    24 * 60 * 60            =>  site_phrase('day'),
-                    60 * 60                 =>  site_phrase('hour'),
-                    60                      =>  site_phrase('minute'),
-                    1                       =>  site_phrase('second')
+        $condition = array(
+            12 * 30 * 24 * 60 * 60 =>  site_phrase('year'),
+            30 * 24 * 60 * 60       =>  site_phrase('month'),
+            24 * 60 * 60            =>  site_phrase('day'),
+            60 * 60                 =>  site_phrase('hour'),
+            60                      =>  site_phrase('minute'),
+            1                       =>  site_phrase('second')
         );
 
-        foreach( $condition as $secs => $str )
-        {
+        foreach ($condition as $secs => $str) {
             $d = $time_difference / $secs;
 
-            if( $d >= 1 )
-            {
-                $t = round( $d );
-                return $t . ' ' . $str . ( $t > 1 ? 's' : '' ) .' '. site_phrase('ago');
+            if ($d >= 1) {
+                $t = round($d);
+                return $t . ' ' . $str . ($t > 1 ? 's' : '') . ' ' . site_phrase('ago');
             }
         }
     }
 }
 
-if (! function_exists('resizeImage')) {
-    function resizeImage($filelocation = "", $target_path = "", $width = "", $height = "") {
-        $CI =&  get_instance();
+if (!function_exists('resizeImage')) {
+    function resizeImage($filelocation = "", $target_path = "", $width = "", $height = "")
+    {
+        $CI = &get_instance();
         $CI->load->database();
-        
-        if($width == ""){
+
+        if ($width == "") {
             $width = 200;
         }
 
-        if($height == ""){
+        if ($height == "") {
             $maintain_ratio = TRUE;
-        }else{
+        } else {
             $maintain_ratio = FALSE;
         }
 
@@ -157,12 +164,12 @@ if (! function_exists('resizeImage')) {
 
         if ($CI->image_lib->resize()) {
             return true;
-        }else{
+        } else {
             $CI->image_lib->display_errors();
             return false;
         }
         $CI->image_lib->clear();
-   }
+    }
 }
 
 if (!function_exists('get_settings')) {
@@ -201,7 +208,7 @@ if (!function_exists('currency')) {
             } elseif ($position == 'left-space') {
                 return $symbol . ' ' . $price;
             }
-        }else{
+        } else {
             $CI->db->where('key', 'system_currency');
             $currency_code = $CI->db->get('settings')->row('value');
 
@@ -384,11 +391,11 @@ if (!function_exists('lesson_progress')) {
 
         $query = $CI->db->get_where('watch_histories', array('course_id' => $course_id, 'student_id' => $user_id));
 
-        if($query->num_rows() > 0){
+        if ($query->num_rows() > 0) {
             $lesson_ids = json_decode($query->row('completed_lesson'), true);
-            if(is_array($lesson_ids) && in_array($lesson_id, $lesson_ids)){
+            if (is_array($lesson_ids) && in_array($lesson_id, $lesson_ids)) {
                 return 1;
-            }else{
+            } else {
                 return 0;
             }
         }
@@ -408,9 +415,9 @@ if (!function_exists('course_progress')) {
         if ($return_type == "completed_lesson_ids") {
             return json_decode($watch_history['completed_lesson']);
         }
-        if(is_array($watch_history) && $watch_history['course_progress'] > 0){
+        if (is_array($watch_history) && $watch_history['course_progress'] > 0) {
             return $watch_history['course_progress'];
-        }else{
+        } else {
             return 0;
         }
     }
@@ -480,6 +487,15 @@ if (!function_exists('get_bundle_validity')) {
         } else {
             return 'invalid';
         }
+    }
+}
+
+if (!function_exists('show_data')) {
+    function show_data($data)
+    {
+        echo "<script>
+            alert('" . $data . "');
+        </script>";
     }
 }
 

@@ -96,20 +96,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
                             <?php endif;
                             } ?>
-
-
-
                         </div>
-
-
-
-
-
-
-
-
-
-
 
                         <div class="text-white">
                             <p class="titulos-contcursos">OBJETIVOS DE APRENDIZAJE</p>
@@ -165,7 +152,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
                 </div>
 
-                <h4 class="py-3 text-white titulos-contcursos text-uppercase">
+                <h4 class=" text-white titulos-contcursos text-uppercase">
                     <?php echo site_phrase('CONTENIDO ACADÉMICO'); ?></h4>
                 <div class="what-you-get-box">
                     <ul class="what-you-get__items">
@@ -345,7 +332,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
 
                             <div class="nombre-curso-cont">
-                                <p class="text-nombcertid"> "Especialista en <?php echo $course_details['title'];  ?>"
+                                <p class="text-nombcertid"> " <?php echo $course_details['title']; ?> <br> Nivel Basico "
                                 </p>
                             </div>
                             <div class="text-white text-center">por 120 horas acreditadas
@@ -375,7 +362,8 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
                             </div>
                             <div class="nombre-curso-cont">
-                                <p class="text-nombcertid"><?php echo $course_details['title']; ?></p>
+                                <p class="text-nombcertid">" <?php echo $course_details['title']; ?> <br> Nivel
+                                    Avanzado"</p>
                             </div>
                             <div class="text-white text-center">por 90 horas acreditadas
                             </div>
@@ -437,118 +425,119 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
                             <img class="img-certficado-curso" src="<?= base_url() ?>uploads/system/certificados/certificado-tres.svg" alt="">
                         </div>
-                    </div>
-
-
-                    <div class="d-flex fondo-certificado-cursos mt-3">
-                        <div class="p-2 flex-shrink-1 px-3 py-2 "><img src="<?= base_url() ?>uploads/system/certificados/soporte.svg " alt=""></div>
-                        <div class="p-2 w-100 text-white px-3 py-2 ">
-                            <p class="d-flex align-items-center"> </p>
-                            Al finalizar la capacitación nuestro equipo de
-                            soporte le
-                            ayudará a gestionar desde cero hasta que usted pueda
-                            <strong> descargar los certificados desde la plataforma de autodesk.</strong>
-                        </div>
-
                     </div>
 
                     <div class="  mt-5 ">
-                        <div class="about-directora-title">INSIGNIA DE ACREDITACIÓN ELECTRÓNICA</div>
-                        <div class="d-flex cg-1rem ">
+                        <div class="d-flex cg-1rem fondo-certificado-cursos">
 
-                            <div class="p-2 flex-shrink-1 px-5 py-3  fondo-certificado-cursos"><img src="<?= base_url() ?>uploads/system/certificados/insignia.png " alt=""></div>
-                            <div class="p-2 w-100 text-white p-5 color-text fondo-certificado-cursos text-center">
-                                <p class="fw-bold">¡Nuevo beneficio para nuestros alumnos!</p>
-                                <p class="fw-200">Comparte tus logros en redes sociales con
-                                    una insignia electrónica con la información
-                                    de tu certificación Autodesk.</p>
-                                <button class="btn-style-certi fw-700">
-                                    Insignia Gratuita
-                                </button>
+                            <div class="d-flex fondo-certificado-cursos mt-3">
+                                <div class="p-2 flex-shrink-1 px-3 py-2 "><img src="<?= base_url() ?>uploads/system/certificados/soporte.svg " alt=""></div>
+                                <div class="p-2 w-100 text-white px-3 py-2 ">
+                                    <p class="d-flex align-items-center"> </p>
+                                    Al finalizar la capacitación nuestro equipo de
+                                    soporte le
+                                    ayudará a gestionar desde cero hasta que usted pueda
+                                    <strong> descargar los certificados desde la plataforma de autodesk.</strong>
+                                </div>
 
                             </div>
 
-                        </div>
-                    </div>
 
 
-                    <div class="d-flex fondo-certificado-cursos mt-3">
-                        <div class="p-2 w-100 text-white px-3 py-2 text-justify">Para acceder a la insignia de
-                            Acreditación
-                            Electrónica, tendrá que haber aprobado las siguientes especializaciones: Expedientes
-                            técnicos con BIM aplicado a Proyectos de Infraestructrura educativa, Infraestructrura
-                            Hospitalaria, infraestructura Vial, Pavimentación Urbano y Rural, Agua y saneamiento Rural y
-                            electrificación rural. </div>
+                            <div class="about-directora-title">INSIGNIA DE ACREDITACIÓN ELECTRÓNICA</div>
+                            <div class="d-flex cg-1rem ">
 
-                    </div>
-                    <div class="mt-5">
-                        <div class="about-directora-title">AHORRA UN 20% DE DESCUENTO ADICIONAL COMPRANDO <br>
-                            EL PACK “MODELADOR BIM”</div>
-                        <div class="d-flex flex-column mb-3">
-                            <div class="fondo-certificado-cursos container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        One of two columns
-                                    </div>
-                                    <div class="col-6">
-                                        One of two columns
-                                    </div>
+                                <div class="p-2 flex-shrink-1 px-5 py-3  fondo-certificado-cursos"><img src="<?= base_url() ?>uploads/system/certificados/insignia.png " alt=""></div>
+                                <div class="p-2 w-100 text-white p-5 color-text fondo-certificado-cursos text-center">
+                                    <p class="fw-bold">¡Nuevo beneficio para nuestros alumnos!</p>
+                                    <p class="fw-200">Comparte tus logros en redes sociales con
+                                        una insignia electrónica con la información
+                                        de tu certificación Autodesk.</p>
+                                    <button class="btn-style-certi fw-700">
+                                        Insignia Gratuita
+                                    </button>
+
                                 </div>
-                            </div>
-                            <div class="fondo-certificado-cursos  container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        One of two columns
-                                    </div>
-                                    <div class="col-6">
-                                        One of two columns
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fondo-certificado-cursos  container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        One of two columns
-                                    </div>
-                                    <div class="col-6">
-                                        One of two columns
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
-                    </div>
 
 
-                    <div class="mt-5">
-                        <div class="about-directora-title">PROCESO DE MATRÍCULA</div>
-                        <div class=" w-100 text-white  py-2 text-justify fw-200">Estás a un paso de cambiar tu
-                            futuro
-                            profesional, más de 15 mil estudiantes en todo el Perú se han formado con nosotros. </div>
-                        <div class="d-flex flex-row ">
-                            <div class="py-2"><img class="w-19rem" src="<?= base_url() ?>uploads/system/asesora.png" alt=""></div>
-                            <div class="py-2">
-                                <p class=" w-100 text-white py-2 px-4 text-justify fw-200">Estás a un paso de cambiar tu
-                                    futuro
-                                    profesional, más de 15 mil estudiantes en todo el Perú se han formado con nosotros.
-                                </p>
-                                <div class="d-flex flex-row mb-3 align-items-center justify-content-center text-wssp-dm">
-                                    <div class="py-2"> <a href="#"> <img src="<?= base_url() ?>uploads/system/descargar-manual-black.png " alt="">
-                                    </div>
-                                    <div class="p-2  fw-bold">Descargar el manual</div></a>
-
-                                </div>
-                                <p class=" w-100 text-white py-2 px-4 text-justify fw-200">O si deseas que nuestra
-                                    asesora Valeria te ayude con tu matrícula escríbenos al: +51 929 270 912 o dale
-                                    click:</p>
-                                <div class="d-flex flex-row mb-3 align-items-center justify-content-center text-wssp-wssp">
-                                    <div class="p-2"> <a href="#"> <img class="w-20-px" src="<?= base_url() ?>uploads/system/whatsap.svg " alt=""></a></div>
-                                    <div class="py-2 text-white fw-bold">Dale click Aquí</div>
-
-                                </div>
-                            </div>
+                        <div class="d-flex fondo-certificado-cursos mt-3">
+                            <div class="p-2 w-100 color-text px-3 py-2 text-justify">Para acceder a la insignia digital de
+                                Acreditación, tendrá que haber aprobado
+                                los niveles básico y avanzado. </div>
 
                         </div>
-                    </div>
+                        <div class="mt-5">
+                            <div class="about-directora-title">AHORRA UN 20% DE DESCUENTO ADICIONAL COMPRANDO <br>
+                                EL PACK “MODELADOR BIM”</div>
+                            <div class="d-flex flex-column mb-3">
+                                <div class="fondo-certificado-cursos container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            One of two columns
+                                        </div>
+                                        <div class="col-6">
+                                            One of two columns
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fondo-certificado-cursos  container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            One of two columns
+                                        </div>
+                                        <div class="col-6">
+                                            One of two columns
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fondo-certificado-cursos  container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            One of two columns
+                                        </div>
+                                        <div class="col-6">
+                                            One of two columns
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="mt-5">
+                            <div class="about-directora-title">PROCESO DE MATRÍCULA</div>
+                            <div class=" w-100 text-white  py-2 text-justify fw-200">Estás a un paso de cambiar tu
+                                futuro
+                                profesional, más de 15 mil estudiantes en todo el Perú se han formado con nosotros. </div>
+                            <div class="d-flex flex-row ">
+                                <div class="py-2"><img class="w-19rem" src="<?= base_url() ?>uploads/system/asesora.png" alt=""></div>
+                                <div class="py-2">
+                                    <p class=" w-100 text-white py-2 px-4 text-justify fw-200">Estás a un paso de cambiar tu
+                                        futuro
+                                        profesional, más de 15 mil estudiantes en todo el Perú se han formado con nosotros.
+                                    </p>
+                                    <div class="d-flex flex-row mb-3 align-items-center justify-content-center text-wssp-dm">
+                                        <div class="py-2"> <a href="#"> <img src="<?= base_url() ?>uploads/system/descargar-manual-black.png " alt="">
+                                        </div>
+                                        <div class="p-2  fw-bold">Descargar el manual</div></a>
+
+                                    </div>
+                                    <p class=" w-100 text-white py-2 px-4 text-justify fw-200">O si deseas que nuestra
+                                        asesora Valeria te ayude con tu matrícula escríbenos al: +51 929 270 912 o dale
+                                        click:</p>
+                                    <div class="d-flex flex-row mb-3 align-items-center justify-content-center text-wssp-wssp">
+                                        <div class="p-2"> <a href="#"> <img class="w-20-px" src="<?= base_url() ?>uploads/system/whatsap.svg " alt=""></a></div>
+                                        <div class="py-2 text-white fw-bold">Dale click Aquí</div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
 
 
 
@@ -561,7 +550,6 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
 
 
-                    <div class="reviews mt-5">
 
                         <ul>
                             <?php

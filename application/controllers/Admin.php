@@ -61,9 +61,9 @@ class Admin extends CI_Controller
             $this->session->set_flashdata('flash_message', get_phrase('certificate_deleted_successfully'));
             redirect(site_url('admin/certificado'), 'refresh');
         }
-
         $page_data['certificates'] = $this->crud_model->get_certificates();
         $page_data['page_title'] = get_phrase('list_certificates');
+        $page_data['page_title'] = get_phrase('Certificados');
         $page_data['page_name'] = 'certificado';
         $this->load->view('backend/index', $page_data);
     }

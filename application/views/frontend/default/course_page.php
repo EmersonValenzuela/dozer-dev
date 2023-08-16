@@ -45,7 +45,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                                             <div class="p-2 bg-encabezado"> Inicio
                                             </div>
                                             <div class=" p-2 bg-contenido">
-                                            <?= $row_schedule->init_c ?>
+                                                <?= $row_schedule->init_c ?>
                                             </div>
                                         </div>
 
@@ -57,7 +57,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                                             <div class="p-2 bg-encabezado"> Frecuencia y Horario
                                             </div>
                                             <div class=" p-2 bg-contenido">
-                                            <?= $row_schedule->schedule ?>
+                                                <?= $row_schedule->schedule ?>
                                             </div>
                                         </div>
 
@@ -70,8 +70,8 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                                             <div class="p-2 bg-encabezado"> Duracion
                                             </div>
                                             <div class=" p-2 bg-contenido">
-                                            <?= $row_schedule->duration ?>
-                                                
+                                                <?= $row_schedule->duration ?>
+
                                             </div>
                                         </div>
 
@@ -83,8 +83,8 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
                                             </div>
                                             <div class=" p-2 bg-contenido">
-                                            <?= $row_schedule->modality ?>
-                                                                                        </div>
+                                                <?= $row_schedule->modality ?>
+                                            </div>
                                         </div>
 
                                     </div>
@@ -163,7 +163,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
                 </div>
 
-                <h4 class="py-3 text-white titulos-contcursos text-uppercase">
+                <h4 class=" text-white titulos-contcursos text-uppercase">
                     <?php echo site_phrase('CONTENIDO ACADÉMICO'); ?></h4>
                 <div class="what-you-get-box">
                     <ul class="what-you-get__items">
@@ -179,7 +179,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
                 <?php if ($course_details['course_type'] == 'general') : ?>
                 <div class="course-curriculum-box">
-                    <div class="course-curriculum-title clearfix mt-5 mb-3">
+                    <div class="course-curriculum-title clearfix ">
 
 
                     </div>
@@ -358,7 +358,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
 
                             <div class="nombre-curso-cont">
-                                <p class="text-nombcertid"> "Especialista en <?php echo $course_details['title'];  ?>"
+                                <p class="text-nombcertid"> " <?php echo $course_details['title'];?> <br> Nivel Basico "
                                 </p>
                             </div>
                             <div class="text-white text-center">por 120 horas acreditadas
@@ -390,59 +390,8 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
                             </div>
                             <div class="nombre-curso-cont">
-                                <p class="text-nombcertid"><?php echo $course_details['title']; ?></p>
-                            </div>
-                            <div class="text-white text-center">por 90 horas acreditadas
-                            </div>
-                            <div class="certi-contenido">
-                                <button class="btn-style-certi fw-700">
-                                    Certificado gratuito
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-6 ">
-
-                            <img class="img-certficado-curso"
-                                src="<?=base_url()?>uploads/system/certificados/certificado-tres.svg" alt="">
-                        </div>
-                    </div>
-
-                    <div class="row fondo-certificado-cursos mt-5">
-                        <div class="col-6 p-2000">
-                            <span> <img class="w-19px position-absolute"
-                                    src="<?=base_url()?>uploads/system/icon-sheck.png" alt=""></span>
-                            <p class="text-titulo-contenido">
-                                Certificado Internacional <br>
-                                por Autodesk USA:
-                            </p>
-                            <div class="nombre-curso-cont">
-                                <?php echo $course_details['title']; ?>
-                            </div>
-                            <div class="text-white text-center">por 90 horas acreditadas
-                            </div>
-                            <div class="certi-contenido">
-                                <button class="btn-style-certi fw-700">
-                                    Certificado gratuito
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-6 ">
-
-                            <img class="img-certficado-curso"
-                                src="<?=base_url()?>uploads/system/certificados/certificado-tres.svg" alt="">
-                        </div>
-                    </div>
-
-                    <div class="row fondo-certificado-cursos mt-5">
-                        <div class="col-6 p-2000">
-                            <span> <img class="w-19px position-absolute"
-                                    src="<?=base_url()?>uploads/system/icon-sheck.png" alt=""></span>
-                            <p class="text-titulo-contenido">
-                                Certificado Internacional <br>
-                                por Autodesk USA:
-                            </p>
-                            <div class="nombre-curso-cont">
-                                <?php echo $course_details['title']; ?>
+                                <p class="text-nombcertid">" <?php echo $course_details['title']; ?> <br> Nivel
+                                    Avanzado"</p>
                             </div>
                             <div class="text-white text-center">por 90 horas acreditadas
                             </div>
@@ -460,30 +409,39 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                     </div>
 
 
-                    <div class="d-flex fondo-certificado-cursos mt-3">
-                        <div class="p-2 flex-shrink-1 px-3 py-2 "><img
-                                src="<?=base_url()?>uploads/system/certificados/soporte.svg " alt=""></div>
-                        <div class="p-2 w-100 text-white px-3 py-2 ">
-                            <p class="d-flex align-items-center"> </p>
-                            Al finalizar la capacitación nuestro equipo de
-                            soporte le
-                            ayudará a gestionar desde cero hasta que usted pueda
-                            <strong> descargar los certificados desde la plataforma de autodesk.</strong>
-                        </div>
 
-                    </div>
+
 
                     <div class="  mt-5 ">
+                        <div class="d-flex cg-1rem fondo-certificado-cursos">
+
+                            <div class="p-2 flex-shrink-1   "><img class="w-70px"
+                                    src="<?=base_url()?>uploads/system/capacitacion.png " alt=""></div>
+                            <div class="p-2 w-100 text-white p-2 color-text  ">
+                                <p class="">Al finalizar la capacitación nuestro equipo de soporte le
+                                    ayudará a gestionar desde cero hasta que usted pueda
+                                    <a href="#" class="fw-700 color-text"> descargar los certificados desde la
+                                        plataforma de autodesk. </a>
+                                </p>
+
+
+                            </div>
+
+                        </div>
+
+
+
                         <div class="about-directora-title">INSIGNIA DE ACREDITACIÓN ELECTRÓNICA</div>
                         <div class="d-flex cg-1rem ">
 
-                            <div class="p-2 flex-shrink-1 px-5 py-3  fondo-certificado-cursos"><img
+                            <div class="p-2 flex-shrink-1 px-5 py-3  fondo-insignia"><img class="img-insignia"
                                     src="<?=base_url()?>uploads/system/certificados/insignia.png " alt=""></div>
-                            <div class="p-2 w-100 text-white p-5 color-text fondo-certificado-cursos text-center">
-                                <p class="fw-bold">¡Nuevo beneficio para nuestros alumnos!</p>
-                                <p class="fw-200">Comparte tus logros en redes sociales con
-                                    una insignia electrónica con la información
-                                    de tu certificación Autodesk.</p>
+                            <div class="p-3 w-100 text-white  color-text fondo-certificado-cursos text-center">
+                                <p class="fw-bold text-white">¡Nuevo beneficio para nuestros alumnos!</p>
+                                <p class="fw-200">Accede gratuitamente a esta insignia el cual tiene validez
+                                    y reconocimiento internacional para mejorar tu CV. Podrás
+                                    compartir información de tu certificación internacional de
+                                    Autodesk en tu LinkedIn, Facebook y firmas digitales.</p>
                                 <button class="btn-style-certi fw-700">
                                     Insignia Gratuita
                                 </button>
@@ -495,12 +453,9 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
 
                     <div class="d-flex fondo-certificado-cursos mt-3">
-                        <div class="p-2 w-100 text-white px-3 py-2 text-justify">Para acceder a la insignia de
-                            Acreditación
-                            Electrónica, tendrá que haber aprobado las siguientes especializaciones: Expedientes
-                            técnicos con BIM aplicado a Proyectos de Infraestructrura educativa, Infraestructrura
-                            Hospitalaria, infraestructura Vial, Pavimentación Urbano y Rural, Agua y saneamiento Rural y
-                            electrificación rural. </div>
+                        <div class="p-2 w-100 color-text px-3 py-2 text-justify">Para acceder a la insignia digital de
+                            Acreditación, tendrá que haber aprobado
+                            los niveles básico y avanzado. </div>
 
                     </div>
                     <div class="mt-5">
@@ -542,37 +497,30 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
 
                     <div class="mt-5">
-                        <div class="about-directora-title">PROCESO DE MATRÍCULA</div>
-                        <div class=" w-100 text-white  py-2 text-justify fw-200">Estás a un paso de cambiar tu
-                            futuro
-                            profesional, más de 15 mil estudiantes en todo el Perú se han formado con nosotros. </div>
-                        <div class="d-flex flex-row ">
-                            <div class="py-2"><img class="w-19rem" src="<?=base_url()?>uploads/system/asesora.png"
-                                    alt=""></div>
-                            <div class="py-2">
-                                <p class=" w-100 text-white py-2 px-4 text-justify fw-200">Estás a un paso de cambiar tu
-                                    futuro
-                                    profesional, más de 15 mil estudiantes en todo el Perú se han formado con nosotros.
-                                </p>
-                                <div
-                                    class="d-flex flex-row mb-3 align-items-center justify-content-center text-wssp-dm">
-                                    <div class="py-2"> <a href="#"> <img
-                                                src="<?=base_url()?>uploads/system/descargar-manual-black.png " alt="">
-                                    </div>
-                                    <div class="p-2  fw-bold">Descargar el manual</div></a>
+                        <div class="about-directora-title">LOGROS QUE NOS ENORGULLECEN</div>
 
-                                </div>
-                                <p class=" w-100 text-white py-2 px-4 text-justify fw-200">O si deseas que nuestra
-                                    asesora Valeria te ayude con tu matrícula escríbenos al: +51 929 270 912 o dale
-                                    click:</p>
+                        <div class="d-flex flex-row fondo-reconocimiento">
+
+                            <div class="py-2 margin-reconocimiento">
+                                <p class=" w-100 text-white py-2 px-4 text-justify fw-200 fw-700 text-reconocimiento">Reconocidos a nivel nacional
+                                    (Perú) <br>
+                                    como mejor StartUp de formación BIM
+                                </p>
+
+                                <p class=" w-100 text-white py-2 px-4 text-justify fw-200 text-reco">Instituto Dozer en los
+                                    últimos años, <br> gracias al rápido crecimiento y la <br> ampliación de nuestra presencia en <br>
+                                    Latinoamérica, hemos conseguido ser un <br> referente del sector y alcanzar segmentos <br>
+                                    relacionados con la consultoría <br> especializada en ámbitos como BIM y el <br> desarrollo de
+                                    nuevas técnologías. </p>
                                 <div
-                                    class="d-flex flex-row mb-3 align-items-center justify-content-center text-wssp-wssp">
-                                    <div class="p-2"> <a href="#"> <img class="w-20-px"
-                                                src="<?=base_url()?>uploads/system/whatsap.svg " alt=""></a></div>
-                                    <div class="py-2 text-white fw-bold">Dale click Aquí</div>
+                                    class=" mb-3 align-items-center justify-content-center ">
+                                    <div class="p-2"> <img class="img-reconocimiento"
+                                                src="<?=base_url()?>uploads/system/logo-reconocimiento.png " alt=""></div>
+                                    
 
                                 </div>
                             </div>
+
 
                         </div>
                     </div>
@@ -588,56 +536,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
 
 
-                    <div class="reviews mt-5">
 
-                        <ul>
-                            <?php
-              $ratings = $this->crud_model->get_ratings('course', $course_id)->result_array();
-              foreach ($ratings as $rating) :
-              ?>
-                            <li>
-                                <div class="row">
-                                    <div class="col-auto">
-                                        <div class="reviewer-details clearfix">
-                                            <div class="reviewer-img">
-                                                <img src="<?php echo $this->user_model->get_user_image_url($rating['user_id']); ?>"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <div class="review-time">
-                                            <div class="reviewer-name fw-500">
-                                                <?php
-                          $user_details = $this->user_model->get_user($rating['user_id'])->row_array();
-                          echo $user_details['first_name'] . ' ' . $user_details['last_name'];
-                          ?>
-                                            </div>
-                                            <!-- <div class="time text-11px text-muted">
-                          <?php echo date('d/m/Y', $rating['date_added']); ?>
-                        </div> -->
-                                        </div>
-                                        <div class="review-details">
-                                            <div class="rating">
-                                                <?php
-                          for ($i = 1; $i < 6; $i++) : ?>
-                                                <?php if ($i <= $rating['rating']) : ?>
-                                                <i class="fas fa-star filled" style="color: #f5c85b;"></i>
-                                                <?php else : ?>
-                                                <i class="fas fa-star" style="color: #abb0bb;"></i>
-                                                <?php endif; ?>
-                                                <?php endfor; ?>
-                                            </div>
-                                            <div class="review-text text-13px">
-                                                <?php echo $rating['review']; ?>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
                 </div>
             </div>
 

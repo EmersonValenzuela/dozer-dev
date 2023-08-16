@@ -43,7 +43,7 @@ class Admin extends CI_Controller
             $this->session->set_flashdata('flash_message', get_phrase('certificado_added_successfully'));
             redirect(site_url('admin/certificado'), 'refresh');
         }
-        $page_data['certificado'] = $this->crud_model->get_certificado();
+        
         $page_data['page_title'] = get_phrase('Certificados');
         $page_data['page_name'] = 'certificado';
         $this->load->view('backend/index', $page_data);

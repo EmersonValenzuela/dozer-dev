@@ -1957,11 +1957,6 @@ class Admin extends CI_Controller
         $page_data['page_name'] = 'edit_custom_page';
         $this->load->view('backend/index', $page_data);
     }
-
-
-
-
-
     //Start Academy Cloud coding
     function academy_cloud($param1 = "")
     {
@@ -1978,21 +1973,5 @@ class Admin extends CI_Controller
         $this->load->view('backend/index', $page_data);
     }
     //End of Academy Cloud coding
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

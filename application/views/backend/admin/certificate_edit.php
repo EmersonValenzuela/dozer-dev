@@ -18,7 +18,7 @@
         <div class="card">
             <div class="card-body">
                 <h4 class='mb-3'>Editar Certificado</h4>
-                <form action="<?php echo site_url('admin/certificado/update/' . $certificate->id_certificate); ?>" method="post">
+                <form action="<?php echo site_url('admin/certificado/update/' . $certificate->id_certificate); ?>" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="document_type">Seleccione Estudiante</label>
                         <select class="form-control select2" data-toggle="select2" name="student" id="student" required>
@@ -50,9 +50,25 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="title">Institución</label>
-                        <input type="text" class="form-control" name="institute" id="institute" placeholder="Ingresar Institución" value="<?= $certificate->institute ?>" required>
+                        <label for="investigation">Seleccione Institución</label>
+                        <select class="form-control select2" data-toggle="select2" name="institute" id="institute" required>
+                            <option value="" selected disabled>Seleccione una institución</option>
+                            <option value="Instituto Dozer" <?php if($certificate->institute == 'Instituto Dozer') : echo 'selected'; endif;?> >Instituto Dozer</option>
+                            <option value="Colegio de Ingenieros del Perú (CIP)" <?php if($certificate->institute == 'Colegio de Ingenieros del Perú (CIP)') : echo 'selected'; endif;?>>Colegio de Ingenieros del Perú (CIP)</option>
+                        </select>
                     </div>
+                    <div class="form-group row mb-3">
+                        <label class="col-md-2 col-form-label" for="user_image">Certificado PDF</label>
+                        <div class="col-md-10">
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="c_image" name="c_image" accept="doc,.docx,.pdf">
+                                    <label class="custom-file-label" for="c_image">Elegir archivo certificado</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="link_before" value="<?= $certificate->link ?>">
                     <div class="form-group mt-4">
                         <button class="btn btn-success">Editar Certificado</button>
                     </div>

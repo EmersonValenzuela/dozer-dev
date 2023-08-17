@@ -36,7 +36,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                         <div class="text-white">
                             <?php
                             if ($row_schedule) {
-                                if ($row_schedule->init_c != '' ||  $row_schedule->schedule != '') :  ?>
+                                if ($row_schedule->init_c != '' ||  $row_schedule->schedule != '' || $row_schedule->duration != '') :  ?>
 
                                     <div class="container text-center text-white fw-bold">
                                         <div class="row">

@@ -34,12 +34,12 @@
                             <?php
                             foreach ($certificates as $key => $certificate) : ?>
                                 <tr>
-                                    <td><?php echo $key + 1; ?></td>
-                                    <td><?php echo $certificate->name ?></td>
-                                    <td><?php echo $certificate->last_name . " " . $certificate->first_name ?></td>
-                                    <td><?php echo $certificate->institute ?></td>
-                                    <td><?php echo $certificate->title ?></td>
-                                    <td><?php echo $certificate->link ?></td>
+                                    <td><?= $key + 1; ?></td>
+                                    <td><?= $certificate->name ?></td>
+                                    <td><?= $certificate->last_name . " " . $certificate->first_name ?></td>
+                                    <td><?= $certificate->institute ?></td>
+                                    <td><?= $certificate->title ?></td>
+                                    <td><a href="<?= base_url("uploads/certificates/" . $certificate->link) ?>" target="_blank">Enlace</a></td>
                                     <td>
                                         <div class="dropright dropright">
                                             <button type="button" class="btn btn-sm btn-outline-primary btn-rounded btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

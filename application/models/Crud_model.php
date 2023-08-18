@@ -3911,6 +3911,13 @@ class Crud_model extends CI_Model
             endif;
         endforeach;
 
+        if (isset($_FILES['c_image'])) {
+            $name = $this->input->post('student') . "_" . $this->input->post('course') . "." . pathinfo($_FILES['c_image']['name'], PATHINFO_EXTENSION);
+
+            $data['link'] =  $name;
+            move_uploaded_file($_FILES['c_image']['tmp_name'], 'uploads/certificates/' . $name);
+        }
+
         $this->db->insert('certificate', $data);
         return 'flash_message';
     }
@@ -3922,13 +3929,13 @@ class Crud_model extends CI_Model
         $data['institute'] = $this->input->post('institute');
         $data['link'] = $this->input->post('student') . '_' . $this->input->post('course');
 
-        $users = $this->db->where('student_id', $this->input->post('student'))->get('certificate')->result();
+        if (isset($_FILES['c_image'])) {
+            unlink('uploads/certificates/' . $this->input->post('link_before'));
+            $name = $this->input->post('student') . "_" . $this->input->post('course') . "." . pathinfo($_FILES['c_image']['name'], PATHINFO_EXTENSION);
 
-        foreach ($users as $key => $user) :
-            if ($user->course_id == $this->input->post('course')) :
-                return 'error_message';
-            endif;
-        endforeach;
+            $data['link'] =  $name;
+            move_uploaded_file($_FILES['c_image']['tmp_name'], 'uploads/certificates/' . $name);
+        }
 
         $this->db->where('id_certificate', $id);
         $this->db->update('certificate', $data);

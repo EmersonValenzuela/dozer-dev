@@ -15,7 +15,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
     <div class="container-xl">
         <div class="row">
 
-            <div class="col-lg-9 order-last pe-5 order-lg-first radius-10  ">
+            <div class="col-lg-8 col-xl-8  col-xxl-9 order-last pe-5 order-lg-first radius-10  ">
 
                 <div class="description-box view-more-parent">
 
@@ -502,21 +502,25 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                         <div class="d-flex flex-row fondo-reconocimiento">
 
                             <div class="py-2 margin-reconocimiento">
-                                <p class=" w-100 text-white py-2 px-4 text-justify fw-200 fw-700 text-reconocimiento">Reconocidos a nivel nacional
+                                <p class=" w-100 text-white py-2 px-4 text-justify fw-200 fw-700 text-reconocimiento">
+                                    Reconocidos a nivel nacional
                                     (Perú) <br>
                                     como mejor StartUp de formación BIM
                                 </p>
 
-                                <p class=" w-100 text-white py-2 px-4 text-justify fw-200 text-reco">Instituto Dozer en los
-                                    últimos años, <br> gracias al rápido crecimiento y la <br> ampliación de nuestra presencia en <br>
-                                    Latinoamérica, hemos conseguido ser un <br> referente del sector y alcanzar segmentos <br>
-                                    relacionados con la consultoría <br> especializada en ámbitos como BIM y el <br> desarrollo de
+                                <p class=" w-100 text-white py-2 px-4 text-justify fw-200 text-reco">Instituto Dozer en
+                                    los
+                                    últimos años, <br> gracias al rápido crecimiento y la <br> ampliación de nuestra
+                                    presencia en <br>
+                                    Latinoamérica, hemos conseguido ser un <br> referente del sector y alcanzar
+                                    segmentos <br>
+                                    relacionados con la consultoría <br> especializada en ámbitos como BIM y el <br>
+                                    desarrollo de
                                     nuevas técnologías. </p>
-                                <div
-                                    class=" mb-3 align-items-center justify-content-center ">
+                                <div class=" mb-3 align-items-center justify-content-center ">
                                     <div class="p-2"> <img class="img-reconocimiento"
-                                                src="<?=base_url()?>uploads/system/logo-reconocimiento.png " alt=""></div>
-                                    
+                                            src="<?=base_url()?>uploads/system/logo-reconocimiento.png " alt=""></div>
+
 
                                 </div>
                             </div>
@@ -540,7 +544,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                 </div>
             </div>
 
-            <div class="col-lg-3 order-first order-lg-last resumeninfo">
+            <div class="col-lg-4 col-xl-4 col-xxl-3 order-first order-lg-last resumeninfo">
                 <div class="course-sidebar box-shadow-5 natural cuadro-contenido">
                     <?php if ($course_details['video_url'] != "") : ?>
                     <div class="preview-video-box">
@@ -621,7 +625,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                             <?php endif; ?>
 
                             <button class="btn btn-buy-now" type="button" id="<?php echo $course_details['id']; ?>"
-                                onclick="handleCartItems(this)"><?php echo site_phrase('Agregar a mi carrito'); ?></button>
+                                onclick="handleCartItems(this)"> <img class="card-course" src="<?=base_url()?>uploads/system/card-white.png " alt=""> <?php echo site_phrase('Agregar a mi carrito'); ?></button>
                         </div>
                         <?php endif; ?>
                         <?php endif; ?>
@@ -636,64 +640,47 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                             <ul>
                                 <?php if ($course_details['course_type'] == 'general') : ?>
                                 <li class="text-white"><img class="me-2"
-                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Clase virtual en
-                                    vivo, junto al docente</li>
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Docente con amplia
+                                    experiencia</li>
                                 <li class="text-white"><img class="me-2"
-                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Acceso al software
-                                    BIMDev 2023
-                                </li>
-                                <li class="text-white"><img class="me-2"
-                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Proyectos reales
-                                    desde cero
-                                </li>
-                                <?php elseif ($course_details['course_type'] == 'scorm') : ?>
-                                <li class="text-white"><i class="far fa-file-video"></i>Entrega de material exclusivo
-                                </li>
-                                <li class="text-white"><i class="fas fa-mobile-alt"></i>Acceso 24/7 al aula virtual
-                                </li>
-                                <?php endif; ?>
-                                <li class="text-white"><img class="me-2"
-                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Acceso a comunidad
-                                    exclusiva
-                                </li>
-                                <li class="text-white"><img class="me-2"
-                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Constancia de
-                                    matrícula
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Clases a tu ritmo,inicia cuando
+                                  <span class="pl-25px"> quieras</span>  
                                 </li>
                                 <li class="text-white"><img class="me-2"
                                         src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Certificado por
                                     Instituto Dozer
                                 </li>
+                                <?php elseif ($course_details['course_type'] == 'scorm') : ?>
+                                <li class="text-white"><i class="far fa-file-video"></i>Certificado por Autodesk
+                                </li>
+                                <li class="text-white"><i class="fas fa-mobile-alt"></i>Insignia digital de acreditación
+                                </li>
+                                <?php endif; ?>
                                 <li class="text-white"><img class="me-2"
-                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Certificado por
-                                    Autodesk USA
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Proyectos reales
+                                    desde cero
+                                </li>
+                                <li class="text-white"><img class="me-2"
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Constancia de
+                                    matrícula
+                                </li>
 
-                                    <p class="text-cm mt-2">¿Cómo matricularme?</p>
-                                    <div
-                                        class="d-flex flex-row mb-3 align-items-center justify-content-center fondo-dm">
-                                        <div class="p-2"> <a href="#"> <img
-                                                    src="<?=base_url()?>uploads/system/descargar-manual.png "
-                                                    alt=""></a></div>
-                                        <div class="p-2 text-white fw-bold">Descargar el manual</div>
 
-                                    </div>
-                                    <p class="text-cm mt-2">¿Tienes dudas o consultas? </p>
-                                    <div
-                                        class="d-flex flex-row mb-3 align-items-center justify-content-center fondo-wts">
-                                        <div class="p-2"> <a href="#"> <img class="w-20-px"
-                                                    src="<?=base_url()?>uploads/system/whatsap.svg " alt=""></a></div>
-                                        <div class="py-2 text-white fw-bold">Dale click Aquí</div>
 
-                                    </div>
-                                    <p class="text-wssp mt-2">o escríbenos al número: +51 929 270 912</p>
-                                    <?php
+
+                                <?php
                             
 
-                if (addon_status('affiliate_course')) : // course_addon start  adding
-                  $CI    = &get_instance();
-                  $CI->load->model('addons/affiliate_course_model');
-                  $is_affiliattor = $CI->affiliate_course_model->is_affilator($this->session->userdata('user_id'));
-                  if($is_affiliattor == 1): ?>
+                
+                
+                
+                
+                
+                                                if (addon_status('affiliate_course')) : // course_addon start  adding
+                                    $CI    = &get_instance();
+                                    $CI->load->model('addons/affiliate_course_model');
+                                    $is_affiliattor = $CI->affiliate_course_model->is_affilator($this->session->userdata('user_id'));
+                                    if($is_affiliattor == 1): ?>
                                 <li class="text-center pt-3">
 
                                     <a class="btn-custom_coursepage text-decoration-none fw-600 hover-shadow-1 d-inline-block"
@@ -704,10 +691,90 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                                 </li>
                                 <?php endif; ?>
                                 <?php endif; // course_addon end adding  
-                ?>
+                                ?>
 
 
                             </ul>
+                            <a href="" class="brochure text-center text-white">¡Quiero ser <span> <img class="w-20-px"
+                                            src="<?=base_url()?>uploads/system/corona-white.png " alt=""> </span> Premium!</a>
+                            <div class="title text-white">
+                                <b><?php echo site_phrase('Beneficios de ser Premium'); ?>:</b>
+                            </div>
+                            <ul>
+                                <?php if ($course_details['course_type'] == 'general') : ?>
+                                <li class="text-white"><img class="me-2"
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Acceso total a los
+                                    26 cursos</li>
+                                <li class="text-white"><img class="me-2"
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Acceso a todos los
+                                    certificados de los
+                                    <span class="pl-25px">26 cursos por Instituto Dozer </span>
+                                </li>
+                                <li class="text-white"><img class="me-2"
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Acceso a todos los
+                                    certificados de los
+                                   <span class="pl-25px">26 cursos por Autodesk</span> 
+                                </li>
+                                <?php elseif ($course_details['course_type'] == 'scorm') : ?>
+                                <li class="text-white"><i class="far fa-file-video"></i>Acceso a clases de reforzamiento
+                                    en
+                                    vivo junto al docente
+                                </li>
+                                <li class="text-white"><i class="fas fa-mobile-alt"></i>Acceso a licencia temporales y
+                                    de
+                                  <span class="pl-25px">estudiantes por 1 año de Autodesk</span>  
+                                </li>
+                                <?php endif; ?>
+                                <li class="text-white"><img class="me-2"
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Asesoría para la
+                                    instalación de los
+                                   <span class="pl-25px">softwares de autodesk</span> 
+                                </li>
+                                <li class="text-white"><img class="me-2"
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Asesoría académica
+                                    exclusiva y más!
+                                </li>
+
+
+
+
+                                <?php
+                            
+
+                
+                
+                
+                
+                
+                                                if (addon_status('affiliate_course')) : // course_addon start  adding
+                                    $CI    = &get_instance();
+                                    $CI->load->model('addons/affiliate_course_model');
+                                    $is_affiliattor = $CI->affiliate_course_model->is_affilator($this->session->userdata('user_id'));
+                                    if($is_affiliattor == 1): ?>
+                                <li class="text-center pt-3">
+
+                                    <a class="btn-custom_coursepage text-decoration-none fw-600 hover-shadow-1 d-inline-block"
+                                        href="#myModel" data-bs-toggle="modal" data-bs-target="#myModel" id="shareBtn"
+                                        data-bs-placement="top"><i class="fas fa-user-plus"></i>
+                                        <?php echo site_phrase('Share and Earn'); ?></a>
+
+                                </li>
+                                <?php endif; ?>
+                                <?php endif; // course_addon end adding  
+                                ?>
+
+
+                            </ul>
+
+                            <p class="text-cm mt-2">¿Tienes dudas o consultas? </p>
+                            <div class="d-flex flex-row mb-3 align-items-center justify-content-center fondo-wts">
+                                <div class="p-2"> <a href="#"> <img class="w-20-px"
+                                            src="<?=base_url()?>uploads/system/whatsap.svg " alt="">
+                                <span class="py-2 text-white fw-bold">Dale click Aquí</span></a></div>
+
+                            </div>
+                            <p class="text-wssp mt-2">o escríbenos al número: +51 929 270 912</p>
+
                         </div>
                     </div>
                 </div>

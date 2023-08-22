@@ -498,7 +498,7 @@ section .content p {
 
     .wrapper nav .slider {
 
-        width: 183px !important;
+        width: 145px !important;
 
     }
 

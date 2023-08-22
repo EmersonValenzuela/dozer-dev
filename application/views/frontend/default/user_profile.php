@@ -85,7 +85,7 @@ if (addon_status('affiliate_course')) {
                 </div>
                 <form class="w-99  " action="<?php echo site_url('home/update_profile/update_basics'); ?>" method="post" enctype="multipart/form-data">
                     <div class="row">
-                        <div class="col-12  mb-3 pb-3 text-white">
+                        <div class="col-12 mt-3 mb-3 pb-3 text-white">
                             <h4><?php echo site_phrase('Mi datos de Cuenta'); ?></h4>
 
                         </div>

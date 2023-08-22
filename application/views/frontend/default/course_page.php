@@ -15,7 +15,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
     <div class="container-xl">
         <div class="row">
 
-            <div class="col-lg-8 col-xl-8  col-xxl-9 order-last pe-5 order-lg-first radius-10  ">
+            <div class="col-lg-8 col-xl-8 col-xxl-9 order-last pe-5 order-lg-first radius-10  ">
 
                 <div class="description-box view-more-parent">
 
@@ -35,8 +35,6 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
                         <div class="text-white">
                             <?php
-
-                          
                             if ($row_schedule) {
                                 if ($row_schedule->init_c != '' ||  $row_schedule->schedule != '' || $row_schedule->duration != '') :  ?>
 
@@ -96,21 +94,9 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
                             </div>
 
-                            <?php } ?>
-
-
-
+                            <?php endif;
+                            } ?>
                         </div>
-
-
-
-
-
-
-
-
-
-
 
                         <div class="text-white">
                             <p class="titulos-contcursos">OBJETIVOS DE APRENDIZAJE</p>
@@ -182,26 +168,26 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
                 <?php if ($course_details['course_type'] == 'general') : ?>
                 <div class="course-curriculum-box">
-                    <div class="course-curriculum-title clearfix ">
+                    <div class="course-curriculum-title clearfix mt-5 mb-3">
 
 
                     </div>
                     <div class="course-curriculum-accordion">
                         <?php
-                        $sections = $this->crud_model->get_section('course', $course_id)->result_array();
-                        $counter = 0;
-                        foreach ($sections as $key => $section) : ?>
+                            $sections = $this->crud_model->get_section('course', $course_id)->result_array();
+                            $counter = 0;
+                            foreach ($sections as $key => $section) : ?>
                         <div class="lecture-group-wrapper">
 
                             <?php
-                            if ($key == 0) {
-                                $style = 'border-radius: 10px 10px 0px 0px;';
-                            } elseif ($key + 1 == count($sections)) {
-                                $style = 'border-radius: 0px 0px 10px 10px;';
-                            } else {
-                                $style = '';
-                            }
-                            ?>
+                                    if ($key == 0) {
+                                        $style = 'border-radius: 10px 10px 0px 0px;';
+                                    } elseif ($key + 1 == count($sections)) {
+                                        $style = 'border-radius: 0px 0px 10px 10px;';
+                                    } else {
+                                        $style = '';
+                                    }
+                                    ?>
 
                             <div class="lecture-group-title clearfix my-3 fondo-lecciones fw-bold"
                                 style="<?= $style; ?>" data-bs-toggle="collapse"
@@ -220,7 +206,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                                 class="lecture-list collapse <?php if ($counter == 0) echo 'show'; ?>">
                                 <ul>
                                     <?php $lessons = $this->crud_model->get_lessons('section', $section['id'])->result_array();
-                      foreach ($lessons as $lesson) : ?>
+                                            foreach ($lessons as $lesson) : ?>
                                     <li class="lecture has-preview text-14px ">
                                         <span
                                             class="lecture-title text-white <?php if ($lesson['is_free'] == 1) echo 'text-primary'; ?>"
@@ -246,8 +232,8 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                             </div>
                         </div>
                         <?php
-                $counter++;
-              endforeach; ?>
+                                $counter++;
+                            endforeach; ?>
                     </div>
                 </div>
                 <?php endif; ?>
@@ -320,10 +306,10 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                                     |
                                     <span class="text-dark fw-800 text-13px text-muted mx-1">
                                         <?php $course_ids = $this->crud_model->get_instructor_wise_courses($instructor_details['id'], 'simple_array');
-                      $this->db->select('user_id');
-                      $this->db->distinct();
-                      $this->db->where_in('course_id', $course_ids);
-                      echo $this->db->get('enrol')->num_rows() . ' ' . site_phrase('students'); ?>
+                                            $this->db->select('user_id');
+                                            $this->db->distinct();
+                                            $this->db->where_in('course_id', $course_ids);
+                                            echo $this->db->get('enrol')->num_rows() . ' ' . site_phrase('students'); ?>
                                     </span>
                                     |
                                     <span class="text-dark fw-800 text-14px text-muted">
@@ -348,7 +334,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                         <div class="col-6 p-2000">
                             <div class="d-flex flex-row mb-3">
                                 <div class=""><img class="w-19px position-absolute"
-                                        src="<?=base_url()?>uploads/system/icon-sheck.png" alt=""></div>
+                                        src="<?= base_url() ?>uploads/system/icon-sheck.png" alt=""></div>
                                 <div class="">
                                     <p class="text-titulo-contenido">
                                         Certificado por <br>
@@ -361,7 +347,8 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
 
                             <div class="nombre-curso-cont">
-                                <p class="text-nombcertid"> " <?php echo $course_details['title'];?> <br> Nivel Basico "
+                                <p class="text-nombcertid"> " <?php echo $course_details['title']; ?> <br> Nivel Basico
+                                    "
                                 </p>
                             </div>
                             <div class="text-white text-center">por 120 horas acreditadas
@@ -375,7 +362,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                         <div class="col-6 ">
 
                             <img class="img-certficado-curso"
-                                src="<?=base_url()?>uploads/system/certificados/certificado-dozer.png" alt="">
+                                src="<?= base_url() ?>uploads/system/certificados/certificado-dozer.png" alt="">
                         </div>
                     </div>
 
@@ -383,7 +370,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                         <div class="col-6 p-2000">
                             <div class="d-flex flex-row mb-3">
                                 <div class=""><img class="w-19px position-absolute"
-                                        src="<?=base_url()?>uploads/system/icon-sheck.png" alt=""></div>
+                                        src="<?= base_url() ?>uploads/system/icon-sheck.png" alt=""></div>
                                 <div class="">
                                     <p class="text-titulo-contenido">
                                         Certificado Internacional <br>
@@ -407,13 +394,61 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                         <div class="col-6 ">
 
                             <img class="img-certficado-curso"
-                                src="<?=base_url()?>uploads/system/certificados/certificado-tres.svg" alt="">
+                                src="<?= base_url() ?>uploads/system/certificados/certificado-tres.svg" alt="">
                         </div>
                     </div>
 
+                    <div class="row fondo-certificado-cursos mt-5">
+                        <div class="col-6 p-2000">
+                            <span> <img class="w-19px position-absolute"
+                                    src="<?= base_url() ?>uploads/system/icon-sheck.png" alt=""></span>
+                            <p class="text-titulo-contenido">
+                                Certificado Internacional <br>
+                                por Autodesk USA:
+                            </p>
+                            <div class="nombre-curso-cont">
+                                <?php echo $course_details['title']; ?>
+                            </div>
+                            <div class="text-white text-center">por 90 horas acreditadas
+                            </div>
+                            <div class="certi-contenido">
+                                <button class="btn-style-certi fw-700">
+                                    Certificado gratuito
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
 
+                            <img class="img-certficado-curso"
+                                src="<?= base_url() ?>uploads/system/certificados/certificado-tres.svg" alt="">
+                        </div>
+                    </div>
 
+                    <div class="row fondo-certificado-cursos mt-5">
+                        <div class="col-6 p-2000">
+                            <span> <img class="w-19px position-absolute"
+                                    src="<?= base_url() ?>uploads/system/icon-sheck.png" alt=""></span>
+                            <p class="text-titulo-contenido">
+                                Certificado Internacional <br>
+                                por Autodesk USA:
+                            </p>
+                            <div class="nombre-curso-cont">
+                                <?php echo $course_details['title']; ?>
+                            </div>
+                            <div class="text-white text-center">por 90 horas acreditadas
+                            </div>
+                            <div class="certi-contenido">
+                                <button class="btn-style-certi fw-700">
+                                    Certificado gratuito
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
 
+                            <img class="img-certficado-curso"
+                                src="<?= base_url() ?>uploads/system/certificados/certificado-tres.svg" alt="">
+                        </div>
+                    </div>
 
                     <div class="  mt-5 ">
                         <div class="d-flex cg-1rem fondo-certificado-cursos">
@@ -453,52 +488,6 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 
                         </div>
                     </div>
-
-
-                    <div class="d-flex fondo-certificado-cursos mt-3">
-                        <div class="p-2 w-100 color-text px-3 py-2 text-justify">Para acceder a la insignia digital de
-                            Acreditación, tendrá que haber aprobado
-                            los niveles básico y avanzado. </div>
-
-                    </div>
-                    <div class="mt-5">
-                        <div class="about-directora-title">AHORRA UN 20% DE DESCUENTO ADICIONAL COMPRANDO <br>
-                            EL PACK “MODELADOR BIM”</div>
-                        <div class="d-flex flex-column mb-3">
-                            <div class="fondo-certificado-cursos container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        One of two columns
-                                    </div>
-                                    <div class="col-6">
-                                        One of two columns
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fondo-certificado-cursos  container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        One of two columns
-                                    </div>
-                                    <div class="col-6">
-                                        One of two columns
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fondo-certificado-cursos  container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        One of two columns
-                                    </div>
-                                    <div class="col-6">
-                                        One of two columns
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
                     <div class="mt-5">
                         <div class="about-directora-title">LOGROS QUE NOS ENORGULLECEN</div>
 
@@ -532,18 +521,12 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                         </div>
                     </div>
 
+                    <div class="d-flex fondo-certificado-cursos mt-3">
+                        <div class="p-2 w-100 color-text px-3 py-2 text-justify">Para acceder a la insignia digital de
+                            Acreditación, tendrá que haber aprobado
+                            los niveles básico y avanzado. </div>
 
-
-
-
-
-
-
-
-
-
-
-
+                    </div>
                 </div>
             </div>
 
@@ -787,8 +770,9 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 </section>
 
 
-<?php if (addon_status('affiliate_course') && $is_affiliattor==1): ?>
-<?php include 'affiliate_course_modal.php';  // course_addon  single line /adding ?>
+<?php if (addon_status('affiliate_course') && $is_affiliattor == 1) : ?>
+<?php include 'affiliate_course_modal.php';  // course_addon  single line /adding 
+    ?>
 <?php endif; ?>
 
 <!-- // course_addon  adding   -->
@@ -812,14 +796,14 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
 <!-- // course_addon end    -->
 <!-- Modal -->
 <?php if ($course_details['video_url'] != "") :
-  $provider = "";
-  $video_details = array();
-  if ($course_details['course_overview_provider'] == "html5") {
-    $provider = 'html5';
-  } else {
-    $video_details = $this->video_model->getVideoDetails($course_details['video_url']);
-    $provider = $video_details['provider'];
-  }
+    $provider = "";
+    $video_details = array();
+    if ($course_details['course_overview_provider'] == "html5") {
+        $provider = 'html5';
+    } else {
+        $video_details = $this->video_model->getVideoDetails($course_details['video_url']);
+        $provider = $video_details['provider'];
+    }
 ?>
 <div class="modal fade" id="CoursePreviewModal" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true"
     data-keyboard="false" data-backdrop="static">

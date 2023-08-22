@@ -9054,8 +9054,8 @@ body::-webkit-scrollbar-thumb{
 }
 
 @media (min-width: 1200px) { 
-    .mt-md-0{
-        height: 310px !important;
+     .mt-md-0{
+       /* height: 310px !important; */
     }
     .img-intituto {
         width: 15rem;

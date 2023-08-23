@@ -13,9 +13,9 @@
                                 </div>
                                 <div class="p-2">
                                     <p class="sub-text-principal">
-                                        Dozer es la institución más importante en estudios <br>
-                                        e implementación de la metodología BIM en todo el <br>
-                                        Perú. Somos centro autorizado de capacitación <br>
+                                        Dozer es la institución más importante en estudios  <br class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                                        e implementación de la metodología BIM en todo el <br class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                                        Perú. Somos centro autorizado de capacitación <br class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
                                         y certificación de Autodesk:</p>
                                 </div>
                                 <div class="p-2"><img class="img-convenios" src="uploads\system\convenios.png" alt="">
@@ -118,6 +118,8 @@
     height: 50px;
     display: flex;
     align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .wrapper nav label {
@@ -125,12 +127,12 @@
     height: 70%;
     width: 100%;
     text-align: center;
-    line-height: 50px;
+    line-height: 1.2;
     cursor: pointer;
     position: relative;
     z-index: 1;
     color: white;
-    font-size: 17px;
+    font-size: 13px;
     border-radius: 10px;
     margin: 0 5px;
     transition: all 0.3s ease;
@@ -138,7 +140,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding: 5px;
 }
 
 #home:checked~nav label.home,
@@ -159,7 +161,7 @@ nav label i {
 nav .slider {
     position: absolute;
     height: 70%;
-    width: 183px;
+    width: 95px;
     left: 5px;
     /*bottom: 0;*/
     z-index: 0;
@@ -174,27 +176,32 @@ input[type="radio"] {
 }
 
 #blog:checked~nav .slider {
-    left: 200px;
+    left: 105px;
+    width: 78px;
 }
 
 #code:checked~nav .slider {
-    left: 393px;
+    left: 190px;
 }
 
 #help:checked~nav .slider {
-    left: 589px;
+    left: 290px;
+    width: 51px;
 }
 
 #about:checked~nav .slider {
-    left: 783px;
+    left: 350px;
+    width: 110px;
 }
 
 #about-uno:checked~nav .slider {
-    left: 977px;
+    left: 465px;
+    width: 113px;
 }
 
 #about-dos:checked~nav .slider {
-    left: 1170px;
+    left: 581px;
+    width: 60px;
 }
 
 section .content {
@@ -2007,20 +2014,20 @@ section .content p {
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .wrapperr nav label {
     display: block;
-    height: 70%;
+    height: 90%;
     width: 250px;
     text-align: center;
-    line-height: 50px;
+    line-height: 1.2;
     cursor: pointer;
     position: relative;
     z-index: 1;
     color: white;
-    font-size: 17px;
+    font-size: 12px;
     border-radius: 10px;
     margin: 0 5px;
     transition: all 0.3s ease;
@@ -2028,6 +2035,7 @@ section .content p {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 
 }
 
@@ -2047,9 +2055,9 @@ nav label i {
 
 nav .sliderr {
     position: absolute;
-    height: 70%;
-    width: 245px;
-    left: 167px;
+    height: 90%;
+    width: 90px;
+    left: 5px;
     z-index: 0;
     border-radius: 10px;
     background: white;
@@ -2059,22 +2067,17 @@ nav .sliderr {
 
 
 #blogg:checked~nav .sliderr {
-    left: 425px;
-    width: 250px;
+    left: 102px;
+    width: 68px;
 
 }
 
 #codee:checked~nav .sliderr {
-    left: 685px;
-    width: 250px;
-
+    left: 179px;
+    width: 92px;
 }
 
-#helpp:checked~nav .sliderr {
-    left: 945px;
-    width: 250px;
 
-}
 
 
 section .contentt {
@@ -3203,7 +3206,7 @@ section .contentt p {
     position: relative;
     z-index: 1;
     color: white;
-    font-size: 17px;
+    font-size: 15px;
     border-radius: 10px;
     margin: 0 5px;
     transition: all 0.3s ease;
@@ -3211,7 +3214,6 @@ section .contentt p {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 
@@ -3229,8 +3231,8 @@ nav label i {
 nav .slide {
     position: absolute;
     height: 70%;
-    width: 249px;
-    left: 425px;
+    width: 128px;
+    left: 6px;
     /* bottom: 0; */
     z-index: 0;
     border-radius: 10px;
@@ -3241,7 +3243,7 @@ nav .slide {
 
 
 #blo:checked~nav .slide {
-    left: 685px;
+    left: 147px;
 
 }
 
@@ -3732,10 +3734,10 @@ section .conten p {
                         <li>Familias, Proyectos y Plantillas en Revit </li>
                     </ul>
                     <div class="d-flex justify-content-between">
-                        <div class="fw-200 w-80 text-white titulo-sub-programa">Desarrollado <br> por: Ing. CIP Walter
+                        <div class="fw-200 w-80 text-white btn-sub-programa">Desarrollado <br> por: Ing. CIP Walter
                             Gomez
                         </div>
-                        <div class="fw-200 w-80 text-white titulo-sub-programa d-flex align-items-center"><a
+                        <div class="fw-200 w-80 text-white btn-sub-programa d-flex align-items-center"><a
                                 class=" btn-programa " href="#">Descargar DevBIM</a>
                         </div>
                     </div>
@@ -3808,11 +3810,11 @@ section .conten p {
                 <label for="imgTap" class="img">
                     <img class="img-1" src="<?=base_url()?>uploads/system/certificaciones/instituto-dozer.png">
                 </label>
-                <div class="contenido contenido-uno">
+                <div class="contenido contenido-uno d-none d-sm-block d-md-block ">
                     <div class="title">
                         INSTITUTO DOZER
                     </div>
-                    <div class="text">
+                    <div class="text  ">
                         Instituto Peruano de Estudios <br>
                         e Implementación BIM y <br>
                         Nuevas Tecnologías
@@ -3824,11 +3826,11 @@ section .conten p {
                 <label for="imgTap" class="img">
                     <img class="img-2" src="<?=base_url()?>uploads/system/certificaciones/autodesk.png">
                 </label>
-                <div class="contenido contenido-dos">
+                <div class="contenido contenido-dos d-none d-sm-block d-md-block ">
                     <div class="title">
                         AUTODESK
                     </div>
-                    <div class="text">
+                    <div class="text ">
                         Certificación Oficial de Autodesk <br>
                         Certificate of Completion <br> </div>
 
@@ -3838,11 +3840,11 @@ section .conten p {
                 <label for="imgTap" class="img">
                     <img class="img-3" src="<?=base_url()?>uploads/system/certificaciones/cip.png">
                 </label>
-                <div class="contenido contenido-tres">
+                <div class="contenido contenido-tres d-none d-sm-block d-md-block ">
                     <div class="title">
                         CIP
                     </div>
-                    <div class="text">
+                    <div class="text ">
                         Colegio de Ingenieros del Perú <br>
                         Consejo Departamental </div>
 
@@ -4121,16 +4123,16 @@ section .conten p {
         <div class="d-flex flex-column flex-md-row justify-content-between">
             <div class="p-2">
                 <p class="tituto-np "> Nunca pares de aprender</p>
-                <p class="text-np lh-sm">llevamos a todas partes la pasión por <br>
-                    compartir conocimiento, crear comunidad <br>
-                    y construir el futuro de latinoamérica en <br>
-                    el área de arquitectura, ingeniería y nuevas <br>
+                <p class="text-np lh-sm">llevamos a todas partes la pasión por <br class="d-none d-sm-none d-md-none d-lg-block">
+                    compartir conocimiento, crear comunidad <br class="d-none d-sm-none d-md-none d-lg-block">
+                    y construir el futuro de latinoamérica en <br class="d-none d-sm-none d-md-none d-lg-block">
+                    el área de arquitectura, ingeniería y nuevas <br class="d-none d-sm-none d-md-none d-lg-block">
                     técnologias</p>
             </div>
             <div class="p-2 ">
-                <div class="d-flex flex-column flex-sm-row mb-3">
+                <div class="d-flex flex-column flex-sm-row ">
                     <div class="p-2">
-                        <div class="d-flex flex-column mb-3">
+                        <div class="d-flex flex-column ">
                             <div class="border-social m-2">
                                 <div class="d-flex flex-row ">
                                     <div class="p-2 bg-white"><img src="uploads\system\social\fb.svg" alt=""></div>
@@ -4158,7 +4160,7 @@ section .conten p {
                         </div>
                     </div>
                     <div class="p-2">
-                        <div class="d-flex flex-column mb-3">
+                        <div class="d-flex flex-column ">
                             <div class="border-social m-2">
                                 <div class="d-flex flex-row ">
                                     <div class="p-2 bg-white"><img src="uploads\system\social\yt.svg" alt=""></div>

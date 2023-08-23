@@ -4897,7 +4897,7 @@ color: #2a303b;
     user-select: none;
     background-color: #999999;
     border: 1px solid transparent;
-    padding: 0.3rem 1.7rem;
+    padding: 0.3rem 1rem;
     font-size: 10pt;
     border-radius: 0.5rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -4937,12 +4937,14 @@ background: linear-gradient(90deg, rgba(34,34,34,1) 21%, rgba(56,55,55,1) 50%, r
 
 .programa{
     background-color: #373737;
-    border-radius: 0rem 2rem 2rem 0rem !important;
+    border-radius:  2rem !important;
     box-shadow: rgb(0 0 0) 0px 3px 8px;
-    padding: 10px;
+    padding: 13px;
 }
 
-
+.titulo-sub-programa{
+    font-size: 14px;
+}
 .vineta{
     /*list-style-image:url(/uploads/system/icon-vineta.png);*/
     list-style: circle inside none;
@@ -5128,7 +5130,7 @@ background: linear-gradient(90deg, rgba(34,34,34,1) 21%, rgba(56,55,55,1) 50%, r
   }
 
   .card .nametest{
-    font-size: 15px;
+    font-size: 10px;
     font-weight: bold;
     color: white;
   }
@@ -6470,7 +6472,7 @@ width: 20rem;}
 }
 .text-titulo-cat{
     color: white;
-    font-size: 30pt;
+    font-size: 30px;
    
 }
 .prox-color {
@@ -6529,47 +6531,50 @@ width: 20rem;}
     
 }
 .img-testimonio{
-    width: 18rem;
+    width: 4rem;
     border-radius: 5%;
 }
 
 .text-testimonio{
-    font-size: 22px;
+    font-size: 12px;
 }
 .nombre-testimonio{
     font-size: 18px;
     color: white;
 }
 
-.tituto-np{
+.tituto-np {
     color: white;
-    font-size: 29pt;
+    font-size: 29px;
     font-weight: bolder;
-
+    line-height: 1.2;
 }
-
-.text-np{
-    color:white;
+.banderaimg{
+    width: 15px
+}
+.text-np {
+    color: white;
     font-weight: lighter;
-    font-size: 19pt;
-     
+    font-size: 15px;
+    text-align: center;
 }
 .text-rs{
     color:white;
     font-weight: lighter;
-    font-size: 12pt;
+    font-size: 13px;
     
 }
 
-.titulo-footer{
-    color:white;
-    font-weight: bolder; 
-font-size: 35pt;
+.titulo-footer {
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    line-height: 1.2;
 }
 .text-footer{
     color: white;
     font-weight: lighter;
-    font-size: 19pt;
+    font-size: 14px;
     
 }
 
@@ -6577,15 +6582,17 @@ font-size: 35pt;
     color:white;
     font-weight: bold;
     text-align: center;
-    font-size: 17pt;
+    font-size: 12px;
     
 }
 
 .botom-footer{
     color: #C6C6C6;
-    font-size: 17pt;
+    font-size: 10px;
 }
-
+.img-footer{
+    width: 40px;
+}
 .fs-15pt{
     font-size: 15pt;
 }
@@ -6596,18 +6603,19 @@ font-size: 35pt;
 .text-principal{
     font-weight: bold;
     color: white;
-    font-size: 20pt;
+    font-size: 20px;
    
 }
 .sub-text-principal{
     color: white;
-    font-size: 15pt;
+    font-size: 15px;
     
 }
 .text-sub-cat{
     color: white;
-    font-size: 15pt;
+    font-size: 15px;
     font-weight: lighter;
+    padding: 0 12px;
     
 }
 
@@ -6615,6 +6623,7 @@ font-size: 35pt;
     color: white;
     font-size: 20pt;
     font-weight: bolder;
+    line-height: 1.2;
 }
 .text-titulo-programa{
     font-weight: 700;
@@ -6624,18 +6633,28 @@ font-size: 35pt;
 .text-cont-programa{
     color: white;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 13px;
 
 } 
+
+.btn-sub-programa{
+    font-size: 11px;
+}
+
 .text-rs-footer{
-    font-size: 20px;
+    font-size: 10px;
 }
 .text-certificados{
     font-size: 1.5rem;
 }
 .text-copy{
-    font-size: 15pt;
+    font-size: 9px;
 }
+.banderaecu{
+    width: 18px;
+    height: 10px;
+   
+    position: relative;}
 
 
 @media (min-width: 576px) { 
@@ -7692,7 +7711,7 @@ color: white;
     font-weight: 600 !important;
 }
 .text-navbar-r-bim{
-    
+    font-size: 12px;
     color:white;
     font-weight: 600 !important;
 }
@@ -9196,8 +9215,8 @@ body::-webkit-scrollbar-thumb{
 /*NUEVO CERTIFICADOS*/
 .blog-card{
     position: relative;
-    height: 370px;
-    width: 95%;
+    height: 280px;
+    width: 100%;
     max-width: 850px;
     margin: auto;
     
@@ -9206,10 +9225,10 @@ body::-webkit-scrollbar-thumb{
   .inner-part{
     position: absolute;
     display: flex;
-    height: 320px;
+    height: 230px;
     align-items: center;
     justify-content: center;
-    padding: 0 0 0 19px;
+    padding: 0  19px;
     border: 1px solid white;
     border-radius: 18px;
   }
@@ -9217,15 +9236,13 @@ body::-webkit-scrollbar-thumb{
     padding: 0;
     transition: .1s ease-in;
   }
-  .inner-part .img{
-    height: 260px;
-    width: 350px;
+  .inner-part .img {
+    height: 180px;
+    width: 250px;
     flex-shrink: 0;
     overflow: hidden;
     border-radius: 10px;
-
-    
-  }
+}
   #imgTap:checked ~ .inner-part .img{
     height: 370px;
     width: 850px;

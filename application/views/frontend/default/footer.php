@@ -15,16 +15,16 @@
                 <ul class="list-unstyled text-small">
                     <li class="mb-2 mt-1 fondo-footer"><a class="link-secondary footer-hover-link" href="#">
                             <div class="d-flex flex-row ">
-                                <div class="p-2 "><img src="<?=base_url()?>uploads\system\libro.svg" alt=""></div>
-                                <div class="btn-footer p-2">LIBRO DE <br>
+                                <div class="p-2 "><img class="img-footer" src="<?=base_url()?>uploads\system\libro.svg" alt=""></div>
+                                <div class="btn-footer p-2">LIBRO DE <br class="d-none d-sm-none d-md-none d-lg-block">
                                     RECLAMACIONES</div>
                             </div>
                         </a>
                     </li>
                     <li class="mb-2 mt-1 fondo-footer"><a class="link-secondary footer-hover-link" href="#">
                             <div class="d-flex flex-row ">
-                                <div class="p-2 "><img src="<?=base_url()?>uploads\system\certi.svg" alt=""></div>
-                                <div class="btn-footer p-2 ">VERIFICADOR <br>
+                                <div class="p-2 "><img class="img-footer" src="<?=base_url()?>uploads\system\certi.svg" alt=""></div>
+                                <div class="btn-footer p-2 ">VERIFICADOR <br class="d-none d-sm-none d-md-none d-lg-block">
                                     DE CERTIFICADOS</div>
                             </div>
                         </a></a>

@@ -6516,6 +6516,7 @@ width: 20rem;}
 .course-curso{
     padding: 8px 14px 5px 15px;
     position: relative;
+    height: 90px;
 }
 
 
@@ -6654,8 +6655,17 @@ width: 20rem;}
     width: 18px;
     height: 10px;
    
-    position: relative;}
-
+    position: relative;
+}
+    .banderaarg{
+        width: 28px;
+        height: 20px;
+        
+        position: relative;
+        border-radius: 2px;
+        width: 18px;
+    }
+    
 
 @media (min-width: 576px) { 
     .img-widt-logo{
@@ -6890,6 +6900,7 @@ width: 20rem;}
     }
     .text-np {
         font-size: 14px;
+        text-align: left;
     }
 
   }
@@ -6973,13 +6984,103 @@ width: 20rem;}
         }
    }
 
+@media (min-width: 1024px){
+    .text-principal {
+ 
+        font-size: 20pt;
+    }
+    
+    .sub-text-principal{
+       
+        font-size: 15pt;
+        
+    }
+    .btnpa{
+    
+        padding: 0.3rem 1.7rem;
+      }
+    .text-sub-cat{
+       
+        font-size: 15pt;
+        
+         padding: 0px;
+    }
+    
+    .text-titulo-cat {
+       
+        font-size: 30pt;
+    }
+    
+    .programa {
+        
+        border-radius: 0rem 2rem 2rem 0rem !important;
+        padding: 25px;
+    }
+    .text-cont-programa {
+        font-size: 15px;
+    }
+     .imgpro {
+            width: 492px !important;
+            height: 300px !important;
+        }
+        .text-titulo-programa {
+            font-size: 20px;
+        }
+        .titulo-sub-programa {
+            font-size: 16px;
+        }   
+        .btn-sub-programa {
+            font-size: 15px;
+        }
+        .img-autodesk {
+            width: 16rem !important;
+            right: 3px !important;
+            bottom: 19px !important;
+        }
+        .main-cardd{
+            height: 280px;
+        }
+        .container .button {
+            
+            margin: 30px 5px 15px 5px;
+        }
+        .tituto-np {
+            font-size: 25pt;
+        }
+        .text-np {
+            font-size: 17px;
+            text-align: left;
+        }
+        .titulo-footer {
+            font-size: 29pt;
+        }
+        .text-footer {
+            font-size: 16px;
+        }
+        .br-footer{
+            display: none;
+        }
+        .botom-footer {
+            font-size: 14px;
+        }
+        .text-rs-footer {
+            font-size: 13px;
+        }
+        .text-copy {
+            font-size: 13px;
+        }
+        .text-section {
+            font-size: 25pt;
+        }
+}
+
 
 @media (min-width: 1200px) { 
     .img-home-banner {
         width: 30rem !important;
     }
     .text-principal{
-        font-size: 33px;
+        font-size: 45px;
         line-height: 1.2;
     }
        
@@ -7126,7 +7227,7 @@ width: 20rem;}
         width: 35rem;
     }
     .text-principal{
-        font-size: 40px;
+        font-size: 50px;
     line-height: 1.2;
        
     }
@@ -7135,13 +7236,13 @@ width: 20rem;}
     }
     .sub-text-principal{
        
-        font-size: 25px;
+        font-size: 25px !important;
         line-height: 2.1rem;
         
     }
     .btn-cm{
       
-        font-size: 18px;
+        font-size: 18px !important;
     }
     .cont-cuadro {
         
@@ -7178,20 +7279,20 @@ width: 20rem;}
 
         .text-titulo-cat{
             
-            font-size: 39pt;
+            font-size: 39pt !important;
            
         }
         
         .text-sub-cat{
             
-            font-size: 20px;
+            font-size: 20px !important;
            
             
         }
         .text-section{
            
-            font-size: 31px;
-            line-height: 1.4;
+            font-size: 31px !important;
+            line-height: 1.4 !important;
            
         }
         .programa{
@@ -7201,32 +7302,33 @@ width: 20rem;}
         }
         .text-titulo-programa{
            
-            font-size: 2rem;
+            font-size: 2rem !important;
         }
         .text-cont-programa{
             
-            font-weight: 200;
-            font-size: 1.2rem;
+            font-weight: 200 !important;
+            font-size: 1.2rem !important;
         
         } 
         .img-intituto{ 
             width: 22rem !important;
-            padding: 2.2rem 1rem !important;
+            padding: 2.2rem 1rem 2.2rem 0.5rem !important;
+            height: 21rem !important;
         }
         
-        .img-autodesk{
-            width: 22rem !important;
-            margin: 2.4rem 1.5rem;
-            /* left: 1px !important; */
+        .img-autodesk {
+            width: 24rem !important;
+            padding: 2.4rem 3.2rem 2.4rem 0.5rem;
+           
             bottom: 6px !important;
-            height: 232px !important;
+            height: 21.3rem !important;
         }
-        .img-cip{
+        .img-cip {
             width: 21rem !important;
             top: 55px !important;
             /* margin: 2.2rem 1rem; */
-            left: 5px !important;
-            height: 232px !important;
+            left: 1px !important;
+            height: 16.5rem!important;
         }
         .container .main-cardd .cardss{
     width: calc(100% / 2 - 10px);
@@ -7234,6 +7336,9 @@ width: 20rem;}
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  .main-cardd {
+    height: 410px;
+}
   .text-rs{
     
     font-size: 15pt;
@@ -7308,7 +7413,7 @@ width: 20rem;}
     font-size: 29pt;
 }
 .text-np {
-    font-size: 17pt;
+    font-size: 17pt !important;
 }
 
 .text-principal-nosotros{
@@ -7330,10 +7435,21 @@ width: 20rem;}
 .img-convenios-nosotros {
     width: 100%;
     padding: 0 0 1.5rem 0;
-} }
+} 
+.botom-footer {
+    font-size: 15px;
+}
+}
 
+
+
+.nombr-espe{
+    font-size: 15px !important;
+}
+
+.precio-total{font-size: 14px;}
 .precio-desc{
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 500;
 }
 .btnbadge-prox{
@@ -9071,6 +9187,11 @@ body::-webkit-scrollbar-thumb{
     padding: 8px;
     font-weight: 600;
 }
+@media (min-width: 375px){
+    .blog-card{
+        padding: 0 25px;
+    }
+}
 
 @media (min-width: 1200px) { 
      .mt-md-0{
@@ -9394,6 +9515,15 @@ body::-webkit-scrollbar-thumb{
   #tap-3:checked ~ .sliders .tap-2{
     width: 15px;
   }
+  @media (min-width: 425px){
+        .blog-card {
+    padding: 0 50px;
+}
+.btn-footer {
+    
+    font-size: 18px;
+}
+}
 
   @media (min-width: 576px) {
     .inner-part {
@@ -9427,6 +9557,9 @@ body::-webkit-scrollbar-thumb{
         font-size: 19px;
         
         text-align: center;
+    }
+    .blog-card {
+        padding: 0 10px !important;
     }
     
   }
@@ -9515,4 +9648,69 @@ width: 70px;}
 
 .pl-25px{
     padding-left: 25px;
+}
+@media (min-width: 2560px){
+.text-navbar-c {
+    font-size: 18px !important;
+}
+.text-navbar-r-bim {
+    font-size: 18px !important;
+}
+.text-navbar-p {
+    font-size: 18px !important;
+}
+.sign-in-box > .btn {
+    font-size: 13px;
+}
+.text-principal {
+    font-size: 60px;
+    line-height: 1.1;
+}
+.btn-cm {
+    font-size: 20px !important;
+}
+.cont-cuadro-text {
+    font-size: 20px !important;
+}
+.text-sub-cat {
+    font-size: 30px !important;
+}
+.text-titulo-cat {
+    font-size: 45pt !important;
+}
+.imgpro {
+    width: 680px !important;
+    height: 440px !important;
+    bottom: 0.1rem !important;
+}
+.titulo-sub-programa {
+    font-size: 26px;
+}
+.text-cont-programa {
+   
+    font-size: 22px !important;
+
+}
+.btn-sub-programa {
+    font-size: 22px;
+}
+.programa {
+    padding: 47px 25px !important;
+    height: 439.2px !important;
+}
+.text-section {
+    font-size: 45px !important;
+    line-height: 1.2 !important;
+}
+.text-certificados {
+    font-size: 25px;
+}
+.img-intituto {
+    width: 22rem !important;
+    padding: 2.2rem 1rem 2.9rem 0.5rem !important;
+    height: 21rem !important;
+}
+.text-testimonio {
+    font-size: 22px !important;
+}
 }

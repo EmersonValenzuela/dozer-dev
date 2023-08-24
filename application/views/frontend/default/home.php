@@ -13,9 +13,12 @@
                                 </div>
                                 <div class="p-2">
                                     <p class="sub-text-principal">
-                                        Dozer es la institución más importante en estudios  <br class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
-                                        e implementación de la metodología BIM en todo el <br class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
-                                        Perú. Somos centro autorizado de capacitación <br class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                                        Dozer es la institución más importante en estudios <br
+                                            class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                                        e implementación de la metodología BIM en todo el <br
+                                            class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                                        Perú. Somos centro autorizado de capacitación <br
+                                            class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
                                         y certificación de Autodesk:</p>
                                 </div>
                                 <div class="p-2"><img class="img-convenios" src="uploads\system\convenios.png" alt="">
@@ -314,43 +317,6 @@ section .content p {
 
 }
 
-
-
-
-
-@media (min-width: 992px) {
-    .wrapper nav .slider {
-        width: 125px !important;
-
-    }
-
-    #blog:checked~nav .slider {
-        left: 141px !important;
-    }
-
-    #code:checked~nav .slider {
-        left: 277px !important;
-    }
-
-    #help:checked~nav .slider {
-        left: 413px !important;
-    }
-
-    #about:checked~nav .slider {
-        left: 550px !important;
-        width: 124px !important;
-    }
-
-    #about-uno:checked~nav .slider {
-        left: 686px !important;
-        width: 124px !important;
-    }
-
-    #about-dos:checked~nav .slider {
-        left: 822px !important;
-    }
-}
-
 @media (min-width: 678px) {
     .course-curso {
         padding: 8px 9px 5px 9px;
@@ -494,6 +460,76 @@ section .content p {
 
 }
 
+@media (min-width: 992px) {
+    .wrapper nav .slider {
+        width: 125px !important;
+
+    }
+
+    #blog:checked~nav .slider {
+        left: 141px !important;
+    }
+
+    #code:checked~nav .slider {
+        left: 277px !important;
+    }
+
+    #help:checked~nav .slider {
+        left: 413px !important;
+    }
+
+    #about:checked~nav .slider {
+        left: 550px !important;
+        width: 124px !important;
+    }
+
+    #about-uno:checked~nav .slider {
+        left: 686px !important;
+        width: 124px !important;
+    }
+
+    #about-dos:checked~nav .slider {
+        left: 822px !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper nav .slider {
+        width: 129px !important;
+    }
+
+    #blog:checked~nav .slider {
+        left: 146px !important;
+    }
+
+    #code:checked~nav .slider {
+        left: 286px !important;
+    }
+
+    #help:checked~nav .slider {
+        left: 428px !important;
+    }
+
+    #about:checked~nav .slider {
+        left: 569px !important;
+        width: 127px !important;
+    }
+
+    #about-uno:checked~nav .slider {
+        left: 710px !important;
+        width: 126px !important;
+    }
+
+    #about-dos:checked~nav .slider {
+        left: 850px !important;
+    }
+
+    .wrapper nav {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+}
+
 @media (min-width: 1200px) {
     .btnpa {
         font-size: 15pt !important;
@@ -571,6 +607,34 @@ section .content p {
         left: 1103px !important;
     }
 }
+@media (min-width: 2560px){
+    .wrapper nav label {
+    font-size: 20px !important;
+}
+    .wrapper nav .slider {
+    width: 180px !important;
+}
+#blog:checked~nav .slider {
+    left: 199px !important;
+}
+#code:checked~nav .slider {
+    left: 395px !important;
+}
+#help:checked~nav .slider {
+    left: 589px !important;
+}
+#about:checked~nav .slider {
+    left: 785px !important;
+    width: 179px !important;
+}
+#about-uno:checked~nav .slider {
+    left: 980px !important;
+    width: 180px !important;
+}
+#about-dos:checked~nav .slider {
+    left: 1171px !important;
+}
+}
 </style>
 <section>
     <h3 class="course-carousel-title text-center mb-4 mt-5 text-cursos">
@@ -604,7 +668,7 @@ section .content p {
             <div class="content content-1 ">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class=" col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-arquitectura/17');"
                                     href="javascript:;" class="has-popover">
@@ -615,7 +679,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/revit-arquitectura/ra-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="nom-cur">Revit Arquitectura</h5>
                                                 <div class="row ">
@@ -657,7 +721,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class=" col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-arquitectura/19');"
                                     href="javascript:;" class="has-popover">
@@ -668,7 +732,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/revit-arquitectura/ra-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Revit Arquitectura </h5>
                                                 <div class="row ">
@@ -708,7 +772,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class=" col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/3ds-max/64');"
                                     href="javascript:;" class="has-popover">
@@ -719,7 +783,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/revit-arquitectura/3DSma-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">3Ds Max</h5>
                                                 <div class="row ">
@@ -759,7 +823,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class=" col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/3ds-max/66');"
                                     href="javascript:;" class="has-popover">
@@ -770,7 +834,7 @@ section .content p {
                                             <img src="http://localhost/dozer-dev/uploads/thumbnails/course_thumbnails/course_thumbnail_default_66.jpg"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">3Ds Max</h5>
                                                 <div class="row ">
@@ -819,7 +883,7 @@ section .content p {
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
 
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-estructura/21');"
                                     href="javascript:;" class="has-popover">
@@ -830,7 +894,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/re-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Revit Estructura </h5>
                                                 <div class="row ">
@@ -871,7 +935,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-estructura/23');"
                                     href="javascript:;" class="has-popover">
@@ -882,7 +946,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/re-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Revit Estructura </h5>
                                                 <div class="row ">
@@ -922,7 +986,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/robot-structural-analysis/25');"
                                     href="javascript:;" class="has-popover">
@@ -933,7 +997,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/rs-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Robot Structural Analysis </h5>
                                                 <div class="row ">
@@ -974,7 +1038,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/robot-structural-analysis/27');"
                                     href="javascript:;" class="has-popover">
@@ -985,7 +1049,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/rs-Avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Robot Structural Analysis </h5>
                                                 <div class="row ">
@@ -1026,7 +1090,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/advance-steel/28');"
                                     href="javascript:;" class="has-popover">
@@ -1037,7 +1101,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/as-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Advance Steel </h5>
                                                 <div class="row ">
@@ -1077,7 +1141,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/advance-steel/30');"
                                     href="javascript:;" class="has-popover">
@@ -1088,7 +1152,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/as-Avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Advance Steel </h5>
                                                 <div class="row ">
@@ -1128,7 +1192,7 @@ section .content p {
                             </div>
                         </div>
 
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/inventor-professional/67');"
                                     href="javascript:;" class="has-popover">
@@ -1139,7 +1203,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/ip-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Inventor Professional </h5>
                                                 <div class="row ">
@@ -1180,7 +1244,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/inventor-professional/69');"
                                     href="javascript:;" class="has-popover">
@@ -1191,7 +1255,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/ip-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Inventor Professional </h5>
                                                 <div class="row ">
@@ -1231,7 +1295,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad-plant-3d/70');"
                                     href="javascript:;" class="has-popover">
@@ -1242,7 +1306,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/ap-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">AutoCAD Plant 3D</h5>
                                                 <div class="row ">
@@ -1283,7 +1347,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad-plant-3d/72');"
                                     href="javascript:;" class="has-popover">
@@ -1294,7 +1358,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/estructura/ap-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">AutoCAD Plant 3D</h5>
                                                 <div class="row ">
@@ -1340,7 +1404,7 @@ section .content p {
             <div class="content content-3">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-mep/31');"
                                     href="javascript:;" class="has-popover">
@@ -1351,7 +1415,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/instalaciones/rm-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Revit MEP </h5>
                                                 <div class="row ">
@@ -1392,7 +1456,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-mep/33');"
                                     href="javascript:;" class="has-popover">
@@ -1403,7 +1467,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/instalaciones/rm-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Revit MEP </h5>
                                                 <div class="row ">
@@ -1451,7 +1515,7 @@ section .content p {
             <div class="content content-4">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad/35');"
                                     href="javascript:;" class="has-popover">
@@ -1462,7 +1526,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/dibujos2D/a-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">AutoCAD </h5>
                                                 <div class="row ">
@@ -1502,7 +1566,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/autocad/37');"
                                     href="javascript:;" class="has-popover">
@@ -1513,7 +1577,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/dibujos2D/a-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">AutoCAD</h5>
                                                 <div class="row ">
@@ -1560,7 +1624,7 @@ section .content p {
             <div class="content content-5">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class=" col-sm-6 col-md-4  col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4  col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/civil-3d/39');"
                                     href="javascript:;" class="has-popover">
@@ -1571,7 +1635,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/infraestructura/c-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Civil 3D </h5>
                                                 <div class="row ">
@@ -1612,7 +1676,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class=" col-sm-6 col-md-4  col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4  col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/civil-3d/41');"
                                     href="javascript:;" class="has-popover">
@@ -1623,7 +1687,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/infraestructura/c-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Civil 3D </h5>
                                                 <div class="row ">
@@ -1664,7 +1728,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class=" col-sm-6 col-md-4  col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4  col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/infraworks/43');"
                                     href="javascript:;" class="has-popover">
@@ -1675,7 +1739,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/infraestructura/i-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Infraworks</h5>
                                                 <div class="row ">
@@ -1716,7 +1780,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class=" col-sm-6 col-md-4  col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4  col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/infraworks/45');"
                                     href="javascript:;" class="has-popover">
@@ -1727,7 +1791,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/infraestructura/i-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Infraworks </h5>
                                                 <div class="row ">
@@ -1774,7 +1838,7 @@ section .content p {
             <div class="content content-6">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/dynamo-para-revit/46');"
                                     href="javascript:;" class="has-popover">
@@ -1785,7 +1849,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/automatizacion/d-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Dynamo para Revit </h5>
                                                 <div class="row ">
@@ -1825,7 +1889,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/dynamo-para-revit/48');"
                                     href="javascript:;" class="has-popover">
@@ -1836,7 +1900,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/automatizacion/d-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Dynamo para Revit </h5>
                                                 <div class="row ">
@@ -1883,7 +1947,7 @@ section .content p {
             <div class="content content-7">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/navisworks-manage/49');"
                                     href="javascript:;" class="has-popover">
@@ -1894,7 +1958,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/gestion/nm-basico.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Navisworks Manage </h5>
                                                 <div class="row ">
@@ -1935,7 +1999,7 @@ section .content p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/navisworks-manage/51');"
                                     href="javascript:;" class="has-popover">
@@ -1946,7 +2010,7 @@ section .content p {
                                             <img src="<?=base_url()?>uploads/system/cursos/Cursos/gestion/nm-avanzado.png"
                                                 alt="" class="img-fluid">
                                         </div>
-                                        <div class="d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                                        <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
                                             <div class="course-curso">
                                                 <h5 class="">Navisworks Manage </h5>
                                                 <div class="row ">
@@ -2104,7 +2168,55 @@ section .contentt p {
 
 
 
+@media (min-width: 375px) {
 
+
+
+    nav .sliderr {
+        width: 99px;
+        left: 7px;
+
+    }
+
+    #blogg:checked~nav .sliderr {
+        left: 118px;
+        width: 99px;
+
+    }
+
+    #codee:checked~nav .sliderr {
+        left: 230px;
+        width: 99px;
+
+    }
+
+
+}
+
+@media (min-width: 425px) {
+
+
+
+    nav .sliderr {
+        width: 115px;
+        left: 7px;
+
+    }
+
+    #blogg:checked~nav .sliderr {
+        left: 134px;
+        width: 117px;
+
+    }
+
+    #codee:checked~nav .sliderr {
+        left: 263px;
+        width: 115px;
+
+    }
+
+
+}
 
 @media (min-width: 576px) {
 
@@ -2237,6 +2349,28 @@ section .contentt p {
 
 }
 
+@media (min-width: 1024px) {
+    .wrapperr nav {
+
+        justify-content: center !important;
+    }
+
+    nav .sliderr {
+        width: 248px !important;
+        left: 108px !important;
+    }
+
+    #blogg:checked~nav .sliderr {
+        left: 368px !important;
+        width: 248px !important;
+    }
+
+    #codee:checked~nav .sliderr {
+        left: 629px !important;
+        width: 248px !important;
+    }
+}
+
 @media (min-width: 1200px) {
     nav .sliderr {
         width: 246px !important;
@@ -2263,9 +2397,10 @@ section .contentt p {
 @media (min-width: 1400px) {
     nav .sliderr {
         width: 248px !important;
-    left: 256px !important;
+        left: 256px !important;
 
     }
+
     #blogg:checked~nav .sliderr {
         left: 515px !important;
         width: 250px !important;
@@ -2278,7 +2413,26 @@ section .contentt p {
 
     }
 
+
+}
+@media (min-width: 2560px){
+    .wrapperr nav label {
+    font-size: 20px;
    
+}
+nav .sliderr {
+    width: 248px !important;
+    left: 295px !important;
+}
+#blogg:checked~nav .sliderr {
+    left: 555px !important;
+    width: 250px !important;
+}
+#codee:checked~nav .sliderr {
+    left: 815px !important;
+    width: 250px !important;
+}
+
 }
 </style>
 <!-- Style especializaciones -->
@@ -2312,7 +2466,7 @@ section .contentt p {
             <div class="contentt content-uno ">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelador-bim-aplicado-a-edificaciones/1');"
                                     href="javascript:;" class="has-popover">
@@ -2361,7 +2515,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelador-bim-aplicado-a-obras-viales/2');"
                                     href="javascript:;" class="has-popover">
@@ -2412,7 +2566,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelador-bim-aplicado-a-obras-hidr%C3%A1ulicas/3');"
                                     href="javascript:;" class="has-popover">
@@ -2461,7 +2615,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelador-bim-aplicado-a-estructuras-met%C3%A1licas/4');"
                                     href="javascript:;" class="has-popover">
@@ -2511,7 +2665,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/modelador-bim-aplicado-a-proyectos-green/74');"
                                     href="javascript:;" class="has-popover">
@@ -2557,7 +2711,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/especialista-bim-en-habilitaciones-urbanas/88');"
                                     href="javascript:;" class="has-popover">
@@ -2606,7 +2760,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/especialista-bim-en-automatizaci%C3%B3n-de-procesos/89');"
                                     href="javascript:;" class="has-popover">
@@ -2663,7 +2817,7 @@ section .contentt p {
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
 
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/coordinador-de-proyectos-bim/7');"
                                     href="javascript:;" class="has-popover">
@@ -2712,7 +2866,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/supervisor-de-proyectos-bim/8');"
                                     href="javascript:;" class="has-popover">
@@ -2761,7 +2915,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/gestor-de-proyectos-bim/9');"
                                     href="javascript:;" class="has-popover">
@@ -2809,7 +2963,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/planificaci%C3%B3n-y-control-de-proyectos-bim/75');"
                                     href="javascript:;" class="has-popover">
@@ -2858,7 +3012,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/gesti%C3%B3n-bim-para-el-sector-p%C3%BAblico/76');"
                                     href="javascript:;" class="has-popover">
@@ -2913,7 +3067,7 @@ section .contentt p {
             <div class="contentt content-tres">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/expedientes-t%C3%A9cnicos-bim-aplicado-a-proyectos-de-infraestructrura-educativa/11');"
                                     href="javascript:;" class="has-popover">
@@ -2963,7 +3117,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/expedientes-t%C3%A9cnicos-bim-aplicado-a-proyectos-de-infraestructrura-hospitalaria/12');"
                                     href="javascript:;" class="has-popover">
@@ -3013,7 +3167,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/expedientes-t%C3%A9cnicos-bim-aplicado-a-proyectos-de-infraestructura-vial/13');"
                                     href="javascript:;" class="has-popover">
@@ -3063,7 +3217,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/expedientes-t%C3%A9cnicos-bim-aplicado-a-proyectos-de-pavimentaci%C3%B3n-urbano-y-rural/14');"
                                     href="javascript:;" class="has-popover">
@@ -3113,7 +3267,7 @@ section .contentt p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/expedientes-t%C3%A9cnicos-bim-aplicado-a-proyectos-de-agua-y-saneamiento-rural/15');"
                                     href="javascript:;" class="has-popover">
@@ -3271,18 +3425,36 @@ section .conten p {
     text-align: justify;
 }
 
-
-@media (min-width: 992px) {
+@media (min-width: 375px) {
     nav .slide {
-        left: 222px !important;
+        left: 5px !important;
+        width: 157px;
 
     }
 
     #blo:checked~nav .slide {
-        left: 482px !important;
+        left: 174px !important;
+        width: 155px;
 
     }
 }
+
+@media (min-width: 425px) {
+    nav .slide {
+        left: 5px !important;
+        width: 181px;
+
+    }
+
+    #blo:checked~nav .slide {
+        left: 174px !important;
+        width: 155px;
+
+    }
+}
+
+
+
 
 @media (min-width: 576px) {
     nav .slide {
@@ -3313,13 +3485,36 @@ section .conten p {
 @media (min-width: 768px) {
     nav .slide {
         width: 247px;
-        left: 111px;
+        left: 110px !important;
 
     }
 
     #blo:checked~nav .slide {
-        left: 370px;
+        left: 370px !important;
+        width: 248px !important;
 
+    }
+}
+
+@media (min-width: 992px) {
+    nav .slide {
+        left: 222px !important;
+
+    }
+
+    #blo:checked~nav .slide {
+        left: 482px !important;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    nav .slide {
+        left: 239px !important;
+    }
+
+    #blo:checked~nav .slide {
+        left: 498px !important;
     }
 }
 
@@ -3337,12 +3532,24 @@ section .conten p {
 
 @media (min-width: 1400px) {
     nav .slide {
-    left: 385px !important;
-}
+        left: 385px !important;
+    }
+
     #blo:checked~nav .slide {
         left: 646px !important;
 
     }
+}
+@media (min-width: 2560px){
+    .wrapperrr nav label {
+    font-size: 20px;
+}
+nav .slide {
+    left: 428px !important;
+}
+#blo:checked~nav .slide {
+    left: 686px !important;
+}
 }
 </style>
 
@@ -3373,7 +3580,7 @@ section .conten p {
             <div class="contentt content-uno ">
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/bim-management-en-proyectos-de-arquitectura/58');"
                                     href="javascript:;" class="has-popover">
@@ -3423,7 +3630,7 @@ section .conten p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/bim-management-en-proyectos-de-urbanismo-y-paisajismo/86');"
                                     href="javascript:;" class="has-popover">
@@ -3474,7 +3681,7 @@ section .conten p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/bim-management-en-proyectos-de-ingenier%C3%ADa-civil-e-infraestructura/87');"
                                     href="javascript:;" class="has-popover">
@@ -3532,7 +3739,7 @@ section .conten p {
                 <div class="container ">
                     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
 
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/ingenier%C3%ADa-en-edificaciones-aplicado-al-dise%C3%B1o-supervisi%C3%B3n-construcci%C3%B3n-de-colegios-y-hospitales/83');"
                                     href="javascript:;" class="has-popover">
@@ -3581,7 +3788,7 @@ section .conten p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/ingenier%C3%ADa-vial-aplicado-al-dise%C3%B1o-construcci%C3%B3n-supervisi%C3%B3n-de-carreteras-pavimentos-y-puentes/84');"
                                     href="javascript:;" class="has-popover">
@@ -3631,7 +3838,7 @@ section .conten p {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 px-0">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/ingenier%C3%ADa-hidr%C3%A1ulica-aplicado-al-dise%C3%B1o-de-redes-de-abastecimiento-de-agua-potable-y-alcantarillado/85');"
                                     href="javascript:;" class="has-popover">
@@ -3903,7 +4110,8 @@ section .conten p {
             <p class="text-sub-cat"> Ingresa a nuestra plataforma de
                 verificador de certificados gratuitamente, <br>
                 podrás revisar o descargar todos tus certificados</p>
-            <a style=" font-weight: 700 !important;" class="btn  devbIM fw-semibold text-center  m-5" href="<?php echo base_url('Verifica-tu-cetificado') ?>">Deseo
+            <a style=" font-weight: 700 !important;" class="btn  devbIM fw-semibold text-center  m-5"
+                href="<?php echo base_url('Verifica-tu-cetificado') ?>">Deseo
                 verificar mi certificado</a>
 
         </h3>
@@ -3919,7 +4127,8 @@ section .conten p {
 <section>
     <div class="container-xl">
 
-        <p class="text-section text-center ">Desde nuestros inicios hemos ayudado a más de <br>
+        <p class="text-section text-center ">Desde nuestros inicios hemos ayudado a más de <br
+                class="d-none d-sm-none d-md-none d-xl-block">
             15 mil alumnos a lograr sus metas</p>
 
         </h3>
@@ -4123,7 +4332,8 @@ section .conten p {
         <div class="d-flex flex-column flex-md-row justify-content-between">
             <div class="p-2">
                 <p class="tituto-np "> Nunca pares de aprender</p>
-                <p class="text-np lh-sm">llevamos a todas partes la pasión por <br class="d-none d-sm-none d-md-none d-lg-block">
+                <p class="text-np lh-sm">llevamos a todas partes la pasión por <br
+                        class="d-none d-sm-none d-md-none d-lg-block">
                     compartir conocimiento, crear comunidad <br class="d-none d-sm-none d-md-none d-lg-block">
                     y construir el futuro de latinoamérica en <br class="d-none d-sm-none d-md-none d-lg-block">
                     el área de arquitectura, ingeniería y nuevas <br class="d-none d-sm-none d-md-none d-lg-block">

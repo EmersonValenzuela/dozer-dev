@@ -5,8 +5,8 @@
                 <span class="titulo-footer">Instituto Dozer</span>
 
                 <p class="text-footer lh-sm">Es una organización privada con ruc: 20606389184, dedicada a
-                    brindar servicios de capacitación y <br>
-                    asesoria en implementación BIM en proyectos públicos y privados, con el objetivo de hacerlos más <br>
+                    brindar servicios de capacitación y <br class="br-footer">
+                    asesoria en implementación BIM en proyectos públicos y privados, con el objetivo de hacerlos más <br class="br-footer">
                     eficientes y productivos en sus actividades laborales, somos escuela oficial de:
                 </p>
                 <img class="d-none d-sm-block tamano" src="<?=base_url()?>uploads\system\autodesk-footer.svg" alt="">

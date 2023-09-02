@@ -22,7 +22,7 @@
                     <img style="width: 10px;" src="<?= base_url() ?>uploads/system/flecha-abajo.png" alt="">
             </a>
 
-            <ul class="category corner-triangle bg-triangle top-left is-hidden pb-0 bg-window">
+            <ul class="category corner-triangle bg-triangle top-left is-hidden pb-0 bg-window w-170">
                 <li class="go-back"><a href=""><i class="fas fa-angle-left"></i><?php echo site_phrase('menu 2'); ?></a>
                 </li>
 
@@ -93,7 +93,7 @@
                     <img style="width: 10px;" src="<?= base_url() ?>uploads/system/flecha-abajo.png" alt="">
             </a>
 
-            <ul class="category corner-triangle top-left is-hidden pb-0 bg-triangle bg-window">
+            <ul class="category corner-triangle top-left is-hidden pb-0 bg-triangle bg-window w-170">
                 <li class="go-back"><a href=""><i class="fas fa-angle-left"></i><?php echo site_phrase('menu'); ?></a>
                 </li>
 

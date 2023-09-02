@@ -7205,6 +7205,9 @@ width: 20rem;}
 .text-footer {
     font-size: 16px;
 }
+.btn-footer {
+    font-size: 15px !important;
+}
 .text-copy {
     font-size: 10pt;
 }
@@ -7217,8 +7220,28 @@ width: 20rem;}
 .text-header {
     font-size: 18px;
 }
-
-
+.linderkin {
+    
+    top: 30rem !important;
+   
+}
+.linderkin-dos {
+    
+    top: 56.4rem !important;
+    
+}
+.linderkin-tres {
+    
+    top: 83rem !important;
+    
+}
+.linderkin-cuatro {
+    top: 112rem !important;
+}
+.course-curso {
+    
+    height: 180px !important;
+}
 }
 
  @media (min-width: 1400px) { 
@@ -7869,6 +7892,21 @@ color: white;
     font-size: 12.6px;
     
 }
+.w-520{
+    width: 520px !important;
+}
+.text-cont-ci {
+    font-size: 15px !important;
+    font-weight: 200 !important;
+}
+.txt-bv {
+    font-size: 15px !important;
+    font-weight: 200 !important;
+    /* margin-right: 48px; */
+}
+.w-500{
+    width: 500px;
+}
 }
 @media (min-width: 1400px) { 
     .m-navbar{
@@ -7886,8 +7924,14 @@ color: white;
 .sign-in-box > .btn {
     font-size: 14px;
 }
-
+.text-cont-ci{
+    font-size: 19px !important;
+    font-weight: 200 !important;
+    width: 500px !important;
 }
+}
+
+
 .p-cp{
     padding: 8px 14px 27px 15px !important;
 }
@@ -8479,7 +8523,7 @@ text-align: center;}
     .lineaHorizontal {
         border-top: 1px solid #FFCC73;
         height: 2px;
-        max-width: 950px;
+        max-width: 807px;
         padding: 0;
         margin: 0px auto 0 auto;
       }
@@ -8506,14 +8550,22 @@ text-align: center;}
     }
       .lineaVerticald{
         right: 8.1rem;
-        
+        height: 55px;
+        bottom: 50px;
        
       }
-      .lineaVerticali{
-        right: 8.1rem;
+        .lineaVerticali {
+              /* right: 9rem; */
+    left: -19px;
+    left: -58px;
+    height: 55px;
+    bottom: 6.6rem;
+        }
         
-       
-      }
+       .w-170{
+        width: 170px !important;
+       }
+    
       .h-140{
         height: 140px;
       }

@@ -15,7 +15,7 @@
         </div>
         <div class=" text-white d-flex flex-row mb-3 justify-content-between">
             <div class="my-4">
-                <div class="d-flex flex-column w-25rem  bg-fondoplanes">
+                <div class="d-flex flex-column   bg-fondoplanes">
                     <div class="text-center fondo-plan-top">Plan Individual <br>
                         (1 persona)
                     </div>

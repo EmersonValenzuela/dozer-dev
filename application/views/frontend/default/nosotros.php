@@ -235,7 +235,7 @@
                             credencias para ser un centro de capacitación <br class="d-none sm-none md-none lg-none xl-none xxl-block">
                             y certificación autorizado por autodesk en la <br class="d-none sm-none md-none lg-none xl-none xxl-block">
                             región lima.</div>
-                        <div class="d-flex flex-column mb-3 d-flex align-items-center w-520">
+                        <div class="d-flex flex-column mb-3 d-flex align-items-center w-autodesk ">
                             <div class="px-2 "><img class="img-logo-inter  "
                                     src="<?=base_url()?>uploads/system/logo-internacional-autoesk.png" alt="">
                             </div>
@@ -257,7 +257,7 @@
                             compartir y difundir el conocimiento para un <br class="d-none sm-none md-none lg-none xl-none xxl-block">
                             mejor y más eficiente uso del concreto. <br></div>
                         
-                        <div class="px-2 d-flex align-items-center w-500"><img class="img-logo-aci "
+                        <div class="px-2 d-flex align-items-center w-aci"><img class="img-logo-aci "
                                 src="<?=base_url()?>uploads/system/logo-internacional-aci.png" alt="">
                         </div>
                             
@@ -339,7 +339,7 @@
                             con altos estándares de calidad”.
                         </div>
 
-                        <div class=" d-flex justify-content-center w-500"><img class="img-logo-bv " src="<?=base_url()?>uploads/system/logo-bv.png"
+                        <div class=" d-flex justify-content-center w-bv"><img class="img-logo-bv " src="<?=base_url()?>uploads/system/logo-bv.png"
                                 alt="">
                         </div>
 

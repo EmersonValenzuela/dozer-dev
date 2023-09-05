@@ -78,7 +78,7 @@
             </div>
         </div>
         <div class="d-flex flex-row  justify-content-center">
-            <div class="my-3 mx-5">
+            <div class="my-3 mx-5 tamañodoc">
                 <div class="d-flex flex-column ">
                     <div class="px-2 fondo-doc"><img class="style-dad m-auto d-block"
                             src="<?=base_url()?>uploads\system\docente\docente-pruebaa.png" alt=""></div>
@@ -101,7 +101,7 @@
 
                 </div>
             </div>
-            <div class="my-3 mx-5">
+            <div class="my-3 mx-5 tamañodoc">
                 <div class="d-flex flex-column ">
                     <div class="px-2 fondo-doc"><img class="style-dad m-auto d-block"
                             src="<?=base_url()?>uploads\system\docente\docente-pruebaa.png" alt=""></div>
@@ -149,7 +149,7 @@
             </div>
         </div>
         <div class="d-flex flex-row  justify-content-center">
-            <div class="my-3 mx-5">
+            <div class="my-3 mx-5 tamañodoc">
                 <div class="d-flex flex-column ">
                     <div class="px-2 fondo-doc"><img class="style-dad m-auto d-block"
                             src="<?=base_url()?>uploads\system\docente\docente-cinco.png" alt=""></div>

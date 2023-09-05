@@ -6437,6 +6437,8 @@ width: 20rem;}
    
     border-radius: 15px;
     border: solid 1px;
+    width: 25rem;
+
 }
 
 .bg-general{
@@ -6503,6 +6505,16 @@ width: 20rem;}
 .precio-desc-curso {
     font-size: 20px;
     font-weight: 500;
+}
+.bg-fondoplanes{
+   
+    
+    width:22rem !important;
+
+}
+.cert-inter {
+ 
+    padding: 30px 30px 2px 30px;
 }
 }
 
@@ -7591,7 +7603,7 @@ width: 20rem;}
 }
 .sub-text-principal-nosotros{
     color: white;
-    font-size: 17px;
+    font-size: 14.2px;
     font-weight: 200;
     
 
@@ -7892,19 +7904,25 @@ color: white;
     font-size: 12.6px;
     
 }
-.w-520{
+.w-autodesk{
     width: 520px !important;
 }
 .text-cont-ci {
     font-size: 15px !important;
     font-weight: 200 !important;
+    margin-right: 20px !important;
+    text-align: justify !important;
 }
 .txt-bv {
     font-size: 15px !important;
     font-weight: 200 !important;
     /* margin-right: 48px; */
+    text-align: justify;
 }
-.w-500{
+.w-aci{
+    width: 500px;
+}
+.w-bv{
     width: 500px;
 }
 }
@@ -9635,7 +9653,14 @@ body::-webkit-scrollbar-thumb{
         width: 25%;
     }
 
-
+    .tamañodoc{
+        width: 340px;
+    }
+    .linderkin-mentoria {
+      
+        top: 86rem;
+       
+    }
 
 }
 @media(min-width: 1400px){
@@ -9701,6 +9726,30 @@ width: 70px;}
 .pl-25px{
     padding-left: 25px;
 }
+
+
+@media (min-width: 1900px){
+    .imgpro {
+        width: 690px !important;
+        
+    }
+    .sub-text-principal-nosotros {
+       
+        font-size: 15.2px;
+        
+    }
+    .w-autodesk {
+        width: 190px !important;
+    }
+    .w-aci {
+        width: 130px;
+    }
+    .txt-bv {
+        font-size: 19px !important;
+        
+    }
+    }
+
 @media (min-width: 2560px){
 .text-navbar-c {
     font-size: 18px !important;

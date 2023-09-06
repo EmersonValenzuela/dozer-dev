@@ -9817,12 +9817,12 @@ width: 70px;}
 }
 
 .bg-inputt{
-    background: #373737;
-    border-bottom: 0px;
-    border-right: 0px;
-    border-radius: 5px;
-color: white;
-padding: 0px 30px;
+    background: #373737 !important;
+    border-bottom: 0px !important;
+    border-right: 0px !important;
+    border-radius: 5px !important;
+color: white !important;
+padding: 0px 30px !important;
 }
 
 .btn-verificar {

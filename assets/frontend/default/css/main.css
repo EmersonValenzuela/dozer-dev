@@ -9677,7 +9677,7 @@ body::-webkit-scrollbar-thumb{
     color: #222222;
     border-radius: 5px;
     padding: 2px 20px;
-    font-weight: 600;
+    font-weight: 700;
 }
 .w-350{
     width: 350px !important;
@@ -9824,8 +9824,11 @@ width: 70px;}
 color: white;
 padding: 0px 30px;
 }
-.btn-verificarr{
-    background: white;
-    color: #222222;
-    font-weight: 700;
+
+.btn-verificar {
+    background: white !important;
+    color: #222222 !important;
+    border-radius: 5px !important;
+    padding: 2px 20px !important;
+    font-weight: 700 !important;
 }

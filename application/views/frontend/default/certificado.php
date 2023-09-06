@@ -9,8 +9,8 @@
 
                         <div class="d-flex flex-row mb-3 align-items-center justify-content-center">
                             <div class=""><p class="text-center mt-4">Buscar por documento de identidad:</p></div>
-                            <div class=" px-5">  <input class="bg-input" type="text" placeholder="Puedes usar tu DNI - CI"></div>
-                            <div class=""> <a href="#" class="btn-verificar"> Verificar</a></div>
+                            <div class=" px-5">  <input class="bg-inputt" type="text" placeholder="Puedes usar tu DNI - CI"></div>
+                            <div class=""> <a href="#" class="btn-verificarr"> Verificar</a></div>
                         </div>
                         
                       

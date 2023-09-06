@@ -9815,3 +9815,17 @@ width: 70px;}
     font-size: 22px !important;
 }
 }
+
+.bg-input{
+    background: #373737;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-radius: 5px;
+color: white;
+padding: 0px 30px;
+}
+.btn-verificar{
+    background: white;
+    color: #222222;
+    font-weight: 700;
+}

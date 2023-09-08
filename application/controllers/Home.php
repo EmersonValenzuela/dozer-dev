@@ -57,10 +57,12 @@ class Home extends CI_Controller
 
     public function certi()
     {
+        $category = $_GET['category'];
+        $dni = $_GET['dni'];
         $page_data['page_name'] = "certificado";
         $page_data['page_title'] = site_phrase('Verifica-tu-cetificado');
 
-        $page_data['certificates'] = $this->crud_model->get_certificates();
+        $page_data['certificates'] = $this->crud_model->get_certificates($category, $dni);
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 

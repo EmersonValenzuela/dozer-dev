@@ -3711,16 +3711,28 @@ class Crud_model extends CI_Model
         $this->db->order_by('id', 'desc');
         return $this->db->get('repository')->result_array();
     }
-    function get_certificates($id = "")
+    function get_certificates($category = "", $dni = "")
     {
-        $this->db->select('*');
-        $this->db->from('certificate');
-        $this->db->join('users', 'users.id = certificate.student_id', 'LEFT');
-        $this->db->join('course', 'course.id = certificate.course_id', 'LEFT');
-        $this->db->join('category', 'category.id = course.category_id', 'LEFT');
-        $this->db->order_by('users.last_name', 'asc');
-        $query = $this->db->get();
-        return $query->result();
+        if ($dni == "") {
+            $this->db->select('*');
+            $this->db->from('certificate');
+            $this->db->join('users', 'users.id = certificate.student_id', 'LEFT');
+            $this->db->join('course', 'course.id = certificate.course_id', 'LEFT');
+            $this->db->join('category', 'category.id = course.category_id', 'LEFT');
+            $this->db->order_by('users.last_name', 'asc');
+            $query = $this->db->get();
+            return $query->result();
+        } else {
+            $this->db->select('*');
+            $this->db->from('certificate');
+            $this->db->join('users', 'users.id = certificate.student_id', 'LEFT');
+            $this->db->join('course', 'course.id = certificate.course_id', 'LEFT');
+            $this->db->join('category', 'category.id = course.category_id', 'LEFT');
+            $this->db->where(array('users.dni' => $dni));
+            $this->db->order_by('users.last_name', 'asc');
+            $query = $this->db->get();
+            return $query->result();
+        }
     }
 
 

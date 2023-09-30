@@ -1035,5 +1035,19 @@
     "top_categories": "Top categories",
     "these_are_the_most_popular_courses_among_listen_courses_learners_worldwide": "These are the most popular courses among listen courses learners worldwide",
     "user_mis_especializaciones": "User mis especializaciones",
-    "user_mis_diplomados": "User mis diplomados"
+    "user_mis_diplomados": "User mis diplomados",
+    "new_login_confirmation": "New login confirmation",
+    "login_confirmation": "Login confirmation",
+    "let_us_know_that_this_email_address_belongs_to_you": "Let us know that this email address belongs to you",
+    "enter_the_code_from_the_email_sent_to": "Enter the code from the email sent to",
+    "verification_code": "Verification code",
+    "enter_the_verification_code": "Enter the verification code",
+    "new_device_verification_code": "New device verification code",
+    "resend_verification_code": "Resend verification code",
+    "mail_successfully_sent_to_your_inbox": "Mail successfully sent to your inbox",
+    "please_check_your_mail_inbox_to_verify_your_email_address": "Please check your mail inbox to verify your email address",
+    "email_verification": "Email verification",
+    "resend_mail": "Resend mail",
+    "configuración_smtp": "Configuración smtp",
+    "verification_code_is_wrong": "Verification code is wrong"
 }

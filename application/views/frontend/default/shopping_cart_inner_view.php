@@ -9,8 +9,9 @@
 
  <div class="col-lg-6 text-cqp-cursos">
      <div class="in-cart-box">
+        <?php if(sizeof($this->session->userdata('cart_items')) == 0){ ?>
          <div class="fondo-gqp">
-             <div class="title text-carrito  py-3">Tu carrito de compra esta vacío</div>
+             <div class="title text-carrito  py-3">Tu carrito de compra esta vacío <?= sizeof($this->session->userdata('cart_items')) ?></div>
              <div class="hidden"><?php echo sizeof($this->session->userdata('cart_items')) . '  ' ?></div>
              <div><img class="d-block m-auto" src="<?= base_url() ?>uploads/system/carrito.png" alt=""></div>
              <div class="d-flex flex-column mb-3 p-2">
@@ -22,6 +23,7 @@
                          comprando diplomados</a></div>
              </div>
          </div>
+         <?php }else{ ?>
          <div class="">
              <ul class="cart-course-list">
                  <p class="text-resumen">Resumem de Pedido:</p>
@@ -146,8 +148,6 @@
                  <!-- <span class="discount-rate">95% off</span> -->
              </div>
          <?php endif; ?>
-
-
          <!-- including Tax or vat -->
          <?php if (get_settings('course_selling_tax') > 0) : ?>
              <small class="d-block mb-3 w-100 text-12px text-uppercase"><b><?php echo currency($total_tax) . '</b> (' . get_settings('course_selling_tax') . '%) ' . get_phrase('TAX_INCLUDED'); ?></small>
@@ -168,12 +168,10 @@
              </div>
 
              <button type="button" class="btn red w-100 radius-10 mb-3" onclick="handleCheckOut()"><?php echo site_phrase('checkout'); ?></button>
-
-
          </div>
-
-
      </div>
+     <?php } ?>
+
  </div>
  <?php
     $preference->items = $products_map;

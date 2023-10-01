@@ -49,7 +49,7 @@
             </div>
         </div>
         <div class="row no-gutters" id = "my_courses_area">
-            <?php include 'reload_my_courses.php'; ?>
+            <?php include 'reload_my_courses.php'; ?>   
         </div>
     </div>
 </section>

@@ -60,12 +60,12 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
             <?php endif;
             ?>
             
-            <div class="instructor-box menu-icon-box">
+            <!-- <div class="instructor-box menu-icon-box">
                 <div class="icon">
                     <a class="text-white" href="<?php echo site_url('home/my_courses'); ?>"
                         style="border: 1px solid transparent; margin: 0px; padding: 0px 10px; font-size: 14px; width: max-content; border-radius: 5px; height: 40px; line-height: 40px;"><?php echo site_phrase('my_courses'); ?></a>
                 </div>
-            </div>
+            </div> -->
 
             
 

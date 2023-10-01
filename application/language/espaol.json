@@ -1049,5 +1049,8 @@
     "email_verification": "Email verification",
     "resend_mail": "Resend mail",
     "configuración_smtp": "Configuración smtp",
-    "verification_code_is_wrong": "Verification code is wrong"
+    "verification_code_is_wrong": "Verification code is wrong",
+    "unverified": "Unverified",
+    "user_deleted_successfully": "User deleted successfully",
+    "student_has_been_enrolled": "Student has been enrolled"
 }

@@ -1052,5 +1052,6 @@
     "verification_code_is_wrong": "Verification code is wrong",
     "unverified": "Unverified",
     "user_deleted_successfully": "User deleted successfully",
-    "student_has_been_enrolled": "Student has been enrolled"
+    "student_has_been_enrolled": "Student has been enrolled",
+    "data_deleted_successfully": "Data deleted successfully"
 }

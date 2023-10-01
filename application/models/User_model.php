@@ -306,6 +306,28 @@ class User_model extends CI_Model
         return $this->db->get_where('enrol', array('user_id' => $user_id));
     }
 
+    public function my_courses_e($user_id = "")
+    {
+        if ($user_id == "") {
+            $user_id = $this->session->userdata('user_id');
+        }
+       return $this->db->select('*')->from('enrol')->join('course', 'course.id = enrol.course_id')->where(array('enrol.user_id' => $user_id,'course.category_id' => 21))->get();
+    }
+    public function my_courses_c($user_id = "")
+    {
+        if ($user_id == "") {
+            $user_id = $this->session->userdata('user_id');
+        }
+       return $this->db->select('*')->from('enrol')->join('course', 'course.id = enrol.course_id')->where(array('enrol.user_id' => $user_id,'course.category_id' => 20))->get();
+    }
+    public function my_courses_d($user_id = "")
+    {
+        if ($user_id == "") {
+            $user_id = $this->session->userdata('user_id');
+        }
+       return $this->db->select('*')->from('enrol')->join('course', 'course.id = enrol.course_id')->where(array('enrol.user_id' => $user_id,'course.category_id' => 22))->get();
+    }
+
     public function upload_user_image($image_code)
     {
         if (isset($_FILES['user_image']) && $_FILES['user_image']['name'] != "") {

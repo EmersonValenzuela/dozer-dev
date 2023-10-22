@@ -9705,7 +9705,7 @@ body::-webkit-scrollbar-thumb{
     .course-sidebar.fixed {
         position: fixed;
         margin-top: 0;
-        width: 18%;
+        width: 20%;
     }
     .nombr-espe {
         font-size: 20px !important;

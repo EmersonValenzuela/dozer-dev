@@ -15,7 +15,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
     <div class="container-xl">
         <div class="row">
 
-            <div class="col-lg-8 col-xl-8 col-xxl-9 order-last pe-5 order-lg-first radius-10  ">
+            <div class="col-lg-8 col-xl-8 col-xxl-7 order-last pe-5 order-lg-first radius-10  ">
 
                 <div class="description-box view-more-parent">
 
@@ -530,7 +530,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                 </div>
             </div>
 
-            <div class="col-lg-4 col-xl-4 col-xxl-3 order-first order-lg-last resumeninfo">
+            <div class="col-lg-4 col-xl-4 col-xxl-4 order-first order-lg-last resumeninfo">
                 <div class="course-sidebar box-shadow-5 natural cuadro-contenido">
                     <?php if ($course_details['video_url'] != "") : ?>
                     <div class="preview-video-box">
@@ -629,8 +629,8 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                                         src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Docente con amplia
                                     experiencia</li>
                                 <li class="text-white"><img class="me-2"
-                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Clases a tu ritmo,inicia cuando
-                                  <span class="pl-25px"> quieras</span>  
+                                        src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Clases a tu ritmo, inicia cuando
+                                   quieras
                                 </li>
                                 <li class="text-white"><img class="me-2"
                                         src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Certificado por
@@ -694,12 +694,12 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                                 <li class="text-white"><img class="me-2"
                                         src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Acceso a todos los
                                     certificados de los
-                                    <span class="pl-25px">26 cursos por Instituto Dozer </span>
+                                    26 cursos por Instituto Dozer 
                                 </li>
                                 <li class="text-white"><img class="me-2"
                                         src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Acceso a todos los
                                     certificados de los
-                                   <span class="pl-25px">26 cursos por Autodesk</span> 
+                                   26 cursos por Autodesk
                                 </li>
                                 <?php elseif ($course_details['course_type'] == 'scorm') : ?>
                                 <li class="text-white"><i class="far fa-file-video"></i>Acceso a clases de reforzamiento
@@ -708,13 +708,13 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                                 </li>
                                 <li class="text-white"><i class="fas fa-mobile-alt"></i>Acceso a licencia temporales y
                                     de
-                                  <span class="pl-25px">estudiantes por 1 año de Autodesk</span>  
+                                  estudiantes por 1 año de Autodesk
                                 </li>
                                 <?php endif; ?>
                                 <li class="text-white"><img class="me-2"
                                         src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Asesoría para la
                                     instalación de los
-                                   <span class="pl-25px">softwares de autodesk</span> 
+                                   softwares de autodesk
                                 </li>
                                 <li class="text-white"><img class="me-2"
                                         src="<?= base_url() ?>uploads/system/sheck-type.png" alt="">Asesoría académica

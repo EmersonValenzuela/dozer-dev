@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600&display=swap');
 
 html {
     color: #222;
@@ -3349,6 +3349,14 @@ section.cart-list-area {
 .wishlisted-box .cart-course-list li:not( :first-child ) {
     /*border-top: 1px solid #f1f1f1;*/
 }
+.cart-course-wrapperr {
+    padding: 10px !important;
+    /* display: flex;
+    justify-content: space-between;
+   background-color: #373737;
+    border-radius: 10px;
+    height: 150px; */
+}
 .cart-course-wrapper {
     padding: 10px;
     display: flex;
@@ -4215,9 +4223,8 @@ div.tagsinput span.tag a {
 
 /* Version 1.4 */
 .hidden {
-    display: none !important;
+    display: none;
 }
-
 @media (max-width:760px)  {
     .user-dashboard-content .content-box .form-group {
         padding: 10px 10px;
@@ -6522,11 +6529,15 @@ width: 20rem;}
 
 
 @media (min-width: 1400px) { .bg-img-cursos{
-    background-size: 62rem;
-    height:210px;
-    width: 100%;
+    background-size: 60rem;
+    width: 1000px !important;
+    height: 250px !important;
     background-position: center;
-} }
+} 
+.pdd-textencabezado {
+    padding: 20px 180px 10px 40px !important;
+}
+}
 .course-curso{
     padding: 8px 14px 5px 15px;
     position: relative;
@@ -7285,8 +7296,8 @@ width: 20rem;}
         
         border-radius: 8%;
        
-        width: 18rem;
-        height: 16rem;
+        width: 14rem !important;
+        height: 14rem !important;
         
     }
     .icon-style-user {
@@ -7316,13 +7327,13 @@ width: 20rem;}
 
         .text-titulo-cat{
             
-            font-size: 39pt !important;
+            font-size: 25pt !important;
            
         }
         
         .text-sub-cat{
             
-            font-size: 20px !important;
+            font-size: 18px !important;
            
             
         }
@@ -7378,7 +7389,7 @@ width: 20rem;}
 }
   .text-rs{
     
-    font-size: 15pt;
+    font-size: 13pt;
     
 }
 .imgpro {
@@ -7402,7 +7413,7 @@ width: 20rem;}
     width: 18rem !important;
 }
 .text-testimonio {
-    font-size: 19px !important;
+    font-size: 16px !important;
 }
 .nombre-testimonio {
     font-size: 15px !important;
@@ -7441,7 +7452,7 @@ width: 20rem;}
     font-size: 12pt;
 }
 .text-footer {
-    font-size: 20px;
+    font-size: 18px;
 }
 .tamano {
     width: 55rem;
@@ -7450,7 +7461,7 @@ width: 20rem;}
     font-size: 29pt;
 }
 .text-np {
-    font-size: 17pt !important;
+    font-size: 15pt !important;
 }
 
 .text-principal-nosotros{
@@ -7481,7 +7492,7 @@ width: 20rem;}
 
 
 .nombr-espe{
-    font-size: 15px !important;
+    font-size: 15px ;
 }
 
 .precio-total{font-size: 14px;}
@@ -7596,30 +7607,7 @@ width: 20rem;}
 }
   
 
-@media (min-width: 1200px) { 
-    .text-principal-nosotros{
-    font-weight: bold;
-    color: white;
-    font-size: 30px;
-   
-}
-.sub-text-principal-nosotros{
-    color: white;
-    font-size: 14.2px;
-    font-weight: 200;
-    
 
-}
-
-.img-convenios-nosotros {
-    width: 100%;
-    padding: 0 0 1.5rem 0;
-} 
-.home-banner-area-nosotros {
-    padding: 50px 0px 0px 0px;
-    color: #fff;
-}
-}
 
 .m-m-v{
     margin: 0rem 3rem;
@@ -7880,6 +7868,32 @@ color: white;
 }
 
 @media (min-width: 1200px) { 
+    .text-title-cqp {
+        font-size: 11px !important;
+        /* margin: 0 15px; */
+    }
+    .text-principal-nosotros{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+   
+}
+.sub-text-principal-nosotros{
+    color: white;
+    font-size: 14.2px;
+    font-weight: 200;
+    
+
+}
+
+.img-convenios-nosotros {
+    width: 100%;
+    padding: 0 0 1.5rem 0;
+} 
+.home-banner-area-nosotros {
+    padding: 50px 0px 0px 0px;
+    color: #fff;
+}
     .m-navbar{
     margin: 0 ;
 
@@ -7927,6 +7941,11 @@ color: white;
 .w-bv{
     width: 500px;
 }
+.bg-encabezado {
+    background: #383737;
+    font-size: 13px;
+}
+
 }
 @media (min-width: 1400px) { 
     .m-navbar{
@@ -8691,6 +8710,7 @@ text-align: center;}
         margin: 0 1174px;
         bottom: 3.2rem;
         position: relative;
+        left: 0px;
         
        
       }
@@ -8703,6 +8723,7 @@ text-align: center;}
         margin: 0 224px;
         position: relative;
         bottom: 6.3rem;
+        left: 0px;
         
        
       }
@@ -9553,6 +9574,7 @@ body::-webkit-scrollbar-thumb{
   }
   input[type="radio"],
   input[type="checkbox"]{
+    display: none;
   }
   
 
@@ -9662,6 +9684,19 @@ body::-webkit-scrollbar-thumb{
         top: 86rem;
        
     }
+    .precio-desce {
+        font-size: 15px !important;
+        font-weight: 600 !important;
+    }
+    .btnbadge-prox-home {
+        font-size: 10px !important;
+        font-weight: 600 !important;
+        background-color: white;
+        color: #222222;
+        padding: 5px;
+        border-radius: 6px;
+    }
+
 
 }
 @media(min-width: 1400px){
@@ -9669,6 +9704,28 @@ body::-webkit-scrollbar-thumb{
         position: fixed;
         margin-top: 0;
         width: 18%;
+    }
+    .nombr-espe {
+        font-size: 20px !important;
+    }
+    .btnbadge-prox-home {
+        font-size: 12px !important;
+        font-weight: 700 !important;
+        background-color: white;
+        color: #222222;
+        padding:5px;
+        border-radius: 6px;
+    }
+    .linderkin-mentoria {
+        top: 81rem;
+    }
+    .linderkin {
+        top: 33rem !important;
+    }
+
+    .precio-desce {
+        font-size: 20px !important;
+        font-weight: 600 !important;
     }
 }
 
@@ -9778,7 +9835,7 @@ width: 70px;}
     font-size: 30px !important;
 }
 .text-titulo-cat {
-    font-size: 45pt !important;
+    font-size: 25pt !important;
 }
 .imgpro {
     width: 680px !important;
@@ -9813,7 +9870,7 @@ width: 70px;}
     height: 21rem !important;
 }
 .text-testimonio {
-    font-size: 22px !important;
+    font-size: 16px !important;
 }
 }
 
@@ -9832,4 +9889,40 @@ padding: 0px 30px !important;
     border-radius: 5px !important;
     padding: 2px 20px !important;
     font-weight: 700 !important;
+}
+.text-vtg {
+    background: white !important;
+    color: #222222 !important;
+    padding: 4px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.h-home{
+    padding: 8px 9px 5px 9px;
+    height: 150px !important;
+}
+
+@media (min-width: 1400px) {  
+.pdd-textencabezado {
+    padding: 20px 180px 10px 40px !important;
+}
+.text-subtitutlo-cursos {
+    top: 13px;
+    position: relative;
+    padding: 0px 40px 10px 40px !important;
+}
+.img-logoespeciali {
+    width: 15rem;
+    padding: 0 0rem 1rem 33px;
+    top: 18px;
+    position: relative;
+}
+.text-vtg {
+   
+    font-size: 16px;
+}
+
 }

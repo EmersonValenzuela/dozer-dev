@@ -711,7 +711,7 @@ section .content p {
         <section>
             <div class="content content-1 ">
                 <div class="container ">
-                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
                         <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/revit-arquitectura/17');"
@@ -724,16 +724,16 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
-                                                <h5 class="nom-cur">Revit Arquitectura</h5>
+                                            <div class="h-home">
+                                                <h5 class="">Revit Arquitectura</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
-                                                        <span class="nivel">Nivel Basico</span>
+                                                        <span class="">Nivel Basico</span>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-12">
-                                                        <span class="fw-200 text-white certi ">Certifican: Autodesk y
+                                                        <span class="fw-200 text-white ">Certifican: Autodesk y
                                                             Dozer</span>
                                                     </div>
                                                 </div>
@@ -758,7 +758,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center descuento">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -777,7 +777,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Revit Arquitectura </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -809,7 +809,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -828,7 +828,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">3Ds Max</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -860,7 +860,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -879,7 +879,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">3Ds Max</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -912,7 +912,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -939,7 +939,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Revit Estructura </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -972,7 +972,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -991,7 +991,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Revit Estructura </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1023,7 +1023,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1042,7 +1042,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Robot Structural Analysis </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1075,7 +1075,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1094,7 +1094,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Robot Structural Analysis </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1127,7 +1127,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1146,7 +1146,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Advance Steel </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1178,7 +1178,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1197,7 +1197,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Advance Steel </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1228,7 +1228,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1248,7 +1248,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Inventor Professional </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1281,7 +1281,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1300,7 +1300,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Inventor Professional </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1332,7 +1332,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1351,7 +1351,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">AutoCAD Plant 3D</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1384,7 +1384,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1403,7 +1403,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">AutoCAD Plant 3D</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1435,7 +1435,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1460,7 +1460,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Revit MEP </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1493,7 +1493,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1512,7 +1512,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Revit MEP </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1544,7 +1544,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1571,7 +1571,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">AutoCAD </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1603,7 +1603,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1622,7 +1622,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">AutoCAD</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1655,7 +1655,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1680,7 +1680,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Civil 3D </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1713,7 +1713,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1732,7 +1732,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Civil 3D </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1765,7 +1765,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1784,7 +1784,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Infraworks</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1817,7 +1817,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1836,7 +1836,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Infraworks </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1869,7 +1869,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1894,7 +1894,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Dynamo para Revit </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1926,7 +1926,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1945,7 +1945,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Dynamo para Revit </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -1978,7 +1978,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1990,7 +1990,7 @@ section .content p {
             </div>
             <div class="content content-7">
                 <div class="container ">
-                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
                         <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-0">
                             <div class="course-box-wrap">
                                 <a onclick="$(location).attr('href', 'http://localhost/dozer-dev/home/course/navisworks-manage/49');"
@@ -2003,7 +2003,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Navisworks Manage </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -2036,7 +2036,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2055,7 +2055,7 @@ section .content p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="">Navisworks Manage </h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -2088,7 +2088,7 @@ section .content p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2550,7 +2550,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">Modelador BIM aplicado a Edificaciones</h5>
                                                 <div class="row ">
 
@@ -2580,7 +2580,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2599,7 +2599,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">Modelador BIM aplicado a Obras Viales</h5>
                                                 <div class="row ">
                                                     <div class="col-12">
@@ -2631,7 +2631,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2650,7 +2650,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">Modelador BIM aplicado a Obras Hidráulicas</h5>
                                                 <div class="row ">
 
@@ -2680,7 +2680,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2699,7 +2699,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">Modelador BIM aplicado a Estructuras Metálicas
                                                 </h5>
                                                 <div class="row ">
@@ -2730,7 +2730,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2749,7 +2749,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">Modelador BIM aplicado a Proyectos Green</h5>
 
                                                 <div class="row mt-5">
@@ -2776,7 +2776,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2795,7 +2795,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">Especialista BIM en Habilitaciones Urbanas</h5>
                                                 <div class="row ">
 
@@ -2825,7 +2825,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2844,7 +2844,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">Especialista BIM en Automatización de Procesos
                                                 </h5>
                                                 <div class="row ">
@@ -2874,7 +2874,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2901,7 +2901,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">Coordinador de Proyectos BIM</h5>
                                                 <div class="row ">
 
@@ -2931,7 +2931,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2950,7 +2950,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso p-cp">
+                                            <div class="h-home p-cp">
                                                 <h5 class="nombr-espe">Supervisor de Proyectos BIM</h5>
                                                 <div class="row ">
 
@@ -2980,7 +2980,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2999,7 +2999,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso p-cp">
+                                            <div class="h-home p-cp">
                                                 <h5 class="nombr-espe">Gestor de Proyectos BIM</h5>
                                                 <div class="row ">
 
@@ -3028,7 +3028,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3047,7 +3047,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">Planificación y Control de Proyectos BIM</h5>
                                                 <div class="row ">
 
@@ -3077,7 +3077,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3096,7 +3096,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">Gestión BIM para el Sector Público</h5>
                                                 <div class="row ">
 
@@ -3126,7 +3126,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3151,7 +3151,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso p-cp">
+                                            <div class="h-home p-cp">
                                                 <h5 class="nombr-espe">Expedientes técnicos BIM aplicado a Proyectos de
                                                     Infraestructrura educativa</h5>
                                                 <div class="row ">
@@ -3182,7 +3182,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3201,7 +3201,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso p-cp">
+                                            <div class="h-home p-cp">
                                                 <h5 class="nombr-espe">Expedientes técnicos BIM aplicado a Proyectos de
                                                     Infraestructrura Hospitalaria</h5>
                                                 <div class="row ">
@@ -3232,7 +3232,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3251,7 +3251,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso p-cp">
+                                            <div class="h-home p-cp">
                                                 <h5 class="nombr-espe">Expedientes técnicos BIM aplicado a Proyectos de
                                                     infraestructura Vial</h5>
                                                 <div class="row ">
@@ -3282,7 +3282,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3301,7 +3301,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">Expedientes Técnicos BIM aplicado a Proyectos de
                                                     Pavimentación Urbano y Rural</h5>
                                                 <div class="row ">
@@ -3332,7 +3332,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3351,7 +3351,7 @@ section .contentt p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">Expedientes técnicos BIM aplicado a proyectos de
                                                     Agua
                                                     y saneamiento Rural</h5>
@@ -3383,7 +3383,7 @@ section .contentt p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3679,7 +3679,7 @@ section .conten p {
                                         </div>
                                         <div>
 
-                                            <div class="course-curso  p-cp">
+                                            <div class="h-home  p-cp">
                                                 <h5 class="nombr-espe">BIM Management en Proyectos de Arquitectura</h5>
                                                 <div class="row ">
 
@@ -3709,7 +3709,7 @@ section .conten p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3728,7 +3728,7 @@ section .conten p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">BIM Management en Proyectos de Urbanismo y
                                                     Paisajismo
                                                 </h5>
@@ -3760,7 +3760,7 @@ section .conten p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3779,7 +3779,7 @@ section .conten p {
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">BIM Management en Proyectos de Ingeniería Civil e
                                                     Infraestructura</h5>
                                                 <div class="row ">
@@ -3810,7 +3810,7 @@ section .conten p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3837,7 +3837,7 @@ section .conten p {
                                                 class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">Ingeniería en Edificaciones Aplicado al Diseño,
                                                     Supervisión, Construcción de Colegios y Hospitales</h5>
                                                 <div class="row ">
@@ -3867,7 +3867,7 @@ section .conten p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3886,7 +3886,7 @@ section .conten p {
                                                 class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">Ingeniería Vial Aplicado al Diseño, Construcción,
                                                     Supervisión de Carreteras, Pavimentos y Puentes</h5>
                                                 <div class="row ">
@@ -3917,7 +3917,7 @@ section .conten p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3936,7 +3936,7 @@ section .conten p {
                                                 class="img-fluid">
                                         </div>
                                         <div>
-                                            <div class="course-curso">
+                                            <div class="h-home">
                                                 <h5 class="nombr-espe">Ingeniería Hidráulica aplicado al Diseño de Redes
                                                     de
                                                     Abastecimiento de Agua Potable y Alcantarillado</h5>
@@ -3968,7 +3968,7 @@ section .conten p {
 
                                                 <span class="text-white fw-600 text-17px text-center">80%
                                                     Dto.</span> <br>
-                                                <p class="btnbadge-prox  ">PROXIMAMENTE</p>
+                                                <p class="btnbadge-prox-home  ">PROXIMAMENTE</p>
                                             </div>
                                         </div>
                                     </div>

@@ -6209,13 +6209,15 @@ background: linear-gradient(90deg, rgba(28,28,28,1) 50%, rgba(20,20,20,1) 50%);
 }
 
 
-.img-logoespeciali{
+.img-logoespeciali {
     width: 15rem;
-    padding: 0 3rem 10px 0;
-    top: 18px;
+    padding: 0 3rem 10px 10px;
+    bottom: 9px;
     position: relative;
 }
-
+.title {
+ font-size: 1rem !important;
+}
 }
 @media (min-width: 1400px) { .cuadro-contenido{
     top: 7rem !important;

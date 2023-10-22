@@ -1,7 +1,7 @@
 <!-- Topbar Start -->
 <div class="navbar-custom topnav-navbar topnav-navbar-dark">
     <div class="container-fluid">
-        <!-- LOGO -->
+        <!-- LOGO 
         <a href="<?php echo site_url($this->session->userdata('role')); ?>" class="topnav-logo" style = "min-width: unset;">
             <span class="topnav-logo-lg">
                 <img src="<?php echo base_url('uploads/system/'.get_frontend_settings('light_logo'));?>" alt="" height="40">
@@ -9,7 +9,7 @@
             <span class="topnav-logo-sm">
                 <img src="<?php echo base_url('uploads/system/'.get_frontend_settings('small_logo'));?>" alt="" height="40">
             </span>
-        </a>
+        </a> -->
 
         <ul class="list-unstyled topbar-right-menu float-right mb-0">
             <li class="dropdown notification-list topbar-dropdown">

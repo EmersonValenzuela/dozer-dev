@@ -32,7 +32,7 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
                 <a class="navbar-brand btn-hover-gray text-14px ms-2 me-0 <?php if (isset($page_url) && $custom_page_menu['page_url'] == $page_url) echo 'active'; ?>" style="border: 1px solid transparent; margin: 0px; padding: 0px 8px; width: max-content; border-radius: 5px; height: 40px; line-height: 40px;" href="<?php echo site_url('page/' . $custom_page_menu['page_url']); ?>"><?php echo $custom_page_menu['button_title']; ?></a>
                 </li>
             <?php endforeach; ?>
-            <div class="d-flex justify-content-end">
+           
                 <a class="mx-2 text-navbar-p main-nav-wrap" href=" <?php echo base_url('Premium') ?>">
                     <img class="icon-corona " src="<?= base_url() ?>uploads/system/corona-premium.svg" alt=""> Premium
                 </a>
@@ -139,7 +139,7 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
 
                     </div> <!--  sign-in-box end -->
                 <?php } ?>
-            </div>
+            
         </nav>
     </div>
 </section>

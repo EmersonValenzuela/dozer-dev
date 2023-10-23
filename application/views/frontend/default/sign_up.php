@@ -63,7 +63,7 @@
                         </div>
                         <div class="form-group py-2 px-4">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input fs-22" type="checkbox" value="option1" id="terminos">
+                                <input class="form-check-input fs-22 d-block " type="checkbox" value="option1" id="terminos">
                                 <label id="lbl_trm" class="form-check-label" for="inlineCheckbox1">Acepto los términos y condiciones
                                     y políticas de
                                     privacidad de Instituto Dozer</label>

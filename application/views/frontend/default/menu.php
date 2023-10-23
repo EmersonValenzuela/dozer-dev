@@ -14,6 +14,7 @@
 
     <ul class="mobile-main-nav 	d-block  ">
         <div class="mobile-menu-helper-top"></div>
+        <!-- OCULTADO
         <li class="has-children text-nowrap fw-bold">
             <a href="javascript:;" class="py-2 text-wrap d-flex" onclick="redirect_to('')">
                 <span>
@@ -63,6 +64,7 @@
                 </li>
             </ul>
         </li>
+    -->
         <div class="mobile-menu-helper-bottom"></div>
     </ul>
 

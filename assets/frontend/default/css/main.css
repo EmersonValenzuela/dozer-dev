@@ -9319,7 +9319,7 @@ body::-webkit-scrollbar-thumb{
 
 @media (min-width: 1400px) { 
      .mt-md-0{
-    height: 421px !important;
+   /* height: 421px !important;*/
 }
 }
 

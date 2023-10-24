@@ -33,7 +33,7 @@ $user_details = $this->user_model->get_user($this->session->userdata('user_id'))
                 </li>
             <?php endforeach; ?>
            
-                <a class="mx-2 text-navbar-p main-nav-wrap" href=" <?php echo base_url('Premium') ?>">
+                <a class="mx-2 text-navbar-p main-nav-wrap m-nuevo" href=" <?php echo base_url('Premium') ?>">
                     <img class="icon-corona " src="<?= base_url() ?>uploads/system/corona-premium.svg" alt=""> Premium
                 </a>
 

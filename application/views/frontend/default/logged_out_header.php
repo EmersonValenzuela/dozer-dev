@@ -8,7 +8,7 @@
 
             </ul>
 
-            <a href="<?php echo site_url(''); ?>" class="navbar-brand pt-2 mt-1"><img class="img-widt-logo" src="<?php echo base_url('uploads/system/' . get_frontend_settings('dark_logo')); ?>" alt="" height="35"></a>
+            <a href="<?php echo site_url('home'); ?>" class="navbar-brand pt-2 mt-1"><img class="img-widt-logo" src="<?php echo base_url('uploads/system/' . get_frontend_settings('dark_logo')); ?>" alt="" height="35"></a>
 
             <?php include 'menu.php'; ?>
 

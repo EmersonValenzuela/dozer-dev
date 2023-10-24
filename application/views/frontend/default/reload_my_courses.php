@@ -23,7 +23,7 @@
               <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: <?php echo course_progress($course_details['id']); ?>%" aria-valuenow="<?php echo course_progress($course_details['id']); ?>" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <small class="text-white"><?php echo ceil(course_progress($course_details['id'])); ?>% <?php echo site_phrase('completed'); ?></small>
-            <div class="rating your-rating-box" style="position: unset;">
+           <!--  <div class="rating your-rating-box" style="position: unset;">
               <?php
               $get_my_rating = $this->crud_model->get_user_specific_rating('course', $course_details['id']);
               for ($i = 1; $i < 6; $i++) : ?>
@@ -37,7 +37,7 @@
                 <a class="text-white" href="javascript:;" id="edit_rating_btn_<?php echo $course_details['id']; ?>" onclick="toggleRatingView('<?php echo $course_details['id']; ?>')" style="color: #2a303b"><?php echo site_phrase('edit_rating'); ?></a>
                 <a href="javascript:;" class="hidden" id="cancel_rating_btn_<?php echo $course_details['id']; ?>" onclick="toggleRatingView('<?php echo $course_details['id']; ?>')" style="color: #2a303b"><?php echo site_phrase('cancel_rating'); ?></a>
               </p>
-            </div>
+            </div> -->
           </div>
           <div class="row">
 

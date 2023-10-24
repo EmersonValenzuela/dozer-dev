@@ -9294,9 +9294,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 @media (min-width: 1200px) { 
-     .mt-md-0{
-       /* height: 310px !important; */
-    }
+     
     .img-intituto {
         width: 15rem;
         /* padding: 1rem; */
@@ -9318,9 +9316,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 @media (min-width: 1400px) { 
-     .mt-md-0{
-   /* height: 421px !important;*/
-}
+
 }
 
 

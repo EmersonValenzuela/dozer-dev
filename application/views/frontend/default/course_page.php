@@ -193,7 +193,7 @@ $row_schedule = $this->crud_model->auth_schedule(array('course_id' => $course_id
                                 style="<?= $style; ?>" data-bs-toggle="collapse"
                                 data-bs-target="#collapse<?php echo $section['id']; ?>"
                                 aria-expanded="<?php if ($counter == 0) echo 'true'; ?>">
-                                <div class="title float-start text-white">
+                                <div class="title-seccion float-start text-white">
                                     <?php echo $section['title']; ?>
                                 </div>
                                 <div class="float-end">

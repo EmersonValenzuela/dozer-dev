@@ -9937,6 +9937,9 @@ padding: 0px 30px !important;
 .title-video{
     font-size: 0.75rem;
 }
+.title-seccion{
+    font-size: 0.75rem;
+}
 
 /* NUEVOOOO*/
 @media (min-width: 1400px){
@@ -9944,6 +9947,9 @@ padding: 0px 30px !important;
     margin: 0 0 0 500px !important;
 }
 .title-video{
+    font-size: 1rem;
+}
+.title-seccion{
     font-size: 1rem;
 }
 }

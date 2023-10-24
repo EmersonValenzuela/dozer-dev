@@ -15,10 +15,10 @@
                         </div>
                         <div>
                             <div class="course-curso">
-                                <h5 class="title"><?php echo $course['title']; ?></h5>
+                                <h5 class="title-seccion"><?php echo $course['title']; ?></h5>
                                 <div class="row ">
                                     <div class="col-12">
-                                        <span class="title"><?php echo site_phrase($course['level']); ?></span>
+                                        <span class="title-seccion"><?php echo site_phrase($course['level']); ?></span>
                                     </div>
                                 </div>
                                 <div class="row mt-5">

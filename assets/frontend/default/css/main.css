@@ -9934,10 +9934,17 @@ padding: 0px 30px !important;
     margin-left:  18em;
 }
 
+.title-video{
+    font-size: 0.75rem;
+}
 
 /* NUEVOOOO*/
 @media (min-width: 1400px){
 .m-nuevo{
     margin: 0 0 0 500px !important;
 }
+.title-video{
+    font-size: 1rem;
 }
+}
+

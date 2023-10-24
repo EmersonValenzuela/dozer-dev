@@ -22,8 +22,8 @@
 
     </div>
     <div>
-        <p class="title text-white px-3 mb-0 fw-700"><?php echo $course_details['title']; ?></p>
-        <p class="title text-white px-3 fw-700"><?php echo site_phrase($course_details['level']); ?></p>
+        <p class="title-video text-white px-3 mb-0 fw-700"><?php echo $course_details['title']; ?></p>
+        <p class="title-video text-white px-3 fw-700"><?php echo site_phrase($course_details['level']); ?></p>
     </div>
 
     <div class="text-center mt-5 mx-3">

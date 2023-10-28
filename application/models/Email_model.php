@@ -321,7 +321,7 @@ class Email_model extends CI_Model
 		$email_data['from'] = get_settings('system_email');
 		$email_data['to'] = $row['email'];
 		$email_data['to_name'] = $row['first_name'] . ' ' . $row['last_name'];
-		$email_data['message'] = "Have you tried logging in with a different device? Confirm using the verification code.<br> Your verification code is <b>" . $new_device_verification_code . '</b><br> Remember that you will lose access to your previous device after logging in to the new device(' . $browser . ' ' . $device . ').<p>Use the verification code within <b>10</b> minutes</p>';
+		$email_data['message'] = "¿Has intentado iniciar sesión con un dispositivo diferente? Confirme usando el código de verificación. <br> Su código de verificación es <b>" . $new_device_verification_code . '</b><br> Recuerde que perderá el acceso a su dispositivo anterior después de iniciar sesión en el nuevo dispositivo(' . $browser . ' ' . $device . ').<p>Utilice el código de verificación en <b>10</b> minutos</p>';
 		$email_template = $this->load->view('email/common_template', $email_data, TRUE);
 		$this->send_smtp_mail($email_template, $email_data['subject'], $email_data['to'], $email_data['from']);
 

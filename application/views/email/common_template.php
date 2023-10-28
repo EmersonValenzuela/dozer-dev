@@ -8,7 +8,7 @@
         <style type="text/css" rel="stylesheet" media="all">
         /* Base ------------------------------ */
         
-        @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
         body {
           width: 100% !important;
           height: 100%;
@@ -44,7 +44,7 @@
         body,
         td,
         th {
-          font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+          font-family: 'Rubik', sans-serif;
         }
         
         h1 {
@@ -416,7 +416,7 @@
         }
         </style>
     </head>
-    <body>
+    <body background="bg-red">
         <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="padding-top: 60px;">
             <tr>
                 <td>

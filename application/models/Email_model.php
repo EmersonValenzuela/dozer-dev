@@ -317,7 +317,7 @@ class Email_model extends CI_Model
 		}
 
 		$row = $this->db->get_where('users', array('id' => $user_id))->row_array();
-		$email_data['subject'] = "New device login alert";
+		$email_data['subject'] = "Alerta de inicio de sesión de nuevo dispositivo";
 		$email_data['from'] = get_settings('system_email');
 		$email_data['to'] = $row['email'];
 		$email_data['to_name'] = $row['first_name'] . ' ' . $row['last_name'];

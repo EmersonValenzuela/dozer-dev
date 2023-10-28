@@ -416,8 +416,8 @@
         }
         </style>
     </head>
-    <body background="bg-red">
-        <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="padding-top: 60px;">
+    <body>
+        <table class="email-wrapper bg-red" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="padding-top: 60px;">
             <tr>
                 <td>
                     <table class="email-content" width="650" cellpadding="0" cellspacing="0" role="presentation">

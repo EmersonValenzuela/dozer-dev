@@ -10,8 +10,8 @@
         <style type="text/css" rel="stylesheet" media="all">
         /* Base ------------------------------ */
         
-        @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap");
-        body {
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+         body {
           width: 100% !important;
           height: 100%;
           margin: 0;

@@ -19,10 +19,6 @@ class Home extends CI_Controller
         $this->user_model->check_session_data();
 
 
-        //CHECKING COURSE ACCESSIBILITY STATUS
-        if (get_settings('course_accessibility') != 'publicly' && !$this->session->userdata('user_id')) {
-            redirect(site_url('login'), 'refresh');
-        }
     }
     public function index()
     {

@@ -128,6 +128,7 @@ class Login extends CI_Controller
         //   $data['unique_identifier'] = 0;
         $data['first_name'] = html_escape($this->input->post('first_name'));
         $data['last_name']  = html_escape($this->input->post('last_name'));
+        $data['dni']  = html_escape($this->input->post('dni_document'));
         $data['email']  = html_escape($this->input->post('email'));
         $data['phone']  = html_escape($this->input->post('number'));
         $data['code_phone']  = html_escape($this->input->post('code_phone'));

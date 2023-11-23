@@ -1053,5 +1053,10 @@
     "unverified": "Unverified",
     "user_deleted_successfully": "User deleted successfully",
     "student_has_been_enrolled": "Student has been enrolled",
-    "data_deleted_successfully": "Data deleted successfully"
+    "data_deleted_successfully": "Data deleted successfully",
+    "n°_documento_de_identificación_(dni_):": "N° documento de identificación (dni ):",
+    "n°_documento_de_identificación": "N° documento de identificación",
+    "n°_documento_identificación": "N° documento identificación",
+    "document_dni": "Document dni",
+    "you_have_already_registered": "You have already registered"
 }

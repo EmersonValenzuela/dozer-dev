@@ -22,7 +22,6 @@
                             <div class="input-group">
                                 <input type="text" name="first_name" class="form-control" aria-label="<?php echo site_phrase('first_name'); ?>" aria-describedby="<?php echo site_phrase('first_name'); ?>" id="first_name">
                             </div>
-                            <p class="text-danger" style="display: none;">Hola</p>
                         </div>
 
                         <div class="form-group  py-2">
@@ -30,6 +29,13 @@
                             <div class="input-group">
 
                                 <input type="text" name="last_name" class="form-control" aria-label="<?php echo site_phrase('last_name'); ?>" aria-describedby="<?php echo site_phrase('last_name'); ?>" id="last_name">
+                            </div>
+                        </div>
+
+                        <div class="form-group  py-2">
+                            <label class="text-white fw-bold" for="document_dni"><?php echo site_phrase('N° Documento Identificación'); ?> (DNI O CI):</label>
+                            <div class="input-group">
+                                <input type="text" name="document_dni" class="form-control" aria-label="<?php echo site_phrase('document_dni'); ?>" aria-describedby="<?php echo site_phrase('document_dni'); ?>" id="document_dni" maxlength="8">
                             </div>
                         </div>
 

@@ -35,7 +35,7 @@
                         <div class="form-group  py-2">
                             <label class="text-white fw-bold" for="document_dni"><?php echo site_phrase('N° Documento Identificación'); ?> (DNI O CI):</label>
                             <div class="input-group">
-                                <input type="text" name="document_dni" class="form-control" aria-label="<?php echo site_phrase('document_dni'); ?>" aria-describedby="<?php echo site_phrase('document_dni'); ?>" id="document_dni" maxlength="8">
+                                <input type="text" name="dni_document" class="form-control" aria-label="<?php echo site_phrase('document_dni'); ?>" aria-describedby="<?php echo site_phrase('document_dni'); ?>" id="document_dni" maxlength="8">
                             </div>
                         </div>
 

@@ -1,81 +1,81 @@
-<section class="top-categories text-white">
-    <div class="container">
+<link href="<?php echo base_url('assets/backend/css/vendor/dataTables.bootstrap4.css'); ?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url('assets/backend/css/vendor/responsive.bootstrap4.css'); ?>" rel="stylesheet" type="text/css" />
+<div id="cover-spin"></div>
+<section>
+    <h3 class="course-carousel-title text-center mb-4 mt-5 text-cursos">
+        <p class="text-titulo-cat">¡Verifica tu certificado!
+        </p>
+        <p class="text-sub-cat">Gisero(a) esta opción te permite confirmar los datos y la validez de tu certificado,
+            para ello ingresa el número de código, <br>documento de identidad o tus nombres y apellidos completos
+            en el recuadro inferior y posteriormente dale clic al botón "buscar certificado".
+        </p>
+    </h3>
+</section>
+<section class="home-fact-area">
+    <div class="container-lg">
         <div class="row">
-            <div class="col-lg-3"></div>
-            <div class="category-product mt-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <h1 class="text-center mt-4 text-section">¡Verifica tus Certificados!</h1>
-
-                        <div class="d-flex flex-row mb-3 align-items-center justify-content-center">
-                            <div class="">
-                                <p class="text-center mt-4">Buscar por documento de identidad:</p>
+            <div class="col-md-12 ">
+                <div class="sign-up-form">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="search-local">
+                                <select class="form-select" name="s-search" id="select-search" style="background-color:#fff !important;color:#373737!important;" onchange="updatePlaceholder()">
+                                    <option value="1"> Código</option>
+                                    <option value="2"> Nombres y/o Apellidos</option>
+                                    <option value="3"> Email</option>
+                                    <option value="4"> Número de Documento</option>
+                                </select>
                             </div>
-                            <div class=" px-5"> <input class="bg-input" id="dni_search" type="text" placeholder="Puedes usar tu DNI - CI"></div>
-                            <div class=""> <a id="btn_search" class="btn-verificar"> Verificar</a></div>
                         </div>
-
-
-
-                        <input type="hidden" id="url_base" value="<?= base_url() ?>">
-
-                    </div>
-                    <div class="col-lg-3"></div><br>
-                    <div class="row justify-content-center">
-                        <div class="row text-white color-fondo  mb-3 ">
-                            <div class="col-1 p-1 text-center">Formato</div>
-                            <div class="col-4 p-1 text-center">Institución</div>
-                            <div class="col-3 p-1 text-center">Nombre del Estudiante</div>
-                            <div class="col-3 p-1 text-center">Nombre de la Capacitación</div>
-                            <div class="col-1 p-1 text-center">Enlace</div>
+                        <div class="col-md-6 ">
+                            <div class="input-group">
+                                <input type="text" name="t-search" id="t-search" class="form-control" placeholder="Buscar por código" style="background-color:#fff !important" ;>
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" type="button" id="btn-search">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <?php
-                        if ($certificates) {
-                            foreach ($certificates as $key => $certificate) : ?>
-
-                                <div class="col-1 col-xs-0 p-1 text-center"><?= $certificate->name ?></div>
-                                <div class="col-4 col-xs-0 p-1 text-center"><?= $certificate->institute ?></div>
-                                <div class="col-3 col-xs-0 p-1 text-center">
-                                    <?= $certificate->last_name . " " . $certificate->first_name ?></div>
-                                <div class="col-3 col-xs-0 p-1 text-center"><?= $certificate->title ?></div>
-                                <div class="col-1 col-xs- 0xsp-1 text-center"><a class="text-danger" href="<?= base_url("uploads/certificates/" . $certificate->link) ?>" target="_blank">Enlace</a></div>
-
-                                <div class="col-1 col-xs-0 p-1 text-center"><?= $certificate->name ?></div>
-                                <div class="col-3 col-xs-0 p-1 text-center"><?= $certificate->institute ?></div>
-                                <div class="col-2 col-xs-0 p-1 text-center">
-                                    <?= $certificate->last_name . " " . $certificate->first_name ?></div>
-                                <div class="col-5 col-xs-0 p-1 text-center"><?= $certificate->title ?></div>
-                                <div class="col-1 col-xs- 0xsp-1 text-center"><a class="text-danger" href="<?= base_url("uploads/certificates/" . $certificate->link) ?>" target="_blank">Enlace</a></div>
-
-                        <?php endforeach;
-                        } ?>
                     </div>
                 </div>
             </div>
         </div>
+        <br>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="sign-up-form">
+                    <div class="table-responsive-sm mt-4">
+                        <table id="data-certificate" class="table dataTable no-footer  collapsed">
+                            <thead>
+                                <tr>
+                                    <th>Nombre Completo</th>
+                                    <th>Formato</th>
+                                    <th>Nombre Capacitación</th>
+                                    <th>Institución</th>
+                                    <th>Fecha</th>
+                                    <th>Enlace</th>
+                                </tr>
+                            </thead>
+                            <tbody style="color:#000">
+                            </tbody>
+                        </table>
+                    </div>
+                </div><!-- end col-->
+            </div>
+        </div>
     </div>
 </section>
-
 <script>
-    var dni = document.getElementById('dni_search');
-    var button = document.getElementById('btn_search');
-    var url_base = document.getElementById('url_base').value;
+    function updatePlaceholder() {
+        var selectElement = document.getElementById('select-search');
+        var inputElement = document.getElementById('t-search');
 
-    button.addEventListener('click', function() {
-        location.href = url_base + "Verifica-tu-cetificado?category=all&&dni=" + dni.value;
-    })
+        // Obtener el valor seleccionado del select
+        var selectedOption = selectElement.options[selectElement.selectedIndex].text;
 
-    window.addEventListener("load", function() {
-        dni.addEventListener("keypress", soloNumeros, false);
-    });
-
-    //Solo permite introducir numeros.
-    function soloNumeros(e) {
-        var key = window.event ? e.which : e.keyCode;
-        if (key < 48 || key > 57) {
-            e.preventDefault();
-        }
+        // Actualizar el placeholder del input con el valor seleccionado del select
+        inputElement.placeholder = 'Buscar por ' + selectedOption.toLowerCase();
+        inputElement.value = "";
     }
 </script>

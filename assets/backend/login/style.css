@@ -51,4 +51,4 @@
 /*login-fancy*/
 .login-fancy { padding: 30px; height: 100%; box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.06); }
 .login-fancy-bg { position: relative;  z-index: 1; }
-.login-fancy h2 { font-size: 30px; line-height: 40px; text-align: center; font-weight: 100; font-family: poppins;}
+.login-fancy h2 { font-size: 30px; line-height: 40px; text-align: center; font-weight: 100; font-family: poppins;} 

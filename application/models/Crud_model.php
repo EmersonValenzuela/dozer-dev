@@ -3735,6 +3735,26 @@ class Crud_model extends CI_Model
             return $query->result();
         }
     }
+    function table_certificate($attr, $where)
+    {
+        $this->db->select('certificate.* , users.dni, users.last_name, users.first_name, course.title,category.name,certificate.link');
+        $this->db->from('certificate');
+        $this->db->join('users', 'users.id = certificate.student_id', 'LEFT');
+        $this->db->join('course', 'course.id = certificate.course_id', 'LEFT');
+        $this->db->join('category', 'category.id = course.category_id', 'LEFT');
+        if ($attr == 1) {
+            $this->db->where(array('certificate.code_certificate' => $where));
+        } elseif ($attr == 2) {
+            $this->db->like('CONCAT(first_name, " ", last_name)', $where);
+        } elseif ($attr == 3) {
+            $this->db->where(array('users.email' => $where));
+        } elseif ($attr == 4) {
+            $this->db->where(array('users.dni' => $where));
+        }
+        $this->db->order_by('users.last_name', 'asc');
+        $query = $this->db->get();
+        return $query->result();
+    }
 
 
     function get_active_blogs($blog_id = "")
@@ -3908,12 +3928,27 @@ class Crud_model extends CI_Model
         $this->db->order_by('id_certificate', 'desc');
         return $this->db->get('certificate');
     }
+    public function view_certificate($id)
+    {
+        $this->db->select('certificate.* , users.dni, users.last_name, users.first_name, course.title,category.name,certificate.link');
+        $this->db->from('certificate');
+        $this->db->join('users', 'users.id = certificate.student_id', 'LEFT');
+        $this->db->join('course', 'course.id = certificate.course_id', 'LEFT');
+        $this->db->join('category', 'category.id = course.category_id', 'LEFT');
+        $this->db->where('code_certificate', $id);
+        $this->db->order_by('users.last_name', 'asc');
+        $query = $this->db->get();
+        return $query->result();
+    }
 
     public function add_certificate()
     {
+        $caracteres = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $code = substr(str_shuffle($caracteres), 0, 12);
         $data['student_id'] = $this->input->post('student');
         $data['course_id'] = $this->input->post('course');
         $data['institute'] = $this->input->post('institute');
+        $data['code_certificate'] = $code;
         $data['link'] = $this->input->post('student') . '_' . $this->input->post('course');
 
         $users = $this->db->where('student_id', $this->input->post('student'))->get('certificate')->result();

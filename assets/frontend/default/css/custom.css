@@ -459,10 +459,10 @@ section.featured-instructor{
 
 /*Signup & sign in page login*/
 .sign-up-form{
-    background: #fff;
+    background: #3e3e3e;
     padding: 35px 30px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px -1px #ebebeb;
+    box-shadow: 0px 0px 10px -1px #6c6c6c;
 }
 .sign-up-form-padding{
     padding: 35px 6rem;

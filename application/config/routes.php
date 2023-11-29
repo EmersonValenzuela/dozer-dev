@@ -103,8 +103,14 @@ $route['Ruta-de-Aprendizaje'] = "home/ruta";
 $route['Mentoria-bim'] = "home/mentoria";
 $route['Revit-arquitectura'] = "home/contentre";
 $route['Verifica-tu-cetificado'] = "home/certi";
+$route['certificado/(:any)'] = "home/view_certificate/$1";
 
 
 //End tutor booking
 
 $route['translate_uri_dashes'] = FALSE;
+
+
+//API CERTIFICATE
+
+$route['api/search-certificate'] = "home/get_certificate";

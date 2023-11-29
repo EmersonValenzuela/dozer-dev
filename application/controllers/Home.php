@@ -17,8 +17,6 @@ class Home extends CI_Controller
 
         // CHECK CUSTOM SESSION DATA
         $this->user_model->check_session_data();
-
-
     }
     public function index()
     {
@@ -59,6 +57,30 @@ class Home extends CI_Controller
         $page_data['page_title'] = site_phrase('Verifica-tu-cetificado');
 
         $page_data['certificates'] = $this->crud_model->get_certificates($category, $dni);
+        $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
+    }
+    public function get_certificate()
+    {
+        $attr = $this->input->post('filtro');
+        $where = $this->input->post('valor');
+
+
+        $result = $this->crud_model->table_certificate($attr, $where);
+        if ($result) {
+            foreach ($result as $row) {
+                $array['data'][] = $row;
+            }
+        } else {
+            $array['data'] = array();
+        }
+        echo json_encode($array);
+    }
+    public function view_certificate($code)
+    {
+        $result = $this->crud_model->view_certificate($code);
+        $page_data['page_name'] = "view_certificate";
+        $page_data['page_title'] = $result[0]->first_name . " " . $result[0]->last_name . " - " . $result[0]->title;
+        $page_data['certificate'] = $result;
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 

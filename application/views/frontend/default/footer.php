@@ -83,12 +83,12 @@
                     <div>
                         <div class="d-flex flex-row justify-content-end align-items-center">
                             <div class="p-2 text-rs-footer ">Nuestras redes sociales:</div>
-                            <div class="p-2 "><img src="uploads\system\social\fb-white.svg" alt=""></div>
-                            <div class="p-2 "><img src="uploads\system\social\ig-white.svg" alt=""></div>
-                            <div class="p-2 "><img src="uploads\system\social\tk-white.svg" alt=""></div>
-                            <div class="p-2 "><img src="uploads\system\social\yt-white.svg" alt=""></div>
-                            <div class="p-2 "><img src="uploads\system\social\tl-white.svg" alt=""></div>
-                            <div class="p-2 "><img src="uploads\system\social\wssp-white.svg" alt=""></div>
+                            <div class="p-2 "><img src="<?=base_url()?>uploads\system\social\fb-white.svg" alt=""></div>
+                            <div class="p-2 "><img src="<?=base_url()?>uploads\system\social\ig-white.svg" alt=""></div>
+                            <div class="p-2 "><img src="<?=base_url()?>uploads\system\social\tk-white.svg" alt=""></div>
+                            <div class="p-2 "><img src="<?=base_url()?>uploads\system\social\yt-white.svg" alt=""></div>
+                            <div class="p-2 "><img src="<?=base_url()?>uploads\system\social\tl-white.svg" alt=""></div>
+                            <div class="p-2 "><img src="<?=base_url()?>uploads\system\social\wssp-white.svg" alt=""></div>
                             
                         </div>
                     </div>

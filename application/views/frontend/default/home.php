@@ -4197,7 +4197,7 @@ section .conten p {
                 verificador de certificados gratuitamente, <br>
                 podrás revisar o descargar todos tus certificados</p>
             <a style=" font-weight: 700 !important;" class="btn  devbIM fw-semibold text-center  m-5"
-                href="<?php echo base_url('Verifica-tu-cetificado?category=all&&dni=') ?>">Deseo
+                href="<?php echo base_url('Verifica-tu-cetificado') ?>">Deseo
                 verificar mi certificado</a>
 
         </h3>

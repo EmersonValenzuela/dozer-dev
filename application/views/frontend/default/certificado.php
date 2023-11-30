@@ -46,10 +46,10 @@
                         <table id="data-certificate" class="table dataTable no-footer  collapsed">
                             <thead>
                                 <tr class="text-white">
-                                    <th>Formato</th>
-                                    <th>Institución</th>
                                     <th>Nombre del Estudiante</th>
-                                    <th>Nombre Capacitación</th>
+                                    <th>Categoria</th>
+                                    <th>Nombre del Estudiante</th>
+                                    <th>Institucion</th>
                                     <th>Fecha</th>
                                     <th>Enlace</th>
                                 </tr>

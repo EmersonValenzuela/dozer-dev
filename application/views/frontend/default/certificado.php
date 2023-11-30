@@ -48,7 +48,7 @@
                                 <tr class="text-white">
                                     <th>Nombre del Estudiante</th>
                                     <th>Categoria</th>
-                                    <th>Nombre del Estudiante</th>
+                                    <th>Nombre de la Capacitación</th>
                                     <th>Institucion</th>
                                     <th>Fecha</th>
                                     <th>Enlace</th>

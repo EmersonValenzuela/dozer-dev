@@ -1058,5 +1058,12 @@
     "n°_documento_de_identificación": "N° documento de identificación",
     "n°_documento_identificación": "N° documento identificación",
     "document_dni": "Document dni",
-    "you_have_already_registered": "You have already registered"
+    "you_have_already_registered": "You have already registered",
+    "successfully_enrolled": "Successfully enrolled",
+    "thumbnail": "Thumbnail",
+    "document_type": "Document type",
+    "select_type_of_document": "Select type of document",
+    "text_file": "Text file",
+    "pdf_file": "Pdf file",
+    "attachment": "Attachment"
 }

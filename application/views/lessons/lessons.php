@@ -28,7 +28,7 @@ $course_details_url = site_url("home/course/".slugify($course_details['title']).
         </div>
     </div>
 
-    <div class="row" id = "lesson-container">
+    <div class="row d-flex" id = "lesson-container">
         <!-- Course sections and lesson selector sidebar starts-->
         <?php if($course_details['course_type'] == 'general'): ?>
             <?php include 'course_content_sidebar.php'; ?>

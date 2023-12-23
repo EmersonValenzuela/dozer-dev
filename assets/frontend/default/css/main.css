@@ -4082,6 +4082,22 @@ div.tagsinput span.tag a {
 .hidden {
   display: none;
 }
+
+.width-lesson{
+  width: calc(100% - 340px);
+  min-width: calc(100% - 340px);
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.width-contenido{
+  width: 340px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
 @media (max-width: 760px) {
   .user-dashboard-content .content-box .form-group {
     padding: 10px 10px;
@@ -5812,6 +5828,20 @@ input[type="radio"] {
   }
   .img-n {
     padding: 0 45px;
+  }
+  .width-lesson{
+    width: calc(100% - 340px);
+    min-width: calc(100% - 340px);
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .width-contenido{
+    width: 340px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
   }
 }
 
@@ -8670,8 +8700,8 @@ input[type="radio"] {
   background-color: #ffcb73 !important;
 }
 .style-itemp {
-  color: #ffcb73 !important;
-  padding: 10px 42px !important;
+  color: white !important;
+ 
   font-weight: 600;
 }
 .style-itemp:hover {
@@ -8681,8 +8711,10 @@ input[type="radio"] {
 }
 
 .style-itemp.active {
-  border: none !important;
+ border-bottom: 1px solid !important; 
   background: #222222 !important;
+  color: #dec398 !important;
+ /* text-decoration: underline !important; */
 }
 .nav-tabss {
   border: none !important;
@@ -9505,6 +9537,14 @@ input[type="checkbox"] {
 .title-seccion {
   font-size: 0.75rem;
 }
+.width-lesson::-webkit-scrollbar{
+  width: 7px;
+    background: #222222;
+}
+.width-lesson::-webkit-scrollbar-thumb{
+  background: #535a66;
+  border-radius: 5px;
+}
 
 /* NUEVOOOO*/
 @media (min-width: 1400px) {
@@ -9512,7 +9552,7 @@ input[type="checkbox"] {
     margin: 0 0 0 500px !important;
   }
   .title-video {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .title-seccion {
     font-size: 1rem;
